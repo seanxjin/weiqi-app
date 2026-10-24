@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Welcome feedback regressions</title>
+<style>body{font:13px system-ui;background:#f3f0e8;color:#333a34;margin:16px}pre{white-space:pre-wrap}iframe{border:0;display:block}</style></head>
+<body><h1 id="status">Running feedback checks…</h1><pre id="results"></pre>
+<iframe title="Welcome feedback preview" width="927" height="956" src="/tests/welcome-preview.html?motion=reduce"></iframe>
+<script type="module">
+  const frame = document.querySelector('iframe');
+  const output = [];
+  const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+  const assert = (condition, message) => {
+    output.push(`${condition ? 'PASS' : 'FAIL'} ${message}`);
+    document.querySelector('#results').textContent = output.join('\n');
+    if (!condition) throw new Error(message);
+  };
+  async function ready(previous) {
+    const start = performance.now();
+    while (frame.contentDocument === previous || !frame.contentDocument?.querySelector('.sakura__stroke')) {
+      if (performance.now() - start > 10000) throw new Error('Preview did not load');
+      await sleep(20);
+    }
+    return frame.contentDocument;
+  }
+  try {
+    let doc = await ready();
+    let win = frame.contentWindow;
+    const intro = doc.querySelector('.welcome-introduction').getBoundingClientRect();
+    const board = doc.querySelector('.welcome-board').getBoundingClientRect();
+    assert(intro.right <= board.left && intro.top < board.bottom && intro.bottom > board.top,
+      '927px introduction and board sit side by side');
+    const white = doc.querySelector('.stone-mark--compact .stone-mark__white canvas');
+    assert(white.getBoundingClientRect().width >= 14, 'Navigation stones are large enough to distinguish');
+    assert(win.getComputedStyle(white).filter !== 'none', 'White navigation stone has a contrast shadow');
+    const checkEntrance = () => {
+      const stroke = doc.querySelector('.sakura__stroke');
+      const animation = stroke.getAnimations().find(animation => animation.animationName === 'sakura-grow');
+      return animation && animation.currentTime < 400;
+    };
+    assert(checkEntrance(), 'Landing grows branches even when the OS requests reduced motion');
+    assert(+win.getComputedStyle(doc.querySelector('.sakura__stroke')).opacity === 1,
+      'Branch entrance draws its path without fading');
+    assert(+win.getComputedStyle(doc.querySelector('.sakura__blossom')).opacity === 0,
+      'Blossoms wait for branch growth');
+    const initialOffset = parseFloat(win.getComputedStyle(doc.querySelector('.sakura__stroke')).strokeDashoffset);
+    await sleep(750);
+    const offset = parseFloat(win.getComputedStyle(doc.querySelector('.sakura__stroke')).strokeDashoffset);
+    assert(offset >= 0 && offset < initialOffset, 'Branch length visibly progresses during growth');
+    doc.querySelector('button').click(); await sleep(60);
+    const strokeOffsets = () => [...doc.querySelectorAll('.sakura__stroke')].map(stroke => win.getComputedStyle(stroke).strokeDashoffset);
+    const pausedOffsets = JSON.stringify(strokeOffsets());
+    await sleep(300);
+    assert(JSON.stringify(strokeOffsets()) === pausedOffsets && win.getComputedStyle(doc.querySelector('.sakura__stroke')).animationPlayState === 'paused',
+      'Pause holds branch growth');
+    doc.querySelector('button').click();
+    await sleep(4300);
+    assert(+win.getComputedStyle(doc.querySelector('.sakura__blossom')).opacity > .8,
+      'Blossoms open after the branches have grown');
+    const beforeReload = doc;
+    win.location.reload();
+    doc = await ready(beforeReload); win = frame.contentWindow;
+    assert(checkEntrance(), 'Reload starts the branch entrance again');
+    await sleep(750);
+    const previousBranch = doc.querySelector('.sakura');
+    win.dispatchEvent(new win.PageTransitionEvent('pageshow', { persisted: true }));
+    await sleep(50);
+    assert(doc.querySelector('.sakura') !== previousBranch && checkEntrance(), 'Returning from browser history replays the entrance');
+    for (const width of [1440, 2560]) {
+      frame.width = width; frame.height = width === 2560 ? 1440 : 900;
+      await sleep(120);
+      const rect = doc.querySelector('.animated-board__stage').getBoundingClientRect();
+      assert(Math.abs(rect.width / doc.querySelector('.welcome-board').getBoundingClientRect().width - .75) < .005, `${width}px board is 25 percent smaller`);
+      assert(doc.documentElement.scrollWidth <= width, `${width}px has no horizontal overflow`);
+    }
+    win.setTestReducedMotion(false); await sleep(100);
+    const pause = doc.querySelector('button'); pause.click(); await sleep(50);
+    const oldBranch = doc.querySelector('.sakura');
+    win.dispatchEvent(new win.PageTransitionEvent('pageshow', { persisted: true }));
+    await sleep(100);
+    assert(doc.querySelector('.sakura') !== oldBranch && doc.querySelector('.welcome-page').dataset.paused === 'false',
+      'Full motion restarts unpaused when returning to the page');
+    assert(win.getComputedStyle(doc.querySelector('.sakura__stroke')).animationName === 'sakura-grow', 'Full motion retains branch growth');
+    const previous = doc;
+    frame.src = '/tests/welcome-preview.html?motion=full';
+    doc = await ready(previous); win = frame.contentWindow;
+    assert(doc.querySelector('.sakura__stroke').getAnimations().some(animation => animation.animationName === 'sakura-grow' && animation.currentTime < 400),
+      'Full growth starts from the beginning on a fresh landing');
+    await sleep(750);
+    const grownOffset = parseFloat(win.getComputedStyle(doc.querySelector('.sakura__stroke')).strokeDashoffset);
+    const beforeFullReload = doc;
+    win.location.reload(); doc = await ready(beforeFullReload); win = frame.contentWindow;
+    assert(parseFloat(win.getComputedStyle(doc.querySelector('.sakura__stroke')).strokeDashoffset) > grownOffset,
+      'Reload restarts full branch growth from its initial shape');
+    document.querySelector('#status').textContent = `${output.length} feedback checks passed`;
+  } catch (error) {
+    document.querySelector('#status').textContent = 'Feedback checks failed';
+    document.querySelector('#results').textContent += `\n${error.message}`;
+    console.error(error);
+  }
+</script></body></html>

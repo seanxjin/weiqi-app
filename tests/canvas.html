@@ -1,0 +1,59 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Canvas verification</title><style>
+body{font:14px system-ui;background:#ece9e0;color:#333;margin:20px}pre{white-space:pre-wrap} iframe{border:1px solid #ccc;display:block;transform-origin:top left} .desktop{height:1100px} .desktop iframe{transform:scale(.55)} .mobile{height:3400px}canvas{background:#f3f0e8}
+</style></head><body><details><summary id="summary">Running Canvas checks…</summary><pre id="results">Running checks…</pre></details><canvas id="small" width="754" height="130"></canvas><div class="desktop"><iframe title="Desktop at 1440" width="1440" height="1950" src="/materials"></iframe></div><div class="mobile"><iframe title="Mobile at 375" width="375" height="3400" src="/materials"></iframe></div>
+<script type="module">
+import {drawBoard,drawStone,stoneStyles,boardThemes} from '/src/lib/baduk/index.ts';
+const styles=Object.keys(stoneStyles); const snapshots=new Map(); const output=[]; const assert=(condition,name)=>{if(!condition){document.querySelector('#results').textContent=output.join('\n')+'\nFAIL '+name;throw Error(name)}output.push('PASS '+name)};
+const errors=[]; const frames=[...document.querySelectorAll('iframe')];
+await Promise.all(frames.map(f=>new Promise(resolve=>{if(f.contentDocument.readyState==='complete')resolve();else f.addEventListener('load',resolve,{once:true})})));
+await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));
+for(const f of frames){f.contentWindow.addEventListener('error',e=>errors.push(e.message));}
+const frame=frames[0];
+for(const width of [1440,1100,768,700,375]){
+ frame.width=width; await new Promise(r=>setTimeout(r,1500)); const doc=frame.contentDocument;
+ const columns=frame.contentWindow.getComputedStyle(doc.querySelector('.boards-grid')).gridTemplateColumns.split(' ').length;
+ assert(columns===(width>1100?3:width>700?2:1),width+'px board column count');
+ assert(doc.documentElement.scrollWidth<=width,width+'px no horizontal overflow');
+ const canvases=[...doc.querySelectorAll('canvas')];assert(canvases.length===11,width+'px three boards and eight stones');
+ assert(canvases.every(c=>Math.abs(c.getBoundingClientRect().width-c.getBoundingClientRect().height)<1),width+'px square canvases');
+ assert(canvases.every(c=>c.width===Math.round(c.getBoundingClientRect().width*frame.contentWindow.devicePixelRatio)),width+'px correct DPR backing sizes');
+ assert(canvases.every(c=>c.getAttribute('aria-label')),width+'px accessible Canvas labels');
+ assert(!doc.querySelector('.asset-error'),width+'px textures loaded');
+}
+const originalDensity=Object.getOwnPropertyDescriptor(frame.contentWindow,'devicePixelRatio');
+Object.defineProperty(frame.contentWindow,'devicePixelRatio',{value:2,configurable:true});
+frame.contentWindow.dispatchEvent(new Event('resize'));
+assert([...frame.contentDocument.querySelectorAll('canvas')].every(c=>c.width===Math.round(c.getBoundingClientRect().width*2)),'Simulated DPR 2 backing sizes');
+if(originalDensity)Object.defineProperty(frame.contentWindow,'devicePixelRatio',originalDensity);else delete frame.contentWindow.devicePixelRatio;
+frame.contentWindow.dispatchEvent(new Event('resize'));
+frame.width=1440;
+const calls=[];const ctx=new Proxy({}, {get:(_,key)=>key==='fillRect'? (...args)=>calls.push(['line',...args]):key==='arc'? (...args)=>calls.push(['star',...args]):()=>{},set:()=>true});
+drawBoard(ctx,{theme:'kaya',size:800});
+assert(calls.filter(c=>c[0]==='line').length===38,'19 vertical and 19 horizontal grid lines');
+const stars=calls.filter(c=>c[0]==='star'); assert(stars.length===9,'Nine star points');
+assert(stars.every(c=>[172,400,628].includes(c[1])&&[172,400,628].includes(c[2])),'Star point positions');
+assert(calls.filter(c=>c[0]==='line').every(c=>c[0]!=='line'||c[3]>0&&c[4]>0),'Positive grid geometry');
+const canvas=document.createElement('canvas');canvas.width=canvas.height=176;const context=canvas.getContext('2d',{willReadFrequently:true});
+for(const style of styles)for(const color of ['black','white']){
+ context.clearRect(0,0,176,176);drawStone(context,{style,color,x:88,y:82,radius:69});const first=canvas.toDataURL();snapshots.set(style+'-'+color,first);
+ context.clearRect(0,0,176,176);drawStone(context,{style,color,x:88,y:82,radius:69});assert(first===canvas.toDataURL(),style+' '+color+' deterministic redraw');
+ assert(context.getImageData(88,82,1,1).data[3]===255,style+' '+color+' opaque center');
+ assert(context.getImageData(0,0,1,1).data[3]===0,style+' '+color+' transparent corner');
+ const scale=document.querySelector('#small').getContext('2d');const index=styles.indexOf(style)*2+(color==='white'?1:0);drawStone(scale,{style,color,x:45+index*92,y:48,radius:18.5});scale.fillStyle='#77796e';scale.font='10px system-ui';scale.textAlign='center';scale.fillText(style+' '+color,45+index*92,100);
+}
+assert(snapshots.get('polished-black')===snapshots.get('snow-black'),'Snow companion preserves polished black slate');
+assert(snapshots.get('polished-white')!==snapshots.get('snow-white'),'Slate white and Yuki clamshell are visually distinct');
+for(const style of styles)for(const color of ['black','white']){
+ let shellCurves=0;
+ const tracked=new Proxy(context,{
+  get(target,key){if(key==='bezierCurveTo')return (...args)=>{shellCurves++;target.bezierCurveTo(...args)};const value=Reflect.get(target,key,target);return typeof value==='function'?value.bind(target):value},
+  set(target,key,value){return Reflect.set(target,key,value,target)}
+ });
+ context.clearRect(0,0,176,176);drawStone(tracked,{style,color,x:88,y:82,radius:69});
+ assert((shellCurves>0)===(style==='snow'&&color==='white'),style+' '+color+' shell grain exclusivity');
+}
+for(const [theme,data]of Object.entries(boardThemes)){const image=new Image();image.src=data.texture;await image.decode();assert(image.naturalWidth===image.naturalHeight&&image.naturalWidth>0,theme+' original square texture');}
+assert(errors.length===0,'No runtime errors');document.querySelector('#results').textContent=output.join('\n')+'\n'+output.length+' checks passed. DPR '+devicePixelRatio;document.querySelector('#summary').textContent=output.length+' Canvas checks passed';
+</script></body></html>
+

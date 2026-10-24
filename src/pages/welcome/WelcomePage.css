@@ -1,0 +1,66 @@
+@font-face { font-family: 'Baduk Inter'; font-style: normal; font-weight: 400 500; font-display: swap; src: url('../../assets/fonts/inter-latin.woff2') format('woff2'); }
+.welcome-page {
+  --page-gutter: clamp(24px, 3.33333vw, 80px);
+  --content-start: clamp(236px, 18.88889vw, 360px);
+  --content-gap: clamp(32px, 5.13889vw, 96px);
+  --hero-pad-top: clamp(96px, 12svh, 164px);
+  --hero-pad-bottom: clamp(80px, 8svh, 112px);
+  position: relative; min-height: 100svh; width: 100%; isolation: isolate;
+  font-family: 'Baduk Inter', Inter, 'Segoe UI', Arial, sans-serif;
+}
+.welcome-rail { position: absolute; left: var(--page-gutter); top: 48px; bottom: 48px; width: calc(var(--content-start) - var(--page-gutter) - var(--content-gap)); border-right: 1px solid var(--divider); z-index: 1; }
+.welcome-brand { position: absolute; top: 6px; display: flex; flex-direction: column; align-items: flex-start; gap: 13px; color: var(--text); text-decoration: none; font-size: 11px; font-weight: 500; }
+.welcome-navigation { position: absolute; top: calc(50% - 24px); left: 0; }
+.welcome-navigation a { display: flex; gap: 10px; align-items: center; min-height: 48px; color: var(--text); text-decoration: none; font-size: 17px; font-weight: 500; }
+.welcome-content { display: grid; grid-template-columns: minmax(240px, .8fr) minmax(0, 1.2fr); align-items: center; gap: var(--content-gap); margin-left: var(--content-start); margin-right: var(--page-gutter); min-height: 100svh; padding-block: var(--hero-pad-top) var(--hero-pad-bottom); }
+.welcome-introduction { min-width: 0; }
+.welcome-eyebrow { color: var(--muted); font-size: 10px; font-weight: 500; line-height: 1.3; }
+.welcome-introduction h1 { font-size: clamp(56px, 6.12vw, 100px); line-height: 1.1; margin-top: 25px; white-space: nowrap; }
+.welcome-game-name { display: inline-grid; vertical-align: bottom; overflow: hidden; perspective: 600px; line-height: 1.2; }
+.welcome-game-name > span { grid-area: 1 / 1; opacity: 0; transform: translateY(-100%) rotateX(35deg); transform-origin: center; animation: welcome-name-roll 9s cubic-bezier(.4, 0, .2, 1) infinite; }
+.welcome-game-name > span:nth-child(1) { animation-delay: -.5s; }
+.welcome-game-name > span:nth-child(2) { animation-delay: 2.5s; }
+.welcome-game-name > span:nth-child(3) { animation-delay: 5.5s; }
+.welcome-page[data-paused='true'] .welcome-game-name > span { animation-play-state: paused; }
+@keyframes welcome-name-roll {
+  0% { opacity: 0; transform: translateY(-100%) rotateX(35deg); }
+  5.5556%, 33.3333% { opacity: 1; transform: translateY(0) rotateX(0); }
+  38.8888% { opacity: 0; transform: translateY(100%) rotateX(-35deg); }
+  38.8889%, 100% { opacity: 0; transform: translateY(-100%) rotateX(35deg); }
+}
+.welcome-description { color: var(--muted); font-size: 16px; line-height: 1.7; margin-top: 25px; }
+.welcome-board { min-width: 0; width: 100%; max-width: max(300px, calc(100svh - var(--hero-pad-top) - var(--hero-pad-bottom) - 56px)); justify-self: end; }
+.welcome-board .animated-board { width: 75%; max-width: none; margin-inline: auto; }
+.welcome-footnote { position: absolute; left: var(--content-start); bottom: 40px; font-size: 10px; color: var(--muted); line-height: 1.3; }
+.welcome-page a:focus-visible, .welcome-page button:focus-visible { outline: 1px solid var(--text); outline-offset: 6px; border-radius: 2px; }
+@media (max-width: 1199px) {
+  .welcome-page { --hero-pad-top: clamp(64px, 9svh, 112px); --hero-pad-bottom: 80px; padding-inline: var(--page-gutter); }
+  .welcome-rail { position: relative; inset: auto; width: auto; height: 96px; border-right: 0; border-bottom: 1px solid var(--divider); display: flex; align-items: center; justify-content: space-between; }
+  .welcome-brand { position: static; flex-direction: row; align-items: center; gap: 14px; }
+  .welcome-navigation { position: static; }
+  .welcome-navigation a { font-size: 15px; }
+  .welcome-content { grid-template-columns: minmax(240px, .9fr) minmax(0, 1.1fr); gap: clamp(24px, 4vw, 48px); min-height: calc(100svh - 96px); margin: 0; }
+  .welcome-introduction { z-index: 1; }
+  .welcome-introduction h1 { font-size: clamp(56px, 7vw, 80px); }
+  .welcome-description { font-size: 15px; }
+  .welcome-board { max-width: max(300px, calc(100svh - 96px - var(--hero-pad-top) - var(--hero-pad-bottom) - 56px)); }
+  .welcome-footnote { left: var(--page-gutter); bottom: 32px; }
+}
+@media (max-width: 799px) {
+  .welcome-content { display: flex; flex-direction: column; align-items: stretch; min-height: auto; gap: 40px; padding-top: 80px; padding-bottom: 36px; }
+  .welcome-introduction h1 { font-size: 72px; margin-top: 21px; }
+  .welcome-description { font-size: 16px; margin-top: 20px; }
+  .welcome-board { max-width: none; }
+  .welcome-footnote { position: static; padding-top: 8px; padding-left: 36px; }
+}
+@media (max-width: 600px) {
+  .welcome-rail { height: 80px; }
+  .welcome-content { padding-top: 74px; gap: 36px; }
+  .welcome-introduction h1 { font-size: 60px; letter-spacing: -1.8px; }
+  .welcome-eyebrow { font-size: 9px; }
+  .welcome-description { font-size: 14px; }
+  .welcome-footnote { font-size: 9px; padding-left: 50px; }
+  .animated-board__caption { font-size: 8px; gap: 8px; padding-top: 14px; }
+  .animated-board__controls { gap: 10px; }
+  .animated-board__controls button { font-size: 8px; }
+}

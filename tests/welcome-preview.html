@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome motion preview</title>
+  <script>
+    // Test-only media emulation. All real pages read the native OS preference.
+    const nativeMatchMedia = window.matchMedia.bind(window);
+    const preference = new EventTarget();
+    preference.matches = new URLSearchParams(location.search).get('motion') === 'reduce';
+    preference.media = '(prefers-reduced-motion: reduce)';
+    preference.addListener = listener => preference.addEventListener('change', listener);
+    preference.removeListener = listener => preference.removeEventListener('change', listener);
+    window.matchMedia = query => query === preference.media ? preference : nativeMatchMedia(query);
+    window.setTestReducedMotion = value => { preference.matches = value; preference.dispatchEvent(new Event('change')); };
+  </script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>

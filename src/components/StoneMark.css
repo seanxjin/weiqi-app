@@ -1,0 +1,11 @@
+.stone-mark { display: inline-block; position: relative; flex: none; }
+.stone-mark > span { position: absolute; width: 83%; }
+.stone-mark__black { top: -9%; left: -13%; }
+.stone-mark__white { top: 20%; left: 18%; }
+.stone-mark--horizontal > span { width: 48%; top: 18%; }
+.stone-mark--horizontal .stone-mark__black { left: -5%; }
+.stone-mark--horizontal .stone-mark__white { left: 49%; }
+.stone-mark--compact > span { width: 64%; }
+.stone-mark--compact .stone-mark__black { left: 0; top: 33%; }
+.stone-mark--compact .stone-mark__white { left: 43%; top: 8%; }
+.stone-mark--compact .stone-mark__white canvas { filter: drop-shadow(0 1px 1.25px rgb(40 45 34 / 38%)); }

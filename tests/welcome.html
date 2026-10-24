@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Welcome screen verification</title>
+  <style>
+    body { margin: 16px; font: 13px system-ui; color: #333a34; background: #f3f0e8; }
+    header { margin-bottom: 16px; display: flex; gap: 16px; align-items: center; }
+    pre { white-space: pre-wrap; }
+    iframe { display: block; border: 0; background: #f3f0e8; }
+    body.preview { margin: 0; }
+    .preview header, .preview pre { display: none; }
+    .preview iframe { width: 100vw; height: 100vh; }
+  </style>
+</head>
+<body>
+  <header><strong id="status">Running welcome checks…</strong><label>Preview <select id="preference"><option value="full">Full motion</option><option value="reduce">Reduced motion</option></select></label></header>
+  <pre id="results"></pre>
+  <iframe id="preview" title="Welcome screen under test" width="1440" height="900"></iframe>
+  <script type="module">
+    const params = new URLSearchParams(location.search);
+    const previewOnly = params.has('preview');
+    const frame = document.querySelector('#preview');
+    const selector = document.querySelector('#preference');
+    if (previewOnly) document.body.classList.add('preview');
+    const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+    const lines = [];
+    function assert(condition, name) {
+      lines.push(`${condition ? 'PASS' : 'FAIL'} ${name}`);
+      document.querySelector('#results').textContent = lines.join('\n');
+      if (!condition) throw new Error(name);
+    }
+    function render(reduced) {
+      frame.src = `/tests/welcome-preview.html?motion=${reduced ? 'reduce' : 'full'}`;
+    }
+    selector.value = params.get('motion') === 'reduce' ? 'reduce' : 'full';
+    selector.addEventListener('change', () => render(selector.value === 'reduce'));
+    render(selector.value === 'reduce');
+    if (!previewOnly) {
+      try {
+        const loadingStarted = performance.now();
+        while (!frame.contentDocument.querySelector('[data-move]')) {
+          if (performance.now() - loadingStarted > 10000) throw new Error('Welcome screen did not load within 10 seconds');
+          await sleep(30);
+        }
+        const doc = frame.contentDocument;
+        const win = frame.contentWindow;
+        const stones = [...doc.querySelectorAll('[data-move]')];
+        const visible = () => stones.filter(stone => +win.getComputedStyle(stone).opacity > .99).length;
+        assert(stones.length === 22, '22 opening moves');
+        assert(doc.querySelector('a[aria-current="page"]').pathname === '/', 'Play is active at the welcome route');
+        assert(doc.querySelectorAll('.sakura__petal').length === 3, 'Falling petals are bounded to three');
+        assert(doc.querySelector('.animated-board__stage').dataset.static === 'false', 'Full motion is active');
+        let full = false, reset = false, paused = false, resumed = false, resumedProgress = false;
+        const started = performance.now();
+        while (performance.now() - started < 22000) {
+          const count = visible();
+          if (resumed && count > 4) resumedProgress = true;
+          assertOrder();
+          if (count === 22) full = true;
+          if (full && count < 3) reset = true;
+          if (!paused && count >= 4) {
+            const button = doc.querySelector('button');
+            button.click(); await sleep(100);
+            const before = stones.map(stone => [win.getComputedStyle(stone).opacity, win.getComputedStyle(stone).transform]);
+            const blossom = doc.querySelector('.sakura__blossom');
+            const flowerBefore = win.getComputedStyle(blossom).opacity;
+            await sleep(900);
+            assert(JSON.stringify(before) === JSON.stringify(stones.map(stone => [win.getComputedStyle(stone).opacity, win.getComputedStyle(stone).transform])), 'Pause holds every board track');
+            assert(win.getComputedStyle(blossom).opacity === flowerBefore, 'Pause holds blossom growth');
+            assert(button.getAttribute('aria-label') === 'Resume animations', 'Pause exposes a resume label');
+            button.click(); paused = true; resumed = true;
+          }
+          document.querySelector('#status').textContent = `Watching full loop: ${count}/22 stones`;
+          await sleep(80);
+        }
+        function assertOrder() {
+          let waiting = false;
+          for (const stone of stones) {
+            const opacity = +win.getComputedStyle(stone).opacity;
+            if (opacity < .01) waiting = true;
+            if (waiting && opacity > .99) throw new Error('Moves appeared out of order');
+          }
+        }
+        assert(full, 'All 22 stones appear in order during the full loop');
+        assert(reset, '18-second timeline resets and begins again');
+        assert(resumed && resumedProgress, 'Resume advances beyond the paused opening');
+        assert(stones.every(stone => stone.getAnimations().length <= 2), 'Strict Mode leaves no duplicate board tracks');
+        for (const width of [1440, 1100, 768, 375, 280]) {
+          frame.width = width; await sleep(160);
+          assert(doc.documentElement.scrollWidth <= width, `${width}px no horizontal overflow`);
+          const stage = doc.querySelector('.animated-board__stage').getBoundingClientRect();
+          assert(Math.abs(stage.width - stage.height) < 1, `${width}px square board`);
+          const densityMatches = () => stones.every(stone => {
+            const canvas = stone.querySelector('canvas');
+            const body = canvas.getBoundingClientRect();
+            return Math.abs(canvas.width - Math.round(body.width * win.devicePixelRatio)) <= 1;
+          });
+          const densityDeadline = performance.now() + 2000;
+          while (!densityMatches() && performance.now() < densityDeadline) await sleep(20);
+          assert(densityMatches(), `${width}px all stones have correct pixel density`);
+        }
+        win.setTestReducedMotion(true); await sleep(150);
+        assert(doc.querySelector('.animated-board__stage').dataset.static === 'false', 'Welcome board keeps playing with the browser motion preference');
+        assert(visible() < 22, 'Welcome does not jump to the completed position');
+        assert(doc.querySelector('button'), 'Pause remains available for the requested branch animation');
+        assert(win.getComputedStyle(doc.querySelector('.sakura__petal')).display !== 'none', 'Requested falling petals remain active');
+        assert(win.getComputedStyle(doc.querySelector('.sakura__stroke')).animationName === 'sakura-grow', 'Requested branch growth remains active');
+        win.setTestReducedMotion(false); await sleep(150);
+        assert(visible() < 22, 'Turning full motion back on starts a clean timeline');
+        assert(!doc.querySelector('.asset-error'), 'Board texture loaded locally');
+        frame.width = 1440;
+        document.querySelector('#status').textContent = `${lines.length} welcome checks passed`;
+      } catch (error) {
+        document.querySelector('#status').textContent = 'Welcome checks failed';
+        document.querySelector('#results').textContent += `\nFAIL ${error.message}`;
+        console.error(error);
+      }
+    }
+  </script>
+</body>
+</html>

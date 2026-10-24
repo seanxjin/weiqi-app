@@ -1,0 +1,26 @@
+.sakura { position: absolute; inset: 0; overflow: clip; pointer-events: none; color: #8e8175; }
+.sakura__branch { position: absolute; display: block; overflow: visible; }
+.sakura__branch--foreground { bottom: 0; left: 0; width: 243px; height: 248px; }
+.sakura__branch--overhanging { top: 0; right: 0; width: 430px; height: 154px; }
+.sakura__stroke { stroke-dasharray: 1; stroke-dashoffset: 1; animation: sakura-grow var(--grow-duration) var(--grow-delay) ease-in-out both; }
+.sakura__blossom { fill: #ead1c9; opacity: 0; animation: sakura-blossom .6s var(--bloom-delay) ease-out both; }
+.sakura__heart { fill: #c6a787; opacity: .6; }
+.sakura__petal { fill: #ead1c9; opacity: 0; animation: sakura-fall var(--fall-duration) var(--fall-delay) ease-in-out infinite both; }
+.sakura__stroke, .sakura__blossom, .sakura__petal { animation-play-state: var(--scene-play-state, running); }
+@keyframes sakura-grow { to { stroke-dashoffset: 0; } }
+@keyframes sakura-blossom { from { opacity: 0; transform: scale(.15); } to { opacity: .85; transform: scale(1); } }
+@keyframes sakura-fall {
+  0% { opacity: 0; transform: translate(0, 0) rotate(0); }
+  8% { opacity: .65; }
+  45% { transform: translate(calc(var(--drift) * .4), 120px) rotate(100deg); }
+  85% { opacity: .45; }
+  100% { opacity: 0; transform: translate(var(--drift), 300px) rotate(230deg); }
+}
+@media (max-width: 1199px) {
+  .sakura__branch--overhanging { width: 310px; height: auto; top: 90px; right: -35px; }
+  .sakura__branch--foreground { width: 110px; height: auto; left: -32px; }
+}
+@media (max-width: 600px) {
+  .sakura__branch--overhanging { width: 220px; right: -55px; top: 73px; opacity: .7; }
+  .sakura__branch--foreground { width: 100px; left: -33px; opacity: .65; }
+}

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Routing checks</title></head>
+<body>
+<h1 id="status">Running routing checks…</h1><pre id="results"></pre>
+<div id="root"></div>
+<script type="module">
+  import { createElement, StrictMode, useEffect } from 'react';
+  import { createRoot } from 'react-dom/client';
+  import { BrowserRouter, useNavigate } from 'react-router';
+  import App from '/src/App.tsx';
+  import '/src/index.css';
+
+  let navigate;
+  function Harness() {
+    const routerNavigate = useNavigate();
+    useEffect(() => { navigate = routerNavigate; }, [routerNavigate]);
+    return createElement(App);
+  }
+  createRoot(document.querySelector('#root')).render(
+    createElement(StrictMode, null, createElement(BrowserRouter, null, createElement(Harness))),
+  );
+
+  const output = [];
+  const originalDocument = document;
+  const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+  const assert = (condition, message) => {
+    output.push(`${condition ? 'PASS' : 'FAIL'} ${message}`);
+    document.querySelector('#results').textContent = output.join('\n');
+    if (!condition) throw new Error(message);
+  };
+  async function ready(path, selector, title) {
+    const start = performance.now();
+    while (!navigate || location.pathname !== path || !document.querySelector(selector) || document.title !== title) {
+      if (performance.now() - start > 10000) throw new Error(`Route did not render: ${path}`);
+      await sleep(20);
+    }
+  }
+  const welcomeTitle = 'Baduk — Play Go';
+  const materialsTitle = 'Baduk — Boards & stones';
+  try {
+    await ready('/tests/routing.html', '.welcome-page', welcomeTitle);
+    assert(true, 'Unknown paths render the welcome page and title without redirecting');
+
+    document.querySelector('.welcome-brand').click();
+    await ready('/', '.welcome-page', welcomeTitle);
+    assert(document === originalDocument, 'Home Link navigates without reloading the document');
+    assert(document.querySelector('.welcome-navigation a').getAttribute('aria-current') === 'page',
+      'Play link retains its accessible current-page indication');
+
+    document.querySelector('.welcome-page button').click();
+    await sleep(30);
+    assert(document.querySelector('.welcome-page').dataset.paused === 'true', 'Welcome animation can be paused');
+
+    navigate('/materials');
+    await ready('/materials', '.material-library', materialsTitle);
+    assert(!document.querySelector('.welcome-page'), 'Materials navigation replaces the welcome page and title');
+
+    history.back();
+    await ready('/', '.welcome-page', welcomeTitle);
+    assert(document.querySelector('.welcome-page').dataset.paused === 'false',
+      'Browser Back restores the welcome title and restarts the scene unpaused');
+
+    history.forward();
+    await ready('/materials', '.material-library', materialsTitle);
+    assert(true, 'Browser Forward restores the material library and title');
+
+    navigate('/materials/?sample=ash#boards-title');
+    await ready('/materials/', '.material-library', materialsTitle);
+    assert(location.search === '?sample=ash' && location.hash === '#boards-title',
+      'Trailing slashes, query strings, and hashes retain the materials route');
+
+    navigate('/MATERIALS');
+    await ready('/MATERIALS', '.welcome-page', welcomeTitle);
+    assert(true, 'Route matching retains the original case-sensitive fallback');
+
+    navigate('/missing-route');
+    await ready('/missing-route', '.welcome-page', welcomeTitle);
+    document.querySelector('.welcome-navigation a').click();
+    await ready('/', '.welcome-page', welcomeTitle);
+    assert(document === originalDocument, 'Play Link returns from the fallback without a document reload');
+    assert(document.head.querySelectorAll('title').length === 1, 'Only the current route title remains in the document head');
+
+    document.querySelector('#status').textContent = `${output.length} routing checks passed`;
+  } catch (error) {
+    document.querySelector('#status').textContent = 'Routing checks failed';
+    document.querySelector('#results').textContent += `\n${error.message}`;
+    console.error(error);
+  }
+</script>
+</body>
+</html>

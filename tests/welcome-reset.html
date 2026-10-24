@@ -1,0 +1,30 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Board reset checks</title>
+<style>body{font:14px system-ui;background:#f3f0e8}iframe{border:0}pre{white-space:pre-wrap}</style>
+<h1 id="status">Checking reset and branch clearance…</h1><pre id="results"></pre>
+<iframe width="927" height="956" src="/tests/welcome-preview.html?motion=reduce"></iframe>
+<script type="module">
+const frame=document.querySelector('iframe'), lines=[];
+const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+function check(ok,label){lines.push(`${ok?'PASS':'FAIL'} ${label}`);document.querySelector('#results').textContent=lines.join('\n');if(!ok)throw Error(label)}
+async function ready(old){const start=performance.now();while(frame.contentDocument===old||!frame.contentDocument?.querySelector('[data-move]')){if(performance.now()-start>10000)throw Error('Load timeout');await sleep(10)}return frame.contentDocument}
+function count(doc){return [...doc.querySelectorAll('[data-move]')].filter(e=>+frame.contentWindow.getComputedStyle(e).opacity>.99).length}
+try{
+ let doc=await ready();
+ check(count(doc)===0,'Initial landing starts with an empty board');
+ await sleep(1600);check(count(doc)>0&&count(doc)<4,'Opening begins with the first moves');
+ const old=doc;frame.contentWindow.location.reload();doc=await ready(old);
+ check(count(doc)===0,'Reload clears the previous stones');
+ await sleep(900);check(count(doc)===1,'Reload plays move one first');
+ const oldBoard=doc.querySelector('.animated-board');
+ frame.contentWindow.dispatchEvent(new frame.contentWindow.PageTransitionEvent('pageshow',{persisted:true}));await sleep(50);
+ check(doc.querySelector('.animated-board')!==oldBoard&&count(doc)===0,'History restoration starts a new empty board');
+ for(const [width,height] of [[375,850],[768,1000],[927,956],[1440,900],[2560,1440]]){
+  frame.width=width;frame.height=height;await sleep(120);
+  const board=doc.querySelector('.animated-board__stage').getBoundingClientRect(),slot=doc.querySelector('.welcome-board').getBoundingClientRect();
+  check(Math.abs(board.width/slot.width-.75)<.005,`${width}px board width reduced by 25 percent`);
+  const overlaps=[...doc.querySelectorAll('.sakura__branch')].some(el=>{const b=el.getBoundingClientRect();return board.left<b.right&&board.right>b.left&&board.top<b.bottom&&board.bottom>b.top});
+  check(!overlaps,`${width}px branches stay clear of the board`);
+ }
+ document.querySelector('#status').textContent=`${lines.length} board reset checks passed`;
+}catch(error){document.querySelector('#status').textContent='Board reset checks failed';document.querySelector('#results').textContent+='\n'+error.message;console.error(error)}
+</script></html>
