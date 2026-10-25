@@ -1,6 +1,6 @@
 # Baduk
 
-React + TypeScript + Vite, with plain CSS and Canvas 2D. The welcome page at `/` introduces the game with an animated opening and sakura branches. The original material library lives at `/materials`, displaying three empty 19×19 boards and four black/white stone pairs.
+React + TypeScript + Vite, with plain CSS and Canvas 2D. The welcome page at `/` introduces the game with an animated opening and sakura branches. Play opens the Go Home menu at `/play`; Play local opens the interactive board at `/play/local`. The original material library lives at `/materials`, displaying three empty 19×19 boards and four black/white stone pairs.
 
 ## Development
 
@@ -56,7 +56,9 @@ With the dev server running, open `/tests/canvas.html`. This standalone fixture 
 
 ## Welcome screen
 
-`src/pages/` owns the welcome and material-library pages and their document titles. `main.tsx` wraps `App` in React Router's `BrowserRouter`; `App` declares `/`, `/materials`, and a welcome-page fallback for unknown paths. Internal navigation uses `Link` to update the URL without reloading the document. A production host must serve `index.html` for application routes, including `/materials` and unknown paths.
+`src/pages/` owns the welcome, Go Home, Local Play, and material-library pages and their document titles. `main.tsx` wraps `App` in React Router's `BrowserRouter`; `App` declares `/`, `/play`, `/play/local`, `/materials`, and a welcome-page fallback for unknown paths. Internal navigation uses `Link` to update the URL without reloading the document. A production host must serve `index.html` for all application routes and unknown paths.
+
+Go Home matches Figma frame `46:381`, with local SVG assets in `src/assets/go-home/` and the shared `StoneMark` logo. Unavailable menu, learning, account, and settings actions announce a temporary coming-soon message. Local Play reuses `InteractiveBoard` with its default kaya board and polished stones; each visit starts a fresh board. `/tests/routing.html` also checks this navigation flow, coming-soon feedback, local keyboard placement, and fresh-board behavior. `/tests/interactive-board.html` checks the board component directly.
 
 With the dev server running, `/tests/routing.html` checks route titles, internal links without document reloads, browser Back/Forward, animation restart after returning from the material library, trailing slashes, URL search/hash values, and the unknown-path fallback.
 

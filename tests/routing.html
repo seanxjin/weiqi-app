@@ -45,8 +45,39 @@
     document.querySelector('.welcome-brand').click();
     await ready('/', '.welcome-page', welcomeTitle);
     assert(document === originalDocument, 'Home Link navigates without reloading the document');
-    assert(document.querySelector('.welcome-navigation a').getAttribute('aria-current') === 'page',
-      'Play link retains its accessible current-page indication');
+    assert(document.querySelector('.welcome-navigation a').getAttribute('href') === '/play',
+      'Welcome Play link targets Go Home');
+
+    document.querySelector('.welcome-navigation a').click();
+    await ready('/play', '.go-home', 'Baduk — Play');
+    assert(document === originalDocument, 'Welcome Play opens Go Home without reloading');
+    assert(document.querySelector('.go-sections a').getAttribute('aria-current') === 'page',
+      'Go Home marks Play as the current section');
+    document.querySelector('.go-option').click();
+    await sleep(30);
+    assert(document.querySelector('.go-notice').textContent.includes('Play online is coming soon'),
+      'Unavailable features announce coming-soon feedback');
+    document.querySelector('a.go-option').click();
+    await ready('/play/local', '.interactive-board', 'Baduk — Local Play');
+    assert(document === originalDocument, 'Local Play opens the interactive board without reloading');
+    assert(document.querySelector('.interactive-board__status').textContent.includes('0 stones placed'),
+      'Local Play starts with an empty board');
+    const boardSurface = document.querySelector('.interactive-board__surface');
+    boardSurface.focus();
+    boardSurface.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true }));
+    await sleep(30);
+    assert(document.querySelector('.interactive-board__status').textContent.includes('White to play. 1 stones placed'),
+      'Keyboard placement updates the local board and next turn');
+    history.back();
+    await ready('/play', '.go-home', 'Baduk — Play');
+    history.forward();
+    await ready('/play/local', '.interactive-board', 'Baduk — Local Play');
+    assert(document.querySelector('.interactive-board__status').textContent.includes('0 stones placed'),
+      'Returning to Local Play starts a fresh board');
+    document.querySelector('.local-play a').click();
+    await ready('/play', '.go-home', 'Baduk — Play');
+    document.querySelector('.go-brand').click();
+    await ready('/', '.welcome-page', welcomeTitle);
 
     document.querySelector('.welcome-page button').click();
     await sleep(30);
@@ -77,8 +108,8 @@
     navigate('/missing-route');
     await ready('/missing-route', '.welcome-page', welcomeTitle);
     document.querySelector('.welcome-navigation a').click();
-    await ready('/', '.welcome-page', welcomeTitle);
-    assert(document === originalDocument, 'Play Link returns from the fallback without a document reload');
+    await ready('/play', '.go-home', 'Baduk — Play');
+    assert(document === originalDocument, 'Play Link opens Go Home from the fallback without a document reload');
     assert(document.head.querySelectorAll('title').length === 1, 'Only the current route title remains in the document head');
 
     document.querySelector('#status').textContent = `${output.length} routing checks passed`;

@@ -115,7 +115,7 @@ export function AnimatedBoardScene({
 				</div>
 			</div>
 			<figcaption className="animated-board__caption">
-				<span>19 × 19 · A WORLD OF POSSIBILITY</span>
+				<span>19 × 19</span>
 				<div className="animated-board__controls">
 					<button
 						type="button"
