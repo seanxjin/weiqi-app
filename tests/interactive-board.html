@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive board verification</title>
+  <style>
+    body.board-tests { margin: 20px; font: 14px system-ui; background: #f3f0e8; color: #333a34; }
+    header { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 20px; }
+    main { display: flex; flex-wrap: wrap; gap: 32px; align-items: start; }
+    #primary { width: 500px; max-width: 100%; }
+    #secondary { width: 260px; max-width: 100%; }
+    pre { white-space: pre-wrap; }
+  </style>
+</head>
+<body class="board-tests">
+  <header>
+    <strong id="summary">Running interactive board checks…</strong>
+    <label>Board <select id="board-theme"><option>kaya</option><option>walnut</option><option>ash</option></select></label>
+    <label>Stones <select id="stone-style"><option>polished</option><option>satin</option><option>matte</option><option>snow</option></select></label>
+  </header>
+  <main><div id="primary"></div><div id="secondary"></div></main>
+  <details><summary>Verification results</summary><pre id="results"></pre></details>
+  <script type="module">
+    import { act, createElement, StrictMode } from 'react';
+    import { createRoot } from 'react-dom/client';
+    import { InteractiveBoard } from '/src/components/InteractiveBoard.tsx';
+    import { boardGeometry as geometry, boardThemes } from '/src/lib/baduk/index.ts';
+    import { loadTexture } from '/src/lib/baduk/textures.ts';
+    import '/src/index.css';
+
+    window.IS_REACT_ACT_ENVIRONMENT = true;
+
+    const lines = [];
+    const assert = (condition, name) => {
+      lines.push(`${condition ? 'PASS' : 'FAIL'} ${name}`);
+      document.querySelector('#results').textContent = lines.join('\n');
+      if (!condition) throw Error(name);
+    };
+    const settle = () => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+    const primary = document.querySelector('#primary');
+    const secondary = document.querySelector('#secondary');
+    const root = createRoot(primary);
+    const otherRoot = createRoot(secondary);
+    const render = async props => {
+      const tree = createElement(StrictMode, null, createElement(InteractiveBoard, props));
+      if (window.IS_REACT_ACT_ENVIRONMENT) await act(async () => root.render(tree));
+      else root.render(tree);
+    };
+    const surface = () => primary.querySelector('[role="group"]');
+    const status = () => primary.querySelector('[role="status"]').textContent;
+    const placed = () => primary.querySelector('.interactive-board__stones');
+    const ghost = () => primary.querySelector('.interactive-board__ghost');
+    function coords(column, row) {
+      const rect = surface().getBoundingClientRect();
+      return { clientX: rect.left + (geometry.inset + column * geometry.spacing) / geometry.size * rect.width,
+        clientY: rect.top + (geometry.inset + row * geometry.spacing) / geometry.size * rect.height };
+    }
+    async function pointer(type, column, row, pointerType = 'mouse') {
+      await act(() => surface().dispatchEvent(new PointerEvent(type, {
+        bubbles: true, isPrimary: true, pointerType, pointerId: 1, ...coords(column, row),
+      })));
+    }
+    async function click(column, row, button = 0) {
+      await act(() => surface().dispatchEvent(new MouseEvent('click', { bubbles: true, detail: 1, button, ...coords(column, row) })));
+    }
+    async function key(value) {
+      await act(() => surface().dispatchEvent(new KeyboardEvent('keydown', { bubbles: true, cancelable: true, key: value })));
+    }
+    function pixel(canvas, column, row) {
+      const x = Math.round((geometry.inset + column * geometry.spacing) / geometry.size * canvas.width);
+      const y = Math.round((geometry.inset + row * geometry.spacing) / geometry.size * canvas.height);
+      return canvas.getContext('2d').getImageData(x, y, 1, 1).data;
+    }
+    const empty = canvas => !canvas.getContext('2d').getImageData(0, 0, canvas.width, canvas.height).data.some((value, index) => index % 4 === 3 && value);
+    const isBlack = value => value[0] < 130 && value[3] > 0;
+    const isWhite = value => value[0] > 170 && value[3] > 0;
+    try {
+      await render();
+      act(() => otherRoot.render(createElement(InteractiveBoard, { boardTheme: 'ash', size: 240 })));
+      await act(async () => { await Promise.all(Object.values(boardThemes).map(theme => loadTexture(theme.texture))); });
+      await settle();
+      assert(surface().getAttribute('aria-label').includes(boardThemes.kaya.name), 'No configuration defaults to kaya');
+      assert(status().includes('Black to play') && status().includes('0 stones'), 'Empty board starts with black');
+      assert(Math.abs(surface().getBoundingClientRect().width - 500) < 1, 'Default size fills available width');
+      assert(empty(placed()) && empty(ghost()), 'Initial stone layers are empty');
+      const secondarySurface = secondary.querySelector('[role="group"]');
+      assert(secondarySurface.getAttribute('aria-label').includes(boardThemes.ash.name) && secondarySurface.getBoundingClientRect().width === 240, 'Partial configuration applies board theme and explicit size');
+
+      await pointer('pointermove', 4.49, 5.49);
+      assert(status().includes('column 5, row 6'), `Hover rounds to nearest intersection (${status()})`);
+      const preview = pixel(ghost(), 4, 5);
+      assert(isBlack(preview) && getComputedStyle(ghost()).opacity === '0.5', 'Black ghost has 50% opacity');
+      const mutations = [];
+      const observer = new MutationObserver(records => mutations.push(...records));
+      observer.observe(primary.querySelector('.board-canvas'), { attributes: true });
+      observer.observe(placed(), { attributes: true });
+      await pointer('pointermove', 5, 6);
+      await settle();
+      observer.disconnect();
+      assert(mutations.length === 0, 'Hover does not redraw board or placed-stone canvases');
+
+      await click(0, 0);
+      assert(isBlack(pixel(placed(), 0, 0)) && pixel(placed(), 0, 0)[3] === 255, 'Click uses its coordinates and places opaque black');
+      assert(status().includes('White to play') && empty(ghost()), 'Successful placement changes turn and hides occupied ghost');
+      await click(0, 0);
+      assert(status().includes('1 stones') && status().includes('White to play'), 'Occupied clicks preserve stones and turn');
+      await pointer('pointermove', 18, 18);
+      assert(isWhite(pixel(ghost(), 18, 18)), 'Next ghost is white');
+      await click(18, 18);
+      assert(isWhite(pixel(placed(), 18, 18)) && status().includes('Black to play'), 'Second move is white and returns turn to black');
+      await click(3, 3, 2);
+      assert(status().includes('2 stones'), 'Secondary click does not place');
+
+      await pointer('pointermove', -1.4, 19.4);
+      assert(pixel(ghost(), 0, 18)[3] > 0, 'Wooden margin snaps to edge intersections');
+      await click(-1.4, 19.4);
+      assert(isBlack(pixel(placed(), 0, 18)), 'Margin click places at the nearest edge');
+      await pointer('pointermove', 8, 8);
+      await pointer('pointerout', 8, 8);
+      assert(empty(ghost()), 'Leaving the board clears ghost');
+      await pointer('pointermove', 8, 8);
+      await pointer('pointercancel', 8, 8);
+      assert(empty(ghost()), 'Pointer cancellation clears ghost');
+      await pointer('pointerdown', 3, 3, 'touch');
+      await pointer('pointerup', 3, 3, 'touch');
+      await click(3, 3);
+      assert(isWhite(pixel(placed(), 3, 3)) && empty(ghost()), 'Touch tap places once and leaves no ghost');
+
+      surface().focus();
+      await key('ArrowRight');
+      assert(status().includes('column 11, row 10'), 'Keyboard starts from center and navigates');
+      await key('Enter');
+      assert(isBlack(pixel(placed(), 10, 9)), 'Enter places at keyboard intersection');
+      await key('ArrowDown');
+      await key(' ');
+      assert(isWhite(pixel(placed(), 10, 10)), 'Space places next color');
+      await key(' ');
+      assert(status().includes('6 stones'), 'Keyboard also rejects occupied intersections');
+      for (let i = 0; i < 25; i++) await key('ArrowLeft');
+      assert(status().includes('column 1, row 11'), 'Keyboard stays within board bounds');
+      act(() => surface().blur());
+      assert(empty(ghost()), 'Blur clears keyboard preview');
+
+      const stoneSnapshots = new Map();
+      for (const boardTheme of ['kaya', 'walnut', 'ash']) {
+        for (const stoneStyle of ['polished', 'satin', 'matte', 'snow']) {
+          await render({ boardTheme, stoneStyle });
+          await pointer('pointermove', 7, 7);
+          await settle();
+          assert(surface().getAttribute('aria-label').includes(boardThemes[boardTheme].name) && status().includes('6 stones') && status().includes('Black to play'), `${boardTheme}/${stoneStyle} preserves play`);
+          const snapshot = placed().toDataURL();
+          if (stoneSnapshots.has(stoneStyle)) assert(snapshot === stoneSnapshots.get(stoneStyle), `${stoneStyle} appearance is consistent across board themes`);
+          else stoneSnapshots.set(stoneStyle, snapshot);
+        }
+      }
+      assert(new Set(stoneSnapshots.values()).size === 4, 'All four stone finishes render distinct appearances');
+      await render({ boardTheme: undefined, stoneStyle: undefined });
+      assert(surface().getAttribute('aria-label').includes(boardThemes.kaya.name), 'Explicit undefined uses default board theme');
+      await pointer('pointermove', 2, 2);
+      const defaultPreview = ghost().toDataURL();
+      await render({ stoneStyle: 'polished' });
+      assert(ghost().toDataURL() === defaultPreview, 'Omitted and undefined stone style default to polished');
+
+      for (const width of [280, 375, 640]) {
+        primary.style.width = `${width}px`;
+        await settle();
+        await pointer('pointermove', 16, 17);
+        assert(pixel(ghost(), 16, 17)[3] > 0 && isBlack(pixel(placed(), 0, 0)), `${width}px resized stones and ghost align`);
+        assert([...primary.querySelectorAll('canvas')].every(canvas => canvas.width === Math.round(canvas.getBoundingClientRect().width * devicePixelRatio)), `${width}px density-correct canvases`);
+      }
+      const density = Object.getOwnPropertyDescriptor(window, 'devicePixelRatio');
+      try {
+        Object.defineProperty(window, 'devicePixelRatio', { value: 2, configurable: true });
+        window.dispatchEvent(new Event('resize'));
+        await settle();
+        assert([...primary.querySelectorAll('canvas')].every(canvas => canvas.width === Math.round(canvas.getBoundingClientRect().width * 2)), 'DPR change updates every backing canvas');
+        assert(pixel(ghost(), 16, 17)[3] > 0 && isBlack(pixel(placed(), 0, 0)), 'DPR change preserves alignment');
+      } finally {
+        if (density) Object.defineProperty(window, 'devicePixelRatio', density);
+        else delete window.devicePixelRatio;
+        window.dispatchEvent(new Event('resize'));
+      }
+      assert(secondary.querySelector('[role="status"]').textContent.includes('0 stones'), 'Independent instances have independent state');
+      primary.style.width = '500px';
+      await render();
+      await pointer('pointerout', 0, 0);
+      document.querySelector('#summary').textContent = `${lines.length} interactive board checks passed`;
+    } catch (error) {
+      document.querySelector('#summary').textContent = `FAIL: ${error.message}`;
+      document.querySelector('details').open = true;
+      console.error(error);
+    }
+    window.IS_REACT_ACT_ENVIRONMENT = false;
+    async function updateTheme() {
+      await render({ boardTheme: document.querySelector('#board-theme').value, stoneStyle: document.querySelector('#stone-style').value });
+    }
+    document.querySelector('#board-theme').addEventListener('change', updateTheme);
+    document.querySelector('#stone-style').addEventListener('change', updateTheme);
+  </script>
+</body>
+</html>

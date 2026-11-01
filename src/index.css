@@ -1,3 +1,4 @@
+@font-face { font-family: 'Baduk Inter'; font-style: normal; font-weight: 400 500; font-display: swap; src: url('./assets/fonts/inter-latin.woff2') format('woff2'); }
 :root {
   --bg: #f3f0e8;
   --text: #333a34;

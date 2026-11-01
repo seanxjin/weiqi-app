@@ -35,7 +35,7 @@ export default function WelcomePage() {
 					<span>BADUK</span>
 				</Link>
 				<nav className="welcome-navigation" aria-label="Main navigation">
-					<Link to="/" aria-current="page">
+					<Link to="/play">
 						<StoneMark style={welcomeAppearance.stoneStyle} size={24} compact />
 						<span>Play</span>
 					</Link>
@@ -43,7 +43,7 @@ export default function WelcomePage() {
 			</aside>
 			<main className="welcome-content" id="main-content">
 				<div className="welcome-introduction">
-					<p className="welcome-eyebrow">THE ART OF THE NEXT MOVE</p>
+					<p className="welcome-eyebrow">Some Text</p>
 					<h1 aria-label="Play Go">
 						<span aria-hidden="true">Play </span>
 						<span className="welcome-game-name" aria-hidden="true">
@@ -53,9 +53,9 @@ export default function WelcomePage() {
 						</span>
 					</h1>
 					<p className="welcome-description">
-						A quiet mind. An open board.
+						Some text....
 						<br />
-						Every stone, a new possibility.
+						Some other text...
 					</p>
 				</div>
 				<div className="welcome-board">
