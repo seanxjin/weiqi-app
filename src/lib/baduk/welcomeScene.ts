@@ -1,4 +1,4 @@
-import type { BoardThemeId, StoneStyleId } from '../../lib/baduk'
+import type { BoardThemeId, StoneStyleId } from 'weiqi_board'
 import type { AnimatedBoardMove } from '../../components/AnimatedBoardScene.types'
 
 export interface SceneAppearance {

@@ -1,6 +1,6 @@
 import { useCallback } from 'react'
-import { drawStone, stoneStyles } from '../lib/baduk'
-import type { StoneColor, StoneStyleId } from '../lib/baduk'
+import { drawStone, stoneStyles } from 'weiqi_board'
+import type { StoneColor, StoneStyleId } from 'weiqi_board'
 import { CanvasSurface } from './CanvasSurface'
 
 export interface StoneCanvasProps {

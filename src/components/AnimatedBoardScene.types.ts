@@ -1,4 +1,4 @@
-import type { StoneColor } from '../lib/baduk'
+import type { StoneColor } from 'weiqi_board'
 
 /** A grid intersection and its normalized tracks within a shared board timeline. */
 export interface AnimatedBoardMove {

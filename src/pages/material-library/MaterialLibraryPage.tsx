@@ -1,8 +1,7 @@
 import { useEffect } from 'react'
-import { BoardCanvas } from '../../components/BoardCanvas'
-import { StoneCanvas } from '../../components/StoneCanvas'
-import { boardThemes, stoneStyles } from '../../lib/baduk'
-import type { BoardThemeId, StoneStyleId } from '../../lib/baduk'
+import { BoardCanvas, StoneCanvas } from '../../components/board'
+import { boardThemes, stoneStyles } from 'weiqi_board'
+import type { BoardThemeId, StoneStyleId } from 'weiqi_board'
 import './MaterialLibraryPage.css'
 
 const boards: BoardThemeId[] = ['kaya', 'walnut', 'ash']

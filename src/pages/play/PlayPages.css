@@ -1,21 +1,9 @@
 .go-home, .local-play { font-family: 'Baduk Inter', Inter, 'Segoe UI', Arial, sans-serif; }
-.go-home { --go-gap: clamp(12px, 3.9dvh, 40px); display: flex; min-height: 100dvh; }
+.go-home { --go-gap: clamp(12px, 3.9dvh, 40px); display: flex; min-height: calc(100dvh - var(--app-toolbar-height)); }
 .go-home button { font: inherit; color: inherit; cursor: pointer; border: 0; background: none; padding: 0; text-align: left; }
 .go-home a { color: inherit; text-decoration: none; }
 .go-home img { display: block; flex-shrink: 0; }
 .go-home a:focus-visible, .go-home button:focus-visible, .local-play a:focus-visible { outline: 2px solid var(--text); outline-offset: 4px; }
-.go-sidebar { width: 208px; flex-shrink: 0; padding: clamp(16px, 3.9dvh, 40px) 24px clamp(16px, 3.125dvh, 32px); background: #ece9e0; border-right: 1px solid var(--divider); display: flex; flex-direction: column; justify-content: space-between; gap: var(--go-gap); }
-.go-sidebar__primary { display: flex; flex-direction: column; gap: clamp(20px, 6.4dvh, 66px); }
-.go-brand { display: flex; flex-direction: column; align-items: flex-start; gap: 13px; font-size: 11px; font-weight: 500; }
-.go-sections { display: flex; flex-direction: column; gap: 8px; }
-.go-sections a, .go-sections button { display: flex; align-items: center; gap: 14px; min-height: 48px; padding: 0 16px; border-radius: 4px; font-size: 14px; color: var(--muted); }
-.go-sections [aria-current='page'] { background: #e1e2d7; color: var(--text); font-weight: 500; }
-.go-utilities { display: flex; flex-direction: column; align-items: flex-start; gap: 26px; }
-.go-guide { padding-inline: 12px; }
-.go-guide p { font-size: 10px; color: var(--muted); margin-bottom: 10px; }
-.go-guide button { display: flex; gap: 8px; align-items: center; white-space: nowrap; font-size: 13px; }
-.go-utility-divider { flex-shrink: 0; }
-.go-home .go-settings { display: flex; align-items: center; gap: 12px; padding-inline: 12px; font-size: 13px; color: var(--muted); }
 .go-content { min-width: 0; flex: 1; padding: clamp(12px, 3.5dvh, 36px) clamp(24px, 3.9vw, 56px) clamp(12px, 3.125dvh, 32px); display: flex; flex-direction: column; gap: var(--go-gap); }
 .go-topbar { display: flex; justify-content: space-between; align-items: center; min-height: 32px; gap: 20px; }
 .go-location > p { font-size: 12px; color: var(--muted); }
@@ -33,19 +21,26 @@
 .go-option__arrow { width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; border-radius: 50%; flex-shrink: 0; }
 .go-option:is(:hover, :focus-visible) .go-option__arrow { background: #414d41; }
 .go-option:is(:hover, :focus-visible) .go-option__arrow img { filter: brightness(0) invert(1); }
-.go-option:hover, .go-sections button:hover { background: #ece9e0; }
+.go-option:hover { background: #ece9e0; }
 .go-presence { display: flex; align-items: center; gap: 8px; margin-top: clamp(8px, 2.34dvh, 24px); font-size: 11px; color: var(--muted); line-height: 14px; }
 .go-reserved > div { margin-top: clamp(8px, 2.34dvh, 24px); border: 1px solid var(--divider); border-radius: 4px; padding: clamp(10px, 2.24dvh, 23px); }
 .go-reserved h3 { font-size: 18px; line-height: 22px; font-weight: 500; }
 .go-reserved p { margin-top: clamp(6px, 1.56dvh, 16px); color: var(--muted); font-size: 15px; line-height: 1.6; }
 .go-footer { display: flex; justify-content: space-between; gap: 20px; font-size: 11px; line-height: 13px; color: var(--muted); }
-.go-notice { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); max-width: calc(100% - 32px); z-index: 5; font-size: 13px; }
-.go-notice > span { display: block; padding: 14px 20px; background: var(--text); color: var(--bg); border-radius: 4px; box-shadow: 0 4px 16px rgb(36 24 14 / 12%); }
-.local-play { padding: 36px 24px 48px; min-height: 100svh; }
-.local-play header, .local-play__board { max-width: 800px; margin-inline: auto; }
-.local-play header { margin-bottom: 32px; }
-.local-play a { color: var(--muted); font-size: 13px; text-underline-offset: 4px; }
-.local-play h1 { font-size: 32px; margin-top: 24px; }
+.local-play { padding: 40px 48px 32px; min-height: calc(100svh - var(--app-toolbar-height)); }
+.local-play__heading, .local-play__board { max-width: 1136px; margin-inline: auto; }
+.local-play__heading { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 56px; margin-bottom: 32px; }
+.local-play__heading p { font-size: 10px; letter-spacing: 1.8px; color: var(--muted); }
+.local-play__heading h1 { font-size: 28px; letter-spacing: -.8px; margin-top: 8px; }
+.local-play__heading > span { color: var(--muted); font-size: 12px; white-space: nowrap; }
+@container (width < 960px) {
+  .local-play { padding: 24px; }
+  .local-play__heading { flex-wrap: wrap; gap: 12px; }
+}
+@container (width < 480px) {
+  .local-play { padding: 20px 16px 32px; }
+  .local-play__heading h1 { font-size: 25px; }
+}
 @media (max-width: 1099px) {
   .go-home .go-option { gap: 12px; padding-inline: 12px; }
   .go-option__label { font-size: 16px; }
@@ -92,9 +87,6 @@
   .go-home { --go-gap: 10px; }
   .go-content { padding-block: 12px; }
   .go-topbar { min-height: 20px; }
-  .go-sidebar__primary { gap: 16px; }
-  .go-brand { flex-direction: row; align-items: center; }
-  .go-utilities { gap: 12px; }
   .go-introduction p, .go-reserved p { display: none; }
   .go-home .go-option { min-height: 48px; padding-block: 8px; }
   .go-option__details { gap: 0; }
@@ -109,14 +101,6 @@
 }
 
 .go-location { display: flex; align-items: center; gap: 12px; }
-.go-home .go-sidebar-toggle { width: 40px; height: 40px; display: grid; place-items: center; border: 1px solid var(--divider); border-radius: 4px; font-size: 20px; }
-.go-sidebar-drawer { position: fixed; inset: 0 auto 0 0; margin: 0; padding: 0; border: 0; width: 256px; max-width: calc(100vw - 48px); height: 100dvh; max-height: 100dvh; color: var(--text); background: #ece9e0; }
-.go-sidebar-drawer[open] { animation: go-drawer-enter 220ms ease-out; }
-.go-sidebar-drawer::backdrop { background: rgb(33 39 34 / 25%); }
-.go-sidebar-drawer .go-sidebar { position: relative; width: 100%; min-height: 100%; gap: 24px; }
-.go-home .go-sidebar-close { position: absolute; top: 12px; right: 12px; width: 36px; height: 36px; display: grid; place-items: center; border-radius: 4px; font-size: 26px; color: var(--muted); }
-@keyframes go-drawer-enter { from { transform: translateX(-100%); } to { transform: translateX(0); } }
-@media (prefers-reduced-motion: reduce) { .go-sidebar-drawer[open] { animation: none; } }
 @media (max-width: 999px) {
   .go-home { flex-direction: column; }
   .go-account { gap: 12px; }

@@ -1,0 +1,40 @@
+.app-layout { --go-gap: clamp(12px, 3.9dvh, 40px); --app-toolbar-height: 0px; display: flex; min-height: 100dvh; font-family: 'Baduk Inter', Inter, 'Segoe UI', Arial, sans-serif; }
+.app-layout__content { flex: 1; min-width: 0; container-type: inline-size; }
+.app-layout__menu-bar { display: flex; align-items: center; height: var(--app-toolbar-height); padding: 8px 16px; }
+.go-sidebar { position: sticky; top: 0; height: 100dvh; overflow-y: auto; }
+.go-sidebar button { font: inherit; color: inherit; cursor: pointer; border: 0; background: none; padding: 0; text-align: left; }
+.go-sidebar a { color: inherit; text-decoration: none; }
+.go-sidebar img { display: block; flex-shrink: 0; }
+.go-sidebar a:focus-visible, .go-sidebar button:focus-visible, .go-sidebar-toggle:focus-visible { outline: 2px solid var(--text); outline-offset: 4px; }
+.go-sidebar .go-sections a, .go-sidebar .go-sections button { display: flex; align-items: center; gap: 14px; min-height: 48px; padding: 0 16px; border-radius: 4px; font-size: 14px; color: var(--muted); }
+.go-sidebar .go-sections [aria-current='page'] { background: #e1e2d7; color: var(--text); font-weight: 500; }
+.go-sidebar .go-sections button:hover { background: var(--bg); }
+.go-sidebar-toggle { font: inherit; color: inherit; cursor: pointer; background: none; padding: 0; }
+.go-sidebar { width: 208px; flex-shrink: 0; padding: clamp(16px, 3.9dvh, 40px) 24px clamp(16px, 3.125dvh, 32px); background: #ece9e0; border-right: 1px solid var(--divider); display: flex; flex-direction: column; justify-content: space-between; gap: var(--go-gap); }
+.go-sidebar__primary { display: flex; flex-direction: column; gap: clamp(20px, 6.4dvh, 66px); }
+.go-brand { display: flex; flex-direction: column; align-items: flex-start; gap: 13px; font-size: 11px; font-weight: 500; }
+.go-sections { display: flex; flex-direction: column; gap: 8px; }
+.go-utilities { display: flex; flex-direction: column; align-items: flex-start; gap: 26px; }
+.go-guide { padding-inline: 12px; }
+.go-guide p { font-size: 10px; color: var(--muted); margin-bottom: 10px; }
+.go-sidebar .go-guide button { display: flex; gap: 8px; align-items: center; white-space: nowrap; font-size: 13px; }
+.go-utility-divider { flex-shrink: 0; }
+.go-sidebar .go-settings { display: flex; align-items: center; gap: 12px; padding-inline: 12px; font-size: 13px; color: var(--muted); }
+.go-notice { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); max-width: calc(100% - 32px); z-index: 5; font-size: 13px; }
+.go-notice > span { display: block; padding: 14px 20px; background: var(--text); color: var(--bg); border-radius: 4px; box-shadow: 0 4px 16px rgb(36 24 14 / 12%); }
+.go-sidebar-toggle { width: 40px; height: 40px; display: grid; place-items: center; border: 1px solid var(--divider); border-radius: 4px; font-size: 20px; }
+.go-sidebar-drawer { position: fixed; inset: 0 auto 0 0; margin: 0; padding: 0; border: 0; width: 256px; max-width: calc(100vw - 48px); height: 100dvh; max-height: 100dvh; color: var(--text); background: #ece9e0; }
+.go-sidebar-drawer[open] { animation: go-drawer-enter 220ms ease-out; }
+.go-sidebar-drawer::backdrop { background: rgb(33 39 34 / 25%); }
+.go-sidebar-drawer .go-sidebar { position: relative; width: 100%; min-height: 100%; gap: 24px; }
+@keyframes go-drawer-enter { from { transform: translateX(-100%); } to { transform: translateX(0); } }
+@media (prefers-reduced-motion: reduce) { .go-sidebar-drawer[open] { animation: none; } }
+.go-sidebar .go-sidebar-close { position: absolute; top: 12px; right: 12px; width: 36px; height: 36px; display: grid; place-items: center; border-radius: 4px; font-size: 26px; color: var(--muted); }
+@media (width < 1000px) {
+  .app-layout { --app-toolbar-height: 56px; flex-direction: column; }
+}
+@media (max-height: 540px) {
+  .go-sidebar__primary { gap: 16px; }
+  .go-brand { flex-direction: row; align-items: center; }
+  .go-utilities { gap: 12px; }
+}

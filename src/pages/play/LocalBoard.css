@@ -1,0 +1,74 @@
+.local-game {
+  --local-active: #e4e5da;
+  --local-board-width: min(744px, calc(100cqw - 488px));
+  display: grid;
+  grid-template-columns: minmax(0, 744px) 352px;
+  gap: 40px;
+  width: 100%;
+  color: var(--text);
+}
+.local-game button { color: inherit; font: inherit; cursor: pointer; }
+.local-game button:disabled { opacity: .4; cursor: default; }
+.local-game button:focus-visible { outline: 2px solid #414d41; outline-offset: 3px; }
+.local-game img { display: block; flex-shrink: 0; }
+.local-game__playing-area { min-width: 0; width: 100%; }
+.local-game__players { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 48px; height: 48px; margin-bottom: 16px; }
+.local-game__player { display: flex; align-items: center; gap: 12px; font-size: 14px; font-weight: 500; }
+.local-game__player-stone { width: 29px; height: 29px; position: relative; flex-shrink: 0; }
+.local-game__player-stone .stone-canvas { position: absolute; left: -4px; top: -2.7px; max-width: none; }
+.local-game__board-stage { position: relative; aspect-ratio: 1; border-radius: 6px; --board-shadow: 0 12px 28px -8px rgb(59 48 35 / 15%); }
+.local-game__board-overlay { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.local-game__coordinates { fill: #665f4d; font: 10px 'Baduk Inter', Inter, sans-serif; text-anchor: middle; dominant-baseline: central; }
+.local-game__marker--black { filter: invert(1); }
+.local-game__board-stage .weiqi-board__instructions,
+.local-game__board-stage .weiqi-board__status,
+.local-game__sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.local-game__board-footer { display: flex; align-items: center; gap: 12px; min-height: 28px; margin-top: 16px; font-size: 11px; }
+.local-game__turn, .local-game__last-move { display: flex; align-items: center; gap: 8px; line-height: 1.5; }
+.local-game__last-move { margin-left: auto; color: var(--muted); font-size: 10px; }
+.local-game .local-game__pass { padding: 4px 10px; border: 1px solid var(--divider); border-radius: 4px; background: transparent; font-size: 11px; }
+.local-game__feedback { font-size: 12px; line-height: 1.6; }
+.local-game__feedback p:not(:empty) { margin-top: 8px; }
+.local-game__feedback button { padding: 6px 12px; margin-top: 8px; border: 1px solid var(--divider); border-radius: 4px; background: transparent; }
+.local-game__error { color: #8b382e; }
+.local-game__history { display: flex; flex-direction: column; min-width: 0; height: calc(var(--local-board-width) + 108px); border-left: 1px solid var(--divider); padding-left: 23px; }
+.local-game__history-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 48px; flex-shrink: 0; }
+.local-game__history-heading h2 { font-size: 20px; letter-spacing: -.4px; }
+.local-game__history-heading > span { font-size: 9px; letter-spacing: 1.2px; color: var(--muted); }
+.local-game__heading-divider { max-width: 100%; flex-shrink: 0; }
+.local-game__move-scroll { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; margin-bottom: 32px; }
+.local-game__move-table { width: 100%; table-layout: fixed; border-collapse: collapse; text-align: left; }
+.local-game__pair-column { width: 42px; }
+.local-game__move-table thead { position: sticky; top: 0; z-index: 1; background: var(--bg); }
+.local-game__move-table th { font-weight: 400; }
+.local-game__move-table thead th { height: 48px; color: var(--muted); font-size: 9px; letter-spacing: 1.2px; text-transform: uppercase; }
+.local-game__move-table thead th > span:not(.local-game__sr-only) { display: flex; align-items: center; gap: 8px; }
+.local-game__move-table tbody th { height: 32px; font-size: 11px; color: var(--muted); }
+.local-game__move-table td { height: 32px; padding: 2px 0; }
+.local-game__move-table td button { display: flex; justify-content: space-between; align-items: center; width: 100%; min-width: 0; height: 28px; padding: 0 12px; border: 0; border-radius: 4px; background: transparent; font-size: 13px; text-align: left; }
+.local-game__move-table td button:hover { background: #ece9e0; }
+.local-game__move-table td button[aria-current='step'] { background: var(--local-active); font-weight: 500; }
+.local-game__move-table .local-game__empty { height: 64px; color: var(--muted); font-size: 12px; }
+.local-game__review-controls { display: flex; flex-direction: column; gap: 20px; flex-shrink: 0; }
+.local-game__position { display: flex; justify-content: space-between; gap: 8px; font-size: 11px; color: var(--muted); }
+.local-game__position span:last-child { font-size: 9px; letter-spacing: 1.2px; color: var(--text); }
+.local-game__navigation { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.local-game__navigation > div { display: flex; flex-direction: column; align-items: center; gap: 8px; min-width: 0; }
+.local-game__navigation button { display: grid; place-items: center; width: 100%; height: 40px; border: 1px solid var(--divider); border-radius: 4px; background: transparent; }
+.local-game__navigation span { font-size: 9px; color: var(--muted); }
+.local-game .local-game__undo { display: flex; align-items: center; justify-content: center; gap: 9px; width: 100%; min-height: 42px; border: 0; border-radius: 4px; background: var(--local-active); font-size: 12px; }
+.local-game__encouragement { text-align: center; font-size: 11px; color: var(--muted); }
+.local-game__navigation button:hover:not(:disabled), .local-game__pass:hover:not(:disabled) { background: #e4e5da; }
+.local-game__undo:hover:not(:disabled) { background: #dadcce; }
+@container (width < 960px) {
+  .local-game { display: flex; flex-direction: column; gap: 32px; }
+  .local-game__playing-area { max-width: 744px; margin-inline: auto; }
+  .local-game__history { height: auto; border-left: 0; border-top: 1px solid var(--divider); padding: 12px 0 0; }
+  .local-game__heading-divider { display: none; }
+  .local-game__move-scroll { flex: none; max-height: 360px; }
+}
+@container (width < 480px) {
+  .local-game__board-footer { flex-wrap: wrap; }
+  .local-game__last-move { margin-left: 0; }
+  .local-game__players { column-gap: 16px; }
+}

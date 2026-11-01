@@ -1,11 +1,10 @@
 import { useEffect, useRef } from "react";
 import { animate } from "motion";
 import type { AnimationPlaybackControls } from "motion";
-import { BoardCanvas } from "./BoardCanvas";
-import { StoneCanvas } from "./StoneCanvas";
+import { BoardCanvas, StoneCanvas } from "./board";
 import { StoneMark } from "./StoneMark";
-import { boardThemes, welcomeBoardGeometry } from "../lib/baduk";
-import type { BoardGeometry, BoardThemeId, StoneStyleId } from "../lib/baduk";
+import { boardThemes, welcomeBoardGeometry } from 'weiqi_board';
+import type { BoardGeometry, BoardThemeId, StoneStyleId } from 'weiqi_board';
 import type { AnimatedBoardMove } from "./AnimatedBoardScene.types";
 import "./AnimatedBoardScene.css";
 
@@ -17,7 +16,8 @@ interface AnimatedBoardSceneProps {
 	geometry?: BoardGeometry;
 	paused: boolean;
 	reducedMotion: boolean;
-	onTogglePause: () => void;
+	onTogglePause?: () => void;
+	showCaption?: boolean;
 }
 
 const stoneDiameter = 28;
@@ -32,6 +32,7 @@ export function AnimatedBoardScene({
 	paused,
 	reducedMotion,
 	onTogglePause,
+	showCaption = true,
 }: AnimatedBoardSceneProps) {
 	const stage = useRef<HTMLDivElement>(null);
 	const playback = useRef<AnimationPlaybackControls[]>([]);
@@ -53,13 +54,13 @@ export function AnimatedBoardScene({
 						duration,
 						times: move.opacityTimes,
 						ease: [...easing],
-						repeat: 0,
+						repeat: Infinity,
 					},
 					y: {
 						duration,
 						times: move.landingTimes,
 						ease: [...easing],
-						repeat: 0,
+						repeat: Infinity,
 					},
 				},
 			),
@@ -114,7 +115,7 @@ export function AnimatedBoardScene({
 					))}
 				</div>
 			</div>
-			<figcaption className="animated-board__caption">
+			{showCaption && <figcaption className="animated-board__caption">
 				<span>19 × 19</span>
 				<div className="animated-board__controls">
 					<button
@@ -127,7 +128,7 @@ export function AnimatedBoardScene({
 					</button>
 					<StoneMark style={stoneStyle} size={22} horizontal />
 				</div>
-			</figcaption>
+			</figcaption>}
 		</figure>
 	);
 }

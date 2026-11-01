@@ -1,0 +1,10 @@
+@import 'weiqi_board/style.css';
+
+.weiqi-board-canvas { --weiqi-board-shadow: var(--board-shadow); }
+
+.interactive-board {
+  --weiqi-board-text: var(--text, #333a34);
+  --weiqi-board-muted: var(--muted, #77796e);
+  --weiqi-board-shadow: var(--board-shadow, 0 12px 28px -8px rgb(36 24 14 / 22%));
+  font: inherit;
+}

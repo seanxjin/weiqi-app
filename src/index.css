@@ -18,8 +18,5 @@
 body { margin: 0; min-width: 280px; }
 h1, h2, h3, h4, p, figure { margin: 0; }
 h1, h2, h3, h4 { font-weight: 400; }
-canvas { display: block; width: var(--canvas-size, 100%); max-width: 100%; aspect-ratio: 1; }
-.board-canvas { border-radius: 0.875%; box-shadow: var(--board-shadow); }
-.asset-error { margin-top: 12px; font-size: 12px; }
 button, a { -webkit-tap-highlight-color: transparent; }
 ::selection { background: #ddd8c9; }

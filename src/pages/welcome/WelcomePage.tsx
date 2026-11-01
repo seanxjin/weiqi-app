@@ -3,12 +3,12 @@ import { Link } from "react-router";
 import { AnimatedBoardScene } from "../../components/AnimatedBoardScene";
 import { StoneMark } from "../../components/StoneMark";
 import { SakuraBranches } from "../../components/sakura/SakuraBranches";
-import { welcomeBoardGeometry } from "../../lib/baduk";
+import { welcomeBoardGeometry } from 'weiqi_board';
 import {
 	boardLoopSeconds,
 	welcomeAppearance,
 	welcomeMoves,
-} from "./welcomeScene";
+} from "../../lib/baduk/welcomeScene";
 import "./WelcomePage.css";
 
 export default function WelcomePage() {

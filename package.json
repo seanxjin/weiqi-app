@@ -4,12 +4,18 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "postinstall": "npm --prefix ../weiqi_board ci --ignore-scripts && npm run board:build",
+    "board:build": "npm --prefix ../weiqi_board run build",
+    "wasm:copy": "node scripts/copy-wasm.mjs",
+    "predev": "npm run wasm:copy && npm run board:build",
     "dev": "vite",
+    "prebuild": "npm run wasm:copy && npm run board:build",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview"
   },
   "dependencies": {
+    "weiqi_board": "file:../weiqi_board",
     "motion": "^14.6.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
