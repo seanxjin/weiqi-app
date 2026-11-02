@@ -2,8 +2,12 @@ export type EngineColor = 'Black' | 'White'
 type Cell = EngineColor | 'Empty'
 type Point = { x: number; y: number }
 export type EngineMove =
-  | { type: 'play'; color: EngineColor; point: Point }
-  | { type: 'pass'; color: EngineColor }
+  { type: 'play'; color: EngineColor; point: Point } | { type: 'pass'; color: EngineColor }
+
+interface EngineMoveRecord {
+  move: EngineMove
+  capturedStones: Point[]
+}
 
 export interface EnginePosition {
   board: { size: number; cells: Cell[] }
@@ -14,18 +18,17 @@ export interface EnginePosition {
 }
 
 export type IllegalMoveReason =
-  | 'OutOfBounds' | 'Occupied' | 'WrongPlayer' | 'Suicide' | 'Ko' | 'GameEnded' | 'Superko'
+  'OutOfBounds' | 'Occupied' | 'WrongPlayer' | 'Suicide' | 'Ko' | 'GameEnded' | 'Superko'
 
 export type EngineMoveResult =
-  | { ok: true; nextPosition: EnginePosition }
-  | { ok: false; reason: IllegalMoveReason }
+  { ok: true; nextPosition: EnginePosition } | { ok: false; reason: IllegalMoveReason }
 
 export interface EngineGame {
   play(move: EngineMove): EngineMoveResult
   pass(): EngineMoveResult
   turn(): EngineColor
-  undo(): { move: EngineMove } | null
-  history(): { move: EngineMove }[]
+  undo(): EngineMoveRecord | null
+  history(): EngineMoveRecord[]
   positions(): EnginePosition[]
   delete(): void
 }

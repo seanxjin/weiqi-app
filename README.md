@@ -4,12 +4,30 @@ React + TypeScript + Vite, with plain CSS and Canvas 2D. The welcome page at `/`
 
 ## Development
 
+The board is installed into `node_modules` from the versioned npm package archive
+`vendor/weiqi_board-0.1.0.tgz`. Commit this archive with the app. Installing, building,
+and running the app does not require a `weiqi_board` source checkout or build.
+
+To upgrade the board, run `npm ci`, `npm test`, and `npm pack` in its independent
+source checkout. Copy the resulting archive into this app's `vendor/` directory,
+then run `npm install ./vendor/weiqi_board-<version>.tgz --save-exact` and commit
+the archive, `package.json`, and `package-lock.json`. Board releases should use a
+new package version. `npm pack` builds the package before creating the archive.
+
+The separate rules engine setup still requires the WASM artifacts in
+`weiqi-ruleset/build/wasm/` beside the app, as used by `npm run wasm:copy`.
+
 ```sh
 npm install
 npm run dev
 npm run build
 npm run lint
+npm run lint:fix
+npm run format
+npm run format:check
 ```
+
+Oxlint checks TypeScript, JavaScript, and React code, including Rules of Hooks and component exports for Fast Refresh. `lint` fails on errors or warnings; `lint:fix` applies available automatic fixes. Prettier formats source, styles, tests, documentation, and configuration using two spaces, single quotes, and no semicolons. Generated build output, copied WASM artifacts, test reports, dependencies, and the npm lockfile are excluded. Run `npm run lint` and `npm run format:check` for read-only checks before merging. Type checking remains part of `npm run build`.
 
 ## Reusable components
 
@@ -53,12 +71,11 @@ The `polished` ID remains compatible with existing callers, but now displays Sla
 
 With the dev server running, open `/tests/canvas.html`. This standalone fixture checks the 1440, 1100, 768, 700, and 375px layouts, resizing, bitmap density (including simulated DPR 2), accessible labels, texture loading, grid geometry, deterministic stones, and transparency. It also checks that shell grain is exclusive to white Yuki stones and displays all eight stones at 37px diameter with desktop/mobile previews for visual review. It is not an entry point in the production build.
 
-
 ## Welcome screen
 
 `src/pages/` owns the welcome, Go Home, Local Play, and material-library pages and their document titles. `main.tsx` wraps `App` in React Router's `BrowserRouter`; `App` declares `/`, `/play`, `/play/local`, `/materials`, and a welcome-page fallback for unknown paths. Internal navigation uses `Link` to update the URL without reloading the document. A production host must serve `index.html` for all application routes and unknown paths.
 
-Go Home matches Figma frame `46:381`, with local SVG assets in `src/assets/go-home/` and the shared `StoneMark` logo. Unavailable menu, learning, account, and settings actions announce a temporary coming-soon message. Local Play reuses `InteractiveBoard` with its default kaya board and polished stones; each visit starts a fresh board. `/tests/routing.html` also checks this navigation flow, coming-soon feedback, local keyboard placement, and fresh-board behavior. `/tests/interactive-board.html` checks the board component directly.
+Go Home matches Figma frame `46:381`, with local SVG assets in `src/assets/go-home/` and the shared `StoneMark` logo. Unavailable menu, learning, account, and settings actions announce a temporary coming-soon message. Local Play reuses `InteractiveBoard` with its default kaya board and polished stones; each visit starts a fresh board. `/tests/routing.html` also checks this navigation flow, coming-soon feedback, local mouse placement, and fresh-board behavior. `/tests/interactive-board.html` is the direct board fixture used by the automated browser suite.
 
 With the dev server running, `/tests/routing.html` checks route titles, internal links without document reloads, browser Back/Forward, animation restart after returning from the material library, trailing slashes, URL search/hash values, and the unknown-path fallback.
 
@@ -70,7 +87,6 @@ With the dev server running, `/tests/routing.html` checks route titles, internal
 - Inter is bundled locally for the welcome page with its SIL Open Font License in `public/licenses/Inter-OFL.txt`. The material library retains its existing font stack.
 
 With the dev server running, `/tests/welcome.html` exercises a complete loop, ordering, restart, pause/resume, Strict Mode cleanup, five responsive widths, canvas density, texture loading, and live reduced-motion changes. `/tests/welcome-preview.html?motion=full` and `?motion=reduce` are isolated visual fixtures; their media emulation is test-only and is not included in the production build. The canvas regression fixture now loads `/materials`.
-
 
 The welcome hero stays horizontal from 800px upward, with fluid side gutters and a board that expands with the viewport while fitting the available height. The board scene is displayed at 75% of that available size to leave clearance around the branches. Below 800px the hero stacks. Navigation stones use larger bodies and a small local shadow to separate the white stone from the ivory background.
 

@@ -18,8 +18,13 @@ export function CanvasSurface({ label, className, size, draw }: CanvasSurfacePro
     return () => surface.destroy()
   }, [draw])
   return (
-    <canvas ref={ref} className={'weiqi-canvas ' + (className ?? '')} role="img" aria-label={label}
-      style={{ '--canvas-size': size === undefined ? '100%' : size + 'px' } as CSSProperties}>
+    <canvas
+      ref={ref}
+      className={'weiqi-canvas ' + (className ?? '')}
+      role="img"
+      aria-label={label}
+      style={{ '--canvas-size': size === undefined ? '100%' : size + 'px' } as CSSProperties}
+    >
       {label}
     </canvas>
   )

@@ -13,8 +13,16 @@ export default function App() {
       <Route element={<AppLayout />}>
         <Route path="/play" caseSensitive element={<GoHomePage />} />
         <Route path="/play/local" caseSensitive element={<LocalPlayPage />} />
-        <Route path="/play/local/setup" caseSensitive element={<GameSetupPage key="local" mode="local" />} />
-        <Route path="/play/online/setup" caseSensitive element={<GameSetupPage key="online" mode="online" />} />
+        <Route
+          path="/play/local/setup"
+          caseSensitive
+          element={<GameSetupPage key="local" mode="local" />}
+        />
+        <Route
+          path="/play/online/setup"
+          caseSensitive
+          element={<GameSetupPage key="online" mode="online" />}
+        />
         <Route path="/materials" caseSensitive element={<MaterialLibraryPage />} />
       </Route>
       <Route path="*" element={<WelcomePage />} />

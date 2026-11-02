@@ -16,16 +16,33 @@ function LocalGameBoard({ boardSize = 19, ...appearance }: LocalBoardProps) {
   return (
     <section className="local-game" aria-label="Local Go game">
       <div className="local-game__playing-area" style={{ maxWidth: appearance.size }}>
-        <LocalPlayers stoneStyle={appearance.stoneStyle} />
-        <LocalBoardStage boardTheme={appearance.boardTheme} stoneStyle={appearance.stoneStyle}
-          boardSize={boardSize} snapshot={snapshot} onPlay={controller?.play} onPass={controller?.pass} />
+        <LocalPlayers stoneStyle={appearance.stoneStyle} captures={snapshot?.captures} />
+        <LocalBoardStage
+          boardTheme={appearance.boardTheme}
+          stoneStyle={appearance.stoneStyle}
+          boardSize={boardSize}
+          snapshot={snapshot}
+          controller={controller}
+        />
         <div className="local-game__feedback">
-          <p role="status" aria-live="polite">{error ?? (!snapshot ? 'Loading Go engine…' : '')}</p>
-          {error && <button type="button" onClick={retry}>Retry</button>}
-          <p className="local-game__error" role="alert">{snapshot?.error}</p>
+          <p role="status" aria-live="polite">
+            {error ?? (!snapshot ? 'Loading Go engine…' : '')}
+          </p>
+          {error && (
+            <button type="button" onClick={retry}>
+              Retry
+            </button>
+          )}
+          <p className="local-game__error" role="alert">
+            {snapshot?.error}
+          </p>
         </div>
       </div>
-      <MoveHistoryPanel snapshot={snapshot} onView={controller?.viewMove} onUndo={controller?.undo} />
+      <MoveHistoryPanel
+        snapshot={snapshot}
+        onView={controller?.viewMove}
+        onUndo={controller?.undo}
+      />
     </section>
   )
 }

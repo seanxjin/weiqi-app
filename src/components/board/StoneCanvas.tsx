@@ -12,13 +12,22 @@ export interface StoneCanvasProps {
 }
 
 export function StoneCanvas({ style, color, size = 138, label }: StoneCanvasProps) {
-  const draw = useCallback((ctx: CanvasRenderingContext2D, width: number) => {
-    const scale = width / 176
-    drawStone(ctx, { style, color, x: 88 * scale, y: 82 * scale, radius: 69 * scale })
-  }, [style, color])
+  const draw = useCallback(
+    (ctx: CanvasRenderingContext2D, width: number) => {
+      const scale = width / 176
+      drawStone(ctx, { style, color, x: 88 * scale, y: 82 * scale, radius: 69 * scale })
+    },
+    [style, color],
+  )
   return (
-    <CanvasSurface className="stone-canvas" size={size * 176 / 138}
-      label={label ?? `${stoneStyles[style].finish} ${stoneStyles[style].labels[color].toLowerCase()} baduk stone`}
-      draw={draw} />
+    <CanvasSurface
+      className="stone-canvas"
+      size={(size * 176) / 138}
+      label={
+        label ??
+        `${stoneStyles[style].finish} ${stoneStyles[style].labels[color].toLowerCase()} baduk stone`
+      }
+      draw={draw}
+    />
   )
 }

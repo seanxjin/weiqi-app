@@ -8,7 +8,9 @@ const boards: BoardThemeId[] = ['kaya', 'walnut', 'ash']
 const stones: StoneStyleId[] = ['polished', 'satin', 'matte', 'snow']
 
 function MaterialLibraryPage() {
-  useEffect(() => { document.title = 'Baduk — Boards & stones' }, [])
+  useEffect(() => {
+    document.title = 'Baduk — Boards & stones'
+  }, [])
   return (
     <main className="material-library">
       <header className="page-header">
@@ -21,7 +23,9 @@ function MaterialLibraryPage() {
       </header>
       <section className="boards-section" aria-labelledby="boards-title">
         <div className="section-heading">
-          <h2 id="boards-title"><span className="section-number">01</span> The boards</h2>
+          <h2 id="boards-title">
+            <span className="section-number">01</span> The boards
+          </h2>
           <p>Three timbers · 19 × 19</p>
         </div>
         <div className="boards-grid">
@@ -41,19 +45,22 @@ function MaterialLibraryPage() {
       </section>
       <section className="stones-section" aria-labelledby="stones-title">
         <div className="section-heading">
-          <h2 id="stones-title"><span className="section-number">02</span> The stones</h2>
+          <h2 id="stones-title">
+            <span className="section-number">02</span> The stones
+          </h2>
           <p>Four styles · black & white</p>
         </div>
         <div className="stone-study">
           <div className="eyebrow study-meta">
-            <span>Baduk / Material study</span><span>Enlarged samples</span>
+            <span>Baduk / Material study</span>
+            <span>Enlarged samples</span>
           </div>
           <div className="study-intro">
             <h3>A quiet contrast.</h3>
             <p>Four surfaces. Black and white, in the same soft light.</p>
           </div>
           <div className="stone-rows">
-            {stones.map(style => (
+            {stones.map((style) => (
               <div className="stone-row" key={style}>
                 <div className="material-notes">
                   <p className="eyebrow">{stoneStyles[style].finish}</p>
@@ -61,7 +68,7 @@ function MaterialLibraryPage() {
                   <p className="material-description">{stoneStyles[style].description}</p>
                 </div>
                 <div className="stone-pair">
-                  {(['black', 'white'] as const).map(color => (
+                  {(['black', 'white'] as const).map((color) => (
                     <figure className="stone-sample" key={color}>
                       <StoneCanvas style={style} color={color} />
                       <figcaption>{stoneStyles[style].labels[color]}</figcaption>
@@ -77,7 +84,10 @@ function MaterialLibraryPage() {
           </div>
         </div>
       </section>
-      <footer className="page-footer"><span>Baduk</span><span>The essentials, considered.</span></footer>
+      <footer className="page-footer">
+        <span>Baduk</span>
+        <span>The essentials, considered.</span>
+      </footer>
     </main>
   )
 }

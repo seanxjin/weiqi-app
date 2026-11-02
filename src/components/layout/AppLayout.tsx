@@ -34,16 +34,18 @@ export function AppLayout() {
 
   useEffect(() => {
     if (!notice.label) return
-    const timer = window.setTimeout(() => setNotice(value => ({ ...value, label: '' })), 4000)
+    const timer = window.setTimeout(() => setNotice((value) => ({ ...value, label: '' })), 4000)
     return () => window.clearTimeout(timer)
   }, [notice])
 
   const comingSoon = (label: string) => {
     closeNavigation()
-    setNotice(value => ({ label, sequence: value.sequence + 1 }))
+    setNotice((value) => ({ label, sequence: value.sequence + 1 }))
   }
 
-  const sidebar = <AppSidebar compact={compact} onNavigate={closeNavigation} onNotice={comingSoon} />
+  const sidebar = (
+    <AppSidebar compact={compact} onNavigate={closeNavigation} onNotice={comingSoon} />
+  )
 
   return (
     <div className="app-layout">
@@ -57,10 +59,10 @@ export function AppLayout() {
             setSidebarOpen(false)
             toggle.current?.focus()
           }}
-          onClick={event => {
+          onClick={(event) => {
             if (event.target === event.currentTarget) closeNavigation()
           }}
-          onKeyDown={event => {
+          onKeyDown={(event) => {
             if (event.key !== 'Tab') return
             const controls = event.currentTarget.querySelectorAll<HTMLElement>('a[href], button')
             const first = controls[0]
@@ -76,7 +78,9 @@ export function AppLayout() {
         >
           {sidebar}
         </dialog>
-      ) : sidebar}
+      ) : (
+        sidebar
+      )}
       <div className="app-layout__content">
         {compact && (
           <div className="app-layout__menu-bar">

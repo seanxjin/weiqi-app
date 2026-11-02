@@ -1,6 +1,8 @@
 @import 'weiqi_board/style.css';
 
-.weiqi-board-canvas { --weiqi-board-shadow: var(--board-shadow); }
+.weiqi-board-canvas {
+  --weiqi-board-shadow: var(--board-shadow);
+}
 
 .interactive-board {
   --weiqi-board-text: var(--text, #333a34);
