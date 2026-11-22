@@ -1,4 +1,4 @@
-@import 'weiqi_board/style.css';
+@import 'weiqi-board/style.css';
 
 .weiqi-board-canvas {
   --weiqi-board-shadow: var(--board-shadow);

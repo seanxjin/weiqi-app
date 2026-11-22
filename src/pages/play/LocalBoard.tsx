@@ -1,4 +1,4 @@
-import type { BoardConfig } from 'weiqi_board'
+import type { BoardConfig } from 'weiqi-board'
 import { useLocalGame } from '../../game/useLocalGame'
 import { LocalPlayers } from './LocalPlayers'
 import { LocalBoardStage } from './LocalBoardStage'

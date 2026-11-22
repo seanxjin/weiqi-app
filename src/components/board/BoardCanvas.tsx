@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
-import { createBoardGeometry, drawBoard, boardThemes, loadTexture } from 'weiqi_board'
-import type { BoardGeometry, BoardSize, BoardThemeId } from 'weiqi_board'
+import { createBoardGeometry, drawBoard, boardThemes, loadTexture } from 'weiqi-board'
+import type { BoardGeometry, BoardSize, BoardThemeId } from 'weiqi-board'
 import { CanvasSurface } from './CanvasSurface'
 
 export interface BoardCanvasProps {

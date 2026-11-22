@@ -1,12 +1,12 @@
 import { useImperativeHandle, useLayoutEffect, useRef } from 'react'
 import type { Ref } from 'react'
-import { WeiqiBoard } from 'weiqi_board'
-import type { BoardApi, BoardConfig } from 'weiqi_board'
+import { WeiqiBoard } from 'weiqi-board'
+import type { BoardApi, BoardConfig } from 'weiqi-board'
 import './appearance.css'
 
 export type BoardProps = BoardConfig & { ref?: Ref<BoardApi> }
 
-/** React owns the host; weiqi_board owns everything rendered inside it. */
+/** React owns the host; weiqi-board owns everything rendered inside it. */
 export function Board({
   boardSize = 19,
   geometry,

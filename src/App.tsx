@@ -5,11 +5,31 @@ import WelcomePage from './pages/welcome/WelcomePage'
 import GoHomePage from './pages/play/GoHomePage'
 import LocalPlayPage from './pages/play/LocalPlayPage'
 import GameSetupPage from './pages/setup/GameSetupPage'
+import {
+  LoginPage,
+  OAuthSignupPage,
+  PasswordResetConfirmPage,
+  PasswordResetPage,
+  ResendConfirmationPage,
+  SignupConfirmPage,
+  SignupOptionsPage,
+  SignupPage,
+  TwoFactorLoginPage,
+} from './pages/auth/AuthPages'
 
 export default function App() {
   return (
     <Routes>
       <Route path="/" element={<WelcomePage />} />
+      <Route path="/login" element={<LoginPage />} />
+      <Route path="/login/two-factor" element={<TwoFactorLoginPage />} />
+      <Route path="/signup" element={<SignupOptionsPage />} />
+      <Route path="/signup/email" element={<SignupPage />} />
+      <Route path="/signup/resend" element={<ResendConfirmationPage />} />
+      <Route path="/signup/confirm/:token" element={<SignupConfirmPage />} />
+      <Route path="/signup/complete" element={<OAuthSignupPage />} />
+      <Route path="/password-reset" element={<PasswordResetPage />} />
+      <Route path="/password-reset/:token" element={<PasswordResetConfirmPage />} />
       <Route element={<AppLayout />}>
         <Route path="/play" caseSensitive element={<GoHomePage />} />
         <Route path="/play/local" caseSensitive element={<LocalPlayPage />} />

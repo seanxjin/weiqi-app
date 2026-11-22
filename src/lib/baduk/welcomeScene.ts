@@ -1,4 +1,4 @@
-import type { BoardThemeId, StoneStyleId } from 'weiqi_board'
+import type { BoardThemeId, StoneStyleId } from 'weiqi-board'
 import type { AnimatedBoardMove } from '../../components/AnimatedBoardScene.types'
 
 export interface SceneAppearance {

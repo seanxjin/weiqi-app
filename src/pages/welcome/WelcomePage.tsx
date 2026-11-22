@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 import { AnimatedBoardScene } from '../../components/AnimatedBoardScene'
 import { StoneMark } from '../../components/StoneMark'
 import { SakuraBranches } from '../../components/sakura/SakuraBranches'
-import { welcomeBoardGeometry } from 'weiqi_board'
+import { welcomeBoardGeometry } from 'weiqi-board'
 import { boardLoopSeconds, welcomeAppearance, welcomeMoves } from '../../lib/baduk/welcomeScene'
 import './WelcomePage.css'
 

@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef } from 'react'
 import type { CSSProperties } from 'react'
-import { observeCanvas } from 'weiqi_board'
-import type { CanvasDraw } from 'weiqi_board'
+import { observeCanvas } from 'weiqi-board'
+import type { CanvasDraw } from 'weiqi-board'
 import './appearance.css'
 
 interface CanvasSurfaceProps {

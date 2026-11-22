@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState, useSyncExternalStore } from 'react'
-import type { BoardSize } from 'weiqi_board'
+import type { BoardSize } from 'weiqi-board'
 import { LocalGameController } from './LocalGameController'
 import { loadEngine } from './loadEngine'
 
@@ -19,20 +19,22 @@ export function useLocalGame(boardSize: BoardSize) {
   useEffect(() => {
     let active = true
     let controller: LocalGameController | undefined
-    loadEngine()
-      .then((module) => {
+    async function initialize() {
+      try {
+        const module = await loadEngine()
         if (!active) return
         controller = new LocalGameController(module, boardSize)
         setLoaded({ boardSize, attempt, controller })
-      })
-      .catch(() => {
+      } catch {
         if (active)
           setLoaded({
             boardSize,
             attempt,
             error: 'The Go engine could not be loaded. Please retry.',
           })
-      })
+      }
+    }
+    void initialize()
     return () => {
       active = false
       controller?.dispose()

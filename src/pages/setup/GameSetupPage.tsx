@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router'
-import type { BoardSize } from 'weiqi_board'
+import type { BoardSize } from 'weiqi-board'
 import arrow from '../../assets/go-home/local-arrow.svg'
 import { SetupBoard } from './SetupBoard'
 import { TimeControlSelector } from './TimeControlSelector'

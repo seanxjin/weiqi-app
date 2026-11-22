@@ -1,5 +1,5 @@
-import { useEffect } from 'react'
-import { Link } from 'react-router'
+import { useEffect, useState } from 'react'
+import { Link, useNavigate } from 'react-router'
 import signinArrow from '../../assets/go-home/signin-arrow.svg'
 import globe from '../../assets/go-home/globe.svg'
 import local from '../../assets/go-home/local.svg'
@@ -12,6 +12,7 @@ import lessonArrow from '../../assets/go-home/lesson-arrow.svg'
 import bot from '../../assets/go-home/bot.svg'
 import presence from '../../assets/go-home/presence.svg'
 import { useAppLayout } from '../../components/layout/useAppLayout'
+import { useAuth } from '../../auth/api'
 import './PlayPages.css'
 
 const options = [
@@ -58,6 +59,22 @@ const options = [
 
 export default function GoHomePage() {
   const { comingSoon } = useAppLayout()
+  const { account, accountError, reloadAccount, logout } = useAuth()
+  const [loggingOut, setLoggingOut] = useState(false)
+  const [logoutError, setLogoutError] = useState<string | null>(null)
+  const navigate = useNavigate()
+  const signOut = async () => {
+    if (loggingOut) return
+    setLoggingOut(true)
+    setLogoutError(null)
+    try {
+      await logout()
+    } catch {
+      setLogoutError('Unable to log out. Please try again.')
+    } finally {
+      setLoggingOut(false)
+    }
+  }
   useEffect(() => {
     document.title = 'Baduk — Play'
   }, [])
@@ -70,13 +87,36 @@ export default function GoHomePage() {
             <p>PLAY / HOME</p>
           </div>
           <div className="go-account">
-            <span>Playing as a guest</span>
-            <button onClick={() => comingSoon('Sign in')}>
-              Sign in
-              <img src={signinArrow} alt="" />
-            </button>
+            {accountError ? (
+              <>
+                <span role="status">{accountError}</span>
+                <button onClick={() => void reloadAccount()}>Retry</button>
+              </>
+            ) : account === undefined ? (
+              <span role="status">Checking your session…</span>
+            ) : account ? (
+              <>
+                <span>Signed in as {account.username}</span>
+                <button onClick={signOut} disabled={loggingOut}>
+                  {loggingOut ? 'Logging out…' : 'Log out'}
+                </button>
+              </>
+            ) : (
+              <>
+                <span>Playing as a guest</span>
+                <button onClick={() => navigate('/login')}>
+                  Sign in
+                  <img src={signinArrow} alt="" />
+                </button>
+              </>
+            )}
           </div>
         </header>
+        {logoutError && (
+          <p className="go-account-error" role="alert">
+            {logoutError}
+          </p>
+        )}
         <section className="go-introduction" aria-labelledby="go-heading">
           <h1 id="go-heading">Some Text</h1>
           <p>Some other text</p>

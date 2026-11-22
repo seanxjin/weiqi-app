@@ -1,5 +1,5 @@
-import { samePoint } from 'weiqi_board'
-import type { BoardApi, BoardSize, Intersection, Stone, StoneColor } from 'weiqi_board'
+import { samePoint } from 'weiqi-board'
+import type { BoardApi, BoardSize, Intersection, Stone, StoneColor } from 'weiqi-board'
 import type {
   EngineGame,
   EngineModule,

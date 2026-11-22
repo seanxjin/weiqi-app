@@ -9,18 +9,20 @@ export function loadEngine(): Promise<EngineModule> {
     const loader = new URL('baduk.mjs', assets)
     if (attempt > 0) loader.searchParams.set('retry', String(attempt))
     pending = (async () => {
-      const { default: createModule } = (await import(/* @vite-ignore */ loader.href)) as {
-        default: EngineFactory
+      try {
+        const { default: createModule } = (await import(/* @vite-ignore */ loader.href)) as {
+          default: EngineFactory
+        }
+        return await createModule({
+          locateFile: (path, prefix) =>
+            path.endsWith('.wasm') ? new URL('baduk.wasm', assets).href : prefix + path,
+        })
+      } catch (error) {
+        pending = undefined
+        attempt += 1
+        throw error
       }
-      return createModule({
-        locateFile: (path, prefix) =>
-          path.endsWith('.wasm') ? new URL('baduk.wasm', assets).href : prefix + path,
-      })
-    })().catch((error) => {
-      pending = undefined
-      attempt += 1
-      throw error
-    })
+    })()
   }
   return pending
 }

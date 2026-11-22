@@ -64,6 +64,14 @@
   color: var(--text);
   white-space: nowrap;
 }
+.go-account button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+.go-account-error {
+  font-size: 13px;
+  color: #8b3434;
+}
 .go-introduction h1 {
   font-size: clamp(28px, 4.3dvh, 44px);
   line-height: 1.15;

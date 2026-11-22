@@ -1,4 +1,4 @@
-import type { StoneColor, StoneStyleId } from 'weiqi_board'
+import type { StoneColor, StoneStyleId } from 'weiqi-board'
 import { StoneCanvas } from '../../components/board'
 
 interface LocalPlayersProps {

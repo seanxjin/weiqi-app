@@ -1,6 +1,6 @@
 import { useLayoutEffect, useMemo, useRef } from 'react'
-import { createBoardGeometry } from 'weiqi_board'
-import type { BoardApi, BoardSize, MovableConfig, PremovableConfig } from 'weiqi_board'
+import { createBoardGeometry } from 'weiqi-board'
+import type { BoardApi, BoardSize, MovableConfig, PremovableConfig } from 'weiqi-board'
 import { Board } from '../../components/board'
 import type { BoardProps } from '../../components/board/Board'
 import type { LocalGameController, LocalGameSnapshot } from '../../game/LocalGameController'

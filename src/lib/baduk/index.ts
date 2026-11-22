@@ -5,7 +5,7 @@ export {
   welcomeBoardGeometry,
   boardThemes,
   stoneStyles,
-} from 'weiqi_board'
+} from 'weiqi-board'
 export type {
   DrawBoardOptions,
   DrawStoneOptions,
@@ -13,4 +13,4 @@ export type {
   BoardThemeId,
   StoneStyleId,
   StoneColor,
-} from 'weiqi_board'
+} from 'weiqi-board'

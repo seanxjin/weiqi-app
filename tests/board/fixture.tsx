@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import type { Root } from 'react-dom/client'
 import { flushSync } from 'react-dom'
-import { WeiqiBoard, loadTexture, boardThemes } from 'weiqi_board'
+import { WeiqiBoard, loadTexture, boardThemes } from 'weiqi-board'
 import type {
   BoardApi,
   BoardConfig,
@@ -10,11 +10,11 @@ import type {
   Intersection,
   PlacementMetadata,
   StoneColor,
-} from 'weiqi_board'
+} from 'weiqi-board'
 import { Board } from '../../src/components/board/Board'
 import { LocalGameController } from '../../src/game/LocalGameController'
 import { loadEngine } from '../../src/game/loadEngine'
-import 'weiqi_board/style.css'
+import 'weiqi-board/style.css'
 
 type Event = {
   type: string

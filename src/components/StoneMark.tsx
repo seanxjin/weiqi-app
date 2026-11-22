@@ -1,5 +1,5 @@
 import { StoneCanvas } from './board'
-import type { StoneStyleId } from 'weiqi_board'
+import type { StoneStyleId } from 'weiqi-board'
 import './StoneMark.css'
 
 interface StoneMarkProps {
