@@ -1,1 +1,1 @@
-export { loadTexture } from 'weiqi-board'
+export { loadTexture } from "weiqi-board";

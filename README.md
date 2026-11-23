@@ -51,12 +51,12 @@ import { StoneCanvas } from './components/StoneCanvas'
 The rendering functions are independent of React and do not clear the destination Canvas. Import the renderers, appearance registries, and public types from `src/lib/baduk`.
 
 ```ts
-import { drawBoard, drawStone, boardThemes } from './lib/baduk'
-import { loadTexture } from './lib/baduk/textures'
+import { drawBoard, drawStone, boardThemes } from "./lib/baduk";
+import { loadTexture } from "./lib/baduk/textures";
 
-const texture = await loadTexture(boardThemes.kaya.texture)
-drawBoard(ctx, { theme: 'kaya', size: 800, texture, x: 0, y: 0 })
-drawStone(ctx, { style: 'polished', color: 'black', x: 172, y: 172, radius: 18.3 })
+const texture = await loadTexture(boardThemes.kaya.texture);
+drawBoard(ctx, { theme: "kaya", size: 800, texture, x: 0, y: 0 });
+drawStone(ctx, { style: "polished", color: "black", x: 172, y: 172, radius: 18.3 });
 ```
 
 `drawBoard` scales the original 800-unit geometry to `size`. Intersections start at 58, end at 742, and use 38-unit spacing. Star points are at zero-based grid indices 3, 9, and 15. The texture argument is optional for callers managing their own loading; `BoardCanvas` loads and caches it automatically and reports load failures.
