@@ -11,9 +11,9 @@ import type {
   PlacementMetadata,
   StoneColor,
 } from 'weiqi-board'
-import { Board } from '../../src/components/board/Board'
-import { LocalGameController } from '../../src/game/LocalGameController'
-import { loadEngine } from '../../src/game/loadEngine'
+import { Board } from '@/shared/ui/board'
+import { LocalGameController } from '@/entities/game'
+import { loadEngine } from '@/shared/lib/go-engine'
 import 'weiqi-board/style.css'
 
 type Event = {
