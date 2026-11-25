@@ -1,6 +1,15 @@
-import { samePoint } from "weiqi-board";
 import type { BoardApi, BoardSize, Intersection, Stone, StoneColor } from "weiqi-board";
-import type { EngineGame, EngineModule, EngineMoveResult, EnginePosition, IllegalMoveReason } from "./bindings";
+import type { EngineGame, EngineModule, EngineMoveResult, EnginePosition } from "./bindings";
+import {
+	illegalMoveMessages,
+	moveLabel,
+	reconcileBoard,
+	stonesFromCells,
+	toEngineColor,
+	toIntersection,
+	toPoint,
+	toStoneColor,
+} from "./moveHelpers";
 
 export interface LocalMove {
 	readonly number: number;
@@ -22,17 +31,6 @@ export interface LocalGameSnapshot {
 	readonly canUndo: boolean;
 	readonly error: string | null;
 }
-
-const reasons: Record<IllegalMoveReason, string> = {
-	OutOfBounds: "Choose an intersection on the board.",
-	Occupied: "That intersection is occupied.",
-	WrongPlayer: "It is the other player’s turn.",
-	Suicide: "Suicide is not allowed.",
-	Ko: "That move is forbidden by ko.",
-	Superko: "That move repeats an earlier position.",
-	GameEnded: "This game cannot accept another move.",
-};
-const columns = "ABCDEFGHJKLMNOPQRST";
 
 export class LocalGameController {
 	private readonly game: EngineGame;
@@ -73,13 +71,7 @@ export class LocalGameController {
 	play = (point: Intersection, color: StoneColor, board: BoardApi): void => {
 		try {
 			if (!this.disposed && this.snapshot.canPlay)
-				this.accept(
-					this.game.play({
-						type: "play",
-						color: color === "black" ? "Black" : "White",
-						point: { x: point.column, y: point.row },
-					}),
-				);
+				this.accept(this.game.play({ type: "play", color: toEngineColor(color), point: toPoint(point) }));
 		} finally {
 			// Always check, even when a rejection leaves the authoritative position unchanged.
 			this.reconcile(board);
@@ -89,27 +81,11 @@ export class LocalGameController {
 	/** Reconciliation never calls the engine, emits a move, or advances the turn. */
 	reconcile = (board: BoardApi): void => {
 		const snapshot = this.snapshot;
-		const current = board.getState();
-		const lastMove = snapshot.moves[snapshot.viewedMoveIndex - 1]?.point ?? null;
-		const sameLastMove =
-			current.lastMove === null ? lastMove === null : lastMove !== null && samePoint(current.lastMove, lastMove);
-		const stones = new Map(snapshot.stones.map((stone) => [`${stone.column},${stone.row}`, stone.color]));
-		const sameStones =
-			current.stones.length === stones.size &&
-			current.stones.every((stone) => stones.get(`${stone.column},${stone.row}`) === stone.color);
-		if (
-			sameStones &&
-			sameLastMove &&
-			current.turnColor === snapshot.turnColor &&
-			current.readOnly === !snapshot.canPlay &&
-			current.boardSize === snapshot.boardSize
-		)
-			return;
-		board.set({
+		reconcileBoard(board, {
 			boardSize: snapshot.boardSize,
 			stones: snapshot.stones,
 			turnColor: snapshot.turnColor,
-			lastMove,
+			lastMove: snapshot.moves[snapshot.viewedMoveIndex - 1]?.point ?? null,
 			readOnly: !snapshot.canPlay,
 		});
 	};
@@ -140,7 +116,7 @@ export class LocalGameController {
 
 	private accept(result: EngineMoveResult): void {
 		if (result.ok) this.refresh();
-		else this.publish(reasons[result.reason]);
+		else this.publish(illegalMoveMessages[result.reason]);
 	}
 
 	private refresh(): void {
@@ -149,9 +125,9 @@ export class LocalGameController {
 			this.game.history().map(({ move, capturedStones }, index) =>
 				Object.freeze({
 					number: index + 1,
-					color: move.color === "Black" ? ("black" as const) : ("white" as const),
-					label: move.type === "pass" ? "Pass" : `${columns[move.point.x]}${this.boardSize - move.point.y}`,
-					point: move.type === "pass" ? null : Object.freeze({ column: move.point.x, row: move.point.y }),
+					color: toStoneColor(move.color),
+					label: moveLabel(move, this.boardSize),
+					point: move.type === "pass" ? null : Object.freeze(toIntersection(move.point)),
 					captureCount: capturedStones.length,
 				}),
 			),
@@ -162,17 +138,7 @@ export class LocalGameController {
 
 	private publish(error: string | null = null): void {
 		const position = this.positions[this.viewed];
-		const stones: Stone[] = [];
-		position.board.cells.forEach((color, index) => {
-			if (color !== "Empty")
-				stones.push(
-					Object.freeze({
-						column: index % this.boardSize,
-						row: Math.floor(index / this.boardSize),
-						color: color === "Black" ? "black" : "white",
-					}),
-				);
-		});
+		const stones = stonesFromCells(position, this.boardSize);
 		const latest = this.positions.length - 1;
 		const captures = { black: 0, white: 0 };
 		for (let index = 0; index < this.viewed; index++) {
@@ -182,7 +148,7 @@ export class LocalGameController {
 		this.snapshot = Object.freeze({
 			boardSize: this.boardSize,
 			stones: Object.freeze(stones),
-			turnColor: position.currentPlayer === "Black" ? "black" : "white",
+			turnColor: toStoneColor(position.currentPlayer),
 			captures: Object.freeze(captures),
 			moves: this.moves,
 			latestMoveIndex: latest,

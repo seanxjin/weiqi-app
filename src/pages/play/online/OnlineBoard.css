@@ -1,0 +1,77 @@
+.online-game__panel {
+	display: grid;
+	gap: 12px;
+	margin-top: 16px;
+	font-size: 12px;
+}
+.online-game__status {
+	display: flex;
+	justify-content: space-between;
+	gap: 12px;
+	color: var(--muted);
+}
+.online-game__status [data-connection="open"] {
+	color: #3e6b45;
+}
+.online-game__status [data-connection="reconnecting"],
+.online-game__status [data-connection="closed"] {
+	color: #8b382e;
+}
+.online-game__invite {
+	display: grid;
+	gap: 6px;
+}
+.online-game__invite > div {
+	display: flex;
+	gap: 8px;
+}
+.online-game__invite input {
+	flex: 1;
+	min-width: 0;
+	padding: 6px 8px;
+	border: 1px solid var(--divider);
+	border-radius: 4px;
+	background: transparent;
+	font: inherit;
+	color: inherit;
+}
+.online-game__actions {
+	display: flex;
+	gap: 8px;
+}
+.online-game__invite button,
+.online-game__actions button,
+.online-game__gate button {
+	padding: 6px 12px;
+	border: 1px solid var(--divider);
+	border-radius: 4px;
+	background: transparent;
+	color: inherit;
+	font: inherit;
+	cursor: pointer;
+}
+.online-game__gate button:disabled {
+	opacity: 0.4;
+	cursor: default;
+}
+.online-game__banner {
+	padding: 10px 12px;
+	border: 1px solid var(--divider);
+	border-radius: 4px;
+	font-size: 13px;
+	font-weight: 500;
+}
+.local-game__move-table td button.online-game__pending-move {
+	opacity: 0.55;
+	font-style: italic;
+}
+.online-game__gate {
+	display: grid;
+	justify-items: start;
+	gap: 12px;
+	font-size: 14px;
+	line-height: 1.5;
+}
+.online-game__gate-error {
+	color: #8b382e;
+}

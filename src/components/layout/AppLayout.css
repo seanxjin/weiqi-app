@@ -124,13 +124,59 @@
 .go-utility-divider {
 	flex-shrink: 0;
 }
-.go-sidebar .go-settings {
+.go-sidebar-account {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+}
+.go-sidebar .go-sidebar-account__profile,
+.go-sidebar .go-sign-in {
 	display: flex;
 	align-items: center;
-	gap: 12px;
+	gap: 10px;
+	min-height: 40px;
 	padding-inline: 12px;
+	border-radius: 4px;
 	font-size: 13px;
-	color: var(--muted);
+	font-weight: 500;
+}
+.go-sidebar .go-sidebar-account__profile:hover,
+.go-sidebar .go-sidebar-account__profile[aria-current="page"],
+.go-sidebar .go-sign-in:hover {
+	background: #e1e2d7;
+}
+.go-sidebar-account__avatar {
+	display: grid;
+	place-items: center;
+	flex-shrink: 0;
+	width: 28px;
+	height: 28px;
+	border-radius: 4px;
+	background: var(--bg);
+	border: 1px solid var(--divider);
+}
+.go-sidebar-account__name {
+	min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.go-sidebar-account__icons {
+	display: flex;
+	gap: 4px;
+	padding-inline: 4px;
+}
+.go-sidebar .go-sidebar-account__icons :is(a, button) {
+	display: grid;
+	place-items: center;
+	width: 36px;
+	height: 36px;
+	border-radius: 4px;
+}
+.go-sidebar .go-sidebar-account__icons :is(a, button):hover,
+.go-sidebar .go-sidebar-account__icons [aria-current="page"] {
+	background: #e1e2d7;
 }
 .go-notice {
 	position: fixed;

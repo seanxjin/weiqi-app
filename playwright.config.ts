@@ -1,7 +1,7 @@
 import { defineConfig } from "@playwright/test";
 
 export default defineConfig({
-	testDir: "./tests/board",
+	testDir: "./tests",
 	fullyParallel: true,
 	workers: 2,
 	reporter: "list",
@@ -12,7 +12,13 @@ export default defineConfig({
 		trace: "retain-on-failure",
 	},
 	projects: [
-		{ name: "desktop", use: { viewport: { width: 1280, height: 1000 }, deviceScaleFactor: 1 } },
-		{ name: "retina", use: { viewport: { width: 640, height: 1000 }, deviceScaleFactor: 2 } },
+		// Pure logic tests; they need no browser.
+		{ name: "online", testDir: "./tests/online" },
+		{
+			name: "desktop",
+			testDir: "./tests/board",
+			use: { viewport: { width: 1280, height: 1000 }, deviceScaleFactor: 1 },
+		},
+		{ name: "retina", testDir: "./tests/board", use: { viewport: { width: 640, height: 1000 }, deviceScaleFactor: 2 } },
 	],
 });

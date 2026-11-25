@@ -1,5 +1,9 @@
 import { Link, NavLink } from "react-router";
+import { useAuth } from "../../auth/api";
 import { StoneMark } from "../StoneMark";
+import friends from "../../assets/account/friends.svg";
+import messages from "../../assets/account/messages.svg";
+import notifications from "../../assets/account/notifications.svg";
 import grid from "../../assets/go-home/grid.svg";
 import navPuzzle from "../../assets/go-home/nav-puzzle.svg";
 import navBook from "../../assets/go-home/nav-book.svg";
@@ -12,6 +16,50 @@ type AppSidebarProps = {
 	onNavigate: () => void;
 	onNotice: (label: string) => void;
 };
+
+const comingSoonLinks = [
+	{ label: "Friends", icon: friends },
+	{ label: "Messages", icon: messages },
+	{ label: "Notifications", icon: notifications },
+];
+
+function SidebarAccount({ onNavigate, onNotice }: Omit<AppSidebarProps, "compact">) {
+	const { account } = useAuth();
+	if (account === undefined) return null;
+	if (account === null)
+		return (
+			<Link className="go-sign-in" to="/login" onClick={() => onNavigate()}>
+				Sign in
+			</Link>
+		);
+
+	return (
+		<div className="go-sidebar-account">
+			<NavLink className="go-sidebar-account__profile" to={`/member/${account.username}`} onClick={() => onNavigate()}>
+				<span className="go-sidebar-account__avatar">
+					<StoneMark style="polished" size={20} />
+				</span>
+				<span className="go-sidebar-account__name">{account.username}</span>
+			</NavLink>
+			<nav className="go-sidebar-account__icons" aria-label="Account">
+				{comingSoonLinks.map((link) => (
+					<button
+						key={link.label}
+						type="button"
+						aria-label={link.label}
+						title={link.label}
+						onClick={() => onNotice(link.label)}
+					>
+						<img src={link.icon} alt="" />
+					</button>
+				))}
+				<NavLink to="/settings" aria-label="Settings" title="Settings" onClick={() => onNavigate()}>
+					<img src={settings} alt="" />
+				</NavLink>
+			</nav>
+		</div>
+	);
+}
 
 export function AppSidebar({ compact, onNavigate, onNotice }: AppSidebarProps) {
 	return (
@@ -50,10 +98,7 @@ export function AppSidebar({ compact, onNavigate, onNotice }: AppSidebarProps) {
 					</button>
 				</div>
 				<img className="go-utility-divider" src={divider} alt="" />
-				<button className="go-settings" onClick={() => onNotice("Settings")}>
-					<img src={settings} alt="" />
-					Settings
-				</button>
+				<SidebarAccount onNavigate={onNavigate} onNotice={onNotice} />
 			</div>
 		</aside>
 	);
