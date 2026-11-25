@@ -5,8 +5,8 @@ import { flushSync } from "react-dom";
 import { WeiqiBoard, loadTexture, boardThemes } from "weiqi-board";
 import type { BoardApi, BoardConfig, BoardState, Intersection, PlacementMetadata, StoneColor } from "weiqi-board";
 import { Board } from "../../src/components/board/Board";
-import { LocalGameController } from "../../src/game/LocalGameController";
-import { loadEngine } from "../../src/game/loadEngine";
+import { LocalGameController } from "../../src/controllers/LocalGameController";
+import { loadEngine } from "../../src/engine/loadEngine";
 import "weiqi-board/style.css";
 
 type Event = {

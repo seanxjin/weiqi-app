@@ -1,38 +1,7 @@
 import { useState } from "react";
-import { Link } from "react-router";
-import { mockBlocking, mockFollowing } from "./settingsMock";
-import { SettingsSection } from "./SettingsControls";
-
-function PlayerList({
-	players,
-	emptyMessage,
-	actionLabel,
-	onAction,
-}: {
-	players: string[];
-	emptyMessage: string;
-	actionLabel: string;
-	onAction: (username: string) => void;
-}) {
-	if (!players.length) return <p className="settings-empty">{emptyMessage}</p>;
-	return (
-		<ul className="player-list">
-			{players.map((username) => (
-				<li key={username}>
-					<Link to={`/member/${username}`}>{username}</Link>
-					<button
-						type="button"
-						className="settings-button"
-						aria-label={`${actionLabel} ${username}`}
-						onClick={() => onAction(username)}
-					>
-						{actionLabel}
-					</button>
-				</li>
-			))}
-		</ul>
-	);
-}
+import { mockBlocking, mockFollowing } from "@/data/mocks/settings";
+import { PlayerList } from "@/components/settings/PlayerList";
+import { SettingsSection } from "@/components/settings/SettingsControls";
 
 const playerCount = (count: number) => `${count} ${count === 1 ? "player" : "players"}`;
 

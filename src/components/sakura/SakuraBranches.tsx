@@ -1,6 +1,6 @@
 import type { CSSProperties } from "react";
 import { branches } from "./branches";
-import "./SakuraBranches.css";
+import "@/styles/sakura.css";
 
 const petals = [0, 72, 144, 216, 288];
 

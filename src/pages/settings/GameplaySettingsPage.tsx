@@ -1,7 +1,8 @@
 import { useState, type FormEvent } from "react";
-import type { Preferences } from "./settingsMock";
-import { SaveActions, SettingRadioGroup, SettingsSection, useSaveStatus } from "./SettingsControls";
-import { useSettings } from "./useSettings";
+import type { Preferences } from "@/types/settings";
+import { SaveActions, SettingRadioGroup, SettingsSection } from "@/components/settings/SettingsControls";
+import { useSaveStatus } from "@/hooks/useSaveStatus";
+import { useSettings } from "@/hooks/useSettings";
 
 const moveConfirmationOptions: { value: Preferences["moveConfirmation"]; label: string }[] = [
 	{ value: "never", label: "Never" },

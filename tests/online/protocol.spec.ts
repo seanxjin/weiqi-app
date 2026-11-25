@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { parseServerMessage } from "../../src/game/online/protocol";
+import { parseServerMessage } from "../../src/api/protocol";
 
 const game = {
 	id: "g1",

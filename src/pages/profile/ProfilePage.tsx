@@ -1,9 +1,10 @@
 import { useEffect } from "react";
 import { Link, useParams } from "react-router";
-import { useAuth } from "../../auth/api";
-import { StoneMark } from "../../components/StoneMark";
-import { countryFlag, countryName, mockFollowing, mockJoinedAt, mockProfile } from "../settings/settingsMock";
-import "./ProfilePage.css";
+import { useAuth } from "@/hooks/useAuth";
+import { StoneMark } from "@/components/ui/StoneMark";
+import { mockFollowing, mockJoinedAt, mockProfile } from "@/data/mocks/settings";
+import { countryFlag, countryName } from "@/lib/countries";
+import "@/styles/profile.css";
 
 const joinDate = mockJoinedAt.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
 

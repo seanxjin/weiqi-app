@@ -1,9 +1,10 @@
 import { useState, type FormEvent } from "react";
 import { boardThemes, stoneStyles } from "weiqi-board";
 import type { BoardThemeId, Stone, StoneStyleId } from "weiqi-board";
-import { Board, BoardCanvas, StoneCanvas } from "../../components/board";
-import { SaveActions, SettingsSection, SettingToggle, useSaveStatus } from "./SettingsControls";
-import { useSettings } from "./useSettings";
+import { Board, BoardCanvas, StoneCanvas } from "@/components/board";
+import { SaveActions, SettingsSection, SettingToggle } from "@/components/settings/SettingsControls";
+import { useSaveStatus } from "@/hooks/useSaveStatus";
+import { useSettings } from "@/hooks/useSettings";
 
 const themes: BoardThemeId[] = ["kaya", "walnut", "ash"];
 const styles: StoneStyleId[] = ["polished", "satin", "matte", "snow"];

@@ -2,7 +2,7 @@ import { useImperativeHandle, useLayoutEffect, useRef } from "react";
 import type { Ref } from "react";
 import { WeiqiBoard } from "weiqi-board";
 import type { BoardApi, BoardConfig } from "weiqi-board";
-import "./appearance.css";
+import "@/styles/board.css";
 
 export type BoardProps = BoardConfig & { ref?: Ref<BoardApi> };
 

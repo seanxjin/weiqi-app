@@ -1,124 +1,17 @@
-import { useRef, useState, type FormEvent } from "react";
-import { mockConnections, mockEmail, mockSessions, type ActiveSession, type ConnectedProvider } from "./settingsMock";
-import { SaveActions, SettingsSection, useSaveStatus } from "./SettingsControls";
-import { useSettings } from "./useSettings";
-import visibilityIcon from "../../assets/auth/visibility.svg";
-import googleIcon from "../../assets/auth/google.svg";
-import githubIcon from "../../assets/auth/github.svg";
+import { useRef, useState } from "react";
+import githubIcon from "@/assets/icons/common/github.svg";
+import googleIcon from "@/assets/icons/common/google.svg";
+import { ChangePasswordForm } from "@/components/settings/ChangePasswordForm";
+import { SessionList } from "@/components/settings/SessionList";
+import { SettingsSection } from "@/components/settings/SettingsControls";
+import { mockConnections, mockEmail } from "@/data/mocks/settings";
+import { useSettings } from "@/hooks/useSettings";
+import type { ConnectedProvider } from "@/types/settings";
 
 const providers: { id: ConnectedProvider; name: string; icon: string }[] = [
 	{ id: "google", name: "Google", icon: googleIcon },
 	{ id: "github", name: "GitHub", icon: githubIcon },
 ];
-
-function PasswordField({ name, label, autoComplete }: { name: string; label: string; autoComplete: string }) {
-	const [visible, setVisible] = useState(false);
-	return (
-		<div className="settings-field">
-			<label htmlFor={name}>{label}</label>
-			<span className="password-input">
-				<input id={name} name={name} type={visible ? "text" : "password"} autoComplete={autoComplete} required />
-				<button
-					type="button"
-					aria-label={visible ? `Hide ${label.toLowerCase()}` : `Show ${label.toLowerCase()}`}
-					aria-pressed={visible}
-					onClick={() => setVisible((value) => !value)}
-				>
-					<img src={visibilityIcon} alt="" />
-				</button>
-			</span>
-		</div>
-	);
-}
-
-function validatePasswordChange(form: FormData) {
-	const next = String(form.get("newPassword") ?? "");
-	if (next.length < 8) return "Use at least 8 characters for your new password.";
-	if (new TextEncoder().encode(next).length > 72) return "Your password must not exceed 72 UTF-8 bytes.";
-	if (next !== form.get("confirmPassword")) return "The new passwords do not match.";
-	if (next === form.get("currentPassword")) return "Choose a password different from your current one.";
-	return null;
-}
-
-function ChangePasswordForm({ username }: { username: string }) {
-	const [error, setError] = useState<string | null>(null);
-	const [dirty, setDirty] = useState(false);
-	const status = useSaveStatus();
-
-	const save = (event: FormEvent<HTMLFormElement>) => {
-		event.preventDefault();
-		const form = event.currentTarget;
-		const message = validatePasswordChange(new FormData(form));
-		setError(message);
-		if (message) return;
-		form.reset();
-		setDirty(false);
-		status.show("Password updated");
-	};
-
-	return (
-		<form
-			onSubmit={save}
-			onChange={() => {
-				setDirty(true);
-				status.clear();
-			}}
-		>
-			<input type="text" name="username" autoComplete="username" value={username} readOnly hidden />
-			<div className="settings-fields">
-				<PasswordField name="currentPassword" label="Current password" autoComplete="current-password" />
-				<PasswordField name="newPassword" label="New password" autoComplete="new-password" />
-				<PasswordField name="confirmPassword" label="Retype password" autoComplete="new-password" />
-			</div>
-			{error && (
-				<p className="settings-error" role="alert">
-					{error}
-				</p>
-			)}
-			<SaveActions dirty={dirty} status={status.message} />
-		</form>
-	);
-}
-
-function SessionList() {
-	const [sessions, setSessions] = useState<ActiveSession[]>(mockSessions);
-	const revoke = (id: string) => setSessions((list) => list.filter((session) => session.id !== id));
-	const hasOtherSessions = sessions.some((session) => !session.current);
-	return (
-		<>
-			<ul className="session-list">
-				{sessions.map((session) => (
-					<li key={session.id}>
-						<span>
-							<span className="session-list__device">{session.device}</span>
-							<span className="session-list__meta">
-								{session.location} · {session.current ? "This device" : session.lastSeen}
-							</span>
-						</span>
-						{!session.current && (
-							<button
-								type="button"
-								className="settings-button"
-								aria-label={`Log out ${session.device}`}
-								onClick={() => revoke(session.id)}
-							>
-								Log out
-							</button>
-						)}
-					</li>
-				))}
-			</ul>
-			<button
-				type="button"
-				className="settings-button settings-button--danger"
-				disabled={!hasOtherSessions}
-				onClick={() => setSessions((list) => list.filter((session) => session.current))}
-			>
-				Log out on all other devices
-			</button>
-		</>
-	);
-}
 
 export default function AccountSettingsPage() {
 	const { account, comingSoon } = useSettings();

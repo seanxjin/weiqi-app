@@ -1,19 +1,19 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router";
-import signinArrow from "../../assets/go-home/signin-arrow.svg";
-import globe from "../../assets/go-home/globe.svg";
-import local from "../../assets/go-home/local.svg";
-import localArrow from "../../assets/go-home/local-arrow.svg";
-import users from "../../assets/go-home/users.svg";
-import friendArrow from "../../assets/go-home/friend-arrow.svg";
-import puzzle from "../../assets/go-home/puzzle.svg";
-import book from "../../assets/go-home/book.svg";
-import lessonArrow from "../../assets/go-home/lesson-arrow.svg";
-import bot from "../../assets/go-home/bot.svg";
-import presence from "../../assets/go-home/presence.svg";
-import { useAppLayout } from "../../components/layout/useAppLayout";
-import { useAuth } from "../../auth/api";
-import "./PlayPages.css";
+import signinArrow from "@/assets/icons/home/signin-arrow.svg";
+import globe from "@/assets/icons/home/globe.svg";
+import local from "@/assets/icons/home/local.svg";
+import localArrow from "@/assets/icons/common/local-arrow.svg";
+import users from "@/assets/icons/home/users.svg";
+import friendArrow from "@/assets/icons/home/friend-arrow.svg";
+import puzzle from "@/assets/icons/home/puzzle.svg";
+import book from "@/assets/icons/home/book.svg";
+import lessonArrow from "@/assets/icons/home/lesson-arrow.svg";
+import bot from "@/assets/icons/home/bot.svg";
+import presence from "@/assets/icons/home/presence.svg";
+import { useAppLayout } from "@/hooks/useAppLayout";
+import { useAuth } from "@/hooks/useAuth";
+import "@/styles/play.css";
 
 const options = [
 	{

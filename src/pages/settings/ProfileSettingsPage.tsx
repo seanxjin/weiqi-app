@@ -1,20 +1,20 @@
 import { useState, type FormEvent } from "react";
 import { Link } from "react-router";
-import { StoneMark } from "../../components/StoneMark";
+import { StoneMark } from "@/components/ui/StoneMark";
 import {
 	BIO_MAX_LENGTH,
-	countries,
-	countryFlag,
 	LINK_MAX_LENGTH,
 	LOCATION_MAX_LENGTH,
 	MAX_PROFILE_LINKS,
-	mockJoinedAt,
 	RANK_INPUT_PATTERN,
 	REAL_NAME_MAX_LENGTH,
-	type Profile,
-} from "./settingsMock";
-import { SaveActions, SettingsSection, useSaveStatus } from "./SettingsControls";
-import { useSettings } from "./useSettings";
+} from "@/data/profileLimits";
+import { mockJoinedAt } from "@/data/mocks/settings";
+import { countries, countryFlag } from "@/lib/countries";
+import type { Profile } from "@/types/settings";
+import { SaveActions, SettingsSection } from "@/components/settings/SettingsControls";
+import { useSaveStatus } from "@/hooks/useSaveStatus";
+import { useSettings } from "@/hooks/useSettings";
 
 const joinDate = mockJoinedAt.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
 

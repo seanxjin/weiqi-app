@@ -2,7 +2,7 @@ import { useLayoutEffect, useRef } from "react";
 import type { CSSProperties } from "react";
 import { observeCanvas } from "weiqi-board";
 import type { CanvasDraw } from "weiqi-board";
-import "./appearance.css";
+import "@/styles/board.css";
 
 interface CanvasSurfaceProps {
 	label: string;

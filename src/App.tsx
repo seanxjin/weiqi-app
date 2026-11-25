@@ -1,29 +1,27 @@
 import { Navigate, Route, Routes } from "react-router";
-import { AppLayout } from "./components/layout/AppLayout";
-import {
-	LoginPage,
-	OAuthSignupPage,
-	PasswordResetConfirmPage,
-	PasswordResetPage,
-	ResendConfirmationPage,
-	SignupConfirmPage,
-	SignupOptionsPage,
-	SignupPage,
-	TwoFactorLoginPage,
-} from "./pages/auth/AuthPages";
-import MaterialLibraryPage from "./pages/material-library/MaterialLibraryPage";
-import GoHomePage from "./pages/play/GoHomePage";
-import LocalPlayPage from "./pages/play/LocalPlayPage";
-import OnlinePlayPage from "./pages/play/online/OnlinePlayPage";
-import ProfilePage from "./pages/profile/ProfilePage";
-import AccountSettingsPage from "./pages/settings/AccountSettingsPage";
-import BoardSettingsPage from "./pages/settings/BoardSettingsPage";
-import GameplaySettingsPage from "./pages/settings/GameplaySettingsPage";
-import ProfileSettingsPage from "./pages/settings/ProfileSettingsPage";
-import SettingsLayout from "./pages/settings/SettingsLayout";
-import SocialSettingsPage from "./pages/settings/SocialSettingsPage";
-import GameSetupPage from "./pages/setup/GameSetupPage";
-import WelcomePage from "./pages/welcome/WelcomePage";
+import { AppLayout } from "@/layouts/AppLayout";
+import { LoginPage } from "@/pages/auth/LoginPage";
+import { OAuthSignupPage } from "@/pages/auth/OAuthSignupPage";
+import { PasswordResetConfirmPage } from "@/pages/auth/PasswordResetConfirmPage";
+import { PasswordResetPage } from "@/pages/auth/PasswordResetPage";
+import { ResendConfirmationPage } from "@/pages/auth/ResendConfirmationPage";
+import { SignupConfirmPage } from "@/pages/auth/SignupConfirmPage";
+import { SignupOptionsPage } from "@/pages/auth/SignupOptionsPage";
+import { SignupPage } from "@/pages/auth/SignupPage";
+import { TwoFactorLoginPage } from "@/pages/auth/TwoFactorLoginPage";
+import MaterialLibraryPage from "@/pages/MaterialLibraryPage";
+import GoHomePage from "@/pages/play/GoHomePage";
+import LocalPlayPage from "@/pages/play/LocalPlayPage";
+import OnlinePlayPage from "@/pages/play/OnlinePlayPage";
+import ProfilePage from "@/pages/profile/ProfilePage";
+import AccountSettingsPage from "@/pages/settings/AccountSettingsPage";
+import BoardSettingsPage from "@/pages/settings/BoardSettingsPage";
+import GameplaySettingsPage from "@/pages/settings/GameplaySettingsPage";
+import ProfileSettingsPage from "@/pages/settings/ProfileSettingsPage";
+import SettingsLayout from "@/layouts/SettingsLayout";
+import SocialSettingsPage from "@/pages/settings/SocialSettingsPage";
+import GameSetupPage from "@/pages/play/GameSetupPage";
+import WelcomePage from "@/pages/WelcomePage";
 
 export default function App() {
 	return (

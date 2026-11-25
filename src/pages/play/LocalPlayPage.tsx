@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useSearchParams } from "react-router";
-import { LocalBoard } from "./LocalBoard";
-import "./PlayPages.css";
+import { LocalBoard } from "@/components/game/local/LocalBoard";
+import "@/styles/play.css";
 
 export default function LocalPlayPage() {
 	const [params] = useSearchParams();

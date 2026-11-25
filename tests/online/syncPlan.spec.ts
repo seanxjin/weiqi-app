@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
-import type { Move } from "../../src/game/online/protocol";
-import { planSync } from "../../src/game/online/syncPlan";
+import type { Move } from "../../src/api/protocol";
+import { planSync } from "../../src/controllers/syncPlan";
 
 const play = (color: "Black" | "White", x: number, y: number): Move => ({ type: "play", color, point: { x, y } });
 const pass = (color: "Black" | "White"): Move => ({ type: "pass", color });
