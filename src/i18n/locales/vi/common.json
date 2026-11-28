@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "CỜ VÂY",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Trang chủ Baduk",
+	"actions": {
+		"save": "Lưu",
+		"saving": "Đang lưu…",
+		"cancel": "Hủy",
+		"back": "Quay lại",
+		"retry": "Thử lại",
+		"close": "Đóng",
+		"login": "Đăng nhập",
+		"signIn": "Đăng nhập",
+		"signUp": "Đăng ký",
+		"logOut": "Đăng xuất",
+		"loggingOut": "Đang đăng xuất…"
+	},
+	"status": {
+		"saved": "Đã lưu",
+		"loading": "Đang tải…",
+		"checkingSession": "Đang kiểm tra phiên đăng nhập…",
+		"sessionError": "Không thể kiểm tra phiên đăng nhập. Vui lòng thử lại."
+	},
+	"comingSoon": "{{feature}} sắp ra mắt.",
+	"language": "Ngôn ngữ",
+	"languageDialog": {
+		"title": "Chọn ngôn ngữ ưa thích",
+		"loadError": "Không thể tải ngôn ngữ đó. Vui lòng thử lại."
+	}
+}

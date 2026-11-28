@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Go játék",
+	"railLabel": "Baduk",
+	"mainNavigation": "Fő navigáció",
+	"play": "Játék",
+	"eyebrow": "Valamilyen szöveg",
+	"heading": {
+		"label": "Go játék",
+		"prefix": "Játék: "
+	},
+	"description": {
+		"first": "Valamilyen szöveg....",
+		"second": "Valamilyen más szöveg..."
+	},
+	"footnote": "SZÁNJ RÁ IDŐT."
+}

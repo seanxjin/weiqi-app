@@ -1,0 +1,29 @@
+{
+	"navigation": "Baduk नेविगेशन",
+	"drawer": {
+		"open": "नेविगेशन मेनू खोलें",
+		"close": "नेविगेशन मेनू बंद करें"
+	},
+	"mainNavigation": "मुख्य नेविगेशन",
+	"play": "खेलें",
+	"puzzles": "पहेलियाँ",
+	"learn": "सीखें",
+	"guide": {
+		"heading": "गो में नए हैं?",
+		"startWithBasics": "बुनियादी बातों से शुरू करें"
+	},
+	"account": {
+		"label": "खाता",
+		"friends": "दोस्त",
+		"messages": "संदेश",
+		"notifications": "सूचनाएँ",
+		"settings": "सेटिंग्स",
+		"allSettings": "सभी सेटिंग"
+	},
+	"theme": {
+		"label": "थीम",
+		"system": "सिस्टम",
+		"light": "हल्की",
+		"dark": "गहरी"
+	}
+}

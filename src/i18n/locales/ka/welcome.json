@@ -1,0 +1,16 @@
+{
+	"pageTitle": "ითამაშეთ გო",
+	"railLabel": "Baduk",
+	"mainNavigation": "მთავარი ნავიგაცია",
+	"play": "თამაში",
+	"eyebrow": "რაღაც ტექსტი",
+	"heading": {
+		"label": "ითამაშეთ გო",
+		"prefix": "ითამაშეთ "
+	},
+	"description": {
+		"first": "რაღაც ტექსტი....",
+		"second": "სხვა ტექსტი..."
+	},
+	"footnote": "ნუ იჩქარებთ."
+}

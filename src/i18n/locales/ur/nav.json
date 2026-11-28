@@ -1,0 +1,29 @@
+{
+	"navigation": "Baduk نیویگیشن",
+	"drawer": {
+		"open": "نیویگیشن مینو کھولیں",
+		"close": "نیویگیشن مینو بند کریں"
+	},
+	"mainNavigation": "مرکزی نیویگیشن",
+	"play": "کھیلیں",
+	"puzzles": "پہیلیاں",
+	"learn": "سیکھیں",
+	"guide": {
+		"heading": "گو میں نئے ہیں؟",
+		"startWithBasics": "بنیادی باتوں سے شروع کریں"
+	},
+	"account": {
+		"label": "اکاؤنٹ",
+		"friends": "دوست",
+		"messages": "پیغامات",
+		"notifications": "اطلاعات",
+		"settings": "ترتیبات",
+		"allSettings": "تمام ترتیبات"
+	},
+	"theme": {
+		"label": "تھیم",
+		"system": "سسٹم",
+		"light": "ہلکی",
+		"dark": "گہری"
+	}
+}

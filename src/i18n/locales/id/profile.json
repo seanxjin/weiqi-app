@@ -1,0 +1,18 @@
+{
+	"editProfile": "Edit profil",
+	"meta": {
+		"joined": "Bergabung",
+		"rank": "Peringkat",
+		"noRank": "—",
+		"followers": "Pengikut",
+		"following": "Mengikuti"
+	},
+	"about": {
+		"heading": "Tentang",
+		"noBio": "Belum ada bio."
+	},
+	"games": {
+		"heading": "Riwayat permainan",
+		"empty": "Belum ada permainan."
+	}
+}

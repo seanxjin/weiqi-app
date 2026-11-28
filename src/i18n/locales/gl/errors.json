@@ -1,0 +1,34 @@
+{
+	"server": {
+		"unavailable": "O servidor non está dispoñible. Téntao de novo.",
+		"unreachable": "Non se pode contactar co servidor. Comproba a túa conexión e téntao de novo.",
+		"unexpectedResponse": "O servidor devolveu unha resposta inesperada. Téntao de novo.",
+		"requestFailed": "Non se puido completar a solicitude. Téntao de novo."
+	},
+	"rateLimited": {
+		"generic": "Demasiados intentos. Agarda antes de tentalo de novo.",
+		"withDelay_one": "Demasiados intentos. Agarda {{count}} segundo antes de tentalo de novo.",
+		"withDelay_other": "Demasiados intentos. Agarda {{count}} segundos antes de tentalo de novo."
+	},
+	"unknown": "Algo saíu mal. Téntao de novo.",
+	"api": {
+		"invalidCredentials": "O nome de usuario, o correo ou o contrasinal non son correctos.",
+		"twoFactorRequired": "Introduce o código de 6 díxitos do teu autenticador para continuar.",
+		"invalidTwoFactor": "Ese código do autenticador non é correcto. Téntao de novo.",
+		"emailUnconfirmed": "Confirma o teu enderezo de correo antes de iniciar sesión.",
+		"accountClosed": "Esta conta está pechada e non pode iniciar sesión.",
+		"usernameTaken": "Ese nome de usuario xa está en uso. Escolle outro.",
+		"emailTaken": "Ese enderezo de correo xa está en uso.",
+		"invalidToken": "Esta ligazón non é válida ou caducou. Solicita un novo correo para continuar.",
+		"unauthorized": "A túa sesión de inicio caducou. Comeza de novo.",
+		"conflict": "Non se puido completar o teu rexistro. Comeza de novo.",
+		"forbidden": "Bloqueouse esta solicitude. Actualiza a páxina e téntao de novo."
+	},
+	"validation": {
+		"passwordTooShort": "Usa polo menos 8 caracteres para o teu contrasinal.",
+		"newPasswordTooShort": "Usa polo menos 8 caracteres para o teu novo contrasinal.",
+		"passwordTooLong": "O teu contrasinal non pode superar os 72 bytes UTF-8.",
+		"passwordMismatch": "Os novos contrasinais non coinciden.",
+		"passwordUnchanged": "Escolle un contrasinal distinto do actual."
+	}
+}

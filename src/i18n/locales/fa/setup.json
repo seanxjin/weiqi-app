@@ -1,0 +1,85 @@
+{
+	"page": {
+		"title": {
+			"local": "تنظیم بازی محلی",
+			"online": "تنظیم بازی آنلاین"
+		},
+		"label": {
+			"local": "تنظیم بازی محلی",
+			"online": "تنظیم بازی آنلاین"
+		},
+		"backToMenu": "بازگشت به منو",
+		"settingsLabel": "تنظیمات بازی",
+		"timeLimitsNotice": "محدودیت‌های زمانی هنوز اعمال نمی‌شوند.",
+		"boardSize": "اندازهٔ تخته",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "در حال ایجاد بازی…",
+		"startGame": "شروع بازی",
+		"createFailed": "ایجاد بازی ممکن نشد. لطفاً دوباره تلاش کنید."
+	},
+	"players": {
+		"player1": "بازیکن ۱",
+		"player2": "بازیکن ۲",
+		"opponent": "حریف",
+		"guest": "شما (مهمان)"
+	},
+	"configuration": {
+		"eyebrow": "پیکربندی‌ها",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "سفارشی · {{system}}",
+		"presetOptionLabel": "{{preset}}، {{system}}",
+		"moreControls": "کنترل‌های زمانی بیشتر",
+		"fewerControls": "کنترل‌های زمانی کمتر",
+		"groups": {
+			"bullet": "گلوله‌ای",
+			"blitz": "برق‌آسا",
+			"rapid": "سریع",
+			"classical": "کلاسیک",
+			"correspondence": "مکاتبه‌ای",
+			"untimed": "بدون زمان"
+		},
+		"systems": {
+			"absolute": "مطلق",
+			"fischer": "فیشر",
+			"japaneseByoYomi": "بیو-یومی ژاپنی"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} ثانیه",
+			"absoluteMinutes": "{{minutes}} دقیقه",
+			"mainSeconds": "{{seconds}} ث",
+			"mainMinutes": "{{minutes}} د",
+			"fischer": "{{main}} + {{increment}} ث",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}} ث",
+			"daysPerMove_one": "{{count}} روز / حرکت",
+			"daysPerMove_other": "{{count}} روز / حرکت"
+		},
+		"noTimeLimit": "بدون محدودیت زمانی"
+	},
+	"customTime": {
+		"label": "کنترل زمان سفارشی",
+		"eyebrow": "کنترل زمان سفارشی",
+		"heading": "ساعت خود را تنظیم کنید",
+		"system": "سیستم",
+		"fields": {
+			"minutes": "اصلی · دقیقه",
+			"seconds": "اصلی · ثانیه",
+			"increment": "افزایش · ثانیه",
+			"periods": "دوره‌ها",
+			"periodSeconds": "دوره · ثانیه"
+		},
+		"hints": {
+			"byoYomi": "وقت اضافه از تعداد ثابتی دورهٔ زمان‌دار استفاده می‌کند.",
+			"default": "یک سیستم انتخاب کنید، سپس مقادیر ساعت آن را وارد کنید."
+		},
+		"apply": "استفاده از زمان سفارشی",
+		"errors": {
+			"wholeNumbers": "در هر فیلد ساعت یک عدد صحیح نامنفی وارد کنید.",
+			"mainSeconds": "ثانیه‌های زمان اصلی باید بین ۰ و ۵۹ باشد.",
+			"byoYomiPeriods": "بیو-یومی دست‌کم به یک دوره با طول دست‌کم یک ثانیه نیاز دارد.",
+			"mainTime": "زمان اصلی را بیشتر از صفر تنظیم کنید."
+		}
+	}
+}

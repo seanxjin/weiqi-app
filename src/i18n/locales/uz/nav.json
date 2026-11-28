@@ -1,0 +1,29 @@
+{
+	"navigation": "Baduk navigatsiyasi",
+	"drawer": {
+		"open": "Navigatsiyani ochish",
+		"close": "Navigatsiyani yopish"
+	},
+	"mainNavigation": "Asosiy navigatsiya",
+	"play": "Oʻynash",
+	"puzzles": "Masalalar",
+	"learn": "Oʻrganish",
+	"guide": {
+		"heading": "GO OʻYINIDA YANGIMISIZ?",
+		"startWithBasics": "Asoslardan boshlang"
+	},
+	"account": {
+		"label": "Hisob",
+		"friends": "Doʻstlar",
+		"messages": "Xabarlar",
+		"notifications": "Bildirishnomalar",
+		"settings": "Sozlamalar",
+		"allSettings": "Barcha sozlamalar"
+	},
+	"theme": {
+		"label": "Mavzu",
+		"system": "Tizim",
+		"light": "Yorugʻ",
+		"dark": "Qorongʻi"
+	}
+}

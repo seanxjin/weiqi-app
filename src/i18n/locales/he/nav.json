@@ -1,0 +1,29 @@
+{
+	"navigation": "ניווט Baduk",
+	"drawer": {
+		"open": "פתיחת הניווט",
+		"close": "סגירת הניווט"
+	},
+	"mainNavigation": "ניווט ראשי",
+	"play": "משחק",
+	"puzzles": "חידות",
+	"learn": "לימוד",
+	"guide": {
+		"heading": "חדשים בגו?",
+		"startWithBasics": "התחילו מהיסודות"
+	},
+	"account": {
+		"label": "חשבון",
+		"friends": "חברים",
+		"messages": "הודעות",
+		"notifications": "התראות",
+		"settings": "הגדרות",
+		"allSettings": "כל ההגדרות"
+	},
+	"theme": {
+		"label": "ערכת נושא",
+		"system": "מערכת",
+		"light": "בהיר",
+		"dark": "כהה"
+	}
+}

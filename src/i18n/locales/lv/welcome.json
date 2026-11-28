@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Spēlē go",
+	"railLabel": "Baduk",
+	"mainNavigation": "Galvenā navigācija",
+	"play": "Spēlēt",
+	"eyebrow": "Kāds teksts",
+	"heading": {
+		"label": "Spēlē go",
+		"prefix": "Spēlē "
+	},
+	"description": {
+		"first": "Kāds teksts....",
+		"second": "Kāds cits teksts..."
+	},
+	"footnote": "NESTEIDZIES."
+}

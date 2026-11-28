@@ -1,0 +1,85 @@
+{
+	"page": {
+		"title": {
+			"local": "Ρύθμιση τοπικού παιχνιδιού",
+			"online": "Ρύθμιση online παιχνιδιού"
+		},
+		"label": {
+			"local": "Ρύθμιση τοπικού παιχνιδιού",
+			"online": "Ρύθμιση online παιχνιδιού"
+		},
+		"backToMenu": "Πίσω στο μενού",
+		"settingsLabel": "Ρυθμίσεις παιχνιδιού",
+		"timeLimitsNotice": "Τα χρονικά όρια δεν εφαρμόζονται ακόμη.",
+		"boardSize": "ΜΕΓΕΘΟΣ ΤΑΜΠΛΟ",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Δημιουργία παιχνιδιού…",
+		"startGame": "Έναρξη παιχνιδιού",
+		"createFailed": "Δεν ήταν δυνατή η δημιουργία του παιχνιδιού. Δοκιμάστε ξανά."
+	},
+	"players": {
+		"player1": "Παίκτης 1",
+		"player2": "Παίκτης 2",
+		"opponent": "Αντίπαλος",
+		"guest": "Εσείς (επισκέπτης)"
+	},
+	"configuration": {
+		"eyebrow": "ΔΙΑΜΟΡΦΏΣΕΙΣ",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Προσαρμοσμένο · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Περισσότερες επιλογές χρόνου",
+		"fewerControls": "Λιγότερες επιλογές χρόνου",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Blitz",
+			"rapid": "Rapid",
+			"classical": "Κλασικό",
+			"correspondence": "Δι' αλληλογραφίας",
+			"untimed": "Χωρίς χρόνο"
+		},
+		"systems": {
+			"absolute": "Απόλυτος",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Ιαπωνικό byo-yomi"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} δευτ.",
+			"absoluteMinutes": "{{minutes}} λεπ.",
+			"mainSeconds": "{{seconds}}δ",
+			"mainMinutes": "{{minutes}}λ",
+			"fischer": "{{main}} + {{increment}}δ",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}}δ",
+			"daysPerMove_one": "{{count}} ημέρα / κίνηση",
+			"daysPerMove_other": "{{count}} ημέρες / κίνηση"
+		},
+		"noTimeLimit": "Χωρίς χρονικό όριο"
+	},
+	"customTime": {
+		"label": "Προσαρμοσμένος έλεγχος χρόνου",
+		"eyebrow": "ΠΡΟΣΑΡΜΟΣΜΕΝΟΣ ΕΛΕΓΧΟΣ ΧΡΟΝΟΥ",
+		"heading": "Ορίστε το δικό σας ρολόι",
+		"system": "Σύστημα",
+		"fields": {
+			"minutes": "Κύριος · λεπ.",
+			"seconds": "Κύριος · δευτ.",
+			"increment": "Προσαύξηση · δευτ.",
+			"periods": "Περίοδοι",
+			"periodSeconds": "Περίοδος · δευτ."
+		},
+		"hints": {
+			"byoYomi": "Ο επιπλέον χρόνος χρησιμοποιεί σταθερό αριθμό χρονομετρημένων περιόδων.",
+			"default": "Επιλέξτε σύστημα και μετά εισαγάγετε τις τιμές του ρολογιού."
+		},
+		"apply": "Χρήση προσαρμοσμένου χρόνου",
+		"errors": {
+			"wholeNumbers": "Εισαγάγετε μη αρνητικό ακέραιο σε κάθε πεδίο του ρολογιού.",
+			"mainSeconds": "Τα δευτερόλεπτα του κύριου χρόνου πρέπει να είναι από 0 έως 59.",
+			"byoYomiPeriods": "Το byo-yomi χρειάζεται τουλάχιστον μία περίοδο διάρκειας τουλάχιστον ενός δευτερολέπτου.",
+			"mainTime": "Ορίστε κύριο χρόνο μεγαλύτερο από μηδέν."
+		}
+	}
+}

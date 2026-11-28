@@ -1,0 +1,86 @@
+{
+	"page": {
+		"title": {
+			"local": "Configuració de partida local",
+			"online": "Configuració de partida en línia"
+		},
+		"label": {
+			"local": "Configuració de partida local",
+			"online": "Configuració de partida en línia"
+		},
+		"backToMenu": "Torna al menú",
+		"settingsLabel": "Configuració de la partida",
+		"timeLimitsNotice": "Encara no s’apliquen els límits de temps.",
+		"boardSize": "MIDA DEL TAULER",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "S’està creant la partida…",
+		"startGame": "Comença la partida",
+		"createFailed": "No s’ha pogut crear la partida. Torna-ho a provar."
+	},
+	"players": {
+		"player1": "Jugador 1",
+		"player2": "Jugador 2",
+		"opponent": "Rival",
+		"guest": "Tu (convidat)"
+	},
+	"configuration": {
+		"eyebrow": "CONFIGURACIONS",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Personalitzat · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Més controls de temps",
+		"fewerControls": "Menys controls de temps",
+		"groups": {
+			"bullet": "Bala",
+			"blitz": "Blitz",
+			"rapid": "Ràpida",
+			"classical": "Clàssica",
+			"correspondence": "Per correspondència",
+			"untimed": "Sense temps"
+		},
+		"systems": {
+			"absolute": "Absolut",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Byo-yomi japonès"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} s",
+			"absoluteMinutes": "{{minutes}} min",
+			"mainSeconds": "{{seconds}}s",
+			"mainMinutes": "{{minutes}}m",
+			"fischer": "{{main}} + {{increment}}s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}}s",
+			"daysPerMove_one": "{{count}} dia / jugada",
+			"daysPerMove_many": "{{count}} de dies / jugada",
+			"daysPerMove_other": "{{count}} dies / jugada"
+		},
+		"noTimeLimit": "Sense límit de temps"
+	},
+	"customTime": {
+		"label": "Control de temps personalitzat",
+		"eyebrow": "CONTROL DE TEMPS PERSONALITZAT",
+		"heading": "Configura el teu rellotge",
+		"system": "Sistema",
+		"fields": {
+			"minutes": "Principal · min",
+			"seconds": "Principal · s",
+			"increment": "Increment · s",
+			"periods": "Períodes",
+			"periodSeconds": "Període · s"
+		},
+		"hints": {
+			"byoYomi": "El temps extra fa servir un nombre fix de períodes cronometrats.",
+			"default": "Tria un sistema i després introdueix els valors del rellotge."
+		},
+		"apply": "Fes servir el temps personalitzat",
+		"errors": {
+			"wholeNumbers": "Introdueix un nombre enter no negatiu a cada camp del rellotge.",
+			"mainSeconds": "Els segons del temps principal han d’estar entre 0 i 59.",
+			"byoYomiPeriods": "El byo-yomi necessita almenys un període d’almenys un segon.",
+			"mainTime": "El temps principal ha de ser superior a zero."
+		}
+	}
+}

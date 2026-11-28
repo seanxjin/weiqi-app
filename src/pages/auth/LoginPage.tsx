@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link, useSearchParams } from "react-router";
 import { login } from "@/api/auth";
 import { ApiError } from "@/api/client";
@@ -11,6 +12,7 @@ import { AuthField, AuthLayout, AuthPasswordField } from "@/layouts/AuthLayout";
 import { formField } from "@/lib/authValidation";
 
 export function LoginPage() {
+	const { t } = useTranslation(["auth", "common"]);
 	const signIn = useSignIn();
 	const [params] = useSearchParams();
 	const [needsTotp, setNeedsTotp] = useState(false);
@@ -31,16 +33,16 @@ export function LoginPage() {
 	const oauthError = params.get("error");
 	const oauthMessage =
 		oauthError === "email_in_use"
-			? "This provider email belongs to an existing account. Sign in with that account instead."
+			? t("login.oauthErrors.emailInUse")
 			: oauthError
-				? "Social sign-in could not be completed. Please try again."
+				? t("login.oauthErrors.failed")
 				: null;
 
 	return (
-		<AuthLayout title="Sign in" accountLink={signupLink}>
+		<AuthLayout title={t("login.pageTitle")} accountLink={signupLink}>
 			<div className="auth-heading">
-				<h1>Welcome back</h1>
-				<p className="auth-subtitle">Your place at the board is waiting.</p>
+				<h1>{t("login.heading")}</h1>
+				<p className="auth-subtitle">{t("login.subtitle")}</p>
 			</div>
 			<form className="auth-form" onSubmit={onSubmit} aria-busy={pending}>
 				{oauthMessage && (
@@ -50,25 +52,25 @@ export function LoginPage() {
 				)}
 				<AuthField
 					name="login"
-					label="USERNAME OR EMAIL"
+					label={t("login.fields.login.label")}
 					icon={usernameIcon}
-					placeholder="Username or email"
+					placeholder={t("login.fields.login.placeholder")}
 					autoComplete="username"
 					maxLength={254}
 					required
 				/>
 				<AuthPasswordField
 					name="password"
-					label="PASSWORD"
-					placeholder="Enter your password"
+					label={t("fields.password.label")}
+					placeholder={t("fields.password.placeholder")}
 					autoComplete="current-password"
 					required
 				/>
 				{needsTotp && (
 					<AuthField
 						name="totp"
-						label="AUTHENTICATOR CODE"
-						placeholder="6-digit code"
+						label={t("fields.authenticatorCode.label")}
+						placeholder={t("fields.authenticatorCode.placeholder")}
 						inputMode="numeric"
 						autoComplete="one-time-code"
 						pattern="[0-9]{6}"
@@ -79,14 +81,14 @@ export function LoginPage() {
 				<FormError error={error} />
 				{error instanceof ApiError && error.code === "EMAIL_UNCONFIRMED" && (
 					<div className="auth-links">
-						<Link to="/signup/resend">Resend or correct confirmation email</Link>
+						<Link to="/signup/resend">{t("login.resendConfirmation")}</Link>
 					</div>
 				)}
 				<button className="auth-action" disabled={pending}>
-					{pending ? "Signing in…" : "Sign in"}
+					{pending ? t("login.signingIn") : t("common:actions.signIn")}
 				</button>
 				<div className="auth-links">
-					<Link to="/password-reset">Forgot password?</Link>
+					<Link to="/password-reset">{t("login.forgotPassword")}</Link>
 				</div>
 			</form>
 			<OAuthOptions />

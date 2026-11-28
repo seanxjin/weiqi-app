@@ -1,0 +1,18 @@
+{
+	"editProfile": "Uredi profil",
+	"meta": {
+		"joined": "Pridružio se",
+		"rank": "Rang",
+		"noRank": "—",
+		"followers": "Pratitelji",
+		"following": "Prati"
+	},
+	"about": {
+		"heading": "O meni",
+		"noBio": "Još nema životopisa."
+	},
+	"games": {
+		"heading": "Povijest partija",
+		"empty": "Još nema partija."
+	}
+}

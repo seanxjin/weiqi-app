@@ -10,6 +10,23 @@
 	--text: #333a34;
 	--muted: #77796e;
 	--divider: #d5d0c3;
+	--surface: #ece9e0;
+	--surface-raised: #f7f5ef;
+	--paper: #faf8f2;
+	--hover: #e1e2d7;
+	--hover-strong: #dadcce;
+	--active: #e4e5da;
+	--field: #fff;
+	--accent: #414d41;
+	--accent-hover: #333a34;
+	--on-accent: #f7f5ef;
+	--danger: #8b3434;
+	--danger-border: #d9b8b2;
+	--success: #3e6b45;
+	--toggle-off: #cfcabd;
+	--selection: #ddd8c9;
+	--backdrop: rgb(33 39 34 / 25%);
+	--icon-filter: none;
 	--board-shadow: 0 12px 28px -8px rgb(36 24 14 / 22%);
 	font-family: Inter, "Segoe UI", Arial, sans-serif;
 	color: var(--text);
@@ -19,6 +36,35 @@
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+:root[data-theme="dark"] {
+	--bg: #1c1d1a;
+	--text: #e4e1d8;
+	--muted: #9c9c90;
+	--divider: #3a3b35;
+	--surface: #242521;
+	--surface-raised: #282925;
+	--paper: #20211e;
+	--hover: #2f312c;
+	--hover-strong: #383a34;
+	--active: #33362f;
+	--field: #161714;
+	--accent: #5d6e5f;
+	--accent-hover: #6b7d6d;
+	--on-accent: #f3f0e8;
+	--danger: #e0897f;
+	--danger-border: #6b3a35;
+	--success: #8fc398;
+	--toggle-off: #45473f;
+	--selection: #45483f;
+	--backdrop: rgb(0 0 0 / 55%);
+	/* Lightens the single-colour SVG icons while keeping their hue. */
+	--icon-filter: invert(1) hue-rotate(180deg);
+	--board-shadow: 0 12px 28px -8px rgb(0 0 0 / 55%);
+	color-scheme: dark;
+}
+:where(img[src$=".svg"], img[src^="data:image/svg"]):not(.stone-key) {
+	filter: var(--icon-filter);
 }
 * {
 	box-sizing: border-box;
@@ -46,5 +92,129 @@ a {
 	-webkit-tap-highlight-color: transparent;
 }
 ::selection {
-	background: #ddd8c9;
+	background: var(--selection);
+}
+.language-button {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	max-width: 100%;
+	min-height: 32px;
+	padding: 4px 10px;
+	border: 1px solid var(--divider);
+	border-radius: 4px;
+	background: transparent;
+	color: inherit;
+	font: inherit;
+	cursor: pointer;
+}
+.language-button:hover {
+	background: var(--hover);
+}
+.language-button img {
+	flex-shrink: 0;
+}
+.language-button span {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.language-dialog {
+	width: min(960px, calc(100vw - 32px));
+	max-height: calc(100dvh - 32px);
+	padding: 0;
+	border: 1px solid var(--divider);
+	border-radius: 6px;
+	background: var(--bg);
+	color: var(--text);
+}
+.language-dialog[open] {
+	display: flex;
+	flex-direction: column;
+}
+.language-dialog::backdrop {
+	background: var(--backdrop);
+}
+.language-dialog__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	padding-block: 14px;
+	padding-inline: 24px 16px;
+	border-bottom: 1px solid var(--divider);
+	background: var(--surface);
+}
+.language-dialog__header h2 {
+	font-size: 18px;
+	font-weight: 500;
+}
+.language-dialog__close {
+	display: grid;
+	place-items: center;
+	width: 36px;
+	height: 36px;
+	border: 0;
+	border-radius: 4px;
+	background: none;
+	color: var(--muted);
+	font-size: 26px;
+	line-height: 1;
+	cursor: pointer;
+}
+.language-dialog__close:hover {
+	background: var(--hover);
+	color: var(--text);
+}
+.language-dialog__error {
+	margin: 12px 24px 0;
+	color: var(--danger);
+	font-size: 13px;
+}
+.language-dialog__list {
+	columns: 4 150px;
+	column-gap: 16px;
+	margin: 0;
+	padding: 16px;
+	overflow-y: auto;
+	list-style: none;
+}
+.language-dialog__list li {
+	break-inside: avoid;
+}
+.language-dialog__option {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1px;
+	width: 100%;
+	padding: 6px 10px;
+	border: 1px solid transparent;
+	border-radius: 6px;
+	background: none;
+	color: inherit;
+	font: inherit;
+	text-align: start;
+	cursor: pointer;
+}
+.language-dialog__option:hover {
+	background: var(--hover);
+}
+.language-dialog__option[aria-current="true"] {
+	border-color: var(--divider);
+	background: var(--active);
+}
+.language-dialog__option:focus-visible {
+	outline: 2px solid var(--text);
+	outline-offset: 1px;
+}
+.language-dialog__native {
+	font-size: 15px;
+}
+.language-dialog__translated {
+	font-size: 12px;
+	color: var(--muted);
+}
+[dir="rtl"] .directional-icon {
+	scale: -1 1;
 }

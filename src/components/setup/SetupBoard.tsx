@@ -1,9 +1,19 @@
 import { useEffect, useState } from "react";
+import { createBoardGeometry, welcomeBoardGeometry } from "weiqi-board";
+import type { BoardSize } from "weiqi-board";
+import { useTranslation } from "react-i18next";
 import { AnimatedBoardScene } from "@/components/board/AnimatedBoardScene";
-import { boardLoopSeconds, welcomeAppearance, welcomeMoves } from "@/data/welcomeScene";
+import { boardLoopSeconds, welcomeMoves } from "@/data/welcomeScene";
+import { usePreferences } from "@/hooks/usePreferences";
 import { PlayerPlaceholder } from "./PlayerPlaceholder";
+import type { AnimatedBoardMove } from "@/types/boardScene.ts";
 
-export function SetupBoard({ mode }: { mode: "local" | "online" }) {
+const noMoves: AnimatedBoardMove[] = [];
+
+/** Previews the chosen board size in the player's board and stone style; the demo game only fits the 19 × 19 board. */
+export function SetupBoard({ mode, boardSize }: { mode: "local" | "online"; boardSize: BoardSize }) {
+	const { t } = useTranslation("setup");
+	const { preferences } = usePreferences();
 	const [visible, setVisible] = useState(() => !window.matchMedia("(max-width: 46rem)").matches);
 	useEffect(() => {
 		const query = window.matchMedia("(max-width: 46rem)");
@@ -14,16 +24,18 @@ export function SetupBoard({ mode }: { mode: "local" | "online" }) {
 	}, []);
 	return visible ? (
 		<div className="setup-board">
-			<PlayerPlaceholder name={mode === "local" ? "Player 2" : "Opponent"} />
+			<PlayerPlaceholder name={mode === "local" ? t("players.player2") : t("players.opponent")} />
 			<AnimatedBoardScene
-				{...welcomeAppearance}
-				moves={welcomeMoves}
+				boardTheme={preferences.boardTheme}
+				stoneStyle={preferences.stoneStyle}
+				geometry={boardSize === 19 ? welcomeBoardGeometry : createBoardGeometry(boardSize)}
+				moves={boardSize === 19 ? welcomeMoves : noMoves}
 				duration={boardLoopSeconds}
 				paused={false}
 				reducedMotion={false}
 				showCaption={false}
 			/>
-			<PlayerPlaceholder name={mode === "local" ? "Player 1" : "You (Guest)"} />
+			<PlayerPlaceholder name={mode === "local" ? t("players.player1") : t("players.guest")} />
 		</div>
 	) : null;
 }

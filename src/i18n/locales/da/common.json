@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "GO",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Baduk-forside",
+	"actions": {
+		"save": "Gem",
+		"saving": "Gemmer…",
+		"cancel": "Annuller",
+		"back": "Tilbage",
+		"retry": "Prøv igen",
+		"close": "Luk",
+		"login": "Log ind",
+		"signIn": "Log ind",
+		"signUp": "Opret konto",
+		"logOut": "Log ud",
+		"loggingOut": "Logger ud…"
+	},
+	"status": {
+		"saved": "Gemt",
+		"loading": "Indlæser…",
+		"checkingSession": "Tjekker din session…",
+		"sessionError": "Din session kunne ikke tjekkes. Prøv igen."
+	},
+	"comingSoon": "{{feature}} kommer snart.",
+	"language": "Sprog",
+	"languageDialog": {
+		"title": "Vælg dit foretrukne sprog",
+		"loadError": "Sproget kunne ikke indlæses. Prøv igen."
+	}
+}

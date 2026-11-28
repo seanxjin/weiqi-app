@@ -1,0 +1,133 @@
+{
+	"colors": {
+		"black": "Đen",
+		"white": "Trắng"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Bỏ lượt",
+	"localPage": {
+		"title": "Chơi tại chỗ",
+		"eyebrow": "VÁN GIAO HỮU",
+		"heading": "Một khoảnh khắc cho ván cờ.",
+		"details": "{{size}} × {{size}} · Luật Nhật Bản"
+	},
+	"onlinePage": {
+		"title": "Chơi trực tuyến",
+		"eyebrow": "VÁN TRỰC TUYẾN",
+		"heading": "Một khoảnh khắc cho ván cờ.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Đang tải ván cờ…",
+		"notFound": "Ván cờ này không tồn tại hoặc không còn khả dụng.",
+		"startNew": "Bắt đầu ván trực tuyến mới",
+		"invited": "Bạn được mời chơi một ván {{size}} × {{size}}.",
+		"joining": "Đang tham gia…",
+		"joinAs": "Tham gia cầm quân {{color}}",
+		"full": "Ván cờ này đã đủ người. Chức năng xem ván cờ chưa khả dụng."
+	},
+	"local": {
+		"label": "Ván cờ vây tại chỗ",
+		"loadingEngine": "Đang tải engine cờ vây…"
+	},
+	"online": {
+		"label": "Ván cờ vây trực tuyến",
+		"youAre": "Bạn cầm quân {{color}}",
+		"connection": {
+			"connecting": "Đang kết nối…",
+			"open": "Đã kết nối",
+			"reconnecting": "Đang kết nối lại…",
+			"closed": "Đã ngắt kết nối"
+		},
+		"invite": {
+			"label": "Mời bạn bè bằng liên kết này",
+			"copy": "Sao chép",
+			"copied": "Đã sao chép"
+		},
+		"awaitingScoring": "Cả hai người chơi đã bỏ lượt. Chức năng tính điểm chưa được hỗ trợ, hãy hủy ván để ghi nhận ván cờ không tính điểm.",
+		"confirmResign": "Xác nhận đầu hàng",
+		"resign": "Đầu hàng",
+		"abort": "Hủy ván",
+		"results": {
+			"youWin": "Bạn thắng · {{color}} đã đầu hàng",
+			"winsByResignation": "{{color}} thắng do đối thủ đầu hàng",
+			"aborted": "Ván cờ bị {{color}} hủy",
+			"unscored": "Ván cờ kết thúc không tính điểm"
+		}
+	},
+	"turn": {
+		"preparing": "Đang chuẩn bị bàn cờ",
+		"reviewing": "Đang xem lại · Về Hiện tại để chơi",
+		"toPlay": "Lượt {{color}}",
+		"yourMove": "Lượt của bạn",
+		"waitingForOpponent": "Đang chờ đối thủ",
+		"awaitingScoring": "Ván cờ đã kết thúc · Chưa hỗ trợ tính điểm",
+		"gameOver": "Ván cờ kết thúc",
+		"sendingMove": "Đang gửi nước đi…",
+		"waitingForConnection": "Đang chờ kết nối"
+	},
+	"boardFooter": {
+		"lastMove": "Nước cuối: {{color}} {{move}}",
+		"startingPosition": "Thế cờ ban đầu"
+	},
+	"players": {
+		"label": "Người chơi",
+		"captured": "Đã ăn {{count}}",
+		"you": "{{name}} (bạn)",
+		"waiting": "{{name}} · đang chờ người chơi"
+	},
+	"history": {
+		"label": "Lịch sử nước đi",
+		"heading": "Nước đi",
+		"moveCount_other": "{{count}} NƯỚC",
+		"tableLabel": "Nước đi của Đen và Trắng",
+		"pair": "Cặp",
+		"move": "Nước {{number}}, {{color}}, {{move}}",
+		"pendingMove": "Nước {{number}}, {{color}}, {{move}}, đang gửi",
+		"empty": "Chưa có nước đi nào.",
+		"position": "Nước {{viewed}} / {{latest}}",
+		"currentPosition": "THẾ CỜ HIỆN TẠI",
+		"reviewing": "ĐANG XEM LẠI",
+		"navigationLabel": "Điều hướng lịch sử nước đi",
+		"navigation": {
+			"start": "Đầu",
+			"previous": "Trước",
+			"next": "Sau",
+			"current": "Hiện tại"
+		},
+		"undo": "Hoàn tác nước cuối",
+		"encouragement": "Cứ thong thả. Mỗi nước đi đều quan trọng.",
+		"keyboardHint": "Dùng ← → để duyệt từng nước, ↑ ↓ để về đầu và hiện tại."
+	},
+	"board": {
+		"sceneLabel": "Bàn cờ vây {{size}} × {{size}} hiển thị chuỗi {{moveCount}} nước khai cuộc",
+		"themedBoard": "Bàn cờ vây {{theme}}",
+		"emptyBoard": "Bàn cờ baduk {{size}} × {{size}} {{theme}} trống",
+		"stone": "Quân cờ baduk {{color}} {{finish}}",
+		"textureError": "Không thể tải vân bàn cờ.",
+		"pauseAnimations": "Tạm dừng hoạt ảnh",
+		"resumeAnimations": "Tiếp tục hoạt ảnh",
+		"pause": "TẠM DỪNG",
+		"resume": "TIẾP TỤC"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Hãy chọn một giao điểm trên bàn cờ.",
+			"occupied": "Giao điểm đó đã có quân.",
+			"wrongPlayer": "Đang là lượt của người chơi kia.",
+			"suicide": "Không được phép tự sát.",
+			"ko": "Nước đi đó bị cấm theo luật ko.",
+			"superko": "Nước đi đó lặp lại một thế cờ trước đây.",
+			"gameEnded": "Ván cờ này không thể nhận thêm nước đi."
+		},
+		"serverRejectedMove": "Máy chủ đã từ chối nước đi. {{reason}}",
+		"staleRevision": "Ván cờ đã thay đổi trước khi nước đi của bạn đến, nên nước đi không được thực hiện.",
+		"wrongPhase": "Không thể làm điều đó ở giai đoạn này của ván cờ.",
+		"seatTaken": "Chỗ này đã có người.",
+		"notYourTurn": "Đang là lượt của người chơi kia.",
+		"abortUnavailable": "Ván cờ không thể hủy được nữa.",
+		"replayFailed": "Không thể phát lại ván cờ này trên máy. Vui lòng tải lại trang.",
+		"notConnected": "Chưa kết nối tới máy chủ trò chơi.",
+		"engineLoadFailed": "Không thể tải engine cờ vây. Vui lòng thử lại.",
+		"gameLoadFailed": "Không thể tải ván cờ. Vui lòng thử lại.",
+		"seatTakenFirst": "Người khác đã chiếm chỗ trước. Ván cờ này đã đủ người."
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"editProfile": "Breyta prófíl",
+	"meta": {
+		"joined": "Skráð/ur",
+		"rank": "Styrkleiki",
+		"noRank": "—",
+		"followers": "Fylgjendur",
+		"following": "Fylgir"
+	},
+	"about": {
+		"heading": "Um mig",
+		"noBio": "Engin lýsing enn."
+	},
+	"games": {
+		"heading": "Leikjasaga",
+		"empty": "Engir leikir enn."
+	}
+}

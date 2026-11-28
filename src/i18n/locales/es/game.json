@@ -1,0 +1,135 @@
+{
+	"colors": {
+		"black": "Negras",
+		"white": "Blancas"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Pasar",
+	"localPage": {
+		"title": "Partida local",
+		"eyebrow": "PARTIDA AMISTOSA",
+		"heading": "Un momento para el juego.",
+		"details": "{{size}} × {{size}} · Reglas japonesas"
+	},
+	"onlinePage": {
+		"title": "Partida en línea",
+		"eyebrow": "PARTIDA EN LÍNEA",
+		"heading": "Un momento para el juego.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Cargando partida…",
+		"notFound": "Esta partida no existe o ya no está disponible.",
+		"startNew": "Empezar una nueva partida en línea",
+		"invited": "Te han invitado a una partida de {{size}} × {{size}}.",
+		"joining": "Uniéndose…",
+		"joinAs": "Unirse como {{color}}",
+		"full": "Esta partida está completa. Aún no se pueden observar partidas."
+	},
+	"local": {
+		"label": "Partida local de go",
+		"loadingEngine": "Cargando el motor de go…"
+	},
+	"online": {
+		"label": "Partida de go en línea",
+		"youAre": "Juegas con {{color}}",
+		"connection": {
+			"connecting": "Conectando…",
+			"open": "Conectado",
+			"reconnecting": "Reconectando…",
+			"closed": "Desconectado"
+		},
+		"invite": {
+			"label": "Invita a un amigo con este enlace",
+			"copy": "Copiar",
+			"copied": "Copiado"
+		},
+		"awaitingScoring": "Ambos jugadores han pasado. El recuento aún no está disponible, así que anula la partida para registrarla sin puntuación.",
+		"confirmResign": "Confirmar abandono",
+		"resign": "Abandonar",
+		"abort": "Anular",
+		"results": {
+			"youWin": "Has ganado · {{color}} abandonó",
+			"winsByResignation": "{{color}} gana por abandono",
+			"aborted": "Partida anulada por {{color}}",
+			"unscored": "La partida terminó sin puntuación"
+		}
+	},
+	"turn": {
+		"preparing": "Preparando el tablero",
+		"reviewing": "Revisando · Vuelve a Actual para jugar",
+		"toPlay": "Juegan {{color}}",
+		"yourMove": "Tu turno",
+		"waitingForOpponent": "Esperando a un rival",
+		"awaitingScoring": "La partida ha terminado · El recuento aún no está disponible",
+		"gameOver": "Fin de la partida",
+		"sendingMove": "Enviando jugada…",
+		"waitingForConnection": "Esperando conexión"
+	},
+	"boardFooter": {
+		"lastMove": "Última jugada: {{color}} {{move}}",
+		"startingPosition": "Posición inicial"
+	},
+	"players": {
+		"label": "Jugadores",
+		"captured": "Capturas: {{count}}",
+		"you": "{{name}} (tú)",
+		"waiting": "{{name}} · esperando a un jugador"
+	},
+	"history": {
+		"label": "Historial de jugadas",
+		"heading": "Jugadas",
+		"moveCount_one": "{{count}} JUGADA",
+		"moveCount_many": "{{count}} JUGADAS",
+		"moveCount_other": "{{count}} JUGADAS",
+		"tableLabel": "Jugadas de negras y blancas",
+		"pair": "Par",
+		"move": "Jugada {{number}}, {{color}}, {{move}}",
+		"pendingMove": "Jugada {{number}}, {{color}}, {{move}}, enviando",
+		"empty": "Aún no hay jugadas.",
+		"position": "Jugada {{viewed}} de {{latest}}",
+		"currentPosition": "POSICIÓN ACTUAL",
+		"reviewing": "REVISANDO",
+		"navigationLabel": "Navegación del historial de jugadas",
+		"navigation": {
+			"start": "Inicio",
+			"previous": "Anterior",
+			"next": "Siguiente",
+			"current": "Actual"
+		},
+		"undo": "Deshacer última jugada",
+		"encouragement": "Tómate tu tiempo. Cada jugada cuenta.",
+		"keyboardHint": "Usa ← → para recorrer las jugadas y ↑ ↓ para ir al inicio o a la posición actual."
+	},
+	"board": {
+		"sceneLabel": "Un tablero de go de {{size}} por {{size}} con una secuencia de {{moveCount}} jugadas de apertura",
+		"themedBoard": "Tablero de go de {{theme}}",
+		"emptyBoard": "Tablero de baduk vacío de {{size}} por {{size}} de {{theme}}",
+		"stone": "Piedra de baduk {{color}} {{finish}}",
+		"textureError": "No se pudo cargar la textura del tablero.",
+		"pauseAnimations": "Pausar animaciones",
+		"resumeAnimations": "Reanudar animaciones",
+		"pause": "PAUSA",
+		"resume": "REANUDAR"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Elige una intersección del tablero.",
+			"occupied": "Esa intersección está ocupada.",
+			"wrongPlayer": "Es el turno del otro jugador.",
+			"suicide": "El suicidio no está permitido.",
+			"ko": "Esa jugada está prohibida por la regla del ko.",
+			"superko": "Esa jugada repite una posición anterior.",
+			"gameEnded": "Esta partida no admite más jugadas."
+		},
+		"serverRejectedMove": "El servidor rechazó la jugada. {{reason}}",
+		"staleRevision": "La partida cambió antes de que llegara tu jugada, así que no se jugó.",
+		"wrongPhase": "Eso no es posible en esta fase de la partida.",
+		"seatTaken": "Ese puesto ya está ocupado.",
+		"notYourTurn": "Es el turno del otro jugador.",
+		"abortUnavailable": "La partida ya no se puede anular.",
+		"replayFailed": "No se pudo reproducir esta partida localmente. Recarga la página.",
+		"notConnected": "No hay conexión con el servidor de partidas.",
+		"engineLoadFailed": "No se pudo cargar el motor de go. Inténtalo de nuevo.",
+		"gameLoadFailed": "No se pudo cargar la partida. Inténtalo de nuevo.",
+		"seatTakenFirst": "Otra persona ocupó el puesto antes. Esta partida ya está completa."
+	}
+}

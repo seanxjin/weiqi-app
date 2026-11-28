@@ -1,0 +1,29 @@
+{
+	"navigation": "Navigare Baduk",
+	"drawer": {
+		"open": "Deschide navigarea",
+		"close": "Închide navigarea"
+	},
+	"mainNavigation": "Navigare principală",
+	"play": "Joacă",
+	"puzzles": "Probleme",
+	"learn": "Învață",
+	"guide": {
+		"heading": "NOU ÎN GO?",
+		"startWithBasics": "Începe cu elementele de bază"
+	},
+	"account": {
+		"label": "Cont",
+		"friends": "Prieteni",
+		"messages": "Mesaje",
+		"notifications": "Notificări",
+		"settings": "Setări",
+		"allSettings": "Toate setările"
+	},
+	"theme": {
+		"label": "Temă",
+		"system": "Sistem",
+		"light": "Luminoasă",
+		"dark": "Întunecată"
+	}
+}

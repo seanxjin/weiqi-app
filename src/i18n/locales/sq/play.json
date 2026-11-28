@@ -1,0 +1,116 @@
+{
+	"home": {
+		"pageTitle": "Luaj",
+		"location": "LUAJ / KREU",
+		"signedInAs": "Ke hyrë si {{username}}",
+		"guest": "Po luan si mysafir",
+		"logoutError": "Dalja nuk u krye. Provo sërish.",
+		"introduction": {
+			"heading": "Pak tekst",
+			"body": "Tjetër tekst"
+		},
+		"menuHeading": "Pak tekst.",
+		"options": {
+			"online": {
+				"label": "Luaj online",
+				"description": "Gjej kundërshtarin. Takohuni në tabelë."
+			},
+			"local": {
+				"label": "Luaj lokalisht",
+				"description": "Një tabelë. Dy lojtarë. Një ekran i përbashkët."
+			},
+			"friend": {
+				"label": "Luaj me një mik",
+				"description": "Fto dikë për një lojë të menduar."
+			},
+			"puzzles": {
+				"label": "Zgjidh ushtrime",
+				"description": "Sfida të vogla. Instinkte më të mprehta."
+			},
+			"lessons": {
+				"label": "Mësime",
+				"description": "Nga guri yt i parë te zbulimi yt i radhës."
+			},
+			"bots": {
+				"label": "Luaj me bot",
+				"description": "Ushtrohu me ritmin tënd, në çdo nivel."
+			}
+		},
+		"presence_one": "{{count, number}} lojtar në tabelë",
+		"presence_other": "{{count, number}} lojtarë në tabelë",
+		"reserved": {
+			"label": "SEKSION PËR MË VONË",
+			"heading": "Rezervuar për përmbajtje të ardhshme",
+			"body": "Ky seksion është lënë qëllimisht bosh për momentin. Do të përdoret për veçori të ardhshme, përditësime ose përmbajtje të përzgjedhur."
+		},
+		"footerTagline": "Rregulla të thjeshta. Zbulime pa fund."
+	},
+	"materials": {
+		"pageTitle": "Tabela dhe gurë",
+		"breadcrumb": "Baduk / Biblioteka e materialeve",
+		"collection": "Koleksioni 01",
+		"heading": "Tabela dhe gurë.",
+		"introduction": "Materiale natyrale. Detaje të qeta. Një vend për lojën.",
+		"boardsSection": {
+			"title": "Tabelat",
+			"meta": "Tre lloje druri · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Gurët",
+			"meta": "Katër stile · bardhë e zi"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Studim materialesh",
+			"enlarged": "Mostra të zmadhuara",
+			"heading": "Një kontrast i qetë.",
+			"body": "Katër sipërfaqe. Bardhë e zi, nën të njëjtën dritë të butë.",
+			"scale": "Mostra të zmadhuara · shkallë e njëjtë",
+			"form": "Formë e lëmuar, e rrumbullakët / ndryshim i hollë i sipërfaqes"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Kaya tradicionale japoneze",
+				"material": "Mjaltë e ngrohtë · fibër e drejtë"
+			},
+			"walnut": {
+				"name": "Arrë e errët",
+				"material": "Kafe e thellë · fibër e valëzuar"
+			},
+			"ash": {
+				"name": "Frashër i çelët skandinav",
+				"material": "Dru i çelët · fibër e butë"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "I lëmuar",
+				"name": "Rrasë",
+				"description": "Sipërfaqe të lëmuara e të shndritshme me një teksturë minerale të qetë.",
+				"black": "Rrasë e zezë",
+				"white": "Rrasë e bardhë"
+			},
+			"satin": {
+				"finish": "Satin",
+				"name": "Qeramikë",
+				"description": "Një shkëlqim i shpërndarë dhe kokërrzim i imët, delikat e i njëtrajtshëm.",
+				"black": "Qeramikë e zezë",
+				"white": "Qeramikë e bardhë"
+			},
+			"matte": {
+				"finish": "Mat",
+				"name": "Gur natyral",
+				"description": "Pika minerale të qeta nën një përfundim të lëmuar e të thatë.",
+				"black": "Gur i zi",
+				"white": "Gur i bardhë"
+			},
+			"snow": {
+				"finish": "I lëmuar",
+				"name": "Guaskë · Yuki / Shkalla Borë",
+				"description": "Fibër e imët dhe e dendur guaske mbi të bardhë qumështi, e çiftuar me rrasë të zezë të lëmuar.",
+				"black": "Rrasë e zezë Nachiguro",
+				"white": "Guaskë e bardhë Yuki"
+			}
+		},
+		"footerTagline": "Thelbësorja, e menduar mirë."
+	}
+}

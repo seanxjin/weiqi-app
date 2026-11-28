@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "ԳՈ",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Baduk գլխավոր էջ",
+	"actions": {
+		"save": "Պահպանել",
+		"saving": "Պահպանվում է…",
+		"cancel": "Չեղարկել",
+		"back": "Հետ",
+		"retry": "Կրկնել",
+		"close": "Փակել",
+		"login": "Մուտք",
+		"signIn": "Մուտք գործել",
+		"signUp": "Գրանցվել",
+		"logOut": "Դուրս գալ",
+		"loggingOut": "Դուրս գալիս…"
+	},
+	"status": {
+		"saved": "Պահպանված է",
+		"loading": "Բեռնվում է…",
+		"checkingSession": "Սեսիան ստուգվում է…",
+		"sessionError": "Չհաջողվեց ստուգել սեսիան։ Փորձեք կրկին։"
+	},
+	"comingSoon": "{{feature}}՝ շուտով։",
+	"language": "Լեզու",
+	"languageDialog": {
+		"title": "Ընտրեք նախընտրելի լեզուն",
+		"loadError": "Չհաջողվեց բեռնել այդ լեզուն։ Փորձեք կրկին։"
+	}
+}

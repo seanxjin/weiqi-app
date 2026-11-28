@@ -1,0 +1,209 @@
+{
+	"header": {
+		"title": "Configuración",
+		"sectionTitle": "Configuración de {{section}}",
+		"navLabel": "Seccións da configuración"
+	},
+	"sections": {
+		"board": "Taboleiro e pedras",
+		"gameplay": "Xogo",
+		"profile": "Perfil",
+		"social": "Social e privacidade",
+		"account": "Conta e seguridade",
+		"language": "Idioma e hora"
+	},
+	"board": {
+		"description": "Escolle o taboleiro e as pedras cos que xogas.",
+		"appearance": {
+			"title": "Aparencia",
+			"boardLegend": "Taboleiro",
+			"stonesLegend": "Pedras",
+			"previewLabel": "Vista previa do taboleiro"
+		},
+		"themes": {
+			"kaya": "Kaya xaponés tradicional",
+			"walnut": "Nogueira escura",
+			"ash": "Freixo escandinavo claro"
+		},
+		"stoneStyles": {
+			"polished": "Lousa",
+			"satin": "Cerámica",
+			"matte": "Pedra natural",
+			"snow": "Cuncha · Grao Yuki / Neve"
+		},
+		"display": {
+			"title": "Visualización do taboleiro",
+			"coordinates": {
+				"label": "Amosar coordenadas",
+				"description": "Etiqueta as columnas e filas arredor do bordo do taboleiro."
+			},
+			"lastMove": {
+				"label": "Resaltar a última xogada",
+				"description": "Marca a pedra xogada máis recentemente."
+			}
+		},
+		"sounds": {
+			"title": "Sons",
+			"playSounds": {
+				"label": "Reproducir sons",
+				"description": "Colocación de pedras, capturas e avisos do reloxo."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Xestiona como colocas as pedras e quen pode desafiarte.",
+		"moves": {
+			"title": "Xogadas",
+			"description": "Pide un segundo clic antes de colocar unha pedra para evitar clics accidentais.",
+			"legend": "Confirmar xogadas",
+			"options": {
+				"never": "Nunca",
+				"correspondence": "Só partidas por correspondencia",
+				"always": "Sempre"
+			}
+		},
+		"challenges": {
+			"title": "Desafíos",
+			"description": "Escolle quen pode enviarche desafíos.",
+			"legend": "Permitir desafíos de",
+			"options": {
+				"everyone": "Todos",
+				"registered": "Xogadores rexistrados",
+				"following": "Só xogadores aos que sigo",
+				"nobody": "Ninguén (permítense revancas)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Todo o que aparece aquí é visible no teu <profileLink>perfil público</profileLink>.",
+		"publicProfile": {
+			"title": "Perfil público",
+			"bioLabel": "Biografía breve",
+			"bioPlaceholder": "A túa biografía breve aparecerá no teu perfil.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Detalles",
+			"joinDate": "Data de rexistro",
+			"username": "Nome de usuario",
+			"changeUsername": "Cambiar",
+			"changeUsernameFeature": "O cambio de nome de usuario",
+			"realName": "Nome real",
+			"location": "Localización",
+			"country": "País",
+			"countryNotSet": "Sen especificar",
+			"rank": "Rango",
+			"rankPlaceholder": "p. ex., 12k, 3d",
+			"rankHint": "Usa 30k–1k, 1d–9d ou 1p–9p."
+		},
+		"links": {
+			"legend": "Ligazóns",
+			"linkLabel": "Ligazón {{number}}",
+			"remove": "Quitar",
+			"removeLabel": "Quitar ligazón {{number}}",
+			"add": "Engadir ligazón"
+		}
+	},
+	"social": {
+		"description": "Xestiona os xogadores aos que segues e os que bloqueaches.",
+		"blocking": {
+			"title": "Bloqueos",
+			"description_one": "Bloqueaches a {{count}} xogador. Os xogadores bloqueados non poden desafiarte nin enviarche mensaxes.",
+			"description_other": "Bloqueaches a {{count}} xogadores. Os xogadores bloqueados non poden desafiarte nin enviarche mensaxes.",
+			"empty": "Non bloqueaches a ninguén.",
+			"action": "Desbloquear",
+			"actionLabel": "Desbloquear a {{username}}"
+		},
+		"following": {
+			"title": "Seguindo",
+			"description_one": "Segues a {{count}} xogador.",
+			"description_other": "Segues a {{count}} xogadores.",
+			"empty": "Aínda non segues a ninguén.",
+			"action": "Deixar de seguir",
+			"actionLabel": "Deixar de seguir a {{username}}"
+		}
+	},
+	"account": {
+		"description": "Cambia o teu contrasinal, protexe a túa conta e xestiona as contas conectadas.",
+		"password": {
+			"title": "Cambiar contrasinal",
+			"updated": "Contrasinal actualizado",
+			"fields": {
+				"currentPassword": {
+					"label": "Contrasinal actual",
+					"show": "Amosar contrasinal actual",
+					"hide": "Agochar contrasinal actual"
+				},
+				"newPassword": {
+					"label": "Novo contrasinal",
+					"show": "Amosar novo contrasinal",
+					"hide": "Agochar novo contrasinal"
+				},
+				"confirmPassword": {
+					"label": "Repite o contrasinal",
+					"show": "Amosar contrasinal repetido",
+					"hide": "Agochar contrasinal repetido"
+				}
+			}
+		},
+		"contact": {
+			"title": "Datos de contacto",
+			"email": "Enderezo de correo",
+			"edit": "Editar",
+			"editFeature": "O cambio de correo"
+		},
+		"twoFactor": {
+			"title": "Autenticación en dous pasos",
+			"description": "Pide un código dunha aplicación de autenticación ao iniciar sesión.",
+			"off": "Desactivada",
+			"enable": "Activar",
+			"feature": "A autenticación en dous pasos"
+		},
+		"sessions": {
+			"title": "Sesións activas",
+			"description": "Se sospeitas que a túa conta está comprometida, cambia o contrasinal e pecha a sesión en todas partes.",
+			"thisDevice": "Este dispositivo",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "Pechar sesión en {{device}}",
+			"logOutAll": "Pechar sesión nos demais dispositivos"
+		},
+		"connections": {
+			"title": "Contas conectadas",
+			"description": "Inicia sesión en Baduk con estas contas.",
+			"connectedTo": "Conectada a {{provider}}",
+			"connect": "Conectar",
+			"disconnect": "Desconectar",
+			"note": "Ao desconectar elimínase a vinculación en Baduk. Pode que tamén teñas que revogar o acceso no outro sitio."
+		},
+		"close": {
+			"title": "Pechar a túa conta",
+			"description": "Ao pechar a túa conta agóchase o teu perfil e péchase a túa sesión en todas partes.",
+			"button": "Pechar conta",
+			"dialogTitle": "Pechar a túa conta?",
+			"dialogDescription": "Podes reabrila máis tarde desde a páxina de inicio de sesión.",
+			"feature": "O peche de conta"
+		}
+	},
+	"languageTime": {
+		"title": "Idioma e hora",
+		"description": "Escolle o idioma de Baduk e como se amosan as datas e horas.",
+		"language": {
+			"title": "Idioma",
+			"description": "Os cambios aplícanse ao momento en todas as páxinas.",
+			"legend": "Idioma da interface"
+		},
+		"time": {
+			"title": "Hora",
+			"description": "Úsase en marcas de tempo como datas de rexistro e actividade das sesións.",
+			"timeZone": "Fuso horario",
+			"automaticTimeZone": "Automático ({{timeZone}})",
+			"timeFormat": "Reloxo",
+			"formats": {
+				"auto": "Automático ({{example}})",
+				"12h": "12 horas ({{example}})",
+				"24h": "24 horas ({{example}})"
+			},
+			"preview": "Vista previa"
+		}
+	}
+}

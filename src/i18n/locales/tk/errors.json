@@ -1,0 +1,34 @@
+{
+	"server": {
+		"unavailable": "Serwer elýeterli däl. Gaýtadan synanyşyň.",
+		"unreachable": "Serwere birigip bolmady. Baglanyşygyňyzy barlaň we gaýtadan synanyşyň.",
+		"unexpectedResponse": "Serwer garaşylmadyk jogap berdi. Gaýtadan synanyşyň.",
+		"requestFailed": "Haýyşy ýerine ýetirip bolmady. Gaýtadan synanyşyň."
+	},
+	"rateLimited": {
+		"generic": "Synanyşyklar gaty köp. Gaýtadan synanyşmazdan öň garaşyň.",
+		"withDelay_one": "Synanyşyklar gaty köp. Gaýtadan synanyşmazdan öň {{count}} sekunt garaşyň.",
+		"withDelay_other": "Synanyşyklar gaty köp. Gaýtadan synanyşmazdan öň {{count}} sekunt garaşyň."
+	},
+	"unknown": "Bir zat nädogry boldy. Gaýtadan synanyşyň.",
+	"api": {
+		"invalidCredentials": "Ulanyjy ady, e-poçta ýa-da açar sözi nädogry.",
+		"twoFactorRequired": "Dowam etmek üçin tassyklaýyş programmasyndaky 6 sanly kody giriziň.",
+		"invalidTwoFactor": "Tassyklaýyş kody nädogry. Gaýtadan synanyşyň.",
+		"emailUnconfirmed": "Ulgama girmezden öň e-poçta salgyňyzy tassyklaň.",
+		"accountClosed": "Bu hasap ýapyldy we onuň bilen girip bolmaýar.",
+		"usernameTaken": "Bu ulanyjy ady eýýäm ulanylýar. Başgasyny saýlaň.",
+		"emailTaken": "Bu e-poçta salgysy eýýäm ulanylýar.",
+		"invalidToken": "Bu baglanyşyk nädogry ýa-da möhleti geçdi. Dowam etmek üçin täze hat soraň.",
+		"unauthorized": "Giriş sessiýaňyzyň möhleti geçdi. Täzeden başlaň.",
+		"conflict": "Hasaba durmagyňyzy tamamlap bolmady. Täzeden başlaň.",
+		"forbidden": "Bu haýyş petiklendi. Sahypany täzeläň we gaýtadan synanyşyň."
+	},
+	"validation": {
+		"passwordTooShort": "Açar sözüňiz üçin azyndan 8 nyşan ulanyň.",
+		"newPasswordTooShort": "Täze açar sözüňiz üçin azyndan 8 nyşan ulanyň.",
+		"passwordTooLong": "Açar sözüňiz 72 UTF-8 baýtdan geçmeli däl.",
+		"passwordMismatch": "Täze açar sözleri gabat gelmeýär.",
+		"passwordUnchanged": "Häzirkiden tapawutly açar sözüni saýlaň."
+	}
+}

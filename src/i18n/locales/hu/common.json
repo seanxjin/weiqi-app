@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "GO",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Baduk kezdőlap",
+	"actions": {
+		"save": "Mentés",
+		"saving": "Mentés…",
+		"cancel": "Mégse",
+		"back": "Vissza",
+		"retry": "Újra",
+		"close": "Bezárás",
+		"login": "Belépés",
+		"signIn": "Bejelentkezés",
+		"signUp": "Regisztráció",
+		"logOut": "Kijelentkezés",
+		"loggingOut": "Kijelentkezés…"
+	},
+	"status": {
+		"saved": "Mentve",
+		"loading": "Betöltés…",
+		"checkingSession": "Munkamenet ellenőrzése…",
+		"sessionError": "Nem sikerült ellenőrizni a munkamenetet. Próbáld újra."
+	},
+	"comingSoon": "{{feature}}: hamarosan elérhető.",
+	"language": "Nyelv",
+	"languageDialog": {
+		"title": "Válaszd ki a kívánt nyelvet",
+		"loadError": "Ezt a nyelvet nem sikerült betölteni. Próbáld újra."
+	}
+}

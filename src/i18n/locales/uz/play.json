@@ -1,0 +1,116 @@
+{
+	"home": {
+		"pageTitle": "Oʻynash",
+		"location": "OʻYNASH / BOSH SAHIFA",
+		"signedInAs": "{{username}} sifatida kirgansiz",
+		"guest": "Mehmon sifatida oʻynayapsiz",
+		"logoutError": "Chiqib boʻlmadi. Qaytadan urinib koʻring.",
+		"introduction": {
+			"heading": "Biror matn",
+			"body": "Boshqa biror matn"
+		},
+		"menuHeading": "Biror matn.",
+		"options": {
+			"online": {
+				"label": "Onlayn oʻynash",
+				"description": "Raqibingizni toping. Taxtada uchrashing."
+			},
+			"local": {
+				"label": "Mahalliy oʻyin",
+				"description": "Bitta taxta. Ikki oʻyinchi. Bitta ekran."
+			},
+			"friend": {
+				"label": "Doʻst bilan oʻynash",
+				"description": "Kimnidir mulohazali oʻyinga taklif qiling."
+			},
+			"puzzles": {
+				"label": "Masalalar yechish",
+				"description": "Kichik sinovlar. Oʻtkirroq sezgi."
+			},
+			"lessons": {
+				"label": "Darslar",
+				"description": "Birinchi toshingizdan keyingi kashfiyotingizgacha."
+			},
+			"bots": {
+				"label": "Botlar bilan oʻynash",
+				"description": "Oʻz surʼatingizda, istalgan darajada mashq qiling."
+			}
+		},
+		"presence_one": "Taxtada {{count, number}} oʻyinchi",
+		"presence_other": "Taxtada {{count, number}} oʻyinchi",
+		"reserved": {
+			"label": "KEYINGI BOʻLIM",
+			"heading": "Kelgusi kontent uchun ajratilgan",
+			"body": "Bu boʻlim hozircha ataylab boʻsh qoldirilgan. U kelgusidagi funksiyalar, yangilanishlar yoki tanlangan kontent uchun ishlatiladi."
+		},
+		"footerTagline": "Oddiy qoidalar. Cheksiz kashfiyotlar."
+	},
+	"materials": {
+		"pageTitle": "Taxtalar va toshlar",
+		"breadcrumb": "Baduk / Materiallar kutubxonasi",
+		"collection": "Toʻplam 01",
+		"heading": "Taxtalar va toshlar.",
+		"introduction": "Tabiiy materiallar. Sokin detallar. Oʻyin uchun maskan.",
+		"boardsSection": {
+			"title": "Taxtalar",
+			"meta": "Uch xil yogʻoch · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Toshlar",
+			"meta": "Toʻrt uslub · qora va oq"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Materiallar tadqiqi",
+			"enlarged": "Kattalashtirilgan namunalar",
+			"heading": "Sokin kontrast.",
+			"body": "Toʻrt sirt. Qora va oq, bir xil yumshoq yorugʻlikda.",
+			"scale": "Kattalashtirilgan namunalar · bir xil masshtab",
+			"form": "Silliq, yumaloq shakl / sirtdagi nozik farqlar"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Anʼanaviy yapon kayasi",
+				"material": "Iliq asal rang · tekis tola"
+			},
+			"walnut": {
+				"name": "Toʻq yongʻoq",
+				"material": "Toʻq jigarrang · oqimli tola"
+			},
+			"ash": {
+				"name": "Och rangli Skandinaviya shumtoli",
+				"material": "Och yogʻoch · mayin tola"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Sayqallangan",
+				"name": "Slanes",
+				"description": "Sokin mineral tuzilishga ega silliq, sayqallangan sirtlar.",
+				"black": "Qora slanes",
+				"white": "Oq slanes"
+			},
+			"satin": {
+				"finish": "Atlas",
+				"name": "Keramika",
+				"description": "Tarqoq jilo va nozik, bir tekis mayda donadorlik.",
+				"black": "Qora keramika",
+				"white": "Oq keramika"
+			},
+			"matte": {
+				"finish": "Xira",
+				"name": "Tabiiy tosh",
+				"description": "Silliq, quruq qoplama ostidagi sokin mineral dogʻlar.",
+				"black": "Qora tosh",
+				"white": "Oq tosh"
+			},
+			"snow": {
+				"finish": "Sayqallangan",
+				"name": "Chigʻanoq · Yuki / Snow navi",
+				"description": "Sutdek oq chigʻanoqdagi zich, nozik tolalar, sayqallangan qora slanes bilan juftlikda.",
+				"black": "Qora Nachiguro slanesi",
+				"white": "Oq Yuki chigʻanogʻi"
+			}
+		},
+		"footerTagline": "Eng muhimi, puxta oʻylangan."
+	}
+}

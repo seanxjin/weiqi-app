@@ -1,0 +1,29 @@
+{
+	"navigation": "Baduk-navigointi",
+	"drawer": {
+		"open": "Avaa navigointi",
+		"close": "Sulje navigointi"
+	},
+	"mainNavigation": "Päänavigointi",
+	"play": "Pelaa",
+	"puzzles": "Tehtävät",
+	"learn": "Opi",
+	"guide": {
+		"heading": "ONKO GO SINULLE UUSI?",
+		"startWithBasics": "Aloita perusteista"
+	},
+	"account": {
+		"label": "Tili",
+		"friends": "Ystävät",
+		"messages": "Viestit",
+		"notifications": "Ilmoitukset",
+		"settings": "Asetukset",
+		"allSettings": "Kaikki asetukset"
+	},
+	"theme": {
+		"label": "Teema",
+		"system": "Järjestelmä",
+		"light": "Vaalea",
+		"dark": "Tumma"
+	}
+}

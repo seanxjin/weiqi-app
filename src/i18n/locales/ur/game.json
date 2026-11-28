@@ -1,0 +1,134 @@
+{
+	"colors": {
+		"black": "سیاہ",
+		"white": "سفید"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "پاس",
+	"localPage": {
+		"title": "مقامی بازی",
+		"eyebrow": "دوستانہ بازی",
+		"heading": "کھیلنے کا ایک لمحہ۔",
+		"details": "{{size}} × {{size}} · جاپانی اصول"
+	},
+	"onlinePage": {
+		"title": "آن لائن بازی",
+		"eyebrow": "آن لائن بازی",
+		"heading": "کھیلنے کا ایک لمحہ۔",
+		"details": "{{size}} × {{size}} · کومی {{komi}}",
+		"loading": "بازی لوڈ ہو رہی ہے…",
+		"notFound": "یہ بازی موجود نہیں یا اب دستیاب نہیں ہے۔",
+		"startNew": "نئی آن لائن بازی شروع کریں",
+		"invited": "آپ کو {{size}} × {{size}} کی بازی کی دعوت دی گئی ہے۔",
+		"joining": "شامل ہو رہے ہیں…",
+		"joinAs": "{{color}} کے طور پر شامل ہوں",
+		"full": "یہ بازی بھر چکی ہے۔ بازیاں دیکھنے کی سہولت ابھی دستیاب نہیں۔"
+	},
+	"local": {
+		"label": "مقامی گو بازی",
+		"loadingEngine": "گو انجن لوڈ ہو رہا ہے…"
+	},
+	"online": {
+		"label": "آن لائن گو بازی",
+		"youAre": "آپ {{color}} ہیں",
+		"connection": {
+			"connecting": "منسلک ہو رہا ہے…",
+			"open": "منسلک",
+			"reconnecting": "دوبارہ منسلک ہو رہا ہے…",
+			"closed": "منقطع"
+		},
+		"invite": {
+			"label": "اس لنک سے کسی دوست کو مدعو کریں",
+			"copy": "کاپی",
+			"copied": "کاپی ہو گیا"
+		},
+		"awaitingScoring": "دونوں کھلاڑیوں نے پاس کیا۔ اسکورنگ ابھی دستیاب نہیں، اس لیے بازی کو بغیر اسکور ختم کرنے کے لیے منسوخ کریں۔",
+		"confirmResign": "ہار ماننے کی تصدیق کریں",
+		"resign": "ہار مانیں",
+		"abort": "بازی منسوخ کریں",
+		"results": {
+			"youWin": "آپ جیت گئے · {{color}} نے ہار مان لی",
+			"winsByResignation": "{{color}} حریف کے ہار ماننے سے جیت گیا",
+			"aborted": "بازی {{color}} نے منسوخ کی",
+			"unscored": "بازی بغیر اسکور ختم ہوئی"
+		}
+	},
+	"turn": {
+		"preparing": "بورڈ تیار ہو رہا ہے",
+		"reviewing": "جائزہ · کھیلنے کے لیے موجودہ پوزیشن پر واپس جائیں",
+		"toPlay": "{{color}} کی باری",
+		"yourMove": "آپ کی چال",
+		"waitingForOpponent": "حریف کا انتظار",
+		"awaitingScoring": "بازی ختم · اسکورنگ ابھی دستیاب نہیں",
+		"gameOver": "بازی ختم",
+		"sendingMove": "چال بھیجی جا رہی ہے…",
+		"waitingForConnection": "کنکشن کا انتظار"
+	},
+	"boardFooter": {
+		"lastMove": "آخری چال: {{color}} {{move}}",
+		"startingPosition": "ابتدائی پوزیشن"
+	},
+	"players": {
+		"label": "کھلاڑی",
+		"captured": "قید شدہ {{count}}",
+		"you": "{{name}} (آپ)",
+		"waiting": "{{name}} · کھلاڑی کا انتظار"
+	},
+	"history": {
+		"label": "چالوں کی تاریخ",
+		"heading": "چالیں",
+		"moveCount_one": "{{count}} چال",
+		"moveCount_other": "{{count}} چالیں",
+		"tableLabel": "سیاہ اور سفید کی چالیں",
+		"pair": "جوڑی",
+		"move": "چال {{number}}، {{color}}، {{move}}",
+		"pendingMove": "چال {{number}}، {{color}}، {{move}}، بھیجی جا رہی ہے",
+		"empty": "ابھی تک کوئی چال نہیں چلی گئی۔",
+		"position": "چال {{viewed}} از {{latest}}",
+		"currentPosition": "موجودہ پوزیشن",
+		"reviewing": "جائزہ جاری",
+		"navigationLabel": "چالوں کی تاریخ میں نیویگیشن",
+		"navigation": {
+			"start": "آغاز",
+			"previous": "پچھلی",
+			"next": "اگلی",
+			"current": "موجودہ"
+		},
+		"undo": "آخری چال واپس لیں",
+		"encouragement": "سوچ سمجھ کر کھیلیں۔ ہر چال اہم ہے۔",
+		"keyboardHint": "چالوں میں جانے کے لیے ← → اور آغاز اور موجودہ پوزیشن کے لیے ↑ ↓ استعمال کریں۔"
+	},
+	"board": {
+		"sceneLabel": "{{size}} بائی {{size}} گو بورڈ جس پر {{moveCount}} ابتدائی چالوں کا سلسلہ دکھایا گیا ہے",
+		"themedBoard": "{{theme}} گو بورڈ",
+		"emptyBoard": "خالی {{size}} بائی {{size}} {{theme}} Baduk بورڈ",
+		"stone": "{{finish}} {{color}} Baduk پتھر",
+		"textureError": "بورڈ کی ساخت لوڈ نہیں ہو سکی۔",
+		"pauseAnimations": "اینیمیشنز روکیں",
+		"resumeAnimations": "اینیمیشنز جاری کریں",
+		"pause": "روکیں",
+		"resume": "جاری رکھیں"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "بورڈ پر کوئی نقطۂ تقاطع منتخب کریں۔",
+			"occupied": "یہ نقطۂ تقاطع پہلے سے بھرا ہوا ہے۔",
+			"wrongPlayer": "دوسرے کھلاڑی کی باری ہے۔",
+			"suicide": "خودکشی کی اجازت نہیں ہے۔",
+			"ko": "کو کے اصول کے تحت یہ چال ممنوع ہے۔",
+			"superko": "یہ چال پچھلی پوزیشن کو دہراتی ہے۔",
+			"gameEnded": "یہ بازی اب مزید چالیں قبول نہیں کرتی۔"
+		},
+		"serverRejectedMove": "سرور نے یہ چال مسترد کر دی۔ {{reason}}",
+		"staleRevision": "آپ کی چال پہنچنے سے پہلے بازی بدل گئی، اس لیے چال نہیں چلی گئی۔",
+		"wrongPhase": "بازی کے اس مرحلے میں یہ عمل دستیاب نہیں ہے۔",
+		"seatTaken": "یہ نشست پہلے ہی لی جا چکی ہے۔",
+		"notYourTurn": "دوسرے کھلاڑی کی باری ہے۔",
+		"abortUnavailable": "اب یہ بازی منسوخ نہیں کی جا سکتی۔",
+		"replayFailed": "یہ بازی مقامی طور پر دوبارہ نہیں چلائی جا سکی۔ براہ کرم صفحہ دوبارہ لوڈ کریں۔",
+		"notConnected": "گیم سرور سے منسلک نہیں ہیں۔",
+		"engineLoadFailed": "گو انجن لوڈ نہیں ہو سکا۔ براہ کرم دوبارہ کوشش کریں۔",
+		"gameLoadFailed": "بازی لوڈ نہیں ہو سکی۔ براہ کرم دوبارہ کوشش کریں۔",
+		"seatTakenFirst": "کسی اور نے پہلے نشست لے لی۔ یہ بازی اب بھر چکی ہے۔"
+	}
+}

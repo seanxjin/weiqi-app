@@ -1,0 +1,86 @@
+{
+	"page": {
+		"title": {
+			"local": "Configurare partidă locală",
+			"online": "Configurare partidă online"
+		},
+		"label": {
+			"local": "Configurarea partidei locale",
+			"online": "Configurarea partidei online"
+		},
+		"backToMenu": "Înapoi la meniu",
+		"settingsLabel": "Setările partidei",
+		"timeLimitsNotice": "Limitele de timp nu sunt încă aplicate.",
+		"boardSize": "DIMENSIUNEA TABLEI",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Se creează partida…",
+		"startGame": "Începe jocul",
+		"createFailed": "Partida nu a putut fi creată. Încearcă din nou."
+	},
+	"players": {
+		"player1": "Jucătorul 1",
+		"player2": "Jucătorul 2",
+		"opponent": "Adversar",
+		"guest": "Tu (invitat)"
+	},
+	"configuration": {
+		"eyebrow": "CONFIGURAȚII",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Personalizat · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Mai multe opțiuni de timp",
+		"fewerControls": "Mai puține opțiuni de timp",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Blitz",
+			"rapid": "Rapid",
+			"classical": "Clasic",
+			"correspondence": "Corespondență",
+			"untimed": "Fără timp"
+		},
+		"systems": {
+			"absolute": "Absolut",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Byo-yomi japonez"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} s",
+			"absoluteMinutes": "{{minutes}} min",
+			"mainSeconds": "{{seconds}}s",
+			"mainMinutes": "{{minutes}}m",
+			"fischer": "{{main}} + {{increment}}s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}}s",
+			"daysPerMove_one": "{{count}} zi / mutare",
+			"daysPerMove_few": "{{count}} zile / mutare",
+			"daysPerMove_other": "{{count}} de zile / mutare"
+		},
+		"noTimeLimit": "Fără limită de timp"
+	},
+	"customTime": {
+		"label": "Control de timp personalizat",
+		"eyebrow": "CONTROL DE TIMP PERSONALIZAT",
+		"heading": "Setează-ți propriul ceas",
+		"system": "Sistem",
+		"fields": {
+			"minutes": "Principal · min",
+			"seconds": "Principal · s",
+			"increment": "Increment · s",
+			"periods": "Perioade",
+			"periodSeconds": "Perioadă · s"
+		},
+		"hints": {
+			"byoYomi": "Prelungirea folosește un număr fix de perioade cronometrate.",
+			"default": "Alege un sistem, apoi introdu valorile ceasului."
+		},
+		"apply": "Folosește timpul personalizat",
+		"errors": {
+			"wholeNumbers": "Introdu un număr întreg nenegativ în fiecare câmp al ceasului.",
+			"mainSeconds": "Secundele timpului principal trebuie să fie între 0 și 59.",
+			"byoYomiPeriods": "Byo-yomi necesită cel puțin o perioadă de cel puțin o secundă.",
+			"mainTime": "Setează un timp principal mai mare decât zero."
+		}
+	}
+}

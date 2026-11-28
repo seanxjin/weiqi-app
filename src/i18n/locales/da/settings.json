@@ -1,0 +1,209 @@
+{
+	"header": {
+		"title": "Indstillinger",
+		"sectionTitle": "Indstillinger for {{section}}",
+		"navLabel": "Indstillingssektioner"
+	},
+	"sections": {
+		"board": "Bræt & sten",
+		"gameplay": "Spil",
+		"profile": "Profil",
+		"social": "Socialt & privatliv",
+		"account": "Konto & sikkerhed",
+		"language": "Sprog & tid"
+	},
+	"board": {
+		"description": "Vælg det bræt og de sten, du spiller med.",
+		"appearance": {
+			"title": "Udseende",
+			"boardLegend": "Bræt",
+			"stonesLegend": "Sten",
+			"previewLabel": "Forhåndsvisning af bræt"
+		},
+		"themes": {
+			"kaya": "Traditionel japansk kaya",
+			"walnut": "Mørk valnød",
+			"ash": "Lys skandinavisk ask"
+		},
+		"stoneStyles": {
+			"polished": "Skifer",
+			"satin": "Keramik",
+			"matte": "Natursten",
+			"snow": "Muslingeskal · Yuki / Snow-kvalitet"
+		},
+		"display": {
+			"title": "Visning af bræt",
+			"coordinates": {
+				"label": "Vis koordinater",
+				"description": "Vis betegnelser for kolonner og rækker langs brættets kant."
+			},
+			"lastMove": {
+				"label": "Fremhæv sidste træk",
+				"description": "Markér den senest spillede sten."
+			}
+		},
+		"sounds": {
+			"title": "Lyde",
+			"playSounds": {
+				"label": "Afspil lyde",
+				"description": "Placering af sten, fangster og advarsler fra uret."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Bestem, hvordan du placerer sten, og hvem der kan udfordre dig.",
+		"moves": {
+			"title": "Træk",
+			"description": "Kræv et ekstra klik, før en sten placeres, for at undgå fejlklik.",
+			"legend": "Bekræft træk",
+			"options": {
+				"never": "Aldrig",
+				"correspondence": "Kun korrespondancepartier",
+				"always": "Altid"
+			}
+		},
+		"challenges": {
+			"title": "Udfordringer",
+			"description": "Vælg, hvem der kan sende dig udfordringer.",
+			"legend": "Tillad udfordringer fra",
+			"options": {
+				"everyone": "Alle",
+				"registered": "Registrerede spillere",
+				"following": "Kun spillere, jeg følger",
+				"nobody": "Ingen (omkampe er stadig tilladt)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Alt her er synligt på din <profileLink>offentlige profil</profileLink>.",
+		"publicProfile": {
+			"title": "Offentlig profil",
+			"bioLabel": "Kort bio",
+			"bioPlaceholder": "Din korte bio vises på din profil.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Detaljer",
+			"joinDate": "Tilmeldt",
+			"username": "Brugernavn",
+			"changeUsername": "Skift",
+			"changeUsernameFeature": "Skift af brugernavn",
+			"realName": "Rigtigt navn",
+			"location": "Sted",
+			"country": "Land",
+			"countryNotSet": "Ikke angivet",
+			"rank": "Rang",
+			"rankPlaceholder": "f.eks. 12k, 3d",
+			"rankHint": "Brug 30k–1k, 1d–9d eller 1p–9p."
+		},
+		"links": {
+			"legend": "Links",
+			"linkLabel": "Link {{number}}",
+			"remove": "Fjern",
+			"removeLabel": "Fjern link {{number}}",
+			"add": "Tilføj link"
+		}
+	},
+	"social": {
+		"description": "Administrer de spillere, du følger, og dem, du har blokeret.",
+		"blocking": {
+			"title": "Blokering",
+			"description_one": "Du blokerer {{count}} spiller. Blokerede spillere kan ikke udfordre dig eller skrive til dig.",
+			"description_other": "Du blokerer {{count}} spillere. Blokerede spillere kan ikke udfordre dig eller skrive til dig.",
+			"empty": "Du blokerer ikke nogen.",
+			"action": "Fjern blokering",
+			"actionLabel": "Fjern blokering af {{username}}"
+		},
+		"following": {
+			"title": "Følger",
+			"description_one": "Du følger {{count}} spiller.",
+			"description_other": "Du følger {{count}} spillere.",
+			"empty": "Du følger ikke nogen endnu.",
+			"action": "Stop med at følge",
+			"actionLabel": "Stop med at følge {{username}}"
+		}
+	},
+	"account": {
+		"description": "Skift din adgangskode, beskyt din konto, og administrer tilknyttede konti.",
+		"password": {
+			"title": "Skift adgangskode",
+			"updated": "Adgangskoden er opdateret",
+			"fields": {
+				"currentPassword": {
+					"label": "Nuværende adgangskode",
+					"show": "Vis nuværende adgangskode",
+					"hide": "Skjul nuværende adgangskode"
+				},
+				"newPassword": {
+					"label": "Ny adgangskode",
+					"show": "Vis ny adgangskode",
+					"hide": "Skjul ny adgangskode"
+				},
+				"confirmPassword": {
+					"label": "Gentag adgangskode",
+					"show": "Vis gentaget adgangskode",
+					"hide": "Skjul gentaget adgangskode"
+				}
+			}
+		},
+		"contact": {
+			"title": "Kontaktoplysninger",
+			"email": "E-mailadresse",
+			"edit": "Rediger",
+			"editFeature": "Skift af e-mail"
+		},
+		"twoFactor": {
+			"title": "Totrinsbekræftelse",
+			"description": "Kræv en kode fra en godkendelsesapp, når du logger ind.",
+			"off": "Fra",
+			"enable": "Aktivér",
+			"feature": "Totrinsbekræftelse"
+		},
+		"sessions": {
+			"title": "Aktive sessioner",
+			"description": "Hvis du har mistanke om, at din konto er kompromitteret, så skift adgangskode og log ud overalt.",
+			"thisDevice": "Denne enhed",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "Log {{device}} ud",
+			"logOutAll": "Log ud på alle andre enheder"
+		},
+		"connections": {
+			"title": "Tilknyttede konti",
+			"description": "Log ind på Baduk med disse konti.",
+			"connectedTo": "Tilknyttet {{provider}}",
+			"connect": "Tilknyt",
+			"disconnect": "Fjern tilknytning",
+			"note": "Når du fjerner tilknytningen, slettes forbindelsen på Baduk. Du skal muligvis også tilbagekalde adgangen på den anden side."
+		},
+		"close": {
+			"title": "Luk din konto",
+			"description": "Når du lukker din konto, skjules din profil, og du logges ud overalt.",
+			"button": "Luk konto",
+			"dialogTitle": "Vil du lukke din konto?",
+			"dialogDescription": "Du kan genåbne den senere fra login-siden.",
+			"feature": "Lukning af konto"
+		}
+	},
+	"languageTime": {
+		"title": "Sprog & tid",
+		"description": "Vælg det sprog, Baduk bruger, og hvordan datoer og klokkeslæt vises.",
+		"language": {
+			"title": "Sprog",
+			"description": "Ændringer træder i kraft med det samme på alle sider.",
+			"legend": "Visningssprog"
+		},
+		"time": {
+			"title": "Tid",
+			"description": "Bruges til tidsangivelser som tilmeldingsdato og sessionsaktivitet.",
+			"timeZone": "Tidszone",
+			"automaticTimeZone": "Automatisk ({{timeZone}})",
+			"timeFormat": "Ur",
+			"formats": {
+				"auto": "Automatisk ({{example}})",
+				"12h": "12-timers ({{example}})",
+				"24h": "24-timers ({{example}})"
+			},
+			"preview": "Forhåndsvisning"
+		}
+	}
+}

@@ -1,0 +1,87 @@
+{
+	"page": {
+		"title": {
+			"local": "Nastavení místní hry",
+			"online": "Nastavení online hry"
+		},
+		"label": {
+			"local": "Nastavení místní hry",
+			"online": "Nastavení online hry"
+		},
+		"backToMenu": "Zpět do nabídky",
+		"settingsLabel": "Nastavení hry",
+		"timeLimitsNotice": "Časové limity zatím nejsou vynucovány.",
+		"boardSize": "VELIKOST DESKY",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Vytváření hry…",
+		"startGame": "Začít hru",
+		"createFailed": "Hru se nepodařilo vytvořit. Zkuste to prosím znovu."
+	},
+	"players": {
+		"player1": "Hráč 1",
+		"player2": "Hráč 2",
+		"opponent": "Soupeř",
+		"guest": "Vy (host)"
+	},
+	"configuration": {
+		"eyebrow": "KONFIGURACE",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Vlastní · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Více časových kontrol",
+		"fewerControls": "Méně časových kontrol",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Blesk",
+			"rapid": "Rapid",
+			"classical": "Klasická",
+			"correspondence": "Korespondenční",
+			"untimed": "Bez času"
+		},
+		"systems": {
+			"absolute": "Absolutní",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Japonské byo-yomi"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} s",
+			"absoluteMinutes": "{{minutes}} min",
+			"mainSeconds": "{{seconds}}s",
+			"mainMinutes": "{{minutes}}m",
+			"fischer": "{{main}} + {{increment}}s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}}s",
+			"daysPerMove_one": "{{count}} den / tah",
+			"daysPerMove_few": "{{count}} dny / tah",
+			"daysPerMove_many": "{{count}} dne / tah",
+			"daysPerMove_other": "{{count}} dní / tah"
+		},
+		"noTimeLimit": "Bez časového limitu"
+	},
+	"customTime": {
+		"label": "Vlastní časová kontrola",
+		"eyebrow": "VLASTNÍ ČASOVÁ KONTROLA",
+		"heading": "Nastavte si vlastní hodiny",
+		"system": "Systém",
+		"fields": {
+			"minutes": "Základ · min",
+			"seconds": "Základ · s",
+			"increment": "Přírůstek · s",
+			"periods": "Periody",
+			"periodSeconds": "Perioda · s"
+		},
+		"hints": {
+			"byoYomi": "Prodloužení používá pevný počet časových period.",
+			"default": "Zvolte systém a poté zadejte hodnoty hodin."
+		},
+		"apply": "Použít vlastní čas",
+		"errors": {
+			"wholeNumbers": "Do každého pole hodin zadejte nezáporné celé číslo.",
+			"mainSeconds": "Sekundy základního času musí být mezi 0 a 59.",
+			"byoYomiPeriods": "Byo-yomi vyžaduje alespoň jednu periodu dlouhou alespoň jednu sekundu.",
+			"mainTime": "Základní čas musí být větší než nula."
+		}
+	}
+}

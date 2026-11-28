@@ -1,0 +1,29 @@
+{
+	"navigation": "Baduk navigáció",
+	"drawer": {
+		"open": "Navigáció megnyitása",
+		"close": "Navigáció bezárása"
+	},
+	"mainNavigation": "Fő navigáció",
+	"play": "Játék",
+	"puzzles": "Feladványok",
+	"learn": "Tanulás",
+	"guide": {
+		"heading": "ÚJ VAGY A GÓBAN?",
+		"startWithBasics": "Kezdd az alapokkal"
+	},
+	"account": {
+		"label": "Fiók",
+		"friends": "Barátok",
+		"messages": "Üzenetek",
+		"notifications": "Értesítések",
+		"settings": "Beállítások",
+		"allSettings": "Összes beállítás"
+	},
+	"theme": {
+		"label": "Téma",
+		"system": "Rendszer",
+		"light": "Világos",
+		"dark": "Sötét"
+	}
+}

@@ -1,0 +1,134 @@
+{
+	"colors": {
+		"black": "Swart",
+		"white": "Wit"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Pas",
+	"localPage": {
+		"title": "Plaaslike spel",
+		"eyebrow": "VRIENDSKAPLIKE SPEL",
+		"heading": "’n Oomblik vir die spel.",
+		"details": "{{size}} × {{size}} · Japannese reëls"
+	},
+	"onlinePage": {
+		"title": "Aanlyn spel",
+		"eyebrow": "AANLYN SPEL",
+		"heading": "’n Oomblik vir die spel.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Laai tans spel…",
+		"notFound": "Hierdie spel bestaan nie of is nie meer beskikbaar nie.",
+		"startNew": "Begin ’n nuwe aanlyn spel",
+		"invited": "Jy is genooi na ’n {{size}} × {{size}}-spel.",
+		"joining": "Sluit tans aan…",
+		"joinAs": "Sluit aan as {{color}}",
+		"full": "Hierdie spel is vol. Om spele te kyk is nog nie beskikbaar nie."
+	},
+	"local": {
+		"label": "Plaaslike Go-spel",
+		"loadingEngine": "Laai tans Go-enjin…"
+	},
+	"online": {
+		"label": "Aanlyn Go-spel",
+		"youAre": "Jy speel {{color}}",
+		"connection": {
+			"connecting": "Koppel tans…",
+			"open": "Gekoppel",
+			"reconnecting": "Herkoppel tans…",
+			"closed": "Ontkoppel"
+		},
+		"invite": {
+			"label": "Nooi ’n vriend met hierdie skakel",
+			"copy": "Kopieer",
+			"copied": "Gekopieer"
+		},
+		"awaitingScoring": "Albei spelers het gepas. Telling word nog nie ondersteun nie, dus staak die spel om dit sonder telling aan te teken.",
+		"confirmResign": "Bevestig oorgawe",
+		"resign": "Gee oor",
+		"abort": "Staak",
+		"results": {
+			"youWin": "Jy wen · {{color}} het oorgegee",
+			"winsByResignation": "{{color}} wen deur oorgawe",
+			"aborted": "Spel deur {{color}} gestaak",
+			"unscored": "Spel het sonder ’n telling geëindig"
+		}
+	},
+	"turn": {
+		"preparing": "Berei bord voor",
+		"reviewing": "Hersien · Keer terug na Huidige om te speel",
+		"toPlay": "{{color}} se beurt",
+		"yourMove": "Jou beurt",
+		"waitingForOpponent": "Wag vir ’n teenstander",
+		"awaitingScoring": "Spel is verby · Telling word nog nie ondersteun nie",
+		"gameOver": "Spel verby",
+		"sendingMove": "Stuur tans set…",
+		"waitingForConnection": "Wag vir verbinding"
+	},
+	"boardFooter": {
+		"lastMove": "Laaste set: {{color}} {{move}}",
+		"startingPosition": "Beginposisie"
+	},
+	"players": {
+		"label": "Spelers",
+		"captured": "Gevang {{count}}",
+		"you": "{{name}} (jy)",
+		"waiting": "{{name}} · wag vir ’n speler"
+	},
+	"history": {
+		"label": "Setgeskiedenis",
+		"heading": "Sette",
+		"moveCount_one": "{{count}} SET",
+		"moveCount_other": "{{count}} SETTE",
+		"tableLabel": "Swart en Wit se sette",
+		"pair": "Paar",
+		"move": "Set {{number}}, {{color}}, {{move}}",
+		"pendingMove": "Set {{number}}, {{color}}, {{move}}, word gestuur",
+		"empty": "Nog geen sette nie.",
+		"position": "Set {{viewed}} van {{latest}}",
+		"currentPosition": "HUIDIGE POSISIE",
+		"reviewing": "HERSIEN",
+		"navigationLabel": "Navigasie deur setgeskiedenis",
+		"navigation": {
+			"start": "Begin",
+			"previous": "Vorige",
+			"next": "Volgende",
+			"current": "Huidige"
+		},
+		"undo": "Ontdoen laaste set",
+		"encouragement": "Neem jou tyd. Elke set tel.",
+		"keyboardHint": "Gebruik ← → om deur sette te beweeg, ↑ ↓ vir begin en huidige."
+	},
+	"board": {
+		"sceneLabel": "’n {{size}} by {{size}} Go-bord wat ’n reeks van {{moveCount}} openingsette wys",
+		"themedBoard": "{{theme}} Go-bord",
+		"emptyBoard": "Leë {{size}} by {{size}} {{theme}} baduk-bord",
+		"stone": "{{finish}} {{color}} baduk-klip",
+		"textureError": "Die bordtekstuur kon nie gelaai word nie.",
+		"pauseAnimations": "Onderbreek animasies",
+		"resumeAnimations": "Hervat animasies",
+		"pause": "ONDERBREEK",
+		"resume": "HERVAT"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Kies ’n kruispunt op die bord.",
+			"occupied": "Daardie kruispunt is beset.",
+			"wrongPlayer": "Dit is die ander speler se beurt.",
+			"suicide": "Selfmoord is nie toegelaat nie.",
+			"ko": "Daardie set word deur ko verbied.",
+			"superko": "Daardie set herhaal ’n vroeëre posisie.",
+			"gameEnded": "Hierdie spel kan nie nog ’n set aanvaar nie."
+		},
+		"serverRejectedMove": "Die bediener het die set geweier. {{reason}}",
+		"staleRevision": "Die spel het verander voordat jou set aangekom het, dus is dit nie gespeel nie.",
+		"wrongPhase": "Dit is nie in hierdie fase van die spel moontlik nie.",
+		"seatTaken": "Daardie plek is reeds beset.",
+		"notYourTurn": "Dit is die ander speler se beurt.",
+		"abortUnavailable": "Die spel kan nie meer gestaak word nie.",
+		"replayFailed": "Hierdie spel kon nie plaaslik herspeel word nie. Herlaai asseblief die bladsy.",
+		"notConnected": "Nie aan die spelbediener gekoppel nie.",
+		"engineLoadFailed": "Die Go-enjin kon nie gelaai word nie. Probeer asseblief weer.",
+		"gameLoadFailed": "Die spel kon nie gelaai word nie. Probeer asseblief weer.",
+		"seatTakenFirst": "Iemand anders het die plek eerste ingeneem. Hierdie spel is nou vol."
+	}
+}

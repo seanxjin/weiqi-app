@@ -1,0 +1,18 @@
+{
+	"editProfile": "Profiel bewerken",
+	"meta": {
+		"joined": "Lid sinds",
+		"rank": "Rang",
+		"noRank": "—",
+		"followers": "Volgers",
+		"following": "Volgend"
+	},
+	"about": {
+		"heading": "Over",
+		"noBio": "Nog geen bio."
+	},
+	"games": {
+		"heading": "Partijgeschiedenis",
+		"empty": "Nog geen partijen."
+	}
+}

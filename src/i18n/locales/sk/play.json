@@ -1,0 +1,118 @@
+{
+	"home": {
+		"pageTitle": "Hrať",
+		"location": "HRAŤ / DOMOV",
+		"signedInAs": "Prihlásený ako {{username}}",
+		"guest": "Hráte ako hosť",
+		"logoutError": "Odhlásenie sa nepodarilo. Skúste to znova.",
+		"introduction": {
+			"heading": "Nejaký text",
+			"body": "Iný text"
+		},
+		"menuHeading": "Nejaký text.",
+		"options": {
+			"online": {
+				"label": "Hrať online",
+				"description": "Nájdite súpera. Stretnite sa pri doske."
+			},
+			"local": {
+				"label": "Hrať lokálne",
+				"description": "Jedna doska. Dvaja hráči. Spoločná obrazovka."
+			},
+			"friend": {
+				"label": "Hrať s priateľom",
+				"description": "Pozvite niekoho na premyslenú partiu."
+			},
+			"puzzles": {
+				"label": "Riešiť úlohy",
+				"description": "Malé výzvy. Ostrejšie inštinkty."
+			},
+			"lessons": {
+				"label": "Lekcie",
+				"description": "Od prvého kameňa k ďalšiemu poznaniu."
+			},
+			"bots": {
+				"label": "Hrať s botmi",
+				"description": "Trénujte vlastným tempom, na akejkoľvek úrovni."
+			}
+		},
+		"presence_one": "{{count, number}} hráč pri doske",
+		"presence_few": "{{count, number}} hráči pri doske",
+		"presence_many": "{{count, number}} hráča pri doske",
+		"presence_other": "{{count, number}} hráčov pri doske",
+		"reserved": {
+			"label": "SEKCIA NA NESKÔR",
+			"heading": "Vyhradené pre budúci obsah",
+			"body": "Táto sekcia je zatiaľ zámerne prázdna. Bude slúžiť pre budúce funkcie, novinky alebo vybraný obsah."
+		},
+		"footerTagline": "Jednoduché pravidlá. Nekonečné objavovanie."
+	},
+	"materials": {
+		"pageTitle": "Dosky a kamene",
+		"breadcrumb": "Baduk / Knižnica materiálov",
+		"collection": "Kolekcia 01",
+		"heading": "Dosky a kamene.",
+		"introduction": "Prírodné materiály. Tiché detaily. Miesto pre hru.",
+		"boardsSection": {
+			"title": "Dosky",
+			"meta": "Tri druhy dreva · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Kamene",
+			"meta": "Štyri štýly · čierna a biela"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Štúdia materiálov",
+			"enlarged": "Zväčšené vzorky",
+			"heading": "Tichý kontrast.",
+			"body": "Štyri povrchy. Čierna a biela v rovnakom jemnom svetle.",
+			"scale": "Zväčšené vzorky · jednotná mierka",
+			"form": "Hladký, zaoblený tvar / jemná variácia povrchu"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Tradičná japonská kaya",
+				"material": "Teplý medový odtieň · rovné vlákno"
+			},
+			"walnut": {
+				"name": "Tmavý orech",
+				"material": "Sýto hnedá · zvlnené vlákno"
+			},
+			"ash": {
+				"name": "Svetlý škandinávsky jaseň",
+				"material": "Svetlé drevo · jemné vlákno"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Leštené",
+				"name": "Bridlica",
+				"description": "Hladké leštené povrchy s nenápadnou minerálnou textúrou.",
+				"black": "Čierna bridlica",
+				"white": "Biela bridlica"
+			},
+			"satin": {
+				"finish": "Saténové",
+				"name": "Keramika",
+				"description": "Rozptýlený lesk a jemná, rovnomerná zrnitosť.",
+				"black": "Čierna keramika",
+				"white": "Biela keramika"
+			},
+			"matte": {
+				"finish": "Matné",
+				"name": "Prírodný kameň",
+				"description": "Nenápadné minerálne škvrny pod hladkou, suchou úpravou.",
+				"black": "Čierny kameň",
+				"white": "Biely kameň"
+			},
+			"snow": {
+				"finish": "Leštené",
+				"name": "Mušľa · Yuki / Snehová kvalita",
+				"description": "Jemná, hustá kresba mušle na mliečne bielej, v páre s leštenou čiernou bridlicou.",
+				"black": "Čierna bridlica Nachiguro",
+				"white": "Biela mušľa Yuki"
+			}
+		},
+		"footerTagline": "To podstatné, premyslene."
+	}
+}

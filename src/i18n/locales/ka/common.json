@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "გო",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Baduk-ის მთავარი",
+	"actions": {
+		"save": "შენახვა",
+		"saving": "ინახება…",
+		"cancel": "გაუქმება",
+		"back": "უკან",
+		"retry": "ხელახლა ცდა",
+		"close": "დახურვა",
+		"login": "შესვლა",
+		"signIn": "შესვლა",
+		"signUp": "რეგისტრაცია",
+		"logOut": "გასვლა",
+		"loggingOut": "გასვლა…"
+	},
+	"status": {
+		"saved": "შენახულია",
+		"loading": "იტვირთება…",
+		"checkingSession": "სესიის შემოწმება…",
+		"sessionError": "სესიის შემოწმება ვერ მოხერხდა. სცადეთ ხელახლა."
+	},
+	"comingSoon": "{{feature}} მალე დაემატება.",
+	"language": "ენა",
+	"languageDialog": {
+		"title": "აირჩიეთ სასურველი ენა",
+		"loadError": "ამ ენის ჩატვირთვა ვერ მოხერხდა. სცადეთ ხელახლა."
+	}
+}

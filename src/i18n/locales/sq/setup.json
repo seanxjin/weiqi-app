@@ -1,0 +1,85 @@
+{
+	"page": {
+		"title": {
+			"local": "Konfigurimi i lojës lokale",
+			"online": "Konfigurimi i lojës online"
+		},
+		"label": {
+			"local": "Konfigurimi i lojës lokale",
+			"online": "Konfigurimi i lojës online"
+		},
+		"backToMenu": "Kthehu te menyja",
+		"settingsLabel": "Cilësimet e lojës",
+		"timeLimitsNotice": "Kufijtë e kohës ende nuk zbatohen.",
+		"boardSize": "MADHËSIA E TABELËS",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Po krijohet loja…",
+		"startGame": "Fillo lojën",
+		"createFailed": "Loja nuk mund të krijohej. Provo sërish."
+	},
+	"players": {
+		"player1": "Lojtari 1",
+		"player2": "Lojtari 2",
+		"opponent": "Kundërshtari",
+		"guest": "Ti (mysafir)"
+	},
+	"configuration": {
+		"eyebrow": "KONFIGURIMET",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "I personalizuar · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Më shumë kontrolle kohe",
+		"fewerControls": "Më pak kontrolle kohe",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Blitz",
+			"rapid": "I shpejtë",
+			"classical": "Klasik",
+			"correspondence": "Korrespondencë",
+			"untimed": "Pa kohë"
+		},
+		"systems": {
+			"absolute": "Absolut",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Byo-yomi japonez"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} sek",
+			"absoluteMinutes": "{{minutes}} min",
+			"mainSeconds": "{{seconds}}s",
+			"mainMinutes": "{{minutes}}m",
+			"fischer": "{{main}} + {{increment}}s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}}s",
+			"daysPerMove_one": "{{count}} ditë / lëvizje",
+			"daysPerMove_other": "{{count}} ditë / lëvizje"
+		},
+		"noTimeLimit": "Pa kufi kohor"
+	},
+	"customTime": {
+		"label": "Kontroll kohe i personalizuar",
+		"eyebrow": "KONTROLL KOHE I PERSONALIZUAR",
+		"heading": "Vendos orën tënde",
+		"system": "Sistemi",
+		"fields": {
+			"minutes": "Kryesore · min",
+			"seconds": "Kryesore · sek",
+			"increment": "Shtesa · sek",
+			"periods": "Periudha",
+			"periodSeconds": "Periudha · sek"
+		},
+		"hints": {
+			"byoYomi": "Koha shtesë përdor një numër të caktuar periudhash me kohë.",
+			"default": "Zgjidh një sistem, pastaj shkruaj vlerat e orës."
+		},
+		"apply": "Përdor kohën e personalizuar",
+		"errors": {
+			"wholeNumbers": "Shkruaj një numër të plotë jonegativ në çdo fushë të orës.",
+			"mainSeconds": "Sekondat kryesore duhet të jenë nga 0 deri në 59.",
+			"byoYomiPeriods": "Byo-yomi kërkon të paktën një periudhë që zgjat të paktën një sekondë.",
+			"mainTime": "Vendos një kohë kryesore më të madhe se zero."
+		}
+	}
+}

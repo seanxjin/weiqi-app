@@ -1,7 +1,7 @@
 .settings {
-	--settings-accent: #414d41;
-	--settings-surface: #ece9e0;
-	--settings-danger: #8b3434;
+	--settings-accent: var(--accent);
+	--settings-surface: var(--surface);
+	--settings-danger: var(--danger);
 	max-width: 1080px;
 	padding: clamp(16px, 4dvh, 40px) clamp(16px, 3.9vw, 56px) 48px;
 	font-size: 14px;
@@ -39,14 +39,14 @@
 	grid-template-columns: 224px minmax(0, 1fr);
 	border: 1px solid var(--divider);
 	border-radius: 6px;
-	background: #f7f5ef;
+	background: var(--surface-raised);
 }
 .settings__nav {
 	display: flex;
 	flex-direction: column;
 	gap: 2px;
 	padding: 20px 0;
-	border-right: 1px solid var(--divider);
+	border-inline-end: 1px solid var(--divider);
 }
 .settings__nav a {
 	display: flex;
@@ -56,8 +56,8 @@
 	padding: 0 20px;
 	color: var(--muted);
 	text-decoration: none;
-	border-right: 3px solid transparent;
-	margin-right: -1px;
+	border-inline-end: 3px solid transparent;
+	margin-inline-end: -1px;
 }
 .settings__nav a:hover {
 	background: var(--settings-surface);
@@ -66,7 +66,7 @@
 	color: var(--text);
 	font-weight: 500;
 	background: var(--settings-surface);
-	border-right-color: var(--settings-accent);
+	border-inline-end-color: var(--settings-accent);
 }
 .settings__content {
 	min-width: 0;
@@ -127,14 +127,14 @@
 	min-width: 104px;
 	border-color: var(--settings-accent);
 	background: var(--settings-accent);
-	color: #f7f5ef;
+	color: var(--on-accent);
 }
 .settings .settings-button--primary:hover:not(:disabled) {
-	background: #333a34;
+	background: var(--accent-hover);
 }
 .settings .settings-button--danger {
 	align-self: flex-start;
-	border-color: #d9b8b2;
+	border-color: var(--danger-border);
 	color: var(--settings-danger);
 }
 .settings-actions {
@@ -160,7 +160,7 @@
 }
 .settings-note {
 	padding: 12px 14px;
-	border-left: 3px solid var(--divider);
+	border-inline-start: 3px solid var(--divider);
 	background: var(--settings-surface);
 }
 
@@ -179,7 +179,7 @@
 	height: 22px;
 	margin: 0;
 	border-radius: 11px;
-	background: #cfcabd;
+	background: var(--toggle-off);
 	cursor: pointer;
 	transition: background 150ms;
 }
@@ -187,7 +187,7 @@
 	content: "";
 	position: absolute;
 	top: 3px;
-	left: 3px;
+	inset-inline-start: 3px;
 	width: 16px;
 	height: 16px;
 	border-radius: 50%;
@@ -200,6 +200,9 @@
 }
 .setting-toggle input:checked::after {
 	transform: translateX(18px);
+}
+[dir="rtl"] .setting-toggle input:checked::after {
+	transform: translateX(-18px);
 }
 .setting-toggle__text {
 	display: flex;
@@ -267,7 +270,7 @@
 	padding: 8px 10px;
 	border: 1px solid var(--divider);
 	border-radius: 4px;
-	background: #fff;
+	background: var(--field);
 }
 .settings-field input:user-invalid {
 	border-color: var(--settings-danger);
@@ -314,12 +317,12 @@
 	display: block;
 }
 .password-input input {
-	padding-right: 40px;
+	padding-inline-end: 40px;
 }
 .password-input button {
 	position: absolute;
 	top: 50%;
-	right: 6px;
+	inset-inline-end: 6px;
 	transform: translateY(-50%);
 	display: grid;
 	place-items: center;
@@ -400,8 +403,29 @@
 	align-items: center;
 }
 .board-settings__preview {
+	position: relative;
 	flex-shrink: 0;
 	width: 240px;
+}
+/* The 800-unit preview is drawn at 240px, so labels need larger units to stay legible. */
+.board-settings__preview .board-coordinates {
+	font-size: 26px;
+}
+
+/* Language & Time */
+.language-button--field {
+	justify-self: start;
+	min-height: 40px;
+	background: var(--settings-surface);
+}
+.settings-field:has(.setting-radios) {
+	align-items: start;
+}
+.settings-field .setting-radios input[type="radio"] {
+	width: auto;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
 }
 
 /* Profile */
@@ -505,7 +529,7 @@
 	color: var(--text);
 }
 .settings-dialog::backdrop {
-	background: rgb(33 39 34 / 25%);
+	background: var(--backdrop);
 }
 .settings-dialog h3 {
 	font-size: 18px;
@@ -529,14 +553,14 @@
 		overflow-y: hidden;
 		scrollbar-width: none;
 		padding: 0 8px;
-		border-right: 0;
+		border-inline-end: 0;
 		border-bottom: 1px solid var(--divider);
 	}
 	.settings__nav a {
 		flex-shrink: 0;
 		padding: 0 12px;
 		margin: 0 0 -1px;
-		border-right: 0;
+		border-inline-end: 0;
 		border-bottom: 3px solid transparent;
 		white-space: nowrap;
 	}

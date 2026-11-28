@@ -1,0 +1,213 @@
+{
+	"header": {
+		"title": "Nastavení",
+		"sectionTitle": "Nastavení: {{section}}",
+		"navLabel": "Sekce nastavení"
+	},
+	"sections": {
+		"board": "Deska a kameny",
+		"gameplay": "Hra",
+		"profile": "Profil",
+		"social": "Sociální a soukromí",
+		"account": "Účet a zabezpečení",
+		"language": "Jazyk a čas"
+	},
+	"board": {
+		"description": "Zvolte desku a kameny, se kterými hrajete.",
+		"appearance": {
+			"title": "Vzhled",
+			"boardLegend": "Deska",
+			"stonesLegend": "Kameny",
+			"previewLabel": "Náhled desky"
+		},
+		"themes": {
+			"kaya": "Tradiční japonská kaya",
+			"walnut": "Tmavý ořech",
+			"ash": "Světlý skandinávský jasan"
+		},
+		"stoneStyles": {
+			"polished": "Břidlice",
+			"satin": "Keramika",
+			"matte": "Přírodní kámen",
+			"snow": "Lastura · Yuki / Sněhová jakost"
+		},
+		"display": {
+			"title": "Zobrazení desky",
+			"coordinates": {
+				"label": "Zobrazit souřadnice",
+				"description": "Označit sloupce a řady po okraji desky."
+			},
+			"lastMove": {
+				"label": "Zvýraznit poslední tah",
+				"description": "Označit naposledy zahraný kámen."
+			}
+		},
+		"sounds": {
+			"title": "Zvuky",
+			"playSounds": {
+				"label": "Přehrávat zvuky",
+				"description": "Pokládání kamenů, zajetí a upozornění hodin."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Nastavte, jak pokládáte kameny a kdo vás může vyzvat.",
+		"moves": {
+			"title": "Hraní tahů",
+			"description": "Před položením kamene vyžadovat druhé kliknutí, aby se předešlo omylům.",
+			"legend": "Potvrzovat tahy",
+			"options": {
+				"never": "Nikdy",
+				"correspondence": "Jen v korespondenčních hrách",
+				"always": "Vždy"
+			}
+		},
+		"challenges": {
+			"title": "Výzvy",
+			"description": "Zvolte, kdo vám může posílat výzvy ke hře.",
+			"legend": "Povolit výzvy od",
+			"options": {
+				"everyone": "Všech",
+				"registered": "Registrovaných hráčů",
+				"following": "Jen hráčů, které sleduji",
+				"nobody": "Nikoho (odvety jsou stále povoleny)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Vše zde je vidět na vašem <profileLink>veřejném profilu</profileLink>.",
+		"publicProfile": {
+			"title": "Veřejný profil",
+			"bioLabel": "Krátký popis",
+			"bioPlaceholder": "Váš krátký popis se zobrazí na profilu.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Podrobnosti",
+			"joinDate": "Datum registrace",
+			"username": "Uživatelské jméno",
+			"changeUsername": "Změnit",
+			"changeUsernameFeature": "Změna uživatelského jména",
+			"realName": "Skutečné jméno",
+			"location": "Místo",
+			"country": "Země",
+			"countryNotSet": "Nenastaveno",
+			"rank": "Výkonnost",
+			"rankPlaceholder": "např. 12k, 3d",
+			"rankHint": "Použijte 30k–1k, 1d–9d nebo 1p–9p."
+		},
+		"links": {
+			"legend": "Odkazy",
+			"linkLabel": "Odkaz {{number}}",
+			"remove": "Odebrat",
+			"removeLabel": "Odebrat odkaz {{number}}",
+			"add": "Přidat odkaz"
+		}
+	},
+	"social": {
+		"description": "Spravujte hráče, které sledujete, a hráče, které jste zablokovali.",
+		"blocking": {
+			"title": "Blokování",
+			"description_one": "Blokujete {{count}} hráče. Zablokovaní hráči vás nemohou vyzvat ani vám psát.",
+			"description_few": "Blokujete {{count}} hráče. Zablokovaní hráči vás nemohou vyzvat ani vám psát.",
+			"description_many": "Blokujete {{count}} hráče. Zablokovaní hráči vás nemohou vyzvat ani vám psát.",
+			"description_other": "Blokujete {{count}} hráčů. Zablokovaní hráči vás nemohou vyzvat ani vám psát.",
+			"empty": "Nikoho neblokujete.",
+			"action": "Odblokovat",
+			"actionLabel": "Odblokovat {{username}}"
+		},
+		"following": {
+			"title": "Sledovaní",
+			"description_one": "Sledujete {{count}} hráče.",
+			"description_few": "Sledujete {{count}} hráče.",
+			"description_many": "Sledujete {{count}} hráče.",
+			"description_other": "Sledujete {{count}} hráčů.",
+			"empty": "Zatím nikoho nesledujete.",
+			"action": "Přestat sledovat",
+			"actionLabel": "Přestat sledovat {{username}}"
+		}
+	},
+	"account": {
+		"description": "Změňte heslo, zabezpečte účet a spravujte propojené účty.",
+		"password": {
+			"title": "Změna hesla",
+			"updated": "Heslo bylo aktualizováno",
+			"fields": {
+				"currentPassword": {
+					"label": "Současné heslo",
+					"show": "Zobrazit současné heslo",
+					"hide": "Skrýt současné heslo"
+				},
+				"newPassword": {
+					"label": "Nové heslo",
+					"show": "Zobrazit nové heslo",
+					"hide": "Skrýt nové heslo"
+				},
+				"confirmPassword": {
+					"label": "Zopakujte heslo",
+					"show": "Zobrazit zopakované heslo",
+					"hide": "Skrýt zopakované heslo"
+				}
+			}
+		},
+		"contact": {
+			"title": "Kontaktní údaje",
+			"email": "E-mailová adresa",
+			"edit": "Upravit",
+			"editFeature": "Změna e-mailu"
+		},
+		"twoFactor": {
+			"title": "Dvoufázové ověření",
+			"description": "Při přihlášení vyžadovat kód z ověřovací aplikace.",
+			"off": "Vypnuto",
+			"enable": "Zapnout",
+			"feature": "Dvoufázové ověření"
+		},
+		"sessions": {
+			"title": "Aktivní relace",
+			"description": "Pokud máte podezření, že byl váš účet napaden, změňte heslo a odhlaste se všude.",
+			"thisDevice": "Toto zařízení",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "Odhlásit {{device}}",
+			"logOutAll": "Odhlásit na všech ostatních zařízeních"
+		},
+		"connections": {
+			"title": "Propojené účty",
+			"description": "Přihlašujte se na Baduk pomocí těchto účtů.",
+			"connectedTo": "Propojeno s {{provider}}",
+			"connect": "Propojit",
+			"disconnect": "Odpojit",
+			"note": "Odpojením se odstraní propojení na Baduku. Přístup možná bude nutné zrušit i na druhém webu."
+		},
+		"close": {
+			"title": "Zrušení účtu",
+			"description": "Zrušením účtu se skryje váš profil a budete všude odhlášeni.",
+			"button": "Zrušit účet",
+			"dialogTitle": "Zrušit účet?",
+			"dialogDescription": "Později jej můžete znovu otevřít z přihlašovací stránky.",
+			"feature": "Zrušení účtu"
+		}
+	},
+	"languageTime": {
+		"title": "Jazyk a čas",
+		"description": "Zvolte jazyk Baduku a způsob zobrazení data a času.",
+		"language": {
+			"title": "Jazyk",
+			"description": "Změny se projeví okamžitě na všech stránkách.",
+			"legend": "Jazyk zobrazení"
+		},
+		"time": {
+			"title": "Čas",
+			"description": "Používá se pro časové údaje, jako je datum registrace a aktivita relací.",
+			"timeZone": "Časové pásmo",
+			"automaticTimeZone": "Automaticky ({{timeZone}})",
+			"timeFormat": "Hodiny",
+			"formats": {
+				"auto": "Automaticky ({{example}})",
+				"12h": "12hodinový ({{example}})",
+				"24h": "24hodinový ({{example}})"
+			},
+			"preview": "Náhled"
+		}
+	}
+}

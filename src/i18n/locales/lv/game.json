@@ -1,0 +1,135 @@
+{
+	"colors": {
+		"black": "Melnie",
+		"white": "Baltie"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Izlaist",
+	"localPage": {
+		"title": "Vietējā spēle",
+		"eyebrow": "DRAUDZĪGA SPĒLE",
+		"heading": "Brīdis spēlei.",
+		"details": "{{size}} × {{size}} · Japāņu noteikumi"
+	},
+	"onlinePage": {
+		"title": "Tiešsaistes spēle",
+		"eyebrow": "TIEŠSAISTES SPĒLE",
+		"heading": "Brīdis spēlei.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Ielādē spēli…",
+		"notFound": "Šī spēle neeksistē vai vairs nav pieejama.",
+		"startNew": "Sākt jaunu tiešsaistes spēli",
+		"invited": "Tu esi uzaicināts uz spēli {{size}} × {{size}}.",
+		"joining": "Pievienojas…",
+		"joinAs": "Pievienoties: {{color}}",
+		"full": "Šī spēle ir pilna. Spēļu vērošana vēl nav pieejama."
+	},
+	"local": {
+		"label": "Vietējā go spēle",
+		"loadingEngine": "Ielādē go dzinēju…"
+	},
+	"online": {
+		"label": "Tiešsaistes go spēle",
+		"youAre": "Tava krāsa: {{color}}",
+		"connection": {
+			"connecting": "Savienojas…",
+			"open": "Savienots",
+			"reconnecting": "Atjauno savienojumu…",
+			"closed": "Atvienots"
+		},
+		"invite": {
+			"label": "Uzaicini draugu ar šo saiti",
+			"copy": "Kopēt",
+			"copied": "Nokopēts"
+		},
+		"awaitingScoring": "Abi spēlētāji izlaida gājienu. Punktu skaitīšana vēl netiek atbalstīta, tāpēc pārtrauc spēli, lai to saglabātu bez rezultāta.",
+		"confirmResign": "Apstiprināt padošanos",
+		"resign": "Padoties",
+		"abort": "Pārtraukt",
+		"results": {
+			"youWin": "Tu uzvarēji · {{color}} padevās",
+			"winsByResignation": "{{color}} uzvar, pretiniekam padodoties",
+			"aborted": "Spēli pārtrauca: {{color}}",
+			"unscored": "Spēle beidzās bez rezultāta"
+		}
+	},
+	"turn": {
+		"preparing": "Sagatavo dēli",
+		"reviewing": "Pārskatīšana · Lai spēlētu, atgriezies pie pašreizējā",
+		"toPlay": "Gājiens: {{color}}",
+		"yourMove": "Tavs gājiens",
+		"waitingForOpponent": "Gaida pretinieku",
+		"awaitingScoring": "Spēle ir beigusies · Punktu skaitīšana vēl netiek atbalstīta",
+		"gameOver": "Spēle beigusies",
+		"sendingMove": "Sūta gājienu…",
+		"waitingForConnection": "Gaida savienojumu"
+	},
+	"boardFooter": {
+		"lastMove": "Pēdējais gājiens: {{color}} {{move}}",
+		"startingPosition": "Sākuma pozīcija"
+	},
+	"players": {
+		"label": "Spēlētāji",
+		"captured": "Sagūstīti: {{count}}",
+		"you": "{{name}} (tu)",
+		"waiting": "{{name}} · gaida spēlētāju"
+	},
+	"history": {
+		"label": "Gājienu vēsture",
+		"heading": "Gājieni",
+		"moveCount_zero": "{{count}} GĀJIENI",
+		"moveCount_one": "{{count}} GĀJIENS",
+		"moveCount_other": "{{count}} GĀJIENI",
+		"tableLabel": "Melno un balto gājieni",
+		"pair": "Pāris",
+		"move": "{{number}}. gājiens, {{color}}, {{move}}",
+		"pendingMove": "{{number}}. gājiens, {{color}}, {{move}}, tiek sūtīts",
+		"empty": "Vēl nav gājienu.",
+		"position": "{{viewed}}. gājiens no {{latest}}",
+		"currentPosition": "PAŠREIZĒJĀ POZĪCIJA",
+		"reviewing": "PĀRSKATĪŠANA",
+		"navigationLabel": "Gājienu vēstures navigācija",
+		"navigation": {
+			"start": "Sākums",
+			"previous": "Iepriekšējais",
+			"next": "Nākamais",
+			"current": "Pašreizējais"
+		},
+		"undo": "Atsaukt pēdējo gājienu",
+		"encouragement": "Nesteidzies. Katrs gājiens ir svarīgs.",
+		"keyboardHint": "Izmanto ← →, lai pārvietotos pa gājieniem, ↑ ↓ – uz sākumu un pašreizējo pozīciju."
+	},
+	"board": {
+		"sceneLabel": "Go dēlis {{size}} × {{size}} ar {{moveCount}} atklātnes gājienu secību",
+		"themedBoard": "Go dēlis: {{theme}}",
+		"emptyBoard": "Tukšs go dēlis {{size}} × {{size}}: {{theme}}",
+		"stone": "Go akmens: {{color}} ({{finish}})",
+		"textureError": "Neizdevās ielādēt dēļa tekstūru.",
+		"pauseAnimations": "Pauzēt animācijas",
+		"resumeAnimations": "Atsākt animācijas",
+		"pause": "PAUZE",
+		"resume": "ATSĀKT"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Izvēlies krustpunktu uz dēļa.",
+			"occupied": "Šis krustpunkts ir aizņemts.",
+			"wrongPlayer": "Tagad ir otra spēlētāja gājiens.",
+			"suicide": "Pašnāvības gājiens nav atļauts.",
+			"ko": "Šo gājienu aizliedz ko noteikums.",
+			"superko": "Šis gājiens atkārto agrāku pozīciju.",
+			"gameEnded": "Šajā spēlē vairs nevar izdarīt gājienus."
+		},
+		"serverRejectedMove": "Serveris noraidīja gājienu. {{reason}}",
+		"staleRevision": "Spēle mainījās, pirms tavs gājiens tika saņemts, tāpēc tas netika izdarīts.",
+		"wrongPhase": "Šajā spēles posmā tas nav iespējams.",
+		"seatTaken": "Šī vieta jau ir aizņemta.",
+		"notYourTurn": "Tagad ir otra spēlētāja gājiens.",
+		"abortUnavailable": "Spēli vairs nevar pārtraukt.",
+		"replayFailed": "Šo spēli neizdevās atskaņot lokāli. Lūdzu, pārlādē lapu.",
+		"notConnected": "Nav savienojuma ar spēles serveri.",
+		"engineLoadFailed": "Neizdevās ielādēt go dzinēju. Lūdzu, mēģini vēlreiz.",
+		"gameLoadFailed": "Neizdevās ielādēt spēli. Lūdzu, mēģini vēlreiz.",
+		"seatTakenFirst": "Kāds cits paspēja ieņemt vietu pirmais. Šī spēle tagad ir pilna."
+	}
+}

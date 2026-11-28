@@ -1,0 +1,115 @@
+{
+	"home": {
+		"pageTitle": "対局",
+		"location": "対局 / ホーム",
+		"signedInAs": "{{username}} としてログイン中",
+		"guest": "ゲストとしてプレイ中",
+		"logoutError": "ログアウトできませんでした。もう一度お試しください。",
+		"introduction": {
+			"heading": "テキスト",
+			"body": "別のテキスト"
+		},
+		"menuHeading": "テキスト。",
+		"options": {
+			"online": {
+				"label": "オンライン対局",
+				"description": "相手を見つけて、盤上で出会おう。"
+			},
+			"local": {
+				"label": "ローカル対局",
+				"description": "一つの盤、二人の打ち手。一つの画面で。"
+			},
+			"friend": {
+				"label": "友達と対局",
+				"description": "誰かを誘って、じっくり一局。"
+			},
+			"puzzles": {
+				"label": "詰碁を解く",
+				"description": "小さな挑戦で、鋭い感覚を。"
+			},
+			"lessons": {
+				"label": "レッスン",
+				"description": "最初の一石から、次のひらめきまで。"
+			},
+			"bots": {
+				"label": "AIと対局",
+				"description": "どんなレベルでも、自分のペースで練習。"
+			}
+		},
+		"presence_other": "{{count, number}}人が盤を囲んでいます",
+		"reserved": {
+			"label": "今後のためのセクション",
+			"heading": "今後のコンテンツ用スペース",
+			"body": "このセクションは現在あえて空けてあります。今後の機能、アップデート、厳選コンテンツに使用する予定です。"
+		},
+		"footerTagline": "シンプルなルール、尽きない発見。"
+	},
+	"materials": {
+		"pageTitle": "碁盤と碁石",
+		"breadcrumb": "Baduk / 素材ライブラリ",
+		"collection": "コレクション 01",
+		"heading": "碁盤と碁石。",
+		"introduction": "自然の素材、静かな細部。対局のための場所。",
+		"boardsSection": {
+			"title": "碁盤",
+			"meta": "3種の木材 · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "碁石",
+			"meta": "4つのスタイル · 黒と白"
+		},
+		"study": {
+			"breadcrumb": "Baduk / 素材研究",
+			"enlarged": "拡大サンプル",
+			"heading": "静かなコントラスト。",
+			"body": "四つの質感。同じやわらかな光の中の黒と白。",
+			"scale": "拡大サンプル · 同一縮尺",
+			"form": "なめらかで丸みのある形 / さりげない表面の変化"
+		},
+		"boards": {
+			"kaya": {
+				"name": "伝統的な日本産榧",
+				"material": "温かな蜂蜜色 · 柾目"
+			},
+			"walnut": {
+				"name": "ダークウォルナット",
+				"material": "深い茶色 · 流れる木目"
+			},
+			"ash": {
+				"name": "淡い北欧アッシュ",
+				"material": "明るい木材 · やわらかな木目"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "光沢",
+				"name": "スレート",
+				"description": "静かな鉱物の質感をもつ、なめらかに磨かれた表面。",
+				"black": "黒スレート",
+				"white": "白スレート"
+			},
+			"satin": {
+				"finish": "サテン",
+				"name": "セラミック",
+				"description": "やわらかく広がる艶と、繊細で均一な細かい粒子。",
+				"black": "黒セラミック",
+				"white": "白セラミック"
+			},
+			"matte": {
+				"finish": "マット",
+				"name": "天然石",
+				"description": "なめらかで乾いた仕上げに、控えめな鉱物の斑点。",
+				"black": "黒天然石",
+				"white": "白天然石"
+			},
+			"snow": {
+				"finish": "光沢",
+				"name": "蛤 · 雪印",
+				"description": "乳白色に細かく詰まった縞目の蛤に、磨き上げた黒スレートを合わせて。",
+				"black": "那智黒石",
+				"white": "雪印の蛤碁石"
+			}
+		},
+		"footerTagline": "本質を、丁寧に。"
+	}
+}

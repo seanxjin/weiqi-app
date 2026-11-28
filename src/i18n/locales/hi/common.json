@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "गो",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Baduk होम",
+	"actions": {
+		"save": "सहेजें",
+		"saving": "सहेजा जा रहा है…",
+		"cancel": "रद्द करें",
+		"back": "वापस",
+		"retry": "फिर से कोशिश करें",
+		"close": "बंद करें",
+		"login": "लॉग इन",
+		"signIn": "साइन इन",
+		"signUp": "साइन अप",
+		"logOut": "लॉग आउट",
+		"loggingOut": "लॉग आउट हो रहा है…"
+	},
+	"status": {
+		"saved": "सहेजा गया",
+		"loading": "लोड हो रहा है…",
+		"checkingSession": "आपका सत्र जाँचा जा रहा है…",
+		"sessionError": "आपका सत्र जाँचा नहीं जा सका। कृपया फिर से कोशिश करें।"
+	},
+	"comingSoon": "{{feature}} जल्द उपलब्ध होगा।",
+	"language": "भाषा",
+	"languageDialog": {
+		"title": "अपनी पसंदीदा भाषा चुनें",
+		"loadError": "यह भाषा लोड नहीं हो सकी। कृपया फिर से कोशिश करें।"
+	}
+}

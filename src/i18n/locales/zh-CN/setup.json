@@ -1,0 +1,84 @@
+{
+	"page": {
+		"title": {
+			"local": "本地对局设置",
+			"online": "在线对局设置"
+		},
+		"label": {
+			"local": "本地对局设置",
+			"online": "在线对局设置"
+		},
+		"backToMenu": "返回菜单",
+		"settingsLabel": "对局设置",
+		"timeLimitsNotice": "暂不强制执行时间限制。",
+		"boardSize": "棋盘大小",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "正在创建对局…",
+		"startGame": "开始对局",
+		"createFailed": "无法创建对局，请重试。"
+	},
+	"players": {
+		"player1": "棋手 1",
+		"player2": "棋手 2",
+		"opponent": "对手",
+		"guest": "你（游客）"
+	},
+	"configuration": {
+		"eyebrow": "配置",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "自定义 · {{system}}",
+		"presetOptionLabel": "{{preset}}，{{system}}",
+		"moreControls": "更多用时选项",
+		"fewerControls": "收起用时选项",
+		"groups": {
+			"bullet": "超快棋",
+			"blitz": "快棋",
+			"rapid": "中速棋",
+			"classical": "慢棋",
+			"correspondence": "通信棋",
+			"untimed": "不计时"
+		},
+		"systems": {
+			"absolute": "包干制",
+			"fischer": "费舍尔制",
+			"japaneseByoYomi": "日式读秒"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} 秒",
+			"absoluteMinutes": "{{minutes}} 分钟",
+			"mainSeconds": "{{seconds}}秒",
+			"mainMinutes": "{{minutes}}分",
+			"fischer": "{{main}} + {{increment}}秒",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}}秒",
+			"daysPerMove_other": "每步 {{count}} 天"
+		},
+		"noTimeLimit": "无时间限制"
+	},
+	"customTime": {
+		"label": "自定义用时",
+		"eyebrow": "自定义用时",
+		"heading": "设定你的棋钟",
+		"system": "计时方式",
+		"fields": {
+			"minutes": "基本用时 · 分",
+			"seconds": "基本用时 · 秒",
+			"increment": "每步加秒 · 秒",
+			"periods": "读秒次数",
+			"periodSeconds": "每次读秒 · 秒"
+		},
+		"hints": {
+			"byoYomi": "基本用时用完后，进入固定次数的读秒。",
+			"default": "先选择计时方式，再输入时间数值。"
+		},
+		"apply": "使用自定义用时",
+		"errors": {
+			"wholeNumbers": "请在每个时间栏中输入非负整数。",
+			"mainSeconds": "基本用时的秒数必须在 0 到 59 之间。",
+			"byoYomiPeriods": "读秒至少需要 1 次，且每次至少 1 秒。",
+			"mainTime": "基本用时必须大于零。"
+		}
+	}
+}

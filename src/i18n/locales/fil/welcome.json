@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Maglaro ng Go",
+	"railLabel": "Baduk",
+	"mainNavigation": "Pangunahing navigation",
+	"play": "Maglaro",
+	"eyebrow": "Ilang Teksto",
+	"heading": {
+		"label": "Maglaro ng Go",
+		"prefix": "Maglaro ng "
+	},
+	"description": {
+		"first": "Ilang teksto....",
+		"second": "Iba pang teksto..."
+	},
+	"footnote": "HUWAG MAGMADALI."
+}

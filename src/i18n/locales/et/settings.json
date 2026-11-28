@@ -1,0 +1,209 @@
+{
+	"header": {
+		"title": "Seaded",
+		"sectionTitle": "Seaded: {{section}}",
+		"navLabel": "Seadete jaotised"
+	},
+	"sections": {
+		"board": "Laud ja kivid",
+		"gameplay": "Mängimine",
+		"profile": "Profiil",
+		"social": "Suhtlus ja privaatsus",
+		"account": "Konto ja turvalisus",
+		"language": "Keel ja aeg"
+	},
+	"board": {
+		"description": "Vali laud ja kivid, millega mängid.",
+		"appearance": {
+			"title": "Välimus",
+			"boardLegend": "Laud",
+			"stonesLegend": "Kivid",
+			"previewLabel": "Laua eelvaade"
+		},
+		"themes": {
+			"kaya": "Traditsiooniline Jaapani kaja",
+			"walnut": "Tume pähkel",
+			"ash": "Hele Skandinaavia saar"
+		},
+		"stoneStyles": {
+			"polished": "Kiltkivi",
+			"satin": "Keraamika",
+			"matte": "Looduslik kivi",
+			"snow": "Karbikoor · Yuki / lumeklass"
+		},
+		"display": {
+			"title": "Laua kuva",
+			"coordinates": {
+				"label": "Näita koordinaate",
+				"description": "Tähista veerud ja read laua serval."
+			},
+			"lastMove": {
+				"label": "Tõsta esile viimane käik",
+				"description": "Märgi viimati käidud kivi."
+			}
+		},
+		"sounds": {
+			"title": "Helid",
+			"playSounds": {
+				"label": "Esita helisid",
+				"description": "Kivide asetamine, vangistamine ja kella hoiatused."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Halda, kuidas kive asetad ja kes saab sulle väljakutse esitada.",
+		"moves": {
+			"title": "Käikude tegemine",
+			"description": "Nõua enne kivi asetamist teist klõpsu, et vältida valeklõpse.",
+			"legend": "Kinnita käigud",
+			"options": {
+				"never": "Mitte kunagi",
+				"correspondence": "Ainult kirjavahetusmängudes",
+				"always": "Alati"
+			}
+		},
+		"challenges": {
+			"title": "Väljakutsed",
+			"description": "Vali, kes saab sulle mänguväljakutseid saata.",
+			"legend": "Luba väljakutsed",
+			"options": {
+				"everyone": "Kõigilt",
+				"registered": "Registreeritud mängijatelt",
+				"following": "Ainult mängijatelt, keda jälgin",
+				"nobody": "Mitte kelleltki (kordusmängud on endiselt lubatud)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Kõik siin on nähtav sinu <profileLink>avalikus profiilis</profileLink>.",
+		"publicProfile": {
+			"title": "Avalik profiil",
+			"bioLabel": "Lühitutvustus",
+			"bioPlaceholder": "Sinu lühitutvustus kuvatakse profiilis.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Üksikasjad",
+			"joinDate": "Liitumise kuupäev",
+			"username": "Kasutajanimi",
+			"changeUsername": "Muuda",
+			"changeUsernameFeature": "Kasutajanime muutmine",
+			"realName": "Pärisnimi",
+			"location": "Asukoht",
+			"country": "Riik",
+			"countryNotSet": "Määramata",
+			"rank": "Järk",
+			"rankPlaceholder": "nt 12k, 3d",
+			"rankHint": "Kasuta 30k–1k, 1d–9d või 1p–9p."
+		},
+		"links": {
+			"legend": "Lingid",
+			"linkLabel": "Link {{number}}",
+			"remove": "Eemalda",
+			"removeLabel": "Eemalda link {{number}}",
+			"add": "Lisa link"
+		}
+	},
+	"social": {
+		"description": "Halda mängijaid, keda jälgid, ja mängijaid, kelle oled blokeerinud.",
+		"blocking": {
+			"title": "Blokeerimine",
+			"description_one": "Oled blokeerinud {{count}} mängija. Blokeeritud mängijad ei saa sulle väljakutseid ega sõnumeid saata.",
+			"description_other": "Oled blokeerinud {{count}} mängijat. Blokeeritud mängijad ei saa sulle väljakutseid ega sõnumeid saata.",
+			"empty": "Sa pole kedagi blokeerinud.",
+			"action": "Tühista blokeering",
+			"actionLabel": "Tühista kasutaja {{username}} blokeering"
+		},
+		"following": {
+			"title": "Jälgitavad",
+			"description_one": "Jälgid {{count}} mängijat.",
+			"description_other": "Jälgid {{count}} mängijat.",
+			"empty": "Sa ei jälgi veel kedagi.",
+			"action": "Lõpeta jälgimine",
+			"actionLabel": "Lõpeta kasutaja {{username}} jälgimine"
+		}
+	},
+	"account": {
+		"description": "Muuda parooli, turva oma kontot ja halda ühendatud kontosid.",
+		"password": {
+			"title": "Muuda parooli",
+			"updated": "Parool on uuendatud",
+			"fields": {
+				"currentPassword": {
+					"label": "Praegune parool",
+					"show": "Näita praegust parooli",
+					"hide": "Peida praegune parool"
+				},
+				"newPassword": {
+					"label": "Uus parool",
+					"show": "Näita uut parooli",
+					"hide": "Peida uus parool"
+				},
+				"confirmPassword": {
+					"label": "Korda parooli",
+					"show": "Näita korratud parooli",
+					"hide": "Peida korratud parool"
+				}
+			}
+		},
+		"contact": {
+			"title": "Kontaktandmed",
+			"email": "E-posti aadress",
+			"edit": "Muuda",
+			"editFeature": "E-posti muutmine"
+		},
+		"twoFactor": {
+			"title": "Kaheastmeline autentimine",
+			"description": "Nõua sisselogimisel autentimisrakenduse koodi.",
+			"off": "Väljas",
+			"enable": "Lülita sisse",
+			"feature": "Kaheastmeline autentimine"
+		},
+		"sessions": {
+			"title": "Aktiivsed seansid",
+			"description": "Kui kahtlustad, et sinu konto on ohus, muuda parooli ja logi kõikjal välja.",
+			"thisDevice": "See seade",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "Logi välja: {{device}}",
+			"logOutAll": "Logi välja kõigis teistes seadmetes"
+		},
+		"connections": {
+			"title": "Ühendatud kontod",
+			"description": "Logi nende kontodega Badukisse sisse.",
+			"connectedTo": "Ühendatud: {{provider}}",
+			"connect": "Ühenda",
+			"disconnect": "Katkesta ühendus",
+			"note": "Ühenduse katkestamine eemaldab seose Badukis. Võimalik, et pead juurdepääsu tühistama ka teisel saidil."
+		},
+		"close": {
+			"title": "Sulge oma konto",
+			"description": "Konto sulgemine peidab sinu profiili ja logib sind kõikjal välja.",
+			"button": "Sulge konto",
+			"dialogTitle": "Kas sulgeda konto?",
+			"dialogDescription": "Saad selle hiljem sisselogimislehelt uuesti avada.",
+			"feature": "Konto sulgemine"
+		}
+	},
+	"languageTime": {
+		"title": "Keel ja aeg",
+		"description": "Vali Baduki keel ning kuupäevade ja kellaaegade kuvamise viis.",
+		"language": {
+			"title": "Keel",
+			"description": "Muudatused rakenduvad kohe kõigil lehtedel.",
+			"legend": "Kuvakeel"
+		},
+		"time": {
+			"title": "Aeg",
+			"description": "Kasutatakse ajatemplite jaoks, nagu liitumiskuupäevad ja seansside tegevus.",
+			"timeZone": "Ajavöönd",
+			"automaticTimeZone": "Automaatne ({{timeZone}})",
+			"timeFormat": "Kell",
+			"formats": {
+				"auto": "Automaatne ({{example}})",
+				"12h": "12-tunnine ({{example}})",
+				"24h": "24-tunnine ({{example}})"
+			},
+			"preview": "Eelvaade"
+		}
+	}
+}

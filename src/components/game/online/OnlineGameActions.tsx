@@ -1,31 +1,33 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import type { TFunction } from "i18next";
 import type { OnlineGameController, OnlineGameSnapshot } from "@/controllers/OnlineGameController";
-import type { GameResult } from "@/api/protocol";
+import type { Color, GameResult } from "@/api/protocol";
+import { toEngineColor, toStoneColor } from "@/engine/moveHelpers";
 
 interface Props {
 	snapshot: OnlineGameSnapshot;
 	controller: OnlineGameController;
 }
 
-const connectionLabels = {
-	connecting: "Connecting…",
-	open: "Connected",
-	reconnecting: "Reconnecting…",
-	closed: "Disconnected",
-} as const;
-
-function resultText(result: GameResult, mine: "Black" | "White"): string {
+function resultText(t: TFunction<"game">, result: GameResult, mine: Color): string {
+	const colorName = (color: Color) => t(`colors.${toStoneColor(color)}`);
 	if (result.kind === "resignation")
-		return result.winner === mine ? `You win · ${result.resigned} resigned` : `${result.winner} wins by resignation`;
-	return result.reason === "aborted" ? `Game aborted by ${result.endedBy}` : "Game ended without a score";
+		return result.winner === mine
+			? t("online.results.youWin", { color: colorName(result.resigned) })
+			: t("online.results.winsByResignation", { color: colorName(result.winner) });
+	return result.reason === "aborted"
+		? t("online.results.aborted", { color: colorName(result.endedBy) })
+		: t("online.results.unscored");
 }
 
 function InviteLink({ gameId }: { gameId: string }) {
+	const { t } = useTranslation("game");
 	const [copied, setCopied] = useState(false);
 	const link = new URL(`/play/online/${encodeURIComponent(gameId)}`, window.location.origin).href;
 	return (
 		<div className="online-game__invite">
-			<label htmlFor="online-invite">Invite a friend with this link</label>
+			<label htmlFor="online-invite">{t("online.invite.label")}</label>
 			<div>
 				<input id="online-invite" readOnly value={link} onFocus={(event) => event.currentTarget.select()} />
 				<button
@@ -37,7 +39,7 @@ function InviteLink({ gameId }: { gameId: string }) {
 						);
 					}}
 				>
-					{copied ? "Copied" : "Copy"}
+					{copied ? t("online.invite.copied") : t("online.invite.copy")}
 				</button>
 			</div>
 		</div>
@@ -45,27 +47,23 @@ function InviteLink({ gameId }: { gameId: string }) {
 }
 
 export function OnlineGameActions({ snapshot, controller }: Props) {
+	const { t } = useTranslation(["game", "common"]);
 	const [confirmResign, setConfirmResign] = useState(false);
 	const { phase, canResign } = snapshot;
 	useEffect(() => {
 		if (!canResign) setConfirmResign(false);
 	}, [canResign]);
-	const mine = snapshot.myColor === "black" ? "Black" : "White";
 	return (
 		<div className="online-game__panel">
 			<p className="online-game__status" role="status" aria-live="polite">
-				<span>You are {mine}</span>
-				<span data-connection={snapshot.connection}>{connectionLabels[snapshot.connection]}</span>
+				<span>{t("game:online.youAre", { color: t(`game:colors.${snapshot.myColor}`) })}</span>
+				<span data-connection={snapshot.connection}>{t(`game:online.connection.${snapshot.connection}`)}</span>
 			</p>
 			{phase.kind === "awaitingPlayers" && <InviteLink gameId={snapshot.gameId} />}
-			{phase.kind === "awaitingScoring" && (
-				<p className="online-game__banner">
-					Both players passed. Scoring isn’t supported yet, so abort to record the game as unscored.
-				</p>
-			)}
+			{phase.kind === "awaitingScoring" && <p className="online-game__banner">{t("game:online.awaitingScoring")}</p>}
 			{phase.kind === "finished" && (
 				<p className="online-game__banner" role="alert">
-					{resultText(phase.result, mine)}
+					{resultText(t, phase.result, toEngineColor(snapshot.myColor))}
 				</p>
 			)}
 			{phase.kind !== "finished" && (
@@ -73,19 +71,19 @@ export function OnlineGameActions({ snapshot, controller }: Props) {
 					{confirmResign ? (
 						<>
 							<button type="button" disabled={!canResign} onClick={controller.resign}>
-								Confirm resign
+								{t("game:online.confirmResign")}
 							</button>
 							<button type="button" onClick={() => setConfirmResign(false)}>
-								Cancel
+								{t("common:actions.cancel")}
 							</button>
 						</>
 					) : (
 						<button type="button" disabled={!canResign} onClick={() => setConfirmResign(true)}>
-							Resign
+							{t("game:online.resign")}
 						</button>
 					)}
 					<button type="button" disabled={!snapshot.canAbort} onClick={controller.abort}>
-						Abort
+						{t("game:online.abort")}
 					</button>
 				</div>
 			)}

@@ -1,0 +1,34 @@
+{
+	"server": {
+		"unavailable": "Þjónninn er ekki tiltækur. Reyndu aftur.",
+		"unreachable": "Ekki næst samband við þjóninn. Athugaðu tenginguna og reyndu aftur.",
+		"unexpectedResponse": "Þjónninn skilaði óvæntu svari. Reyndu aftur.",
+		"requestFailed": "Ekki tókst að ljúka beiðninni. Reyndu aftur."
+	},
+	"rateLimited": {
+		"generic": "Of margar tilraunir. Bíddu áður en þú reynir aftur.",
+		"withDelay_one": "Of margar tilraunir. Bíddu í {{count}} sekúndu áður en þú reynir aftur.",
+		"withDelay_other": "Of margar tilraunir. Bíddu í {{count}} sekúndur áður en þú reynir aftur."
+	},
+	"unknown": "Eitthvað fór úrskeiðis. Reyndu aftur.",
+	"api": {
+		"invalidCredentials": "Notandanafn, netfang eða lykilorð er rangt.",
+		"twoFactorRequired": "Sláðu inn 6 stafa kóðann úr auðkenningarforritinu til að halda áfram.",
+		"invalidTwoFactor": "Auðkenningarkóðinn er rangur. Reyndu aftur.",
+		"emailUnconfirmed": "Staðfestu netfangið þitt áður en þú skráir þig inn.",
+		"accountClosed": "Þessum aðgangi hefur verið lokað og ekki er hægt að skrá sig inn á hann.",
+		"usernameTaken": "Þetta notandanafn er þegar í notkun. Veldu annað.",
+		"emailTaken": "Þetta netfang er þegar í notkun.",
+		"invalidToken": "Þessi tengill er ógildur eða útrunninn. Biddu um nýjan tölvupóst til að halda áfram.",
+		"unauthorized": "Innskráningarlotan þín er útrunnin. Byrjaðu aftur.",
+		"conflict": "Ekki tókst að ljúka nýskráningunni. Byrjaðu aftur.",
+		"forbidden": "Lokað var á þessa beiðni. Endurhladdu síðuna og reyndu aftur."
+	},
+	"validation": {
+		"passwordTooShort": "Lykilorðið þarf að vera að minnsta kosti 8 stafir.",
+		"newPasswordTooShort": "Nýja lykilorðið þarf að vera að minnsta kosti 8 stafir.",
+		"passwordTooLong": "Lykilorðið má ekki vera lengra en 72 UTF-8 bæti.",
+		"passwordMismatch": "Nýju lykilorðin stemma ekki.",
+		"passwordUnchanged": "Veldu annað lykilorð en það núverandi."
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"editProfile": "Edita el perfil",
+	"meta": {
+		"joined": "Alta",
+		"rank": "Rang",
+		"noRank": "—",
+		"followers": "Seguidors",
+		"following": "Seguint"
+	},
+	"about": {
+		"heading": "Quant a",
+		"noBio": "Encara no hi ha biografia."
+	},
+	"games": {
+		"heading": "Historial de partides",
+		"empty": "Encara no hi ha partides."
+	}
+}

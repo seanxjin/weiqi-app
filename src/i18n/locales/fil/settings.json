@@ -1,0 +1,209 @@
+{
+	"header": {
+		"title": "Mga setting",
+		"sectionTitle": "Mga setting ng {{section}}",
+		"navLabel": "Mga seksyon ng setting"
+	},
+	"sections": {
+		"board": "Board at Bato",
+		"gameplay": "Gameplay",
+		"profile": "Profile",
+		"social": "Social at Privacy",
+		"account": "Account at Seguridad",
+		"language": "Wika at Oras"
+	},
+	"board": {
+		"description": "Piliin ang board at mga batong gagamitin mo sa paglalaro.",
+		"appearance": {
+			"title": "Hitsura",
+			"boardLegend": "Board",
+			"stonesLegend": "Mga bato",
+			"previewLabel": "Preview ng board"
+		},
+		"themes": {
+			"kaya": "Tradisyonal na Japanese kaya",
+			"walnut": "Madilim na walnut",
+			"ash": "Maputlang Scandinavian ash"
+		},
+		"stoneStyles": {
+			"polished": "Slate",
+			"satin": "Ceramic",
+			"matte": "Natural na bato",
+			"snow": "Clamshell · Yuki / Snow Grade"
+		},
+		"display": {
+			"title": "Display ng board",
+			"coordinates": {
+				"label": "Ipakita ang mga coordinate ng board",
+				"description": "Lagyan ng label ang mga column at row sa gilid ng board."
+			},
+			"lastMove": {
+				"label": "I-highlight ang huling galaw",
+				"description": "Markahan ang pinakahuling batong itinira."
+			}
+		},
+		"sounds": {
+			"title": "Mga tunog",
+			"playSounds": {
+				"label": "Magpatugtog ng mga tunog",
+				"description": "Paglalagay ng bato, paghuli, at babala ng orasan."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Pamahalaan kung paano ka maglalagay ng bato at kung sino ang puwedeng humamon sa iyo.",
+		"moves": {
+			"title": "Pagtira",
+			"description": "Humingi ng pangalawang click bago ilagay ang bato, para maiwasan ang maling click.",
+			"legend": "Kumpirmahin ang mga galaw",
+			"options": {
+				"never": "Hindi kailanman",
+				"correspondence": "Sa mga correspondence game lang",
+				"always": "Palagi"
+			}
+		},
+		"challenges": {
+			"title": "Mga hamon",
+			"description": "Piliin kung sino ang puwedeng magpadala sa iyo ng hamon sa laro.",
+			"legend": "Payagan ang hamon mula sa",
+			"options": {
+				"everyone": "Lahat",
+				"registered": "Mga rehistradong manlalaro",
+				"following": "Mga manlalarong fina-follow ko lang",
+				"nobody": "Walang sinuman (pinapayagan pa rin ang rematch)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Makikita ang lahat ng narito sa iyong <profileLink>pampublikong profile</profileLink>.",
+		"publicProfile": {
+			"title": "Pampublikong profile",
+			"bioLabel": "Maikling bio",
+			"bioPlaceholder": "Lalabas sa iyong profile ang maikli mong bio.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Mga detalye",
+			"joinDate": "Petsa ng pagsali",
+			"username": "Username",
+			"changeUsername": "Baguhin",
+			"changeUsernameFeature": "Pagpapalit ng username",
+			"realName": "Tunay na pangalan",
+			"location": "Lokasyon",
+			"country": "Bansa",
+			"countryNotSet": "Hindi nakatakda",
+			"rank": "Ranggo",
+			"rankPlaceholder": "hal. 12k, 3d",
+			"rankHint": "Gamitin ang 30k–1k, 1d–9d, o 1p–9p."
+		},
+		"links": {
+			"legend": "Mga link",
+			"linkLabel": "Link {{number}}",
+			"remove": "Alisin",
+			"removeLabel": "Alisin ang link {{number}}",
+			"add": "Magdagdag ng link"
+		}
+	},
+	"social": {
+		"description": "Pamahalaan ang mga manlalarong fina-follow mo at ang mga na-block mo.",
+		"blocking": {
+			"title": "Pag-block",
+			"description_one": "Nagba-block ka ng {{count}} manlalaro. Hindi ka mahahamon o mapapadalhan ng mensahe ng mga naka-block na manlalaro.",
+			"description_other": "Nagba-block ka ng {{count}} manlalaro. Hindi ka mahahamon o mapapadalhan ng mensahe ng mga naka-block na manlalaro.",
+			"empty": "Wala kang bina-block.",
+			"action": "I-unblock",
+			"actionLabel": "I-unblock si {{username}}"
+		},
+		"following": {
+			"title": "Fina-follow",
+			"description_one": "Nagfo-follow ka ng {{count}} manlalaro.",
+			"description_other": "Nagfo-follow ka ng {{count}} manlalaro.",
+			"empty": "Wala ka pang fina-follow.",
+			"action": "I-unfollow",
+			"actionLabel": "I-unfollow si {{username}}"
+		}
+	},
+	"account": {
+		"description": "Palitan ang iyong password, i-secure ang iyong account, at pamahalaan ang mga nakakonektang account.",
+		"password": {
+			"title": "Palitan ang password",
+			"updated": "Na-update ang password",
+			"fields": {
+				"currentPassword": {
+					"label": "Kasalukuyang password",
+					"show": "Ipakita ang kasalukuyang password",
+					"hide": "Itago ang kasalukuyang password"
+				},
+				"newPassword": {
+					"label": "Bagong password",
+					"show": "Ipakita ang bagong password",
+					"hide": "Itago ang bagong password"
+				},
+				"confirmPassword": {
+					"label": "I-type muli ang password",
+					"show": "Ipakita ang na-retype na password",
+					"hide": "Itago ang na-retype na password"
+				}
+			}
+		},
+		"contact": {
+			"title": "Contact info",
+			"email": "Email address",
+			"edit": "I-edit",
+			"editFeature": "Pagpapalit ng iyong email"
+		},
+		"twoFactor": {
+			"title": "Two-factor authentication",
+			"description": "Humingi ng code mula sa authenticator app tuwing magsa-sign in ka.",
+			"off": "Naka-off",
+			"enable": "I-enable",
+			"feature": "Two-factor authentication"
+		},
+		"sessions": {
+			"title": "Mga aktibong session",
+			"description": "Kung pinaghihinalaan mong nakompromiso ang iyong account, palitan ang iyong password at mag-log out kahit saan.",
+			"thisDevice": "Device na ito",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "I-log out ang {{device}}",
+			"logOutAll": "Mag-log out sa lahat ng ibang device"
+		},
+		"connections": {
+			"title": "Mga nakakonektang account",
+			"description": "Mag-sign in sa Baduk gamit ang mga account na ito.",
+			"connectedTo": "Nakakonekta sa {{provider}}",
+			"connect": "Ikonekta",
+			"disconnect": "Idiskonekta",
+			"note": "Inaalis ng pagdiskonekta ang link sa Baduk. Maaaring kailangan mo pa ring bawiin ang access sa kabilang site."
+		},
+		"close": {
+			"title": "Isara ang iyong account",
+			"description": "Itatago ng pagsasara ng iyong account ang iyong profile at ila-log out ka kahit saan.",
+			"button": "Isara ang account",
+			"dialogTitle": "Isara ang iyong account?",
+			"dialogDescription": "Maaari mo itong buksang muli mamaya mula sa page ng pag-sign in.",
+			"feature": "Pagsasara ng iyong account"
+		}
+	},
+	"languageTime": {
+		"title": "Wika at Oras",
+		"description": "Piliin ang wikang gagamitin ng Baduk at kung paano lalabas ang mga petsa at oras.",
+		"language": {
+			"title": "Wika",
+			"description": "Agad na ilalapat ang mga pagbabago sa bawat page.",
+			"legend": "Wika ng display"
+		},
+		"time": {
+			"title": "Oras",
+			"description": "Ginagamit para sa mga timestamp gaya ng petsa ng pagsali at aktibidad ng session.",
+			"timeZone": "Time zone",
+			"automaticTimeZone": "Awtomatiko ({{timeZone}})",
+			"timeFormat": "Orasan",
+			"formats": {
+				"auto": "Awtomatiko ({{example}})",
+				"12h": "12-oras ({{example}})",
+				"24h": "24-oras ({{example}})"
+			},
+			"preview": "Preview"
+		}
+	}
+}

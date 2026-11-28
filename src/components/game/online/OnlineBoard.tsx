@@ -1,6 +1,8 @@
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import type { BoardConfig } from "weiqi-board";
 import type { OnlineGameController, OnlineGameSnapshot } from "@/controllers/OnlineGameController";
+import { usePreferences } from "@/hooks/usePreferences";
 import { OnlineBoardStage } from "./OnlineBoardStage";
 import { OnlineGameActions } from "./OnlineGameActions";
 import { OnlineMoveHistory } from "./OnlineMoveHistory";
@@ -8,7 +10,7 @@ import { OnlinePlayers } from "./OnlinePlayers";
 import "@/styles/local-board.css";
 import "@/styles/online-board.css";
 
-type Props = Pick<BoardConfig, "boardTheme" | "stoneStyle" | "size"> & {
+type Props = Pick<BoardConfig, "size"> & {
 	snapshot: OnlineGameSnapshot;
 	controller: OnlineGameController;
 };
@@ -42,21 +44,32 @@ function useHistoryKeys(controller: OnlineGameController) {
 	}, [controller]);
 }
 
-export function OnlineBoard({ snapshot, controller, size, ...appearance }: Props) {
+export function OnlineBoard({ snapshot, controller, size }: Props) {
+	const { t } = useTranslation("game");
+	const { preferences } = usePreferences();
 	useHistoryKeys(controller);
 	return (
-		<section className="local-game" aria-label="Online Go game">
+		<section className="local-game" aria-label={t("online.label")}>
 			<div className="local-game__playing-area" style={{ maxWidth: size }}>
-				<OnlinePlayers snapshot={snapshot} stoneStyle={appearance.stoneStyle} />
-				<OnlineBoardStage {...appearance} snapshot={snapshot} controller={controller} />
-				<OnlineGameActions snapshot={snapshot} controller={controller} />
+				<OnlineBoardStage
+					boardTheme={preferences.boardTheme}
+					stoneStyle={preferences.stoneStyle}
+					showCoordinates={preferences.coordinates}
+					showLastMove={preferences.showLastMove}
+					snapshot={snapshot}
+					controller={controller}
+				/>
 				<div className="local-game__feedback">
 					<p className="local-game__error" role="alert">
 						{snapshot.error}
 					</p>
 				</div>
 			</div>
-			<OnlineMoveHistory snapshot={snapshot} onView={controller.viewMove} />
+			<OnlinePlayers snapshot={snapshot} controller={controller} stoneStyle={preferences.stoneStyle} />
+			<div className="local-game__sidebar">
+				<OnlineGameActions snapshot={snapshot} controller={controller} />
+				<OnlineMoveHistory snapshot={snapshot} onView={controller.viewMove} />
+			</div>
 		</section>
 	);
 }

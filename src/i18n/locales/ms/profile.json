@@ -1,0 +1,18 @@
+{
+	"editProfile": "Sunting profil",
+	"meta": {
+		"joined": "Menyertai",
+		"rank": "Pangkat",
+		"noRank": "—",
+		"followers": "Pengikut",
+		"following": "Mengikuti"
+	},
+	"about": {
+		"heading": "Perihal",
+		"noBio": "Belum ada bio."
+	},
+	"games": {
+		"heading": "Sejarah permainan",
+		"empty": "Belum ada permainan."
+	}
+}

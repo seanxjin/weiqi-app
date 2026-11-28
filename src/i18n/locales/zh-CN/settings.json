@@ -1,0 +1,207 @@
+{
+	"header": {
+		"title": "设置",
+		"sectionTitle": "{{section}}设置",
+		"navLabel": "设置分区"
+	},
+	"sections": {
+		"board": "棋盘与棋子",
+		"gameplay": "对弈",
+		"profile": "个人资料",
+		"social": "社交与隐私",
+		"account": "账户与安全",
+		"language": "语言与时间"
+	},
+	"board": {
+		"description": "选择你对弈时使用的棋盘和棋子。",
+		"appearance": {
+			"title": "外观",
+			"boardLegend": "棋盘",
+			"stonesLegend": "棋子",
+			"previewLabel": "棋盘预览"
+		},
+		"themes": {
+			"kaya": "传统日本榧木",
+			"walnut": "深色胡桃木",
+			"ash": "浅色北欧白蜡木"
+		},
+		"stoneStyles": {
+			"polished": "板岩",
+			"satin": "陶瓷",
+			"matte": "天然石",
+			"snow": "蛤碁石 · 雪印级"
+		},
+		"display": {
+			"title": "棋盘显示",
+			"coordinates": {
+				"label": "显示棋盘坐标",
+				"description": "在棋盘边缘标注行列坐标。"
+			},
+			"lastMove": {
+				"label": "高亮最后一手",
+				"description": "标记最近落下的棋子。"
+			}
+		},
+		"sounds": {
+			"title": "声音",
+			"playSounds": {
+				"label": "播放声音",
+				"description": "落子、提子和读秒提醒。"
+			}
+		}
+	},
+	"gameplay": {
+		"description": "管理落子方式以及谁可以向你发起挑战。",
+		"moves": {
+			"title": "落子",
+			"description": "落子前需再次点击确认，以免误点。",
+			"legend": "落子确认",
+			"options": {
+				"never": "从不",
+				"correspondence": "仅限通信棋",
+				"always": "始终"
+			}
+		},
+		"challenges": {
+			"title": "对局邀请",
+			"description": "选择谁可以向你发送对局邀请。",
+			"legend": "允许以下人员发起邀请",
+			"options": {
+				"everyone": "所有人",
+				"registered": "注册棋手",
+				"following": "仅我关注的棋手",
+				"nobody": "任何人都不允许（仍可再战）"
+			}
+		}
+	},
+	"profile": {
+		"description": "此处所有内容都会显示在你的<profileLink>公开资料</profileLink>中。",
+		"publicProfile": {
+			"title": "公开资料",
+			"bioLabel": "简介",
+			"bioPlaceholder": "你的简介将显示在个人资料中。",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "详细信息",
+			"joinDate": "加入日期",
+			"username": "用户名",
+			"changeUsername": "更改",
+			"changeUsernameFeature": "更改用户名",
+			"realName": "真实姓名",
+			"location": "所在地",
+			"country": "国家/地区",
+			"countryNotSet": "未设置",
+			"rank": "段位",
+			"rankPlaceholder": "例如 12k、3d",
+			"rankHint": "请使用 30k–1k、1d–9d 或 1p–9p。"
+		},
+		"links": {
+			"legend": "链接",
+			"linkLabel": "链接 {{number}}",
+			"remove": "移除",
+			"removeLabel": "移除链接 {{number}}",
+			"add": "添加链接"
+		}
+	},
+	"social": {
+		"description": "管理你关注的棋手和已屏蔽的棋手。",
+		"blocking": {
+			"title": "屏蔽",
+			"description_other": "你已屏蔽 {{count}} 位棋手。被屏蔽的棋手无法向你发起挑战或发送消息。",
+			"empty": "你没有屏蔽任何人。",
+			"action": "取消屏蔽",
+			"actionLabel": "取消屏蔽 {{username}}"
+		},
+		"following": {
+			"title": "关注",
+			"description_other": "你关注了 {{count}} 位棋手。",
+			"empty": "你还没有关注任何人。",
+			"action": "取消关注",
+			"actionLabel": "取消关注 {{username}}"
+		}
+	},
+	"account": {
+		"description": "更改密码、保护账户安全并管理关联账户。",
+		"password": {
+			"title": "更改密码",
+			"updated": "密码已更新",
+			"fields": {
+				"currentPassword": {
+					"label": "当前密码",
+					"show": "显示当前密码",
+					"hide": "隐藏当前密码"
+				},
+				"newPassword": {
+					"label": "新密码",
+					"show": "显示新密码",
+					"hide": "隐藏新密码"
+				},
+				"confirmPassword": {
+					"label": "再次输入密码",
+					"show": "显示再次输入的密码",
+					"hide": "隐藏再次输入的密码"
+				}
+			}
+		},
+		"contact": {
+			"title": "联系信息",
+			"email": "邮箱地址",
+			"edit": "编辑",
+			"editFeature": "更改邮箱"
+		},
+		"twoFactor": {
+			"title": "双重验证",
+			"description": "登录时需要输入身份验证器应用中的验证码。",
+			"off": "已关闭",
+			"enable": "启用",
+			"feature": "双重验证"
+		},
+		"sessions": {
+			"title": "活跃会话",
+			"description": "如果你怀疑账户已被盗用，请更改密码并在所有设备上退出登录。",
+			"thisDevice": "此设备",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "在 {{device}} 上退出登录",
+			"logOutAll": "在所有其他设备上退出登录"
+		},
+		"connections": {
+			"title": "关联账户",
+			"description": "使用这些账户登录 Baduk。",
+			"connectedTo": "已关联 {{provider}}",
+			"connect": "关联",
+			"disconnect": "取消关联",
+			"note": "取消关联会移除 Baduk 上的关联，你可能仍需在对方网站上撤销访问权限。"
+		},
+		"close": {
+			"title": "注销账户",
+			"description": "注销账户后，你的个人资料将被隐藏，并在所有设备上退出登录。",
+			"button": "注销账户",
+			"dialogTitle": "确定注销账户？",
+			"dialogDescription": "之后可以在登录页面重新启用。",
+			"feature": "注销账户"
+		}
+	},
+	"languageTime": {
+		"title": "语言与时间",
+		"description": "选择 Baduk 使用的语言以及日期和时间的显示方式。",
+		"language": {
+			"title": "语言",
+			"description": "更改会立即应用到所有页面。",
+			"legend": "显示语言"
+		},
+		"time": {
+			"title": "时间",
+			"description": "用于加入日期、会话活动等时间戳。",
+			"timeZone": "时区",
+			"automaticTimeZone": "自动（{{timeZone}}）",
+			"timeFormat": "时钟",
+			"formats": {
+				"auto": "自动（{{example}}）",
+				"12h": "12 小时制（{{example}}）",
+				"24h": "24 小时制（{{example}}）"
+			},
+			"preview": "预览"
+		}
+	}
+}

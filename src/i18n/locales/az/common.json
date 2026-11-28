@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "QO",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Baduk ana səhifəsi",
+	"actions": {
+		"save": "Saxla",
+		"saving": "Saxlanılır…",
+		"cancel": "Ləğv et",
+		"back": "Geri",
+		"retry": "Yenidən cəhd et",
+		"close": "Bağla",
+		"login": "Daxil ol",
+		"signIn": "Daxil ol",
+		"signUp": "Qeydiyyat",
+		"logOut": "Çıxış",
+		"loggingOut": "Çıxış edilir…"
+	},
+	"status": {
+		"saved": "Saxlanıldı",
+		"loading": "Yüklənir…",
+		"checkingSession": "Sessiyanız yoxlanılır…",
+		"sessionError": "Sessiyanızı yoxlamaq mümkün olmadı. Zəhmət olmasa, yenidən cəhd edin."
+	},
+	"comingSoon": "{{feature}} tezliklə əlçatan olacaq.",
+	"language": "Dil",
+	"languageDialog": {
+		"title": "Üstünlük verdiyiniz dili seçin",
+		"loadError": "Bu dili yükləmək mümkün olmadı. Zəhmət olmasa, yenidən cəhd edin."
+	}
+}

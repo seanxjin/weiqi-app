@@ -1,0 +1,29 @@
+{
+	"navigation": "Baduk gezinmesi",
+	"drawer": {
+		"open": "Gezinmeyi aç",
+		"close": "Gezinmeyi kapat"
+	},
+	"mainNavigation": "Ana gezinme",
+	"play": "Oyna",
+	"puzzles": "Bulmacalar",
+	"learn": "Öğren",
+	"guide": {
+		"heading": "GO'DA YENİ MİSİNİZ?",
+		"startWithBasics": "Temel bilgilerle başlayın"
+	},
+	"account": {
+		"label": "Hesap",
+		"friends": "Arkadaşlar",
+		"messages": "Mesajlar",
+		"notifications": "Bildirimler",
+		"settings": "Ayarlar",
+		"allSettings": "Tüm ayarlar"
+	},
+	"theme": {
+		"label": "Tema",
+		"system": "Sistem",
+		"light": "Açık",
+		"dark": "Koyu"
+	}
+}

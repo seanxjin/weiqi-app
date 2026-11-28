@@ -1,0 +1,135 @@
+{
+	"colors": {
+		"black": "Negru",
+		"white": "Alb"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Pas",
+	"localPage": {
+		"title": "Joc local",
+		"eyebrow": "PARTIDĂ AMICALĂ",
+		"heading": "Un moment pentru joc.",
+		"details": "{{size}} × {{size}} · Reguli japoneze"
+	},
+	"onlinePage": {
+		"title": "Joc online",
+		"eyebrow": "PARTIDĂ ONLINE",
+		"heading": "Un moment pentru joc.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Se încarcă partida…",
+		"notFound": "Această partidă nu există sau nu mai este disponibilă.",
+		"startNew": "Începe o nouă partidă online",
+		"invited": "Ești invitat la o partidă {{size}} × {{size}}.",
+		"joining": "Te alături…",
+		"joinAs": "Alătură-te cu {{color}}",
+		"full": "Această partidă este completă. Urmărirea partidelor nu este încă disponibilă."
+	},
+	"local": {
+		"label": "Partidă locală de Go",
+		"loadingEngine": "Se încarcă motorul de Go…"
+	},
+	"online": {
+		"label": "Partidă online de Go",
+		"youAre": "Joci cu {{color}}",
+		"connection": {
+			"connecting": "Se conectează…",
+			"open": "Conectat",
+			"reconnecting": "Se reconectează…",
+			"closed": "Deconectat"
+		},
+		"invite": {
+			"label": "Invită un prieten cu acest link",
+			"copy": "Copiază",
+			"copied": "Copiat"
+		},
+		"awaitingScoring": "Ambii jucători au dat pas. Numărarea punctelor nu este încă disponibilă, așa că anulează partida pentru a o înregistra fără scor.",
+		"confirmResign": "Confirmă abandonul",
+		"resign": "Abandonează",
+		"abort": "Anulează",
+		"results": {
+			"youWin": "Ai câștigat · {{color}} a abandonat",
+			"winsByResignation": "{{color}} câștigă prin abandon",
+			"aborted": "Partidă anulată de {{color}}",
+			"unscored": "Partida s-a încheiat fără scor"
+		}
+	},
+	"turn": {
+		"preparing": "Se pregătește tabla",
+		"reviewing": "Revizuire · Revino la Curent pentru a juca",
+		"toPlay": "La mutare: {{color}}",
+		"yourMove": "E rândul tău",
+		"waitingForOpponent": "Se așteaptă un adversar",
+		"awaitingScoring": "Jocul s-a încheiat · Numărarea punctelor nu este încă disponibilă",
+		"gameOver": "Joc încheiat",
+		"sendingMove": "Se trimite mutarea…",
+		"waitingForConnection": "Se așteaptă conexiunea"
+	},
+	"boardFooter": {
+		"lastMove": "Ultima mutare: {{color}} {{move}}",
+		"startingPosition": "Poziția inițială"
+	},
+	"players": {
+		"label": "Jucători",
+		"captured": "Capturi: {{count}}",
+		"you": "{{name}} (tu)",
+		"waiting": "{{name}} · se așteaptă un jucător"
+	},
+	"history": {
+		"label": "Istoricul mutărilor",
+		"heading": "Mutări",
+		"moveCount_one": "{{count}} MUTARE",
+		"moveCount_few": "{{count}} MUTĂRI",
+		"moveCount_other": "{{count}} DE MUTĂRI",
+		"tableLabel": "Mutările Negrului și Albului",
+		"pair": "Pereche",
+		"move": "Mutarea {{number}}, {{color}}, {{move}}",
+		"pendingMove": "Mutarea {{number}}, {{color}}, {{move}}, se trimite",
+		"empty": "Nicio mutare încă.",
+		"position": "Mutarea {{viewed}} din {{latest}}",
+		"currentPosition": "POZIȚIA CURENTĂ",
+		"reviewing": "REVIZUIRE",
+		"navigationLabel": "Navigare în istoricul mutărilor",
+		"navigation": {
+			"start": "Început",
+			"previous": "Anterioara",
+			"next": "Următoarea",
+			"current": "Curent"
+		},
+		"undo": "Anulează ultima mutare",
+		"encouragement": "Nu te grăbi. Fiecare mutare contează.",
+		"keyboardHint": "Folosește ← → pentru a parcurge mutările, ↑ ↓ pentru început și poziția curentă."
+	},
+	"board": {
+		"sceneLabel": "O tablă de Go de {{size}} pe {{size}} care arată o secvență de {{moveCount}} mutări de deschidere",
+		"themedBoard": "Tablă de Go {{theme}}",
+		"emptyBoard": "Tablă de baduk {{theme}} goală, de {{size}} pe {{size}}",
+		"stone": "Piatră de baduk {{color}}, {{finish}}",
+		"textureError": "Textura tablei nu a putut fi încărcată.",
+		"pauseAnimations": "Întrerupe animațiile",
+		"resumeAnimations": "Reia animațiile",
+		"pause": "PAUZĂ",
+		"resume": "REIA"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Alege o intersecție de pe tablă.",
+			"occupied": "Intersecția este ocupată.",
+			"wrongPlayer": "Este rândul celuilalt jucător.",
+			"suicide": "Sinuciderea nu este permisă.",
+			"ko": "Această mutare este interzisă de regula ko.",
+			"superko": "Această mutare repetă o poziție anterioară.",
+			"gameEnded": "Această partidă nu mai acceptă mutări."
+		},
+		"serverRejectedMove": "Serverul a respins mutarea. {{reason}}",
+		"staleRevision": "Partida s-a schimbat înainte să ajungă mutarea ta, așa că aceasta nu a fost jucată.",
+		"wrongPhase": "Acest lucru nu este posibil în această etapă a partidei.",
+		"seatTaken": "Acest loc este deja ocupat.",
+		"notYourTurn": "Este rândul celuilalt jucător.",
+		"abortUnavailable": "Partida nu mai poate fi anulată.",
+		"replayFailed": "Partida nu a putut fi reluată local. Reîncarcă pagina.",
+		"notConnected": "Nu ești conectat la serverul de joc.",
+		"engineLoadFailed": "Motorul de Go nu a putut fi încărcat. Reîncearcă.",
+		"gameLoadFailed": "Partida nu a putut fi încărcată. Reîncearcă.",
+		"seatTakenFirst": "Altcineva a ocupat locul primul. Această partidă este acum completă."
+	}
+}

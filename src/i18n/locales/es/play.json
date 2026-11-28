@@ -1,0 +1,117 @@
+{
+	"home": {
+		"pageTitle": "Jugar",
+		"location": "JUGAR / INICIO",
+		"signedInAs": "Sesión iniciada como {{username}}",
+		"guest": "Jugando como invitado",
+		"logoutError": "No se pudo cerrar la sesión. Inténtalo de nuevo.",
+		"introduction": {
+			"heading": "Algo de texto",
+			"body": "Algún otro texto"
+		},
+		"menuHeading": "Algo de texto.",
+		"options": {
+			"online": {
+				"label": "Jugar en línea",
+				"description": "Encuentra rival. Nos vemos en el tablero."
+			},
+			"local": {
+				"label": "Jugar en local",
+				"description": "Un tablero. Dos jugadores. Una pantalla compartida."
+			},
+			"friend": {
+				"label": "Jugar con un amigo",
+				"description": "Invita a alguien a una partida reflexiva."
+			},
+			"puzzles": {
+				"label": "Resolver problemas",
+				"description": "Pequeños retos. Mejor intuición."
+			},
+			"lessons": {
+				"label": "Lecciones",
+				"description": "De tu primera piedra a tu próxima revelación."
+			},
+			"bots": {
+				"label": "Jugar contra bots",
+				"description": "Practica a tu ritmo, en cualquier nivel."
+			}
+		},
+		"presence_one": "{{count, number}} jugador compartiendo el tablero",
+		"presence_many": "{{count, number}} jugadores compartiendo el tablero",
+		"presence_other": "{{count, number}} jugadores compartiendo el tablero",
+		"reserved": {
+			"label": "SECCIÓN PARA MÁS ADELANTE",
+			"heading": "Reservado para contenido futuro",
+			"body": "Esta sección se ha dejado vacía a propósito por ahora. Se usará para futuras funciones, novedades o contenido seleccionado."
+		},
+		"footerTagline": "Reglas sencillas. Descubrimiento sin fin."
+	},
+	"materials": {
+		"pageTitle": "Tableros y piedras",
+		"breadcrumb": "Baduk / Biblioteca de materiales",
+		"collection": "Colección 01",
+		"heading": "Tableros y piedras.",
+		"introduction": "Materiales naturales. Detalles serenos. Un lugar para el juego.",
+		"boardsSection": {
+			"title": "Los tableros",
+			"meta": "Tres maderas · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Las piedras",
+			"meta": "Cuatro estilos · negras y blancas"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Estudio de materiales",
+			"enlarged": "Muestras ampliadas",
+			"heading": "Un contraste sereno.",
+			"body": "Cuatro superficies. Negro y blanco, bajo la misma luz suave.",
+			"scale": "Muestras ampliadas · escala uniforme",
+			"form": "Forma lisa y redondeada / sutil variación de superficie"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Kaya japonés tradicional",
+				"material": "Miel cálida · veta recta"
+			},
+			"walnut": {
+				"name": "Nogal oscuro",
+				"material": "Marrón profundo · veta ondulada"
+			},
+			"ash": {
+				"name": "Fresno escandinavo claro",
+				"material": "Madera clara · veta suave"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Pulida",
+				"name": "Pizarra",
+				"description": "Superficies lisas y pulidas con una serena textura mineral.",
+				"black": "Pizarra negra",
+				"white": "Pizarra blanca"
+			},
+			"satin": {
+				"finish": "Satinada",
+				"name": "Cerámica",
+				"description": "Un brillo difuso y un grano fino, delicado y uniforme.",
+				"black": "Cerámica negra",
+				"white": "Cerámica blanca"
+			},
+			"matte": {
+				"finish": "Mate",
+				"name": "Piedra natural",
+				"description": "Un sereno moteado mineral bajo un acabado liso y seco.",
+				"black": "Piedra negra",
+				"white": "Piedra blanca"
+			},
+			"snow": {
+				"finish": "Pulida",
+				"name": "Concha · Grado Yuki / Nieve",
+				"description": "Veta de concha fina y apretada sobre blanco lechoso, junto a pizarra negra pulida.",
+				"black": "Pizarra negra Nachiguro",
+				"white": "Concha blanca Yuki"
+			}
+		},
+		"footerTagline": "Lo esencial, bien pensado."
+	}
+}

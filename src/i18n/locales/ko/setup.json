@@ -1,0 +1,84 @@
+{
+	"page": {
+		"title": {
+			"local": "로컬 대국 설정",
+			"online": "온라인 대국 설정"
+		},
+		"label": {
+			"local": "로컬 대국 설정",
+			"online": "온라인 대국 설정"
+		},
+		"backToMenu": "메뉴로 돌아가기",
+		"settingsLabel": "대국 설정",
+		"timeLimitsNotice": "아직 시간 제한이 적용되지 않습니다.",
+		"boardSize": "바둑판 크기",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "대국 만드는 중…",
+		"startGame": "대국 시작",
+		"createFailed": "대국을 만들지 못했습니다. 다시 시도해 주세요."
+	},
+	"players": {
+		"player1": "플레이어 1",
+		"player2": "플레이어 2",
+		"opponent": "상대",
+		"guest": "나(게스트)"
+	},
+	"configuration": {
+		"eyebrow": "구성",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "사용자 지정 · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "시간 설정 더 보기",
+		"fewerControls": "시간 설정 간략히",
+		"groups": {
+			"bullet": "불릿",
+			"blitz": "속기",
+			"rapid": "래피드",
+			"classical": "장고",
+			"correspondence": "통신 대국",
+			"untimed": "무제한"
+		},
+		"systems": {
+			"absolute": "절대 시간",
+			"fischer": "피셔",
+			"japaneseByoYomi": "일본식 초읽기"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}}초",
+			"absoluteMinutes": "{{minutes}}분",
+			"mainSeconds": "{{seconds}}초",
+			"mainMinutes": "{{minutes}}분",
+			"fischer": "{{main}} + {{increment}}초",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}}초",
+			"daysPerMove_other": "한 수당 {{count}}일"
+		},
+		"noTimeLimit": "시간 제한 없음"
+	},
+	"customTime": {
+		"label": "사용자 지정 시간 설정",
+		"eyebrow": "사용자 지정 시간 설정",
+		"heading": "나만의 시간 설정",
+		"system": "방식",
+		"fields": {
+			"minutes": "기본 시간 · 분",
+			"seconds": "기본 시간 · 초",
+			"increment": "추가 시간 · 초",
+			"periods": "초읽기 횟수",
+			"periodSeconds": "초읽기 · 초"
+		},
+		"hints": {
+			"byoYomi": "기본 시간 이후에는 정해진 횟수의 초읽기가 적용됩니다.",
+			"default": "방식을 선택한 뒤 시간 값을 입력하세요."
+		},
+		"apply": "사용자 지정 시간 사용",
+		"errors": {
+			"wholeNumbers": "각 시간 칸에 0 이상의 정수를 입력하세요.",
+			"mainSeconds": "기본 시간의 초는 0에서 59 사이여야 합니다.",
+			"byoYomiPeriods": "초읽기는 1초 이상인 횟수가 최소 1회 필요합니다.",
+			"mainTime": "기본 시간을 0보다 크게 설정하세요."
+		}
+	}
+}

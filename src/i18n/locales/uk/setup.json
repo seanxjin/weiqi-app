@@ -1,0 +1,87 @@
+{
+	"page": {
+		"title": {
+			"local": "Налаштування локальної гри",
+			"online": "Налаштування онлайн-гри"
+		},
+		"label": {
+			"local": "Налаштування локальної гри",
+			"online": "Налаштування онлайн-гри"
+		},
+		"backToMenu": "Назад до меню",
+		"settingsLabel": "Параметри гри",
+		"timeLimitsNotice": "Обмеження часу поки не застосовуються.",
+		"boardSize": "РОЗМІР ДОШКИ",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Створення гри…",
+		"startGame": "Почати гру",
+		"createFailed": "Не вдалося створити гру. Спробуйте ще раз."
+	},
+	"players": {
+		"player1": "Гравець 1",
+		"player2": "Гравець 2",
+		"opponent": "Суперник",
+		"guest": "Ви (гість)"
+	},
+	"configuration": {
+		"eyebrow": "КОНФІГУРАЦІЇ",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Власний · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Більше варіантів контролю часу",
+		"fewerControls": "Менше варіантів контролю часу",
+		"groups": {
+			"bullet": "Куля",
+			"blitz": "Бліц",
+			"rapid": "Рапід",
+			"classical": "Класика",
+			"correspondence": "Заочна",
+			"untimed": "Без часу"
+		},
+		"systems": {
+			"absolute": "Абсолютний",
+			"fischer": "Фішер",
+			"japaneseByoYomi": "Японське бьойомі"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} с",
+			"absoluteMinutes": "{{minutes}} хв",
+			"mainSeconds": "{{seconds}} с",
+			"mainMinutes": "{{minutes}} хв",
+			"fischer": "{{main}} + {{increment}} с",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}} с",
+			"daysPerMove_one": "{{count}} день / хід",
+			"daysPerMove_few": "{{count}} дні / хід",
+			"daysPerMove_many": "{{count}} днів / хід",
+			"daysPerMove_other": "{{count}} дня / хід"
+		},
+		"noTimeLimit": "Без обмеження часу"
+	},
+	"customTime": {
+		"label": "Власний контроль часу",
+		"eyebrow": "ВЛАСНИЙ КОНТРОЛЬ ЧАСУ",
+		"heading": "Налаштуйте свій годинник",
+		"system": "Система",
+		"fields": {
+			"minutes": "Основний · хв",
+			"seconds": "Основний · с",
+			"increment": "Додавання · с",
+			"periods": "Періоди",
+			"periodSeconds": "Період · с"
+		},
+		"hints": {
+			"byoYomi": "Додатковий час складається з фіксованої кількості періодів.",
+			"default": "Виберіть систему, а потім введіть значення годинника."
+		},
+		"apply": "Використати власний час",
+		"errors": {
+			"wholeNumbers": "Введіть невід’ємне ціле число в кожне поле годинника.",
+			"mainSeconds": "Основні секунди мають бути від 0 до 59.",
+			"byoYomiPeriods": "Для бьойомі потрібен щонайменше один період тривалістю щонайменше одну секунду.",
+			"mainTime": "Основний час має бути більшим за нуль."
+		}
+	}
+}

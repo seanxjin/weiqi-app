@@ -1,0 +1,29 @@
+{
+	"navigation": "Baduk naviqasiyası",
+	"drawer": {
+		"open": "Naviqasiyanı aç",
+		"close": "Naviqasiyanı bağla"
+	},
+	"mainNavigation": "Əsas naviqasiya",
+	"play": "Oyna",
+	"puzzles": "Tapmacalar",
+	"learn": "Öyrən",
+	"guide": {
+		"heading": "QO-YA YENİSİNİZ?",
+		"startWithBasics": "Əsaslardan başlayın"
+	},
+	"account": {
+		"label": "Hesab",
+		"friends": "Dostlar",
+		"messages": "Mesajlar",
+		"notifications": "Bildirişlər",
+		"settings": "Parametrlər",
+		"allSettings": "Bütün ayarlar"
+	},
+	"theme": {
+		"label": "Mövzu",
+		"system": "Sistem",
+		"light": "Açıq",
+		"dark": "Tünd"
+	}
+}

@@ -1,0 +1,213 @@
+{
+	"header": {
+		"title": "Ustawienia",
+		"sectionTitle": "Ustawienia: {{section}}",
+		"navLabel": "Sekcje ustawień"
+	},
+	"sections": {
+		"board": "Plansza i kamienie",
+		"gameplay": "Rozgrywka",
+		"profile": "Profil",
+		"social": "Społeczność i prywatność",
+		"account": "Konto i bezpieczeństwo",
+		"language": "Język i czas"
+	},
+	"board": {
+		"description": "Wybierz planszę i kamienie, którymi grasz.",
+		"appearance": {
+			"title": "Wygląd",
+			"boardLegend": "Plansza",
+			"stonesLegend": "Kamienie",
+			"previewLabel": "Podgląd planszy"
+		},
+		"themes": {
+			"kaya": "Tradycyjna japońska kaya",
+			"walnut": "Ciemny orzech",
+			"ash": "Jasny skandynawski jesion"
+		},
+		"stoneStyles": {
+			"polished": "Łupek",
+			"satin": "Ceramika",
+			"matte": "Kamień naturalny",
+			"snow": "Muszla · Yuki / Snow Grade"
+		},
+		"display": {
+			"title": "Wyświetlanie planszy",
+			"coordinates": {
+				"label": "Pokaż współrzędne planszy",
+				"description": "Oznacz kolumny i rzędy wzdłuż krawędzi planszy."
+			},
+			"lastMove": {
+				"label": "Wyróżnij ostatni ruch",
+				"description": "Zaznacz ostatnio postawiony kamień."
+			}
+		},
+		"sounds": {
+			"title": "Dźwięki",
+			"playSounds": {
+				"label": "Odtwarzaj dźwięki",
+				"description": "Stawianie kamieni, bicie i ostrzeżenia zegara."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Zdecyduj, jak stawiasz kamienie i kto może Cię wyzywać.",
+		"moves": {
+			"title": "Wykonywanie ruchów",
+			"description": "Wymagaj drugiego kliknięcia przed postawieniem kamienia, aby uniknąć pomyłek.",
+			"legend": "Potwierdzaj ruchy",
+			"options": {
+				"never": "Nigdy",
+				"correspondence": "Tylko w partiach korespondencyjnych",
+				"always": "Zawsze"
+			}
+		},
+		"challenges": {
+			"title": "Wyzwania",
+			"description": "Wybierz, kto może wysyłać Ci wyzwania do gry.",
+			"legend": "Zezwalaj na wyzwania od",
+			"options": {
+				"everyone": "Wszystkich",
+				"registered": "Zarejestrowanych graczy",
+				"following": "Tylko obserwowanych graczy",
+				"nobody": "Nikogo (rewanże są nadal dozwolone)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Wszystko tutaj jest widoczne w Twoim <profileLink>profilu publicznym</profileLink>.",
+		"publicProfile": {
+			"title": "Profil publiczny",
+			"bioLabel": "Krótki opis",
+			"bioPlaceholder": "Twój krótki opis pojawi się w profilu.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Szczegóły",
+			"joinDate": "Data dołączenia",
+			"username": "Nazwa użytkownika",
+			"changeUsername": "Zmień",
+			"changeUsernameFeature": "Zmiana nazwy użytkownika",
+			"realName": "Imię i nazwisko",
+			"location": "Lokalizacja",
+			"country": "Kraj",
+			"countryNotSet": "Nie ustawiono",
+			"rank": "Ranga",
+			"rankPlaceholder": "np. 12k, 3d",
+			"rankHint": "Użyj 30k–1k, 1d–9d lub 1p–9p."
+		},
+		"links": {
+			"legend": "Linki",
+			"linkLabel": "Link {{number}}",
+			"remove": "Usuń",
+			"removeLabel": "Usuń link {{number}}",
+			"add": "Dodaj link"
+		}
+	},
+	"social": {
+		"description": "Zarządzaj graczami, których obserwujesz, i graczami, których zablokowano.",
+		"blocking": {
+			"title": "Blokowanie",
+			"description_one": "Blokujesz {{count}} gracza. Zablokowani gracze nie mogą Cię wyzywać ani wysyłać Ci wiadomości.",
+			"description_few": "Blokujesz {{count}} graczy. Zablokowani gracze nie mogą Cię wyzywać ani wysyłać Ci wiadomości.",
+			"description_many": "Blokujesz {{count}} graczy. Zablokowani gracze nie mogą Cię wyzywać ani wysyłać Ci wiadomości.",
+			"description_other": "Blokujesz {{count}} gracza. Zablokowani gracze nie mogą Cię wyzywać ani wysyłać Ci wiadomości.",
+			"empty": "Nikogo nie blokujesz.",
+			"action": "Odblokuj",
+			"actionLabel": "Odblokuj użytkownika {{username}}"
+		},
+		"following": {
+			"title": "Obserwowani",
+			"description_one": "Obserwujesz {{count}} gracza.",
+			"description_few": "Obserwujesz {{count}} graczy.",
+			"description_many": "Obserwujesz {{count}} graczy.",
+			"description_other": "Obserwujesz {{count}} gracza.",
+			"empty": "Nikogo jeszcze nie obserwujesz.",
+			"action": "Przestań obserwować",
+			"actionLabel": "Przestań obserwować użytkownika {{username}}"
+		}
+	},
+	"account": {
+		"description": "Zmień hasło, zabezpiecz konto i zarządzaj połączonymi kontami.",
+		"password": {
+			"title": "Zmień hasło",
+			"updated": "Hasło zostało zmienione",
+			"fields": {
+				"currentPassword": {
+					"label": "Obecne hasło",
+					"show": "Pokaż obecne hasło",
+					"hide": "Ukryj obecne hasło"
+				},
+				"newPassword": {
+					"label": "Nowe hasło",
+					"show": "Pokaż nowe hasło",
+					"hide": "Ukryj nowe hasło"
+				},
+				"confirmPassword": {
+					"label": "Powtórz hasło",
+					"show": "Pokaż powtórzone hasło",
+					"hide": "Ukryj powtórzone hasło"
+				}
+			}
+		},
+		"contact": {
+			"title": "Dane kontaktowe",
+			"email": "Adres e-mail",
+			"edit": "Edytuj",
+			"editFeature": "Zmiana adresu e-mail"
+		},
+		"twoFactor": {
+			"title": "Uwierzytelnianie dwuskładnikowe",
+			"description": "Wymagaj kodu z aplikacji uwierzytelniającej podczas logowania.",
+			"off": "Wyłączone",
+			"enable": "Włącz",
+			"feature": "Uwierzytelnianie dwuskładnikowe"
+		},
+		"sessions": {
+			"title": "Aktywne sesje",
+			"description": "Jeśli podejrzewasz, że Twoje konto zostało przejęte, zmień hasło i wyloguj się ze wszystkich urządzeń.",
+			"thisDevice": "To urządzenie",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "Wyloguj {{device}}",
+			"logOutAll": "Wyloguj ze wszystkich innych urządzeń"
+		},
+		"connections": {
+			"title": "Połączone konta",
+			"description": "Loguj się do Baduk za pomocą tych kont.",
+			"connectedTo": "Połączono z {{provider}}",
+			"connect": "Połącz",
+			"disconnect": "Rozłącz",
+			"note": "Rozłączenie usuwa powiązanie w Baduk. Może być również konieczne cofnięcie dostępu w drugim serwisie."
+		},
+		"close": {
+			"title": "Zamknij konto",
+			"description": "Zamknięcie konta ukrywa Twój profil i wylogowuje Cię ze wszystkich urządzeń.",
+			"button": "Zamknij konto",
+			"dialogTitle": "Zamknąć konto?",
+			"dialogDescription": "Możesz je później ponownie otworzyć na stronie logowania.",
+			"feature": "Zamykanie konta"
+		}
+	},
+	"languageTime": {
+		"title": "Język i czas",
+		"description": "Wybierz język Baduk oraz sposób wyświetlania dat i godzin.",
+		"language": {
+			"title": "Język",
+			"description": "Zmiany obowiązują od razu na każdej stronie.",
+			"legend": "Język interfejsu"
+		},
+		"time": {
+			"title": "Czas",
+			"description": "Używany w znacznikach czasu, np. dacie dołączenia i aktywności sesji.",
+			"timeZone": "Strefa czasowa",
+			"automaticTimeZone": "Automatycznie ({{timeZone}})",
+			"timeFormat": "Zegar",
+			"formats": {
+				"auto": "Automatycznie ({{example}})",
+				"12h": "12-godzinny ({{example}})",
+				"24h": "24-godzinny ({{example}})"
+			},
+			"preview": "Podgląd"
+		}
+	}
+}

@@ -1,0 +1,117 @@
+{
+	"home": {
+		"pageTitle": "Jogar",
+		"location": "JOGAR / INÍCIO",
+		"signedInAs": "Conectado como {{username}}",
+		"guest": "Jogando como convidado",
+		"logoutError": "Não foi possível sair. Tente novamente.",
+		"introduction": {
+			"heading": "Algum texto",
+			"body": "Outro texto"
+		},
+		"menuHeading": "Algum texto.",
+		"options": {
+			"online": {
+				"label": "Jogar online",
+				"description": "Encontre seu adversário. Encontrem-se no tabuleiro."
+			},
+			"local": {
+				"label": "Jogar local",
+				"description": "Um tabuleiro. Dois jogadores. Uma só tela."
+			},
+			"friend": {
+				"label": "Jogar com amigo",
+				"description": "Convide alguém para uma partida pensada."
+			},
+			"puzzles": {
+				"label": "Resolver problemas",
+				"description": "Pequenos desafios. Instintos mais afiados."
+			},
+			"lessons": {
+				"label": "Lições",
+				"description": "Da sua primeira pedra à sua próxima descoberta."
+			},
+			"bots": {
+				"label": "Jogar com bots",
+				"description": "Pratique no seu ritmo, em qualquer nível."
+			}
+		},
+		"presence_one": "{{count, number}} jogador compartilhando o tabuleiro",
+		"presence_many": "{{count, number}} de jogadores compartilhando o tabuleiro",
+		"presence_other": "{{count, number}} jogadores compartilhando o tabuleiro",
+		"reserved": {
+			"label": "SEÇÃO PARA DEPOIS",
+			"heading": "Reservado para conteúdo futuro",
+			"body": "Esta seção está vazia de propósito por enquanto. Ela será usada para novos recursos, atualizações ou conteúdo selecionado."
+		},
+		"footerTagline": "Regras simples. Descobertas sem fim."
+	},
+	"materials": {
+		"pageTitle": "Tabuleiros e pedras",
+		"breadcrumb": "Baduk / Biblioteca de materiais",
+		"collection": "Coleção 01",
+		"heading": "Tabuleiros e pedras.",
+		"introduction": "Materiais naturais. Detalhes discretos. Um lugar para o jogo.",
+		"boardsSection": {
+			"title": "Os tabuleiros",
+			"meta": "Três madeiras · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "As pedras",
+			"meta": "Quatro estilos · preto e branco"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Estudo de materiais",
+			"enlarged": "Amostras ampliadas",
+			"heading": "Um contraste sereno.",
+			"body": "Quatro superfícies. Preto e branco, sob a mesma luz suave.",
+			"scale": "Amostras ampliadas · escala uniforme",
+			"form": "Forma lisa e arredondada / sutil variação de superfície"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Kaya japonês tradicional",
+				"material": "Mel quente · veios retos"
+			},
+			"walnut": {
+				"name": "Nogueira escura",
+				"material": "Marrom profundo · veios ondulados"
+			},
+			"ash": {
+				"name": "Freixo escandinavo claro",
+				"material": "Madeira clara · veios suaves"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Polido",
+				"name": "Ardósia",
+				"description": "Superfícies lisas e polidas com uma discreta textura mineral.",
+				"black": "Ardósia preta",
+				"white": "Ardósia branca"
+			},
+			"satin": {
+				"finish": "Acetinado",
+				"name": "Cerâmica",
+				"description": "Um brilho difuso e granulação fina, delicada e uniforme.",
+				"black": "Cerâmica preta",
+				"white": "Cerâmica branca"
+			},
+			"matte": {
+				"finish": "Fosco",
+				"name": "Pedra natural",
+				"description": "Pontilhado mineral discreto sob um acabamento liso e seco.",
+				"black": "Pedra preta",
+				"white": "Pedra branca"
+			},
+			"snow": {
+				"finish": "Polido",
+				"name": "Concha · Yuki / Grau Neve",
+				"description": "Veios finos e densos de concha em branco leitoso, combinados com ardósia preta polida.",
+				"black": "Ardósia preta Nachiguro",
+				"white": "Concha branca Yuki"
+			}
+		},
+		"footerTagline": "O essencial, bem pensado."
+	}
+}

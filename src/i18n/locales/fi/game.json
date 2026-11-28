@@ -1,0 +1,134 @@
+{
+	"colors": {
+		"black": "Musta",
+		"white": "Valkoinen"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Passaa",
+	"localPage": {
+		"title": "Paikallinen peli",
+		"eyebrow": "YSTÄVYYSPELI",
+		"heading": "Hetki pelille.",
+		"details": "{{size}} × {{size}} · Japanilaiset säännöt"
+	},
+	"onlinePage": {
+		"title": "Verkkopeli",
+		"eyebrow": "VERKKOPELI",
+		"heading": "Hetki pelille.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Ladataan peliä…",
+		"notFound": "Tätä peliä ei ole olemassa tai se ei ole enää saatavilla.",
+		"startNew": "Aloita uusi verkkopeli",
+		"invited": "Sinut on kutsuttu {{size}} × {{size}} -peliin.",
+		"joining": "Liitytään…",
+		"joinAs": "Liity pelaajaksi: {{color}}",
+		"full": "Peli on täynnä. Pelien katselu ei ole vielä mahdollista."
+	},
+	"local": {
+		"label": "Paikallinen Go-peli",
+		"loadingEngine": "Ladataan Go-moottoria…"
+	},
+	"online": {
+		"label": "Go-verkkopeli",
+		"youAre": "Pelaat: {{color}}",
+		"connection": {
+			"connecting": "Yhdistetään…",
+			"open": "Yhdistetty",
+			"reconnecting": "Yhdistetään uudelleen…",
+			"closed": "Yhteys katkaistu"
+		},
+		"invite": {
+			"label": "Kutsu ystävä tällä linkillä",
+			"copy": "Kopioi",
+			"copied": "Kopioitu"
+		},
+		"awaitingScoring": "Molemmat pelaajat passasivat. Pisteytystä ei vielä tueta, joten keskeytä peli, niin se kirjataan pisteyttämättömäksi.",
+		"confirmResign": "Vahvista luovutus",
+		"resign": "Luovuta",
+		"abort": "Keskeytä",
+		"results": {
+			"youWin": "Voitit · {{color}} luovutti",
+			"winsByResignation": "{{color}} voittaa luovutuksella",
+			"aborted": "{{color}} keskeytti pelin",
+			"unscored": "Peli päättyi ilman pisteytystä"
+		}
+	},
+	"turn": {
+		"preparing": "Valmistellaan lautaa",
+		"reviewing": "Selaus · Palaa nykyiseen asemaan pelataksesi",
+		"toPlay": "{{color}} siirtää",
+		"yourMove": "Sinun siirtosi",
+		"waitingForOpponent": "Odotetaan vastustajaa",
+		"awaitingScoring": "Peli on päättynyt · Pisteytystä ei vielä tueta",
+		"gameOver": "Peli päättyi",
+		"sendingMove": "Lähetetään siirtoa…",
+		"waitingForConnection": "Odotetaan yhteyttä"
+	},
+	"boardFooter": {
+		"lastMove": "Viimeisin siirto: {{color}} {{move}}",
+		"startingPosition": "Alkuasema"
+	},
+	"players": {
+		"label": "Pelaajat",
+		"captured": "Vankeja {{count}}",
+		"you": "{{name}} (sinä)",
+		"waiting": "{{name}} · odotetaan pelaajaa"
+	},
+	"history": {
+		"label": "Siirtohistoria",
+		"heading": "Siirrot",
+		"moveCount_one": "{{count}} SIIRTO",
+		"moveCount_other": "{{count}} SIIRTOA",
+		"tableLabel": "Mustan ja valkoisen siirrot",
+		"pair": "Pari",
+		"move": "Siirto {{number}}, {{color}}, {{move}}",
+		"pendingMove": "Siirto {{number}}, {{color}}, {{move}}, lähetetään",
+		"empty": "Ei vielä siirtoja.",
+		"position": "Siirto {{viewed}}/{{latest}}",
+		"currentPosition": "NYKYINEN ASEMA",
+		"reviewing": "SELAUS",
+		"navigationLabel": "Siirtohistorian selaus",
+		"navigation": {
+			"start": "Alkuun",
+			"previous": "Edellinen",
+			"next": "Seuraava",
+			"current": "Nykyinen"
+		},
+		"undo": "Peru viimeisin siirto",
+		"encouragement": "Ota aikaa. Jokainen siirto merkitsee.",
+		"keyboardHint": "Selaa siirtoja näppäimillä ← →, ↑ ↓ siirtyy alkuun ja nykyiseen."
+	},
+	"board": {
+		"sceneLabel": "{{size}} × {{size}} Go-lauta, jolla näkyy {{moveCount}} avaussiirron sarja",
+		"themedBoard": "Go-lauta: {{theme}}",
+		"emptyBoard": "Tyhjä {{size}} × {{size}} baduk-lauta: {{theme}}",
+		"stone": "Baduk-kivi: {{color}}, {{finish}}",
+		"textureError": "Laudan tekstuuria ei voitu ladata.",
+		"pauseAnimations": "Keskeytä animaatiot",
+		"resumeAnimations": "Jatka animaatioita",
+		"pause": "TAUKO",
+		"resume": "JATKA"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Valitse risteyskohta laudalta.",
+			"occupied": "Risteyskohta on jo varattu.",
+			"wrongPlayer": "On toisen pelaajan vuoro.",
+			"suicide": "Itsemurhasiirto ei ole sallittu.",
+			"ko": "Ko-sääntö kieltää tämän siirron.",
+			"superko": "Siirto toistaisi aiemman aseman.",
+			"gameEnded": "Tähän peliin ei voi enää tehdä siirtoja."
+		},
+		"serverRejectedMove": "Palvelin hylkäsi siirron. {{reason}}",
+		"staleRevision": "Peli muuttui ennen kuin siirtosi saapui, joten sitä ei pelattu.",
+		"wrongPhase": "Se ei ole mahdollista tässä pelin vaiheessa.",
+		"seatTaken": "Paikka on jo varattu.",
+		"notYourTurn": "On toisen pelaajan vuoro.",
+		"abortUnavailable": "Peliä ei voi enää keskeyttää.",
+		"replayFailed": "Peliä ei voitu toistaa paikallisesti. Lataa sivu uudelleen.",
+		"notConnected": "Ei yhteyttä pelipalvelimeen.",
+		"engineLoadFailed": "Go-moottoria ei voitu ladata. Yritä uudelleen.",
+		"gameLoadFailed": "Peliä ei voitu ladata. Yritä uudelleen.",
+		"seatTakenFirst": "Joku muu ehti paikalle ensin. Peli on nyt täynnä."
+	}
+}

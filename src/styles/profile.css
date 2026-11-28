@@ -25,7 +25,7 @@
 	width: 120px;
 	height: 120px;
 	border-radius: 6px;
-	background: #ece9e0;
+	background: var(--surface);
 	border: 1px solid var(--divider);
 }
 .profile__identity {
@@ -60,7 +60,7 @@
 	white-space: nowrap;
 }
 .profile .profile__edit:hover {
-	background: #ece9e0;
+	background: var(--surface);
 }
 .profile__meta {
 	display: flex;
@@ -90,7 +90,7 @@
 	padding: 20px;
 	border: 1px solid var(--divider);
 	border-radius: 6px;
-	background: #f7f5ef;
+	background: var(--surface-raised);
 	line-height: 1.5;
 }
 .profile__card h2 {

@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Main Go",
+	"railLabel": "Baduk",
+	"mainNavigation": "Navigasi utama",
+	"play": "Main",
+	"eyebrow": "Beberapa teks",
+	"heading": {
+		"label": "Main Go",
+		"prefix": "Main "
+	},
+	"description": {
+		"first": "Beberapa teks....",
+		"second": "Beberapa teks lain..."
+	},
+	"footnote": "SANTAI SAJA."
+}

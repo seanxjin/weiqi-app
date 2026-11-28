@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Go oʻynash",
+	"railLabel": "Baduk",
+	"mainNavigation": "Asosiy navigatsiya",
+	"play": "Oʻynash",
+	"eyebrow": "Biror matn",
+	"heading": {
+		"label": "Go oʻynash",
+		"prefix": "Oʻynang "
+	},
+	"description": {
+		"first": "Biror matn....",
+		"second": "Boshqa biror matn..."
+	},
+	"footnote": "SHOSHILMANG."
+}

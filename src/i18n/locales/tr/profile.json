@@ -1,0 +1,18 @@
+{
+	"editProfile": "Profili düzenle",
+	"meta": {
+		"joined": "Katılma",
+		"rank": "Derece",
+		"noRank": "—",
+		"followers": "Takipçiler",
+		"following": "Takip edilenler"
+	},
+	"about": {
+		"heading": "Hakkında",
+		"noBio": "Henüz biyografi yok."
+	},
+	"games": {
+		"heading": "Oyun geçmişi",
+		"empty": "Henüz oyun yok."
+	}
+}

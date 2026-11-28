@@ -1,0 +1,134 @@
+{
+	"colors": {
+		"black": "Zwart",
+		"white": "Wit"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Passen",
+	"localPage": {
+		"title": "Lokaal spelen",
+		"eyebrow": "VRIENDSCHAPPELIJKE PARTIJ",
+		"heading": "Een moment voor het spel.",
+		"details": "{{size}} × {{size}} · Japanse regels"
+	},
+	"onlinePage": {
+		"title": "Online spelen",
+		"eyebrow": "ONLINEPARTIJ",
+		"heading": "Een moment voor het spel.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Partij laden…",
+		"notFound": "Deze partij bestaat niet of is niet meer beschikbaar.",
+		"startNew": "Nieuwe onlinepartij starten",
+		"invited": "Je bent uitgenodigd voor een partij op {{size}} × {{size}}.",
+		"joining": "Deelnemen…",
+		"joinAs": "Deelnemen als {{color}}",
+		"full": "Deze partij is vol. Partijen bekijken is nog niet mogelijk."
+	},
+	"local": {
+		"label": "Lokale gopartij",
+		"loadingEngine": "Go-engine laden…"
+	},
+	"online": {
+		"label": "Online gopartij",
+		"youAre": "Jij speelt {{color}}",
+		"connection": {
+			"connecting": "Verbinden…",
+			"open": "Verbonden",
+			"reconnecting": "Opnieuw verbinden…",
+			"closed": "Verbinding verbroken"
+		},
+		"invite": {
+			"label": "Nodig een vriend uit met deze link",
+			"copy": "Kopiëren",
+			"copied": "Gekopieerd"
+		},
+		"awaitingScoring": "Beide spelers hebben gepast. Puntentelling wordt nog niet ondersteund, dus breek de partij af om haar zonder score vast te leggen.",
+		"confirmResign": "Opgeven bevestigen",
+		"resign": "Opgeven",
+		"abort": "Afbreken",
+		"results": {
+			"youWin": "Je wint · {{color}} heeft opgegeven",
+			"winsByResignation": "{{color}} wint door opgave",
+			"aborted": "Partij afgebroken door {{color}}",
+			"unscored": "Partij beëindigd zonder score"
+		}
+	},
+	"turn": {
+		"preparing": "Bord voorbereiden",
+		"reviewing": "Terugkijken · Ga naar Huidig om te spelen",
+		"toPlay": "{{color}} aan zet",
+		"yourMove": "Jij bent aan zet",
+		"waitingForOpponent": "Wachten op een tegenstander",
+		"awaitingScoring": "Het spel is afgelopen · Puntentelling wordt nog niet ondersteund",
+		"gameOver": "Partij afgelopen",
+		"sendingMove": "Zet versturen…",
+		"waitingForConnection": "Wachten op verbinding"
+	},
+	"boardFooter": {
+		"lastMove": "Laatste zet: {{color}} {{move}}",
+		"startingPosition": "Beginpositie"
+	},
+	"players": {
+		"label": "Spelers",
+		"captured": "Geslagen: {{count}}",
+		"you": "{{name}} (jij)",
+		"waiting": "{{name}} · wacht op een speler"
+	},
+	"history": {
+		"label": "Zettengeschiedenis",
+		"heading": "Zetten",
+		"moveCount_one": "{{count}} ZET",
+		"moveCount_other": "{{count}} ZETTEN",
+		"tableLabel": "Zetten van Zwart en Wit",
+		"pair": "Paar",
+		"move": "Zet {{number}}, {{color}}, {{move}}",
+		"pendingMove": "Zet {{number}}, {{color}}, {{move}}, wordt verstuurd",
+		"empty": "Nog geen zetten.",
+		"position": "Zet {{viewed}} van {{latest}}",
+		"currentPosition": "HUIDIGE POSITIE",
+		"reviewing": "TERUGKIJKEN",
+		"navigationLabel": "Navigatie door zettengeschiedenis",
+		"navigation": {
+			"start": "Begin",
+			"previous": "Vorige",
+			"next": "Volgende",
+			"current": "Huidig"
+		},
+		"undo": "Laatste zet ongedaan maken",
+		"encouragement": "Neem je tijd. Elke zet telt.",
+		"keyboardHint": "Gebruik ← → om door de zetten te gaan, ↑ ↓ voor begin en huidige positie."
+	},
+	"board": {
+		"sceneLabel": "Een gobord van {{size}} bij {{size}} met een reeks van {{moveCount}} openingszetten",
+		"themedBoard": "Gobord: {{theme}}",
+		"emptyBoard": "Leeg gobord van {{size}} bij {{size}}: {{theme}}",
+		"stone": "Gosteen: {{color}} ({{finish}})",
+		"textureError": "De bordtextuur kon niet worden geladen.",
+		"pauseAnimations": "Animaties pauzeren",
+		"resumeAnimations": "Animaties hervatten",
+		"pause": "PAUZE",
+		"resume": "HERVATTEN"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Kies een snijpunt op het bord.",
+			"occupied": "Dat snijpunt is bezet.",
+			"wrongPlayer": "De andere speler is aan zet.",
+			"suicide": "Zelfmoord is niet toegestaan.",
+			"ko": "Die zet is verboden door ko.",
+			"superko": "Die zet herhaalt een eerdere positie.",
+			"gameEnded": "Deze partij kan geen zetten meer aannemen."
+		},
+		"serverRejectedMove": "De server heeft de zet geweigerd. {{reason}}",
+		"staleRevision": "De partij is veranderd voordat je zet aankwam, dus die is niet gespeeld.",
+		"wrongPhase": "Dat is in deze fase van de partij niet mogelijk.",
+		"seatTaken": "Die plek is al bezet.",
+		"notYourTurn": "De andere speler is aan zet.",
+		"abortUnavailable": "De partij kan niet meer worden afgebroken.",
+		"replayFailed": "Deze partij kon niet lokaal worden afgespeeld. Laad de pagina opnieuw.",
+		"notConnected": "Niet verbonden met de spelserver.",
+		"engineLoadFailed": "De go-engine kon niet worden geladen. Probeer het opnieuw.",
+		"gameLoadFailed": "De partij kon niet worden geladen. Probeer het opnieuw.",
+		"seatTakenFirst": "Iemand anders was je voor. Deze partij is nu vol."
+	}
+}

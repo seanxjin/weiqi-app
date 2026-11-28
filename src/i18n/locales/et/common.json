@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "GO",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Baduki avaleht",
+	"actions": {
+		"save": "Salvesta",
+		"saving": "Salvestamine…",
+		"cancel": "Tühista",
+		"back": "Tagasi",
+		"retry": "Proovi uuesti",
+		"close": "Sulge",
+		"login": "Logi sisse",
+		"signIn": "Logi sisse",
+		"signUp": "Registreeru",
+		"logOut": "Logi välja",
+		"loggingOut": "Väljalogimine…"
+	},
+	"status": {
+		"saved": "Salvestatud",
+		"loading": "Laadimine…",
+		"checkingSession": "Seansi kontrollimine…",
+		"sessionError": "Seanssi ei õnnestunud kontrollida. Proovi uuesti."
+	},
+	"comingSoon": "{{feature}} on peagi tulekul.",
+	"language": "Keel",
+	"languageDialog": {
+		"title": "Valige eelistatud keel",
+		"loadError": "Seda keelt ei õnnestunud laadida. Proovi uuesti."
+	}
+}

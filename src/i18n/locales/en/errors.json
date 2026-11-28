@@ -1,0 +1,34 @@
+{
+	"server": {
+		"unavailable": "The server is unavailable. Please try again.",
+		"unreachable": "Unable to reach the server. Check your connection and try again.",
+		"unexpectedResponse": "The server returned an unexpected response. Please try again.",
+		"requestFailed": "The request could not be completed. Please try again."
+	},
+	"rateLimited": {
+		"generic": "Too many attempts. Please wait before trying again.",
+		"withDelay_one": "Too many attempts. Please wait {{count}} second before trying again.",
+		"withDelay_other": "Too many attempts. Please wait {{count}} seconds before trying again."
+	},
+	"unknown": "Something went wrong. Please try again.",
+	"api": {
+		"invalidCredentials": "The username, email, or password is incorrect.",
+		"twoFactorRequired": "Enter the 6-digit code from your authenticator to continue.",
+		"invalidTwoFactor": "That authenticator code is incorrect. Please try again.",
+		"emailUnconfirmed": "Please confirm your email address before signing in.",
+		"accountClosed": "This account is closed and cannot sign in.",
+		"usernameTaken": "That username is already in use. Please choose another.",
+		"emailTaken": "That email address is already in use.",
+		"invalidToken": "This link is invalid or has expired. Request a new email to continue.",
+		"unauthorized": "Your sign-in session has expired. Please start again.",
+		"conflict": "Your signup could not be completed. Please start again.",
+		"forbidden": "This request was blocked. Please refresh the page and try again."
+	},
+	"validation": {
+		"passwordTooShort": "Use at least 8 characters for your password.",
+		"newPasswordTooShort": "Use at least 8 characters for your new password.",
+		"passwordTooLong": "Your password must not exceed 72 UTF-8 bytes.",
+		"passwordMismatch": "The new passwords do not match.",
+		"passwordUnchanged": "Choose a password different from your current one."
+	}
+}

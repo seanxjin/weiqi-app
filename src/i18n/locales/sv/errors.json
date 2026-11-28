@@ -1,0 +1,34 @@
+{
+	"server": {
+		"unavailable": "Servern är inte tillgänglig. Försök igen.",
+		"unreachable": "Det gick inte att nå servern. Kontrollera din anslutning och försök igen.",
+		"unexpectedResponse": "Servern returnerade ett oväntat svar. Försök igen.",
+		"requestFailed": "Begäran kunde inte slutföras. Försök igen."
+	},
+	"rateLimited": {
+		"generic": "För många försök. Vänta innan du försöker igen.",
+		"withDelay_one": "För många försök. Vänta {{count}} sekund innan du försöker igen.",
+		"withDelay_other": "För många försök. Vänta {{count}} sekunder innan du försöker igen."
+	},
+	"unknown": "Något gick fel. Försök igen.",
+	"api": {
+		"invalidCredentials": "Användarnamnet, e-postadressen eller lösenordet är felaktigt.",
+		"twoFactorRequired": "Ange den 6-siffriga koden från din autentiseringsapp för att fortsätta.",
+		"invalidTwoFactor": "Autentiseringskoden är felaktig. Försök igen.",
+		"emailUnconfirmed": "Bekräfta din e-postadress innan du loggar in.",
+		"accountClosed": "Det här kontot är avslutat och kan inte logga in.",
+		"usernameTaken": "Användarnamnet används redan. Välj ett annat.",
+		"emailTaken": "E-postadressen används redan.",
+		"invalidToken": "Länken är ogiltig eller har gått ut. Begär ett nytt mejl för att fortsätta.",
+		"unauthorized": "Din inloggningssession har gått ut. Börja om.",
+		"conflict": "Registreringen kunde inte slutföras. Börja om.",
+		"forbidden": "Begäran blockerades. Uppdatera sidan och försök igen."
+	},
+	"validation": {
+		"passwordTooShort": "Använd minst 8 tecken i ditt lösenord.",
+		"newPasswordTooShort": "Använd minst 8 tecken i ditt nya lösenord.",
+		"passwordTooLong": "Lösenordet får inte överstiga 72 UTF-8-byte.",
+		"passwordMismatch": "De nya lösenorden matchar inte.",
+		"passwordUnchanged": "Välj ett lösenord som skiljer sig från ditt nuvarande."
+	}
+}

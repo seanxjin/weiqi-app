@@ -1,0 +1,85 @@
+{
+	"page": {
+		"title": {
+			"local": "स्थानीय बाज़ी सेटअप",
+			"online": "ऑनलाइन बाज़ी सेटअप"
+		},
+		"label": {
+			"local": "स्थानीय बाज़ी सेटअप",
+			"online": "ऑनलाइन बाज़ी सेटअप"
+		},
+		"backToMenu": "मेनू पर वापस",
+		"settingsLabel": "बाज़ी की सेटिंग्स",
+		"timeLimitsNotice": "समय-सीमाएँ अभी लागू नहीं की जातीं।",
+		"boardSize": "बोर्ड का आकार",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "बाज़ी बनाई जा रही है…",
+		"startGame": "खेल शुरू करें",
+		"createFailed": "बाज़ी नहीं बनाई जा सकी। कृपया फिर से कोशिश करें।"
+	},
+	"players": {
+		"player1": "खिलाड़ी 1",
+		"player2": "खिलाड़ी 2",
+		"opponent": "प्रतिद्वंद्वी",
+		"guest": "आप (अतिथि)"
+	},
+	"configuration": {
+		"eyebrow": "कॉन्फ़िगरेशन",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "कस्टम · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "अधिक समय नियंत्रण",
+		"fewerControls": "कम समय नियंत्रण",
+		"groups": {
+			"bullet": "बुलेट",
+			"blitz": "ब्लिट्ज़",
+			"rapid": "रैपिड",
+			"classical": "क्लासिकल",
+			"correspondence": "पत्राचार",
+			"untimed": "बिना समय"
+		},
+		"systems": {
+			"absolute": "निरपेक्ष",
+			"fischer": "फ़िशर",
+			"japaneseByoYomi": "जापानी ब्योयोमी"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} सेकंड",
+			"absoluteMinutes": "{{minutes}} मिनट",
+			"mainSeconds": "{{seconds}} से.",
+			"mainMinutes": "{{minutes}} मि.",
+			"fischer": "{{main}} + {{increment}} से.",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}} से.",
+			"daysPerMove_one": "{{count}} दिन / चाल",
+			"daysPerMove_other": "{{count}} दिन / चाल"
+		},
+		"noTimeLimit": "कोई समय सीमा नहीं"
+	},
+	"customTime": {
+		"label": "कस्टम समय नियंत्रण",
+		"eyebrow": "कस्टम समय नियंत्रण",
+		"heading": "अपनी घड़ी सेट करें",
+		"system": "प्रणाली",
+		"fields": {
+			"minutes": "मुख्य · मिनट",
+			"seconds": "मुख्य · सेकंड",
+			"increment": "वृद्धि · सेकंड",
+			"periods": "अवधियाँ",
+			"periodSeconds": "अवधि · सेकंड"
+		},
+		"hints": {
+			"byoYomi": "अतिरिक्त समय निश्चित संख्या की समयबद्ध अवधियों का उपयोग करता है।",
+			"default": "एक प्रणाली चुनें, फिर उसकी घड़ी के मान दर्ज करें।"
+		},
+		"apply": "कस्टम समय का उपयोग करें",
+		"errors": {
+			"wholeNumbers": "हर घड़ी फ़ील्ड में एक गैर-ऋणात्मक पूर्ण संख्या दर्ज करें।",
+			"mainSeconds": "मुख्य समय के सेकंड 0 और 59 के बीच होने चाहिए।",
+			"byoYomiPeriods": "ब्योयोमी के लिए कम से कम एक सेकंड की कम से कम एक अवधि ज़रूरी है।",
+			"mainTime": "मुख्य समय शून्य से अधिक सेट करें।"
+		}
+	}
+}

@@ -1,0 +1,116 @@
+{
+	"home": {
+		"pageTitle": "Oýna",
+		"location": "OÝNA / BAŞ SAHYPA",
+		"signedInAs": "{{username}} hökmünde girdiňiz",
+		"guest": "Myhman hökmünde oýnaýarsyňyz",
+		"logoutError": "Ulgamdan çykyp bolmady. Gaýtadan synanyşyň.",
+		"introduction": {
+			"heading": "Käbir tekst",
+			"body": "Başga bir tekst"
+		},
+		"menuHeading": "Käbir tekst.",
+		"options": {
+			"online": {
+				"label": "Onlaýn oýna",
+				"description": "Garşydaşyňy tap. Tagtada duşuş."
+			},
+			"local": {
+				"label": "Ýerli oýna",
+				"description": "Bir tagta. Iki oýunçy. Umumy ekran."
+			},
+			"friend": {
+				"label": "Dostuň bilen oýna",
+				"description": "Kimdir birini oýlanyşykly oýna çagyr."
+			},
+			"puzzles": {
+				"label": "Mesele çöz",
+				"description": "Kiçi synaglar. Has ýiti duýgy."
+			},
+			"lessons": {
+				"label": "Sapaklar",
+				"description": "Ilkinji daşyňyzdan indiki düşünjäňize çenli."
+			},
+			"bots": {
+				"label": "Botlar bilen oýna",
+				"description": "Islendik derejede, öz depginiňizde türgenleşiň."
+			}
+		},
+		"presence_one": "Tagtada {{count, number}} oýunçy",
+		"presence_other": "Tagtada {{count, number}} oýunçy",
+		"reserved": {
+			"label": "SOŇRAK ÜÇIN BÖLÜM",
+			"heading": "Geljekki mazmun üçin bellenen",
+			"body": "Bu bölüm häzirlikçe bilkastlaýyn boş goýuldy. Ol geljekde täze mümkinçilikler, täzelenmeler ýa-da saýlanan mazmun üçin ulanylar."
+		},
+		"footerTagline": "Ýönekeý düzgünler. Tükeniksiz açyşlar."
+	},
+	"materials": {
+		"pageTitle": "Tagtalar we daşlar",
+		"breadcrumb": "Baduk / Material kitaphanasy",
+		"collection": "Kolleksiýa 01",
+		"heading": "Tagtalar we daşlar.",
+		"introduction": "Tebigy materiallar. Asuda jikme-jiklikler. Oýun üçin ýer.",
+		"boardsSection": {
+			"title": "Tagtalar",
+			"meta": "Üç agaç görnüşi · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Daşlar",
+			"meta": "Dört stil · gara we ak"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Material öwrenişi",
+			"enlarged": "Ulaldylan nusgalar",
+			"heading": "Asuda kontrast.",
+			"body": "Dört üst. Şol bir ýumşak ýagtylykda gara we ak.",
+			"scale": "Ulaldylan nusgalar · bir meňzeş masştab",
+			"form": "Endigan, tegelek görnüş / inçe üst tapawutlary"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Däp bolan ýapon kaýasy",
+				"material": "Ýyly bal reňki · göni süýüm"
+			},
+			"walnut": {
+				"name": "Goýy hoz agajy",
+				"material": "Goýy goňur · akgynly süýüm"
+			},
+			"ash": {
+				"name": "Açyk reňkli Skandinaw ýasen agajy",
+				"material": "Açyk agaç · ýumşak süýüm"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Ýylmanan",
+				"name": "Slanes",
+				"description": "Asuda mineral dokumaly endigan, ýylmanan üstler.",
+				"black": "Gara slanes",
+				"white": "Ak slanes"
+			},
+			"satin": {
+				"finish": "Atlaz",
+				"name": "Keramika",
+				"description": "Ýumşak ýalpyldy we näzik, deň inçe dokuma.",
+				"black": "Gara keramika",
+				"white": "Ak keramika"
+			},
+			"matte": {
+				"finish": "Mat",
+				"name": "Tebigy daş",
+				"description": "Endigan, gury üstüň aşagynda asuda mineral tegmiller.",
+				"black": "Gara daş",
+				"white": "Ak daş"
+			},
+			"snow": {
+				"finish": "Ýylmanan",
+				"name": "Balykgulak · Yuki / Snow derejesi",
+				"description": "Süýt ak reňkde inçe, jebis gabyk dokumasy, ýylmanan gara slanes bilen jübütlenen.",
+				"black": "Gara Nachiguro slanesi",
+				"white": "Ak Yuki balykgulagy"
+			}
+		},
+		"footerTagline": "Esasy zatlar, oýlanyşykly."
+	}
+}

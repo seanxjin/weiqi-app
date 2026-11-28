@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "ΓΚΟ",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Αρχική Baduk",
+	"actions": {
+		"save": "Αποθήκευση",
+		"saving": "Αποθήκευση…",
+		"cancel": "Ακύρωση",
+		"back": "Πίσω",
+		"retry": "Επανάληψη",
+		"close": "Κλείσιμο",
+		"login": "Σύνδεση",
+		"signIn": "Σύνδεση",
+		"signUp": "Εγγραφή",
+		"logOut": "Αποσύνδεση",
+		"loggingOut": "Αποσύνδεση…"
+	},
+	"status": {
+		"saved": "Αποθηκεύτηκε",
+		"loading": "Φόρτωση…",
+		"checkingSession": "Έλεγχος της συνεδρίας σας…",
+		"sessionError": "Δεν ήταν δυνατός ο έλεγχος της συνεδρίας σας. Δοκιμάστε ξανά."
+	},
+	"comingSoon": "{{feature}}: έρχεται σύντομα.",
+	"language": "Γλώσσα",
+	"languageDialog": {
+		"title": "Επιλέξτε την προτιμώμενη γλώσσα",
+		"loadError": "Δεν ήταν δυνατή η φόρτωση αυτής της γλώσσας. Δοκιμάστε ξανά."
+	}
+}

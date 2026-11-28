@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "GO",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Baduk baş sahypasy",
+	"actions": {
+		"save": "Ýatda sakla",
+		"saving": "Ýatda saklanýar…",
+		"cancel": "Ýatyr",
+		"back": "Yza",
+		"retry": "Gaýtadan synanyş",
+		"close": "Ýap",
+		"login": "Giriş",
+		"signIn": "Ulgama gir",
+		"signUp": "Hasaba dur",
+		"logOut": "Ulgamdan çyk",
+		"loggingOut": "Ulgamdan çykylýar…"
+	},
+	"status": {
+		"saved": "Ýatda saklandy",
+		"loading": "Ýüklenýär…",
+		"checkingSession": "Sessiýaňyz barlanýar…",
+		"sessionError": "Sessiýaňyzy barlap bolmady. Gaýtadan synanyşyň."
+	},
+	"comingSoon": "{{feature}} ýakyn wagtda elýeterli bolar.",
+	"language": "Dil",
+	"languageDialog": {
+		"title": "Isleýän diliňizi saýlaň",
+		"loadError": "Bu dili ýükläp bolmady. Gaýtadan synanyşyň."
+	}
+}

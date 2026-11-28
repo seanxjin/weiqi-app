@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Joacă Go",
+	"railLabel": "Baduk",
+	"mainNavigation": "Navigare principală",
+	"play": "Joacă",
+	"eyebrow": "Un text",
+	"heading": {
+		"label": "Joacă Go",
+		"prefix": "Joacă "
+	},
+	"description": {
+		"first": "Un text....",
+		"second": "Alt text..."
+	},
+	"footnote": "NU TE GRĂBI."
+}

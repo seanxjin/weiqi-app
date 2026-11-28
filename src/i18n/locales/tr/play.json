@@ -1,0 +1,116 @@
+{
+	"home": {
+		"pageTitle": "Oyna",
+		"location": "OYNA / ANA SAYFA",
+		"signedInAs": "{{username}} olarak giriş yapıldı",
+		"guest": "Misafir olarak oynuyorsunuz",
+		"logoutError": "Çıkış yapılamadı. Lütfen tekrar deneyin.",
+		"introduction": {
+			"heading": "Biraz metin",
+			"body": "Başka bir metin"
+		},
+		"menuHeading": "Biraz metin.",
+		"options": {
+			"online": {
+				"label": "Çevrim içi oyna",
+				"description": "Rakibini bul. Tahtada buluşun."
+			},
+			"local": {
+				"label": "Yerel oyna",
+				"description": "Tek tahta. İki oyuncu. Ortak ekran."
+			},
+			"friend": {
+				"label": "Arkadaşınla oyna",
+				"description": "Birini düşünceli bir oyuna davet et."
+			},
+			"puzzles": {
+				"label": "Bulmaca çöz",
+				"description": "Küçük meydan okumalar. Daha keskin sezgiler."
+			},
+			"lessons": {
+				"label": "Dersler",
+				"description": "İlk taşınızdan bir sonraki kavrayışınıza."
+			},
+			"bots": {
+				"label": "Botlara karşı oyna",
+				"description": "Kendi hızınızda, her seviyede pratik yapın."
+			}
+		},
+		"presence_one": "Tahtada {{count, number}} oyuncu",
+		"presence_other": "Tahtada {{count, number}} oyuncu",
+		"reserved": {
+			"label": "SONRAKİ BÖLÜM",
+			"heading": "Gelecekteki içerik için ayrıldı",
+			"body": "Bu bölüm şimdilik bilerek boş bırakıldı. İleride yeni özellikler, güncellemeler veya seçilmiş içerikler için kullanılacak."
+		},
+		"footerTagline": "Basit kurallar. Sonsuz keşif."
+	},
+	"materials": {
+		"pageTitle": "Tahtalar ve taşlar",
+		"breadcrumb": "Baduk / Malzeme kitaplığı",
+		"collection": "Koleksiyon 01",
+		"heading": "Tahtalar ve taşlar.",
+		"introduction": "Doğal malzemeler. Sade ayrıntılar. Oyun için bir yer.",
+		"boardsSection": {
+			"title": "Tahtalar",
+			"meta": "Üç ağaç türü · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Taşlar",
+			"meta": "Dört stil · siyah ve beyaz"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Malzeme incelemesi",
+			"enlarged": "Büyütülmüş örnekler",
+			"heading": "Sakin bir karşıtlık.",
+			"body": "Dört yüzey. Aynı yumuşak ışıkta siyah ve beyaz.",
+			"scale": "Büyütülmüş örnekler · aynı ölçek",
+			"form": "Pürüzsüz, yuvarlak form / ince yüzey farklılıkları"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Geleneksel Japon kayası",
+				"material": "Sıcak bal rengi · düz damar"
+			},
+			"walnut": {
+				"name": "Koyu ceviz",
+				"material": "Koyu kahverengi · akışkan damar"
+			},
+			"ash": {
+				"name": "Açık renkli İskandinav dişbudağı",
+				"material": "Açık renkli ahşap · yumuşak damar"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Cilalı",
+				"name": "Arduvaz",
+				"description": "Sakin mineral dokulu, pürüzsüz ve cilalı yüzeyler.",
+				"black": "Siyah arduvaz",
+				"white": "Beyaz arduvaz"
+			},
+			"satin": {
+				"finish": "Saten",
+				"name": "Seramik",
+				"description": "Yumuşak bir parlaklık ve narin, düzgün ince doku.",
+				"black": "Siyah seramik",
+				"white": "Beyaz seramik"
+			},
+			"matte": {
+				"finish": "Mat",
+				"name": "Doğal taş",
+				"description": "Pürüzsüz, kuru bir yüzeyin altında hafif mineral benekler.",
+				"black": "Siyah taş",
+				"white": "Beyaz taş"
+			},
+			"snow": {
+				"finish": "Cilalı",
+				"name": "Deniz kabuğu · Yuki / Snow kalitesi",
+				"description": "Süt beyazı üzerinde ince, sık kabuk dokusu; cilalı siyah arduvazla eşleştirildi.",
+				"black": "Siyah Nachiguro arduvazı",
+				"white": "Beyaz Yuki deniz kabuğu"
+			}
+		},
+		"footerTagline": "Özenle seçilmiş temeller."
+	}
+}

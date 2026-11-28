@@ -1,0 +1,16 @@
+{
+	"pageTitle": "গো খেলুন",
+	"railLabel": "Baduk",
+	"mainNavigation": "প্রধান নেভিগেশন",
+	"play": "খেলুন",
+	"eyebrow": "কিছু লেখা",
+	"heading": {
+		"label": "গো খেলুন",
+		"prefix": "খেলুন "
+	},
+	"description": {
+		"first": "কিছু লেখা....",
+		"second": "আরও কিছু লেখা..."
+	},
+	"footnote": "সময় নিন।"
+}

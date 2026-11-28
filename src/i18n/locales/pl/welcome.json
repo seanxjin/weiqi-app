@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Graj w go",
+	"railLabel": "Baduk",
+	"mainNavigation": "Nawigacja główna",
+	"play": "Graj",
+	"eyebrow": "Przykładowy tekst",
+	"heading": {
+		"label": "Graj w go",
+		"prefix": "Graj w "
+	},
+	"description": {
+		"first": "Przykładowy tekst....",
+		"second": "Inny przykładowy tekst..."
+	},
+	"footnote": "NIE SPIESZ SIĘ."
+}

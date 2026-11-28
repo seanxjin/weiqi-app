@@ -1,0 +1,86 @@
+{
+	"page": {
+		"title": {
+			"local": "Configurar partida local",
+			"online": "Configurar partida online"
+		},
+		"label": {
+			"local": "Configuração da partida local",
+			"online": "Configuração da partida online"
+		},
+		"backToMenu": "Voltar ao menu",
+		"settingsLabel": "Configurações da partida",
+		"timeLimitsNotice": "Os limites de tempo ainda não são aplicados.",
+		"boardSize": "TAMANHO DO TABULEIRO",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Criando partida…",
+		"startGame": "Iniciar partida",
+		"createFailed": "Não foi possível criar a partida. Tente novamente."
+	},
+	"players": {
+		"player1": "Jogador 1",
+		"player2": "Jogador 2",
+		"opponent": "Adversário",
+		"guest": "Você (convidado)"
+	},
+	"configuration": {
+		"eyebrow": "CONFIGURAÇÕES",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Personalizado · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Mais controles de tempo",
+		"fewerControls": "Menos controles de tempo",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Blitz",
+			"rapid": "Rápido",
+			"classical": "Clássico",
+			"correspondence": "Correspondência",
+			"untimed": "Sem tempo"
+		},
+		"systems": {
+			"absolute": "Absoluto",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Byo-yomi japonês"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} s",
+			"absoluteMinutes": "{{minutes}} min",
+			"mainSeconds": "{{seconds}}s",
+			"mainMinutes": "{{minutes}}min",
+			"fischer": "{{main}} + {{increment}}s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}}s",
+			"daysPerMove_one": "{{count}} dia / lance",
+			"daysPerMove_many": "{{count}} de dias / lance",
+			"daysPerMove_other": "{{count}} dias / lance"
+		},
+		"noTimeLimit": "Sem limite de tempo"
+	},
+	"customTime": {
+		"label": "Controle de tempo personalizado",
+		"eyebrow": "CONTROLE DE TEMPO PERSONALIZADO",
+		"heading": "Configure seu relógio",
+		"system": "Sistema",
+		"fields": {
+			"minutes": "Principal · min",
+			"seconds": "Principal · s",
+			"increment": "Incremento · s",
+			"periods": "Períodos",
+			"periodSeconds": "Período · s"
+		},
+		"hints": {
+			"byoYomi": "A prorrogação usa um número fixo de períodos cronometrados.",
+			"default": "Escolha um sistema e informe os valores do relógio."
+		},
+		"apply": "Usar tempo personalizado",
+		"errors": {
+			"wholeNumbers": "Digite um número inteiro não negativo em cada campo do relógio.",
+			"mainSeconds": "Os segundos principais devem estar entre 0 e 59.",
+			"byoYomiPeriods": "O byo-yomi precisa de pelo menos um período de pelo menos um segundo.",
+			"mainTime": "Defina um tempo principal maior que zero."
+		}
+	}
+}

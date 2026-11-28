@@ -1,0 +1,34 @@
+{
+	"server": {
+		"unavailable": "Hindi available ang server. Pakisubukang muli.",
+		"unreachable": "Hindi maabot ang server. Tingnan ang iyong koneksyon at subukang muli.",
+		"unexpectedResponse": "Nagbalik ang server ng hindi inaasahang tugon. Pakisubukang muli.",
+		"requestFailed": "Hindi makumpleto ang request. Pakisubukang muli."
+	},
+	"rateLimited": {
+		"generic": "Masyadong maraming pagsubok. Maghintay muna bago subukang muli.",
+		"withDelay_one": "Masyadong maraming pagsubok. Maghintay ng {{count}} segundo bago subukang muli.",
+		"withDelay_other": "Masyadong maraming pagsubok. Maghintay ng {{count}} segundo bago subukang muli."
+	},
+	"unknown": "May nangyaring mali. Pakisubukang muli.",
+	"api": {
+		"invalidCredentials": "Mali ang username, email, o password.",
+		"twoFactorRequired": "Ilagay ang 6-digit na code mula sa iyong authenticator para magpatuloy.",
+		"invalidTwoFactor": "Mali ang code ng authenticator. Pakisubukang muli.",
+		"emailUnconfirmed": "Pakikumpirma ang iyong email address bago mag-sign in.",
+		"accountClosed": "Sarado na ang account na ito at hindi na makakapag-sign in.",
+		"usernameTaken": "Ginagamit na ang username na iyan. Pumili ng iba.",
+		"emailTaken": "Ginagamit na ang email address na iyan.",
+		"invalidToken": "Hindi valid o expired na ang link na ito. Humiling ng bagong email para magpatuloy.",
+		"unauthorized": "Nag-expire na ang iyong sign-in session. Pakisimulang muli.",
+		"conflict": "Hindi makumpleto ang iyong pag-sign up. Pakisimulang muli.",
+		"forbidden": "Na-block ang request na ito. I-refresh ang page at subukang muli."
+	},
+	"validation": {
+		"passwordTooShort": "Gumamit ng hindi bababa sa 8 character para sa iyong password.",
+		"newPasswordTooShort": "Gumamit ng hindi bababa sa 8 character para sa iyong bagong password.",
+		"passwordTooLong": "Hindi dapat lumampas sa 72 UTF-8 byte ang iyong password.",
+		"passwordMismatch": "Hindi magkatugma ang mga bagong password.",
+		"passwordUnchanged": "Pumili ng password na iba sa kasalukuyan mong password."
+	}
+}

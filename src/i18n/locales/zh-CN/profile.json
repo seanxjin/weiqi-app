@@ -1,0 +1,18 @@
+{
+	"editProfile": "编辑资料",
+	"meta": {
+		"joined": "加入时间",
+		"rank": "段位",
+		"noRank": "—",
+		"followers": "粉丝",
+		"following": "关注"
+	},
+	"about": {
+		"heading": "关于",
+		"noBio": "暂无简介。"
+	},
+	"games": {
+		"heading": "对局记录",
+		"empty": "暂无对局。"
+	}
+}

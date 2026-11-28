@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Go oyna",
+	"railLabel": "Baduk",
+	"mainNavigation": "Ana gezinme",
+	"play": "Oyna",
+	"eyebrow": "Biraz metin",
+	"heading": {
+		"label": "Go oyna",
+		"prefix": "Oyna "
+	},
+	"description": {
+		"first": "Biraz metin....",
+		"second": "Başka bir metin..."
+	},
+	"footnote": "ACELE ETMEYİN."
+}

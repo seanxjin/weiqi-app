@@ -1,3 +1,5 @@
+import i18n from "@/i18n";
+
 export class ApiError extends Error {
 	code: string;
 	status: number;
@@ -23,13 +25,13 @@ export async function apiRequest<T = unknown>(path: string, body?: object, metho
 	try {
 		json = text ? JSON.parse(text) : undefined;
 	} catch {
-		throw new ApiError("HTTP_ERROR", "The server returned an unexpected response. Please try again.", response.status);
+		throw new ApiError("HTTP_ERROR", i18n.t("errors:server.unexpectedResponse"), response.status);
 	}
 	if (!response.ok) {
 		const retryAfter = Number(response.headers.get("retry-after"));
 		throw new ApiError(
 			json?.error ?? "HTTP_ERROR",
-			json?.message ?? "The request could not be completed. Please try again.",
+			json?.message ?? i18n.t("errors:server.requestFailed"),
 			response.status,
 			retryAfter > 0 ? retryAfter : undefined,
 		);

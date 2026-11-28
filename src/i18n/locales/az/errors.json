@@ -1,0 +1,34 @@
+{
+	"server": {
+		"unavailable": "Server əlçatan deyil. Zəhmət olmasa, yenidən cəhd edin.",
+		"unreachable": "Serverə qoşulmaq mümkün olmadı. Bağlantınızı yoxlayıb yenidən cəhd edin.",
+		"unexpectedResponse": "Server gözlənilməz cavab qaytardı. Zəhmət olmasa, yenidən cəhd edin.",
+		"requestFailed": "Sorğunu tamamlamaq mümkün olmadı. Zəhmət olmasa, yenidən cəhd edin."
+	},
+	"rateLimited": {
+		"generic": "Həddən artıq cəhd. Yenidən cəhd etməzdən əvvəl bir az gözləyin.",
+		"withDelay_one": "Həddən artıq cəhd. Yenidən cəhd etməzdən əvvəl {{count}} saniyə gözləyin.",
+		"withDelay_other": "Həddən artıq cəhd. Yenidən cəhd etməzdən əvvəl {{count}} saniyə gözləyin."
+	},
+	"unknown": "Nəsə səhv getdi. Zəhmət olmasa, yenidən cəhd edin.",
+	"api": {
+		"invalidCredentials": "İstifadəçi adı, e-poçt və ya şifrə yanlışdır.",
+		"twoFactorRequired": "Davam etmək üçün autentifikatorunuzdakı 6 rəqəmli kodu daxil edin.",
+		"invalidTwoFactor": "Autentifikator kodu yanlışdır. Zəhmət olmasa, yenidən cəhd edin.",
+		"emailUnconfirmed": "Daxil olmazdan əvvəl e-poçt ünvanınızı təsdiqləyin.",
+		"accountClosed": "Bu hesab bağlanıb və ona daxil olmaq mümkün deyil.",
+		"usernameTaken": "Bu istifadəçi adı artıq istifadə olunur. Başqasını seçin.",
+		"emailTaken": "Bu e-poçt ünvanı artıq istifadə olunur.",
+		"invalidToken": "Bu link etibarsızdır və ya müddəti bitib. Davam etmək üçün yeni məktub istəyin.",
+		"unauthorized": "Giriş sessiyanızın müddəti bitib. Zəhmət olmasa, yenidən başlayın.",
+		"conflict": "Qeydiyyatınızı tamamlamaq mümkün olmadı. Zəhmət olmasa, yenidən başlayın.",
+		"forbidden": "Bu sorğu bloklandı. Səhifəni yeniləyib yenidən cəhd edin."
+	},
+	"validation": {
+		"passwordTooShort": "Şifrəniz üçün ən azı 8 simvol istifadə edin.",
+		"newPasswordTooShort": "Yeni şifrəniz üçün ən azı 8 simvol istifadə edin.",
+		"passwordTooLong": "Şifrəniz 72 UTF-8 baytdan çox olmamalıdır.",
+		"passwordMismatch": "Yeni şifrələr uyğun gəlmir.",
+		"passwordUnchanged": "Cari şifrənizdən fərqli şifrə seçin."
+	}
+}

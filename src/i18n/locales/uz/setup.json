@@ -1,0 +1,85 @@
+{
+	"page": {
+		"title": {
+			"local": "Mahalliy oʻyin sozlamalari",
+			"online": "Onlayn oʻyin sozlamalari"
+		},
+		"label": {
+			"local": "Mahalliy oʻyin sozlamalari",
+			"online": "Onlayn oʻyin sozlamalari"
+		},
+		"backToMenu": "Menyuga qaytish",
+		"settingsLabel": "Oʻyin sozlamalari",
+		"timeLimitsNotice": "Vaqt cheklovlari hozircha qoʻllanilmaydi.",
+		"boardSize": "TAXTA OʻLCHAMI",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Oʻyin yaratilmoqda…",
+		"startGame": "O‘yinni boshlash",
+		"createFailed": "Oʻyinni yaratib boʻlmadi. Qaytadan urinib koʻring."
+	},
+	"players": {
+		"player1": "1-oʻyinchi",
+		"player2": "2-oʻyinchi",
+		"opponent": "Raqib",
+		"guest": "Siz (mehmon)"
+	},
+	"configuration": {
+		"eyebrow": "SOZLAMALAR",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Maxsus · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Koʻproq vaqt nazorati",
+		"fewerControls": "Kamroq vaqt nazorati",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Blits",
+			"rapid": "Tezkor",
+			"classical": "Klassik",
+			"correspondence": "Sirtqi",
+			"untimed": "Vaqtsiz"
+		},
+		"systems": {
+			"absolute": "Mutlaq",
+			"fischer": "Fisher",
+			"japaneseByoYomi": "Yapon byo-yomi"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} soniya",
+			"absoluteMinutes": "{{minutes}} daqiqa",
+			"mainSeconds": "{{seconds}} s",
+			"mainMinutes": "{{minutes}} daq",
+			"fischer": "{{main}} + {{increment}} s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}} s",
+			"daysPerMove_one": "{{count}} kun / yurish",
+			"daysPerMove_other": "{{count}} kun / yurish"
+		},
+		"noTimeLimit": "Vaqt chegarasi yoʻq"
+	},
+	"customTime": {
+		"label": "Maxsus vaqt nazorati",
+		"eyebrow": "MAXSUS VAQT NAZORATI",
+		"heading": "Soatni oʻzingiz sozlang",
+		"system": "Tizim",
+		"fields": {
+			"minutes": "Asosiy · daq",
+			"seconds": "Asosiy · son",
+			"increment": "Qoʻshimcha · son",
+			"periods": "Davrlar",
+			"periodSeconds": "Davr · son"
+		},
+		"hints": {
+			"byoYomi": "Qoʻshimcha vaqt belgilangan sondagi vaqt davrlaridan iborat.",
+			"default": "Tizimni tanlang, soʻng soat qiymatlarini kiriting."
+		},
+		"apply": "Maxsus vaqtni qoʻllash",
+		"errors": {
+			"wholeNumbers": "Har bir soat maydoniga manfiy boʻlmagan butun son kiriting.",
+			"mainSeconds": "Asosiy vaqt soniyalari 0 dan 59 gacha boʻlishi kerak.",
+			"byoYomiPeriods": "Byo-yomi uchun kamida bir soniyalik kamida bitta davr kerak.",
+			"mainTime": "Asosiy vaqtni noldan katta qilib belgilang."
+		}
+	}
+}

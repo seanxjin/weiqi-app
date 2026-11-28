@@ -1,0 +1,85 @@
+{
+	"page": {
+		"title": {
+			"local": "Oppsett av lokalt parti",
+			"online": "Oppsett av nettparti"
+		},
+		"label": {
+			"local": "Oppsett av lokalt parti",
+			"online": "Oppsett av nettparti"
+		},
+		"backToMenu": "Tilbake til menyen",
+		"settingsLabel": "Partiinnstillinger",
+		"timeLimitsNotice": "Tidsgrenser håndheves ikke ennå.",
+		"boardSize": "BRETTSTØRRELSE",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Oppretter parti …",
+		"startGame": "Start spill",
+		"createFailed": "Partiet kunne ikke opprettes. Prøv igjen."
+	},
+	"players": {
+		"player1": "Spiller 1",
+		"player2": "Spiller 2",
+		"opponent": "Motstander",
+		"guest": "Du (gjest)"
+	},
+	"configuration": {
+		"eyebrow": "KONFIGURASJONER",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Egendefinert · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Flere tidskontroller",
+		"fewerControls": "Færre tidskontroller",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Lyn",
+			"rapid": "Hurtig",
+			"classical": "Klassisk",
+			"correspondence": "Korrespondanse",
+			"untimed": "Uten tid"
+		},
+		"systems": {
+			"absolute": "Absolutt",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Japansk byo-yomi"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} sek",
+			"absoluteMinutes": "{{minutes}} min",
+			"mainSeconds": "{{seconds}}s",
+			"mainMinutes": "{{minutes}}m",
+			"fischer": "{{main}} + {{increment}}s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}}s",
+			"daysPerMove_one": "{{count}} dag / trekk",
+			"daysPerMove_other": "{{count}} dager / trekk"
+		},
+		"noTimeLimit": "Ingen tidsbegrensning"
+	},
+	"customTime": {
+		"label": "Egendefinert tidskontroll",
+		"eyebrow": "EGENDEFINERT TIDSKONTROLL",
+		"heading": "Still din egen klokke",
+		"system": "System",
+		"fields": {
+			"minutes": "Hovedtid · min",
+			"seconds": "Hovedtid · sek",
+			"increment": "Tillegg · sek",
+			"periods": "Perioder",
+			"periodSeconds": "Periode · sek"
+		},
+		"hints": {
+			"byoYomi": "Overtid består av et fast antall tidsperioder.",
+			"default": "Velg et system, og angi deretter klokkeverdiene."
+		},
+		"apply": "Bruk egendefinert tid",
+		"errors": {
+			"wholeNumbers": "Skriv inn et ikke-negativt heltall i hvert klokkefelt.",
+			"mainSeconds": "Sekunder for hovedtid må være mellom 0 og 59.",
+			"byoYomiPeriods": "Byo-yomi krever minst én periode på minst ett sekund.",
+			"mainTime": "Hovedtiden må være større enn null."
+		}
+	}
+}

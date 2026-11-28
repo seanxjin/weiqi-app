@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Speel Go",
+	"railLabel": "Baduk",
+	"mainNavigation": "Hoofdnavigatie",
+	"play": "Spelen",
+	"eyebrow": "Wat tekst",
+	"heading": {
+		"label": "Speel Go",
+		"prefix": "Speel "
+	},
+	"description": {
+		"first": "Wat tekst....",
+		"second": "Wat andere tekst..."
+	},
+	"footnote": "NEEM JE TIJD."
+}

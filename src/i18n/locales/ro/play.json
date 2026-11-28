@@ -1,0 +1,117 @@
+{
+	"home": {
+		"pageTitle": "Joacă",
+		"location": "JOACĂ / ACASĂ",
+		"signedInAs": "Conectat ca {{username}}",
+		"guest": "Joci ca invitat",
+		"logoutError": "Deconectarea nu a reușit. Încearcă din nou.",
+		"introduction": {
+			"heading": "Un text",
+			"body": "Alt text"
+		},
+		"menuHeading": "Un text.",
+		"options": {
+			"online": {
+				"label": "Joacă online",
+				"description": "Găsește-ți adversarul. Întâlniți-vă la tablă."
+			},
+			"local": {
+				"label": "Joacă local",
+				"description": "O tablă. Doi jucători. Un singur ecran."
+			},
+			"friend": {
+				"label": "Joacă cu un prieten",
+				"description": "Invită pe cineva la o partidă chibzuită."
+			},
+			"puzzles": {
+				"label": "Rezolvă probleme",
+				"description": "Provocări mici. Instincte mai ascuțite."
+			},
+			"lessons": {
+				"label": "Lecții",
+				"description": "De la prima piatră la următoarea revelație."
+			},
+			"bots": {
+				"label": "Joacă cu boți",
+				"description": "Exersează în ritmul tău, la orice nivel."
+			}
+		},
+		"presence_one": "{{count, number}} jucător la tablă",
+		"presence_few": "{{count, number}} jucători la tablă",
+		"presence_other": "{{count, number}} de jucători la tablă",
+		"reserved": {
+			"label": "SECȚIUNE PENTRU MAI TÂRZIU",
+			"heading": "Rezervat pentru conținut viitor",
+			"body": "Această secțiune este lăsată goală intenționat deocamdată. Va fi folosită pentru funcții viitoare, actualizări sau conținut selectat."
+		},
+		"footerTagline": "Reguli simple. Descoperiri nesfârșite."
+	},
+	"materials": {
+		"pageTitle": "Table și pietre",
+		"breadcrumb": "Baduk / Biblioteca de materiale",
+		"collection": "Colecția 01",
+		"heading": "Table și pietre.",
+		"introduction": "Materiale naturale. Detalii discrete. Un loc pentru joc.",
+		"boardsSection": {
+			"title": "Tablele",
+			"meta": "Trei esențe de lemn · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Pietrele",
+			"meta": "Patru stiluri · alb și negru"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Studiu de materiale",
+			"enlarged": "Mostre mărite",
+			"heading": "Un contrast liniștit.",
+			"body": "Patru suprafețe. Alb și negru, în aceeași lumină blândă.",
+			"scale": "Mostre mărite · scară constantă",
+			"form": "Formă netedă, rotunjită / variație subtilă a suprafeței"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Kaya japonez tradițional",
+				"material": "Miere caldă · fibră dreaptă"
+			},
+			"walnut": {
+				"name": "Nuc închis",
+				"material": "Maro intens · fibră ondulată"
+			},
+			"ash": {
+				"name": "Frasin scandinav deschis",
+				"material": "Lemn deschis · fibră fină"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Lustruit",
+				"name": "Ardezie",
+				"description": "Suprafețe netede, lustruite, cu o textură minerală discretă.",
+				"black": "Ardezie neagră",
+				"white": "Ardezie albă"
+			},
+			"satin": {
+				"finish": "Satinat",
+				"name": "Ceramică",
+				"description": "Un luciu difuz și o granulație fină, delicată și uniformă.",
+				"black": "Ceramică neagră",
+				"white": "Ceramică albă"
+			},
+			"matte": {
+				"finish": "Mat",
+				"name": "Piatră naturală",
+				"description": "Pete minerale discrete sub un finisaj neted și uscat.",
+				"black": "Piatră neagră",
+				"white": "Piatră albă"
+			},
+			"snow": {
+				"finish": "Lustruit",
+				"name": "Scoică · Yuki / Calitatea Zăpadă",
+				"description": "Fibră fină și deasă de scoică pe alb lăptos, în pereche cu ardezie neagră lustruită.",
+				"black": "Ardezie neagră Nachiguro",
+				"white": "Scoică albă Yuki"
+			}
+		},
+		"footerTagline": "Esențialul, gândit cu grijă."
+	}
+}

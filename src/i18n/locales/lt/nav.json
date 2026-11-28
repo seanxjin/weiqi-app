@@ -1,0 +1,29 @@
+{
+	"navigation": "Baduk naršymas",
+	"drawer": {
+		"open": "Atidaryti naršymą",
+		"close": "Uždaryti naršymą"
+	},
+	"mainNavigation": "Pagrindinis naršymas",
+	"play": "Žaisti",
+	"puzzles": "Uždaviniai",
+	"learn": "Mokytis",
+	"guide": {
+		"heading": "PIRMĄ KARTĄ ŽAIDŽIATE GO?",
+		"startWithBasics": "Pradėkite nuo pagrindų"
+	},
+	"account": {
+		"label": "Paskyra",
+		"friends": "Draugai",
+		"messages": "Žinutės",
+		"notifications": "Pranešimai",
+		"settings": "Nustatymai",
+		"allSettings": "Visi nustatymai"
+	},
+	"theme": {
+		"label": "Tema",
+		"system": "Sistemos",
+		"light": "Šviesi",
+		"dark": "Tamsi"
+	}
+}

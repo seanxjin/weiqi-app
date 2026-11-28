@@ -1,10 +1,12 @@
 import { useState, type FormEvent } from "react";
+import { useTranslation } from "react-i18next";
 import { PasswordField } from "@/components/settings/PasswordField";
 import { SaveActions } from "@/components/settings/SettingsControls";
 import { useSaveStatus } from "@/hooks/useSaveStatus";
 import { validatePasswordChange } from "@/lib/authValidation";
 
 export function ChangePasswordForm({ username }: { username: string }) {
+	const { t } = useTranslation("settings");
 	const [error, setError] = useState<string | null>(null);
 	const [dirty, setDirty] = useState(false);
 	const status = useSaveStatus();
@@ -17,7 +19,7 @@ export function ChangePasswordForm({ username }: { username: string }) {
 		if (message) return;
 		form.reset();
 		setDirty(false);
-		status.show("Password updated");
+		status.show(t("account.password.updated"));
 	};
 
 	return (
@@ -30,9 +32,9 @@ export function ChangePasswordForm({ username }: { username: string }) {
 		>
 			<input type="text" name="username" autoComplete="username" value={username} readOnly hidden />
 			<div className="settings-fields">
-				<PasswordField name="currentPassword" label="Current password" autoComplete="current-password" />
-				<PasswordField name="newPassword" label="New password" autoComplete="new-password" />
-				<PasswordField name="confirmPassword" label="Retype password" autoComplete="new-password" />
+				<PasswordField name="currentPassword" autoComplete="current-password" />
+				<PasswordField name="newPassword" autoComplete="new-password" />
+				<PasswordField name="confirmPassword" autoComplete="new-password" />
 			</div>
 			{error && (
 				<p className="settings-error" role="alert">

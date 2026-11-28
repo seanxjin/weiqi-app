@@ -1,0 +1,85 @@
+{
+	"page": {
+		"title": {
+			"local": "Ýerli oýny sazlamak",
+			"online": "Onlaýn oýny sazlamak"
+		},
+		"label": {
+			"local": "Ýerli oýny sazlamak",
+			"online": "Onlaýn oýny sazlamak"
+		},
+		"backToMenu": "Menýuwa gaýdyp bar",
+		"settingsLabel": "Oýun sazlamalary",
+		"timeLimitsNotice": "Wagt çäkleri heniz ulanylmaýar.",
+		"boardSize": "TAGTANYŇ ÖLÇEGI",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Oýun döredilýär…",
+		"startGame": "Oýny başla",
+		"createFailed": "Oýny döredip bolmady. Gaýtadan synanyşyň."
+	},
+	"players": {
+		"player1": "Oýunçy 1",
+		"player2": "Oýunçy 2",
+		"opponent": "Garşydaş",
+		"guest": "Siz (myhman)"
+	},
+	"configuration": {
+		"eyebrow": "SAZLAMALAR",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Ýörite · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Has köp wagt görnüşi",
+		"fewerControls": "Has az wagt görnüşi",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Blis",
+			"rapid": "Çalt",
+			"classical": "Klassyky",
+			"correspondence": "Hat arkaly",
+			"untimed": "Wagtsyz"
+		},
+		"systems": {
+			"absolute": "Absolýut",
+			"fischer": "Fişer",
+			"japaneseByoYomi": "Ýapon byo-yomi"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} sek",
+			"absoluteMinutes": "{{minutes}} min",
+			"mainSeconds": "{{seconds}} s",
+			"mainMinutes": "{{minutes}} m",
+			"fischer": "{{main}} + {{increment}} s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}} s",
+			"daysPerMove_one": "{{count}} gün / ýöriş",
+			"daysPerMove_other": "{{count}} gün / ýöriş"
+		},
+		"noTimeLimit": "Wagt çägi ýok"
+	},
+	"customTime": {
+		"label": "Ýörite wagt gözegçiligi",
+		"eyebrow": "ÝÖRITE WAGT GÖZEGÇILIGI",
+		"heading": "Öz sagadyňyzy düzüň",
+		"system": "Ulgam",
+		"fields": {
+			"minutes": "Esasy · min",
+			"seconds": "Esasy · sek",
+			"increment": "Goşmaça · sek",
+			"periods": "Döwürler",
+			"periodSeconds": "Döwür · sek"
+		},
+		"hints": {
+			"byoYomi": "Goşmaça wagt kesgitli sanly wagtly döwürlerden ybarat.",
+			"default": "Ulgamy saýlaň, soňra onuň sagat bahalaryny giriziň."
+		},
+		"apply": "Ýörite wagty ulan",
+		"errors": {
+			"wholeNumbers": "Her sagat meýdançasyna otrisatel däl bitin san giriziň.",
+			"mainSeconds": "Esasy sekuntlar 0 bilen 59 aralygynda bolmaly.",
+			"byoYomiPeriods": "Byo-yomi üçin azyndan bir sekunt dowam edýän azyndan bir döwür gerek.",
+			"mainTime": "Esasy wagty noldan uly belläň."
+		}
+	}
+}

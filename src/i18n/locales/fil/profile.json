@@ -1,0 +1,18 @@
+{
+	"editProfile": "I-edit ang profile",
+	"meta": {
+		"joined": "Sumali",
+		"rank": "Ranggo",
+		"noRank": "—",
+		"followers": "Mga follower",
+		"following": "Fina-follow"
+	},
+	"about": {
+		"heading": "Tungkol",
+		"noBio": "Wala pang bio."
+	},
+	"games": {
+		"heading": "Kasaysayan ng laro",
+		"empty": "Wala pang laro."
+	}
+}

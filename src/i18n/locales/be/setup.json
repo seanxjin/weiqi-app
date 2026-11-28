@@ -1,0 +1,87 @@
+{
+	"page": {
+		"title": {
+			"local": "Налада лакальнай партыі",
+			"online": "Налада анлайн-партыі"
+		},
+		"label": {
+			"local": "Налада лакальнай партыі",
+			"online": "Налада анлайн-партыі"
+		},
+		"backToMenu": "Назад у меню",
+		"settingsLabel": "Налады партыі",
+		"timeLimitsNotice": "Кантроль часу пакуль не прымяняецца.",
+		"boardSize": "ПАМЕР ДОШКІ",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Стварэнне партыі…",
+		"startGame": "Пачаць гульню",
+		"createFailed": "Не ўдалося стварыць партыю. Паспрабуйце яшчэ раз."
+	},
+	"players": {
+		"player1": "Гулец 1",
+		"player2": "Гулец 2",
+		"opponent": "Супернік",
+		"guest": "Вы (госць)"
+	},
+	"configuration": {
+		"eyebrow": "КАНФІГУРАЦЫІ",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Свой · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Больш варыянтаў",
+		"fewerControls": "Менш варыянтаў",
+		"groups": {
+			"bullet": "Куля",
+			"blitz": "Бліц",
+			"rapid": "Рапід",
+			"classical": "Класіка",
+			"correspondence": "Па перапісцы",
+			"untimed": "Без часу"
+		},
+		"systems": {
+			"absolute": "Абсалютны",
+			"fischer": "Фішэр",
+			"japaneseByoYomi": "Японскае бёёмі"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} с",
+			"absoluteMinutes": "{{minutes}} хв",
+			"mainSeconds": "{{seconds}} с",
+			"mainMinutes": "{{minutes}} хв",
+			"fischer": "{{main}} + {{increment}} с",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}} с",
+			"daysPerMove_one": "{{count}} дзень / ход",
+			"daysPerMove_few": "{{count}} дні / ход",
+			"daysPerMove_many": "{{count}} дзён / ход",
+			"daysPerMove_other": "{{count}} дня / ход"
+		},
+		"noTimeLimit": "Без абмежавання часу"
+	},
+	"customTime": {
+		"label": "Свой кантроль часу",
+		"eyebrow": "СВОЙ КАНТРОЛЬ ЧАСУ",
+		"heading": "Наладзьце свой гадзіннік",
+		"system": "Сістэма",
+		"fields": {
+			"minutes": "Асноўны · хв",
+			"seconds": "Асноўны · с",
+			"increment": "Дабаўка · с",
+			"periods": "Перыяды",
+			"periodSeconds": "Перыяд · с"
+		},
+		"hints": {
+			"byoYomi": "У бёёмі выкарыстоўваецца фіксаваная колькасць перыядаў.",
+			"default": "Выберыце сістэму і ўвядзіце параметры гадзінніка."
+		},
+		"apply": "Ужыць свой час",
+		"errors": {
+			"wholeNumbers": "Увядзіце неадмоўны цэлы лік у кожнае поле.",
+			"mainSeconds": "Секунды асноўнага часу павінны быць ад 0 да 59.",
+			"byoYomiPeriods": "Для бёёмі патрэбны хаця б адзін перыяд працягласцю не менш за секунду.",
+			"mainTime": "Асноўны час павінен быць большы за нуль."
+		}
+	}
+}

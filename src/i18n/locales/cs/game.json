@@ -1,0 +1,136 @@
+{
+	"colors": {
+		"black": "Černý",
+		"white": "Bílý"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Pas",
+	"localPage": {
+		"title": "Místní hra",
+		"eyebrow": "PŘÁTELSKÁ PARTIE",
+		"heading": "Chvíle pro hru.",
+		"details": "{{size}} × {{size}} · Japonská pravidla"
+	},
+	"onlinePage": {
+		"title": "Online hra",
+		"eyebrow": "ONLINE PARTIE",
+		"heading": "Chvíle pro hru.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Načítání hry…",
+		"notFound": "Tato hra neexistuje nebo již není k dispozici.",
+		"startNew": "Začít novou online hru",
+		"invited": "Jste zváni na hru {{size}} × {{size}}.",
+		"joining": "Připojování…",
+		"joinAs": "Připojit se jako {{color}}",
+		"full": "Tato hra je plná. Sledování her zatím není k dispozici."
+	},
+	"local": {
+		"label": "Místní partie go",
+		"loadingEngine": "Načítání enginu go…"
+	},
+	"online": {
+		"label": "Online partie go",
+		"youAre": "Hrajete za: {{color}}",
+		"connection": {
+			"connecting": "Připojování…",
+			"open": "Připojeno",
+			"reconnecting": "Obnovování připojení…",
+			"closed": "Odpojeno"
+		},
+		"invite": {
+			"label": "Pozvěte přítele tímto odkazem",
+			"copy": "Kopírovat",
+			"copied": "Zkopírováno"
+		},
+		"awaitingScoring": "Oba hráči pasovali. Počítání bodů zatím není podporováno, proto hru ukončete a zaznamená se bez výsledku.",
+		"confirmResign": "Potvrdit vzdání",
+		"resign": "Vzdát",
+		"abort": "Ukončit",
+		"results": {
+			"youWin": "Vyhráváte · {{color}} se vzdal",
+			"winsByResignation": "{{color}} vyhrává vzdáním soupeře",
+			"aborted": "Hru ukončil {{color}}",
+			"unscored": "Hra skončila bez výsledku"
+		}
+	},
+	"turn": {
+		"preparing": "Příprava desky",
+		"reviewing": "Prohlížení · Pro hraní se vraťte na Aktuální",
+		"toPlay": "Na tahu: {{color}}",
+		"yourMove": "Jste na tahu",
+		"waitingForOpponent": "Čeká se na soupeře",
+		"awaitingScoring": "Hra skončila · Počítání bodů zatím není podporováno",
+		"gameOver": "Konec hry",
+		"sendingMove": "Odesílání tahu…",
+		"waitingForConnection": "Čeká se na připojení"
+	},
+	"boardFooter": {
+		"lastMove": "Poslední tah: {{color}} {{move}}",
+		"startingPosition": "Výchozí pozice"
+	},
+	"players": {
+		"label": "Hráči",
+		"captured": "Zajato: {{count}}",
+		"you": "{{name}} (vy)",
+		"waiting": "{{name}} · čeká na hráče"
+	},
+	"history": {
+		"label": "Historie tahů",
+		"heading": "Tahy",
+		"moveCount_one": "{{count}} TAH",
+		"moveCount_few": "{{count}} TAHY",
+		"moveCount_many": "{{count}} TAHU",
+		"moveCount_other": "{{count}} TAHŮ",
+		"tableLabel": "Tahy černého a bílého",
+		"pair": "Dvojice",
+		"move": "Tah {{number}}, {{color}}, {{move}}",
+		"pendingMove": "Tah {{number}}, {{color}}, {{move}}, odesílá se",
+		"empty": "Zatím žádné tahy.",
+		"position": "Tah {{viewed}} z {{latest}}",
+		"currentPosition": "AKTUÁLNÍ POZICE",
+		"reviewing": "PROHLÍŽENÍ",
+		"navigationLabel": "Navigace v historii tahů",
+		"navigation": {
+			"start": "Začátek",
+			"previous": "Předchozí",
+			"next": "Další",
+			"current": "Aktuální"
+		},
+		"undo": "Vrátit poslední tah",
+		"encouragement": "Nespěchejte. Na každém tahu záleží.",
+		"keyboardHint": "Klávesami ← → procházejte tahy, ↑ ↓ skočíte na začátek a aktuální pozici."
+	},
+	"board": {
+		"sceneLabel": "Deska go {{size}} × {{size}} se sekvencí {{moveCount}} zahajovacích tahů",
+		"themedBoard": "Deska go ({{theme}})",
+		"emptyBoard": "Prázdná deska baduk {{size}} × {{size}} ({{theme}})",
+		"stone": "Kámen baduk ({{color}}, {{finish}})",
+		"textureError": "Texturu desky se nepodařilo načíst.",
+		"pauseAnimations": "Pozastavit animace",
+		"resumeAnimations": "Obnovit animace",
+		"pause": "POZASTAVIT",
+		"resume": "POKRAČOVAT"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Zvolte průsečík na desce.",
+			"occupied": "Tento průsečík je obsazený.",
+			"wrongPlayer": "Na tahu je druhý hráč.",
+			"suicide": "Sebevražda není povolena.",
+			"ko": "Tento tah je zakázán pravidlem ko.",
+			"superko": "Tento tah opakuje dřívější pozici.",
+			"gameEnded": "V této hře již nelze táhnout."
+		},
+		"serverRejectedMove": "Server tah odmítl. {{reason}}",
+		"staleRevision": "Hra se změnila dříve, než váš tah dorazil, takže nebyl zahrán.",
+		"wrongPhase": "V této fázi hry to není možné.",
+		"seatTaken": "Toto místo je již obsazené.",
+		"notYourTurn": "Na tahu je druhý hráč.",
+		"abortUnavailable": "Hru již nelze ukončit.",
+		"replayFailed": "Hru se nepodařilo přehrát místně. Načtěte prosím stránku znovu.",
+		"notConnected": "Nejste připojeni k hernímu serveru.",
+		"engineLoadFailed": "Engine go se nepodařilo načíst. Zkuste to prosím znovu.",
+		"gameLoadFailed": "Hru se nepodařilo načíst. Zkuste to prosím znovu.",
+		"seatTakenFirst": "Místo obsadil někdo jiný dříve. Hra je nyní plná."
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"navigation": "Baduk-navigasie",
+	"drawer": {
+		"open": "Maak navigasie oop",
+		"close": "Sluit navigasie"
+	},
+	"mainNavigation": "Hoofnavigasie",
+	"play": "Speel",
+	"puzzles": "Raaisels",
+	"learn": "Leer",
+	"guide": {
+		"heading": "NUUT MET GO?",
+		"startWithBasics": "Begin met die basiese beginsels"
+	},
+	"account": {
+		"label": "Rekening",
+		"friends": "Vriende",
+		"messages": "Boodskappe",
+		"notifications": "Kennisgewings",
+		"settings": "Instellings",
+		"allSettings": "Alle instellings"
+	},
+	"theme": {
+		"label": "Tema",
+		"system": "Stelsel",
+		"light": "Lig",
+		"dark": "Donker"
+	}
+}

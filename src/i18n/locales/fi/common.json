@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "GO",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Baduk-etusivu",
+	"actions": {
+		"save": "Tallenna",
+		"saving": "Tallennetaan…",
+		"cancel": "Peruuta",
+		"back": "Takaisin",
+		"retry": "Yritä uudelleen",
+		"close": "Sulje",
+		"login": "Kirjaudu",
+		"signIn": "Kirjaudu sisään",
+		"signUp": "Rekisteröidy",
+		"logOut": "Kirjaudu ulos",
+		"loggingOut": "Kirjaudutaan ulos…"
+	},
+	"status": {
+		"saved": "Tallennettu",
+		"loading": "Ladataan…",
+		"checkingSession": "Tarkistetaan istuntoa…",
+		"sessionError": "Istuntoa ei voitu tarkistaa. Yritä uudelleen."
+	},
+	"comingSoon": "{{feature}} on tulossa pian.",
+	"language": "Kieli",
+	"languageDialog": {
+		"title": "Valitse haluamasi kieli",
+		"loadError": "Kieltä ei voitu ladata. Yritä uudelleen."
+	}
+}

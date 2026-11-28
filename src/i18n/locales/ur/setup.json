@@ -1,0 +1,85 @@
+{
+	"page": {
+		"title": {
+			"local": "مقامی بازی کی ترتیب",
+			"online": "آن لائن بازی کی ترتیب"
+		},
+		"label": {
+			"local": "مقامی بازی کی ترتیب",
+			"online": "آن لائن بازی کی ترتیب"
+		},
+		"backToMenu": "مینو پر واپس",
+		"settingsLabel": "بازی کی ترتیبات",
+		"timeLimitsNotice": "وقت کی حدیں ابھی نافذ نہیں کی جاتیں۔",
+		"boardSize": "بورڈ کا سائز",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "بازی بنائی جا رہی ہے…",
+		"startGame": "کھیل شروع کریں",
+		"createFailed": "بازی نہیں بنائی جا سکی۔ براہ کرم دوبارہ کوشش کریں۔"
+	},
+	"players": {
+		"player1": "کھلاڑی 1",
+		"player2": "کھلاڑی 2",
+		"opponent": "حریف",
+		"guest": "آپ (مہمان)"
+	},
+	"configuration": {
+		"eyebrow": "کنفیگریشنز",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "حسبِ منشا · {{system}}",
+		"presetOptionLabel": "{{preset}}، {{system}}",
+		"moreControls": "وقت کے مزید کنٹرول",
+		"fewerControls": "وقت کے کم کنٹرول",
+		"groups": {
+			"bullet": "بُلٹ",
+			"blitz": "بلٹز",
+			"rapid": "ریپڈ",
+			"classical": "کلاسیکل",
+			"correspondence": "خط و کتابت",
+			"untimed": "بغیر وقت"
+		},
+		"systems": {
+			"absolute": "مطلق",
+			"fischer": "فشر",
+			"japaneseByoYomi": "جاپانی بیو-یومی"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} سیکنڈ",
+			"absoluteMinutes": "{{minutes}} منٹ",
+			"mainSeconds": "{{seconds}} سیکنڈ",
+			"mainMinutes": "{{minutes}} منٹ",
+			"fischer": "{{main}} + {{increment}} سیکنڈ",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}} سیکنڈ",
+			"daysPerMove_one": "{{count}} دن / چال",
+			"daysPerMove_other": "{{count}} دن / چال"
+		},
+		"noTimeLimit": "کوئی وقت کی حد نہیں"
+	},
+	"customTime": {
+		"label": "حسبِ منشا وقت کا کنٹرول",
+		"eyebrow": "حسبِ منشا وقت کا کنٹرول",
+		"heading": "اپنی گھڑی ترتیب دیں",
+		"system": "نظام",
+		"fields": {
+			"minutes": "بنیادی · منٹ",
+			"seconds": "بنیادی · سیکنڈ",
+			"increment": "اضافہ · سیکنڈ",
+			"periods": "ادوار",
+			"periodSeconds": "دور · سیکنڈ"
+		},
+		"hints": {
+			"byoYomi": "اضافی وقت مقررہ تعداد کے وقتی ادوار استعمال کرتا ہے۔",
+			"default": "ایک نظام منتخب کریں، پھر اس کی گھڑی کی قدریں درج کریں۔"
+		},
+		"apply": "حسبِ منشا وقت استعمال کریں",
+		"errors": {
+			"wholeNumbers": "ہر گھڑی کے خانے میں غیر منفی مکمل عدد درج کریں۔",
+			"mainSeconds": "بنیادی وقت کے سیکنڈ 0 اور 59 کے درمیان ہونے چاہییں۔",
+			"byoYomiPeriods": "بیو-یومی کے لیے کم از کم ایک سیکنڈ کا کم از کم ایک دور ضروری ہے۔",
+			"mainTime": "بنیادی وقت صفر سے زیادہ مقرر کریں۔"
+		}
+	}
+}

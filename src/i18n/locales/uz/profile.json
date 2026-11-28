@@ -1,0 +1,18 @@
+{
+	"editProfile": "Profilni tahrirlash",
+	"meta": {
+		"joined": "Qoʻshilgan",
+		"rank": "Daraja",
+		"noRank": "—",
+		"followers": "Kuzatuvchilar",
+		"following": "Kuzatilmoqda"
+	},
+	"about": {
+		"heading": "Haqida",
+		"noBio": "Hali maʼlumot yoʻq."
+	},
+	"games": {
+		"heading": "Oʻyinlar tarixi",
+		"empty": "Hali oʻyinlar yoʻq."
+	}
+}

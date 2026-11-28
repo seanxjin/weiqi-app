@@ -1,18 +1,21 @@
 import type { BoardApi, BoardSize, Intersection, Stone, StoneColor } from "weiqi-board";
 import { samePoint } from "weiqi-board";
 import type { EngineColor, EngineMove, EnginePosition, IllegalMoveReason, Point } from "./bindings";
+import i18n from "@/i18n";
 
 export const columnLabels = "ABCDEFGHJKLMNOPQRST";
 
-export const illegalMoveMessages: Record<IllegalMoveReason, string> = {
-	OutOfBounds: "Choose an intersection on the board.",
-	Occupied: "That intersection is occupied.",
-	WrongPlayer: "It is the other player’s turn.",
-	Suicide: "Suicide is not allowed.",
-	Ko: "That move is forbidden by ko.",
-	Superko: "That move repeats an earlier position.",
-	GameEnded: "This game cannot accept another move.",
-};
+const illegalMoveKeys = {
+	OutOfBounds: "game:errors.illegalMove.outOfBounds",
+	Occupied: "game:errors.illegalMove.occupied",
+	WrongPlayer: "game:errors.illegalMove.wrongPlayer",
+	Suicide: "game:errors.illegalMove.suicide",
+	Ko: "game:errors.illegalMove.ko",
+	Superko: "game:errors.illegalMove.superko",
+	GameEnded: "game:errors.illegalMove.gameEnded",
+} as const satisfies Record<IllegalMoveReason, string>;
+
+export const illegalMoveMessage = (reason: IllegalMoveReason): string => i18n.t(illegalMoveKeys[reason]);
 
 export const toStoneColor = (color: EngineColor): StoneColor => (color === "Black" ? "black" : "white");
 export const toEngineColor = (color: StoneColor): EngineColor => (color === "black" ? "Black" : "White");

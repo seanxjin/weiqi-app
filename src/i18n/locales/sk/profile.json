@@ -1,0 +1,18 @@
+{
+	"editProfile": "Upraviť profil",
+	"meta": {
+		"joined": "Registrácia",
+		"rank": "Výkonnosť",
+		"noRank": "—",
+		"followers": "Sledovatelia",
+		"following": "Sledovaní"
+	},
+	"about": {
+		"heading": "O mne",
+		"noBio": "Zatiaľ bez popisu."
+	},
+	"games": {
+		"heading": "História hier",
+		"empty": "Zatiaľ žiadne hry."
+	}
+}

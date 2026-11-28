@@ -1,0 +1,33 @@
+{
+	"server": {
+		"unavailable": "서버를 사용할 수 없습니다. 다시 시도해 주세요.",
+		"unreachable": "서버에 연결할 수 없습니다. 네트워크 연결을 확인한 후 다시 시도해 주세요.",
+		"unexpectedResponse": "서버에서 예기치 않은 응답이 왔습니다. 다시 시도해 주세요.",
+		"requestFailed": "요청을 완료하지 못했습니다. 다시 시도해 주세요."
+	},
+	"rateLimited": {
+		"generic": "시도 횟수가 너무 많습니다. 잠시 후 다시 시도해 주세요.",
+		"withDelay_other": "시도 횟수가 너무 많습니다. {{count}}초 후에 다시 시도해 주세요."
+	},
+	"unknown": "문제가 발생했습니다. 다시 시도해 주세요.",
+	"api": {
+		"invalidCredentials": "사용자 이름, 이메일 또는 비밀번호가 올바르지 않습니다.",
+		"twoFactorRequired": "계속하려면 인증 앱의 6자리 코드를 입력하세요.",
+		"invalidTwoFactor": "인증 코드가 올바르지 않습니다. 다시 시도해 주세요.",
+		"emailUnconfirmed": "로그인하기 전에 이메일 주소를 인증해 주세요.",
+		"accountClosed": "해지된 계정이므로 로그인할 수 없습니다.",
+		"usernameTaken": "이미 사용 중인 사용자 이름입니다. 다른 이름을 선택해 주세요.",
+		"emailTaken": "이미 사용 중인 이메일 주소입니다.",
+		"invalidToken": "유효하지 않거나 만료된 링크입니다. 새 이메일을 요청해 주세요.",
+		"unauthorized": "로그인 세션이 만료되었습니다. 처음부터 다시 시작해 주세요.",
+		"conflict": "가입을 완료하지 못했습니다. 처음부터 다시 시작해 주세요.",
+		"forbidden": "요청이 차단되었습니다. 페이지를 새로고침한 후 다시 시도해 주세요."
+	},
+	"validation": {
+		"passwordTooShort": "비밀번호는 8자 이상이어야 합니다.",
+		"newPasswordTooShort": "새 비밀번호는 8자 이상이어야 합니다.",
+		"passwordTooLong": "비밀번호는 UTF-8 기준 72바이트를 넘을 수 없습니다.",
+		"passwordMismatch": "새 비밀번호가 일치하지 않습니다.",
+		"passwordUnchanged": "현재 비밀번호와 다른 비밀번호를 선택하세요."
+	}
+}

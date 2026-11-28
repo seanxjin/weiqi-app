@@ -1,0 +1,29 @@
+{
+	"navigation": "Nawigacja Baduk",
+	"drawer": {
+		"open": "Otwórz nawigację",
+		"close": "Zamknij nawigację"
+	},
+	"mainNavigation": "Nawigacja główna",
+	"play": "Graj",
+	"puzzles": "Zadania",
+	"learn": "Nauka",
+	"guide": {
+		"heading": "NOWY W GO?",
+		"startWithBasics": "Zacznij od podstaw"
+	},
+	"account": {
+		"label": "Konto",
+		"friends": "Znajomi",
+		"messages": "Wiadomości",
+		"notifications": "Powiadomienia",
+		"settings": "Ustawienia",
+		"allSettings": "Wszystkie ustawienia"
+	},
+	"theme": {
+		"label": "Motyw",
+		"system": "Systemowy",
+		"light": "Jasny",
+		"dark": "Ciemny"
+	}
+}

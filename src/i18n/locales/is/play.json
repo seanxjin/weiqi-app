@@ -1,0 +1,116 @@
+{
+	"home": {
+		"pageTitle": "Spila",
+		"location": "SPILA / FORSÍÐA",
+		"signedInAs": "Innskráð/ur sem {{username}}",
+		"guest": "Spilar sem gestur",
+		"logoutError": "Ekki tókst að skrá út. Reyndu aftur.",
+		"introduction": {
+			"heading": "Einhver texti",
+			"body": "Einhver annar texti"
+		},
+		"menuHeading": "Einhver texti.",
+		"options": {
+			"online": {
+				"label": "Spila á netinu",
+				"description": "Finndu mótherja. Hittumst við borðið."
+			},
+			"local": {
+				"label": "Spila staðbundið",
+				"description": "Eitt borð. Tveir leikmenn. Einn skjár."
+			},
+			"friend": {
+				"label": "Spila við vin",
+				"description": "Bjóddu einhverjum í íhugulan leik."
+			},
+			"puzzles": {
+				"label": "Leysa þrautir",
+				"description": "Litlar áskoranir. Skarpara innsæi."
+			},
+			"lessons": {
+				"label": "Kennslustundir",
+				"description": "Frá fyrsta steininum að næstu uppgötvun."
+			},
+			"bots": {
+				"label": "Spila við vélmenni",
+				"description": "Æfðu þig á þínum hraða, á hvaða stigi sem er."
+			}
+		},
+		"presence_one": "{{count, number}} leikmaður við borðið",
+		"presence_other": "{{count, number}} leikmenn við borðið",
+		"reserved": {
+			"label": "HLUTI FYRIR SÍÐAR",
+			"heading": "Frátekið fyrir framtíðarefni",
+			"body": "Þessi hluti er viljandi auður í bili. Hann verður notaður fyrir nýja eiginleika, fréttir eða valið efni."
+		},
+		"footerTagline": "Einfaldar reglur. Endalaus uppgötvun."
+	},
+	"materials": {
+		"pageTitle": "Borð og steinar",
+		"breadcrumb": "Baduk / Efnissafn",
+		"collection": "Safn 01",
+		"heading": "Borð og steinar.",
+		"introduction": "Náttúruleg efni. Hljóðlát smáatriði. Staður fyrir leikinn.",
+		"boardsSection": {
+			"title": "Borðin",
+			"meta": "Þrjár viðartegundir · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Steinarnir",
+			"meta": "Fjórir stílar · svart og hvítt"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Efnisrannsókn",
+			"enlarged": "Stækkuð sýni",
+			"heading": "Hljóðlát andstæða.",
+			"body": "Fjórir fletir. Svart og hvítt, í sama mjúka ljósinu.",
+			"scale": "Stækkuð sýni · sami kvarði",
+			"form": "Slétt, ávalt form / fínleg breytileg áferð"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Hefðbundinn japanskur kaya",
+				"material": "Hlýr hunangslitur · beinar æðar"
+			},
+			"walnut": {
+				"name": "Dökk hnota",
+				"material": "Djúpbrúnn · flæðandi æðar"
+			},
+			"ash": {
+				"name": "Ljós norrænn askur",
+				"material": "Ljós viður · mjúkar æðar"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Fægður",
+				"name": "Flögusteinn",
+				"description": "Sléttir, fægðir fletir með hljóðlátri steinefnaáferð.",
+				"black": "Svartur flögusteinn",
+				"white": "Hvítur flögusteinn"
+			},
+			"satin": {
+				"finish": "Satín",
+				"name": "Keramík",
+				"description": "Dreifður gljái og fínleg, jöfn og fíngerð áferð.",
+				"black": "Svart keramík",
+				"white": "Hvítt keramík"
+			},
+			"matte": {
+				"finish": "Mattur",
+				"name": "Náttúrusteinn",
+				"description": "Hljóðlátar steinefnadoppur undir sléttri, þurri áferð.",
+				"black": "Svartur steinn",
+				"white": "Hvítur steinn"
+			},
+			"snow": {
+				"finish": "Fægður",
+				"name": "Skel · Yuki / Snjógæði",
+				"description": "Fínar, þéttar skeljaæðar á mjólkurhvítu, paraðar við fægðan svartan flögustein.",
+				"black": "Svartur Nachiguro-flögusteinn",
+				"white": "Hvít Yuki-skel"
+			}
+		},
+		"footerTagline": "Grunnatriðin, vel ígrunduð."
+	}
+}

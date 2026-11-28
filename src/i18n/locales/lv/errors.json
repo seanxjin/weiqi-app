@@ -1,0 +1,35 @@
+{
+	"server": {
+		"unavailable": "Serveris nav pieejams. Lūdzu, mēģini vēlreiz.",
+		"unreachable": "Neizdevās sazināties ar serveri. Pārbaudi savienojumu un mēģini vēlreiz.",
+		"unexpectedResponse": "Serveris atgrieza negaidītu atbildi. Lūdzu, mēģini vēlreiz.",
+		"requestFailed": "Pieprasījumu neizdevās izpildīt. Lūdzu, mēģini vēlreiz."
+	},
+	"rateLimited": {
+		"generic": "Pārāk daudz mēģinājumu. Lūdzu, uzgaidi, pirms mēģini vēlreiz.",
+		"withDelay_zero": "Pārāk daudz mēģinājumu. Lūdzu, uzgaidi {{count}} sekundes, pirms mēģini vēlreiz.",
+		"withDelay_one": "Pārāk daudz mēģinājumu. Lūdzu, uzgaidi {{count}} sekundi, pirms mēģini vēlreiz.",
+		"withDelay_other": "Pārāk daudz mēģinājumu. Lūdzu, uzgaidi {{count}} sekundes, pirms mēģini vēlreiz."
+	},
+	"unknown": "Kaut kas nogāja greizi. Lūdzu, mēģini vēlreiz.",
+	"api": {
+		"invalidCredentials": "Lietotājvārds, e-pasts vai parole nav pareiza.",
+		"twoFactorRequired": "Lai turpinātu, ievadi 6 ciparu kodu no autentifikatora lietotnes.",
+		"invalidTwoFactor": "Autentifikatora kods nav pareizs. Lūdzu, mēģini vēlreiz.",
+		"emailUnconfirmed": "Pirms pieteikšanās apstiprini savu e-pasta adresi.",
+		"accountClosed": "Šis konts ir slēgts, un ar to nevar pieteikties.",
+		"usernameTaken": "Šis lietotājvārds jau ir aizņemts. Lūdzu, izvēlies citu.",
+		"emailTaken": "Šī e-pasta adrese jau tiek izmantota.",
+		"invalidToken": "Šī saite nav derīga vai ir beigusies. Lai turpinātu, pieprasi jaunu e-pastu.",
+		"unauthorized": "Tava pieteikšanās sesija ir beigusies. Lūdzu, sāc no jauna.",
+		"conflict": "Reģistrāciju neizdevās pabeigt. Lūdzu, sāc no jauna.",
+		"forbidden": "Šis pieprasījums tika bloķēts. Atsvaidzini lapu un mēģini vēlreiz."
+	},
+	"validation": {
+		"passwordTooShort": "Parolē izmanto vismaz 8 rakstzīmes.",
+		"newPasswordTooShort": "Jaunajā parolē izmanto vismaz 8 rakstzīmes.",
+		"passwordTooLong": "Parole nedrīkst pārsniegt 72 UTF-8 baitus.",
+		"passwordMismatch": "Jaunās paroles nesakrīt.",
+		"passwordUnchanged": "Izvēlies paroli, kas atšķiras no pašreizējās."
+	}
+}

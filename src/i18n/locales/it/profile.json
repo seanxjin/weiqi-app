@@ -1,0 +1,18 @@
+{
+	"editProfile": "Modifica profilo",
+	"meta": {
+		"joined": "Iscritto dal",
+		"rank": "Grado",
+		"noRank": "—",
+		"followers": "Follower",
+		"following": "Seguiti"
+	},
+	"about": {
+		"heading": "Informazioni",
+		"noBio": "Ancora nessuna biografia."
+	},
+	"games": {
+		"heading": "Cronologia partite",
+		"empty": "Ancora nessuna partita."
+	}
+}

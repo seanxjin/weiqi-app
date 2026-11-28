@@ -1,0 +1,18 @@
+{
+	"editProfile": "프로필 수정",
+	"meta": {
+		"joined": "가입일",
+		"rank": "기력",
+		"noRank": "—",
+		"followers": "팔로워",
+		"following": "팔로잉"
+	},
+	"about": {
+		"heading": "소개",
+		"noBio": "아직 자기소개가 없습니다."
+	},
+	"games": {
+		"heading": "대국 기록",
+		"empty": "아직 대국이 없습니다."
+	}
+}

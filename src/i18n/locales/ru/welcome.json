@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Играть в го",
+	"railLabel": "Baduk",
+	"mainNavigation": "Основная навигация",
+	"play": "Играть",
+	"eyebrow": "Какой-то текст",
+	"heading": {
+		"label": "Играть в го",
+		"prefix": "Играть в "
+	},
+	"description": {
+		"first": "Какой-то текст....",
+		"second": "Какой-то другой текст..."
+	},
+	"footnote": "НЕ ТОРОПИТЕСЬ."
+}

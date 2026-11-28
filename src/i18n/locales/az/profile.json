@@ -1,0 +1,18 @@
+{
+	"editProfile": "Profili redaktə et",
+	"meta": {
+		"joined": "Qoşulub",
+		"rank": "Dərəcə",
+		"noRank": "—",
+		"followers": "İzləyicilər",
+		"following": "İzlənilənlər"
+	},
+	"about": {
+		"heading": "Haqqında",
+		"noBio": "Hələ bioqrafiya yoxdur."
+	},
+	"games": {
+		"heading": "Oyun tarixçəsi",
+		"empty": "Hələ oyun yoxdur."
+	}
+}

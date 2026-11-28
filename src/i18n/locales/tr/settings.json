@@ -1,0 +1,209 @@
+{
+	"header": {
+		"title": "Ayarlar",
+		"sectionTitle": "{{section}} ayarları",
+		"navLabel": "Ayar bölümleri"
+	},
+	"sections": {
+		"board": "Tahta ve Taşlar",
+		"gameplay": "Oynanış",
+		"profile": "Profil",
+		"social": "Sosyal ve Gizlilik",
+		"account": "Hesap ve Güvenlik",
+		"language": "Dil ve Saat"
+	},
+	"board": {
+		"description": "Oynadığınız tahtayı ve taşları seçin.",
+		"appearance": {
+			"title": "Görünüm",
+			"boardLegend": "Tahta",
+			"stonesLegend": "Taşlar",
+			"previewLabel": "Tahta önizlemesi"
+		},
+		"themes": {
+			"kaya": "Geleneksel Japon kayası",
+			"walnut": "Koyu ceviz",
+			"ash": "Açık renkli İskandinav dişbudağı"
+		},
+		"stoneStyles": {
+			"polished": "Arduvaz",
+			"satin": "Seramik",
+			"matte": "Doğal taş",
+			"snow": "Deniz kabuğu · Yuki / Snow kalitesi"
+		},
+		"display": {
+			"title": "Tahta görünümü",
+			"coordinates": {
+				"label": "Tahta koordinatlarını göster",
+				"description": "Tahtanın kenarındaki sütun ve satırları etiketle."
+			},
+			"lastMove": {
+				"label": "Son hamleyi vurgula",
+				"description": "En son oynanan taşı işaretle."
+			}
+		},
+		"sounds": {
+			"title": "Sesler",
+			"playSounds": {
+				"label": "Sesleri çal",
+				"description": "Taş yerleştirme, esir alma ve saat uyarıları."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Taşları nasıl yerleştireceğinizi ve size kimin meydan okuyabileceğini yönetin.",
+		"moves": {
+			"title": "Hamle yapma",
+			"description": "Yanlış tıklamaları önlemek için taş yerleştirilmeden önce ikinci bir tıklama iste.",
+			"legend": "Hamleleri onayla",
+			"options": {
+				"never": "Asla",
+				"correspondence": "Yalnızca yazışmalı oyunlarda",
+				"always": "Her zaman"
+			}
+		},
+		"challenges": {
+			"title": "Meydan okumalar",
+			"description": "Size kimin oyun daveti gönderebileceğini seçin.",
+			"legend": "Meydan okumalara izin ver",
+			"options": {
+				"everyone": "Herkes",
+				"registered": "Kayıtlı oyuncular",
+				"following": "Yalnızca takip ettiğim oyuncular",
+				"nobody": "Hiç kimse (rövanşlara yine izin verilir)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Buradaki her şey <profileLink>herkese açık profilinizde</profileLink> görünür.",
+		"publicProfile": {
+			"title": "Herkese açık profil",
+			"bioLabel": "Kısa biyografi",
+			"bioPlaceholder": "Kısa biyografiniz profilinizde görünür.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Ayrıntılar",
+			"joinDate": "Katılma tarihi",
+			"username": "Kullanıcı adı",
+			"changeUsername": "Değiştir",
+			"changeUsernameFeature": "Kullanıcı adı değiştirme",
+			"realName": "Gerçek ad",
+			"location": "Konum",
+			"country": "Ülke",
+			"countryNotSet": "Belirtilmedi",
+			"rank": "Derece",
+			"rankPlaceholder": "ör. 12k, 3d",
+			"rankHint": "30k–1k, 1d–9d veya 1p–9p kullanın."
+		},
+		"links": {
+			"legend": "Bağlantılar",
+			"linkLabel": "Bağlantı {{number}}",
+			"remove": "Kaldır",
+			"removeLabel": "{{number}}. bağlantıyı kaldır",
+			"add": "Bağlantı ekle"
+		}
+	},
+	"social": {
+		"description": "Takip ettiğiniz ve engellediğiniz oyuncuları yönetin.",
+		"blocking": {
+			"title": "Engellenenler",
+			"description_one": "{{count}} oyuncuyu engelliyorsunuz. Engellenen oyuncular size meydan okuyamaz veya mesaj gönderemez.",
+			"description_other": "{{count}} oyuncuyu engelliyorsunuz. Engellenen oyuncular size meydan okuyamaz veya mesaj gönderemez.",
+			"empty": "Kimseyi engellemiyorsunuz.",
+			"action": "Engeli kaldır",
+			"actionLabel": "{{username}} engelini kaldır"
+		},
+		"following": {
+			"title": "Takip edilenler",
+			"description_one": "{{count}} oyuncuyu takip ediyorsunuz.",
+			"description_other": "{{count}} oyuncuyu takip ediyorsunuz.",
+			"empty": "Henüz kimseyi takip etmiyorsunuz.",
+			"action": "Takibi bırak",
+			"actionLabel": "{{username}} takibini bırak"
+		}
+	},
+	"account": {
+		"description": "Şifrenizi değiştirin, hesabınızı güvenceye alın ve bağlı hesapları yönetin.",
+		"password": {
+			"title": "Şifre değiştir",
+			"updated": "Şifre güncellendi",
+			"fields": {
+				"currentPassword": {
+					"label": "Mevcut şifre",
+					"show": "Mevcut şifreyi göster",
+					"hide": "Mevcut şifreyi gizle"
+				},
+				"newPassword": {
+					"label": "Yeni şifre",
+					"show": "Yeni şifreyi göster",
+					"hide": "Yeni şifreyi gizle"
+				},
+				"confirmPassword": {
+					"label": "Şifreyi tekrar girin",
+					"show": "Tekrar girilen şifreyi göster",
+					"hide": "Tekrar girilen şifreyi gizle"
+				}
+			}
+		},
+		"contact": {
+			"title": "İletişim bilgileri",
+			"email": "E-posta adresi",
+			"edit": "Düzenle",
+			"editFeature": "E-posta değiştirme"
+		},
+		"twoFactor": {
+			"title": "İki adımlı doğrulama",
+			"description": "Giriş yaparken bir doğrulama uygulamasından kod iste.",
+			"off": "Kapalı",
+			"enable": "Etkinleştir",
+			"feature": "İki adımlı doğrulama"
+		},
+		"sessions": {
+			"title": "Etkin oturumlar",
+			"description": "Hesabınızın ele geçirildiğinden şüpheleniyorsanız şifrenizi değiştirin ve her yerden çıkış yapın.",
+			"thisDevice": "Bu cihaz",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "{{device}} oturumunu kapat",
+			"logOutAll": "Diğer tüm cihazlardan çıkış yap"
+		},
+		"connections": {
+			"title": "Bağlı hesaplar",
+			"description": "Baduk'a bu hesaplarla giriş yapın.",
+			"connectedTo": "{{provider}} hesabına bağlı",
+			"connect": "Bağla",
+			"disconnect": "Bağlantıyı kes",
+			"note": "Bağlantıyı kesmek, Baduk'taki bağlantıyı kaldırır. Diğer sitede de erişimi iptal etmeniz gerekebilir."
+		},
+		"close": {
+			"title": "Hesabınızı kapatın",
+			"description": "Hesabınızı kapatmak profilinizi gizler ve her yerden çıkış yapmanızı sağlar.",
+			"button": "Hesabı kapat",
+			"dialogTitle": "Hesabınız kapatılsın mı?",
+			"dialogDescription": "Daha sonra giriş sayfasından yeniden açabilirsiniz.",
+			"feature": "Hesap kapatma"
+		}
+	},
+	"languageTime": {
+		"title": "Dil ve Saat",
+		"description": "Baduk'un kullandığı dili ve tarih ile saatlerin nasıl görüneceğini seçin.",
+		"language": {
+			"title": "Dil",
+			"description": "Değişiklikler her sayfada hemen uygulanır.",
+			"legend": "Görüntüleme dili"
+		},
+		"time": {
+			"title": "Saat",
+			"description": "Katılma tarihleri ve oturum etkinliği gibi zaman damgaları için kullanılır.",
+			"timeZone": "Saat dilimi",
+			"automaticTimeZone": "Otomatik ({{timeZone}})",
+			"timeFormat": "Saat biçimi",
+			"formats": {
+				"auto": "Otomatik ({{example}})",
+				"12h": "12 saat ({{example}})",
+				"24h": "24 saat ({{example}})"
+			},
+			"preview": "Önizleme"
+		}
+	}
+}

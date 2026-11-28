@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Xogar ao go",
+	"railLabel": "Baduk",
+	"mainNavigation": "Navegación principal",
+	"play": "Xogar",
+	"eyebrow": "Algo de texto",
+	"heading": {
+		"label": "Xogar ao go",
+		"prefix": "Xogar ao "
+	},
+	"description": {
+		"first": "Algo de texto....",
+		"second": "Outro texto..."
+	},
+	"footnote": "TÓMAO CON CALMA."
+}

@@ -1,0 +1,18 @@
+{
+	"editProfile": "Editează profilul",
+	"meta": {
+		"joined": "Înscris",
+		"rank": "Rang",
+		"noRank": "—",
+		"followers": "Urmăritori",
+		"following": "Urmăriți"
+	},
+	"about": {
+		"heading": "Despre",
+		"noBio": "Nicio descriere încă."
+	},
+	"games": {
+		"heading": "Istoricul partidelor",
+		"empty": "Nicio partidă încă."
+	}
+}

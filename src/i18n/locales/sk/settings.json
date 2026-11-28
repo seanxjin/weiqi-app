@@ -1,0 +1,213 @@
+{
+	"header": {
+		"title": "Nastavenia",
+		"sectionTitle": "Nastavenia – {{section}}",
+		"navLabel": "Sekcie nastavení"
+	},
+	"sections": {
+		"board": "Doska a kamene",
+		"gameplay": "Hranie",
+		"profile": "Profil",
+		"social": "Sociálne a súkromie",
+		"account": "Účet a zabezpečenie",
+		"language": "Jazyk a čas"
+	},
+	"board": {
+		"description": "Vyberte si dosku a kamene, s ktorými hráte.",
+		"appearance": {
+			"title": "Vzhľad",
+			"boardLegend": "Doska",
+			"stonesLegend": "Kamene",
+			"previewLabel": "Náhľad dosky"
+		},
+		"themes": {
+			"kaya": "Tradičná japonská kaya",
+			"walnut": "Tmavý orech",
+			"ash": "Svetlý škandinávsky jaseň"
+		},
+		"stoneStyles": {
+			"polished": "Bridlica",
+			"satin": "Keramika",
+			"matte": "Prírodný kameň",
+			"snow": "Mušľa · Yuki / Snehová kvalita"
+		},
+		"display": {
+			"title": "Zobrazenie dosky",
+			"coordinates": {
+				"label": "Zobraziť súradnice dosky",
+				"description": "Označí stĺpce a riadky po okraji dosky."
+			},
+			"lastMove": {
+				"label": "Zvýrazniť posledný ťah",
+				"description": "Označí naposledy zahraný kameň."
+			}
+		},
+		"sounds": {
+			"title": "Zvuky",
+			"playSounds": {
+				"label": "Prehrávať zvuky",
+				"description": "Kladenie kameňov, zajatia a varovania hodín."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Spravujte, ako kladiete kamene a kto vás môže vyzvať.",
+		"moves": {
+			"title": "Hranie ťahov",
+			"description": "Pred položením kameňa vyžadovať druhé kliknutie, aby ste sa vyhli omylom.",
+			"legend": "Potvrdzovať ťahy",
+			"options": {
+				"never": "Nikdy",
+				"correspondence": "Len v korešpondenčných hrách",
+				"always": "Vždy"
+			}
+		},
+		"challenges": {
+			"title": "Výzvy",
+			"description": "Vyberte, kto vám môže posielať výzvy na hru.",
+			"legend": "Povoliť výzvy od",
+			"options": {
+				"everyone": "Všetkých",
+				"registered": "Registrovaných hráčov",
+				"following": "Len hráčov, ktorých sledujem",
+				"nobody": "Nikoho (odvety sú stále povolené)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Všetko tu je viditeľné vo vašom <profileLink>verejnom profile</profileLink>.",
+		"publicProfile": {
+			"title": "Verejný profil",
+			"bioLabel": "Krátky popis",
+			"bioPlaceholder": "Váš krátky popis sa zobrazí vo vašom profile.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Podrobnosti",
+			"joinDate": "Dátum registrácie",
+			"username": "Používateľské meno",
+			"changeUsername": "Zmeniť",
+			"changeUsernameFeature": "Zmena používateľského mena",
+			"realName": "Skutočné meno",
+			"location": "Poloha",
+			"country": "Krajina",
+			"countryNotSet": "Nenastavené",
+			"rank": "Výkonnosť",
+			"rankPlaceholder": "napr. 12k, 3d",
+			"rankHint": "Použite 30k–1k, 1d–9d alebo 1p–9p."
+		},
+		"links": {
+			"legend": "Odkazy",
+			"linkLabel": "Odkaz {{number}}",
+			"remove": "Odstrániť",
+			"removeLabel": "Odstrániť odkaz {{number}}",
+			"add": "Pridať odkaz"
+		}
+	},
+	"social": {
+		"description": "Spravujte hráčov, ktorých sledujete, a hráčov, ktorých ste zablokovali.",
+		"blocking": {
+			"title": "Blokovanie",
+			"description_one": "Blokujete {{count}} hráča. Zablokovaní hráči vás nemôžu vyzvať ani vám písať.",
+			"description_few": "Blokujete {{count}} hráčov. Zablokovaní hráči vás nemôžu vyzvať ani vám písať.",
+			"description_many": "Blokujete {{count}} hráča. Zablokovaní hráči vás nemôžu vyzvať ani vám písať.",
+			"description_other": "Blokujete {{count}} hráčov. Zablokovaní hráči vás nemôžu vyzvať ani vám písať.",
+			"empty": "Nikoho neblokujete.",
+			"action": "Odblokovať",
+			"actionLabel": "Odblokovať {{username}}"
+		},
+		"following": {
+			"title": "Sledovaní",
+			"description_one": "Sledujete {{count}} hráča.",
+			"description_few": "Sledujete {{count}} hráčov.",
+			"description_many": "Sledujete {{count}} hráča.",
+			"description_other": "Sledujete {{count}} hráčov.",
+			"empty": "Zatiaľ nikoho nesledujete.",
+			"action": "Prestať sledovať",
+			"actionLabel": "Prestať sledovať {{username}}"
+		}
+	},
+	"account": {
+		"description": "Zmeňte si heslo, zabezpečte účet a spravujte prepojené účty.",
+		"password": {
+			"title": "Zmeniť heslo",
+			"updated": "Heslo bolo aktualizované",
+			"fields": {
+				"currentPassword": {
+					"label": "Aktuálne heslo",
+					"show": "Zobraziť aktuálne heslo",
+					"hide": "Skryť aktuálne heslo"
+				},
+				"newPassword": {
+					"label": "Nové heslo",
+					"show": "Zobraziť nové heslo",
+					"hide": "Skryť nové heslo"
+				},
+				"confirmPassword": {
+					"label": "Zopakujte heslo",
+					"show": "Zobraziť zopakované heslo",
+					"hide": "Skryť zopakované heslo"
+				}
+			}
+		},
+		"contact": {
+			"title": "Kontaktné údaje",
+			"email": "E-mailová adresa",
+			"edit": "Upraviť",
+			"editFeature": "Zmena e-mailu"
+		},
+		"twoFactor": {
+			"title": "Dvojfaktorové overenie",
+			"description": "Pri prihlásení vyžadovať kód z overovacej aplikácie.",
+			"off": "Vypnuté",
+			"enable": "Zapnúť",
+			"feature": "Dvojfaktorové overenie"
+		},
+		"sessions": {
+			"title": "Aktívne relácie",
+			"description": "Ak máte podozrenie, že váš účet bol napadnutý, zmeňte si heslo a odhláste sa všade.",
+			"thisDevice": "Toto zariadenie",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "Odhlásiť {{device}}",
+			"logOutAll": "Odhlásiť sa na všetkých ostatných zariadeniach"
+		},
+		"connections": {
+			"title": "Prepojené účty",
+			"description": "Prihlasujte sa do Baduk pomocou týchto účtov.",
+			"connectedTo": "Prepojené s {{provider}}",
+			"connect": "Prepojiť",
+			"disconnect": "Odpojiť",
+			"note": "Odpojenie odstráni prepojenie v Baduk. Prístup možno budete musieť zrušiť aj na druhej stránke."
+		},
+		"close": {
+			"title": "Zrušiť účet",
+			"description": "Zrušením účtu sa skryje váš profil a budete všade odhlásení.",
+			"button": "Zrušiť účet",
+			"dialogTitle": "Zrušiť účet?",
+			"dialogDescription": "Neskôr ho môžete znova otvoriť na prihlasovacej stránke.",
+			"feature": "Zrušenie účtu"
+		}
+	},
+	"languageTime": {
+		"title": "Jazyk a čas",
+		"description": "Vyberte jazyk aplikácie Baduk a spôsob zobrazenia dátumov a časov.",
+		"language": {
+			"title": "Jazyk",
+			"description": "Zmeny sa okamžite prejavia na každej stránke.",
+			"legend": "Jazyk zobrazenia"
+		},
+		"time": {
+			"title": "Čas",
+			"description": "Používa sa pre časové údaje, ako je dátum registrácie a aktivita relácií.",
+			"timeZone": "Časové pásmo",
+			"automaticTimeZone": "Automaticky ({{timeZone}})",
+			"timeFormat": "Hodiny",
+			"formats": {
+				"auto": "Automaticky ({{example}})",
+				"12h": "12-hodinový ({{example}})",
+				"24h": "24-hodinový ({{example}})"
+			},
+			"preview": "Náhľad"
+		}
+	}
+}

@@ -1,4 +1,5 @@
 import { useState, type FormEvent } from "react";
+import { Trans, useTranslation } from "react-i18next";
 import { Link } from "react-router";
 import { StoneMark } from "@/components/ui/StoneMark";
 import {
@@ -10,15 +11,20 @@ import {
 	REAL_NAME_MAX_LENGTH,
 } from "@/data/profileLimits";
 import { mockJoinedAt } from "@/data/mocks/settings";
-import { countries, countryFlag } from "@/lib/countries";
+import { countryCodes, countryFlag, countryName } from "@/lib/countries";
 import type { Profile } from "@/types/settings";
 import { SaveActions, SettingsSection } from "@/components/settings/SettingsControls";
+import { useDateFormat } from "@/hooks/useDateFormat";
 import { useSaveStatus } from "@/hooks/useSaveStatus";
 import { useSettings } from "@/hooks/useSettings";
 
-const joinDate = mockJoinedAt.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
-
 export default function ProfileSettingsPage() {
+	const { t, i18n } = useTranslation(["settings", "common"]);
+	const { formatDate } = useDateFormat();
+	const language = i18n.resolvedLanguage ?? "en";
+	const countryOptions = countryCodes
+		.map((code) => ({ code, name: countryName(code, language) }))
+		.sort((first, second) => first.name.localeCompare(second.name, language));
 	const { account, profile, setProfile, comingSoon } = useSettings();
 	const [draft, setDraft] = useState(profile);
 	const status = useSaveStatus();
@@ -35,18 +41,22 @@ export default function ProfileSettingsPage() {
 		const cleaned = { ...draft, links: draft.links.map((link) => link.trim()).filter(Boolean) };
 		setProfile(cleaned);
 		setDraft(cleaned);
-		status.show("Saved");
+		status.show(t("common:status.saved"));
 	};
 
 	return (
 		<form className="settings-page" onSubmit={save}>
 			<header className="settings-page__header">
-				<h2>Profile</h2>
+				<h2>{t("sections.profile")}</h2>
 				<p>
-					Everything here is visible on your <Link to={`/member/${account.username}`}>public profile</Link>.
+					<Trans
+						t={t}
+						i18nKey="profile.description"
+						components={{ profileLink: <Link to={`/member/${account.username}`} /> }}
+					/>
 				</p>
 			</header>
-			<SettingsSection title="Public profile">
+			<SettingsSection title={t("profile.publicProfile.title")}>
 				<div className="profile-card">
 					<span className="profile-card__avatar">
 						<StoneMark style="polished" size={72} />
@@ -58,39 +68,43 @@ export default function ProfileSettingsPage() {
 						</p>
 						{draft.realName && <p className="profile-card__real-name">{draft.realName}</p>}
 						<label className="settings-field settings-field--stacked">
-							<span>Short bio</span>
+							<span>{t("profile.publicProfile.bioLabel")}</span>
 							<textarea
 								name="bio"
 								rows={3}
 								maxLength={BIO_MAX_LENGTH}
-								placeholder="Your short bio will appear on your profile."
+								placeholder={t("profile.publicProfile.bioPlaceholder")}
 								value={draft.bio}
 								onChange={(event) => update({ bio: event.currentTarget.value })}
 							/>
 							<span className="settings-field__hint">
-								{draft.bio.length}/{BIO_MAX_LENGTH}
+								{t("profile.publicProfile.bioCounter", { length: draft.bio.length, max: BIO_MAX_LENGTH })}
 							</span>
 						</label>
 					</div>
 				</div>
 			</SettingsSection>
-			<SettingsSection title="Details">
+			<SettingsSection title={t("profile.details.title")}>
 				<div className="settings-fields">
 					<div className="settings-field">
-						<span>Join date</span>
-						<span className="settings-field__value">{joinDate}</span>
+						<span>{t("profile.details.joinDate")}</span>
+						<span className="settings-field__value">{formatDate(mockJoinedAt)}</span>
 					</div>
 					<div className="settings-field">
-						<span>Username</span>
+						<span>{t("profile.details.username")}</span>
 						<span className="settings-field__value">
 							{account.username}
-							<button type="button" className="settings-button" onClick={() => comingSoon("Changing your username")}>
-								Change
+							<button
+								type="button"
+								className="settings-button"
+								onClick={() => comingSoon(t("profile.details.changeUsernameFeature"))}
+							>
+								{t("profile.details.changeUsername")}
 							</button>
 						</span>
 					</div>
 					<label className="settings-field">
-						<span>Real name</span>
+						<span>{t("profile.details.realName")}</span>
 						<input
 							name="realName"
 							maxLength={REAL_NAME_MAX_LENGTH}
@@ -99,7 +113,7 @@ export default function ProfileSettingsPage() {
 						/>
 					</label>
 					<label className="settings-field">
-						<span>Location</span>
+						<span>{t("profile.details.location")}</span>
 						<input
 							name="location"
 							maxLength={LOCATION_MAX_LENGTH}
@@ -108,13 +122,14 @@ export default function ProfileSettingsPage() {
 						/>
 					</label>
 					<label className="settings-field">
-						<span>Country</span>
+						<span>{t("profile.details.country")}</span>
 						<select
 							name="country"
 							value={draft.country}
 							onChange={(event) => update({ country: event.currentTarget.value })}
 						>
-							{countries.map((country) => (
+							<option value="">{t("profile.details.countryNotSet")}</option>
+							{countryOptions.map((country) => (
 								<option key={country.code} value={country.code}>
 									{country.name}
 								</option>
@@ -122,25 +137,25 @@ export default function ProfileSettingsPage() {
 						</select>
 					</label>
 					<label className="settings-field">
-						<span>Rank</span>
+						<span>{t("profile.details.rank")}</span>
 						<input
 							name="rank"
-							placeholder="e.g. 12k, 3d"
+							placeholder={t("profile.details.rankPlaceholder")}
 							pattern={RANK_INPUT_PATTERN}
-							title="Use 30k–1k, 1d–9d, or 1p–9p."
+							title={t("profile.details.rankHint")}
 							value={draft.rank}
 							onChange={(event) => update({ rank: event.currentTarget.value.trim() })}
 						/>
 					</label>
 					<fieldset className="settings-field settings-links">
-						<legend>Links</legend>
+						<legend>{t("profile.links.legend")}</legend>
 						<div className="settings-links__list">
 							{draft.links.map((link, index) => (
 								// biome-ignore lint/suspicious/noArrayIndexKey: links are controlled inputs that may share the same text.
 								<div className="settings-links__row" key={index}>
 									<input
 										type="url"
-										aria-label={`Link ${index + 1}`}
+										aria-label={t("profile.links.linkLabel", { number: index + 1 })}
 										placeholder="https://"
 										pattern="https?://.+"
 										maxLength={LINK_MAX_LENGTH}
@@ -150,10 +165,10 @@ export default function ProfileSettingsPage() {
 									<button
 										type="button"
 										className="settings-button"
-										aria-label={`Remove link ${index + 1}`}
+										aria-label={t("profile.links.removeLabel", { number: index + 1 })}
 										onClick={() => update({ links: draft.links.filter((_, position) => position !== index) })}
 									>
-										Remove
+										{t("profile.links.remove")}
 									</button>
 								</div>
 							))}
@@ -163,7 +178,7 @@ export default function ProfileSettingsPage() {
 									className="settings-button settings-links__add"
 									onClick={() => update({ links: [...draft.links, ""] })}
 								>
-									Add link
+									{t("profile.links.add")}
 								</button>
 							)}
 						</div>

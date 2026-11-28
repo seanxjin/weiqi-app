@@ -1,0 +1,209 @@
+{
+	"header": {
+		"title": "Parametrlər",
+		"sectionTitle": "{{section}} parametrləri",
+		"navLabel": "Parametr bölmələri"
+	},
+	"sections": {
+		"board": "Lövhə və daşlar",
+		"gameplay": "Oyun",
+		"profile": "Profil",
+		"social": "Sosial və məxfilik",
+		"account": "Hesab və təhlükəsizlik",
+		"language": "Dil və vaxt"
+	},
+	"board": {
+		"description": "Oynadığınız lövhəni və daşları seçin.",
+		"appearance": {
+			"title": "Görünüş",
+			"boardLegend": "Lövhə",
+			"stonesLegend": "Daşlar",
+			"previewLabel": "Lövhənin önizləməsi"
+		},
+		"themes": {
+			"kaya": "Ənənəvi Yapon kayası",
+			"walnut": "Tünd qoz",
+			"ash": "Açıq Skandinaviya göyrüşü"
+		},
+		"stoneStyles": {
+			"polished": "Şist",
+			"satin": "Keramika",
+			"matte": "Təbii daş",
+			"snow": "Balıqqulağı · Yuki / Qar dərəcəsi"
+		},
+		"display": {
+			"title": "Lövhənin görünüşü",
+			"coordinates": {
+				"label": "Lövhə koordinatlarını göstər",
+				"description": "Lövhənin kənarları boyunca sütun və sətirləri işarələ."
+			},
+			"lastMove": {
+				"label": "Son gedişi vurğula",
+				"description": "Ən son qoyulan daşı işarələ."
+			}
+		},
+		"sounds": {
+			"title": "Səslər",
+			"playSounds": {
+				"label": "Səsləri oxut",
+				"description": "Daş qoyma, əsir alma və saat xəbərdarlıqları."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Daşları necə qoyduğunuzu və sizə kimin çağırış göndərə biləcəyini idarə edin.",
+		"moves": {
+			"title": "Gedişlər",
+			"description": "Səhv kliklərin qarşısını almaq üçün daş qoyulmazdan əvvəl ikinci klik tələb et.",
+			"legend": "Gedişləri təsdiqlə",
+			"options": {
+				"never": "Heç vaxt",
+				"correspondence": "Yalnız yazışma oyunlarında",
+				"always": "Həmişə"
+			}
+		},
+		"challenges": {
+			"title": "Çağırışlar",
+			"description": "Sizə oyun çağırışı göndərə biləcək şəxsləri seçin.",
+			"legend": "Çağırışlara icazə ver",
+			"options": {
+				"everyone": "Hamıdan",
+				"registered": "Qeydiyyatlı oyunçulardan",
+				"following": "Yalnız izlədiyim oyunçulardan",
+				"nobody": "Heç kimdən (revanşlara yenə icazə verilir)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Buradakı hər şey <profileLink>ictimai profilinizdə</profileLink> görünür.",
+		"publicProfile": {
+			"title": "İctimai profil",
+			"bioLabel": "Qısa bioqrafiya",
+			"bioPlaceholder": "Qısa bioqrafiyanız profilinizdə görünəcək.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Məlumatlar",
+			"joinDate": "Qoşulma tarixi",
+			"username": "İstifadəçi adı",
+			"changeUsername": "Dəyiş",
+			"changeUsernameFeature": "İstifadəçi adının dəyişdirilməsi",
+			"realName": "Əsl ad",
+			"location": "Məkan",
+			"country": "Ölkə",
+			"countryNotSet": "Təyin edilməyib",
+			"rank": "Dərəcə",
+			"rankPlaceholder": "məs. 12k, 3d",
+			"rankHint": "30k–1k, 1d–9d və ya 1p–9p istifadə edin."
+		},
+		"links": {
+			"legend": "Linklər",
+			"linkLabel": "Link {{number}}",
+			"remove": "Sil",
+			"removeLabel": "{{number}} nömrəli linki sil",
+			"add": "Link əlavə et"
+		}
+	},
+	"social": {
+		"description": "İzlədiyiniz və blokladığınız oyunçuları idarə edin.",
+		"blocking": {
+			"title": "Bloklama",
+			"description_one": "{{count}} oyunçunu bloklamısınız. Bloklanmış oyunçular sizə çağırış və ya mesaj göndərə bilməz.",
+			"description_other": "{{count}} oyunçunu bloklamısınız. Bloklanmış oyunçular sizə çağırış və ya mesaj göndərə bilməz.",
+			"empty": "Heç kimi bloklamamısınız.",
+			"action": "Blokdan çıxar",
+			"actionLabel": "{{username}} blokdan çıxar"
+		},
+		"following": {
+			"title": "İzlənilənlər",
+			"description_one": "{{count}} oyunçunu izləyirsiniz.",
+			"description_other": "{{count}} oyunçunu izləyirsiniz.",
+			"empty": "Hələ heç kimi izləmirsiniz.",
+			"action": "İzləməni dayandır",
+			"actionLabel": "{{username}} izləməni dayandır"
+		}
+	},
+	"account": {
+		"description": "Şifrənizi dəyişin, hesabınızı qoruyun və qoşulmuş hesabları idarə edin.",
+		"password": {
+			"title": "Şifrəni dəyiş",
+			"updated": "Şifrə yeniləndi",
+			"fields": {
+				"currentPassword": {
+					"label": "Cari şifrə",
+					"show": "Cari şifrəni göstər",
+					"hide": "Cari şifrəni gizlət"
+				},
+				"newPassword": {
+					"label": "Yeni şifrə",
+					"show": "Yeni şifrəni göstər",
+					"hide": "Yeni şifrəni gizlət"
+				},
+				"confirmPassword": {
+					"label": "Şifrəni təkrarlayın",
+					"show": "Təkrar şifrəni göstər",
+					"hide": "Təkrar şifrəni gizlət"
+				}
+			}
+		},
+		"contact": {
+			"title": "Əlaqə məlumatı",
+			"email": "E-poçt ünvanı",
+			"edit": "Redaktə et",
+			"editFeature": "E-poçtun dəyişdirilməsi"
+		},
+		"twoFactor": {
+			"title": "İki faktorlu autentifikasiya",
+			"description": "Daxil olarkən autentifikator tətbiqindən kod tələb et.",
+			"off": "Deaktiv",
+			"enable": "Aktivləşdir",
+			"feature": "İki faktorlu autentifikasiya"
+		},
+		"sessions": {
+			"title": "Aktiv sessiyalar",
+			"description": "Hesabınızın ələ keçirildiyindən şübhələnirsinizsə, şifrənizi dəyişin və bütün cihazlardan çıxış edin.",
+			"thisDevice": "Bu cihaz",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "{{device}} cihazından çıxış et",
+			"logOutAll": "Bütün digər cihazlardan çıxış et"
+		},
+		"connections": {
+			"title": "Qoşulmuş hesablar",
+			"description": "Bu hesablarla Baduk-a daxil olun.",
+			"connectedTo": "{{provider}} ilə qoşulub",
+			"connect": "Qoş",
+			"disconnect": "Ayır",
+			"note": "Ayırma Baduk-dakı əlaqəni silir. Digər saytda girişi ayrıca ləğv etməli ola bilərsiniz."
+		},
+		"close": {
+			"title": "Hesabınızı bağlayın",
+			"description": "Hesabı bağlamaq profilinizi gizlədir və sizi bütün cihazlardan çıxarır.",
+			"button": "Hesabı bağla",
+			"dialogTitle": "Hesabınız bağlansın?",
+			"dialogDescription": "Onu sonradan giriş səhifəsindən yenidən aça bilərsiniz.",
+			"feature": "Hesabın bağlanması"
+		}
+	},
+	"languageTime": {
+		"title": "Dil və vaxt",
+		"description": "Baduk-un istifadə etdiyi dili, tarix və vaxtın necə göstərildiyini seçin.",
+		"language": {
+			"title": "Dil",
+			"description": "Dəyişikliklər bütün səhifələrdə dərhal tətbiq olunur.",
+			"legend": "İnterfeys dili"
+		},
+		"time": {
+			"title": "Vaxt",
+			"description": "Qoşulma tarixi və sessiya fəaliyyəti kimi vaxt nişanları üçün istifadə olunur.",
+			"timeZone": "Saat qurşağı",
+			"automaticTimeZone": "Avtomatik ({{timeZone}})",
+			"timeFormat": "Saat",
+			"formats": {
+				"auto": "Avtomatik ({{example}})",
+				"12h": "12 saatlıq ({{example}})",
+				"24h": "24 saatlıq ({{example}})"
+			},
+			"preview": "Önizləmə"
+		}
+	}
+}

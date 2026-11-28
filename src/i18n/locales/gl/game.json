@@ -1,0 +1,134 @@
+{
+	"colors": {
+		"black": "Negras",
+		"white": "Brancas"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Pasar",
+	"localPage": {
+		"title": "Partida local",
+		"eyebrow": "PARTIDA AMIGABLE",
+		"heading": "Un momento para o xogo.",
+		"details": "{{size}} × {{size}} · Regras xaponesas"
+	},
+	"onlinePage": {
+		"title": "Partida en liña",
+		"eyebrow": "PARTIDA EN LIÑA",
+		"heading": "Un momento para o xogo.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Cargando a partida…",
+		"notFound": "Esta partida non existe ou xa non está dispoñible.",
+		"startNew": "Comezar unha nova partida en liña",
+		"invited": "Invitáronte a unha partida de {{size}} × {{size}}.",
+		"joining": "Uníndose…",
+		"joinAs": "Unirse como {{color}}",
+		"full": "Esta partida está completa. Aínda non se poden observar partidas."
+	},
+	"local": {
+		"label": "Partida local de go",
+		"loadingEngine": "Cargando o motor de go…"
+	},
+	"online": {
+		"label": "Partida de go en liña",
+		"youAre": "Xogas con {{color}}",
+		"connection": {
+			"connecting": "Conectando…",
+			"open": "Conectado",
+			"reconnecting": "Reconectando…",
+			"closed": "Desconectado"
+		},
+		"invite": {
+			"label": "Convida a un amigo con esta ligazón",
+			"copy": "Copiar",
+			"copied": "Copiado"
+		},
+		"awaitingScoring": "Os dous xogadores pasaron. O reconto aínda non está dispoñible, así que anula a partida para rexistrala sen puntuación.",
+		"confirmResign": "Confirmar abandono",
+		"resign": "Abandonar",
+		"abort": "Anular",
+		"results": {
+			"youWin": "Gañaches · {{color}} abandonou",
+			"winsByResignation": "{{color}} gaña por abandono",
+			"aborted": "Partida anulada por {{color}}",
+			"unscored": "A partida rematou sen puntuación"
+		}
+	},
+	"turn": {
+		"preparing": "Preparando o taboleiro",
+		"reviewing": "Revisando · Volve a Actual para xogar",
+		"toPlay": "Xogan {{color}}",
+		"yourMove": "A túa quenda",
+		"waitingForOpponent": "Agardando por un rival",
+		"awaitingScoring": "A partida rematou · O reconto aínda non está dispoñible",
+		"gameOver": "Fin da partida",
+		"sendingMove": "Enviando a xogada…",
+		"waitingForConnection": "Agardando pola conexión"
+	},
+	"boardFooter": {
+		"lastMove": "Última xogada: {{color}} {{move}}",
+		"startingPosition": "Posición inicial"
+	},
+	"players": {
+		"label": "Xogadores",
+		"captured": "Capturas: {{count}}",
+		"you": "{{name}} (ti)",
+		"waiting": "{{name}} · agardando por un xogador"
+	},
+	"history": {
+		"label": "Historial de xogadas",
+		"heading": "Xogadas",
+		"moveCount_one": "{{count}} XOGADA",
+		"moveCount_other": "{{count}} XOGADAS",
+		"tableLabel": "Xogadas de negras e brancas",
+		"pair": "Par",
+		"move": "Xogada {{number}}, {{color}}, {{move}}",
+		"pendingMove": "Xogada {{number}}, {{color}}, {{move}}, enviando",
+		"empty": "Aínda non hai xogadas.",
+		"position": "Xogada {{viewed}} de {{latest}}",
+		"currentPosition": "POSICIÓN ACTUAL",
+		"reviewing": "REVISANDO",
+		"navigationLabel": "Navegación do historial de xogadas",
+		"navigation": {
+			"start": "Inicio",
+			"previous": "Anterior",
+			"next": "Seguinte",
+			"current": "Actual"
+		},
+		"undo": "Desfacer a última xogada",
+		"encouragement": "Tómao con calma. Cada xogada conta.",
+		"keyboardHint": "Usa ← → para percorrer as xogadas e ↑ ↓ para ir ao inicio ou á posición actual."
+	},
+	"board": {
+		"sceneLabel": "Un taboleiro de go de {{size}} por {{size}} cunha secuencia de {{moveCount}} xogadas de apertura",
+		"themedBoard": "Taboleiro de go de {{theme}}",
+		"emptyBoard": "Taboleiro de baduk baleiro de {{size}} por {{size}} de {{theme}}",
+		"stone": "Pedra de baduk {{color}} {{finish}}",
+		"textureError": "Non se puido cargar a textura do taboleiro.",
+		"pauseAnimations": "Pausar animacións",
+		"resumeAnimations": "Retomar animacións",
+		"pause": "PAUSA",
+		"resume": "RETOMAR"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Escolle unha intersección do taboleiro.",
+			"occupied": "Esa intersección está ocupada.",
+			"wrongPlayer": "É a quenda do outro xogador.",
+			"suicide": "O suicidio non está permitido.",
+			"ko": "Esa xogada está prohibida pola regra do ko.",
+			"superko": "Esa xogada repite unha posición anterior.",
+			"gameEnded": "Esta partida non admite máis xogadas."
+		},
+		"serverRejectedMove": "O servidor rexeitou a xogada. {{reason}}",
+		"staleRevision": "A partida cambiou antes de que chegase a túa xogada, polo que non se xogou.",
+		"wrongPhase": "Iso non é posible nesta fase da partida.",
+		"seatTaken": "Ese posto xa está ocupado.",
+		"notYourTurn": "É a quenda do outro xogador.",
+		"abortUnavailable": "A partida xa non se pode anular.",
+		"replayFailed": "Non se puido reproducir esta partida localmente. Recarga a páxina.",
+		"notConnected": "Sen conexión co servidor de partidas.",
+		"engineLoadFailed": "Non se puido cargar o motor de go. Téntao de novo.",
+		"gameLoadFailed": "Non se puido cargar a partida. Téntao de novo.",
+		"seatTakenFirst": "Outra persoa ocupou o posto antes. Esta partida xa está completa."
+	}
+}

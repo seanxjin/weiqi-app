@@ -1,0 +1,116 @@
+{
+	"home": {
+		"pageTitle": "Spil",
+		"location": "SPIL / HJEM",
+		"signedInAs": "Logget ind som {{username}}",
+		"guest": "Spiller som gæst",
+		"logoutError": "Du kunne ikke logges ud. Prøv igen.",
+		"introduction": {
+			"heading": "Noget tekst",
+			"body": "Noget anden tekst"
+		},
+		"menuHeading": "Noget tekst.",
+		"options": {
+			"online": {
+				"label": "Spil online",
+				"description": "Find din modstander. Mød hinanden ved brættet."
+			},
+			"local": {
+				"label": "Spil lokalt",
+				"description": "Ét bræt. To spillere. Del en skærm."
+			},
+			"friend": {
+				"label": "Spil med en ven",
+				"description": "Inviter nogen til et eftertænksomt parti."
+			},
+			"puzzles": {
+				"label": "Løs opgaver",
+				"description": "Små udfordringer. Skarpere instinkter."
+			},
+			"lessons": {
+				"label": "Lektioner",
+				"description": "Fra din første sten til din næste indsigt."
+			},
+			"bots": {
+				"label": "Spil mod bots",
+				"description": "Øv i dit eget tempo, på ethvert niveau."
+			}
+		},
+		"presence_one": "{{count, number}} spiller ved brættet",
+		"presence_other": "{{count, number}} spillere ved brættet",
+		"reserved": {
+			"label": "SEKTION TIL SENERE",
+			"heading": "Reserveret til fremtidigt indhold",
+			"body": "Denne sektion er bevidst tom indtil videre. Den bliver brugt til fremtidige funktioner, opdateringer eller udvalgt indhold."
+		},
+		"footerTagline": "Enkle regler. Uendelige opdagelser."
+	},
+	"materials": {
+		"pageTitle": "Brætter & sten",
+		"breadcrumb": "Baduk / Materialebibliotek",
+		"collection": "Kollektion 01",
+		"heading": "Brætter & sten.",
+		"introduction": "Naturlige materialer. Stille detaljer. Et sted til spillet.",
+		"boardsSection": {
+			"title": "Brætterne",
+			"meta": "Tre træsorter · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Stenene",
+			"meta": "Fire stilarter · sort & hvid"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Materialestudie",
+			"enlarged": "Forstørrede prøver",
+			"heading": "En stille kontrast.",
+			"body": "Fire overflader. Sort og hvid i det samme bløde lys.",
+			"scale": "Forstørrede prøver · ensartet målestok",
+			"form": "Glat, afrundet form / diskret variation i overfladen"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Traditionel japansk kaya",
+				"material": "Varm honning · lige årer"
+			},
+			"walnut": {
+				"name": "Mørk valnød",
+				"material": "Dyb brun · flydende årer"
+			},
+			"ash": {
+				"name": "Lys skandinavisk ask",
+				"material": "Lyst træ · bløde årer"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Poleret",
+				"name": "Skifer",
+				"description": "Glatte, polerede overflader med en rolig mineralsk tekstur.",
+				"black": "Sort skifer",
+				"white": "Hvid skifer"
+			},
+			"satin": {
+				"finish": "Satin",
+				"name": "Keramik",
+				"description": "En diffus glans og en fin, jævn struktur.",
+				"black": "Sort keramik",
+				"white": "Hvid keramik"
+			},
+			"matte": {
+				"finish": "Mat",
+				"name": "Natursten",
+				"description": "Diskrete mineralske pletter under en glat, tør overflade.",
+				"black": "Sort sten",
+				"white": "Hvid sten"
+			},
+			"snow": {
+				"finish": "Poleret",
+				"name": "Muslingeskal · Yuki / Snow-kvalitet",
+				"description": "Fine, tætte årer i skallen på mælkehvid, parret med poleret sort skifer.",
+				"black": "Sort Nachiguro-skifer",
+				"white": "Hvid Yuki-muslingeskal"
+			}
+		},
+		"footerTagline": "Det væsentlige, gennemtænkt."
+	}
+}

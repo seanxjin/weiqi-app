@@ -1,0 +1,29 @@
+{
+	"navigation": "Navigasi Baduk",
+	"drawer": {
+		"open": "Buka navigasi",
+		"close": "Tutup navigasi"
+	},
+	"mainNavigation": "Navigasi utama",
+	"play": "Main",
+	"puzzles": "Teka-teki",
+	"learn": "Belajar",
+	"guide": {
+		"heading": "BARU MENGENAL GO?",
+		"startWithBasics": "Mulai dari dasar"
+	},
+	"account": {
+		"label": "Akun",
+		"friends": "Teman",
+		"messages": "Pesan",
+		"notifications": "Notifikasi",
+		"settings": "Pengaturan",
+		"allSettings": "Semua setelan"
+	},
+	"theme": {
+		"label": "Tema",
+		"system": "Sistem",
+		"light": "Terang",
+		"dark": "Gelap"
+	}
+}

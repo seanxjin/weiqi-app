@@ -1,0 +1,35 @@
+{
+	"server": {
+		"unavailable": "O servidor está indisponível. Tente novamente.",
+		"unreachable": "Não foi possível contactar o servidor. Verifique a sua ligação e tente novamente.",
+		"unexpectedResponse": "O servidor devolveu uma resposta inesperada. Tente novamente.",
+		"requestFailed": "Não foi possível concluir o pedido. Tente novamente."
+	},
+	"rateLimited": {
+		"generic": "Demasiadas tentativas. Aguarde antes de tentar novamente.",
+		"withDelay_one": "Demasiadas tentativas. Aguarde {{count}} segundo antes de tentar novamente.",
+		"withDelay_many": "Demasiadas tentativas. Aguarde {{count}} de segundos antes de tentar novamente.",
+		"withDelay_other": "Demasiadas tentativas. Aguarde {{count}} segundos antes de tentar novamente."
+	},
+	"unknown": "Algo correu mal. Tente novamente.",
+	"api": {
+		"invalidCredentials": "O nome de utilizador, o email ou a palavra-passe estão incorretos.",
+		"twoFactorRequired": "Introduza o código de 6 dígitos do seu autenticador para continuar.",
+		"invalidTwoFactor": "Esse código do autenticador está incorreto. Tente novamente.",
+		"emailUnconfirmed": "Confirme o seu endereço de email antes de iniciar sessão.",
+		"accountClosed": "Esta conta foi encerrada e não pode iniciar sessão.",
+		"usernameTaken": "Esse nome de utilizador já está a ser utilizado. Escolha outro.",
+		"emailTaken": "Esse endereço de email já está a ser utilizado.",
+		"invalidToken": "Esta ligação é inválida ou expirou. Peça um novo email para continuar.",
+		"unauthorized": "A sua sessão de início expirou. Comece novamente.",
+		"conflict": "Não foi possível concluir o registo. Comece novamente.",
+		"forbidden": "Este pedido foi bloqueado. Atualize a página e tente novamente."
+	},
+	"validation": {
+		"passwordTooShort": "Use pelo menos 8 caracteres na palavra-passe.",
+		"newPasswordTooShort": "Use pelo menos 8 caracteres na nova palavra-passe.",
+		"passwordTooLong": "A palavra-passe não pode exceder 72 bytes UTF-8.",
+		"passwordMismatch": "As novas palavras-passe não coincidem.",
+		"passwordUnchanged": "Escolha uma palavra-passe diferente da atual."
+	}
+}

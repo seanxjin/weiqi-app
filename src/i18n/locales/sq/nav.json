@@ -1,0 +1,29 @@
+{
+	"navigation": "Navigimi i Baduk",
+	"drawer": {
+		"open": "Hap navigimin",
+		"close": "Mbyll navigimin"
+	},
+	"mainNavigation": "Navigimi kryesor",
+	"play": "Luaj",
+	"puzzles": "Ushtrime",
+	"learn": "Mëso",
+	"guide": {
+		"heading": "I RI NË GO?",
+		"startWithBasics": "Fillo me bazat"
+	},
+	"account": {
+		"label": "Llogaria",
+		"friends": "Miqtë",
+		"messages": "Mesazhet",
+		"notifications": "Njoftimet",
+		"settings": "Cilësimet",
+		"allSettings": "Të gjitha cilësimet"
+	},
+	"theme": {
+		"label": "Tema",
+		"system": "Sistemi",
+		"light": "E çelët",
+		"dark": "E errët"
+	}
+}

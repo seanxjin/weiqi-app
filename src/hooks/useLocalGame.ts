@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState, useSyncExternalStore } from "react";
 import type { BoardSize } from "weiqi-board";
 import { LocalGameController } from "@/controllers/LocalGameController";
 import { loadEngine } from "@/engine/loadEngine";
+import i18n from "@/i18n";
 
 interface LoadedGame {
 	boardSize: BoardSize;
@@ -30,7 +31,7 @@ export function useLocalGame(boardSize: BoardSize) {
 					setLoaded({
 						boardSize,
 						attempt,
-						error: "The Go engine could not be loaded. Please retry.",
+						error: i18n.t("game:errors.engineLoadFailed"),
 					});
 			}
 		}

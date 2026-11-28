@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "GO",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Forsíða Baduk",
+	"actions": {
+		"save": "Vista",
+		"saving": "Vistar…",
+		"cancel": "Hætta við",
+		"back": "Til baka",
+		"retry": "Reyna aftur",
+		"close": "Loka",
+		"login": "Innskráning",
+		"signIn": "Skrá inn",
+		"signUp": "Nýskrá",
+		"logOut": "Skrá út",
+		"loggingOut": "Skráir út…"
+	},
+	"status": {
+		"saved": "Vistað",
+		"loading": "Hleður…",
+		"checkingSession": "Athugar lotuna þína…",
+		"sessionError": "Ekki tókst að athuga lotuna þína. Reyndu aftur."
+	},
+	"comingSoon": "{{feature}} kemur bráðlega.",
+	"language": "Tungumál",
+	"languageDialog": {
+		"title": "Veldu tungumál",
+		"loadError": "Ekki tókst að hlaða tungumálinu. Reyndu aftur."
+	}
+}

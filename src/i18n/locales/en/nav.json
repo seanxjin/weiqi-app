@@ -1,0 +1,29 @@
+{
+	"navigation": "Baduk navigation",
+	"drawer": {
+		"open": "Open navigation",
+		"close": "Close navigation"
+	},
+	"mainNavigation": "Main navigation",
+	"play": "Play",
+	"puzzles": "Puzzles",
+	"learn": "Learn",
+	"guide": {
+		"heading": "NEW TO GO?",
+		"startWithBasics": "Start with the basics"
+	},
+	"account": {
+		"label": "Account",
+		"friends": "Friends",
+		"messages": "Messages",
+		"notifications": "Notifications",
+		"settings": "Settings",
+		"allSettings": "All settings"
+	},
+	"theme": {
+		"label": "Theme",
+		"system": "System",
+		"light": "Light",
+		"dark": "Dark"
+	}
+}

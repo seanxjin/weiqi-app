@@ -1,0 +1,29 @@
+{
+	"navigation": "Navegació de Baduk",
+	"drawer": {
+		"open": "Obre la navegació",
+		"close": "Tanca la navegació"
+	},
+	"mainNavigation": "Navegació principal",
+	"play": "Juga",
+	"puzzles": "Problemes",
+	"learn": "Aprèn",
+	"guide": {
+		"heading": "ETS NOU AL GO?",
+		"startWithBasics": "Comença pels conceptes bàsics"
+	},
+	"account": {
+		"label": "Compte",
+		"friends": "Amics",
+		"messages": "Missatges",
+		"notifications": "Notificacions",
+		"settings": "Configuració",
+		"allSettings": "Tota la configuració"
+	},
+	"theme": {
+		"label": "Tema",
+		"system": "Sistema",
+		"light": "Clar",
+		"dark": "Fosc"
+	}
+}

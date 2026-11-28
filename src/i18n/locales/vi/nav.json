@@ -1,0 +1,29 @@
+{
+	"navigation": "Điều hướng Baduk",
+	"drawer": {
+		"open": "Mở điều hướng",
+		"close": "Đóng điều hướng"
+	},
+	"mainNavigation": "Điều hướng chính",
+	"play": "Chơi",
+	"puzzles": "Bài tập",
+	"learn": "Học",
+	"guide": {
+		"heading": "MỚI CHƠI CỜ VÂY?",
+		"startWithBasics": "Bắt đầu từ những điều cơ bản"
+	},
+	"account": {
+		"label": "Tài khoản",
+		"friends": "Bạn bè",
+		"messages": "Tin nhắn",
+		"notifications": "Thông báo",
+		"settings": "Cài đặt",
+		"allSettings": "Tất cả cài đặt"
+	},
+	"theme": {
+		"label": "Giao diện",
+		"system": "Hệ thống",
+		"light": "Sáng",
+		"dark": "Tối"
+	}
+}

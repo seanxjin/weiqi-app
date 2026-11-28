@@ -1,0 +1,18 @@
+{
+	"editProfile": "עריכת פרופיל",
+	"meta": {
+		"joined": "הצטרף",
+		"rank": "דרגה",
+		"noRank": "—",
+		"followers": "עוקבים",
+		"following": "במעקב"
+	},
+	"about": {
+		"heading": "אודות",
+		"noBio": "אין ביוגרפיה עדיין."
+	},
+	"games": {
+		"heading": "היסטוריית משחקים",
+		"empty": "אין משחקים עדיין."
+	}
+}

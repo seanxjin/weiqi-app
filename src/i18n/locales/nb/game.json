@@ -1,0 +1,134 @@
+{
+	"colors": {
+		"black": "Svart",
+		"white": "Hvit"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Pass",
+	"localPage": {
+		"title": "Lokalt spill",
+		"eyebrow": "VENNSKAPELIG PARTI",
+		"heading": "Et øyeblikk for spillet.",
+		"details": "{{size}} × {{size}} · Japanske regler"
+	},
+	"onlinePage": {
+		"title": "Spill på nett",
+		"eyebrow": "NETTPARTI",
+		"heading": "Et øyeblikk for spillet.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Laster inn parti …",
+		"notFound": "Dette partiet finnes ikke eller er ikke lenger tilgjengelig.",
+		"startNew": "Start et nytt nettparti",
+		"invited": "Du er invitert til et {{size}} × {{size}}-parti.",
+		"joining": "Blir med …",
+		"joinAs": "Bli med som {{color}}",
+		"full": "Dette partiet er fullt. Det er ikke mulig å se på partier ennå."
+	},
+	"local": {
+		"label": "Lokalt Go-parti",
+		"loadingEngine": "Laster inn Go-motor …"
+	},
+	"online": {
+		"label": "Go-parti på nett",
+		"youAre": "Du er {{color}}",
+		"connection": {
+			"connecting": "Kobler til …",
+			"open": "Tilkoblet",
+			"reconnecting": "Kobler til på nytt …",
+			"closed": "Frakoblet"
+		},
+		"invite": {
+			"label": "Inviter en venn med denne lenken",
+			"copy": "Kopier",
+			"copied": "Kopiert"
+		},
+		"awaitingScoring": "Begge spillerne har passet. Telling støttes ikke ennå, så avbryt for å registrere partiet uten poeng.",
+		"confirmResign": "Bekreft oppgivelse",
+		"resign": "Gi opp",
+		"abort": "Avbryt",
+		"results": {
+			"youWin": "Du vant · {{color}} ga opp",
+			"winsByResignation": "{{color}} vinner ved oppgivelse",
+			"aborted": "Partiet ble avbrutt av {{color}}",
+			"unscored": "Partiet endte uten poengsum"
+		}
+	},
+	"turn": {
+		"preparing": "Klargjør brettet",
+		"reviewing": "Gjennomgang · Gå tilbake til Nåværende for å spille",
+		"toPlay": "{{color}} i trekket",
+		"yourMove": "Ditt trekk",
+		"waitingForOpponent": "Venter på en motstander",
+		"awaitingScoring": "Spillet er over · Telling støttes ikke ennå",
+		"gameOver": "Partiet er over",
+		"sendingMove": "Sender trekk …",
+		"waitingForConnection": "Venter på tilkobling"
+	},
+	"boardFooter": {
+		"lastMove": "Siste trekk: {{color}} {{move}}",
+		"startingPosition": "Startposisjon"
+	},
+	"players": {
+		"label": "Spillere",
+		"captured": "Fanget {{count}}",
+		"you": "{{name}} (deg)",
+		"waiting": "{{name}} · venter på en spiller"
+	},
+	"history": {
+		"label": "Trekkhistorikk",
+		"heading": "Trekk",
+		"moveCount_one": "{{count}} TREKK",
+		"moveCount_other": "{{count}} TREKK",
+		"tableLabel": "Svarts og hvits trekk",
+		"pair": "Par",
+		"move": "Trekk {{number}}, {{color}}, {{move}}",
+		"pendingMove": "Trekk {{number}}, {{color}}, {{move}}, sendes",
+		"empty": "Ingen trekk ennå.",
+		"position": "Trekk {{viewed}} av {{latest}}",
+		"currentPosition": "NÅVÆRENDE STILLING",
+		"reviewing": "GJENNOMGANG",
+		"navigationLabel": "Navigering i trekkhistorikken",
+		"navigation": {
+			"start": "Start",
+			"previous": "Forrige",
+			"next": "Neste",
+			"current": "Nåværende"
+		},
+		"undo": "Angre siste trekk",
+		"encouragement": "Ta deg tid. Hvert trekk teller.",
+		"keyboardHint": "Bruk ← → for å bla gjennom trekkene, ↑ ↓ for start og nåværende."
+	},
+	"board": {
+		"sceneLabel": "Et {{size}} x {{size}} Go-brett som viser en sekvens på {{moveCount}} åpningstrekk",
+		"themedBoard": "Go-brett i {{theme}}",
+		"emptyBoard": "Tomt {{size}} x {{size}} baduk-brett i {{theme}}",
+		"stone": "{{finish}} {{color}} baduk-stein",
+		"textureError": "Brettets tekstur kunne ikke lastes inn.",
+		"pauseAnimations": "Sett animasjoner på pause",
+		"resumeAnimations": "Gjenoppta animasjoner",
+		"pause": "PAUSE",
+		"resume": "FORTSETT"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Velg et skjæringspunkt på brettet.",
+			"occupied": "Det punktet er opptatt.",
+			"wrongPlayer": "Det er den andre spillerens tur.",
+			"suicide": "Selvmord er ikke tillatt.",
+			"ko": "Det trekket er forbudt på grunn av ko.",
+			"superko": "Det trekket gjentar en tidligere stilling.",
+			"gameEnded": "Dette partiet kan ikke ta imot flere trekk."
+		},
+		"serverRejectedMove": "Serveren avviste trekket. {{reason}}",
+		"staleRevision": "Partiet endret seg før trekket ditt kom fram, så det ble ikke spilt.",
+		"wrongPhase": "Det er ikke mulig på dette stadiet av partiet.",
+		"seatTaken": "Den plassen er allerede tatt.",
+		"notYourTurn": "Det er den andre spillerens tur.",
+		"abortUnavailable": "Partiet kan ikke lenger avbrytes.",
+		"replayFailed": "Partiet kunne ikke spilles av lokalt. Last inn siden på nytt.",
+		"notConnected": "Ikke koblet til spillserveren.",
+		"engineLoadFailed": "Go-motoren kunne ikke lastes inn. Prøv igjen.",
+		"gameLoadFailed": "Partiet kunne ikke lastes inn. Prøv igjen.",
+		"seatTakenFirst": "Noen andre tok plassen først. Partiet er nå fullt."
+	}
+}

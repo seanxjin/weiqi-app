@@ -1,0 +1,211 @@
+{
+	"header": {
+		"title": "Definições",
+		"sectionTitle": "Definições de {{section}}",
+		"navLabel": "Secções das definições"
+	},
+	"sections": {
+		"board": "Tabuleiro e pedras",
+		"gameplay": "Jogo",
+		"profile": "Perfil",
+		"social": "Social e privacidade",
+		"account": "Conta e segurança",
+		"language": "Idioma e hora"
+	},
+	"board": {
+		"description": "Escolha o tabuleiro e as pedras com que joga.",
+		"appearance": {
+			"title": "Aspeto",
+			"boardLegend": "Tabuleiro",
+			"stonesLegend": "Pedras",
+			"previewLabel": "Pré-visualização do tabuleiro"
+		},
+		"themes": {
+			"kaya": "Kaya japonesa tradicional",
+			"walnut": "Nogueira escura",
+			"ash": "Freixo escandinavo claro"
+		},
+		"stoneStyles": {
+			"polished": "Ardósia",
+			"satin": "Cerâmica",
+			"matte": "Pedra natural",
+			"snow": "Concha · Yuki / Snow Grade"
+		},
+		"display": {
+			"title": "Apresentação do tabuleiro",
+			"coordinates": {
+				"label": "Mostrar coordenadas do tabuleiro",
+				"description": "Identifica as colunas e as linhas à volta do tabuleiro."
+			},
+			"lastMove": {
+				"label": "Destacar a última jogada",
+				"description": "Assinala a pedra jogada mais recentemente."
+			}
+		},
+		"sounds": {
+			"title": "Sons",
+			"playSounds": {
+				"label": "Reproduzir sons",
+				"description": "Colocação de pedras, capturas e avisos do relógio."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Gira a forma como coloca as pedras e quem o pode desafiar.",
+		"moves": {
+			"title": "Fazer jogadas",
+			"description": "Pede um segundo clique antes de colocar uma pedra, para evitar cliques acidentais.",
+			"legend": "Confirmar jogadas",
+			"options": {
+				"never": "Nunca",
+				"correspondence": "Apenas em partidas por correspondência",
+				"always": "Sempre"
+			}
+		},
+		"challenges": {
+			"title": "Desafios",
+			"description": "Escolha quem lhe pode enviar desafios para partidas.",
+			"legend": "Permitir desafios de",
+			"options": {
+				"everyone": "Todos",
+				"registered": "Jogadores registados",
+				"following": "Apenas jogadores que sigo",
+				"nobody": "Ninguém (as desforras continuam permitidas)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Tudo o que está aqui é visível no seu <profileLink>perfil público</profileLink>.",
+		"publicProfile": {
+			"title": "Perfil público",
+			"bioLabel": "Biografia breve",
+			"bioPlaceholder": "A sua biografia breve aparecerá no seu perfil.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Detalhes",
+			"joinDate": "Data de adesão",
+			"username": "Nome de utilizador",
+			"changeUsername": "Alterar",
+			"changeUsernameFeature": "A alteração do nome de utilizador",
+			"realName": "Nome real",
+			"location": "Localização",
+			"country": "País",
+			"countryNotSet": "Não definido",
+			"rank": "Nível",
+			"rankPlaceholder": "p. ex. 12k, 3d",
+			"rankHint": "Use 30k–1k, 1d–9d ou 1p–9p."
+		},
+		"links": {
+			"legend": "Ligações",
+			"linkLabel": "Ligação {{number}}",
+			"remove": "Remover",
+			"removeLabel": "Remover ligação {{number}}",
+			"add": "Adicionar ligação"
+		}
+	},
+	"social": {
+		"description": "Gira os jogadores que segue e os jogadores que bloqueou.",
+		"blocking": {
+			"title": "Bloqueios",
+			"description_one": "Está a bloquear {{count}} jogador. Os jogadores bloqueados não o podem desafiar nem enviar-lhe mensagens.",
+			"description_many": "Está a bloquear {{count}} de jogadores. Os jogadores bloqueados não o podem desafiar nem enviar-lhe mensagens.",
+			"description_other": "Está a bloquear {{count}} jogadores. Os jogadores bloqueados não o podem desafiar nem enviar-lhe mensagens.",
+			"empty": "Não está a bloquear ninguém.",
+			"action": "Desbloquear",
+			"actionLabel": "Desbloquear {{username}}"
+		},
+		"following": {
+			"title": "A seguir",
+			"description_one": "Segue {{count}} jogador.",
+			"description_many": "Segue {{count}} de jogadores.",
+			"description_other": "Segue {{count}} jogadores.",
+			"empty": "Ainda não segue ninguém.",
+			"action": "Deixar de seguir",
+			"actionLabel": "Deixar de seguir {{username}}"
+		}
+	},
+	"account": {
+		"description": "Altere a palavra-passe, proteja a sua conta e gira as contas ligadas.",
+		"password": {
+			"title": "Alterar palavra-passe",
+			"updated": "Palavra-passe atualizada",
+			"fields": {
+				"currentPassword": {
+					"label": "Palavra-passe atual",
+					"show": "Mostrar palavra-passe atual",
+					"hide": "Ocultar palavra-passe atual"
+				},
+				"newPassword": {
+					"label": "Nova palavra-passe",
+					"show": "Mostrar nova palavra-passe",
+					"hide": "Ocultar nova palavra-passe"
+				},
+				"confirmPassword": {
+					"label": "Repetir palavra-passe",
+					"show": "Mostrar palavra-passe repetida",
+					"hide": "Ocultar palavra-passe repetida"
+				}
+			}
+		},
+		"contact": {
+			"title": "Informações de contacto",
+			"email": "Endereço de email",
+			"edit": "Editar",
+			"editFeature": "A alteração do email"
+		},
+		"twoFactor": {
+			"title": "Autenticação de dois fatores",
+			"description": "Pede um código de uma aplicação de autenticação ao iniciar sessão.",
+			"off": "Desativada",
+			"enable": "Ativar",
+			"feature": "A autenticação de dois fatores"
+		},
+		"sessions": {
+			"title": "Sessões ativas",
+			"description": "Se suspeitar que a sua conta foi comprometida, altere a palavra-passe e termine sessão em todo o lado.",
+			"thisDevice": "Este dispositivo",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "Terminar sessão em {{device}}",
+			"logOutAll": "Terminar sessão em todos os outros dispositivos"
+		},
+		"connections": {
+			"title": "Contas ligadas",
+			"description": "Inicie sessão no Baduk com estas contas.",
+			"connectedTo": "Ligada a {{provider}}",
+			"connect": "Ligar",
+			"disconnect": "Desligar",
+			"note": "Desligar remove a ligação no Baduk. Poderá ainda ter de revogar o acesso no outro site."
+		},
+		"close": {
+			"title": "Encerrar a sua conta",
+			"description": "Encerrar a conta oculta o seu perfil e termina a sessão em todo o lado.",
+			"button": "Encerrar conta",
+			"dialogTitle": "Encerrar a sua conta?",
+			"dialogDescription": "Pode reabri-la mais tarde a partir da página de início de sessão.",
+			"feature": "O encerramento da conta"
+		}
+	},
+	"languageTime": {
+		"title": "Idioma e hora",
+		"description": "Escolha o idioma do Baduk e a forma como as datas e horas são apresentadas.",
+		"language": {
+			"title": "Idioma",
+			"description": "As alterações aplicam-se de imediato em todas as páginas.",
+			"legend": "Idioma de apresentação"
+		},
+		"time": {
+			"title": "Hora",
+			"description": "Usada em datas e horas como a data de adesão e a atividade das sessões.",
+			"timeZone": "Fuso horário",
+			"automaticTimeZone": "Automático ({{timeZone}})",
+			"timeFormat": "Relógio",
+			"formats": {
+				"auto": "Automático ({{example}})",
+				"12h": "12 horas ({{example}})",
+				"24h": "24 horas ({{example}})"
+			},
+			"preview": "Pré-visualização"
+		}
+	}
+}

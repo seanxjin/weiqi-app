@@ -1,0 +1,18 @@
+{
+	"editProfile": "Redakto profilin",
+	"meta": {
+		"joined": "Anëtarësuar",
+		"rank": "Grada",
+		"noRank": "—",
+		"followers": "Ndjekësit",
+		"following": "Ndjek"
+	},
+	"about": {
+		"heading": "Rreth",
+		"noBio": "Ende pa bio."
+	},
+	"games": {
+		"heading": "Historiku i lojërave",
+		"empty": "Ende pa lojëra."
+	}
+}

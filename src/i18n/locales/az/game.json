@@ -1,0 +1,134 @@
+{
+	"colors": {
+		"black": "Qara",
+		"white": "Ağ"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Pas",
+	"localPage": {
+		"title": "Lokal oyun",
+		"eyebrow": "YOLDAŞLIQ OYUNU",
+		"heading": "Oyun üçün bir an.",
+		"details": "{{size}} × {{size}} · Yapon qaydaları"
+	},
+	"onlinePage": {
+		"title": "Onlayn oyun",
+		"eyebrow": "ONLAYN OYUN",
+		"heading": "Oyun üçün bir an.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Oyun yüklənir…",
+		"notFound": "Bu oyun mövcud deyil və ya artıq əlçatan deyil.",
+		"startNew": "Yeni onlayn oyuna başla",
+		"invited": "Siz {{size}} × {{size}} oyununa dəvət olunmusunuz.",
+		"joining": "Qoşulur…",
+		"joinAs": "{{color}} kimi qoşul",
+		"full": "Bu oyun doludur. Oyunlara baxmaq hələ mümkün deyil."
+	},
+	"local": {
+		"label": "Lokal Qo oyunu",
+		"loadingEngine": "Qo mühərriki yüklənir…"
+	},
+	"online": {
+		"label": "Onlayn Qo oyunu",
+		"youAre": "Rənginiz: {{color}}",
+		"connection": {
+			"connecting": "Qoşulur…",
+			"open": "Qoşulub",
+			"reconnecting": "Yenidən qoşulur…",
+			"closed": "Bağlantı kəsildi"
+		},
+		"invite": {
+			"label": "Bu linklə dostunuzu dəvət edin",
+			"copy": "Kopyala",
+			"copied": "Kopyalandı"
+		},
+		"awaitingScoring": "Hər iki oyunçu pas verdi. Xal hesablanması hələ dəstəklənmir, ona görə oyunu xalsız qeyd etmək üçün dayandırın.",
+		"confirmResign": "Təslim olmağı təsdiqlə",
+		"resign": "Təslim ol",
+		"abort": "Dayandır",
+		"results": {
+			"youWin": "Siz qalib gəldiniz · {{color}} təslim oldu",
+			"winsByResignation": "{{color}} rəqibin təslim olması ilə qalib gəldi",
+			"aborted": "Oyun {{color}} tərəfindən dayandırıldı",
+			"unscored": "Oyun xalsız başa çatdı"
+		}
+	},
+	"turn": {
+		"preparing": "Lövhə hazırlanır",
+		"reviewing": "Baxış · Oynamaq üçün Cari mövqeyə qayıdın",
+		"toPlay": "Növbə: {{color}}",
+		"yourMove": "Sizin gedişiniz",
+		"waitingForOpponent": "Rəqib gözlənilir",
+		"awaitingScoring": "Oyun bitdi · Xal hesablanması hələ dəstəklənmir",
+		"gameOver": "Oyun bitdi",
+		"sendingMove": "Gediş göndərilir…",
+		"waitingForConnection": "Bağlantı gözlənilir"
+	},
+	"boardFooter": {
+		"lastMove": "Son gediş: {{color}} {{move}}",
+		"startingPosition": "Başlanğıc mövqe"
+	},
+	"players": {
+		"label": "Oyunçular",
+		"captured": "Əsir: {{count}}",
+		"you": "{{name}} (siz)",
+		"waiting": "{{name}} · oyunçu gözlənilir"
+	},
+	"history": {
+		"label": "Gedişlər tarixçəsi",
+		"heading": "Gedişlər",
+		"moveCount_one": "{{count}} GEDİŞ",
+		"moveCount_other": "{{count}} GEDİŞ",
+		"tableLabel": "Qara və Ağın gedişləri",
+		"pair": "Cüt",
+		"move": "Gediş {{number}}, {{color}}, {{move}}",
+		"pendingMove": "Gediş {{number}}, {{color}}, {{move}}, göndərilir",
+		"empty": "Hələ gediş yoxdur.",
+		"position": "Gediş {{viewed}} / {{latest}}",
+		"currentPosition": "CARİ MÖVQE",
+		"reviewing": "BAXIŞ",
+		"navigationLabel": "Gedişlər tarixçəsində naviqasiya",
+		"navigation": {
+			"start": "Başlanğıc",
+			"previous": "Əvvəlki",
+			"next": "Növbəti",
+			"current": "Cari"
+		},
+		"undo": "Son gedişi geri al",
+		"encouragement": "Tələsməyin. Hər gediş önəmlidir.",
+		"keyboardHint": "Gedişlər arasında keçmək üçün ← →, başlanğıc və cari mövqe üçün ↑ ↓ istifadə edin."
+	},
+	"board": {
+		"sceneLabel": "{{moveCount}} açılış gedişindən ibarət ardıcıllığı göstərən {{size}} × {{size}} Qo lövhəsi",
+		"themedBoard": "{{theme}} Qo lövhəsi",
+		"emptyBoard": "Boş {{size}} × {{size}} {{theme}} baduk lövhəsi",
+		"stone": "{{finish}} {{color}} baduk daşı",
+		"textureError": "Lövhə teksturunu yükləmək mümkün olmadı.",
+		"pauseAnimations": "Animasiyaları dayandır",
+		"resumeAnimations": "Animasiyaları davam etdir",
+		"pause": "PAUZA",
+		"resume": "DAVAM"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Lövhədə kəsişmə nöqtəsi seçin.",
+			"occupied": "Bu nöqtə artıq tutulub.",
+			"wrongPlayer": "İndi digər oyunçunun növbəsidir.",
+			"suicide": "İntihar gedişinə icazə verilmir.",
+			"ko": "Bu gediş ko qaydası ilə qadağandır.",
+			"superko": "Bu gediş əvvəlki mövqeni təkrarlayır.",
+			"gameEnded": "Bu oyunda daha gediş etmək olmaz."
+		},
+		"serverRejectedMove": "Server gedişi rədd etdi. {{reason}}",
+		"staleRevision": "Gedişiniz çatmazdan əvvəl oyun dəyişdi, ona görə gediş edilmədi.",
+		"wrongPhase": "Oyunun bu mərhələsində bu mümkün deyil.",
+		"seatTaken": "Bu yer artıq tutulub.",
+		"notYourTurn": "İndi digər oyunçunun növbəsidir.",
+		"abortUnavailable": "Oyunu artıq dayandırmaq mümkün deyil.",
+		"replayFailed": "Bu oyunu lokal olaraq yenidən oynatmaq mümkün olmadı. Səhifəni yeniləyin.",
+		"notConnected": "Oyun serverinə qoşulmayıb.",
+		"engineLoadFailed": "Qo mühərrikini yükləmək mümkün olmadı. Yenidən cəhd edin.",
+		"gameLoadFailed": "Oyunu yükləmək mümkün olmadı. Yenidən cəhd edin.",
+		"seatTakenFirst": "Yeri başqası daha tez tutdu. Bu oyun artıq doludur."
+	}
+}

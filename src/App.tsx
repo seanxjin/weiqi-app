@@ -17,6 +17,7 @@ import ProfilePage from "@/pages/profile/ProfilePage";
 import AccountSettingsPage from "@/pages/settings/AccountSettingsPage";
 import BoardSettingsPage from "@/pages/settings/BoardSettingsPage";
 import GameplaySettingsPage from "@/pages/settings/GameplaySettingsPage";
+import LanguageTimeSettingsPage from "@/pages/settings/LanguageTimeSettingsPage";
 import ProfileSettingsPage from "@/pages/settings/ProfileSettingsPage";
 import SettingsLayout from "@/layouts/SettingsLayout";
 import SocialSettingsPage from "@/pages/settings/SocialSettingsPage";
@@ -51,6 +52,7 @@ export default function App() {
 					<Route path="profile" element={<ProfileSettingsPage />} />
 					<Route path="social" element={<SocialSettingsPage />} />
 					<Route path="account" element={<AccountSettingsPage />} />
+					<Route path="language" element={<LanguageTimeSettingsPage />} />
 				</Route>
 			</Route>
 			<Route path="*" element={<WelcomePage />} />

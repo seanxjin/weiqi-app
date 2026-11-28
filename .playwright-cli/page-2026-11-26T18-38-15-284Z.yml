@@ -1,0 +1,83 @@
+- generic [ref=f3e3]:
+  - complementary "Baduk navigation" [ref=f3e4]:
+    - generic [ref=f3e5]:
+      - link "Baduk home" [ref=f3e6] [cursor=pointer]:
+        - /url: /
+        - generic [aria-hidden] [ref=f3e7]:
+          - img [ref=f3e9]: Polished white slate baduk stone
+          - img [ref=f3e11]: Polished black slate baduk stone
+        - generic [ref=f3e12]: BADUK
+      - navigation "Main navigation" [ref=f3e13]:
+        - link "Play" [ref=f3e14] [cursor=pointer]:
+          - /url: /play
+        - button "Puzzles" [ref=f3e16] [cursor=pointer]
+        - button "Learn" [ref=f3e18] [cursor=pointer]
+    - generic [ref=f3e21]:
+      - paragraph [ref=f3e22]: NEW TO GO?
+      - button "Start with the basics" [ref=f3e23] [cursor=pointer]
+  - main "Local game setup" [ref=f3e25]:
+    - link "Back to menu" [ref=f3e26] [cursor=pointer]:
+      - /url: /play
+    - generic [ref=f3e27]:
+      - generic [ref=f3e28]:
+        - generic [ref=f3e29]: Player 2
+        - figure "A 19 by 19 Go board showing a sequence of 22 opening moves" [ref=f3e32]:
+          - generic [ref=f3e33]:
+            - img "Dark walnut Go board" [ref=f3e35]
+            - generic [aria-hidden]:
+              - generic:
+                - img: Polished black nachiguro slate baduk stone
+              - generic:
+                - img: Polished white yuki clamshell baduk stone
+              - generic:
+                - img: Polished black nachiguro slate baduk stone
+              - generic:
+                - img: Polished white yuki clamshell baduk stone
+              - generic:
+                - img: Polished black nachiguro slate baduk stone
+              - generic:
+                - img: Polished white yuki clamshell baduk stone
+              - generic:
+                - img: Polished black nachiguro slate baduk stone
+              - generic:
+                - img: Polished white yuki clamshell baduk stone
+              - generic:
+                - img: Polished black nachiguro slate baduk stone
+              - generic:
+                - img: Polished white yuki clamshell baduk stone
+              - generic:
+                - img: Polished black nachiguro slate baduk stone
+              - generic:
+                - img: Polished white yuki clamshell baduk stone
+              - generic:
+                - img: Polished black nachiguro slate baduk stone
+              - generic:
+                - img: Polished white yuki clamshell baduk stone
+              - generic:
+                - img: Polished black nachiguro slate baduk stone
+              - generic:
+                - img: Polished white yuki clamshell baduk stone
+              - generic:
+                - img: Polished black nachiguro slate baduk stone
+              - generic:
+                - img: Polished white yuki clamshell baduk stone
+              - generic:
+                - img: Polished black nachiguro slate baduk stone
+              - generic:
+                - img: Polished white yuki clamshell baduk stone
+              - generic:
+                - img: Polished black nachiguro slate baduk stone
+              - generic:
+                - img: Polished white yuki clamshell baduk stone
+        - generic [ref=f3e36]: Player 1
+      - region "Game settings" [ref=f3e39]:
+        - generic [ref=f3e40]:
+          - button "CONFIGURATIONS 19 × 19 · Absolute · 10 min" [ref=f3e41] [cursor=pointer]:
+            - generic [ref=f3e42]:
+              - generic [ref=f3e43]: CONFIGURATIONS
+              - generic [ref=f3e44]: 19 × 19 · Absolute · 10 min
+            - generic [aria-hidden] [ref=f3e45]: ↓
+          - paragraph [ref=f3e46]: Time limits aren’t enforced yet.
+        - button "Start Game" [ref=f3e47] [cursor=pointer]
+        - status
+  - status

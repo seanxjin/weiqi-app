@@ -1,0 +1,18 @@
+{
+	"editProfile": "プロフィールを編集",
+	"meta": {
+		"joined": "登録日",
+		"rank": "段級位",
+		"noRank": "—",
+		"followers": "フォロワー",
+		"following": "フォロー中"
+	},
+	"about": {
+		"heading": "自己紹介",
+		"noBio": "自己紹介はまだありません。"
+	},
+	"games": {
+		"heading": "対局履歴",
+		"empty": "まだ対局がありません。"
+	}
+}

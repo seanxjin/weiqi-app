@@ -1,0 +1,209 @@
+{
+	"header": {
+		"title": "Asetukset",
+		"sectionTitle": "{{section}}: asetukset",
+		"navLabel": "Asetusosiot"
+	},
+	"sections": {
+		"board": "Lauta ja kivet",
+		"gameplay": "Pelaaminen",
+		"profile": "Profiili",
+		"social": "Yhteisö ja yksityisyys",
+		"account": "Tili ja turvallisuus",
+		"language": "Kieli ja aika"
+	},
+	"board": {
+		"description": "Valitse lauta ja kivet, joilla pelaat.",
+		"appearance": {
+			"title": "Ulkoasu",
+			"boardLegend": "Lauta",
+			"stonesLegend": "Kivet",
+			"previewLabel": "Laudan esikatselu"
+		},
+		"themes": {
+			"kaya": "Perinteinen japanilainen kaya",
+			"walnut": "Tumma pähkinäpuu",
+			"ash": "Vaalea skandinaavinen saarni"
+		},
+		"stoneStyles": {
+			"polished": "Liuskekivi",
+			"satin": "Keramiikka",
+			"matte": "Luonnonkivi",
+			"snow": "Simpukankuori · Yuki / Snow-laatu"
+		},
+		"display": {
+			"title": "Laudan näyttö",
+			"coordinates": {
+				"label": "Näytä laudan koordinaatit",
+				"description": "Merkitse sarakkeet ja rivit laudan reunoille."
+			},
+			"lastMove": {
+				"label": "Korosta viimeisin siirto",
+				"description": "Merkitse viimeksi pelattu kivi."
+			}
+		},
+		"sounds": {
+			"title": "Äänet",
+			"playSounds": {
+				"label": "Toista äänet",
+				"description": "Kivien asettaminen, vangitsemiset ja kellovaroitukset."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Hallitse, miten asetat kiviä ja kuka voi haastaa sinut.",
+		"moves": {
+			"title": "Siirtojen tekeminen",
+			"description": "Vaadi toinen napsautus ennen kiven asettamista virheklikkausten välttämiseksi.",
+			"legend": "Vahvista siirrot",
+			"options": {
+				"never": "Ei koskaan",
+				"correspondence": "Vain kirjepeleissä",
+				"always": "Aina"
+			}
+		},
+		"challenges": {
+			"title": "Haasteet",
+			"description": "Valitse, kuka voi lähettää sinulle pelihaasteita.",
+			"legend": "Salli haasteet",
+			"options": {
+				"everyone": "Kaikilta",
+				"registered": "Rekisteröityneiltä pelaajilta",
+				"following": "Vain seuraamiltani pelaajilta",
+				"nobody": "Ei keneltäkään (uusintapelit ovat yhä sallittuja)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Kaikki täällä näkyy <profileLink>julkisessa profiilissasi</profileLink>.",
+		"publicProfile": {
+			"title": "Julkinen profiili",
+			"bioLabel": "Lyhyt esittely",
+			"bioPlaceholder": "Lyhyt esittelysi näkyy profiilissasi.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Tiedot",
+			"joinDate": "Liittymispäivä",
+			"username": "Käyttäjänimi",
+			"changeUsername": "Vaihda",
+			"changeUsernameFeature": "Käyttäjänimen vaihtaminen",
+			"realName": "Oikea nimi",
+			"location": "Sijainti",
+			"country": "Maa",
+			"countryNotSet": "Ei asetettu",
+			"rank": "Taso",
+			"rankPlaceholder": "esim. 12k, 3d",
+			"rankHint": "Käytä muotoa 30k–1k, 1d–9d tai 1p–9p."
+		},
+		"links": {
+			"legend": "Linkit",
+			"linkLabel": "Linkki {{number}}",
+			"remove": "Poista",
+			"removeLabel": "Poista linkki {{number}}",
+			"add": "Lisää linkki"
+		}
+	},
+	"social": {
+		"description": "Hallitse seuraamiasi ja estämiäsi pelaajia.",
+		"blocking": {
+			"title": "Estetyt",
+			"description_one": "Olet estänyt {{count}} pelaajan. Estetyt pelaajat eivät voi haastaa sinua tai lähettää sinulle viestejä.",
+			"description_other": "Olet estänyt {{count}} pelaajaa. Estetyt pelaajat eivät voi haastaa sinua tai lähettää sinulle viestejä.",
+			"empty": "Et ole estänyt ketään.",
+			"action": "Poista esto",
+			"actionLabel": "Poista käyttäjän {{username}} esto"
+		},
+		"following": {
+			"title": "Seuratut",
+			"description_one": "Seuraat {{count}} pelaajaa.",
+			"description_other": "Seuraat {{count}} pelaajaa.",
+			"empty": "Et seuraa vielä ketään.",
+			"action": "Lopeta seuraaminen",
+			"actionLabel": "Lopeta käyttäjän {{username}} seuraaminen"
+		}
+	},
+	"account": {
+		"description": "Vaihda salasanasi, suojaa tilisi ja hallitse yhdistettyjä tilejä.",
+		"password": {
+			"title": "Vaihda salasana",
+			"updated": "Salasana päivitetty",
+			"fields": {
+				"currentPassword": {
+					"label": "Nykyinen salasana",
+					"show": "Näytä nykyinen salasana",
+					"hide": "Piilota nykyinen salasana"
+				},
+				"newPassword": {
+					"label": "Uusi salasana",
+					"show": "Näytä uusi salasana",
+					"hide": "Piilota uusi salasana"
+				},
+				"confirmPassword": {
+					"label": "Kirjoita salasana uudelleen",
+					"show": "Näytä toistettu salasana",
+					"hide": "Piilota toistettu salasana"
+				}
+			}
+		},
+		"contact": {
+			"title": "Yhteystiedot",
+			"email": "Sähköpostiosoite",
+			"edit": "Muokkaa",
+			"editFeature": "Sähköpostin vaihtaminen"
+		},
+		"twoFactor": {
+			"title": "Kaksivaiheinen tunnistautuminen",
+			"description": "Vaadi kirjautuessa koodi todennussovelluksesta.",
+			"off": "Pois",
+			"enable": "Ota käyttöön",
+			"feature": "Kaksivaiheinen tunnistautuminen"
+		},
+		"sessions": {
+			"title": "Aktiiviset istunnot",
+			"description": "Jos epäilet, että tilisi on vaarantunut, vaihda salasanasi ja kirjaudu ulos kaikkialta.",
+			"thisDevice": "Tämä laite",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "Kirjaa ulos: {{device}}",
+			"logOutAll": "Kirjaudu ulos kaikilta muilta laitteilta"
+		},
+		"connections": {
+			"title": "Yhdistetyt tilit",
+			"description": "Kirjaudu Badukiin näillä tileillä.",
+			"connectedTo": "Yhdistetty: {{provider}}",
+			"connect": "Yhdistä",
+			"disconnect": "Katkaise yhteys",
+			"note": "Yhteyden katkaiseminen poistaa linkityksen Badukista. Sinun on ehkä silti peruttava käyttöoikeus toisella sivustolla."
+		},
+		"close": {
+			"title": "Sulje tilisi",
+			"description": "Tilin sulkeminen piilottaa profiilisi ja kirjaa sinut ulos kaikkialta.",
+			"button": "Sulje tili",
+			"dialogTitle": "Suljetaanko tilisi?",
+			"dialogDescription": "Voit avata sen myöhemmin uudelleen kirjautumissivulta.",
+			"feature": "Tilin sulkeminen"
+		}
+	},
+	"languageTime": {
+		"title": "Kieli ja aika",
+		"description": "Valitse Badukin kieli sekä päivämäärien ja kellonaikojen esitystapa.",
+		"language": {
+			"title": "Kieli",
+			"description": "Muutokset tulevat voimaan heti kaikilla sivuilla.",
+			"legend": "Näyttökieli"
+		},
+		"time": {
+			"title": "Aika",
+			"description": "Käytetään aikaleimoissa, kuten liittymispäivissä ja istuntojen toiminnassa.",
+			"timeZone": "Aikavyöhyke",
+			"automaticTimeZone": "Automaattinen ({{timeZone}})",
+			"timeFormat": "Kello",
+			"formats": {
+				"auto": "Automaattinen ({{example}})",
+				"12h": "12 tunnin ({{example}})",
+				"24h": "24 tunnin ({{example}})"
+			},
+			"preview": "Esikatselu"
+		}
+	}
+}

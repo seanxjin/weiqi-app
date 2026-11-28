@@ -1,0 +1,134 @@
+{
+	"colors": {
+		"black": "Svartur",
+		"white": "Hvítur"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Pass",
+	"localPage": {
+		"title": "Staðbundinn leikur",
+		"eyebrow": "VINALEIKUR",
+		"heading": "Stund fyrir leikinn.",
+		"details": "{{size}} × {{size}} · Japanskar reglur"
+	},
+	"onlinePage": {
+		"title": "Netleikur",
+		"eyebrow": "NETLEIKUR",
+		"heading": "Stund fyrir leikinn.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Hleður leik…",
+		"notFound": "Þessi leikur er ekki til eða er ekki lengur í boði.",
+		"startNew": "Hefja nýjan netleik",
+		"invited": "Þér er boðið í {{size}} × {{size}} leik.",
+		"joining": "Tengist leik…",
+		"joinAs": "Taka þátt sem {{color}}",
+		"full": "Þessi leikur er fullskipaður. Ekki er enn hægt að horfa á leiki."
+	},
+	"local": {
+		"label": "Staðbundinn Go-leikur",
+		"loadingEngine": "Hleður Go-vél…"
+	},
+	"online": {
+		"label": "Go-leikur á netinu",
+		"youAre": "Þú ert {{color}}",
+		"connection": {
+			"connecting": "Tengist…",
+			"open": "Tengt",
+			"reconnecting": "Tengist aftur…",
+			"closed": "Aftengt"
+		},
+		"invite": {
+			"label": "Bjóddu vini með þessum tengli",
+			"copy": "Afrita",
+			"copied": "Afritað"
+		},
+		"awaitingScoring": "Báðir leikmenn pössuðu. Stigatalning er ekki enn studd, svo hættu við leikinn til að skrá hann án úrslita.",
+		"confirmResign": "Staðfesta uppgjöf",
+		"resign": "Gefast upp",
+		"abort": "Hætta við",
+		"results": {
+			"youWin": "Þú vinnur · {{color}} gafst upp",
+			"winsByResignation": "{{color}} vinnur með uppgjöf",
+			"aborted": "{{color}} hætti við leikinn",
+			"unscored": "Leiknum lauk án úrslita"
+		}
+	},
+	"turn": {
+		"preparing": "Undirbýr borðið",
+		"reviewing": "Yfirferð · Farðu í Núverandi til að leika",
+		"toPlay": "{{color}} á leik",
+		"yourMove": "Þú átt leik",
+		"waitingForOpponent": "Bíður eftir andstæðingi",
+		"awaitingScoring": "Leik er lokið · Stigatalning er ekki enn studd",
+		"gameOver": "Leik lokið",
+		"sendingMove": "Sendir leik…",
+		"waitingForConnection": "Bíður eftir tengingu"
+	},
+	"boardFooter": {
+		"lastMove": "Síðasti leikur: {{color}} {{move}}",
+		"startingPosition": "Upphafsstaða"
+	},
+	"players": {
+		"label": "Leikmenn",
+		"captured": "Fangaðir: {{count}}",
+		"you": "{{name}} (þú)",
+		"waiting": "{{name}} · bíður eftir leikmanni"
+	},
+	"history": {
+		"label": "Leikjasaga",
+		"heading": "Leikir",
+		"moveCount_one": "{{count}} LEIKUR",
+		"moveCount_other": "{{count}} LEIKIR",
+		"tableLabel": "Leikir svarts og hvíts",
+		"pair": "Par",
+		"move": "Leikur {{number}}, {{color}}, {{move}}",
+		"pendingMove": "Leikur {{number}}, {{color}}, {{move}}, sendir",
+		"empty": "Engir leikir enn.",
+		"position": "Leikur {{viewed}} af {{latest}}",
+		"currentPosition": "NÚVERANDI STAÐA",
+		"reviewing": "YFIRFERÐ",
+		"navigationLabel": "Flakk um leikjasögu",
+		"navigation": {
+			"start": "Byrjun",
+			"previous": "Fyrri",
+			"next": "Næsti",
+			"current": "Núverandi"
+		},
+		"undo": "Afturkalla síðasta leik",
+		"encouragement": "Gefðu þér tíma. Hver leikur skiptir máli.",
+		"keyboardHint": "Notaðu ← → til að fletta í gegnum leiki og ↑ ↓ fyrir byrjun og núverandi stöðu."
+	},
+	"board": {
+		"sceneLabel": "{{size}} sinnum {{size}} Go-borð sem sýnir röð {{moveCount}} opnunarleikja",
+		"themedBoard": "Go-borð: {{theme}}",
+		"emptyBoard": "Autt {{size}} sinnum {{size}} baduk-borð: {{theme}}",
+		"stone": "Baduk-steinn: {{color}}, {{finish}}",
+		"textureError": "Ekki tókst að hlaða áferð borðsins.",
+		"pauseAnimations": "Gera hlé á hreyfimyndum",
+		"resumeAnimations": "Halda áfram með hreyfimyndir",
+		"pause": "HLÉ",
+		"resume": "HALDA ÁFRAM"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Veldu skurðpunkt á borðinu.",
+			"occupied": "Þessi skurðpunktur er upptekinn.",
+			"wrongPlayer": "Hinn leikmaðurinn á leik.",
+			"suicide": "Sjálfsmorð er ekki leyfilegt.",
+			"ko": "Þessi leikur er bannaður samkvæmt ko-reglunni.",
+			"superko": "Þessi leikur endurtekur fyrri stöðu.",
+			"gameEnded": "Þessi leikur tekur ekki við fleiri leikjum."
+		},
+		"serverRejectedMove": "Þjónninn hafnaði leiknum. {{reason}}",
+		"staleRevision": "Staðan breyttist áður en leikurinn þinn barst, svo hann var ekki leikinn.",
+		"wrongPhase": "Það er ekki hægt á þessu stigi leiksins.",
+		"seatTaken": "Þetta sæti er þegar tekið.",
+		"notYourTurn": "Hinn leikmaðurinn á leik.",
+		"abortUnavailable": "Ekki er lengur hægt að hætta við leikinn.",
+		"replayFailed": "Ekki tókst að endurspila þennan leik á staðnum. Endurhladdu síðuna.",
+		"notConnected": "Ekki tengt við leikjaþjóninn.",
+		"engineLoadFailed": "Ekki tókst að hlaða Go-vélinni. Reyndu aftur.",
+		"gameLoadFailed": "Ekki tókst að hlaða leiknum. Reyndu aftur.",
+		"seatTakenFirst": "Einhver annar tók sætið á undan. Leikurinn er nú fullskipaður."
+	}
+}

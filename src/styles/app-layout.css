@@ -29,7 +29,7 @@
 	border: 0;
 	background: none;
 	padding: 0;
-	text-align: left;
+	text-align: start;
 }
 .go-sidebar a {
 	color: inherit;
@@ -57,7 +57,7 @@
 	color: var(--muted);
 }
 .go-sidebar .go-sections [aria-current="page"] {
-	background: #e1e2d7;
+	background: var(--hover);
 	color: var(--text);
 	font-weight: 500;
 }
@@ -75,8 +75,8 @@
 	width: 208px;
 	flex-shrink: 0;
 	padding: clamp(16px, 3.9dvh, 40px) 24px clamp(16px, 3.125dvh, 32px);
-	background: #ece9e0;
-	border-right: 1px solid var(--divider);
+	background: var(--surface);
+	border-inline-end: 1px solid var(--divider);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -144,7 +144,44 @@
 .go-sidebar .go-sidebar-account__profile:hover,
 .go-sidebar .go-sidebar-account__profile[aria-current="page"],
 .go-sidebar .go-sign-in:hover {
-	background: #e1e2d7;
+	background: var(--hover);
+}
+.go-sidebar-auth {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	width: 100%;
+}
+.go-sidebar .go-sign-in,
+.go-sidebar .go-sign-up {
+	justify-content: center;
+	border: 1px solid var(--divider);
+}
+.go-sidebar .go-sign-up {
+	display: flex;
+	align-items: center;
+	min-height: 40px;
+	padding-inline: 12px;
+	border-radius: 4px;
+	font-size: 13px;
+	font-weight: 500;
+	background: var(--accent);
+	border-color: var(--accent);
+	color: var(--on-accent);
+}
+.go-sidebar .go-sign-up:hover {
+	background: var(--accent-hover);
+}
+.go-sidebar .go-sidebar-language {
+	justify-content: center;
+	min-height: 40px;
+	padding-inline: 12px;
+	border: 1px solid var(--divider);
+	font-size: 13px;
+	color: var(--muted);
+}
+.go-sidebar .go-sidebar-language:hover {
+	color: var(--text);
 }
 .go-sidebar-account__avatar {
 	display: grid;
@@ -163,20 +200,80 @@
 	white-space: nowrap;
 }
 .go-sidebar-account__icons {
+	position: relative;
 	display: flex;
 	gap: 4px;
 	padding-inline: 4px;
 }
-.go-sidebar .go-sidebar-account__icons :is(a, button) {
+.go-sidebar .go-sidebar-account__icons > button,
+.go-sidebar .go-settings-menu > button {
 	display: grid;
 	place-items: center;
 	width: 36px;
 	height: 36px;
 	border-radius: 4px;
 }
-.go-sidebar .go-sidebar-account__icons :is(a, button):hover,
-.go-sidebar .go-sidebar-account__icons [aria-current="page"] {
-	background: #e1e2d7;
+.go-sidebar .go-sidebar-account__icons > button:hover,
+.go-sidebar .go-settings-menu > button:hover,
+.go-sidebar .go-settings-menu > button[aria-expanded="true"],
+.go-sidebar .go-settings-menu > button[data-current] {
+	background: var(--hover);
+}
+.go-settings-panel {
+	position: absolute;
+	bottom: calc(100% + 8px);
+	inset-inline: -16px;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	padding: 6px;
+	border: 1px solid var(--divider);
+	border-radius: 6px;
+	background: var(--surface-raised);
+	box-shadow: 0 8px 24px -6px rgb(0 0 0 / 25%);
+	font-size: 13px;
+}
+.go-sidebar .go-settings-panel__item,
+.go-sidebar .go-settings-panel__option {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	min-height: 34px;
+	padding-inline: 10px;
+	border-radius: 4px;
+}
+.go-sidebar .go-settings-panel__item:hover,
+.go-sidebar .go-settings-panel__option:hover {
+	background: var(--hover);
+}
+.go-settings-panel__group {
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	margin: 0;
+	padding: 4px 0 0;
+	border: 0;
+	border-top: 1px solid var(--divider);
+}
+.go-settings-panel__heading {
+	float: inline-start;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	min-height: 30px;
+	padding-inline: 10px;
+	color: var(--muted);
+}
+.go-sidebar .go-settings-panel__option {
+	padding-inline-start: 37px;
+	color: var(--muted);
+}
+.go-sidebar .go-settings-panel__option[aria-pressed="true"] {
+	background: var(--active);
+	color: var(--text);
+	font-weight: 500;
 }
 .go-notice {
 	position: fixed;
@@ -206,7 +303,8 @@
 }
 .go-sidebar-drawer {
 	position: fixed;
-	inset: 0 auto 0 0;
+	inset-block: 0;
+	inset-inline: 0 auto;
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -215,13 +313,13 @@
 	height: 100dvh;
 	max-height: 100dvh;
 	color: var(--text);
-	background: #ece9e0;
+	background: var(--surface);
 }
 .go-sidebar-drawer[open] {
 	animation: go-drawer-enter 220ms ease-out;
 }
 .go-sidebar-drawer::backdrop {
-	background: rgb(33 39 34 / 25%);
+	background: var(--backdrop);
 }
 .go-sidebar-drawer .go-sidebar {
 	position: relative;
@@ -229,9 +327,20 @@
 	min-height: 100%;
 	gap: 24px;
 }
+[dir="rtl"] .go-sidebar-drawer[open] {
+	animation-name: go-drawer-enter-rtl;
+}
 @keyframes go-drawer-enter {
 	from {
 		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+@keyframes go-drawer-enter-rtl {
+	from {
+		transform: translateX(100%);
 	}
 	to {
 		transform: translateX(0);
@@ -245,7 +354,7 @@
 .go-sidebar .go-sidebar-close {
 	position: absolute;
 	top: 12px;
-	right: 12px;
+	inset-inline-end: 12px;
 	width: 36px;
 	height: 36px;
 	display: grid;

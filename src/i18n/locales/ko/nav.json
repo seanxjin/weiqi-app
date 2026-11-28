@@ -1,0 +1,29 @@
+{
+	"navigation": "Baduk 내비게이션",
+	"drawer": {
+		"open": "메뉴 열기",
+		"close": "메뉴 닫기"
+	},
+	"mainNavigation": "주 메뉴",
+	"play": "대국",
+	"puzzles": "문제",
+	"learn": "배우기",
+	"guide": {
+		"heading": "바둑이 처음이신가요?",
+		"startWithBasics": "기초부터 시작하기"
+	},
+	"account": {
+		"label": "계정",
+		"friends": "친구",
+		"messages": "메시지",
+		"notifications": "알림",
+		"settings": "설정",
+		"allSettings": "모든 설정"
+	},
+	"theme": {
+		"label": "테마",
+		"system": "시스템",
+		"light": "라이트",
+		"dark": "다크"
+	}
+}

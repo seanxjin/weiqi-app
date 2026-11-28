@@ -1,0 +1,36 @@
+{
+	"server": {
+		"unavailable": "Serveris nepasiekiamas. Bandykite dar kartą.",
+		"unreachable": "Nepavyko susisiekti su serveriu. Patikrinkite ryšį ir bandykite dar kartą.",
+		"unexpectedResponse": "Serveris grąžino netikėtą atsakymą. Bandykite dar kartą.",
+		"requestFailed": "Nepavyko įvykdyti užklausos. Bandykite dar kartą."
+	},
+	"rateLimited": {
+		"generic": "Per daug bandymų. Palaukite prieš bandydami dar kartą.",
+		"withDelay_one": "Per daug bandymų. Palaukite {{count}} sekundę prieš bandydami dar kartą.",
+		"withDelay_few": "Per daug bandymų. Palaukite {{count}} sekundes prieš bandydami dar kartą.",
+		"withDelay_many": "Per daug bandymų. Palaukite {{count}} sekundės prieš bandydami dar kartą.",
+		"withDelay_other": "Per daug bandymų. Palaukite {{count}} sekundžių prieš bandydami dar kartą."
+	},
+	"unknown": "Kažkas nepavyko. Bandykite dar kartą.",
+	"api": {
+		"invalidCredentials": "Neteisingas naudotojo vardas, el. paštas arba slaptažodis.",
+		"twoFactorRequired": "Norėdami tęsti, įveskite 6 skaitmenų kodą iš autentifikavimo programėlės.",
+		"invalidTwoFactor": "Autentifikatoriaus kodas neteisingas. Bandykite dar kartą.",
+		"emailUnconfirmed": "Prieš prisijungdami patvirtinkite el. pašto adresą.",
+		"accountClosed": "Ši paskyra uždaryta, todėl prisijungti negalima.",
+		"usernameTaken": "Šis naudotojo vardas jau užimtas. Pasirinkite kitą.",
+		"emailTaken": "Šis el. pašto adresas jau naudojamas.",
+		"invalidToken": "Ši nuoroda negalioja arba nebegalioja. Norėdami tęsti, paprašykite naujo laiško.",
+		"unauthorized": "Jūsų prisijungimo sesija baigėsi. Pradėkite iš naujo.",
+		"conflict": "Nepavyko užbaigti registracijos. Pradėkite iš naujo.",
+		"forbidden": "Ši užklausa buvo užblokuota. Atnaujinkite puslapį ir bandykite dar kartą."
+	},
+	"validation": {
+		"passwordTooShort": "Slaptažodyje naudokite bent 8 simbolius.",
+		"newPasswordTooShort": "Naujame slaptažodyje naudokite bent 8 simbolius.",
+		"passwordTooLong": "Slaptažodis negali viršyti 72 UTF-8 baitų.",
+		"passwordMismatch": "Nauji slaptažodžiai nesutampa.",
+		"passwordUnchanged": "Pasirinkite kitokį slaptažodį nei dabartinis."
+	}
+}

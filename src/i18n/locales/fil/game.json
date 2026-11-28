@@ -1,0 +1,134 @@
+{
+	"colors": {
+		"black": "Itim",
+		"white": "Puti"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Pass",
+	"localPage": {
+		"title": "Lokal na Laro",
+		"eyebrow": "PALAKAIBIGANG LARO",
+		"heading": "Isang sandali para sa laro.",
+		"details": "{{size}} × {{size}} · Japanese na patakaran"
+	},
+	"onlinePage": {
+		"title": "Online na Laro",
+		"eyebrow": "ONLINE NA LARO",
+		"heading": "Isang sandali para sa laro.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Nilo-load ang laro…",
+		"notFound": "Hindi umiiral o hindi na available ang larong ito.",
+		"startNew": "Magsimula ng bagong online na laro",
+		"invited": "Inimbitahan ka sa isang {{size}} × {{size}} na laro.",
+		"joining": "Sumasali…",
+		"joinAs": "Sumali bilang {{color}}",
+		"full": "Puno na ang larong ito. Hindi pa available ang panonood ng mga laro."
+	},
+	"local": {
+		"label": "Lokal na laro ng Go",
+		"loadingEngine": "Nilo-load ang Go engine…"
+	},
+	"online": {
+		"label": "Online na laro ng Go",
+		"youAre": "Ikaw ay {{color}}",
+		"connection": {
+			"connecting": "Kumokonekta…",
+			"open": "Nakakonekta",
+			"reconnecting": "Muling kumokonekta…",
+			"closed": "Nadiskonekta"
+		},
+		"invite": {
+			"label": "Mag-imbita ng kaibigan gamit ang link na ito",
+			"copy": "Kopyahin",
+			"copied": "Nakopya"
+		},
+		"awaitingScoring": "Parehong nag-pass ang mga manlalaro. Hindi pa suportado ang pagbibilang ng puntos, kaya i-abort para maitala ang laro nang walang iskor.",
+		"confirmResign": "Kumpirmahin ang pagsuko",
+		"resign": "Sumuko",
+		"abort": "I-abort",
+		"results": {
+			"youWin": "Panalo ka · sumuko si {{color}}",
+			"winsByResignation": "Panalo si {{color}} dahil sumuko ang kalaban",
+			"aborted": "In-abort ni {{color}} ang laro",
+			"unscored": "Natapos ang laro nang walang iskor"
+		}
+	},
+	"turn": {
+		"preparing": "Inihahanda ang board",
+		"reviewing": "Nire-review · Bumalik sa Kasalukuyan para maglaro",
+		"toPlay": "Si {{color}} ang titira",
+		"yourMove": "Ikaw ang titira",
+		"waitingForOpponent": "Naghihintay ng kalaban",
+		"awaitingScoring": "Tapos na ang laro · Hindi pa suportado ang pagbibilang ng puntos",
+		"gameOver": "Tapos na ang laro",
+		"sendingMove": "Ipinapadala ang galaw…",
+		"waitingForConnection": "Naghihintay ng koneksyon"
+	},
+	"boardFooter": {
+		"lastMove": "Huling galaw: {{color}} {{move}}",
+		"startingPosition": "Panimulang posisyon"
+	},
+	"players": {
+		"label": "Mga manlalaro",
+		"captured": "Nahuli: {{count}}",
+		"you": "{{name}} (ikaw)",
+		"waiting": "{{name}} · naghihintay ng manlalaro"
+	},
+	"history": {
+		"label": "Kasaysayan ng mga galaw",
+		"heading": "Mga galaw",
+		"moveCount_one": "{{count}} GALAW",
+		"moveCount_other": "{{count}} GALAW",
+		"tableLabel": "Mga galaw ng Itim at Puti",
+		"pair": "Pares",
+		"move": "Galaw {{number}}, {{color}}, {{move}}",
+		"pendingMove": "Galaw {{number}}, {{color}}, {{move}}, ipinapadala",
+		"empty": "Wala pang galaw.",
+		"position": "Galaw {{viewed}} ng {{latest}}",
+		"currentPosition": "KASALUKUYANG POSISYON",
+		"reviewing": "NIRE-REVIEW",
+		"navigationLabel": "Navigation ng kasaysayan ng mga galaw",
+		"navigation": {
+			"start": "Simula",
+			"previous": "Nakaraan",
+			"next": "Susunod",
+			"current": "Kasalukuyan"
+		},
+		"undo": "I-undo ang huling galaw",
+		"encouragement": "Huwag magmadali. Mahalaga ang bawat galaw.",
+		"keyboardHint": "Gamitin ang ← → para lumipat sa mga galaw, ↑ ↓ para sa simula at kasalukuyan."
+	},
+	"board": {
+		"sceneLabel": "Isang {{size}} by {{size}} na board ng Go na nagpapakita ng sunod-sunod na {{moveCount}} pambungad na galaw",
+		"themedBoard": "{{theme}} na board ng Go",
+		"emptyBoard": "Walang lamang {{size}} by {{size}} na {{theme}} na board ng baduk",
+		"stone": "{{finish}} na {{color}} na bato ng baduk",
+		"textureError": "Hindi ma-load ang texture ng board.",
+		"pauseAnimations": "I-pause ang mga animation",
+		"resumeAnimations": "Ituloy ang mga animation",
+		"pause": "I-PAUSE",
+		"resume": "ITULOY"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Pumili ng intersection sa board.",
+			"occupied": "May bato na sa intersection na iyan.",
+			"wrongPlayer": "Turno ng kabilang manlalaro.",
+			"suicide": "Hindi pinapayagan ang suicide.",
+			"ko": "Bawal ang galaw na iyan dahil sa ko.",
+			"superko": "Inuulit ng galaw na iyan ang isang naunang posisyon.",
+			"gameEnded": "Hindi na tumatanggap ng galaw ang larong ito."
+		},
+		"serverRejectedMove": "Tinanggihan ng server ang galaw. {{reason}}",
+		"staleRevision": "Nagbago ang laro bago dumating ang iyong galaw, kaya hindi ito naitira.",
+		"wrongPhase": "Hindi iyan posible sa yugtong ito ng laro.",
+		"seatTaken": "May nakaupo na sa puwestong iyan.",
+		"notYourTurn": "Turno ng kabilang manlalaro.",
+		"abortUnavailable": "Hindi na maaaring i-abort ang laro.",
+		"replayFailed": "Hindi ma-replay nang lokal ang larong ito. Paki-reload ang page.",
+		"notConnected": "Hindi nakakonekta sa game server.",
+		"engineLoadFailed": "Hindi ma-load ang Go engine. Pakisubukang muli.",
+		"gameLoadFailed": "Hindi ma-load ang laro. Pakisubukang muli.",
+		"seatTakenFirst": "May ibang naunang kumuha ng puwesto. Puno na ang larong ito."
+	}
+}

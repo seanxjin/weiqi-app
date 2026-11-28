@@ -1,0 +1,34 @@
+{
+	"server": {
+		"unavailable": "A szerver nem érhető el. Próbáld újra.",
+		"unreachable": "Nem sikerült elérni a szervert. Ellenőrizd a kapcsolatot, és próbáld újra.",
+		"unexpectedResponse": "A szerver váratlan választ adott. Próbáld újra.",
+		"requestFailed": "A kérést nem sikerült teljesíteni. Próbáld újra."
+	},
+	"rateLimited": {
+		"generic": "Túl sok próbálkozás. Várj egy kicsit, mielőtt újra próbálkozol.",
+		"withDelay_one": "Túl sok próbálkozás. Várj {{count}} másodpercet, mielőtt újra próbálkozol.",
+		"withDelay_other": "Túl sok próbálkozás. Várj {{count}} másodpercet, mielőtt újra próbálkozol."
+	},
+	"unknown": "Hiba történt. Próbáld újra.",
+	"api": {
+		"invalidCredentials": "A felhasználónév, az e-mail-cím vagy a jelszó helytelen.",
+		"twoFactorRequired": "A folytatáshoz add meg a hitelesítő alkalmazásod 6 jegyű kódját.",
+		"invalidTwoFactor": "A hitelesítőkód helytelen. Próbáld újra.",
+		"emailUnconfirmed": "Bejelentkezés előtt erősítsd meg az e-mail-címed.",
+		"accountClosed": "Ez a fiók meg van szüntetve, és nem lehet vele bejelentkezni.",
+		"usernameTaken": "Ez a felhasználónév már foglalt. Válassz másikat.",
+		"emailTaken": "Ez az e-mail-cím már használatban van.",
+		"invalidToken": "Ez a link érvénytelen vagy lejárt. A folytatáshoz kérj új e-mailt.",
+		"unauthorized": "A bejelentkezési munkameneted lejárt. Kezdd újra.",
+		"conflict": "A regisztrációt nem sikerült befejezni. Kezdd újra.",
+		"forbidden": "A kérés le lett tiltva. Frissítsd az oldalt, és próbáld újra."
+	},
+	"validation": {
+		"passwordTooShort": "A jelszó legalább 8 karakter legyen.",
+		"newPasswordTooShort": "Az új jelszó legalább 8 karakter legyen.",
+		"passwordTooLong": "A jelszó legfeljebb 72 UTF-8 bájt lehet.",
+		"passwordMismatch": "Az új jelszavak nem egyeznek.",
+		"passwordUnchanged": "A jelenlegitől eltérő jelszót válassz."
+	}
+}

@@ -1,0 +1,34 @@
+{
+	"server": {
+		"unavailable": "Server pole saadaval. Proovi uuesti.",
+		"unreachable": "Serveriga ei saa ühendust. Kontrolli ühendust ja proovi uuesti.",
+		"unexpectedResponse": "Server saatis ootamatu vastuse. Proovi uuesti.",
+		"requestFailed": "Päringut ei õnnestunud lõpetada. Proovi uuesti."
+	},
+	"rateLimited": {
+		"generic": "Liiga palju katseid. Oota enne uuesti proovimist.",
+		"withDelay_one": "Liiga palju katseid. Oota {{count}} sekund, enne kui uuesti proovid.",
+		"withDelay_other": "Liiga palju katseid. Oota {{count}} sekundit, enne kui uuesti proovid."
+	},
+	"unknown": "Midagi läks valesti. Proovi uuesti.",
+	"api": {
+		"invalidCredentials": "Kasutajanimi, e-post või parool on vale.",
+		"twoFactorRequired": "Jätkamiseks sisesta autentimisrakenduse 6-kohaline kood.",
+		"invalidTwoFactor": "See autentimiskood on vale. Proovi uuesti.",
+		"emailUnconfirmed": "Enne sisselogimist kinnita oma e-posti aadress.",
+		"accountClosed": "See konto on suletud ja sellega ei saa sisse logida.",
+		"usernameTaken": "See kasutajanimi on juba kasutusel. Vali mõni muu.",
+		"emailTaken": "See e-posti aadress on juba kasutusel.",
+		"invalidToken": "See link on kehtetu või aegunud. Jätkamiseks küsi uus kiri.",
+		"unauthorized": "Sinu sisselogimisseanss on aegunud. Alusta uuesti.",
+		"conflict": "Registreerumist ei õnnestunud lõpetada. Alusta uuesti.",
+		"forbidden": "See päring blokeeriti. Värskenda lehte ja proovi uuesti."
+	},
+	"validation": {
+		"passwordTooShort": "Parool peab olema vähemalt 8 märki pikk.",
+		"newPasswordTooShort": "Uus parool peab olema vähemalt 8 märki pikk.",
+		"passwordTooLong": "Parool ei tohi ületada 72 UTF-8 baiti.",
+		"passwordMismatch": "Uued paroolid ei ühti.",
+		"passwordUnchanged": "Vali praegusest erinev parool."
+	}
+}

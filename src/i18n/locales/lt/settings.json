@@ -1,0 +1,213 @@
+{
+	"header": {
+		"title": "Nustatymai",
+		"sectionTitle": "Nustatymai: {{section}}",
+		"navLabel": "Nustatymų skiltys"
+	},
+	"sections": {
+		"board": "Lenta ir akmenys",
+		"gameplay": "Žaidimo eiga",
+		"profile": "Profilis",
+		"social": "Socialinis ir privatumas",
+		"account": "Paskyra ir sauga",
+		"language": "Kalba ir laikas"
+	},
+	"board": {
+		"description": "Pasirinkite lentą ir akmenis, kuriais žaidžiate.",
+		"appearance": {
+			"title": "Išvaizda",
+			"boardLegend": "Lenta",
+			"stonesLegend": "Akmenys",
+			"previewLabel": "Lentos peržiūra"
+		},
+		"themes": {
+			"kaya": "Tradicinė japoniška kaja",
+			"walnut": "Tamsus riešutmedis",
+			"ash": "Šviesus skandinaviškas uosis"
+		},
+		"stoneStyles": {
+			"polished": "Skalūnas",
+			"satin": "Keramika",
+			"matte": "Natūralus akmuo",
+			"snow": "Kriauklė · Yuki / Sniego klasė"
+		},
+		"display": {
+			"title": "Lentos rodymas",
+			"coordinates": {
+				"label": "Rodyti lentos koordinates",
+				"description": "Pažymėti stulpelius ir eilutes lentos kraštuose."
+			},
+			"lastMove": {
+				"label": "Paryškinti paskutinį ėjimą",
+				"description": "Pažymėti paskutinį padėtą akmenį."
+			}
+		},
+		"sounds": {
+			"title": "Garsai",
+			"playSounds": {
+				"label": "Leisti garsus",
+				"description": "Akmenų dėjimas, paėmimai ir laikrodžio įspėjimai."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Tvarkykite, kaip dedate akmenis ir kas gali jus iškviesti.",
+		"moves": {
+			"title": "Ėjimų darymas",
+			"description": "Prieš padedant akmenį prašyti antro paspaudimo, kad išvengtumėte klaidingų paspaudimų.",
+			"legend": "Patvirtinti ėjimus",
+			"options": {
+				"never": "Niekada",
+				"correspondence": "Tik korespondencinėse partijose",
+				"always": "Visada"
+			}
+		},
+		"challenges": {
+			"title": "Iššūkiai",
+			"description": "Pasirinkite, kas gali siųsti jums iššūkius.",
+			"legend": "Leisti iššūkius iš",
+			"options": {
+				"everyone": "Visų",
+				"registered": "Registruotų žaidėjų",
+				"following": "Tik mano sekamų žaidėjų",
+				"nobody": "Niekieno (revanšai vis tiek leidžiami)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Viskas, kas čia nurodyta, matoma jūsų <profileLink>viešame profilyje</profileLink>.",
+		"publicProfile": {
+			"title": "Viešas profilis",
+			"bioLabel": "Trumpas aprašymas",
+			"bioPlaceholder": "Jūsų trumpas aprašymas bus rodomas profilyje.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Informacija",
+			"joinDate": "Prisijungimo data",
+			"username": "Naudotojo vardas",
+			"changeUsername": "Keisti",
+			"changeUsernameFeature": "Naudotojo vardo keitimas",
+			"realName": "Tikrasis vardas",
+			"location": "Vieta",
+			"country": "Šalis",
+			"countryNotSet": "Nenustatyta",
+			"rank": "Rangas",
+			"rankPlaceholder": "pvz., 12k, 3d",
+			"rankHint": "Naudokite 30k–1k, 1d–9d arba 1p–9p."
+		},
+		"links": {
+			"legend": "Nuorodos",
+			"linkLabel": "Nuoroda {{number}}",
+			"remove": "Pašalinti",
+			"removeLabel": "Pašalinti nuorodą {{number}}",
+			"add": "Pridėti nuorodą"
+		}
+	},
+	"social": {
+		"description": "Tvarkykite žaidėjus, kuriuos sekate, ir žaidėjus, kuriuos užblokavote.",
+		"blocking": {
+			"title": "Blokavimas",
+			"description_one": "Blokuojate {{count}} žaidėją. Užblokuoti žaidėjai negali jūsų iškviesti ar rašyti jums žinučių.",
+			"description_few": "Blokuojate {{count}} žaidėjus. Užblokuoti žaidėjai negali jūsų iškviesti ar rašyti jums žinučių.",
+			"description_many": "Blokuojate {{count}} žaidėjo. Užblokuoti žaidėjai negali jūsų iškviesti ar rašyti jums žinučių.",
+			"description_other": "Blokuojate {{count}} žaidėjų. Užblokuoti žaidėjai negali jūsų iškviesti ar rašyti jums žinučių.",
+			"empty": "Nieko neblokuojate.",
+			"action": "Atblokuoti",
+			"actionLabel": "Atblokuoti {{username}}"
+		},
+		"following": {
+			"title": "Sekami",
+			"description_one": "Sekate {{count}} žaidėją.",
+			"description_few": "Sekate {{count}} žaidėjus.",
+			"description_many": "Sekate {{count}} žaidėjo.",
+			"description_other": "Sekate {{count}} žaidėjų.",
+			"empty": "Dar nieko nesekate.",
+			"action": "Nebesekti",
+			"actionLabel": "Nebesekti {{username}}"
+		}
+	},
+	"account": {
+		"description": "Pakeiskite slaptažodį, apsaugokite paskyrą ir tvarkykite susietas paskyras.",
+		"password": {
+			"title": "Keisti slaptažodį",
+			"updated": "Slaptažodis atnaujintas",
+			"fields": {
+				"currentPassword": {
+					"label": "Dabartinis slaptažodis",
+					"show": "Rodyti dabartinį slaptažodį",
+					"hide": "Slėpti dabartinį slaptažodį"
+				},
+				"newPassword": {
+					"label": "Naujas slaptažodis",
+					"show": "Rodyti naują slaptažodį",
+					"hide": "Slėpti naują slaptažodį"
+				},
+				"confirmPassword": {
+					"label": "Pakartokite slaptažodį",
+					"show": "Rodyti pakartotą slaptažodį",
+					"hide": "Slėpti pakartotą slaptažodį"
+				}
+			}
+		},
+		"contact": {
+			"title": "Kontaktinė informacija",
+			"email": "El. pašto adresas",
+			"edit": "Redaguoti",
+			"editFeature": "El. pašto keitimas"
+		},
+		"twoFactor": {
+			"title": "Dviejų veiksnių autentifikavimas",
+			"description": "Prisijungiant reikalauti kodo iš autentifikavimo programėlės.",
+			"off": "Išjungta",
+			"enable": "Įjungti",
+			"feature": "Dviejų veiksnių autentifikavimas"
+		},
+		"sessions": {
+			"title": "Aktyvios sesijos",
+			"description": "Jei įtariate, kad jūsų paskyra pažeista, pakeiskite slaptažodį ir atsijunkite visur.",
+			"thisDevice": "Šis įrenginys",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "Atsijungti: {{device}}",
+			"logOutAll": "Atsijungti visuose kituose įrenginiuose"
+		},
+		"connections": {
+			"title": "Susietos paskyros",
+			"description": "Prisijunkite prie Baduk naudodami šias paskyras.",
+			"connectedTo": "Susieta su {{provider}}",
+			"connect": "Susieti",
+			"disconnect": "Atsieti",
+			"note": "Atsiejus pašalinamas ryšys Baduk. Gali tekti atšaukti prieigą ir kitoje svetainėje."
+		},
+		"close": {
+			"title": "Uždaryti paskyrą",
+			"description": "Uždarius paskyrą, jūsų profilis paslepiamas, o jūs atjungiami visur.",
+			"button": "Uždaryti paskyrą",
+			"dialogTitle": "Uždaryti paskyrą?",
+			"dialogDescription": "Vėliau galėsite ją vėl atidaryti prisijungimo puslapyje.",
+			"feature": "Paskyros uždarymas"
+		}
+	},
+	"languageTime": {
+		"title": "Kalba ir laikas",
+		"description": "Pasirinkite Baduk kalbą ir datų bei laiko rodymo būdą.",
+		"language": {
+			"title": "Kalba",
+			"description": "Pakeitimai iškart taikomi visuose puslapiuose.",
+			"legend": "Rodymo kalba"
+		},
+		"time": {
+			"title": "Laikas",
+			"description": "Naudojama laiko žymoms, pvz., prisijungimo datoms ir sesijų veiklai.",
+			"timeZone": "Laiko juosta",
+			"automaticTimeZone": "Automatiškai ({{timeZone}})",
+			"timeFormat": "Laikrodis",
+			"formats": {
+				"auto": "Automatiškai ({{example}})",
+				"12h": "12 valandų ({{example}})",
+				"24h": "24 valandų ({{example}})"
+			},
+			"preview": "Peržiūra"
+		}
+	}
+}

@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link, useParams } from "react-router";
 import { confirmPasswordReset, getPasswordResetInfo, type PasswordResetInfo } from "@/api/auth";
 import { ApiError } from "@/api/client";
 import { FormError } from "@/components/auth/FormError";
 import { useSignIn, useSubmit } from "@/hooks/useAuthForm";
 import { AuthField, AuthLayout, AuthPasswordField } from "@/layouts/AuthLayout";
-import { formField, passwordGuidance, validateNewPassword } from "@/lib/authValidation";
+import { formField, validateNewPassword } from "@/lib/authValidation";
 
 export function PasswordResetConfirmPage() {
+	const { t } = useTranslation(["auth", "common"]);
 	const signIn = useSignIn();
 	const { token = "" } = useParams();
 	const [attempt, setAttempt] = useState(0);
@@ -45,35 +47,35 @@ export function PasswordResetConfirmPage() {
 		);
 	});
 	return (
-		<AuthLayout title="Set a new password" backTo="/login">
+		<AuthLayout title={t("passwordResetConfirm.pageTitle")} backTo="/login">
 			<div className="auth-heading">
-				<h1>Set a new password</h1>
+				<h1>{t("passwordResetConfirm.heading")}</h1>
 				<p className="auth-subtitle">
 					{current?.info
-						? `Reset the password for ${current.info.username}.`
-						: "Return to the board with a fresh start."}
+						? t("passwordResetConfirm.subtitleForUser", { username: current.info.username })
+						: t("passwordResetConfirm.subtitle")}
 				</p>
 			</div>
 			{!current ? (
 				<p className="auth-status" role="status">
-					Checking your reset link…
+					{t("passwordResetConfirm.checkingLink")}
 				</p>
 			) : current.info ? (
 				<form className="auth-form" onSubmit={onSubmit} aria-busy={pending}>
 					<AuthPasswordField
 						name="password"
-						label="NEW PASSWORD"
-						placeholder="Create a new password"
+						label={t("passwordResetConfirm.fields.password.label")}
+						placeholder={t("passwordResetConfirm.fields.password.placeholder")}
 						autoComplete="new-password"
 						minLength={8}
-						guidance={passwordGuidance}
+						guidance={t("fields.password.guidance")}
 						required
 					/>
 					{current.info.twoFactor && (
 						<AuthField
 							name="totp"
-							label="AUTHENTICATOR CODE"
-							placeholder="6-digit code"
+							label={t("fields.authenticatorCode.label")}
+							placeholder={t("fields.authenticatorCode.placeholder")}
 							inputMode="numeric"
 							autoComplete="one-time-code"
 							pattern="[0-9]{6}"
@@ -83,10 +85,10 @@ export function PasswordResetConfirmPage() {
 					)}
 					<FormError error={error} />
 					<button className="auth-action" disabled={pending}>
-						{pending ? "Saving…" : "Save and continue"}
+						{pending ? t("common:actions.saving") : t("passwordResetConfirm.submit")}
 					</button>
 					<div className="auth-links">
-						<Link to="/password-reset">Request a new reset link</Link>
+						<Link to="/password-reset">{t("passwordResetConfirm.requestNewLink")}</Link>
 					</div>
 				</form>
 			) : (
@@ -94,11 +96,11 @@ export function PasswordResetConfirmPage() {
 					<FormError error={current.error} />
 					{!(current.error instanceof ApiError && current.error.code === "INVALID_TOKEN") && (
 						<button className="auth-action" onClick={() => setAttempt((value) => value + 1)}>
-							Try again
+							{t("passwordResetConfirm.tryAgain")}
 						</button>
 					)}
 					<div className="auth-links">
-						<Link to="/password-reset">Request a new reset link</Link>
+						<Link to="/password-reset">{t("passwordResetConfirm.requestNewLink")}</Link>
 					</div>
 				</div>
 			)}

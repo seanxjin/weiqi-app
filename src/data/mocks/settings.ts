@@ -25,10 +25,12 @@ export const mockEmail = "s********0@g****.com";
 export const mockBlocking = ["stonecutter42"];
 export const mockFollowing = ["sunnyli239", "fanjunlin", "ethanchen2", "williamjin123", "shuangdatdang"];
 
+const daysAgo = (days: number) => new Date(Date.now() - days * 24 * 60 * 60 * 1000);
+
 export const mockSessions: ActiveSession[] = [
-	{ id: "s1", device: "Chrome on Windows", location: "Vancouver, CA", lastSeen: "Active now", current: true },
-	{ id: "s2", device: "Safari on iPhone", location: "Vancouver, CA", lastSeen: "2 days ago", current: false },
-	{ id: "s3", device: "Firefox on macOS", location: "Toronto, CA", lastSeen: "3 weeks ago", current: false },
+	{ id: "s1", device: "Chrome on Windows", location: "Vancouver, CA", lastSeen: new Date(), current: true },
+	{ id: "s2", device: "Safari on iPhone", location: "Vancouver, CA", lastSeen: daysAgo(2), current: false },
+	{ id: "s3", device: "Firefox on macOS", location: "Toronto, CA", lastSeen: daysAgo(21), current: false },
 ];
 
 export const mockConnections: Record<ConnectedProvider, boolean> = { google: true, github: false };

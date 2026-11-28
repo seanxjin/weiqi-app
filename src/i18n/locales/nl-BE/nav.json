@@ -1,0 +1,29 @@
+{
+	"navigation": "Baduk-navigatie",
+	"drawer": {
+		"open": "Navigatie openen",
+		"close": "Navigatie sluiten"
+	},
+	"mainNavigation": "Hoofdnavigatie",
+	"play": "Spelen",
+	"puzzles": "Puzzels",
+	"learn": "Leren",
+	"guide": {
+		"heading": "NIEUW IN GO?",
+		"startWithBasics": "Begin met de basis"
+	},
+	"account": {
+		"label": "Account",
+		"friends": "Vrienden",
+		"messages": "Berichten",
+		"notifications": "Meldingen",
+		"settings": "Instellingen",
+		"allSettings": "Alle instellingen"
+	},
+	"theme": {
+		"label": "Thema",
+		"system": "Systeem",
+		"light": "Licht",
+		"dark": "Donker"
+	}
+}

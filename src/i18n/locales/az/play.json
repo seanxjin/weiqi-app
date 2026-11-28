@@ -1,0 +1,116 @@
+{
+	"home": {
+		"pageTitle": "Oyna",
+		"location": "OYNA / ANA SƏHİFƏ",
+		"signedInAs": "{{username}} kimi daxil olmusunuz",
+		"guest": "Qonaq kimi oynayırsınız",
+		"logoutError": "Çıxış etmək mümkün olmadı. Zəhmət olmasa, yenidən cəhd edin.",
+		"introduction": {
+			"heading": "Bir az mətn",
+			"body": "Başqa mətn"
+		},
+		"menuHeading": "Bir az mətn.",
+		"options": {
+			"online": {
+				"label": "Onlayn oyna",
+				"description": "Rəqibinizi tapın. Lövhədə görüşün."
+			},
+			"local": {
+				"label": "Lokal oyna",
+				"description": "Bir lövhə. İki oyunçu. Bir ekran."
+			},
+			"friend": {
+				"label": "Dostla oyna",
+				"description": "Düşüncəli bir oyun üçün kimisə dəvət edin."
+			},
+			"puzzles": {
+				"label": "Tapmaca həll et",
+				"description": "Kiçik çağırışlar. Daha iti instinktlər."
+			},
+			"lessons": {
+				"label": "Dərslər",
+				"description": "İlk daşınızdan növbəti kəşfinizə qədər."
+			},
+			"bots": {
+				"label": "Botlarla oyna",
+				"description": "Öz tempinizlə, istənilən səviyyədə məşq edin."
+			}
+		},
+		"presence_one": "{{count, number}} oyunçu lövhəni bölüşür",
+		"presence_other": "{{count, number}} oyunçu lövhəni bölüşür",
+		"reserved": {
+			"label": "SONRAYA SAXLANAN BÖLMƏ",
+			"heading": "Gələcək məzmun üçün ayrılıb",
+			"body": "Bu bölmə hələlik qəsdən boş saxlanılıb. Gələcəkdə yeni funksiyalar, yeniliklər və ya seçilmiş məzmun üçün istifadə olunacaq."
+		},
+		"footerTagline": "Sadə qaydalar. Sonsuz kəşflər."
+	},
+	"materials": {
+		"pageTitle": "Lövhələr və daşlar",
+		"breadcrumb": "Baduk / Material kitabxanası",
+		"collection": "Kolleksiya 01",
+		"heading": "Lövhələr və daşlar.",
+		"introduction": "Təbii materiallar. Sakit detallar. Oyun üçün məkan.",
+		"boardsSection": {
+			"title": "Lövhələr",
+			"meta": "Üç ağac növü · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Daşlar",
+			"meta": "Dörd üslub · qara və ağ"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Material tədqiqi",
+			"enlarged": "Böyüdülmüş nümunələr",
+			"heading": "Sakit bir kontrast.",
+			"body": "Dörd səth. Qara və ağ, eyni yumşaq işıqda.",
+			"scale": "Böyüdülmüş nümunələr · eyni miqyas",
+			"form": "Hamar, yumru forma / incə səth fərqləri"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Ənənəvi Yapon kayası",
+				"material": "İsti bal rəngi · düz lif"
+			},
+			"walnut": {
+				"name": "Tünd qoz",
+				"material": "Tünd qəhvəyi · axıcı lif"
+			},
+			"ash": {
+				"name": "Açıq Skandinaviya göyrüşü",
+				"material": "Açıq ağac · yumşaq lif"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Cilalı",
+				"name": "Şist",
+				"description": "Sakit mineral teksturalı hamar, cilalı səthlər.",
+				"black": "Qara şist",
+				"white": "Ağ şist"
+			},
+			"satin": {
+				"finish": "Atlas",
+				"name": "Keramika",
+				"description": "Yayılmış parıltı və incə, bərabər dənəvərlik.",
+				"black": "Qara keramika",
+				"white": "Ağ keramika"
+			},
+			"matte": {
+				"finish": "Mat",
+				"name": "Təbii daş",
+				"description": "Hamar, quru səth altında sakit mineral xallar.",
+				"black": "Qara daş",
+				"white": "Ağ daş"
+			},
+			"snow": {
+				"finish": "Cilalı",
+				"name": "Balıqqulağı · Yuki / Qar dərəcəsi",
+				"description": "Südlü ağ üzərində incə, sıx balıqqulağı lifi, cilalı qara şistlə cütləşir.",
+				"black": "Qara Nachiguro şisti",
+				"white": "Ağ Yuki balıqqulağı"
+			}
+		},
+		"footerTagline": "Əsas olan, düşünülmüş şəkildə."
+	}
+}

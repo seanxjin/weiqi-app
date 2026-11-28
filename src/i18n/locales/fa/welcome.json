@@ -1,0 +1,16 @@
+{
+	"pageTitle": "بازی گو",
+	"railLabel": "Baduk",
+	"mainNavigation": "ناوبری اصلی",
+	"play": "بازی",
+	"eyebrow": "متنی نمونه",
+	"heading": {
+		"label": "بازی گو",
+		"prefix": "بازی "
+	},
+	"description": {
+		"first": "متنی نمونه....",
+		"second": "متنی دیگر..."
+	},
+	"footnote": "با حوصله بازی کنید."
+}

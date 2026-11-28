@@ -1,0 +1,135 @@
+{
+	"colors": {
+		"black": "Negres",
+		"white": "Blanques"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Passa",
+	"localPage": {
+		"title": "Joc local",
+		"eyebrow": "PARTIDA AMISTOSA",
+		"heading": "Un moment per al joc.",
+		"details": "{{size}} × {{size}} · Regles japoneses"
+	},
+	"onlinePage": {
+		"title": "Joc en línia",
+		"eyebrow": "PARTIDA EN LÍNIA",
+		"heading": "Un moment per al joc.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "S’està carregant la partida…",
+		"notFound": "Aquesta partida no existeix o ja no està disponible.",
+		"startNew": "Comença una partida en línia nova",
+		"invited": "Estàs convidat a una partida de {{size}} × {{size}}.",
+		"joining": "S’està unint…",
+		"joinAs": "Uneix-te amb {{color}}",
+		"full": "Aquesta partida és plena. Encara no es poden observar partides."
+	},
+	"local": {
+		"label": "Partida de go local",
+		"loadingEngine": "S’està carregant el motor de go…"
+	},
+	"online": {
+		"label": "Partida de go en línia",
+		"youAre": "Jugues amb {{color}}",
+		"connection": {
+			"connecting": "S’està connectant…",
+			"open": "Connectat",
+			"reconnecting": "S’està reconnectant…",
+			"closed": "Desconnectat"
+		},
+		"invite": {
+			"label": "Convida un amic amb aquest enllaç",
+			"copy": "Copia",
+			"copied": "Copiat"
+		},
+		"awaitingScoring": "Els dos jugadors han passat. El recompte encara no és compatible; avorta la partida per registrar-la sense puntuació.",
+		"confirmResign": "Confirma l’abandonament",
+		"resign": "Abandona",
+		"abort": "Avorta",
+		"results": {
+			"youWin": "Guanyes · {{color}} han abandonat",
+			"winsByResignation": "{{color}} guanyen per abandonament",
+			"aborted": "Partida avortada per {{color}}",
+			"unscored": "La partida ha acabat sense puntuació"
+		}
+	},
+	"turn": {
+		"preparing": "S’està preparant el tauler",
+		"reviewing": "Revisió · Torna a Actual per jugar",
+		"toPlay": "Juguen {{color}}",
+		"yourMove": "Et toca",
+		"waitingForOpponent": "Esperant un rival",
+		"awaitingScoring": "La partida ha acabat · El recompte encara no és compatible",
+		"gameOver": "Final de la partida",
+		"sendingMove": "S’està enviant la jugada…",
+		"waitingForConnection": "Esperant la connexió"
+	},
+	"boardFooter": {
+		"lastMove": "Última jugada: {{color}} {{move}}",
+		"startingPosition": "Posició inicial"
+	},
+	"players": {
+		"label": "Jugadors",
+		"captured": "Captures: {{count}}",
+		"you": "{{name}} (tu)",
+		"waiting": "{{name}} · esperant un jugador"
+	},
+	"history": {
+		"label": "Historial de jugades",
+		"heading": "Jugades",
+		"moveCount_one": "{{count}} JUGADA",
+		"moveCount_many": "{{count}} DE JUGADES",
+		"moveCount_other": "{{count}} JUGADES",
+		"tableLabel": "Jugades de negres i blanques",
+		"pair": "Parella",
+		"move": "Jugada {{number}}, {{color}}, {{move}}",
+		"pendingMove": "Jugada {{number}}, {{color}}, {{move}}, s’està enviant",
+		"empty": "Encara no hi ha jugades.",
+		"position": "Jugada {{viewed}} de {{latest}}",
+		"currentPosition": "POSICIÓ ACTUAL",
+		"reviewing": "REVISIÓ",
+		"navigationLabel": "Navegació per l’historial de jugades",
+		"navigation": {
+			"start": "Inici",
+			"previous": "Anterior",
+			"next": "Següent",
+			"current": "Actual"
+		},
+		"undo": "Desfés l’última jugada",
+		"encouragement": "Pren-te el teu temps. Cada jugada compta.",
+		"keyboardHint": "Fes servir ← → per recórrer les jugades i ↑ ↓ per anar a l’inici i a l’actual."
+	},
+	"board": {
+		"sceneLabel": "Un tauler de go de {{size}} per {{size}} amb una seqüència de {{moveCount}} jugades d’obertura",
+		"themedBoard": "Tauler de go ({{theme}})",
+		"emptyBoard": "Tauler de baduk buit de {{size}} per {{size}} ({{theme}})",
+		"stone": "Pedra de baduk ({{color}}, {{finish}})",
+		"textureError": "No s’ha pogut carregar la textura del tauler.",
+		"pauseAnimations": "Posa en pausa les animacions",
+		"resumeAnimations": "Reprèn les animacions",
+		"pause": "PAUSA",
+		"resume": "REPRÈN"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Tria una intersecció del tauler.",
+			"occupied": "Aquesta intersecció està ocupada.",
+			"wrongPlayer": "És el torn de l’altre jugador.",
+			"suicide": "No es permet el suïcidi.",
+			"ko": "Aquesta jugada està prohibida pel ko.",
+			"superko": "Aquesta jugada repeteix una posició anterior.",
+			"gameEnded": "Aquesta partida no admet més jugades."
+		},
+		"serverRejectedMove": "El servidor ha rebutjat la jugada. {{reason}}",
+		"staleRevision": "La partida ha canviat abans que arribés la teva jugada, així que no s’ha jugat.",
+		"wrongPhase": "Això no és possible en aquesta fase de la partida.",
+		"seatTaken": "Aquest lloc ja està ocupat.",
+		"notYourTurn": "És el torn de l’altre jugador.",
+		"abortUnavailable": "Ja no es pot avortar la partida.",
+		"replayFailed": "No s’ha pogut reproduir la partida localment. Torna a carregar la pàgina.",
+		"notConnected": "No hi ha connexió amb el servidor de joc.",
+		"engineLoadFailed": "No s’ha pogut carregar el motor de go. Torna-ho a provar.",
+		"gameLoadFailed": "No s’ha pogut carregar la partida. Torna-ho a provar.",
+		"seatTakenFirst": "Algú altre ha ocupat el lloc primer. Aquesta partida ja és plena."
+	}
+}

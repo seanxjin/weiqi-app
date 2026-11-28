@@ -1,0 +1,33 @@
+{
+	"server": {
+		"unavailable": "Pelayan tidak tersedia. Sila cuba lagi.",
+		"unreachable": "Tidak dapat menghubungi pelayan. Semak sambungan anda dan cuba lagi.",
+		"unexpectedResponse": "Pelayan memberikan respons yang tidak dijangka. Sila cuba lagi.",
+		"requestFailed": "Permintaan tidak dapat diselesaikan. Sila cuba lagi."
+	},
+	"rateLimited": {
+		"generic": "Terlalu banyak percubaan. Sila tunggu sebelum mencuba lagi.",
+		"withDelay_other": "Terlalu banyak percubaan. Sila tunggu {{count}} saat sebelum mencuba lagi."
+	},
+	"unknown": "Ada sesuatu yang tidak kena. Sila cuba lagi.",
+	"api": {
+		"invalidCredentials": "Nama pengguna, e-mel atau kata laluan tidak betul.",
+		"twoFactorRequired": "Masukkan kod 6 digit daripada aplikasi pengesah anda untuk meneruskan.",
+		"invalidTwoFactor": "Kod pengesah itu tidak betul. Sila cuba lagi.",
+		"emailUnconfirmed": "Sila sahkan alamat e-mel anda sebelum log masuk.",
+		"accountClosed": "Akaun ini telah ditutup dan tidak boleh log masuk.",
+		"usernameTaken": "Nama pengguna itu sudah digunakan. Sila pilih yang lain.",
+		"emailTaken": "Alamat e-mel itu sudah digunakan.",
+		"invalidToken": "Pautan ini tidak sah atau telah tamat tempoh. Minta e-mel baharu untuk meneruskan.",
+		"unauthorized": "Sesi log masuk anda telah tamat. Sila mulakan semula.",
+		"conflict": "Pendaftaran anda tidak dapat diselesaikan. Sila mulakan semula.",
+		"forbidden": "Permintaan ini telah disekat. Sila muat semula halaman dan cuba lagi."
+	},
+	"validation": {
+		"passwordTooShort": "Gunakan sekurang-kurangnya 8 aksara untuk kata laluan anda.",
+		"newPasswordTooShort": "Gunakan sekurang-kurangnya 8 aksara untuk kata laluan baharu anda.",
+		"passwordTooLong": "Kata laluan anda tidak boleh melebihi 72 bait UTF-8.",
+		"passwordMismatch": "Kata laluan baharu tidak sepadan.",
+		"passwordUnchanged": "Pilih kata laluan yang berbeza daripada kata laluan semasa."
+	}
+}

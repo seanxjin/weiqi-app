@@ -1,0 +1,35 @@
+{
+	"server": {
+		"unavailable": "El servidor no està disponible. Torna-ho a provar.",
+		"unreachable": "No es pot connectar amb el servidor. Comprova la connexió i torna-ho a provar.",
+		"unexpectedResponse": "El servidor ha retornat una resposta inesperada. Torna-ho a provar.",
+		"requestFailed": "No s’ha pogut completar la sol·licitud. Torna-ho a provar."
+	},
+	"rateLimited": {
+		"generic": "Massa intents. Espera una mica abans de tornar-ho a provar.",
+		"withDelay_one": "Massa intents. Espera {{count}} segon abans de tornar-ho a provar.",
+		"withDelay_many": "Massa intents. Espera {{count}} segons abans de tornar-ho a provar.",
+		"withDelay_other": "Massa intents. Espera {{count}} segons abans de tornar-ho a provar."
+	},
+	"unknown": "Alguna cosa ha anat malament. Torna-ho a provar.",
+	"api": {
+		"invalidCredentials": "El nom d’usuari, el correu o la contrasenya no són correctes.",
+		"twoFactorRequired": "Introdueix el codi de 6 xifres de l’aplicació d’autenticació per continuar.",
+		"invalidTwoFactor": "Aquest codi d’autenticació no és correcte. Torna-ho a provar.",
+		"emailUnconfirmed": "Confirma l’adreça de correu abans d’iniciar la sessió.",
+		"accountClosed": "Aquest compte està tancat i no pot iniciar la sessió.",
+		"usernameTaken": "Aquest nom d’usuari ja està en ús. Tria’n un altre.",
+		"emailTaken": "Aquesta adreça de correu ja està en ús.",
+		"invalidToken": "Aquest enllaç no és vàlid o ha caducat. Demana un correu nou per continuar.",
+		"unauthorized": "La sessió d’inici ha caducat. Torna a començar.",
+		"conflict": "No s’ha pogut completar el registre. Torna a començar.",
+		"forbidden": "S’ha bloquejat aquesta sol·licitud. Actualitza la pàgina i torna-ho a provar."
+	},
+	"validation": {
+		"passwordTooShort": "La contrasenya ha de tenir almenys 8 caràcters.",
+		"newPasswordTooShort": "La contrasenya nova ha de tenir almenys 8 caràcters.",
+		"passwordTooLong": "La contrasenya no pot superar els 72 bytes UTF-8.",
+		"passwordMismatch": "Les contrasenyes noves no coincideixen.",
+		"passwordUnchanged": "Tria una contrasenya diferent de l’actual."
+	}
+}

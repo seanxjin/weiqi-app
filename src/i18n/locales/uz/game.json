@@ -1,0 +1,134 @@
+{
+	"colors": {
+		"black": "Qora",
+		"white": "Oq"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Pas",
+	"localPage": {
+		"title": "Mahalliy oʻyin",
+		"eyebrow": "DOʻSTONA OʻYIN",
+		"heading": "Oʻyin uchun bir lahza.",
+		"details": "{{size}} × {{size}} · Yapon qoidalari"
+	},
+	"onlinePage": {
+		"title": "Onlayn oʻyin",
+		"eyebrow": "ONLAYN OʻYIN",
+		"heading": "Oʻyin uchun bir lahza.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Oʻyin yuklanmoqda…",
+		"notFound": "Bu oʻyin mavjud emas yoki endi mavjud emas.",
+		"startNew": "Yangi onlayn oʻyin boshlash",
+		"invited": "Siz {{size}} × {{size}} oʻyinga taklif qilindingiz.",
+		"joining": "Qoʻshilmoqda…",
+		"joinAs": "{{color}} sifatida qoʻshilish",
+		"full": "Bu oʻyinda boʻsh joy yoʻq. Oʻyinlarni tomosha qilish hozircha mavjud emas."
+	},
+	"local": {
+		"label": "Mahalliy Go oʻyini",
+		"loadingEngine": "Go dvigateli yuklanmoqda…"
+	},
+	"online": {
+		"label": "Onlayn Go oʻyini",
+		"youAre": "Siz — {{color}}",
+		"connection": {
+			"connecting": "Ulanmoqda…",
+			"open": "Ulangan",
+			"reconnecting": "Qayta ulanmoqda…",
+			"closed": "Uzilgan"
+		},
+		"invite": {
+			"label": "Doʻstingizni ushbu havola orqali taklif qiling",
+			"copy": "Nusxalash",
+			"copied": "Nusxalandi"
+		},
+		"awaitingScoring": "Ikkala oʻyinchi ham pas qildi. Ochko hisoblash hozircha qoʻllab-quvvatlanmaydi, shuning uchun oʻyinni hisobsiz qayd etish uchun uni toʻxtating.",
+		"confirmResign": "Taslim boʻlishni tasdiqlash",
+		"resign": "Taslim boʻlish",
+		"abort": "Toʻxtatish",
+		"results": {
+			"youWin": "Siz yutdingiz · {{color}} taslim boʻldi",
+			"winsByResignation": "{{color}} raqibning taslim boʻlishi bilan yutdi",
+			"aborted": "Oʻyin {{color}} tomonidan toʻxtatildi",
+			"unscored": "Oʻyin hisobsiz yakunlandi"
+		}
+	},
+	"turn": {
+		"preparing": "Taxta tayyorlanmoqda",
+		"reviewing": "Koʻrib chiqish · Oʻynash uchun Joriyga qayting",
+		"toPlay": "{{color}} yuradi",
+		"yourMove": "Sizning yurishingiz",
+		"waitingForOpponent": "Raqib kutilmoqda",
+		"awaitingScoring": "Oʻyin tugadi · Ochko hisoblash hozircha qoʻllab-quvvatlanmaydi",
+		"gameOver": "Oʻyin tugadi",
+		"sendingMove": "Yurish yuborilmoqda…",
+		"waitingForConnection": "Ulanish kutilmoqda"
+	},
+	"boardFooter": {
+		"lastMove": "Oxirgi yurish: {{color}} {{move}}",
+		"startingPosition": "Boshlangʻich pozitsiya"
+	},
+	"players": {
+		"label": "Oʻyinchilar",
+		"captured": "Asirlar: {{count}}",
+		"you": "{{name}} (siz)",
+		"waiting": "{{name}} · oʻyinchi kutilmoqda"
+	},
+	"history": {
+		"label": "Yurishlar tarixi",
+		"heading": "Yurishlar",
+		"moveCount_one": "{{count}} YURISH",
+		"moveCount_other": "{{count}} YURISH",
+		"tableLabel": "Qora va Oqning yurishlari",
+		"pair": "Juftlik",
+		"move": "{{number}}-yurish, {{color}}, {{move}}",
+		"pendingMove": "{{number}}-yurish, {{color}}, {{move}}, yuborilmoqda",
+		"empty": "Hali yurishlar yoʻq.",
+		"position": "{{latest}} tadan {{viewed}}-yurish",
+		"currentPosition": "JORIY POZITSIYA",
+		"reviewing": "KOʻRIB CHIQISH",
+		"navigationLabel": "Yurishlar tarixi boʻylab harakatlanish",
+		"navigation": {
+			"start": "Boshi",
+			"previous": "Oldingi",
+			"next": "Keyingi",
+			"current": "Joriy"
+		},
+		"undo": "Oxirgi yurishni bekor qilish",
+		"encouragement": "Shoshilmang. Har bir yurish muhim.",
+		"keyboardHint": "Yurishlar boʻylab ← → bilan, boshi va joriy holatga ↑ ↓ bilan oʻting."
+	},
+	"board": {
+		"sceneLabel": "{{moveCount}} ta debyut yurishi ketma-ketligini koʻrsatayotgan {{size}} x {{size}} Go taxtasi",
+		"themedBoard": "{{theme}} Go taxtasi",
+		"emptyBoard": "Boʻsh {{size}} x {{size}} {{theme}} baduk taxtasi",
+		"stone": "{{finish}} {{color}} baduk toshi",
+		"textureError": "Taxta teksturasini yuklab boʻlmadi.",
+		"pauseAnimations": "Animatsiyalarni pauza qilish",
+		"resumeAnimations": "Animatsiyalarni davom ettirish",
+		"pause": "PAUZA",
+		"resume": "DAVOM ETISH"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Taxtadagi kesishma nuqtasini tanlang.",
+			"occupied": "Bu kesishma band.",
+			"wrongPlayer": "Hozir boshqa oʻyinchining navbati.",
+			"suicide": "Oʻz-oʻzini asirga berish mumkin emas.",
+			"ko": "Bu yurish ko qoidasi boʻyicha taqiqlangan.",
+			"superko": "Bu yurish avvalgi pozitsiyani takrorlaydi.",
+			"gameEnded": "Bu oʻyin boshqa yurishni qabul qila olmaydi."
+		},
+		"serverRejectedMove": "Server yurishni rad etdi. {{reason}}",
+		"staleRevision": "Yurishingiz yetib kelguncha oʻyin oʻzgardi, shuning uchun u bajarilmadi.",
+		"wrongPhase": "Oʻyinning bu bosqichida buni amalga oshirib boʻlmaydi.",
+		"seatTaken": "Bu joy allaqachon band.",
+		"notYourTurn": "Hozir boshqa oʻyinchining navbati.",
+		"abortUnavailable": "Bu oʻyinni endi toʻxtatib boʻlmaydi.",
+		"replayFailed": "Bu oʻyinni mahalliy qayta tiklab boʻlmadi. Sahifani qayta yuklang.",
+		"notConnected": "Oʻyin serveriga ulanmagan.",
+		"engineLoadFailed": "Go dvigatelini yuklab boʻlmadi. Qaytadan urinib koʻring.",
+		"gameLoadFailed": "Oʻyinni yuklab boʻlmadi. Qaytadan urinib koʻring.",
+		"seatTakenFirst": "Bu joyni boshqa kimdir oldinroq egalladi. Endi oʻyinda boʻsh joy yoʻq."
+	}
+}

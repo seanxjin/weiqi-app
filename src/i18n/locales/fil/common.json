@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "GO",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Home ng Baduk",
+	"actions": {
+		"save": "I-save",
+		"saving": "Sine-save…",
+		"cancel": "Kanselahin",
+		"back": "Bumalik",
+		"retry": "Subukang muli",
+		"close": "Isara",
+		"login": "Mag-log in",
+		"signIn": "Mag-sign in",
+		"signUp": "Mag-sign up",
+		"logOut": "Mag-log out",
+		"loggingOut": "Nagla-log out…"
+	},
+	"status": {
+		"saved": "Na-save",
+		"loading": "Naglo-load…",
+		"checkingSession": "Sinusuri ang iyong session…",
+		"sessionError": "Hindi masuri ang iyong session. Pakisubukang muli."
+	},
+	"comingSoon": "Malapit nang dumating ang {{feature}}.",
+	"language": "Wika",
+	"languageDialog": {
+		"title": "Piliin ang gusto mong wika",
+		"loadError": "Hindi ma-load ang wikang iyan. Pakisubukang muli."
+	}
+}

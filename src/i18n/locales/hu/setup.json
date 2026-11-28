@@ -1,0 +1,85 @@
+{
+	"page": {
+		"title": {
+			"local": "Helyi játszma beállítása",
+			"online": "Online játszma beállítása"
+		},
+		"label": {
+			"local": "Helyi játszma beállítása",
+			"online": "Online játszma beállítása"
+		},
+		"backToMenu": "Vissza a menübe",
+		"settingsLabel": "Játszma beállításai",
+		"timeLimitsNotice": "Az időkorlátok még nincsenek érvényesítve.",
+		"boardSize": "TÁBLAMÉRET",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Játszma létrehozása…",
+		"startGame": "Játék indítása",
+		"createFailed": "A játszmát nem sikerült létrehozni. Próbáld újra."
+	},
+	"players": {
+		"player1": "1. játékos",
+		"player2": "2. játékos",
+		"opponent": "Ellenfél",
+		"guest": "Te (vendég)"
+	},
+	"configuration": {
+		"eyebrow": "BEÁLLÍTÁSOK",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Egyéni · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Több időbeosztás",
+		"fewerControls": "Kevesebb időbeosztás",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Villám",
+			"rapid": "Rapid",
+			"classical": "Klasszikus",
+			"correspondence": "Levelezési",
+			"untimed": "Időkorlát nélkül"
+		},
+		"systems": {
+			"absolute": "Abszolút",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Japán bjojomi"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} mp",
+			"absoluteMinutes": "{{minutes}} perc",
+			"mainSeconds": "{{seconds}} mp",
+			"mainMinutes": "{{minutes}} p",
+			"fischer": "{{main}} + {{increment}} mp",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}} mp",
+			"daysPerMove_one": "{{count}} nap / lépés",
+			"daysPerMove_other": "{{count}} nap / lépés"
+		},
+		"noTimeLimit": "Nincs időkorlát"
+	},
+	"customTime": {
+		"label": "Egyéni időbeosztás",
+		"eyebrow": "EGYÉNI IDŐBEOSZTÁS",
+		"heading": "Állítsd be a saját órádat",
+		"system": "Rendszer",
+		"fields": {
+			"minutes": "Alapidő · perc",
+			"seconds": "Alapidő · mp",
+			"increment": "Növekmény · mp",
+			"periods": "Periódusok",
+			"periodSeconds": "Periódus · mp"
+		},
+		"hints": {
+			"byoYomi": "A hosszabbítás meghatározott számú időzített periódusból áll.",
+			"default": "Válassz rendszert, majd add meg az óra értékeit."
+		},
+		"apply": "Egyéni idő használata",
+		"errors": {
+			"wholeNumbers": "Minden időmezőbe nemnegatív egész számot írj.",
+			"mainSeconds": "Az alapidő másodperce 0 és 59 között lehet.",
+			"byoYomiPeriods": "A bjojomihoz legalább egy, legalább egy másodperces periódus kell.",
+			"mainTime": "Az alapidő legyen nagyobb nullánál."
+		}
+	}
+}

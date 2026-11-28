@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "GO",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Baduk pradžia",
+	"actions": {
+		"save": "Išsaugoti",
+		"saving": "Išsaugoma…",
+		"cancel": "Atšaukti",
+		"back": "Atgal",
+		"retry": "Bandyti dar kartą",
+		"close": "Uždaryti",
+		"login": "Prisijungti",
+		"signIn": "Prisijungti",
+		"signUp": "Registruotis",
+		"logOut": "Atsijungti",
+		"loggingOut": "Atsijungiama…"
+	},
+	"status": {
+		"saved": "Išsaugota",
+		"loading": "Įkeliama…",
+		"checkingSession": "Tikrinama sesija…",
+		"sessionError": "Nepavyko patikrinti sesijos. Bandykite dar kartą."
+	},
+	"comingSoon": "{{feature}}: jau netrukus.",
+	"language": "Kalba",
+	"languageDialog": {
+		"title": "Pasirinkite pageidaujamą kalbą",
+		"loadError": "Nepavyko įkelti šios kalbos. Bandykite dar kartą."
+	}
+}

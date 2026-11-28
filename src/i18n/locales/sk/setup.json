@@ -1,0 +1,87 @@
+{
+	"page": {
+		"title": {
+			"local": "Nastavenie lokálnej hry",
+			"online": "Nastavenie online hry"
+		},
+		"label": {
+			"local": "Nastavenie lokálnej hry",
+			"online": "Nastavenie online hry"
+		},
+		"backToMenu": "Späť do ponuky",
+		"settingsLabel": "Nastavenia hry",
+		"timeLimitsNotice": "Časové limity sa zatiaľ nevynucujú.",
+		"boardSize": "VEĽKOSŤ DOSKY",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Vytvára sa hra…",
+		"startGame": "Začať hru",
+		"createFailed": "Hru sa nepodarilo vytvoriť. Skúste to znova."
+	},
+	"players": {
+		"player1": "Hráč 1",
+		"player2": "Hráč 2",
+		"opponent": "Súper",
+		"guest": "Vy (hosť)"
+	},
+	"configuration": {
+		"eyebrow": "KONFIGURÁCIE",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Vlastná · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Viac časových kontrol",
+		"fewerControls": "Menej časových kontrol",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Blitz",
+			"rapid": "Rapid",
+			"classical": "Klasická",
+			"correspondence": "Korešpondenčná",
+			"untimed": "Bez času"
+		},
+		"systems": {
+			"absolute": "Absolútny",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Japonské byo-yomi"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} s",
+			"absoluteMinutes": "{{minutes}} min",
+			"mainSeconds": "{{seconds}} s",
+			"mainMinutes": "{{minutes}} min",
+			"fischer": "{{main}} + {{increment}} s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}} s",
+			"daysPerMove_one": "{{count}} deň / ťah",
+			"daysPerMove_few": "{{count}} dni / ťah",
+			"daysPerMove_many": "{{count}} dňa / ťah",
+			"daysPerMove_other": "{{count}} dní / ťah"
+		},
+		"noTimeLimit": "Bez časového limitu"
+	},
+	"customTime": {
+		"label": "Vlastná časová kontrola",
+		"eyebrow": "VLASTNÁ ČASOVÁ KONTROLA",
+		"heading": "Nastavte si vlastné hodiny",
+		"system": "Systém",
+		"fields": {
+			"minutes": "Hlavný · min",
+			"seconds": "Hlavný · s",
+			"increment": "Prírastok · s",
+			"periods": "Periódy",
+			"periodSeconds": "Perióda · s"
+		},
+		"hints": {
+			"byoYomi": "Nadčas používa pevný počet časovaných periód.",
+			"default": "Zvoľte systém a potom zadajte hodnoty hodín."
+		},
+		"apply": "Použiť vlastný čas",
+		"errors": {
+			"wholeNumbers": "Do každého poľa hodín zadajte nezáporné celé číslo.",
+			"mainSeconds": "Sekundy hlavného času musia byť od 0 do 59.",
+			"byoYomiPeriods": "Byo-yomi potrebuje aspoň jednu periódu trvajúcu aspoň jednu sekundu.",
+			"mainTime": "Nastavte hlavný čas väčší ako nula."
+		}
+	}
+}

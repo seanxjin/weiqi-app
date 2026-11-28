@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "GO",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Página inicial do Baduk",
+	"actions": {
+		"save": "Salvar",
+		"saving": "Salvando…",
+		"cancel": "Cancelar",
+		"back": "Voltar",
+		"retry": "Tentar novamente",
+		"close": "Fechar",
+		"login": "Entrar",
+		"signIn": "Entrar",
+		"signUp": "Cadastrar-se",
+		"logOut": "Sair",
+		"loggingOut": "Saindo…"
+	},
+	"status": {
+		"saved": "Salvo",
+		"loading": "Carregando…",
+		"checkingSession": "Verificando sua sessão…",
+		"sessionError": "Não foi possível verificar sua sessão. Tente novamente."
+	},
+	"comingSoon": "{{feature}} estará disponível em breve.",
+	"language": "Idioma",
+	"languageDialog": {
+		"title": "Escolha seu idioma preferido",
+		"loadError": "Não foi possível carregar esse idioma. Tente novamente."
+	}
+}

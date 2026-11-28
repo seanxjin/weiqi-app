@@ -5,6 +5,7 @@ import { fetchGame, joinGame } from "@/api/games";
 import { GameSocket, gameSocketUrl } from "@/api/gameSocket";
 import { OnlineGameController } from "@/controllers/OnlineGameController";
 import type { Color, PublicGameSnapshot } from "@/api/protocol";
+import i18n from "@/i18n";
 import { clearSeat, loadSeat, saveSeat } from "@/lib/seatStore";
 
 export type OnlineGate =
@@ -24,7 +25,7 @@ function openSeat(game: PublicGameSnapshot): Color | null {
 }
 
 function errorMessage(error: unknown): string {
-	return error instanceof ApiError ? error.message : "The game could not be loaded. Please retry.";
+	return error instanceof ApiError ? error.message : i18n.t("game:errors.gameLoadFailed");
 }
 
 const isStatus = (error: unknown, status: number) => error instanceof ApiError && error.status === status;
@@ -105,7 +106,7 @@ export function useOnlineGame(gameId: string) {
 			const grant = await joinGame(gameId);
 			saveSeat({ gameId, color: grant.color, seatToken: grant.seatToken });
 		} catch (error) {
-			if (isStatus(error, 409)) setJoinError("Someone else took the seat first. This game is now full.");
+			if (isStatus(error, 409)) setJoinError(i18n.t("game:errors.seatTakenFirst"));
 			else if (!isStatus(error, 404)) setJoinError(errorMessage(error));
 		} finally {
 			setJoining(false);

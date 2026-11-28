@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Igraj Go",
+	"railLabel": "Baduk",
+	"mainNavigation": "Glavna navigacija",
+	"play": "Igraj",
+	"eyebrow": "Neki tekst",
+	"heading": {
+		"label": "Igraj Go",
+		"prefix": "Igraj "
+	},
+	"description": {
+		"first": "Neki tekst....",
+		"second": "Neki drugi tekst..."
+	},
+	"footnote": "NE ŽURITE."
+}

@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "GO",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Baduk-forsiden",
+	"actions": {
+		"save": "Lagre",
+		"saving": "Lagrer …",
+		"cancel": "Avbryt",
+		"back": "Tilbake",
+		"retry": "Prøv igjen",
+		"close": "Lukk",
+		"login": "Logg inn",
+		"signIn": "Logg inn",
+		"signUp": "Registrer deg",
+		"logOut": "Logg ut",
+		"loggingOut": "Logger ut …"
+	},
+	"status": {
+		"saved": "Lagret",
+		"loading": "Laster inn …",
+		"checkingSession": "Kontrollerer økten din …",
+		"sessionError": "Kunne ikke kontrollere økten din. Prøv igjen."
+	},
+	"comingSoon": "{{feature}} kommer snart.",
+	"language": "Språk",
+	"languageDialog": {
+		"title": "Velg foretrukket språk",
+		"loadError": "Språket kunne ikke lastes inn. Prøv igjen."
+	}
+}

@@ -1,0 +1,134 @@
+{
+	"colors": {
+		"black": "Must",
+		"white": "Valge"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Passi",
+	"localPage": {
+		"title": "Kohalik mäng",
+		"eyebrow": "SÕPRUSMÄNG",
+		"heading": "Hetk mängu jaoks.",
+		"details": "{{size}} × {{size}} · Jaapani reeglid"
+	},
+	"onlinePage": {
+		"title": "Veebimäng",
+		"eyebrow": "VEEBIMÄNG",
+		"heading": "Hetk mängu jaoks.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Mängu laadimine…",
+		"notFound": "Seda mängu pole olemas või see pole enam saadaval.",
+		"startNew": "Alusta uut veebimängu",
+		"invited": "Oled kutsutud mängule {{size}} × {{size}}.",
+		"joining": "Liitumine…",
+		"joinAs": "Liitu värviga {{color}}",
+		"full": "See mäng on täis. Mängude vaatamine pole veel saadaval."
+	},
+	"local": {
+		"label": "Kohalik go mäng",
+		"loadingEngine": "Go mootori laadimine…"
+	},
+	"online": {
+		"label": "Go veebimäng",
+		"youAre": "Sinu värv: {{color}}",
+		"connection": {
+			"connecting": "Ühendamine…",
+			"open": "Ühendatud",
+			"reconnecting": "Taasühendamine…",
+			"closed": "Ühendus katkenud"
+		},
+		"invite": {
+			"label": "Kutsu sõber selle lingiga",
+			"copy": "Kopeeri",
+			"copied": "Kopeeritud"
+		},
+		"awaitingScoring": "Mõlemad mängijad passisid. Punktiarvestust veel ei toetata, seega katkesta mäng, et see salvestataks ilma tulemuseta.",
+		"confirmResign": "Kinnita alistumine",
+		"resign": "Alistu",
+		"abort": "Katkesta",
+		"results": {
+			"youWin": "Sa võitsid · {{color}} alistus",
+			"winsByResignation": "{{color}} võitis vastase alistumisega",
+			"aborted": "Mängu katkestas {{color}}",
+			"unscored": "Mäng lõppes ilma tulemuseta"
+		}
+	},
+	"turn": {
+		"preparing": "Laua ettevalmistamine",
+		"reviewing": "Ülevaatus · Mängimiseks naase praegusesse seisu",
+		"toPlay": "Käik: {{color}}",
+		"yourMove": "Sinu käik",
+		"waitingForOpponent": "Vastase ootamine",
+		"awaitingScoring": "Mäng on lõppenud · Punktiarvestust veel ei toetata",
+		"gameOver": "Mäng läbi",
+		"sendingMove": "Käigu saatmine…",
+		"waitingForConnection": "Ühenduse ootamine"
+	},
+	"boardFooter": {
+		"lastMove": "Viimane käik: {{color}} {{move}}",
+		"startingPosition": "Algseis"
+	},
+	"players": {
+		"label": "Mängijad",
+		"captured": "Vangistatud {{count}}",
+		"you": "{{name}} (sina)",
+		"waiting": "{{name}} · ootab mängijat"
+	},
+	"history": {
+		"label": "Käikude ajalugu",
+		"heading": "Käigud",
+		"moveCount_one": "{{count}} KÄIK",
+		"moveCount_other": "{{count}} KÄIKU",
+		"tableLabel": "Musta ja valge käigud",
+		"pair": "Paar",
+		"move": "Käik {{number}}, {{color}}, {{move}}",
+		"pendingMove": "Käik {{number}}, {{color}}, {{move}}, saatmisel",
+		"empty": "Käike veel pole.",
+		"position": "Käik {{viewed}} / {{latest}}",
+		"currentPosition": "PRAEGUNE SEIS",
+		"reviewing": "ÜLEVAATUS",
+		"navigationLabel": "Käikude ajaloos liikumine",
+		"navigation": {
+			"start": "Algus",
+			"previous": "Eelmine",
+			"next": "Järgmine",
+			"current": "Praegune"
+		},
+		"undo": "Võta viimane käik tagasi",
+		"encouragement": "Võta aega. Iga käik loeb.",
+		"keyboardHint": "Kasuta ← → käikude sirvimiseks ning ↑ ↓ algusesse ja praegusesse seisu liikumiseks."
+	},
+	"board": {
+		"sceneLabel": "Go laud {{size}} × {{size}}, millel on {{moveCount}} avakäigu jada",
+		"themedBoard": "Go laud ({{theme}})",
+		"emptyBoard": "Tühi baduki laud {{size}} × {{size}} ({{theme}})",
+		"stone": "Baduki kivi ({{color}}, {{finish}})",
+		"textureError": "Laua tekstuuri ei õnnestunud laadida.",
+		"pauseAnimations": "Peata animatsioonid",
+		"resumeAnimations": "Jätka animatsioone",
+		"pause": "PAUS",
+		"resume": "JÄTKA"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Vali laual olev ristumispunkt.",
+			"occupied": "See ristumispunkt on hõivatud.",
+			"wrongPlayer": "Käik on teisel mängijal.",
+			"suicide": "Enesetapukäik pole lubatud.",
+			"ko": "Ko reegel keelab selle käigu.",
+			"superko": "See käik kordab varasemat seisu.",
+			"gameEnded": "Selles mängus ei saa enam käike teha."
+		},
+		"serverRejectedMove": "Server lükkas käigu tagasi. {{reason}}",
+		"staleRevision": "Mäng muutus enne sinu käigu saabumist, seega käiku ei tehtud.",
+		"wrongPhase": "See pole mängu selles etapis võimalik.",
+		"seatTaken": "See koht on juba võetud.",
+		"notYourTurn": "Käik on teisel mängijal.",
+		"abortUnavailable": "Mängu ei saa enam katkestada.",
+		"replayFailed": "Seda mängu ei õnnestunud kohapeal taasesitada. Laadi leht uuesti.",
+		"notConnected": "Mänguserveriga pole ühendust.",
+		"engineLoadFailed": "Go mootorit ei õnnestunud laadida. Proovi uuesti.",
+		"gameLoadFailed": "Mängu ei õnnestunud laadida. Proovi uuesti.",
+		"seatTakenFirst": "Keegi teine võttis koha enne sind. See mäng on nüüd täis."
+	}
+}

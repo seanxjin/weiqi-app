@@ -1,0 +1,18 @@
+{
+	"editProfile": "Rediģēt profilu",
+	"meta": {
+		"joined": "Pievienojās",
+		"rank": "Rangs",
+		"noRank": "—",
+		"followers": "Sekotāji",
+		"following": "Seko"
+	},
+	"about": {
+		"heading": "Par mani",
+		"noBio": "Vēl nav apraksta."
+	},
+	"games": {
+		"heading": "Spēļu vēsture",
+		"empty": "Vēl nav spēļu."
+	}
+}

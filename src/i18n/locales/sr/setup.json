@@ -1,0 +1,86 @@
+{
+	"page": {
+		"title": {
+			"local": "Подешавање локалне партије",
+			"online": "Подешавање онлајн партије"
+		},
+		"label": {
+			"local": "Подешавање локалне партије",
+			"online": "Подешавање онлајн партије"
+		},
+		"backToMenu": "Назад на мени",
+		"settingsLabel": "Подешавања партије",
+		"timeLimitsNotice": "Временска ограничења се још не примењују.",
+		"boardSize": "ВЕЛИЧИНА ТАБЛЕ",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Прављење партије…",
+		"startGame": "Започни игру",
+		"createFailed": "Партија није могла бити направљена. Покушајте поново."
+	},
+	"players": {
+		"player1": "Играч 1",
+		"player2": "Играч 2",
+		"opponent": "Противник",
+		"guest": "Ви (гост)"
+	},
+	"configuration": {
+		"eyebrow": "КОНФИГУРАЦИЈЕ",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Прилагођено · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Више контрола времена",
+		"fewerControls": "Мање контрола времена",
+		"groups": {
+			"bullet": "Булет",
+			"blitz": "Блиц",
+			"rapid": "Рапид",
+			"classical": "Класично",
+			"correspondence": "Дописно",
+			"untimed": "Без времена"
+		},
+		"systems": {
+			"absolute": "Апсолутно",
+			"fischer": "Фишер",
+			"japaneseByoYomi": "Јапански бјо-јоми"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} сек",
+			"absoluteMinutes": "{{minutes}} мин",
+			"mainSeconds": "{{seconds}} с",
+			"mainMinutes": "{{minutes}} мин",
+			"fischer": "{{main}} + {{increment}} с",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}} с",
+			"daysPerMove_one": "{{count}} дан / потез",
+			"daysPerMove_few": "{{count}} дана / потез",
+			"daysPerMove_other": "{{count}} дана / потез"
+		},
+		"noTimeLimit": "Без временског ограничења"
+	},
+	"customTime": {
+		"label": "Прилагођена контрола времена",
+		"eyebrow": "ПРИЛАГОЂЕНА КОНТРОЛА ВРЕМЕНА",
+		"heading": "Подесите свој сат",
+		"system": "Систем",
+		"fields": {
+			"minutes": "Основно · мин",
+			"seconds": "Основно · сек",
+			"increment": "Додатак · сек",
+			"periods": "Периоди",
+			"periodSeconds": "Период · сек"
+		},
+		"hints": {
+			"byoYomi": "Продужено време користи фиксан број временских периода.",
+			"default": "Изаберите систем, па унесите вредности сата."
+		},
+		"apply": "Користи прилагођено време",
+		"errors": {
+			"wholeNumbers": "Унесите ненегативан цео број у свако поље сата.",
+			"mainSeconds": "Основне секунде морају бити између 0 и 59.",
+			"byoYomiPeriods": "Бјо-јоми захтева бар један период од најмање једне секунде.",
+			"mainTime": "Основно време мора бити веће од нуле."
+		}
+	}
+}

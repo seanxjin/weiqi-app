@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "GO",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Domov Baduk",
+	"actions": {
+		"save": "Uložiť",
+		"saving": "Ukladá sa…",
+		"cancel": "Zrušiť",
+		"back": "Späť",
+		"retry": "Skúsiť znova",
+		"close": "Zavrieť",
+		"login": "Prihlásiť",
+		"signIn": "Prihlásiť sa",
+		"signUp": "Registrovať sa",
+		"logOut": "Odhlásiť sa",
+		"loggingOut": "Odhlasuje sa…"
+	},
+	"status": {
+		"saved": "Uložené",
+		"loading": "Načítava sa…",
+		"checkingSession": "Overuje sa vaša relácia…",
+		"sessionError": "Vašu reláciu sa nepodarilo overiť. Skúste to znova."
+	},
+	"comingSoon": "{{feature}} – už čoskoro.",
+	"language": "Jazyk",
+	"languageDialog": {
+		"title": "Vyberte si preferovanÃ½ jazyk",
+		"loadError": "Tento jazyk sa nepodarilo načítať. Skúste to znova."
+	}
+}

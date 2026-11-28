@@ -1,0 +1,117 @@
+{
+	"home": {
+		"pageTitle": "Gioca",
+		"location": "GIOCA / HOME",
+		"signedInAs": "Accesso effettuato come {{username}}",
+		"guest": "Stai giocando come ospite",
+		"logoutError": "Impossibile uscire. Riprova.",
+		"introduction": {
+			"heading": "Un testo",
+			"body": "Un altro testo"
+		},
+		"menuHeading": "Un testo.",
+		"options": {
+			"online": {
+				"label": "Gioca online",
+				"description": "Trova il tuo avversario. Incontratevi sul goban."
+			},
+			"local": {
+				"label": "Gioca in locale",
+				"description": "Un goban. Due giocatori. Uno schermo condiviso."
+			},
+			"friend": {
+				"label": "Gioca con un amico",
+				"description": "Invita qualcuno per una partita ponderata."
+			},
+			"puzzles": {
+				"label": "Risolvi problemi",
+				"description": "Piccole sfide. Istinto più affinato."
+			},
+			"lessons": {
+				"label": "Lezioni",
+				"description": "Dalla prima pietra alla prossima intuizione."
+			},
+			"bots": {
+				"label": "Gioca contro i bot",
+				"description": "Allenati al tuo ritmo, a qualsiasi livello."
+			}
+		},
+		"presence_one": "{{count, number}} giocatore al goban",
+		"presence_many": "{{count, number}} di giocatori al goban",
+		"presence_other": "{{count, number}} giocatori al goban",
+		"reserved": {
+			"label": "SEZIONE FUTURA",
+			"heading": "Riservato a contenuti futuri",
+			"body": "Per ora questa sezione è lasciata vuota di proposito. Sarà usata per funzionalità future, aggiornamenti o contenuti selezionati."
+		},
+		"footerTagline": "Regole semplici. Scoperte infinite."
+	},
+	"materials": {
+		"pageTitle": "Goban e pietre",
+		"breadcrumb": "Baduk / Libreria dei materiali",
+		"collection": "Collezione 01",
+		"heading": "Goban e pietre.",
+		"introduction": "Materiali naturali. Dettagli discreti. Uno spazio per il gioco.",
+		"boardsSection": {
+			"title": "I goban",
+			"meta": "Tre legni · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Le pietre",
+			"meta": "Quattro stili · bianco e nero"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Studio dei materiali",
+			"enlarged": "Campioni ingranditi",
+			"heading": "Un contrasto discreto.",
+			"body": "Quattro superfici. Nero e bianco, nella stessa luce soffusa.",
+			"scale": "Campioni ingranditi · scala uniforme",
+			"form": "Forma liscia e arrotondata / lievi variazioni della superficie"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Kaya giapponese tradizionale",
+				"material": "Miele caldo · venatura dritta"
+			},
+			"walnut": {
+				"name": "Noce scuro",
+				"material": "Marrone intenso · venatura fluida"
+			},
+			"ash": {
+				"name": "Frassino scandinavo chiaro",
+				"material": "Legno chiaro · venatura morbida"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Lucida",
+				"name": "Ardesia",
+				"description": "Superfici lisce e lucide con una discreta texture minerale.",
+				"black": "Ardesia nera",
+				"white": "Ardesia bianca"
+			},
+			"satin": {
+				"finish": "Satinata",
+				"name": "Ceramica",
+				"description": "Una lucentezza diffusa e una grana fine, delicata e uniforme.",
+				"black": "Ceramica nera",
+				"white": "Ceramica bianca"
+			},
+			"matte": {
+				"finish": "Opaca",
+				"name": "Pietra naturale",
+				"description": "Discrete screziature minerali sotto una finitura liscia e asciutta.",
+				"black": "Pietra nera",
+				"white": "Pietra bianca"
+			},
+			"snow": {
+				"finish": "Lucida",
+				"name": "Conchiglia · Grado Yuki / Neve",
+				"description": "Venatura di conchiglia fine e fitta su bianco latte, abbinata ad ardesia nera lucida.",
+				"black": "Ardesia Nachiguro nera",
+				"white": "Conchiglia Yuki bianca"
+			}
+		},
+		"footerTagline": "L’essenziale, con cura."
+	}
+}

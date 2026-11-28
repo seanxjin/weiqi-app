@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Spill Go",
+	"railLabel": "Baduk",
+	"mainNavigation": "Hovednavigasjon",
+	"play": "Spill",
+	"eyebrow": "Litt tekst",
+	"heading": {
+		"label": "Spill Go",
+		"prefix": "Spill "
+	},
+	"description": {
+		"first": "Litt tekst …",
+		"second": "Litt annen tekst …"
+	},
+	"footnote": "TA DEG TID."
+}

@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Outlet, useLocation } from "react-router";
 import { AppSidebar } from "./AppSidebar";
 import type { AppLayoutContext } from "@/context/AppLayoutContext";
 import "@/styles/app-layout.css";
 
 export function AppLayout() {
+	const { t } = useTranslation(["nav", "common"]);
 	const location = useLocation();
 	const [compact, setCompact] = useState(() => window.matchMedia("(width < 1000px)").matches);
 	const drawer = useRef<HTMLDialogElement>(null);
@@ -52,7 +54,7 @@ export function AppLayout() {
 					ref={drawer}
 					id="go-sidebar-drawer"
 					className="go-sidebar-drawer"
-					aria-label="Baduk navigation"
+					aria-label={t("navigation")}
 					onClose={() => {
 						setSidebarOpen(false);
 						toggle.current?.focus();
@@ -86,7 +88,7 @@ export function AppLayout() {
 							ref={toggle}
 							className="go-sidebar-toggle"
 							type="button"
-							aria-label="Open navigation"
+							aria-label={t("drawer.open")}
 							aria-expanded={sidebarOpen}
 							aria-controls="go-sidebar-drawer"
 							onClick={() => {
@@ -101,7 +103,7 @@ export function AppLayout() {
 				<Outlet context={{ comingSoon } satisfies AppLayoutContext} />
 			</div>
 			<div className="go-notice" role="status" aria-live="polite" aria-atomic="true">
-				{notice.label && <span key={notice.sequence}>{notice.label} is coming soon.</span>}
+				{notice.label && <span key={notice.sequence}>{t("common:comingSoon", { feature: notice.label })}</span>}
 			</div>
 		</div>
 	);

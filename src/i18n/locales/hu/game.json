@@ -1,0 +1,134 @@
+{
+	"colors": {
+		"black": "Fekete",
+		"white": "Fehér"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Passz",
+	"localPage": {
+		"title": "Helyi játék",
+		"eyebrow": "BARÁTI JÁTSZMA",
+		"heading": "Egy pillanat a játéknak.",
+		"details": "{{size}} × {{size}} · Japán szabályok"
+	},
+	"onlinePage": {
+		"title": "Online játék",
+		"eyebrow": "ONLINE JÁTSZMA",
+		"heading": "Egy pillanat a játéknak.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Játszma betöltése…",
+		"notFound": "Ez a játszma nem létezik, vagy már nem érhető el.",
+		"startNew": "Új online játszma indítása",
+		"invited": "Meghívtak egy {{size}} × {{size}} méretű játszmára.",
+		"joining": "Csatlakozás…",
+		"joinAs": "Csatlakozás ezzel a színnel: {{color}}",
+		"full": "Ez a játszma betelt. A játszmák nézése még nem érhető el."
+	},
+	"local": {
+		"label": "Helyi gojátszma",
+		"loadingEngine": "Gomotor betöltése…"
+	},
+	"online": {
+		"label": "Online gojátszma",
+		"youAre": "A színed: {{color}}",
+		"connection": {
+			"connecting": "Kapcsolódás…",
+			"open": "Kapcsolódva",
+			"reconnecting": "Újrakapcsolódás…",
+			"closed": "Kapcsolat bontva"
+		},
+		"invite": {
+			"label": "Hívj meg egy barátot ezzel a linkkel",
+			"copy": "Másolás",
+			"copied": "Másolva"
+		},
+		"awaitingScoring": "Mindkét játékos passzolt. A pontszámítás még nem támogatott, ezért szakítsd meg a játszmát, hogy pontszám nélkül kerüljön rögzítésre.",
+		"confirmResign": "Feladás megerősítése",
+		"resign": "Feladás",
+		"abort": "Megszakítás",
+		"results": {
+			"youWin": "Nyertél · {{color}} feladta",
+			"winsByResignation": "{{color}} nyert feladással",
+			"aborted": "A játszmát megszakította: {{color}}",
+			"unscored": "A játszma pontszám nélkül ért véget"
+		}
+	},
+	"turn": {
+		"preparing": "Tábla előkészítése",
+		"reviewing": "Visszanézés · A játékhoz menj a Jelenlegi állásra",
+		"toPlay": "{{color}} lép",
+		"yourMove": "Te lépsz",
+		"waitingForOpponent": "Várakozás ellenfélre",
+		"awaitingScoring": "A játék véget ért · A pontszámítás még nem támogatott",
+		"gameOver": "Vége a játszmának",
+		"sendingMove": "Lépés küldése…",
+		"waitingForConnection": "Várakozás a kapcsolatra"
+	},
+	"boardFooter": {
+		"lastMove": "Utolsó lépés: {{color}} {{move}}",
+		"startingPosition": "Kezdőállás"
+	},
+	"players": {
+		"label": "Játékosok",
+		"captured": "Foglyok: {{count}}",
+		"you": "{{name}} (te)",
+		"waiting": "{{name}} · várakozás játékosra"
+	},
+	"history": {
+		"label": "Lépéstörténet",
+		"heading": "Lépések",
+		"moveCount_one": "{{count}} LÉPÉS",
+		"moveCount_other": "{{count}} LÉPÉS",
+		"tableLabel": "Fekete és Fehér lépései",
+		"pair": "Pár",
+		"move": "{{number}}. lépés, {{color}}, {{move}}",
+		"pendingMove": "{{number}}. lépés, {{color}}, {{move}}, küldés alatt",
+		"empty": "Még nincs lépés.",
+		"position": "{{viewed}}. lépés / {{latest}}",
+		"currentPosition": "JELENLEGI ÁLLÁS",
+		"reviewing": "VISSZANÉZÉS",
+		"navigationLabel": "Navigáció a lépéstörténetben",
+		"navigation": {
+			"start": "Eleje",
+			"previous": "Előző",
+			"next": "Következő",
+			"current": "Jelenlegi"
+		},
+		"undo": "Utolsó lépés visszavonása",
+		"encouragement": "Szánj rá időt. Minden lépés számít.",
+		"keyboardHint": "A ← → nyilakkal léptethetsz, a ↑ ↓ nyilakkal az elejére és a jelenlegi állásra ugorhatsz."
+	},
+	"board": {
+		"sceneLabel": "Egy {{size}} × {{size}} méretű gotábla {{moveCount}} nyitólépéses sorozattal",
+		"themedBoard": "Gotábla: {{theme}}",
+		"emptyBoard": "Üres {{size}} × {{size}} méretű gotábla: {{theme}}",
+		"stone": "Gokő: {{color}} ({{finish}})",
+		"textureError": "A tábla textúráját nem sikerült betölteni.",
+		"pauseAnimations": "Animációk szüneteltetése",
+		"resumeAnimations": "Animációk folytatása",
+		"pause": "SZÜNET",
+		"resume": "FOLYTATÁS"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Válassz egy metszéspontot a táblán.",
+			"occupied": "Ez a metszéspont foglalt.",
+			"wrongPlayer": "A másik játékos következik.",
+			"suicide": "Az öngyilkos lépés nem megengedett.",
+			"ko": "Ezt a lépést a kó szabály tiltja.",
+			"superko": "Ez a lépés egy korábbi állást ismételne meg.",
+			"gameEnded": "Ebben a játszmában már nem lehet lépni."
+		},
+		"serverRejectedMove": "A szerver elutasította a lépést. {{reason}}",
+		"staleRevision": "A játszma megváltozott, mielőtt a lépésed megérkezett, ezért nem lett megjátszva.",
+		"wrongPhase": "Ez a játszma jelenlegi szakaszában nem lehetséges.",
+		"seatTaken": "Ez a hely már foglalt.",
+		"notYourTurn": "A másik játékos következik.",
+		"abortUnavailable": "A játszma már nem szakítható meg.",
+		"replayFailed": "A játszmát nem sikerült helyben visszajátszani. Töltsd újra az oldalt.",
+		"notConnected": "Nincs kapcsolat a játékszerverrel.",
+		"engineLoadFailed": "A gomotort nem sikerült betölteni. Próbáld újra.",
+		"gameLoadFailed": "A játszmát nem sikerült betölteni. Próbáld újra.",
+		"seatTakenFirst": "Valaki megelőzött, és elfoglalta a helyet. Ez a játszma most betelt."
+	}
+}

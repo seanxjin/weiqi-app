@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState, type ReactNode } from "react"
 import { getAccount, logout as logoutRequest } from "@/api/auth";
 import { ApiError } from "@/api/client";
 import { AuthContext } from "@/context/AuthContext";
+import i18n from "@/i18n";
 import type { Account } from "@/types/account";
 
 export function AuthProvider({ children }: { children: ReactNode }) {
@@ -25,7 +26,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 			if (error instanceof ApiError && error.status === 401) {
 				setAccount(null);
 			} else {
-				setAccountError("Unable to check your session. Please try again.");
+				setAccountError(i18n.t("common:status.sessionError"));
 			}
 		}
 	}, []);

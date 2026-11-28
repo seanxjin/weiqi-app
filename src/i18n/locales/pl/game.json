@@ -1,0 +1,136 @@
+{
+	"colors": {
+		"black": "Czarne",
+		"white": "Białe"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Pas",
+	"localPage": {
+		"title": "Gra lokalna",
+		"eyebrow": "PARTIA TOWARZYSKA",
+		"heading": "Chwila dla gry.",
+		"details": "{{size}} × {{size}} · Zasady japońskie"
+	},
+	"onlinePage": {
+		"title": "Gra online",
+		"eyebrow": "PARTIA ONLINE",
+		"heading": "Chwila dla gry.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Ładowanie partii…",
+		"notFound": "Ta partia nie istnieje lub nie jest już dostępna.",
+		"startNew": "Rozpocznij nową partię online",
+		"invited": "Zaproszono Cię do partii {{size}} × {{size}}.",
+		"joining": "Dołączanie…",
+		"joinAs": "Dołącz jako {{color}}",
+		"full": "Ta partia jest pełna. Oglądanie partii nie jest jeszcze dostępne."
+	},
+	"local": {
+		"label": "Lokalna partia go",
+		"loadingEngine": "Ładowanie silnika go…"
+	},
+	"online": {
+		"label": "Partia go online",
+		"youAre": "Grasz: {{color}}",
+		"connection": {
+			"connecting": "Łączenie…",
+			"open": "Połączono",
+			"reconnecting": "Ponowne łączenie…",
+			"closed": "Rozłączono"
+		},
+		"invite": {
+			"label": "Zaproś znajomego za pomocą tego linku",
+			"copy": "Kopiuj",
+			"copied": "Skopiowano"
+		},
+		"awaitingScoring": "Obaj gracze spasowali. Liczenie punktów nie jest jeszcze obsługiwane, więc przerwij partię, aby zapisać ją bez wyniku.",
+		"confirmResign": "Potwierdź poddanie",
+		"resign": "Poddaj się",
+		"abort": "Przerwij",
+		"results": {
+			"youWin": "Wygrywasz · {{color}} poddały się",
+			"winsByResignation": "{{color}} wygrywają przez poddanie",
+			"aborted": "Partia przerwana przez: {{color}}",
+			"unscored": "Partia zakończona bez wyniku"
+		}
+	},
+	"turn": {
+		"preparing": "Przygotowywanie planszy",
+		"reviewing": "Przegląd · Wróć do bieżącej pozycji, aby grać",
+		"toPlay": "Ruch: {{color}}",
+		"yourMove": "Twój ruch",
+		"waitingForOpponent": "Oczekiwanie na przeciwnika",
+		"awaitingScoring": "Gra zakończona · Liczenie punktów nie jest jeszcze obsługiwane",
+		"gameOver": "Koniec partii",
+		"sendingMove": "Wysyłanie ruchu…",
+		"waitingForConnection": "Oczekiwanie na połączenie"
+	},
+	"boardFooter": {
+		"lastMove": "Ostatni ruch: {{color}} {{move}}",
+		"startingPosition": "Pozycja początkowa"
+	},
+	"players": {
+		"label": "Gracze",
+		"captured": "Jeńcy: {{count}}",
+		"you": "{{name}} (Ty)",
+		"waiting": "{{name}} · oczekiwanie na gracza"
+	},
+	"history": {
+		"label": "Historia ruchów",
+		"heading": "Ruchy",
+		"moveCount_one": "{{count}} RUCH",
+		"moveCount_few": "{{count}} RUCHY",
+		"moveCount_many": "{{count}} RUCHÓW",
+		"moveCount_other": "{{count}} RUCHU",
+		"tableLabel": "Ruchy czarnych i białych",
+		"pair": "Para",
+		"move": "Ruch {{number}}, {{color}}, {{move}}",
+		"pendingMove": "Ruch {{number}}, {{color}}, {{move}}, wysyłanie",
+		"empty": "Brak ruchów.",
+		"position": "Ruch {{viewed}} z {{latest}}",
+		"currentPosition": "BIEŻĄCA POZYCJA",
+		"reviewing": "PRZEGLĄD",
+		"navigationLabel": "Nawigacja po historii ruchów",
+		"navigation": {
+			"start": "Początek",
+			"previous": "Poprzedni",
+			"next": "Następny",
+			"current": "Bieżący"
+		},
+		"undo": "Cofnij ostatni ruch",
+		"encouragement": "Nie spiesz się. Każdy ruch ma znaczenie.",
+		"keyboardHint": "Używaj ← →, aby przechodzić między ruchami, a ↑ ↓, aby przejść na początek lub do bieżącej pozycji."
+	},
+	"board": {
+		"sceneLabel": "Plansza go {{size}} na {{size}} z sekwencją {{moveCount}} ruchów otwarcia",
+		"themedBoard": "Plansza go: {{theme}}",
+		"emptyBoard": "Pusta plansza baduk {{size}} na {{size}}: {{theme}}",
+		"stone": "Kamień baduk: {{color}}, {{finish}}",
+		"textureError": "Nie udało się wczytać tekstury planszy.",
+		"pauseAnimations": "Wstrzymaj animacje",
+		"resumeAnimations": "Wznów animacje",
+		"pause": "PAUZA",
+		"resume": "WZNÓW"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Wybierz punkt przecięcia na planszy.",
+			"occupied": "To przecięcie jest zajęte.",
+			"wrongPlayer": "Teraz ruch drugiego gracza.",
+			"suicide": "Samobójstwo jest niedozwolone.",
+			"ko": "Ten ruch jest zabroniony przez zasadę ko.",
+			"superko": "Ten ruch powtarza wcześniejszą pozycję.",
+			"gameEnded": "Ta partia nie przyjmuje już ruchów."
+		},
+		"serverRejectedMove": "Serwer odrzucił ruch. {{reason}}",
+		"staleRevision": "Partia zmieniła się, zanim dotarł Twój ruch, więc nie został on wykonany.",
+		"wrongPhase": "Na tym etapie partii nie jest to możliwe.",
+		"seatTaken": "To miejsce jest już zajęte.",
+		"notYourTurn": "Teraz ruch drugiego gracza.",
+		"abortUnavailable": "Tej partii nie można już przerwać.",
+		"replayFailed": "Nie udało się odtworzyć tej partii lokalnie. Odśwież stronę.",
+		"notConnected": "Brak połączenia z serwerem gry.",
+		"engineLoadFailed": "Nie udało się wczytać silnika go. Spróbuj ponownie.",
+		"gameLoadFailed": "Nie udało się wczytać partii. Spróbuj ponownie.",
+		"seatTakenFirst": "Ktoś inny zajął to miejsce pierwszy. Partia jest już pełna."
+	}
+}

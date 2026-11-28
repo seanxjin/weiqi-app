@@ -1,0 +1,134 @@
+{
+	"colors": {
+		"black": "Të zinjtë",
+		"white": "Të bardhët"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Pas",
+	"localPage": {
+		"title": "Lojë lokale",
+		"eyebrow": "LOJË MIQËSORE",
+		"heading": "Një moment për lojën.",
+		"details": "{{size}} × {{size}} · Rregulla japoneze"
+	},
+	"onlinePage": {
+		"title": "Lojë online",
+		"eyebrow": "LOJË ONLINE",
+		"heading": "Një moment për lojën.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Po ngarkohet loja…",
+		"notFound": "Kjo lojë nuk ekziston ose nuk është më e disponueshme.",
+		"startNew": "Fillo një lojë të re online",
+		"invited": "Je ftuar në një lojë {{size}} × {{size}}.",
+		"joining": "Po bashkohesh…",
+		"joinAs": "Bashkohu si {{color}}",
+		"full": "Kjo lojë është plot. Shikimi i lojërave ende nuk është i disponueshëm."
+	},
+	"local": {
+		"label": "Lojë lokale Go",
+		"loadingEngine": "Po ngarkohet motori i Go…"
+	},
+	"online": {
+		"label": "Lojë online Go",
+		"youAre": "Ti luan me {{color}}",
+		"connection": {
+			"connecting": "Po lidhet…",
+			"open": "I lidhur",
+			"reconnecting": "Po rilidhet…",
+			"closed": "I shkëputur"
+		},
+		"invite": {
+			"label": "Fto një mik me këtë lidhje",
+			"copy": "Kopjo",
+			"copied": "U kopjua"
+		},
+		"awaitingScoring": "Të dy lojtarët dhanë pas. Numërimi i pikëve ende nuk mbështetet, prandaj anuloje lojën për ta regjistruar pa rezultat.",
+		"confirmResign": "Konfirmo dorëzimin",
+		"resign": "Dorëzohu",
+		"abort": "Anulo",
+		"results": {
+			"youWin": "Fitove · {{color}} u dorëzuan",
+			"winsByResignation": "{{color}} fitojnë me dorëzim",
+			"aborted": "Loja u anulua nga {{color}}",
+			"unscored": "Loja përfundoi pa rezultat"
+		}
+	},
+	"turn": {
+		"preparing": "Po përgatitet tabela",
+		"reviewing": "Po rishikohet · Kthehu te Aktualja për të luajtur",
+		"toPlay": "Radhën e kanë {{color}}",
+		"yourMove": "Radha jote",
+		"waitingForOpponent": "Në pritje të një kundërshtari",
+		"awaitingScoring": "Loja ka mbaruar · Numërimi ende nuk mbështetet",
+		"gameOver": "Loja mbaroi",
+		"sendingMove": "Po dërgohet lëvizja…",
+		"waitingForConnection": "Në pritje të lidhjes"
+	},
+	"boardFooter": {
+		"lastMove": "Lëvizja e fundit: {{color}} {{move}}",
+		"startingPosition": "Pozicioni fillestar"
+	},
+	"players": {
+		"label": "Lojtarët",
+		"captured": "Kapur: {{count}}",
+		"you": "{{name}} (ti)",
+		"waiting": "{{name}} · në pritje të një lojtari"
+	},
+	"history": {
+		"label": "Historiku i lëvizjeve",
+		"heading": "Lëvizjet",
+		"moveCount_one": "{{count}} LËVIZJE",
+		"moveCount_other": "{{count}} LËVIZJE",
+		"tableLabel": "Lëvizjet e të zinjve dhe të bardhëve",
+		"pair": "Çift",
+		"move": "Lëvizja {{number}}, {{color}}, {{move}}",
+		"pendingMove": "Lëvizja {{number}}, {{color}}, {{move}}, po dërgohet",
+		"empty": "Ende pa lëvizje.",
+		"position": "Lëvizja {{viewed}} nga {{latest}}",
+		"currentPosition": "POZICIONI AKTUAL",
+		"reviewing": "RISHIKIM",
+		"navigationLabel": "Navigimi në historikun e lëvizjeve",
+		"navigation": {
+			"start": "Fillimi",
+			"previous": "E mëparshmja",
+			"next": "Tjetra",
+			"current": "Aktualja"
+		},
+		"undo": "Zhbëj lëvizjen e fundit",
+		"encouragement": "Mos u ngut. Çdo lëvizje ka rëndësi.",
+		"keyboardHint": "Përdor ← → për të kaluar nëpër lëvizje, ↑ ↓ për fillimin dhe pozicionin aktual."
+	},
+	"board": {
+		"sceneLabel": "Një tabelë Go {{size}} me {{size}} që tregon një varg prej {{moveCount}} lëvizjesh hapëse",
+		"themedBoard": "Tabelë Go {{theme}}",
+		"emptyBoard": "Tabelë baduk {{theme}} bosh, {{size}} me {{size}}",
+		"stone": "Gur baduk {{color}}, {{finish}}",
+		"textureError": "Tekstura e tabelës nuk mund të ngarkohej.",
+		"pauseAnimations": "Ndalo animacionet",
+		"resumeAnimations": "Rifillo animacionet",
+		"pause": "NDALO",
+		"resume": "RIFILLO"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Zgjidh një kryqëzim në tabelë.",
+			"occupied": "Ky kryqëzim është i zënë.",
+			"wrongPlayer": "Është radha e lojtarit tjetër.",
+			"suicide": "Vetëvrasja nuk lejohet.",
+			"ko": "Kjo lëvizje ndalohet nga rregulli i ko-s.",
+			"superko": "Kjo lëvizje përsërit një pozicion të mëparshëm.",
+			"gameEnded": "Kjo lojë nuk pranon më lëvizje."
+		},
+		"serverRejectedMove": "Serveri e refuzoi lëvizjen. {{reason}}",
+		"staleRevision": "Loja ndryshoi para se të mbërrinte lëvizja jote, prandaj ajo nuk u luajt.",
+		"wrongPhase": "Kjo nuk është e mundur në këtë fazë të lojës.",
+		"seatTaken": "Ky vend është tashmë i zënë.",
+		"notYourTurn": "Është radha e lojtarit tjetër.",
+		"abortUnavailable": "Loja nuk mund të anulohet më.",
+		"replayFailed": "Kjo lojë nuk mund të riluhej lokalisht. Ringarko faqen.",
+		"notConnected": "Nuk je i lidhur me serverin e lojës.",
+		"engineLoadFailed": "Motori i Go nuk mund të ngarkohej. Riprovo.",
+		"gameLoadFailed": "Loja nuk mund të ngarkohej. Riprovo.",
+		"seatTakenFirst": "Dikush tjetër e zuri vendin i pari. Kjo lojë tani është plot."
+	}
+}

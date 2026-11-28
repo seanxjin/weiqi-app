@@ -4,6 +4,7 @@ import type { BoardSize } from "weiqi-board";
 import { ApiError } from "@/api/client";
 import { createGame } from "@/api/games";
 import type { Color } from "@/api/protocol";
+import i18n from "@/i18n";
 import { saveSeat } from "@/lib/seatStore";
 
 export function useCreateOnlineGame() {
@@ -18,7 +19,7 @@ export function useCreateOnlineGame() {
 			saveSeat({ gameId: grant.gameId, color: grant.color, seatToken: grant.seatToken });
 			navigate(`/play/online/${encodeURIComponent(grant.gameId)}`);
 		} catch (error) {
-			setError(error instanceof ApiError ? error.message : "The game could not be created. Please try again.");
+			setError(error instanceof ApiError ? error.message : i18n.t("setup:page.createFailed"));
 			setCreating(false);
 		}
 	};

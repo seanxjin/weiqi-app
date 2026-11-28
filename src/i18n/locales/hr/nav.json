@@ -1,0 +1,29 @@
+{
+	"navigation": "Baduk navigacija",
+	"drawer": {
+		"open": "Otvori navigaciju",
+		"close": "Zatvori navigaciju"
+	},
+	"mainNavigation": "Glavna navigacija",
+	"play": "Igraj",
+	"puzzles": "Zadaci",
+	"learn": "Učenje",
+	"guide": {
+		"heading": "NOVI STE U GOU?",
+		"startWithBasics": "Počnite od osnova"
+	},
+	"account": {
+		"label": "Račun",
+		"friends": "Prijatelji",
+		"messages": "Poruke",
+		"notifications": "Obavijesti",
+		"settings": "Postavke",
+		"allSettings": "Sve postavke"
+	},
+	"theme": {
+		"label": "Tema",
+		"system": "Sustav",
+		"light": "Svijetla",
+		"dark": "Tamna"
+	}
+}

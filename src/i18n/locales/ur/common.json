@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "گو",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Baduk ہوم",
+	"actions": {
+		"save": "محفوظ کریں",
+		"saving": "محفوظ ہو رہا ہے…",
+		"cancel": "منسوخ کریں",
+		"back": "واپس",
+		"retry": "دوبارہ کوشش کریں",
+		"close": "بند کریں",
+		"login": "لاگ ان",
+		"signIn": "سائن ان",
+		"signUp": "سائن اپ",
+		"logOut": "لاگ آؤٹ",
+		"loggingOut": "لاگ آؤٹ ہو رہا ہے…"
+	},
+	"status": {
+		"saved": "محفوظ ہو گیا",
+		"loading": "لوڈ ہو رہا ہے…",
+		"checkingSession": "آپ کا سیشن چیک کیا جا رہا ہے…",
+		"sessionError": "آپ کا سیشن چیک نہیں ہو سکا۔ براہ کرم دوبارہ کوشش کریں۔"
+	},
+	"comingSoon": "{{feature}} جلد دستیاب ہوگا۔",
+	"language": "زبان",
+	"languageDialog": {
+		"title": "اپنی پسندیدہ زبان منتخب کریں",
+		"loadError": "یہ زبان لوڈ نہیں ہو سکی۔ براہ کرم دوبارہ کوشش کریں۔"
+	}
+}
