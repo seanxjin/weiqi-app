@@ -8,13 +8,17 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+test-results/
+playwright-report/
 dist
 dist-ssr
+public/wasm/
 *.local
 public/wasm/
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+!.vscode/settings.json
 .idea
 .DS_Store
 *.suo

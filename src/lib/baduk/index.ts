@@ -1,6 +1,0 @@
-export { drawBoard } from './drawBoard'
-export type { DrawBoardOptions } from './drawBoard'
-export { drawStone } from './drawStone'
-export type { DrawStoneOptions } from './drawStone'
-export { boardGeometry, welcomeBoardGeometry, boardThemes, stoneStyles } from './themes'
-export type { BoardGeometry, BoardThemeId, StoneStyleId, StoneColor } from './themes'

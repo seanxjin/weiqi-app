@@ -4,12 +4,30 @@ React + TypeScript + Vite, with plain CSS and Canvas 2D. The welcome page at `/`
 
 ## Development
 
+The board is installed into `node_modules` from the versioned npm package archive
+`vendor/weiqi_board-0.1.0.tgz`. Commit this archive with the app. Installing, building,
+and running the app does not require a `weiqi_board` source checkout or build.
+
+To upgrade the board, run `npm ci`, `npm test`, and `npm pack` in its independent
+source checkout. Copy the resulting archive into this app's `vendor/` directory,
+then run `npm install ./vendor/weiqi_board-<version>.tgz --save-exact` and commit
+the archive, `package.json`, and `package-lock.json`. Board releases should use a
+new package version. `npm pack` builds the package before creating the archive.
+
+The separate rules engine setup still requires the WASM artifacts in
+`weiqi-ruleset/build/wasm/` beside the app, as used by `npm run wasm:copy`.
+
 ```sh
 npm install
 npm run dev
 npm run build
 npm run lint
+npm run lint:fix
+npm run format
+npm run format:check
 ```
+
+Oxlint checks TypeScript, JavaScript, and React code, including Rules of Hooks and component exports for Fast Refresh. `lint` fails on errors or warnings; `lint:fix` applies available automatic fixes. Prettier formats source, styles, tests, documentation, and configuration using two spaces, single quotes, and no semicolons. Generated build output, copied WASM artifacts, test reports, dependencies, and the npm lockfile are excluded. Run `npm run lint` and `npm run format:check` for read-only checks before merging. Type checking remains part of `npm run build`.
 
 ## Reusable components
 
@@ -26,19 +44,18 @@ import { StoneCanvas } from './components/StoneCanvas'
 - Board themes: `kaya`, `walnut`, `ash`. `size` is the optional CSS width; without it the board fills its container.
 - Stone styles: `polished` (Slate), `satin` (Ceramic), `matte` (Natural stone), `snow` (Clamshell · Yuki / Snow Grade). Colors: `black`, `white`. `size` is the stone diameter, defaulting to 138px. Its transparent Canvas includes additional space for shadows and shrinks to fit its container.
 - Both components accept an accessible `label` and redraw on appearance, layout, texture, and pixel-density changes. Their shared Canvas surface handles bitmap scaling and observer cleanup.
-- The components use the Canvas sizing rules in `src/index.css` and shared presentation rules in `src/index.css`; material-library styles are scoped in `src/pages/material-library/MaterialLibraryPage.css`.
+- The components use the Canvas sizing rules and shared presentation rules in `src/styles/index.css`; material-library styles are scoped in `src/styles/material-library.css`.
 
 ## Drawing into a game scene
 
-The rendering functions are independent of React and do not clear the destination Canvas. Import the renderers, appearance registries, and public types from `src/lib/baduk`.
+The rendering functions are independent of React and do not clear the destination Canvas. Import the renderers, appearance registries, and public types from `weiqi-board`.
 
 ```ts
-import { drawBoard, drawStone, boardThemes } from './lib/baduk'
-import { loadTexture } from './lib/baduk/textures'
+import { boardThemes, drawBoard, drawStone, loadTexture } from "weiqi-board";
 
-const texture = await loadTexture(boardThemes.kaya.texture)
-drawBoard(ctx, { theme: 'kaya', size: 800, texture, x: 0, y: 0 })
-drawStone(ctx, { style: 'polished', color: 'black', x: 172, y: 172, radius: 18.3 })
+const texture = await loadTexture(boardThemes.kaya.texture);
+drawBoard(ctx, { theme: "kaya", size: 800, texture, x: 0, y: 0 });
+drawStone(ctx, { style: "polished", color: "black", x: 172, y: 172, radius: 18.3 });
 ```
 
 `drawBoard` scales the original 800-unit geometry to `size`. Intersections start at 58, end at 742, and use 38-unit spacing. Star points are at zero-based grid indices 3, 9, and 15. The texture argument is optional for callers managing their own loading; `BoardCanvas` loads and caches it automatically and reports load failures.
@@ -49,20 +66,34 @@ The original timber textures come from the supplied [Baduk Figma design](https:/
 
 The `polished` ID remains compatible with existing callers, but now displays Slate: a smooth white stone with subtle mineral grain and the original black slate. Shell striations belong exclusively to `snow`. Its white stone uses milky shading and fine, closely spaced, mostly straight growth lines, following [Kuroki's Snow Grade reference](https://www.kurokigoishi.co.jp/english/2016/02/03/new-products/) and [Ohishi-Tengudo's Yukijirushi description](https://go.tengudo.jp/en/knowledge-s). The black companion shares the polished slate rendering. Shell grain is deterministic and loses contrast at playing size to reduce aliasing. Reference photographs are not runtime textures.
 
+## Project structure
+
+`src/` is split by technical layer, and `@/` resolves to `src/`. Dependencies point downward: pages → layouts/components → hooks/context → controllers/engine/api → lib/data/types. `api/` and `controllers/` do not import React.
+
+- `api/`: the HTTP client (`client.ts`), auth and game endpoints, the game WebSocket, and the wire protocol.
+- `controllers/`: framework-free local and online game state machines and the online sync plan.
+- `engine/`: the WebAssembly engine bindings, loader, and move helpers.
+- `context/` and `hooks/`: React contexts, providers, and hooks.
+- `lib/`, `data/`, `types/`: pure helpers, static data and mocks, and shared types.
+- `layouts/`: the app, sidebar, auth, and settings shells.
+- `components/`: reusable UI grouped by domain (`board`, `game/local`, `game/online`, `setup`, `auth`, `settings`, `sakura`, `ui`).
+- `pages/`: one route component per file.
+- `styles/`: global and per-area CSS.
+- `assets/`: `fonts/`, `images/`, and `icons/<domain>/`.
+
 ## Browser verification
 
 With the dev server running, open `/tests/canvas.html`. This standalone fixture checks the 1440, 1100, 768, 700, and 375px layouts, resizing, bitmap density (including simulated DPR 2), accessible labels, texture loading, grid geometry, deterministic stones, and transparency. It also checks that shell grain is exclusive to white Yuki stones and displays all eight stones at 37px diameter with desktop/mobile previews for visual review. It is not an entry point in the production build.
-
 
 ## Welcome screen
 
 `src/pages/` owns the welcome, Go Home, Local Play, and material-library pages and their document titles. `main.tsx` wraps `App` in React Router's `BrowserRouter`; `App` declares `/`, `/play`, `/play/local`, `/materials`, and a welcome-page fallback for unknown paths. Internal navigation uses `Link` to update the URL without reloading the document. A production host must serve `index.html` for all application routes and unknown paths.
 
-Go Home matches Figma frame `46:381`, with local SVG assets in `src/assets/go-home/` and the shared `StoneMark` logo. Unavailable menu, learning, account, and settings actions announce a temporary coming-soon message. Local Play reuses `InteractiveBoard` with its default kaya board and polished stones; each visit starts a fresh board. `/tests/routing.html` also checks this navigation flow, coming-soon feedback, local keyboard placement, and fresh-board behavior. `/tests/interactive-board.html` checks the board component directly.
+Go Home matches Figma frame `46:381`, with local SVG assets in `src/assets/icons/home/` and the shared `StoneMark` logo. Unavailable menu, learning, account, and settings actions announce a temporary coming-soon message. Local Play uses `components/game/local/LocalBoard` with its default kaya board and polished stones; each visit starts a fresh board. `/tests/routing.html` also checks this navigation flow, coming-soon feedback, local mouse placement, and fresh-board behavior. `/tests/interactive-board.html` is the direct board fixture used by the automated browser suite.
 
 With the dev server running, `/tests/routing.html` checks route titles, internal links without document reloads, browser Back/Forward, animation restart after returning from the material library, trailing slashes, URL search/hash values, and the unknown-path fallback.
 
-- `AnimatedBoardScene` composes the shared board and stone canvases. Its typed move tracks use zero-based grid coordinates and normalized animation times. The 22-move opening in `pages/welcome/welcomeScene.ts` preserves the Figma frame `26:936` tracks on an 18-second loop.
+- `AnimatedBoardScene` composes the shared board and stone canvases. Its typed move tracks use zero-based grid coordinates and normalized animation times. The 22-move opening in `data/welcomeScene.ts` preserves the Figma frame `26:936` tracks on an 18-second loop.
 - `BoardCanvas` and `drawBoard` accept an optional `geometry`. `welcomeBoardGeometry` uses a 610-unit square, 35-unit inset, and 30-unit spacing. Existing callers keep the original 800-unit geometry and appearance.
 - `welcomeAppearance` sets the shared `boardTheme` and `stoneStyle`. The board, identity mark, navigation mark, and caption use the existing local ash texture and polished stone renderer. No temporary Figma URLs are used at runtime.
 - `SakuraBranches` accepts `paused`. Connected SVG paths grow from shared joints, blossoms open at twig tips, and three bounded petals fall from blossom positions. The geometry and timing live in `components/sakura/branches.ts`.
@@ -70,7 +101,6 @@ With the dev server running, `/tests/routing.html` checks route titles, internal
 - Inter is bundled locally for the welcome page with its SIL Open Font License in `public/licenses/Inter-OFL.txt`. The material library retains its existing font stack.
 
 With the dev server running, `/tests/welcome.html` exercises a complete loop, ordering, restart, pause/resume, Strict Mode cleanup, five responsive widths, canvas density, texture loading, and live reduced-motion changes. `/tests/welcome-preview.html?motion=full` and `?motion=reduce` are isolated visual fixtures; their media emulation is test-only and is not included in the production build. The canvas regression fixture now loads `/materials`.
-
 
 The welcome hero stays horizontal from 800px upward, with fluid side gutters and a board that expands with the viewport while fitting the available height. The board scene is displayed at 75% of that available size to leave clearance around the branches. Below 800px the hero stacks. Navigation stones use larger bodies and a small local shadow to separate the white stone from the ivory background.
 
