@@ -1,0 +1,117 @@
+{
+	"home": {
+		"pageTitle": "Jouer",
+		"location": "JOUER / ACCUEIL",
+		"signedInAs": "Connecté en tant que {{username}}",
+		"guest": "Vous jouez en tant qu’invité",
+		"logoutError": "Impossible de se déconnecter. Veuillez réessayer.",
+		"introduction": {
+			"heading": "Du texte",
+			"body": "Un autre texte"
+		},
+		"menuHeading": "Du texte.",
+		"options": {
+			"online": {
+				"label": "Jouer en ligne",
+				"description": "Trouvez un adversaire. Rendez-vous au goban."
+			},
+			"local": {
+				"label": "Jouer en local",
+				"description": "Un goban. Deux joueurs. Un seul écran."
+			},
+			"friend": {
+				"label": "Jouer avec un ami",
+				"description": "Invitez quelqu’un pour une partie réfléchie."
+			},
+			"puzzles": {
+				"label": "Résoudre des problèmes",
+				"description": "De petits défis. Un meilleur instinct."
+			},
+			"lessons": {
+				"label": "Leçons",
+				"description": "De votre première pierre à votre prochaine découverte."
+			},
+			"bots": {
+				"label": "Jouer contre des bots",
+				"description": "Entraînez-vous à votre rythme, à tout niveau."
+			}
+		},
+		"presence_one": "{{count, number}} joueur partage le goban",
+		"presence_many": "{{count, number}} joueurs partagent le goban",
+		"presence_other": "{{count, number}} joueurs partagent le goban",
+		"reserved": {
+			"label": "SECTION À VENIR",
+			"heading": "Réservé à du contenu futur",
+			"body": "Cette section est volontairement vide pour le moment. Elle servira à de futures fonctionnalités, nouveautés ou contenus sélectionnés."
+		},
+		"footerTagline": "Des règles simples. Une découverte sans fin."
+	},
+	"materials": {
+		"pageTitle": "Gobans et pierres",
+		"breadcrumb": "Baduk / Matériauthèque",
+		"collection": "Collection 01",
+		"heading": "Gobans et pierres.",
+		"introduction": "Matériaux naturels. Détails discrets. Un lieu pour le jeu.",
+		"boardsSection": {
+			"title": "Les gobans",
+			"meta": "Trois essences · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Les pierres",
+			"meta": "Quatre styles · noir et blanc"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Étude des matériaux",
+			"enlarged": "Échantillons agrandis",
+			"heading": "Un contraste discret.",
+			"body": "Quatre surfaces. Noir et blanc, sous la même lumière douce.",
+			"scale": "Échantillons agrandis · échelle constante",
+			"form": "Forme lisse et arrondie / légère variation de surface"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Kaya japonais traditionnel",
+				"material": "Miel chaleureux · fil droit"
+			},
+			"walnut": {
+				"name": "Noyer foncé",
+				"material": "Brun profond · fil ondoyant"
+			},
+			"ash": {
+				"name": "Frêne scandinave clair",
+				"material": "Bois clair · fil doux"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Poli",
+				"name": "Ardoise",
+				"description": "Surfaces lisses et polies à la texture minérale discrète.",
+				"black": "Ardoise noire",
+				"white": "Ardoise blanche"
+			},
+			"satin": {
+				"finish": "Satiné",
+				"name": "Céramique",
+				"description": "Un éclat diffus et un grain fin, délicat et régulier.",
+				"black": "Céramique noire",
+				"white": "Céramique blanche"
+			},
+			"matte": {
+				"finish": "Mat",
+				"name": "Pierre naturelle",
+				"description": "Un discret moucheté minéral sous une finition lisse et sèche.",
+				"black": "Pierre noire",
+				"white": "Pierre blanche"
+			},
+			"snow": {
+				"finish": "Poli",
+				"name": "Coquillage · Qualité Yuki / Neige",
+				"description": "Fines veines de coquillage serrées sur un blanc laiteux, associées à de l’ardoise noire polie.",
+				"black": "Ardoise noire Nachiguro",
+				"white": "Coquillage blanc Yuki"
+			}
+		},
+		"footerTagline": "L’essentiel, soigneusement pensé."
+	}
+}

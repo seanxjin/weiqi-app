@@ -1,0 +1,209 @@
+{
+	"header": {
+		"title": "Sozlamalar",
+		"sectionTitle": "{{section}} sozlamalari",
+		"navLabel": "Sozlamalar boʻlimlari"
+	},
+	"sections": {
+		"board": "Taxta va toshlar",
+		"gameplay": "Oʻyin jarayoni",
+		"profile": "Profil",
+		"social": "Ijtimoiy va maxfiylik",
+		"account": "Hisob va xavfsizlik",
+		"language": "Til va vaqt"
+	},
+	"board": {
+		"description": "Oʻynaydigan taxta va toshlaringizni tanlang.",
+		"appearance": {
+			"title": "Koʻrinish",
+			"boardLegend": "Taxta",
+			"stonesLegend": "Toshlar",
+			"previewLabel": "Taxtani oldindan koʻrish"
+		},
+		"themes": {
+			"kaya": "Anʼanaviy yapon kayasi",
+			"walnut": "Toʻq yongʻoq",
+			"ash": "Och rangli Skandinaviya shumtoli"
+		},
+		"stoneStyles": {
+			"polished": "Slanes",
+			"satin": "Keramika",
+			"matte": "Tabiiy tosh",
+			"snow": "Chigʻanoq · Yuki / Snow navi"
+		},
+		"display": {
+			"title": "Taxta koʻrinishi",
+			"coordinates": {
+				"label": "Taxta koordinatalarini koʻrsatish",
+				"description": "Taxta chetida ustun va qatorlarni belgilash."
+			},
+			"lastMove": {
+				"label": "Oxirgi yurishni ajratib koʻrsatish",
+				"description": "Eng soʻnggi qoʻyilgan toshni belgilash."
+			}
+		},
+		"sounds": {
+			"title": "Ovozlar",
+			"playSounds": {
+				"label": "Ovozlarni yoqish",
+				"description": "Tosh qoʻyish, asirga olish va soat ogohlantirishlari."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Toshlarni qanday qoʻyishingiz va sizga kim chaqiriq yubora olishini boshqaring.",
+		"moves": {
+			"title": "Yurish qilish",
+			"description": "Xato bosishning oldini olish uchun tosh qoʻyilishidan oldin ikkinchi bosishni soʻrash.",
+			"legend": "Yurishlarni tasdiqlash",
+			"options": {
+				"never": "Hech qachon",
+				"correspondence": "Faqat sirtqi oʻyinlarda",
+				"always": "Har doim"
+			}
+		},
+		"challenges": {
+			"title": "Chaqiriqlar",
+			"description": "Sizga kim oʻyin chaqiruvi yubora olishini tanlang.",
+			"legend": "Chaqiriqlarga ruxsat",
+			"options": {
+				"everyone": "Hammaga",
+				"registered": "Roʻyxatdan oʻtgan oʻyinchilarga",
+				"following": "Faqat men kuzatadigan oʻyinchilarga",
+				"nobody": "Hech kimga (revansh oʻyinlariga ruxsat beriladi)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Bu yerdagi hamma narsa <profileLink>ommaviy profilingizda</profileLink> koʻrinadi.",
+		"publicProfile": {
+			"title": "Ommaviy profil",
+			"bioLabel": "Qisqacha maʼlumot",
+			"bioPlaceholder": "Qisqacha maʼlumotingiz profilingizda koʻrinadi.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Tafsilotlar",
+			"joinDate": "Qoʻshilgan sana",
+			"username": "Foydalanuvchi nomi",
+			"changeUsername": "Oʻzgartirish",
+			"changeUsernameFeature": "Foydalanuvchi nomini oʻzgartirish",
+			"realName": "Haqiqiy ism",
+			"location": "Joylashuv",
+			"country": "Mamlakat",
+			"countryNotSet": "Belgilanmagan",
+			"rank": "Daraja",
+			"rankPlaceholder": "masalan, 12k, 3d",
+			"rankHint": "30k–1k, 1d–9d yoki 1p–9p dan foydalaning."
+		},
+		"links": {
+			"legend": "Havolalar",
+			"linkLabel": "{{number}}-havola",
+			"remove": "Olib tashlash",
+			"removeLabel": "{{number}}-havolani olib tashlash",
+			"add": "Havola qoʻshish"
+		}
+	},
+	"social": {
+		"description": "Siz kuzatadigan va bloklagan oʻyinchilarni boshqaring.",
+		"blocking": {
+			"title": "Bloklash",
+			"description_one": "Siz {{count}} oʻyinchini bloklagansiz. Bloklangan oʻyinchilar sizga chaqiriq yoki xabar yubora olmaydi.",
+			"description_other": "Siz {{count}} oʻyinchini bloklagansiz. Bloklangan oʻyinchilar sizga chaqiriq yoki xabar yubora olmaydi.",
+			"empty": "Siz hech kimni bloklamagansiz.",
+			"action": "Blokdan chiqarish",
+			"actionLabel": "{{username}}ni blokdan chiqarish"
+		},
+		"following": {
+			"title": "Kuzatilmoqda",
+			"description_one": "Siz {{count}} oʻyinchini kuzatasiz.",
+			"description_other": "Siz {{count}} oʻyinchini kuzatasiz.",
+			"empty": "Siz hali hech kimni kuzatmayapsiz.",
+			"action": "Kuzatishni toʻxtatish",
+			"actionLabel": "{{username}}ni kuzatishni toʻxtatish"
+		}
+	},
+	"account": {
+		"description": "Parolingizni oʻzgartiring, hisobingizni himoyalang va ulangan hisoblarni boshqaring.",
+		"password": {
+			"title": "Parolni oʻzgartirish",
+			"updated": "Parol yangilandi",
+			"fields": {
+				"currentPassword": {
+					"label": "Joriy parol",
+					"show": "Joriy parolni koʻrsatish",
+					"hide": "Joriy parolni yashirish"
+				},
+				"newPassword": {
+					"label": "Yangi parol",
+					"show": "Yangi parolni koʻrsatish",
+					"hide": "Yangi parolni yashirish"
+				},
+				"confirmPassword": {
+					"label": "Parolni takrorlang",
+					"show": "Takroriy parolni koʻrsatish",
+					"hide": "Takroriy parolni yashirish"
+				}
+			}
+		},
+		"contact": {
+			"title": "Aloqa maʼlumotlari",
+			"email": "Elektron pochta manzili",
+			"edit": "Tahrirlash",
+			"editFeature": "Elektron pochtani oʻzgartirish"
+		},
+		"twoFactor": {
+			"title": "Ikki bosqichli autentifikatsiya",
+			"description": "Kirishda autentifikator ilovasidan kod soʻralsin.",
+			"off": "Oʻchiq",
+			"enable": "Yoqish",
+			"feature": "Ikki bosqichli autentifikatsiya"
+		},
+		"sessions": {
+			"title": "Faol seanslar",
+			"description": "Agar hisobingiz buzilgan deb gumon qilsangiz, parolingizni oʻzgartiring va barcha qurilmalardan chiqing.",
+			"thisDevice": "Ushbu qurilma",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "{{device}} qurilmasidan chiqish",
+			"logOutAll": "Boshqa barcha qurilmalardan chiqish"
+		},
+		"connections": {
+			"title": "Ulangan hisoblar",
+			"description": "Badukʼga ushbu hisoblar orqali kiring.",
+			"connectedTo": "{{provider}} ga ulangan",
+			"connect": "Ulash",
+			"disconnect": "Uzish",
+			"note": "Uzish Badukʼdagi bogʻlanishni olib tashlaydi. Boshqa saytda ham kirish huquqini bekor qilishingiz kerak boʻlishi mumkin."
+		},
+		"close": {
+			"title": "Hisobingizni yopish",
+			"description": "Hisobni yopish profilingizni yashiradi va sizni barcha qurilmalardan chiqaradi.",
+			"button": "Hisobni yopish",
+			"dialogTitle": "Hisobingiz yopilsinmi?",
+			"dialogDescription": "Uni keyinroq kirish sahifasidan qayta ochishingiz mumkin.",
+			"feature": "Hisobni yopish"
+		}
+	},
+	"languageTime": {
+		"title": "Til va vaqt",
+		"description": "Baduk qaysi tilda ishlashini hamda sana va vaqt qanday koʻrinishini tanlang.",
+		"language": {
+			"title": "Til",
+			"description": "Oʻzgarishlar barcha sahifalarda darhol qoʻllaniladi.",
+			"legend": "Interfeys tili"
+		},
+		"time": {
+			"title": "Vaqt",
+			"description": "Qoʻshilgan sana va seans faolligi kabi vaqt belgilari uchun ishlatiladi.",
+			"timeZone": "Vaqt mintaqasi",
+			"automaticTimeZone": "Avtomatik ({{timeZone}})",
+			"timeFormat": "Soat",
+			"formats": {
+				"auto": "Avtomatik ({{example}})",
+				"12h": "12 soatlik ({{example}})",
+				"24h": "24 soatlik ({{example}})"
+			},
+			"preview": "Namuna"
+		}
+	}
+}

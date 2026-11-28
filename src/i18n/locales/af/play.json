@@ -1,0 +1,116 @@
+{
+	"home": {
+		"pageTitle": "Speel",
+		"location": "SPEEL / TUIS",
+		"signedInAs": "Aangemeld as {{username}}",
+		"guest": "Speel as gas",
+		"logoutError": "Kon nie afmeld nie. Probeer asseblief weer.",
+		"introduction": {
+			"heading": "Bietjie teks",
+			"body": "Ander teks"
+		},
+		"menuHeading": "Bietjie teks.",
+		"options": {
+			"online": {
+				"label": "Speel aanlyn",
+				"description": "Vind jou opponent. Ontmoet op die bord."
+			},
+			"local": {
+				"label": "Speel plaaslik",
+				"description": "Een bord. Twee spelers. Deel ’n skerm."
+			},
+			"friend": {
+				"label": "Speel teen ’n vriend",
+				"description": "Nooi iemand vir ’n deurdagte spel."
+			},
+			"puzzles": {
+				"label": "Los raaisels op",
+				"description": "Klein uitdagings. Skerper instinkte."
+			},
+			"lessons": {
+				"label": "Lesse",
+				"description": "Van jou eerste klip tot jou volgende insig."
+			},
+			"bots": {
+				"label": "Speel teen bots",
+				"description": "Oefen teen jou eie tempo, op enige vlak."
+			}
+		},
+		"presence_one": "{{count, number}} speler deel die bord",
+		"presence_other": "{{count, number}} spelers deel die bord",
+		"reserved": {
+			"label": "AFDELING VIR LATER",
+			"heading": "Gereserveer vir toekomstige inhoud",
+			"body": "Hierdie afdeling is voorlopig doelbewus leeg gelaat. Dit sal gebruik word vir toekomstige funksies, opdaterings of saamgestelde inhoud."
+		},
+		"footerTagline": "Eenvoudige reëls. Eindelose ontdekking."
+	},
+	"materials": {
+		"pageTitle": "Borde & klippe",
+		"breadcrumb": "Baduk / Materiaalbiblioteek",
+		"collection": "Versameling 01",
+		"heading": "Borde & klippe.",
+		"introduction": "Natuurlike materiale. Stil detail. ’n Plek vir die spel.",
+		"boardsSection": {
+			"title": "Die borde",
+			"meta": "Drie houtsoorte · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Die klippe",
+			"meta": "Vier style · swart & wit"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Materiaalstudie",
+			"enlarged": "Vergrote monsters",
+			"heading": "’n Stil kontras.",
+			"body": "Vier oppervlakke. Swart en wit, in dieselfde sagte lig.",
+			"scale": "Vergrote monsters · eenvormige skaal",
+			"form": "Gladde, ronde vorm / subtiele oppervlakvariasie"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Tradisionele Japannese kaya",
+				"material": "Warm heuning · reguit grein"
+			},
+			"walnut": {
+				"name": "Donker okkerneut",
+				"material": "Diepbruin · vloeiende grein"
+			},
+			"ash": {
+				"name": "Ligte Skandinawiese esse",
+				"material": "Ligte hout · sagte grein"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Gepoleer",
+				"name": "Leiklip",
+				"description": "Gladde, gepoleerde oppervlakke met ’n stil minerale tekstuur.",
+				"black": "Swart leiklip",
+				"white": "Wit leiklip"
+			},
+			"satin": {
+				"finish": "Satyn",
+				"name": "Keramiek",
+				"description": "’n Sagte glans en fyn, egalige grein.",
+				"black": "Swart keramiek",
+				"white": "Wit keramiek"
+			},
+			"matte": {
+				"finish": "Mat",
+				"name": "Natuurklip",
+				"description": "Stil minerale spikkels onder ’n gladde, droë afwerking.",
+				"black": "Swart klip",
+				"white": "Wit klip"
+			},
+			"snow": {
+				"finish": "Gepoleer",
+				"name": "Skulp · Yuki / Sneeugraad",
+				"description": "Fyn, digte skulpgrein op melkwit, gepaar met gepoleerde swart leiklip.",
+				"black": "Swart Nachiguro-leiklip",
+				"white": "Wit Yuki-skulp"
+			}
+		},
+		"footerTagline": "Die noodsaaklike, deurdag."
+	}
+}

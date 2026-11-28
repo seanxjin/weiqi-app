@@ -1,0 +1,89 @@
+{
+	"page": {
+		"title": {
+			"local": "إعداد مباراة محلية",
+			"online": "إعداد مباراة عبر الإنترنت"
+		},
+		"label": {
+			"local": "إعداد مباراة محلية",
+			"online": "إعداد مباراة عبر الإنترنت"
+		},
+		"backToMenu": "العودة إلى القائمة",
+		"settingsLabel": "إعدادات المباراة",
+		"timeLimitsNotice": "لا يتم تطبيق حدود الوقت بعد.",
+		"boardSize": "حجم اللوحة",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "جارٍ إنشاء المباراة…",
+		"startGame": "ابدأ اللعبة",
+		"createFailed": "تعذّر إنشاء المباراة. يُرجى المحاولة مرة أخرى."
+	},
+	"players": {
+		"player1": "اللاعب 1",
+		"player2": "اللاعب 2",
+		"opponent": "الخصم",
+		"guest": "أنت (ضيف)"
+	},
+	"configuration": {
+		"eyebrow": "الإعدادات",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "مخصّص · {{system}}",
+		"presetOptionLabel": "{{preset}}، {{system}}",
+		"moreControls": "المزيد من أنظمة الوقت",
+		"fewerControls": "أنظمة وقت أقل",
+		"groups": {
+			"bullet": "رصاصة",
+			"blitz": "خاطف",
+			"rapid": "سريع",
+			"classical": "كلاسيكي",
+			"correspondence": "بالمراسلة",
+			"untimed": "بدون توقيت"
+		},
+		"systems": {
+			"absolute": "مطلق",
+			"fischer": "فيشر",
+			"japaneseByoYomi": "بيو-يومي ياباني"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} ث",
+			"absoluteMinutes": "{{minutes}} د",
+			"mainSeconds": "{{seconds}} ث",
+			"mainMinutes": "{{minutes}} د",
+			"fischer": "{{main}} + {{increment}} ث",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}} ث",
+			"daysPerMove_zero": "{{count}} يوم / نقلة",
+			"daysPerMove_one": "يوم واحد / نقلة",
+			"daysPerMove_two": "يومان / نقلة",
+			"daysPerMove_few": "{{count}} أيام / نقلة",
+			"daysPerMove_many": "{{count}} يومًا / نقلة",
+			"daysPerMove_other": "{{count}} يوم / نقلة"
+		},
+		"noTimeLimit": "بلا حد زمني"
+	},
+	"customTime": {
+		"label": "تحكم مخصّص في الوقت",
+		"eyebrow": "تحكم مخصّص في الوقت",
+		"heading": "اضبط ساعتك بنفسك",
+		"system": "النظام",
+		"fields": {
+			"minutes": "الأساسي · دقيقة",
+			"seconds": "الأساسي · ثانية",
+			"increment": "الزيادة · ثانية",
+			"periods": "الفترات",
+			"periodSeconds": "الفترة · ثانية"
+		},
+		"hints": {
+			"byoYomi": "يستخدم الوقت الإضافي عددًا ثابتًا من الفترات المؤقتة.",
+			"default": "اختر نظامًا، ثم أدخل قيم ساعته."
+		},
+		"apply": "استخدام الوقت المخصّص",
+		"errors": {
+			"wholeNumbers": "أدخل عددًا صحيحًا غير سالب في كل حقل من حقول الساعة.",
+			"mainSeconds": "يجب أن تكون ثواني الوقت الأساسي بين 0 و59.",
+			"byoYomiPeriods": "يتطلب بيو-يومي فترة واحدة على الأقل مدتها ثانية واحدة على الأقل.",
+			"mainTime": "اجعل الوقت الأساسي أكبر من صفر."
+		}
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"server": {
+		"unavailable": "Serverul nu este disponibil. Încearcă din nou.",
+		"unreachable": "Serverul nu poate fi accesat. Verifică-ți conexiunea și încearcă din nou.",
+		"unexpectedResponse": "Serverul a trimis un răspuns neașteptat. Încearcă din nou.",
+		"requestFailed": "Solicitarea nu a putut fi finalizată. Încearcă din nou."
+	},
+	"rateLimited": {
+		"generic": "Prea multe încercări. Așteaptă înainte de a încerca din nou.",
+		"withDelay_one": "Prea multe încercări. Așteaptă {{count}} secundă înainte de a încerca din nou.",
+		"withDelay_few": "Prea multe încercări. Așteaptă {{count}} secunde înainte de a încerca din nou.",
+		"withDelay_other": "Prea multe încercări. Așteaptă {{count}} de secunde înainte de a încerca din nou."
+	},
+	"unknown": "Ceva nu a mers bine. Încearcă din nou.",
+	"api": {
+		"invalidCredentials": "Numele de utilizator, e-mailul sau parola sunt incorecte.",
+		"twoFactorRequired": "Introdu codul din 6 cifre din aplicația de autentificare pentru a continua.",
+		"invalidTwoFactor": "Codul de autentificare este incorect. Încearcă din nou.",
+		"emailUnconfirmed": "Confirmă adresa de e-mail înainte de a te conecta.",
+		"accountClosed": "Acest cont este închis și nu se mai poate conecta.",
+		"usernameTaken": "Acest nume de utilizator este deja folosit. Alege altul.",
+		"emailTaken": "Această adresă de e-mail este deja folosită.",
+		"invalidToken": "Acest link este invalid sau a expirat. Solicită un e-mail nou pentru a continua.",
+		"unauthorized": "Sesiunea de conectare a expirat. Începe din nou.",
+		"conflict": "Înregistrarea nu a putut fi finalizată. Începe din nou.",
+		"forbidden": "Această solicitare a fost blocată. Reîmprospătează pagina și încearcă din nou."
+	},
+	"validation": {
+		"passwordTooShort": "Parola trebuie să aibă cel puțin 8 caractere.",
+		"newPasswordTooShort": "Parola nouă trebuie să aibă cel puțin 8 caractere.",
+		"passwordTooLong": "Parola nu poate depăși 72 de octeți UTF-8.",
+		"passwordMismatch": "Parolele noi nu se potrivesc.",
+		"passwordUnchanged": "Alege o parolă diferită de cea actuală."
+	}
+}

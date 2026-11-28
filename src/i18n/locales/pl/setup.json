@@ -1,0 +1,87 @@
+{
+	"page": {
+		"title": {
+			"local": "Ustawienia partii lokalnej",
+			"online": "Ustawienia partii online"
+		},
+		"label": {
+			"local": "Ustawienia partii lokalnej",
+			"online": "Ustawienia partii online"
+		},
+		"backToMenu": "Wróć do menu",
+		"settingsLabel": "Ustawienia partii",
+		"timeLimitsNotice": "Limity czasu nie są jeszcze egzekwowane.",
+		"boardSize": "ROZMIAR PLANSZY",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Tworzenie partii…",
+		"startGame": "Rozpocznij grę",
+		"createFailed": "Nie udało się utworzyć partii. Spróbuj ponownie."
+	},
+	"players": {
+		"player1": "Gracz 1",
+		"player2": "Gracz 2",
+		"opponent": "Przeciwnik",
+		"guest": "Ty (gość)"
+	},
+	"configuration": {
+		"eyebrow": "KONFIGURACJE",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Własne · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Więcej opcji tempa",
+		"fewerControls": "Mniej opcji tempa",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Blitz",
+			"rapid": "Szybkie",
+			"classical": "Klasyczne",
+			"correspondence": "Korespondencyjne",
+			"untimed": "Bez czasu"
+		},
+		"systems": {
+			"absolute": "Absolutny",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Japońskie byo-yomi"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} s",
+			"absoluteMinutes": "{{minutes}} min",
+			"mainSeconds": "{{seconds}}s",
+			"mainMinutes": "{{minutes}}m",
+			"fischer": "{{main}} + {{increment}}s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}}s",
+			"daysPerMove_one": "{{count}} dzień / ruch",
+			"daysPerMove_few": "{{count}} dni / ruch",
+			"daysPerMove_many": "{{count}} dni / ruch",
+			"daysPerMove_other": "{{count}} dnia / ruch"
+		},
+		"noTimeLimit": "Bez limitu czasu"
+	},
+	"customTime": {
+		"label": "Własne tempo gry",
+		"eyebrow": "WŁASNE TEMPO GRY",
+		"heading": "Ustaw własny zegar",
+		"system": "System",
+		"fields": {
+			"minutes": "Czas główny · min",
+			"seconds": "Czas główny · s",
+			"increment": "Dodatek · s",
+			"periods": "Okresy",
+			"periodSeconds": "Okres · s"
+		},
+		"hints": {
+			"byoYomi": "Dogrywka składa się ze stałej liczby okresów czasowych.",
+			"default": "Wybierz system, a następnie wpisz wartości zegara."
+		},
+		"apply": "Użyj własnego tempa",
+		"errors": {
+			"wholeNumbers": "Wpisz nieujemną liczbę całkowitą w każdym polu zegara.",
+			"mainSeconds": "Sekundy czasu głównego muszą mieścić się w zakresie od 0 do 59.",
+			"byoYomiPeriods": "Byo-yomi wymaga co najmniej jednego okresu trwającego co najmniej sekundę.",
+			"mainTime": "Ustaw czas główny większy od zera."
+		}
+	}
+}

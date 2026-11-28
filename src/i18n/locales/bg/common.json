@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "ГО",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Начало на Baduk",
+	"actions": {
+		"save": "Запази",
+		"saving": "Запазване…",
+		"cancel": "Отказ",
+		"back": "Назад",
+		"retry": "Опитай пак",
+		"close": "Затвори",
+		"login": "Вход",
+		"signIn": "Вход",
+		"signUp": "Регистрация",
+		"logOut": "Изход",
+		"loggingOut": "Излизане…"
+	},
+	"status": {
+		"saved": "Запазено",
+		"loading": "Зареждане…",
+		"checkingSession": "Проверяваме сесията ви…",
+		"sessionError": "Сесията ви не може да бъде проверена. Моля, опитайте отново."
+	},
+	"comingSoon": "{{feature}} – очаквайте скоро.",
+	"language": "Език",
+	"languageDialog": {
+		"title": "Изберете предпочитан език",
+		"loadError": "Този език не можа да бъде зареден. Моля, опитайте отново."
+	}
+}

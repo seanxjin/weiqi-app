@@ -1,0 +1,207 @@
+{
+	"header": {
+		"title": "Pengaturan",
+		"sectionTitle": "Pengaturan {{section}}",
+		"navLabel": "Bagian pengaturan"
+	},
+	"sections": {
+		"board": "Papan & Batu",
+		"gameplay": "Permainan",
+		"profile": "Profil",
+		"social": "Sosial & Privasi",
+		"account": "Akun & Keamanan",
+		"language": "Bahasa & Waktu"
+	},
+	"board": {
+		"description": "Pilih papan dan batu yang Anda gunakan untuk bermain.",
+		"appearance": {
+			"title": "Tampilan",
+			"boardLegend": "Papan",
+			"stonesLegend": "Batu",
+			"previewLabel": "Pratinjau papan"
+		},
+		"themes": {
+			"kaya": "Kaya tradisional Jepang",
+			"walnut": "Walnut gelap",
+			"ash": "Ash Skandinavia pucat"
+		},
+		"stoneStyles": {
+			"polished": "Batu sabak",
+			"satin": "Keramik",
+			"matte": "Batu alam",
+			"snow": "Kerang · Yuki / Kelas Salju"
+		},
+		"display": {
+			"title": "Tampilan papan",
+			"coordinates": {
+				"label": "Tampilkan koordinat papan",
+				"description": "Beri label pada kolom dan baris di sekeliling tepi papan."
+			},
+			"lastMove": {
+				"label": "Sorot langkah terakhir",
+				"description": "Tandai batu yang paling baru dimainkan."
+			}
+		},
+		"sounds": {
+			"title": "Suara",
+			"playSounds": {
+				"label": "Putar suara",
+				"description": "Peletakan batu, penangkapan, dan peringatan jam."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Atur cara Anda meletakkan batu dan siapa yang dapat menantang Anda.",
+		"moves": {
+			"title": "Memainkan langkah",
+			"description": "Minta klik kedua sebelum batu diletakkan, untuk menghindari salah klik.",
+			"legend": "Konfirmasi langkah",
+			"options": {
+				"never": "Tidak pernah",
+				"correspondence": "Hanya permainan korespondensi",
+				"always": "Selalu"
+			}
+		},
+		"challenges": {
+			"title": "Tantangan",
+			"description": "Pilih siapa yang dapat mengirimi Anda tantangan permainan.",
+			"legend": "Izinkan tantangan dari",
+			"options": {
+				"everyone": "Semua orang",
+				"registered": "Pemain terdaftar",
+				"following": "Hanya pemain yang saya ikuti",
+				"nobody": "Tidak ada (pertandingan ulang tetap diizinkan)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Semua yang ada di sini terlihat di <profileLink>profil publik</profileLink> Anda.",
+		"publicProfile": {
+			"title": "Profil publik",
+			"bioLabel": "Bio singkat",
+			"bioPlaceholder": "Bio singkat Anda akan muncul di profil Anda.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Detail",
+			"joinDate": "Tanggal bergabung",
+			"username": "Nama pengguna",
+			"changeUsername": "Ubah",
+			"changeUsernameFeature": "Mengubah nama pengguna",
+			"realName": "Nama asli",
+			"location": "Lokasi",
+			"country": "Negara",
+			"countryNotSet": "Belum diatur",
+			"rank": "Peringkat",
+			"rankPlaceholder": "mis. 12k, 3d",
+			"rankHint": "Gunakan 30k–1k, 1d–9d, atau 1p–9p."
+		},
+		"links": {
+			"legend": "Tautan",
+			"linkLabel": "Tautan {{number}}",
+			"remove": "Hapus",
+			"removeLabel": "Hapus tautan {{number}}",
+			"add": "Tambah tautan"
+		}
+	},
+	"social": {
+		"description": "Kelola pemain yang Anda ikuti dan pemain yang Anda blokir.",
+		"blocking": {
+			"title": "Pemblokiran",
+			"description_other": "Anda memblokir {{count}} pemain. Pemain yang diblokir tidak dapat menantang atau mengirimi Anda pesan.",
+			"empty": "Anda tidak memblokir siapa pun.",
+			"action": "Buka blokir",
+			"actionLabel": "Buka blokir {{username}}"
+		},
+		"following": {
+			"title": "Mengikuti",
+			"description_other": "Anda mengikuti {{count}} pemain.",
+			"empty": "Anda belum mengikuti siapa pun.",
+			"action": "Berhenti mengikuti",
+			"actionLabel": "Berhenti mengikuti {{username}}"
+		}
+	},
+	"account": {
+		"description": "Ubah kata sandi, amankan akun, dan kelola akun yang terhubung.",
+		"password": {
+			"title": "Ubah kata sandi",
+			"updated": "Kata sandi diperbarui",
+			"fields": {
+				"currentPassword": {
+					"label": "Kata sandi saat ini",
+					"show": "Tampilkan kata sandi saat ini",
+					"hide": "Sembunyikan kata sandi saat ini"
+				},
+				"newPassword": {
+					"label": "Kata sandi baru",
+					"show": "Tampilkan kata sandi baru",
+					"hide": "Sembunyikan kata sandi baru"
+				},
+				"confirmPassword": {
+					"label": "Ketik ulang kata sandi",
+					"show": "Tampilkan kata sandi yang diketik ulang",
+					"hide": "Sembunyikan kata sandi yang diketik ulang"
+				}
+			}
+		},
+		"contact": {
+			"title": "Info kontak",
+			"email": "Alamat email",
+			"edit": "Edit",
+			"editFeature": "Mengubah email"
+		},
+		"twoFactor": {
+			"title": "Autentikasi dua faktor",
+			"description": "Wajibkan kode dari aplikasi autentikator saat Anda masuk.",
+			"off": "Nonaktif",
+			"enable": "Aktifkan",
+			"feature": "Autentikasi dua faktor"
+		},
+		"sessions": {
+			"title": "Sesi aktif",
+			"description": "Jika Anda menduga akun Anda telah disusupi, ubah kata sandi dan keluar dari semua perangkat.",
+			"thisDevice": "Perangkat ini",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "Keluarkan {{device}}",
+			"logOutAll": "Keluar dari semua perangkat lain"
+		},
+		"connections": {
+			"title": "Akun terhubung",
+			"description": "Masuk ke Baduk dengan akun-akun ini.",
+			"connectedTo": "Terhubung ke {{provider}}",
+			"connect": "Hubungkan",
+			"disconnect": "Putuskan",
+			"note": "Memutuskan sambungan akan menghapus tautan di Baduk. Anda mungkin masih perlu mencabut akses di situs lain."
+		},
+		"close": {
+			"title": "Tutup akun Anda",
+			"description": "Menutup akun akan menyembunyikan profil Anda dan mengeluarkan Anda dari semua perangkat.",
+			"button": "Tutup akun",
+			"dialogTitle": "Tutup akun Anda?",
+			"dialogDescription": "Anda dapat membukanya kembali nanti dari halaman masuk.",
+			"feature": "Menutup akun"
+		}
+	},
+	"languageTime": {
+		"title": "Bahasa & Waktu",
+		"description": "Pilih bahasa yang digunakan Baduk dan cara tanggal serta waktu ditampilkan.",
+		"language": {
+			"title": "Bahasa",
+			"description": "Perubahan langsung berlaku di setiap halaman.",
+			"legend": "Bahasa tampilan"
+		},
+		"time": {
+			"title": "Waktu",
+			"description": "Digunakan untuk stempel waktu seperti tanggal bergabung dan aktivitas sesi.",
+			"timeZone": "Zona waktu",
+			"automaticTimeZone": "Otomatis ({{timeZone}})",
+			"timeFormat": "Jam",
+			"formats": {
+				"auto": "Otomatis ({{example}})",
+				"12h": "12 jam ({{example}})",
+				"24h": "24 jam ({{example}})"
+			},
+			"preview": "Pratinjau"
+		}
+	}
+}

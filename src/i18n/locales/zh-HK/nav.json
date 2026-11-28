@@ -1,0 +1,29 @@
+{
+	"navigation": "Baduk 導覽",
+	"drawer": {
+		"open": "開啟導覽選單",
+		"close": "關閉導覽選單"
+	},
+	"mainNavigation": "主要導覽",
+	"play": "對弈",
+	"puzzles": "死活題",
+	"learn": "學習",
+	"guide": {
+		"heading": "初學圍棋？",
+		"startWithBasics": "從基礎開始"
+	},
+	"account": {
+		"label": "帳戶",
+		"friends": "好友",
+		"messages": "訊息",
+		"notifications": "通知",
+		"settings": "設定",
+		"allSettings": "所有設定"
+	},
+	"theme": {
+		"label": "主題",
+		"system": "跟隨系統",
+		"light": "淺色",
+		"dark": "深色"
+	}
+}

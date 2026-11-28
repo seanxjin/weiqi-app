@@ -1,0 +1,133 @@
+{
+	"colors": {
+		"black": "흑",
+		"white": "백"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "패스",
+	"localPage": {
+		"title": "로컬 대국",
+		"eyebrow": "친선 대국",
+		"heading": "대국을 위한 시간.",
+		"details": "{{size}} × {{size}} · 일본 규칙"
+	},
+	"onlinePage": {
+		"title": "온라인 대국",
+		"eyebrow": "온라인 대국",
+		"heading": "대국을 위한 시간.",
+		"details": "{{size}} × {{size}} · 덤 {{komi}}",
+		"loading": "대국 불러오는 중…",
+		"notFound": "존재하지 않거나 더 이상 이용할 수 없는 대국입니다.",
+		"startNew": "새 온라인 대국 시작",
+		"invited": "{{size}} × {{size}} 대국에 초대되었습니다.",
+		"joining": "참가 중…",
+		"joinAs": "{{color}}(으)로 참가",
+		"full": "이미 자리가 찬 대국입니다. 관전 기능은 아직 지원되지 않습니다."
+	},
+	"local": {
+		"label": "로컬 바둑 대국",
+		"loadingEngine": "바둑 엔진 불러오는 중…"
+	},
+	"online": {
+		"label": "온라인 바둑 대국",
+		"youAre": "나는 {{color}}",
+		"connection": {
+			"connecting": "연결 중…",
+			"open": "연결됨",
+			"reconnecting": "다시 연결 중…",
+			"closed": "연결 끊김"
+		},
+		"invite": {
+			"label": "이 링크로 친구를 초대하세요",
+			"copy": "복사",
+			"copied": "복사됨"
+		},
+		"awaitingScoring": "양쪽 모두 패스했습니다. 계가는 아직 지원되지 않으므로, 중단하면 계가 없이 대국이 기록됩니다.",
+		"confirmResign": "기권 확인",
+		"resign": "기권",
+		"abort": "중단",
+		"results": {
+			"youWin": "승리 · {{color}} 기권",
+			"winsByResignation": "{{color}} 불계승",
+			"aborted": "{{color}}이(가) 대국을 중단했습니다",
+			"unscored": "계가 없이 대국이 종료되었습니다"
+		}
+	},
+	"turn": {
+		"preparing": "바둑판 준비 중",
+		"reviewing": "복기 중 · 대국하려면 현재로 돌아가세요",
+		"toPlay": "{{color}} 차례",
+		"yourMove": "내 차례",
+		"waitingForOpponent": "상대를 기다리는 중",
+		"awaitingScoring": "대국 종료 · 계가는 아직 지원되지 않습니다",
+		"gameOver": "대국 종료",
+		"sendingMove": "착수 전송 중…",
+		"waitingForConnection": "연결 대기 중"
+	},
+	"boardFooter": {
+		"lastMove": "마지막 수: {{color}} {{move}}",
+		"startingPosition": "시작 국면"
+	},
+	"players": {
+		"label": "대국자",
+		"captured": "따낸 돌 {{count}}",
+		"you": "{{name}} (나)",
+		"waiting": "{{name}} · 상대 대기 중"
+	},
+	"history": {
+		"label": "기보",
+		"heading": "수순",
+		"moveCount_other": "{{count}}수",
+		"tableLabel": "흑과 백의 수",
+		"pair": "쌍",
+		"move": "{{number}}수, {{color}}, {{move}}",
+		"pendingMove": "{{number}}수, {{color}}, {{move}}, 전송 중",
+		"empty": "아직 둔 수가 없습니다.",
+		"position": "{{latest}}수 중 {{viewed}}수",
+		"currentPosition": "현재 국면",
+		"reviewing": "복기 중",
+		"navigationLabel": "기보 탐색",
+		"navigation": {
+			"start": "처음",
+			"previous": "이전",
+			"next": "다음",
+			"current": "현재"
+		},
+		"undo": "마지막 수 무르기",
+		"encouragement": "천천히 두세요. 모든 수가 중요합니다.",
+		"keyboardHint": "← →로 한 수씩 이동하고, ↑ ↓로 처음과 현재로 이동합니다."
+	},
+	"board": {
+		"sceneLabel": "{{moveCount}}수의 포석이 놓인 {{size}}×{{size}} 바둑판",
+		"themedBoard": "{{theme}} 바둑판",
+		"emptyBoard": "빈 {{size}}×{{size}} {{theme}} 바둑판",
+		"stone": "{{finish}} {{color}} 바둑돌",
+		"textureError": "바둑판 텍스처를 불러오지 못했습니다.",
+		"pauseAnimations": "애니메이션 일시정지",
+		"resumeAnimations": "애니메이션 재개",
+		"pause": "일시정지",
+		"resume": "재개"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "바둑판 위의 교차점을 선택하세요.",
+			"occupied": "이미 돌이 놓인 자리입니다.",
+			"wrongPlayer": "상대방 차례입니다.",
+			"suicide": "자충수(자살수)는 둘 수 없습니다.",
+			"ko": "패 규칙에 따라 둘 수 없는 수입니다.",
+			"superko": "이전 국면이 반복되는 수입니다.",
+			"gameEnded": "이 대국에는 더 이상 수를 둘 수 없습니다."
+		},
+		"serverRejectedMove": "서버가 착수를 거부했습니다. {{reason}}",
+		"staleRevision": "착수가 도착하기 전에 대국 상태가 바뀌어 수가 두어지지 않았습니다.",
+		"wrongPhase": "현재 대국 단계에서는 할 수 없습니다.",
+		"seatTaken": "이미 차지된 자리입니다.",
+		"notYourTurn": "상대방 차례입니다.",
+		"abortUnavailable": "이제 대국을 중단할 수 없습니다.",
+		"replayFailed": "이 대국을 재현하지 못했습니다. 페이지를 새로고침해 주세요.",
+		"notConnected": "대국 서버에 연결되어 있지 않습니다.",
+		"engineLoadFailed": "바둑 엔진을 불러오지 못했습니다. 다시 시도해 주세요.",
+		"gameLoadFailed": "대국을 불러오지 못했습니다. 다시 시도해 주세요.",
+		"seatTakenFirst": "다른 사람이 먼저 자리를 차지했습니다. 이 대국은 이제 자리가 찼습니다."
+	}
+}

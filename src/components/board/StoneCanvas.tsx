@@ -1,4 +1,5 @@
 import { useCallback } from "react";
+import { useTranslation } from "react-i18next";
 import { drawStone, stoneStyles } from "weiqi-board";
 import type { StoneColor, StoneStyleId } from "weiqi-board";
 import { CanvasSurface } from "./CanvasSurface";
@@ -12,6 +13,7 @@ export interface StoneCanvasProps {
 }
 
 export function StoneCanvas({ style, color, size = 138, label }: StoneCanvasProps) {
+	const { t } = useTranslation("game");
 	const draw = useCallback(
 		(ctx: CanvasRenderingContext2D, width: number) => {
 			const scale = width / 176;
@@ -23,7 +25,10 @@ export function StoneCanvas({ style, color, size = 138, label }: StoneCanvasProp
 		<CanvasSurface
 			className="stone-canvas"
 			size={(size * 176) / 138}
-			label={label ?? `${stoneStyles[style].finish} ${stoneStyles[style].labels[color].toLowerCase()} baduk stone`}
+			label={
+				label ??
+				t("board.stone", { finish: stoneStyles[style].finish, color: stoneStyles[style].labels[color].toLowerCase() })
+			}
 			draw={draw}
 		/>
 	);

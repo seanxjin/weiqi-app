@@ -1,0 +1,138 @@
+{
+	"colors": {
+		"black": "الأسود",
+		"white": "الأبيض"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "تمرير",
+	"localPage": {
+		"title": "اللعب المحلي",
+		"eyebrow": "مباراة ودية",
+		"heading": "لحظة للعبة.",
+		"details": "{{size}} × {{size}} · القواعد اليابانية"
+	},
+	"onlinePage": {
+		"title": "اللعب عبر الإنترنت",
+		"eyebrow": "مباراة عبر الإنترنت",
+		"heading": "لحظة للعبة.",
+		"details": "{{size}} × {{size}} · كومي {{komi}}",
+		"loading": "جارٍ تحميل المباراة…",
+		"notFound": "هذه المباراة غير موجودة أو لم تعد متاحة.",
+		"startNew": "بدء مباراة جديدة عبر الإنترنت",
+		"invited": "أنت مدعو إلى مباراة {{size}} × {{size}}.",
+		"joining": "جارٍ الانضمام…",
+		"joinAs": "الانضمام بـ{{color}}",
+		"full": "هذه المباراة مكتملة. مشاهدة المباريات غير متاحة بعد."
+	},
+	"local": {
+		"label": "مباراة غو محلية",
+		"loadingEngine": "جارٍ تحميل محرك غو…"
+	},
+	"online": {
+		"label": "مباراة غو عبر الإنترنت",
+		"youAre": "أنت تلعب بـ{{color}}",
+		"connection": {
+			"connecting": "جارٍ الاتصال…",
+			"open": "متصل",
+			"reconnecting": "جارٍ إعادة الاتصال…",
+			"closed": "غير متصل"
+		},
+		"invite": {
+			"label": "ادعُ صديقًا بهذا الرابط",
+			"copy": "نسخ",
+			"copied": "تم النسخ"
+		},
+		"awaitingScoring": "مرّر كلا اللاعبين. احتساب النقاط غير مدعوم بعد، لذا ألغِ المباراة لتسجيلها دون نتيجة.",
+		"confirmResign": "تأكيد الاستسلام",
+		"resign": "استسلام",
+		"abort": "إلغاء المباراة",
+		"results": {
+			"youWin": "لقد فزت · استسلم {{color}}",
+			"winsByResignation": "فاز {{color}} بالاستسلام",
+			"aborted": "ألغى {{color}} المباراة",
+			"unscored": "انتهت المباراة دون نتيجة"
+		}
+	},
+	"turn": {
+		"preparing": "جارٍ تجهيز اللوحة",
+		"reviewing": "مراجعة · عُد إلى الوضع الحالي للعب",
+		"toPlay": "دور {{color}}",
+		"yourMove": "دورك",
+		"waitingForOpponent": "في انتظار خصم",
+		"awaitingScoring": "انتهى اللعب · احتساب النقاط غير مدعوم بعد",
+		"gameOver": "انتهت المباراة",
+		"sendingMove": "جارٍ إرسال النقلة…",
+		"waitingForConnection": "في انتظار الاتصال"
+	},
+	"boardFooter": {
+		"lastMove": "آخر نقلة: {{color}} {{move}}",
+		"startingPosition": "وضع البداية"
+	},
+	"players": {
+		"label": "اللاعبون",
+		"captured": "الأسرى {{count}}",
+		"you": "{{name}} (أنت)",
+		"waiting": "{{name}} · في انتظار لاعب"
+	},
+	"history": {
+		"label": "سجل النقلات",
+		"heading": "النقلات",
+		"moveCount_zero": "لا نقلات",
+		"moveCount_one": "نقلة واحدة",
+		"moveCount_two": "نقلتان",
+		"moveCount_few": "{{count}} نقلات",
+		"moveCount_many": "{{count}} نقلة",
+		"moveCount_other": "{{count}} نقلة",
+		"tableLabel": "نقلات الأسود والأبيض",
+		"pair": "زوج",
+		"move": "النقلة {{number}}، {{color}}، {{move}}",
+		"pendingMove": "النقلة {{number}}، {{color}}، {{move}}، قيد الإرسال",
+		"empty": "لا توجد نقلات بعد.",
+		"position": "النقلة {{viewed}} من {{latest}}",
+		"currentPosition": "الوضع الحالي",
+		"reviewing": "مراجعة",
+		"navigationLabel": "التنقّل في سجل النقلات",
+		"navigation": {
+			"start": "البداية",
+			"previous": "السابق",
+			"next": "التالي",
+			"current": "الحالي"
+		},
+		"undo": "التراجع عن آخر نقلة",
+		"encouragement": "خذ وقتك. كل نقلة مهمة.",
+		"keyboardHint": "استخدم ← → للتنقّل بين النقلات، و↑ ↓ للبداية والوضع الحالي."
+	},
+	"board": {
+		"sceneLabel": "لوحة غو {{size}} في {{size}} تعرض تسلسلًا من {{moveCount}} نقلة افتتاحية",
+		"themedBoard": "لوحة غو {{theme}}",
+		"emptyBoard": "لوحة Baduk فارغة {{size}} في {{size}} من {{theme}}",
+		"stone": "حجر Baduk {{color}} {{finish}}",
+		"textureError": "تعذّر تحميل نسيج اللوحة.",
+		"pauseAnimations": "إيقاف الرسوم المتحركة مؤقتًا",
+		"resumeAnimations": "استئناف الرسوم المتحركة",
+		"pause": "إيقاف مؤقت",
+		"resume": "استئناف"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "اختر تقاطعًا على اللوحة.",
+			"occupied": "هذا التقاطع مشغول.",
+			"wrongPlayer": "إنه دور اللاعب الآخر.",
+			"suicide": "الانتحار غير مسموح.",
+			"ko": "هذه النقلة ممنوعة بسبب قاعدة كو.",
+			"superko": "هذه النقلة تكرر وضعًا سابقًا.",
+			"gameEnded": "لا يمكن لهذه المباراة قبول نقلة أخرى."
+		},
+		"serverRejectedMove": "رفض الخادم النقلة. {{reason}}",
+		"staleRevision": "تغيّرت المباراة قبل وصول نقلتك، لذا لم تُلعب.",
+		"wrongPhase": "هذا غير ممكن في هذه المرحلة من المباراة.",
+		"seatTaken": "هذا المقعد مشغول بالفعل.",
+		"notYourTurn": "إنه دور اللاعب الآخر.",
+		"abortUnavailable": "لم يعد بالإمكان إلغاء المباراة.",
+		"replayFailed": "تعذّرت إعادة تشغيل هذه المباراة محليًا. يُرجى إعادة تحميل الصفحة.",
+		"notConnected": "غير متصل بخادم المباراة.",
+		"engineLoadFailed": "تعذّر تحميل محرك غو. يُرجى إعادة المحاولة.",
+		"gameLoadFailed": "تعذّر تحميل المباراة. يُرجى إعادة المحاولة.",
+		"seatTakenFirst": "أخذ شخص آخر المقعد أولًا. هذه المباراة مكتملة الآن."
+	}
+}

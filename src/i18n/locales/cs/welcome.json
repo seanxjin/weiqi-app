@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Hrajte go",
+	"railLabel": "Baduk",
+	"mainNavigation": "Hlavní navigace",
+	"play": "Hrát",
+	"eyebrow": "Nějaký text",
+	"heading": {
+		"label": "Hrajte go",
+		"prefix": "Hrajte "
+	},
+	"description": {
+		"first": "Nějaký text....",
+		"second": "Další text..."
+	},
+	"footnote": "NESPĚCHEJTE."
+}

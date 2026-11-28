@@ -1,0 +1,85 @@
+{
+	"page": {
+		"title": {
+			"local": "Lokal oyun ayarları",
+			"online": "Onlayn oyun ayarları"
+		},
+		"label": {
+			"local": "Lokal oyun ayarları",
+			"online": "Onlayn oyun ayarları"
+		},
+		"backToMenu": "Menyuya qayıt",
+		"settingsLabel": "Oyun ayarları",
+		"timeLimitsNotice": "Vaxt limitləri hələ tətbiq olunmur.",
+		"boardSize": "LÖVHƏ ÖLÇÜSÜ",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Oyun yaradılır…",
+		"startGame": "Oyuna başla",
+		"createFailed": "Oyunu yaratmaq mümkün olmadı. Zəhmət olmasa, yenidən cəhd edin."
+	},
+	"players": {
+		"player1": "Oyunçu 1",
+		"player2": "Oyunçu 2",
+		"opponent": "Rəqib",
+		"guest": "Siz (qonaq)"
+	},
+	"configuration": {
+		"eyebrow": "KONFIQURASIYALAR",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Fərdi · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Daha çox vaxt nəzarəti",
+		"fewerControls": "Daha az vaxt nəzarəti",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Blits",
+			"rapid": "Rapid",
+			"classical": "Klassik",
+			"correspondence": "Yazışma",
+			"untimed": "Vaxtsız"
+		},
+		"systems": {
+			"absolute": "Mütləq",
+			"fischer": "Fişer",
+			"japaneseByoYomi": "Yapon byo-yomi"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} san",
+			"absoluteMinutes": "{{minutes}} dəq",
+			"mainSeconds": "{{seconds}}s",
+			"mainMinutes": "{{minutes}}d",
+			"fischer": "{{main}} + {{increment}}s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}}s",
+			"daysPerMove_one": "{{count}} gün / gediş",
+			"daysPerMove_other": "{{count}} gün / gediş"
+		},
+		"noTimeLimit": "Vaxt limiti yoxdur"
+	},
+	"customTime": {
+		"label": "Fərdi vaxt nəzarəti",
+		"eyebrow": "FƏRDİ VAXT NƏZARƏTİ",
+		"heading": "Öz saatınızı qurun",
+		"system": "Sistem",
+		"fields": {
+			"minutes": "Əsas · dəq",
+			"seconds": "Əsas · san",
+			"increment": "Artım · san",
+			"periods": "Periodlar",
+			"periodSeconds": "Period · san"
+		},
+		"hints": {
+			"byoYomi": "Əlavə vaxt sabit sayda vaxtlı perioddan ibarətdir.",
+			"default": "Sistem seçin, sonra saat dəyərlərini daxil edin."
+		},
+		"apply": "Fərdi vaxtı istifadə et",
+		"errors": {
+			"wholeNumbers": "Hər saat sahəsinə mənfi olmayan tam ədəd daxil edin.",
+			"mainSeconds": "Əsas saniyələr 0 ilə 59 arasında olmalıdır.",
+			"byoYomiPeriods": "Byo-yomi üçün ən azı bir saniyə davam edən ən azı bir period lazımdır.",
+			"mainTime": "Əsas vaxtı sıfırdan böyük təyin edin."
+		}
+	}
+}

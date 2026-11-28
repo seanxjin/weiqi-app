@@ -1,0 +1,16 @@
+{
+	"pageTitle": "العب غو",
+	"railLabel": "Baduk",
+	"mainNavigation": "التنقّل الرئيسي",
+	"play": "العب",
+	"eyebrow": "نص ما",
+	"heading": {
+		"label": "العب غو",
+		"prefix": "العب "
+	},
+	"description": {
+		"first": "نص ما....",
+		"second": "نص آخر..."
+	},
+	"footnote": "خذ وقتك."
+}

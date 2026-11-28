@@ -1,0 +1,116 @@
+{
+	"home": {
+		"pageTitle": "Mängi",
+		"location": "MÄNGI / AVALEHT",
+		"signedInAs": "Sisse logitud kui {{username}}",
+		"guest": "Mängid külalisena",
+		"logoutError": "Väljalogimine ebaõnnestus. Proovi uuesti.",
+		"introduction": {
+			"heading": "Mingi tekst",
+			"body": "Mingi muu tekst"
+		},
+		"menuHeading": "Mingi tekst.",
+		"options": {
+			"online": {
+				"label": "Mängi veebis",
+				"description": "Leia vastane. Kohtu laua taga."
+			},
+			"local": {
+				"label": "Mängi kohapeal",
+				"description": "Üks laud. Kaks mängijat. Ühine ekraan."
+			},
+			"friend": {
+				"label": "Mängi sõbraga",
+				"description": "Kutsu keegi läbimõeldud partiile."
+			},
+			"puzzles": {
+				"label": "Lahenda ülesandeid",
+				"description": "Väikesed väljakutsed. Teravam vaist."
+			},
+			"lessons": {
+				"label": "Õppetunnid",
+				"description": "Esimesest kivist järgmise avastuseni."
+			},
+			"bots": {
+				"label": "Mängi bottidega",
+				"description": "Harjuta oma tempos, igal tasemel."
+			}
+		},
+		"presence_one": "{{count, number}} mängija laua taga",
+		"presence_other": "{{count, number}} mängijat laua taga",
+		"reserved": {
+			"label": "JAOTIS HILJEMAKS",
+			"heading": "Reserveeritud tulevasele sisule",
+			"body": "See jaotis on praegu meelega tühi. Seda kasutatakse tulevaste funktsioonide, uudiste või valitud sisu jaoks."
+		},
+		"footerTagline": "Lihtsad reeglid. Lõputud avastused."
+	},
+	"materials": {
+		"pageTitle": "Lauad ja kivid",
+		"breadcrumb": "Baduk / Materjalikogu",
+		"collection": "Kollektsioon 01",
+		"heading": "Lauad ja kivid.",
+		"introduction": "Looduslikud materjalid. Vaiksed detailid. Paik mängu jaoks.",
+		"boardsSection": {
+			"title": "Lauad",
+			"meta": "Kolm puiduliiki · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Kivid",
+			"meta": "Neli stiili · must ja valge"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Materjaliuuring",
+			"enlarged": "Suurendatud näidised",
+			"heading": "Vaikne kontrast.",
+			"body": "Neli pinda. Must ja valge samas pehmes valguses.",
+			"scale": "Suurendatud näidised · ühtne mõõtkava",
+			"form": "Sile, ümar vorm / peen pinnavariatsioon"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Traditsiooniline Jaapani kaja",
+				"material": "Soe meetoon · sirge kiud"
+			},
+			"walnut": {
+				"name": "Tume pähkel",
+				"material": "Sügavpruun · voolav kiud"
+			},
+			"ash": {
+				"name": "Hele Skandinaavia saar",
+				"material": "Hele puit · pehme kiud"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Poleeritud",
+				"name": "Kiltkivi",
+				"description": "Siledad poleeritud pinnad vaikse mineraalse tekstuuriga.",
+				"black": "Must kiltkivi",
+				"white": "Valge kiltkivi"
+			},
+			"satin": {
+				"finish": "Satiin",
+				"name": "Keraamika",
+				"description": "Hajus läige ja õrn, ühtlaselt peen tekstuur.",
+				"black": "Must keraamika",
+				"white": "Valge keraamika"
+			},
+			"matte": {
+				"finish": "Matt",
+				"name": "Looduslik kivi",
+				"description": "Tagasihoidlik mineraalne täpilisus sileda ja kuiva viimistluse all.",
+				"black": "Must kivi",
+				"white": "Valge kivi"
+			},
+			"snow": {
+				"finish": "Poleeritud",
+				"name": "Karbikoor · Yuki / lumeklass",
+				"description": "Peen ja tihe karbikoore muster piimvalgel, koos poleeritud musta kiltkiviga.",
+				"black": "Must Nachiguro kiltkivi",
+				"white": "Valge Yuki karbikoor"
+			}
+		},
+		"footerTagline": "Oluline, läbi mõeldud."
+	}
+}

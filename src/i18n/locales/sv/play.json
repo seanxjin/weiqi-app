@@ -1,0 +1,116 @@
+{
+	"home": {
+		"pageTitle": "Spela",
+		"location": "SPELA / START",
+		"signedInAs": "Inloggad som {{username}}",
+		"guest": "Spelar som gäst",
+		"logoutError": "Det gick inte att logga ut. Försök igen.",
+		"introduction": {
+			"heading": "Lite text",
+			"body": "Lite annan text"
+		},
+		"menuHeading": "Lite text.",
+		"options": {
+			"online": {
+				"label": "Spela online",
+				"description": "Hitta din motståndare. Mötas vid brädet."
+			},
+			"local": {
+				"label": "Spela lokalt",
+				"description": "Ett bräde. Två spelare. En delad skärm."
+			},
+			"friend": {
+				"label": "Spela mot en vän",
+				"description": "Bjud in någon till ett eftertänksamt parti."
+			},
+			"puzzles": {
+				"label": "Lös problem",
+				"description": "Små utmaningar. Skarpare instinkter."
+			},
+			"lessons": {
+				"label": "Lektioner",
+				"description": "Från din första sten till din nästa insikt."
+			},
+			"bots": {
+				"label": "Spela mot botar",
+				"description": "Öva i din egen takt, på vilken nivå som helst."
+			}
+		},
+		"presence_one": "{{count, number}} spelare vid brädet",
+		"presence_other": "{{count, number}} spelare vid brädet",
+		"reserved": {
+			"label": "AVSNITT FÖR SENARE",
+			"heading": "Reserverat för framtida innehåll",
+			"body": "Det här avsnittet är avsiktligt tomt tills vidare. Det kommer att användas för framtida funktioner, uppdateringar eller utvalt innehåll."
+		},
+		"footerTagline": "Enkla regler. Oändliga upptäckter."
+	},
+	"materials": {
+		"pageTitle": "Brädor och stenar",
+		"breadcrumb": "Baduk / Materialbibliotek",
+		"collection": "Kollektion 01",
+		"heading": "Brädor och stenar.",
+		"introduction": "Naturliga material. Stillsamma detaljer. En plats för spelet.",
+		"boardsSection": {
+			"title": "Brädorna",
+			"meta": "Tre träslag · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Stenarna",
+			"meta": "Fyra stilar · svart och vitt"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Materialstudie",
+			"enlarged": "Förstorade prover",
+			"heading": "En stillsam kontrast.",
+			"body": "Fyra ytor. Svart och vitt, i samma mjuka ljus.",
+			"scale": "Förstorade prover · enhetlig skala",
+			"form": "Slät, rundad form / subtil variation i ytan"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Traditionell japansk kaya",
+				"material": "Varm honungston · rak ådring"
+			},
+			"walnut": {
+				"name": "Mörk valnöt",
+				"material": "Djupbrun · flytande ådring"
+			},
+			"ash": {
+				"name": "Ljus skandinavisk ask",
+				"material": "Ljust trä · mjuk ådring"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Polerad",
+				"name": "Skiffer",
+				"description": "Släta, polerade ytor med en stillsam mineralisk textur.",
+				"black": "Svart skiffer",
+				"white": "Vit skiffer"
+			},
+			"satin": {
+				"finish": "Satin",
+				"name": "Keramik",
+				"description": "En mjuk lyster och en fin, jämn struktur.",
+				"black": "Svart keramik",
+				"white": "Vit keramik"
+			},
+			"matte": {
+				"finish": "Matt",
+				"name": "Natursten",
+				"description": "Diskret mineralisk prickighet under en slät, torr yta.",
+				"black": "Svart sten",
+				"white": "Vit sten"
+			},
+			"snow": {
+				"finish": "Polerad",
+				"name": "Musselskal · Yuki / Snow-kvalitet",
+				"description": "Fin, tät skalstruktur i mjölkvitt, i par med polerad svart skiffer.",
+				"black": "Svart Nachiguro-skiffer",
+				"white": "Vitt Yuki-musselskal"
+			}
+		},
+		"footerTagline": "Det väsentliga, genomtänkt."
+	}
+}

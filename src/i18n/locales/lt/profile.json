@@ -1,0 +1,18 @@
+{
+	"editProfile": "Redaguoti profilį",
+	"meta": {
+		"joined": "Prisijungė",
+		"rank": "Rangas",
+		"noRank": "—",
+		"followers": "Sekėjai",
+		"following": "Sekami"
+	},
+	"about": {
+		"heading": "Apie",
+		"noBio": "Aprašymo dar nėra."
+	},
+	"games": {
+		"heading": "Partijų istorija",
+		"empty": "Partijų dar nėra."
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"server": {
+		"unavailable": "Poslužitelj nije dostupan. Pokušajte ponovno.",
+		"unreachable": "Nije moguće povezati se s poslužiteljem. Provjerite vezu i pokušajte ponovno.",
+		"unexpectedResponse": "Poslužitelj je vratio neočekivan odgovor. Pokušajte ponovno.",
+		"requestFailed": "Zahtjev nije moguće dovršiti. Pokušajte ponovno."
+	},
+	"rateLimited": {
+		"generic": "Previše pokušaja. Pričekajte prije ponovnog pokušaja.",
+		"withDelay_one": "Previše pokušaja. Pričekajte {{count}} sekundu prije ponovnog pokušaja.",
+		"withDelay_few": "Previše pokušaja. Pričekajte {{count}} sekunde prije ponovnog pokušaja.",
+		"withDelay_other": "Previše pokušaja. Pričekajte {{count}} sekundi prije ponovnog pokušaja."
+	},
+	"unknown": "Nešto nije u redu. Pokušajte ponovno.",
+	"api": {
+		"invalidCredentials": "Korisničko ime, e-adresa ili lozinka nisu točni.",
+		"twoFactorRequired": "Unesite šesteroznamenkasti kod iz autentifikatora za nastavak.",
+		"invalidTwoFactor": "Kod autentifikatora nije točan. Pokušajte ponovno.",
+		"emailUnconfirmed": "Potvrdite e-adresu prije prijave.",
+		"accountClosed": "Ovaj je račun zatvoren i ne može se prijaviti.",
+		"usernameTaken": "To je korisničko ime već zauzeto. Odaberite drugo.",
+		"emailTaken": "Ta se e-adresa već koristi.",
+		"invalidToken": "Ova poveznica nije valjana ili je istekla. Zatražite novu e-poruku za nastavak.",
+		"unauthorized": "Sesija prijave je istekla. Počnite ponovno.",
+		"conflict": "Registraciju nije moguće dovršiti. Počnite ponovno.",
+		"forbidden": "Ovaj je zahtjev blokiran. Osvježite stranicu i pokušajte ponovno."
+	},
+	"validation": {
+		"passwordTooShort": "Lozinka mora imati najmanje 8 znakova.",
+		"newPasswordTooShort": "Nova lozinka mora imati najmanje 8 znakova.",
+		"passwordTooLong": "Lozinka ne smije biti dulja od 72 UTF-8 bajta.",
+		"passwordMismatch": "Nove lozinke se ne podudaraju.",
+		"passwordUnchanged": "Odaberite lozinku različitu od trenutačne."
+	}
+}

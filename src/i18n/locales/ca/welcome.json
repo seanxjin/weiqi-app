@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Juga a go",
+	"railLabel": "Baduk",
+	"mainNavigation": "Navegació principal",
+	"play": "Juga",
+	"eyebrow": "Una mica de text",
+	"heading": {
+		"label": "Juga a go",
+		"prefix": "Juga a "
+	},
+	"description": {
+		"first": "Una mica de text....",
+		"second": "Una altra mica de text..."
+	},
+	"footnote": "PREN-TE EL TEU TEMPS."
+}

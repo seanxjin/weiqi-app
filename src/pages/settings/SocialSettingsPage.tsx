@@ -1,36 +1,41 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { mockBlocking, mockFollowing } from "@/data/mocks/settings";
 import { PlayerList } from "@/components/settings/PlayerList";
 import { SettingsSection } from "@/components/settings/SettingsControls";
 
-const playerCount = (count: number) => `${count} ${count === 1 ? "player" : "players"}`;
-
 export default function SocialSettingsPage() {
+	const { t } = useTranslation("settings");
 	const [blocking, setBlocking] = useState(mockBlocking);
 	const [following, setFollowing] = useState(mockFollowing);
 
 	return (
 		<div className="settings-page">
 			<header className="settings-page__header">
-				<h2>Social & Privacy</h2>
-				<p>Manage the players you follow and the players you have blocked.</p>
+				<h2>{t("sections.social")}</h2>
+				<p>{t("social.description")}</p>
 			</header>
 			<SettingsSection
-				title="Blocking"
-				description={`You are blocking ${playerCount(blocking.length)}. Blocked players cannot challenge or message you.`}
+				title={t("social.blocking.title")}
+				description={t("social.blocking.description", { count: blocking.length })}
 			>
 				<PlayerList
 					players={blocking}
-					emptyMessage="You are not blocking anyone."
-					actionLabel="Unblock"
+					emptyMessage={t("social.blocking.empty")}
+					actionLabel={t("social.blocking.action")}
+					actionAccessibleLabel={(username) => t("social.blocking.actionLabel", { username })}
 					onAction={(username) => setBlocking((players) => players.filter((player) => player !== username))}
 				/>
 			</SettingsSection>
-			<SettingsSection title="Following" description={`You follow ${playerCount(following.length)}.`}>
+			<SettingsSection
+				title={t("social.following.title")}
+				description={t("social.following.description", { count: following.length })}
+			>
 				<PlayerList
 					players={following}
-					emptyMessage="You are not following anyone yet."
-					actionLabel="Unfollow"
+					emptyMessage={t("social.following.empty")}
+					actionLabel={t("social.following.action")}
+					actionAccessibleLabel={(username) => t("social.following.actionLabel", { username })}
 					onAction={(username) => setFollowing((players) => players.filter((player) => player !== username))}
 				/>
 			</SettingsSection>

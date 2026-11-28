@@ -1,0 +1,115 @@
+{
+	"home": {
+		"pageTitle": "对弈",
+		"location": "对弈 / 首页",
+		"signedInAs": "已登录为 {{username}}",
+		"guest": "以游客身份对弈",
+		"logoutError": "无法退出登录，请重试。",
+		"introduction": {
+			"heading": "文本",
+			"body": "其他文本"
+		},
+		"menuHeading": "文本。",
+		"options": {
+			"online": {
+				"label": "在线对弈",
+				"description": "寻找对手，棋盘上相见。"
+			},
+			"local": {
+				"label": "本地对弈",
+				"description": "一张棋盘，两位棋手，共享一块屏幕。"
+			},
+			"friend": {
+				"label": "与好友对弈",
+				"description": "邀请好友，静心下一局。"
+			},
+			"puzzles": {
+				"label": "做题",
+				"description": "小小挑战，磨砺棋感。"
+			},
+			"lessons": {
+				"label": "课程",
+				"description": "从第一颗棋子到下一次领悟。"
+			},
+			"bots": {
+				"label": "人机对弈",
+				"description": "任何水平，按自己的节奏练习。"
+			}
+		},
+		"presence_other": "{{count, number}} 位棋手正在对弈",
+		"reserved": {
+			"label": "预留区域",
+			"heading": "为未来内容预留",
+			"body": "此区域暂时有意留空，将用于未来的功能、更新或精选内容。"
+		},
+		"footerTagline": "规则简单，探索无穷。"
+	},
+	"materials": {
+		"pageTitle": "棋盘与棋子",
+		"breadcrumb": "Baduk / 材质库",
+		"collection": "系列 01",
+		"heading": "棋盘与棋子。",
+		"introduction": "天然材质，静谧细节，为对弈而生。",
+		"boardsSection": {
+			"title": "棋盘",
+			"meta": "三种木材 · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "棋子",
+			"meta": "四种款式 · 黑与白"
+		},
+		"study": {
+			"breadcrumb": "Baduk / 材质研究",
+			"enlarged": "放大样品",
+			"heading": "静谧的对比。",
+			"body": "四种表面，同一柔和光线下的黑与白。",
+			"scale": "放大样品 · 统一比例",
+			"form": "光滑圆润的造型 / 细微的表面变化"
+		},
+		"boards": {
+			"kaya": {
+				"name": "传统日本榧木",
+				"material": "温暖蜜色 · 直纹"
+			},
+			"walnut": {
+				"name": "深色胡桃木",
+				"material": "深棕色 · 流畅木纹"
+			},
+			"ash": {
+				"name": "浅色北欧白蜡木",
+				"material": "浅色木材 · 柔和木纹"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "抛光",
+				"name": "板岩",
+				"description": "光滑的抛光表面，带有静谧的矿物质感。",
+				"black": "黑色板岩",
+				"white": "白色板岩"
+			},
+			"satin": {
+				"finish": "缎面",
+				"name": "陶瓷",
+				"description": "柔和漫射的光泽，细腻均匀的纹理。",
+				"black": "黑色陶瓷",
+				"white": "白色陶瓷"
+			},
+			"matte": {
+				"finish": "哑光",
+				"name": "天然石",
+				"description": "光滑干爽的表面下，点缀着低调的矿物斑点。",
+				"black": "黑色天然石",
+				"white": "白色天然石"
+			},
+			"snow": {
+				"finish": "抛光",
+				"name": "蛤碁石 · 雪印级",
+				"description": "乳白底色上细密的贝壳纹理，搭配抛光黑色板岩。",
+				"black": "那智黑石",
+				"white": "雪印蛤碁石"
+			}
+		},
+		"footerTagline": "精要之物，用心之选。"
+	}
+}

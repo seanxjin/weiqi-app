@@ -1,0 +1,207 @@
+{
+	"header": {
+		"title": "設定",
+		"sectionTitle": "{{section}}の設定",
+		"navLabel": "設定セクション"
+	},
+	"sections": {
+		"board": "碁盤と碁石",
+		"gameplay": "対局",
+		"profile": "プロフィール",
+		"social": "ソーシャルとプライバシー",
+		"account": "アカウントとセキュリティ",
+		"language": "言語と時刻"
+	},
+	"board": {
+		"description": "対局で使う碁盤と碁石を選びましょう。",
+		"appearance": {
+			"title": "外観",
+			"boardLegend": "碁盤",
+			"stonesLegend": "碁石",
+			"previewLabel": "碁盤のプレビュー"
+		},
+		"themes": {
+			"kaya": "伝統的な日本産榧",
+			"walnut": "ダークウォルナット",
+			"ash": "淡い北欧アッシュ"
+		},
+		"stoneStyles": {
+			"polished": "スレート",
+			"satin": "セラミック",
+			"matte": "天然石",
+			"snow": "蛤 · 雪印"
+		},
+		"display": {
+			"title": "碁盤の表示",
+			"coordinates": {
+				"label": "座標を表示",
+				"description": "碁盤の端に列と行のラベルを表示します。"
+			},
+			"lastMove": {
+				"label": "最終手を強調",
+				"description": "直前に打たれた石に印を付けます。"
+			}
+		},
+		"sounds": {
+			"title": "サウンド",
+			"playSounds": {
+				"label": "サウンドを再生",
+				"description": "着手、石を取る音、時間の警告。"
+			}
+		}
+	},
+	"gameplay": {
+		"description": "石の置き方と、対局を申し込める相手を管理します。",
+		"moves": {
+			"title": "着手",
+			"description": "誤クリックを防ぐため、石を置く前にもう一度クリックを求めます。",
+			"legend": "着手の確認",
+			"options": {
+				"never": "しない",
+				"correspondence": "通信対局のみ",
+				"always": "常に"
+			}
+		},
+		"challenges": {
+			"title": "対局の申し込み",
+			"description": "対局を申し込める相手を選びます。",
+			"legend": "申し込みを許可する相手",
+			"options": {
+				"everyone": "全員",
+				"registered": "登録済みプレイヤー",
+				"following": "フォロー中のプレイヤーのみ",
+				"nobody": "誰も許可しない（再戦は可能）"
+			}
+		}
+	},
+	"profile": {
+		"description": "ここに入力した内容はすべて<profileLink>公開プロフィール</profileLink>に表示されます。",
+		"publicProfile": {
+			"title": "公開プロフィール",
+			"bioLabel": "自己紹介",
+			"bioPlaceholder": "自己紹介はプロフィールに表示されます。",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "詳細",
+			"joinDate": "登録日",
+			"username": "ユーザー名",
+			"changeUsername": "変更",
+			"changeUsernameFeature": "ユーザー名の変更",
+			"realName": "本名",
+			"location": "所在地",
+			"country": "国",
+			"countryNotSet": "未設定",
+			"rank": "段級位",
+			"rankPlaceholder": "例: 12k、3d",
+			"rankHint": "30k〜1k、1d〜9d、または1p〜9pで入力してください。"
+		},
+		"links": {
+			"legend": "リンク",
+			"linkLabel": "リンク {{number}}",
+			"remove": "削除",
+			"removeLabel": "リンク {{number}} を削除",
+			"add": "リンクを追加"
+		}
+	},
+	"social": {
+		"description": "フォロー中のプレイヤーとブロックしたプレイヤーを管理します。",
+		"blocking": {
+			"title": "ブロック",
+			"description_other": "{{count}}人をブロックしています。ブロックしたプレイヤーは、あなたに対局の申し込みやメッセージを送れません。",
+			"empty": "ブロックしている人はいません。",
+			"action": "ブロック解除",
+			"actionLabel": "{{username}} のブロックを解除"
+		},
+		"following": {
+			"title": "フォロー中",
+			"description_other": "{{count}}人をフォローしています。",
+			"empty": "まだ誰もフォローしていません。",
+			"action": "フォロー解除",
+			"actionLabel": "{{username}} のフォローを解除"
+		}
+	},
+	"account": {
+		"description": "パスワードの変更、アカウントの保護、連携アカウントの管理を行います。",
+		"password": {
+			"title": "パスワードの変更",
+			"updated": "パスワードを更新しました",
+			"fields": {
+				"currentPassword": {
+					"label": "現在のパスワード",
+					"show": "現在のパスワードを表示",
+					"hide": "現在のパスワードを隠す"
+				},
+				"newPassword": {
+					"label": "新しいパスワード",
+					"show": "新しいパスワードを表示",
+					"hide": "新しいパスワードを隠す"
+				},
+				"confirmPassword": {
+					"label": "パスワードを再入力",
+					"show": "再入力したパスワードを表示",
+					"hide": "再入力したパスワードを隠す"
+				}
+			}
+		},
+		"contact": {
+			"title": "連絡先",
+			"email": "メールアドレス",
+			"edit": "編集",
+			"editFeature": "メールアドレスの変更"
+		},
+		"twoFactor": {
+			"title": "二要素認証",
+			"description": "ログイン時に認証アプリのコードを求めます。",
+			"off": "オフ",
+			"enable": "有効にする",
+			"feature": "二要素認証"
+		},
+		"sessions": {
+			"title": "アクティブなセッション",
+			"description": "アカウントが不正利用された疑いがある場合は、パスワードを変更し、すべての端末からログアウトしてください。",
+			"thisDevice": "この端末",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "{{device}} からログアウト",
+			"logOutAll": "他のすべての端末からログアウト"
+		},
+		"connections": {
+			"title": "連携アカウント",
+			"description": "これらのアカウントで Baduk にログインできます。",
+			"connectedTo": "{{provider}} と連携済み",
+			"connect": "連携",
+			"disconnect": "連携解除",
+			"note": "連携を解除すると Baduk 上のリンクが削除されます。相手側のサイトでアクセス権の取り消しが必要な場合があります。"
+		},
+		"close": {
+			"title": "アカウントの閉鎖",
+			"description": "アカウントを閉鎖すると、プロフィールが非表示になり、すべての端末からログアウトされます。",
+			"button": "アカウントを閉鎖",
+			"dialogTitle": "アカウントを閉鎖しますか？",
+			"dialogDescription": "後でログインページから再開できます。",
+			"feature": "アカウントの閉鎖"
+		}
+	},
+	"languageTime": {
+		"title": "言語と時刻",
+		"description": "Baduk で使う言語と、日付・時刻の表示方法を選びます。",
+		"language": {
+			"title": "言語",
+			"description": "変更はすべてのページにすぐ反映されます。",
+			"legend": "表示言語"
+		},
+		"time": {
+			"title": "時刻",
+			"description": "登録日やセッションのアクティビティなどのタイムスタンプに使用されます。",
+			"timeZone": "タイムゾーン",
+			"automaticTimeZone": "自動（{{timeZone}}）",
+			"timeFormat": "時計",
+			"formats": {
+				"auto": "自動（{{example}}）",
+				"12h": "12時間制（{{example}}）",
+				"24h": "24時間制（{{example}}）"
+			},
+			"preview": "プレビュー"
+		}
+	}
+}

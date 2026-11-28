@@ -1,0 +1,209 @@
+{
+	"header": {
+		"title": "Instellingen",
+		"sectionTitle": "Instellingen voor {{section}}",
+		"navLabel": "Instellingssecties"
+	},
+	"sections": {
+		"board": "Bord & stenen",
+		"gameplay": "Spelverloop",
+		"profile": "Profiel",
+		"social": "Sociaal & privacy",
+		"account": "Account & beveiliging",
+		"language": "Taal & tijd"
+	},
+	"board": {
+		"description": "Kies het bord en de stenen waarmee je speelt.",
+		"appearance": {
+			"title": "Uiterlijk",
+			"boardLegend": "Bord",
+			"stonesLegend": "Stenen",
+			"previewLabel": "Voorbeeld van het bord"
+		},
+		"themes": {
+			"kaya": "Traditionele Japanse kaya",
+			"walnut": "Donkere notelaar",
+			"ash": "Lichte Scandinavische es"
+		},
+		"stoneStyles": {
+			"polished": "Leisteen",
+			"satin": "Keramiek",
+			"matte": "Natuursteen",
+			"snow": "Schelp · Yuki / Sneeuwkwaliteit"
+		},
+		"display": {
+			"title": "Bordweergave",
+			"coordinates": {
+				"label": "Bordcoördinaten tonen",
+				"description": "Kolommen en rijen langs de rand van het bord benoemen."
+			},
+			"lastMove": {
+				"label": "Laatste zet markeren",
+				"description": "De laatst gespeelde steen aanduiden."
+			}
+		},
+		"sounds": {
+			"title": "Geluiden",
+			"playSounds": {
+				"label": "Geluiden afspelen",
+				"description": "Stenen plaatsen, slaan en klokwaarschuwingen."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Bepaal hoe je stenen plaatst en wie je mag uitdagen.",
+		"moves": {
+			"title": "Zetten spelen",
+			"description": "Vraag een tweede klik voor een steen wordt geplaatst, om misklikken te vermijden.",
+			"legend": "Zetten bevestigen",
+			"options": {
+				"never": "Nooit",
+				"correspondence": "Alleen bij correspondentiepartijen",
+				"always": "Altijd"
+			}
+		},
+		"challenges": {
+			"title": "Uitdagingen",
+			"description": "Kies wie je uitdagingen voor een partij mag sturen.",
+			"legend": "Uitdagingen toestaan van",
+			"options": {
+				"everyone": "Iedereen",
+				"registered": "Geregistreerde spelers",
+				"following": "Alleen spelers die ik volg",
+				"nobody": "Niemand (revanches blijven toegestaan)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Alles hier is zichtbaar op je <profileLink>openbaar profiel</profileLink>.",
+		"publicProfile": {
+			"title": "Openbaar profiel",
+			"bioLabel": "Korte bio",
+			"bioPlaceholder": "Je korte bio verschijnt op je profiel.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Gegevens",
+			"joinDate": "Lid sinds",
+			"username": "Gebruikersnaam",
+			"changeUsername": "Wijzigen",
+			"changeUsernameFeature": "Je gebruikersnaam wijzigen",
+			"realName": "Echte naam",
+			"location": "Locatie",
+			"country": "Land",
+			"countryNotSet": "Niet ingesteld",
+			"rank": "Rang",
+			"rankPlaceholder": "bv. 12k, 3d",
+			"rankHint": "Gebruik 30k–1k, 1d–9d of 1p–9p."
+		},
+		"links": {
+			"legend": "Links",
+			"linkLabel": "Link {{number}}",
+			"remove": "Verwijderen",
+			"removeLabel": "Link {{number}} verwijderen",
+			"add": "Link toevoegen"
+		}
+	},
+	"social": {
+		"description": "Beheer de spelers die je volgt en de spelers die je hebt geblokkeerd.",
+		"blocking": {
+			"title": "Blokkeren",
+			"description_one": "Je blokkeert {{count}} speler. Geblokkeerde spelers kunnen je niet uitdagen of berichten sturen.",
+			"description_other": "Je blokkeert {{count}} spelers. Geblokkeerde spelers kunnen je niet uitdagen of berichten sturen.",
+			"empty": "Je blokkeert niemand.",
+			"action": "Deblokkeren",
+			"actionLabel": "{{username}} deblokkeren"
+		},
+		"following": {
+			"title": "Volgend",
+			"description_one": "Je volgt {{count}} speler.",
+			"description_other": "Je volgt {{count}} spelers.",
+			"empty": "Je volgt nog niemand.",
+			"action": "Ontvolgen",
+			"actionLabel": "{{username}} ontvolgen"
+		}
+	},
+	"account": {
+		"description": "Wijzig je wachtwoord, beveilig je account en beheer gekoppelde accounts.",
+		"password": {
+			"title": "Wachtwoord wijzigen",
+			"updated": "Wachtwoord bijgewerkt",
+			"fields": {
+				"currentPassword": {
+					"label": "Huidig wachtwoord",
+					"show": "Huidig wachtwoord tonen",
+					"hide": "Huidig wachtwoord verbergen"
+				},
+				"newPassword": {
+					"label": "Nieuw wachtwoord",
+					"show": "Nieuw wachtwoord tonen",
+					"hide": "Nieuw wachtwoord verbergen"
+				},
+				"confirmPassword": {
+					"label": "Wachtwoord herhalen",
+					"show": "Herhaald wachtwoord tonen",
+					"hide": "Herhaald wachtwoord verbergen"
+				}
+			}
+		},
+		"contact": {
+			"title": "Contactgegevens",
+			"email": "E-mailadres",
+			"edit": "Bewerken",
+			"editFeature": "Je e-mailadres wijzigen"
+		},
+		"twoFactor": {
+			"title": "Tweestapsverificatie",
+			"description": "Vraag bij het aanmelden een code uit een authenticator-app.",
+			"off": "Uit",
+			"enable": "Inschakelen",
+			"feature": "Tweestapsverificatie"
+		},
+		"sessions": {
+			"title": "Actieve sessies",
+			"description": "Vermoed je dat je account gehackt is? Wijzig dan je wachtwoord en meld je overal af.",
+			"thisDevice": "Dit toestel",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "{{device}} afmelden",
+			"logOutAll": "Afmelden op alle andere toestellen"
+		},
+		"connections": {
+			"title": "Gekoppelde accounts",
+			"description": "Meld je met deze accounts aan bij Baduk.",
+			"connectedTo": "Gekoppeld aan {{provider}}",
+			"connect": "Koppelen",
+			"disconnect": "Ontkoppelen",
+			"note": "Ontkoppelen verwijdert de koppeling op Baduk. Mogelijk moet je de toegang ook op de andere site intrekken."
+		},
+		"close": {
+			"title": "Je account sluiten",
+			"description": "Als je je account sluit, wordt je profiel verborgen en word je overal afgemeld.",
+			"button": "Account sluiten",
+			"dialogTitle": "Je account sluiten?",
+			"dialogDescription": "Je kunt het later heropenen via de aanmeldpagina.",
+			"feature": "Je account sluiten"
+		}
+	},
+	"languageTime": {
+		"title": "Taal & tijd",
+		"description": "Kies de taal van Baduk en hoe datums en tijden worden weergegeven.",
+		"language": {
+			"title": "Taal",
+			"description": "Wijzigingen gelden meteen op elke pagina.",
+			"legend": "Weergavetaal"
+		},
+		"time": {
+			"title": "Tijd",
+			"description": "Gebruikt voor tijdstempels zoals de registratiedatum en sessieactiviteit.",
+			"timeZone": "Tijdzone",
+			"automaticTimeZone": "Automatisch ({{timeZone}})",
+			"timeFormat": "Klok",
+			"formats": {
+				"auto": "Automatisch ({{example}})",
+				"12h": "12-uursnotatie ({{example}})",
+				"24h": "24-uursnotatie ({{example}})"
+			},
+			"preview": "Voorbeeld"
+		}
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "GO",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Baduk-tuisblad",
+	"actions": {
+		"save": "Stoor",
+		"saving": "Stoor tans…",
+		"cancel": "Kanselleer",
+		"back": "Terug",
+		"retry": "Probeer weer",
+		"close": "Sluit",
+		"login": "Meld aan",
+		"signIn": "Meld aan",
+		"signUp": "Registreer",
+		"logOut": "Meld af",
+		"loggingOut": "Meld tans af…"
+	},
+	"status": {
+		"saved": "Gestoor",
+		"loading": "Laai tans…",
+		"checkingSession": "Kontroleer tans jou sessie…",
+		"sessionError": "Kon nie jou sessie kontroleer nie. Probeer asseblief weer."
+	},
+	"comingSoon": "{{feature}} kom binnekort.",
+	"language": "Taal",
+	"languageDialog": {
+		"title": "Kies jou voorkeurtaal",
+		"loadError": "Daardie taal kon nie gelaai word nie. Probeer asseblief weer."
+	}
+}

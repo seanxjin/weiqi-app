@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "GO",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Baduk bosh sahifasi",
+	"actions": {
+		"save": "Saqlash",
+		"saving": "Saqlanmoqda…",
+		"cancel": "Bekor qilish",
+		"back": "Orqaga",
+		"retry": "Qayta urinish",
+		"close": "Yopish",
+		"login": "Kirish",
+		"signIn": "Kirish",
+		"signUp": "Roʻyxatdan oʻtish",
+		"logOut": "Chiqish",
+		"loggingOut": "Chiqilmoqda…"
+	},
+	"status": {
+		"saved": "Saqlandi",
+		"loading": "Yuklanmoqda…",
+		"checkingSession": "Seansingiz tekshirilmoqda…",
+		"sessionError": "Seansingizni tekshirib boʻlmadi. Qaytadan urinib koʻring."
+	},
+	"comingSoon": "{{feature}} tez orada qoʻshiladi.",
+	"language": "Til",
+	"languageDialog": {
+		"title": "Afzal koʻrgan tilingizni tanlang",
+		"loadError": "Bu tilni yuklab boʻlmadi. Qaytadan urinib koʻring."
+	}
+}

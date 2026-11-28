@@ -1,0 +1,136 @@
+{
+	"colors": {
+		"black": "Чорні",
+		"white": "Білі"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Пас",
+	"localPage": {
+		"title": "Локальна гра",
+		"eyebrow": "ТОВАРИСЬКА ПАРТІЯ",
+		"heading": "Час для гри.",
+		"details": "{{size}} × {{size}} · японські правила"
+	},
+	"onlinePage": {
+		"title": "Онлайн-гра",
+		"eyebrow": "ОНЛАЙН-ПАРТІЯ",
+		"heading": "Час для гри.",
+		"details": "{{size}} × {{size}} · Комі {{komi}}",
+		"loading": "Завантаження гри…",
+		"notFound": "Ця гра не існує або вже недоступна.",
+		"startNew": "Почати нову онлайн-гру",
+		"invited": "Вас запрошено на гру {{size}} × {{size}}.",
+		"joining": "Приєднання…",
+		"joinAs": "Приєднатися за {{color}}",
+		"full": "Ця гра заповнена. Перегляд ігор поки недоступний."
+	},
+	"local": {
+		"label": "Локальна гра в ґо",
+		"loadingEngine": "Завантаження рушія ґо…"
+	},
+	"online": {
+		"label": "Онлайн-гра в ґо",
+		"youAre": "Ви граєте: {{color}}",
+		"connection": {
+			"connecting": "Підключення…",
+			"open": "Підключено",
+			"reconnecting": "Повторне підключення…",
+			"closed": "Відключено"
+		},
+		"invite": {
+			"label": "Запросіть друга за цим посиланням",
+			"copy": "Копіювати",
+			"copied": "Скопійовано"
+		},
+		"awaitingScoring": "Обидва гравці спасували. Підрахунок очок поки не підтримується, тож перервіть гру, щоб записати її без рахунку.",
+		"confirmResign": "Підтвердити здачу",
+		"resign": "Здатися",
+		"abort": "Перервати",
+		"results": {
+			"youWin": "Ви перемогли · {{color}} здалися",
+			"winsByResignation": "{{color}} перемагають через здачу",
+			"aborted": "Гру перервали {{color}}",
+			"unscored": "Гра завершилася без рахунку"
+		}
+	},
+	"turn": {
+		"preparing": "Підготовка дошки",
+		"reviewing": "Перегляд · Поверніться до поточної позиції, щоб грати",
+		"toPlay": "Хід: {{color}}",
+		"yourMove": "Ваш хід",
+		"waitingForOpponent": "Очікування суперника",
+		"awaitingScoring": "Гру завершено · Підрахунок очок поки не підтримується",
+		"gameOver": "Гру завершено",
+		"sendingMove": "Надсилання ходу…",
+		"waitingForConnection": "Очікування з’єднання"
+	},
+	"boardFooter": {
+		"lastMove": "Останній хід: {{color}} {{move}}",
+		"startingPosition": "Початкова позиція"
+	},
+	"players": {
+		"label": "Гравці",
+		"captured": "Захоплено {{count}}",
+		"you": "{{name}} (ви)",
+		"waiting": "{{name}} · очікування гравця"
+	},
+	"history": {
+		"label": "Історія ходів",
+		"heading": "Ходи",
+		"moveCount_one": "{{count}} ХІД",
+		"moveCount_few": "{{count}} ХОДИ",
+		"moveCount_many": "{{count}} ХОДІВ",
+		"moveCount_other": "{{count}} ХОДУ",
+		"tableLabel": "Ходи чорних і білих",
+		"pair": "Пара",
+		"move": "Хід {{number}}, {{color}}, {{move}}",
+		"pendingMove": "Хід {{number}}, {{color}}, {{move}}, надсилається",
+		"empty": "Ходів ще немає.",
+		"position": "Хід {{viewed}} з {{latest}}",
+		"currentPosition": "ПОТОЧНА ПОЗИЦІЯ",
+		"reviewing": "ПЕРЕГЛЯД",
+		"navigationLabel": "Навігація історією ходів",
+		"navigation": {
+			"start": "Початок",
+			"previous": "Назад",
+			"next": "Далі",
+			"current": "Поточна"
+		},
+		"undo": "Скасувати останній хід",
+		"encouragement": "Не поспішайте. Кожен хід важливий.",
+		"keyboardHint": "← → — перехід між ходами, ↑ ↓ — до початку та поточної позиції."
+	},
+	"board": {
+		"sceneLabel": "Дошка ґо {{size}} на {{size}} із послідовністю з {{moveCount}} дебютних ходів",
+		"themedBoard": "Дошка ґо: {{theme}}",
+		"emptyBoard": "Порожня дошка baduk {{size}} на {{size}}: {{theme}}",
+		"stone": "Камінь baduk: {{color}}, {{finish}}",
+		"textureError": "Не вдалося завантажити текстуру дошки.",
+		"pauseAnimations": "Призупинити анімацію",
+		"resumeAnimations": "Відновити анімацію",
+		"pause": "ПАУЗА",
+		"resume": "ПРОДОВЖИТИ"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Виберіть перетин на дошці.",
+			"occupied": "Цей перетин зайнятий.",
+			"wrongPlayer": "Зараз хід іншого гравця.",
+			"suicide": "Самогубний хід заборонено.",
+			"ko": "Цей хід заборонений правилом ко.",
+			"superko": "Цей хід повторює попередню позицію.",
+			"gameEnded": "У цій грі більше не можна робити ходи."
+		},
+		"serverRejectedMove": "Сервер відхилив хід. {{reason}}",
+		"staleRevision": "Гра змінилася до того, як надійшов ваш хід, тому його не зіграно.",
+		"wrongPhase": "Це неможливо на цьому етапі гри.",
+		"seatTaken": "Це місце вже зайняте.",
+		"notYourTurn": "Зараз хід іншого гравця.",
+		"abortUnavailable": "Цю гру вже не можна перервати.",
+		"replayFailed": "Не вдалося відтворити гру локально. Перезавантажте сторінку.",
+		"notConnected": "Немає з’єднання з ігровим сервером.",
+		"engineLoadFailed": "Не вдалося завантажити рушій ґо. Спробуйте ще раз.",
+		"gameLoadFailed": "Не вдалося завантажити гру. Спробуйте ще раз.",
+		"seatTakenFirst": "Хтось інший зайняв місце першим. Тепер гра заповнена."
+	}
+}

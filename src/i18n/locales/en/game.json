@@ -1,0 +1,134 @@
+{
+	"colors": {
+		"black": "Black",
+		"white": "White"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Pass",
+	"localPage": {
+		"title": "Local Play",
+		"eyebrow": "FRIENDLY GAME",
+		"heading": "A moment for the game.",
+		"details": "{{size}} × {{size}} · Japanese rules"
+	},
+	"onlinePage": {
+		"title": "Online Play",
+		"eyebrow": "ONLINE GAME",
+		"heading": "A moment for the game.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Loading game…",
+		"notFound": "This game doesn’t exist or is no longer available.",
+		"startNew": "Start a new online game",
+		"invited": "You’re invited to a {{size}} × {{size}} game.",
+		"joining": "Joining…",
+		"joinAs": "Join as {{color}}",
+		"full": "This game is full. Watching games isn’t available yet."
+	},
+	"local": {
+		"label": "Local Go game",
+		"loadingEngine": "Loading Go engine…"
+	},
+	"online": {
+		"label": "Online Go game",
+		"youAre": "You are {{color}}",
+		"connection": {
+			"connecting": "Connecting…",
+			"open": "Connected",
+			"reconnecting": "Reconnecting…",
+			"closed": "Disconnected"
+		},
+		"invite": {
+			"label": "Invite a friend with this link",
+			"copy": "Copy",
+			"copied": "Copied"
+		},
+		"awaitingScoring": "Both players passed. Scoring isn’t supported yet, so abort to record the game as unscored.",
+		"confirmResign": "Confirm resign",
+		"resign": "Resign",
+		"abort": "Abort",
+		"results": {
+			"youWin": "You win · {{color}} resigned",
+			"winsByResignation": "{{color}} wins by resignation",
+			"aborted": "Game aborted by {{color}}",
+			"unscored": "Game ended without a score"
+		}
+	},
+	"turn": {
+		"preparing": "Preparing board",
+		"reviewing": "Reviewing · Return to Current to play",
+		"toPlay": "{{color}} to play",
+		"yourMove": "Your move",
+		"waitingForOpponent": "Waiting for an opponent",
+		"awaitingScoring": "Play has ended · Scoring isn’t supported yet",
+		"gameOver": "Game over",
+		"sendingMove": "Sending move…",
+		"waitingForConnection": "Waiting for connection"
+	},
+	"boardFooter": {
+		"lastMove": "Last move: {{color}} {{move}}",
+		"startingPosition": "Starting position"
+	},
+	"players": {
+		"label": "Players",
+		"captured": "Captured {{count}}",
+		"you": "{{name}} (you)",
+		"waiting": "{{name}} · waiting for a player"
+	},
+	"history": {
+		"label": "Move history",
+		"heading": "Moves",
+		"moveCount_one": "{{count}} MOVE",
+		"moveCount_other": "{{count}} MOVES",
+		"tableLabel": "Black and White moves",
+		"pair": "Pair",
+		"move": "Move {{number}}, {{color}}, {{move}}",
+		"pendingMove": "Move {{number}}, {{color}}, {{move}}, sending",
+		"empty": "No moves yet.",
+		"position": "Move {{viewed}} of {{latest}}",
+		"currentPosition": "CURRENT POSITION",
+		"reviewing": "REVIEWING",
+		"navigationLabel": "Move history navigation",
+		"navigation": {
+			"start": "Start",
+			"previous": "Previous",
+			"next": "Next",
+			"current": "Current"
+		},
+		"undo": "Undo last move",
+		"encouragement": "Take your time. Every move matters.",
+		"keyboardHint": "Use ← → to step through moves, ↑ ↓ for start and current."
+	},
+	"board": {
+		"sceneLabel": "A {{size}} by {{size}} Go board showing a sequence of {{moveCount}} opening moves",
+		"themedBoard": "{{theme}} Go board",
+		"emptyBoard": "Empty {{size}} by {{size}} {{theme}} baduk board",
+		"stone": "{{finish}} {{color}} baduk stone",
+		"textureError": "Board texture could not be loaded.",
+		"pauseAnimations": "Pause animations",
+		"resumeAnimations": "Resume animations",
+		"pause": "PAUSE",
+		"resume": "RESUME"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Choose an intersection on the board.",
+			"occupied": "That intersection is occupied.",
+			"wrongPlayer": "It is the other player’s turn.",
+			"suicide": "Suicide is not allowed.",
+			"ko": "That move is forbidden by ko.",
+			"superko": "That move repeats an earlier position.",
+			"gameEnded": "This game cannot accept another move."
+		},
+		"serverRejectedMove": "The server rejected the move. {{reason}}",
+		"staleRevision": "The game changed before your move arrived, so it was not played.",
+		"wrongPhase": "That isn’t possible at this stage of the game.",
+		"seatTaken": "That seat is already taken.",
+		"notYourTurn": "It is the other player’s turn.",
+		"abortUnavailable": "The game can no longer be aborted.",
+		"replayFailed": "This game could not be replayed locally. Please reload the page.",
+		"notConnected": "Not connected to the game server.",
+		"engineLoadFailed": "The Go engine could not be loaded. Please retry.",
+		"gameLoadFailed": "The game could not be loaded. Please retry.",
+		"seatTakenFirst": "Someone else took the seat first. This game is now full."
+	}
+}

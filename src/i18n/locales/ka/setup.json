@@ -1,0 +1,85 @@
+{
+	"page": {
+		"title": {
+			"local": "ადგილობრივი თამაშის პარამეტრები",
+			"online": "ონლაინ თამაშის პარამეტრები"
+		},
+		"label": {
+			"local": "ადგილობრივი თამაშის პარამეტრები",
+			"online": "ონლაინ თამაშის პარამეტრები"
+		},
+		"backToMenu": "მენიუში დაბრუნება",
+		"settingsLabel": "თამაშის პარამეტრები",
+		"timeLimitsNotice": "დროის ლიმიტები ჯერ არ მოქმედებს.",
+		"boardSize": "დაფის ზომა",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "თამაში იქმნება…",
+		"startGame": "თამაშის დაწყება",
+		"createFailed": "თამაშის შექმნა ვერ მოხერხდა. სცადეთ ხელახლა."
+	},
+	"players": {
+		"player1": "მოთამაშე 1",
+		"player2": "მოთამაშე 2",
+		"opponent": "მეტოქე",
+		"guest": "თქვენ (სტუმარი)"
+	},
+	"configuration": {
+		"eyebrow": "კონფიგურაციები",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "მორგებული · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "მეტი დროის კონტროლი",
+		"fewerControls": "ნაკლები დროის კონტროლი",
+		"groups": {
+			"bullet": "ბულეტი",
+			"blitz": "ბლიცი",
+			"rapid": "რაპიდი",
+			"classical": "კლასიკური",
+			"correspondence": "კორესპონდენციული",
+			"untimed": "დროის გარეშე"
+		},
+		"systems": {
+			"absolute": "აბსოლუტური",
+			"fischer": "ფიშერი",
+			"japaneseByoYomi": "იაპონური ბიო-იომი"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} წმ",
+			"absoluteMinutes": "{{minutes}} წთ",
+			"mainSeconds": "{{seconds}} წმ",
+			"mainMinutes": "{{minutes}} წთ",
+			"fischer": "{{main}} + {{increment}} წმ",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}} წმ",
+			"daysPerMove_one": "{{count}} დღე / სვლა",
+			"daysPerMove_other": "{{count}} დღე / სვლა"
+		},
+		"noTimeLimit": "დროის ლიმიტის გარეშე"
+	},
+	"customTime": {
+		"label": "მორგებული დროის კონტროლი",
+		"eyebrow": "მორგებული დროის კონტროლი",
+		"heading": "დააყენეთ საკუთარი საათი",
+		"system": "სისტემა",
+		"fields": {
+			"minutes": "ძირითადი · წთ",
+			"seconds": "ძირითადი · წმ",
+			"increment": "მატება · წმ",
+			"periods": "პერიოდები",
+			"periodSeconds": "პერიოდი · წმ"
+		},
+		"hints": {
+			"byoYomi": "დამატებითი დრო ფიქსირებული რაოდენობის პერიოდებისგან შედგება.",
+			"default": "აირჩიეთ სისტემა, შემდეგ შეიყვანეთ საათის მნიშვნელობები."
+		},
+		"apply": "მორგებული დროის გამოყენება",
+		"errors": {
+			"wholeNumbers": "საათის თითოეულ ველში შეიყვანეთ არაუარყოფითი მთელი რიცხვი.",
+			"mainSeconds": "ძირითადი წამები უნდა იყოს 0-დან 59-მდე.",
+			"byoYomiPeriods": "ბიო-იომის სჭირდება მინიმუმ ერთი პერიოდი, რომელიც მინიმუმ ერთ წამს გრძელდება.",
+			"mainTime": "ძირითადი დრო ნულზე მეტი უნდა იყოს."
+		}
+	}
+}

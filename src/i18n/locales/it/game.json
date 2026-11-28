@@ -1,0 +1,135 @@
+{
+	"colors": {
+		"black": "Nero",
+		"white": "Bianco"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Passa",
+	"localPage": {
+		"title": "Partita locale",
+		"eyebrow": "PARTITA AMICHEVOLE",
+		"heading": "Un momento per il gioco.",
+		"details": "{{size}} × {{size}} · Regole giapponesi"
+	},
+	"onlinePage": {
+		"title": "Partita online",
+		"eyebrow": "PARTITA ONLINE",
+		"heading": "Un momento per il gioco.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Caricamento della partita…",
+		"notFound": "Questa partita non esiste o non è più disponibile.",
+		"startNew": "Inizia una nuova partita online",
+		"invited": "Sei stato invitato a una partita {{size}} × {{size}}.",
+		"joining": "Ingresso in corso…",
+		"joinAs": "Gioca con il {{color}}",
+		"full": "Questa partita è al completo. L’osservazione delle partite non è ancora disponibile."
+	},
+	"local": {
+		"label": "Partita di Go locale",
+		"loadingEngine": "Caricamento del motore di Go…"
+	},
+	"online": {
+		"label": "Partita di Go online",
+		"youAre": "Giochi con il {{color}}",
+		"connection": {
+			"connecting": "Connessione…",
+			"open": "Connesso",
+			"reconnecting": "Riconnessione…",
+			"closed": "Disconnesso"
+		},
+		"invite": {
+			"label": "Invita un amico con questo link",
+			"copy": "Copia",
+			"copied": "Copiato"
+		},
+		"awaitingScoring": "Entrambi i giocatori hanno passato. Il conteggio dei punti non è ancora supportato: interrompi la partita per registrarla senza punteggio.",
+		"confirmResign": "Conferma abbandono",
+		"resign": "Abbandona",
+		"abort": "Interrompi",
+		"results": {
+			"youWin": "Hai vinto · {{color}} ha abbandonato",
+			"winsByResignation": "{{color}} vince per abbandono",
+			"aborted": "Partita interrotta da {{color}}",
+			"unscored": "Partita terminata senza punteggio"
+		}
+	},
+	"turn": {
+		"preparing": "Preparazione del goban",
+		"reviewing": "Revisione · Torna ad Attuale per giocare",
+		"toPlay": "Muove {{color}}",
+		"yourMove": "Tocca a te",
+		"waitingForOpponent": "In attesa di un avversario",
+		"awaitingScoring": "Gioco concluso · Conteggio non ancora supportato",
+		"gameOver": "Partita terminata",
+		"sendingMove": "Invio della mossa…",
+		"waitingForConnection": "In attesa di connessione"
+	},
+	"boardFooter": {
+		"lastMove": "Ultima mossa: {{color}} {{move}}",
+		"startingPosition": "Posizione iniziale"
+	},
+	"players": {
+		"label": "Giocatori",
+		"captured": "Catturate {{count}}",
+		"you": "{{name}} (tu)",
+		"waiting": "{{name}} · in attesa di un giocatore"
+	},
+	"history": {
+		"label": "Cronologia delle mosse",
+		"heading": "Mosse",
+		"moveCount_one": "{{count}} MOSSA",
+		"moveCount_many": "{{count}} DI MOSSE",
+		"moveCount_other": "{{count}} MOSSE",
+		"tableLabel": "Mosse di Nero e Bianco",
+		"pair": "Coppia",
+		"move": "Mossa {{number}}, {{color}}, {{move}}",
+		"pendingMove": "Mossa {{number}}, {{color}}, {{move}}, invio in corso",
+		"empty": "Ancora nessuna mossa.",
+		"position": "Mossa {{viewed}} di {{latest}}",
+		"currentPosition": "POSIZIONE ATTUALE",
+		"reviewing": "REVISIONE",
+		"navigationLabel": "Navigazione nella cronologia delle mosse",
+		"navigation": {
+			"start": "Inizio",
+			"previous": "Precedente",
+			"next": "Successiva",
+			"current": "Attuale"
+		},
+		"undo": "Annulla l’ultima mossa",
+		"encouragement": "Prenditi il tuo tempo. Ogni mossa conta.",
+		"keyboardHint": "Usa ← → per scorrere le mosse, ↑ ↓ per l’inizio e la posizione attuale."
+	},
+	"board": {
+		"sceneLabel": "Un goban {{size}} per {{size}} che mostra una sequenza di {{moveCount}} mosse d’apertura",
+		"themedBoard": "Goban: {{theme}}",
+		"emptyBoard": "Goban {{size}} per {{size}} vuoto: {{theme}}",
+		"stone": "Pietra da Go: {{color}} ({{finish}})",
+		"textureError": "Impossibile caricare la texture del goban.",
+		"pauseAnimations": "Metti in pausa le animazioni",
+		"resumeAnimations": "Riprendi le animazioni",
+		"pause": "PAUSA",
+		"resume": "RIPRENDI"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Scegli un’intersezione sul goban.",
+			"occupied": "Quell’intersezione è occupata.",
+			"wrongPlayer": "È il turno dell’altro giocatore.",
+			"suicide": "Il suicidio non è consentito.",
+			"ko": "Quella mossa è vietata dalla regola del ko.",
+			"superko": "Quella mossa ripete una posizione precedente.",
+			"gameEnded": "Questa partita non può accettare altre mosse."
+		},
+		"serverRejectedMove": "Il server ha rifiutato la mossa. {{reason}}",
+		"staleRevision": "La partita è cambiata prima dell’arrivo della tua mossa, quindi non è stata giocata.",
+		"wrongPhase": "Non è possibile in questa fase della partita.",
+		"seatTaken": "Quel posto è già occupato.",
+		"notYourTurn": "È il turno dell’altro giocatore.",
+		"abortUnavailable": "La partita non può più essere interrotta.",
+		"replayFailed": "Impossibile riprodurre questa partita in locale. Ricarica la pagina.",
+		"notConnected": "Non connesso al server di gioco.",
+		"engineLoadFailed": "Impossibile caricare il motore di Go. Riprova.",
+		"gameLoadFailed": "Impossibile caricare la partita. Riprova.",
+		"seatTakenFirst": "Qualcun altro ha preso il posto per primo. Questa partita ora è al completo."
+	}
+}

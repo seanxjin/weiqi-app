@@ -1,0 +1,16 @@
+{
+	"pageTitle": "바둑 두기",
+	"railLabel": "Baduk",
+	"mainNavigation": "주 메뉴",
+	"play": "대국",
+	"eyebrow": "텍스트",
+	"heading": {
+		"label": "바둑 두기",
+		"prefix": "자, "
+	},
+	"description": {
+		"first": "텍스트....",
+		"second": "다른 텍스트..."
+	},
+	"footnote": "천천히 두세요."
+}

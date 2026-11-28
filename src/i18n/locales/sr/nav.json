@@ -1,0 +1,29 @@
+{
+	"navigation": "Baduk навигација",
+	"drawer": {
+		"open": "Отвори навигацију",
+		"close": "Затвори навигацију"
+	},
+	"mainNavigation": "Главна навигација",
+	"play": "Играј",
+	"puzzles": "Задаци",
+	"learn": "Учи",
+	"guide": {
+		"heading": "НОВИ СТЕ У ГОУ?",
+		"startWithBasics": "Почните од основа"
+	},
+	"account": {
+		"label": "Налог",
+		"friends": "Пријатељи",
+		"messages": "Поруке",
+		"notifications": "Обавештења",
+		"settings": "Подешавања",
+		"allSettings": "Сва подешавања"
+	},
+	"theme": {
+		"label": "Тема",
+		"system": "Системска",
+		"light": "Светла",
+		"dark": "Тамна"
+	}
+}

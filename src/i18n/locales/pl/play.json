@@ -1,0 +1,118 @@
+{
+	"home": {
+		"pageTitle": "Graj",
+		"location": "GRAJ / START",
+		"signedInAs": "Zalogowano jako {{username}}",
+		"guest": "Grasz jako gość",
+		"logoutError": "Nie udało się wylogować. Spróbuj ponownie.",
+		"introduction": {
+			"heading": "Przykładowy tekst",
+			"body": "Inny przykładowy tekst"
+		},
+		"menuHeading": "Przykładowy tekst.",
+		"options": {
+			"online": {
+				"label": "Graj online",
+				"description": "Znajdź przeciwnika. Spotkajcie się przy planszy."
+			},
+			"local": {
+				"label": "Graj lokalnie",
+				"description": "Jedna plansza. Dwóch graczy. Wspólny ekran."
+			},
+			"friend": {
+				"label": "Graj ze znajomym",
+				"description": "Zaproś kogoś na przemyślaną partię."
+			},
+			"puzzles": {
+				"label": "Rozwiązuj zadania",
+				"description": "Małe wyzwania. Ostrzejsza intuicja."
+			},
+			"lessons": {
+				"label": "Lekcje",
+				"description": "Od pierwszego kamienia do kolejnego odkrycia."
+			},
+			"bots": {
+				"label": "Graj z botami",
+				"description": "Ćwicz we własnym tempie, na dowolnym poziomie."
+			}
+		},
+		"presence_one": "{{count, number}} gracz przy planszy",
+		"presence_few": "{{count, number}} gracze przy planszy",
+		"presence_many": "{{count, number}} graczy przy planszy",
+		"presence_other": "{{count, number}} gracza przy planszy",
+		"reserved": {
+			"label": "SEKCJA NA PÓŹNIEJ",
+			"heading": "Miejsce na przyszłe treści",
+			"body": "Ta sekcja jest na razie celowo pusta. Zostanie wykorzystana na przyszłe funkcje, aktualizacje lub wybrane treści."
+		},
+		"footerTagline": "Proste zasady. Nieskończone odkrycia."
+	},
+	"materials": {
+		"pageTitle": "Plansze i kamienie",
+		"breadcrumb": "Baduk / Biblioteka materiałów",
+		"collection": "Kolekcja 01",
+		"heading": "Plansze i kamienie.",
+		"introduction": "Naturalne materiały. Subtelne detale. Miejsce dla gry.",
+		"boardsSection": {
+			"title": "Plansze",
+			"meta": "Trzy gatunki drewna · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Kamienie",
+			"meta": "Cztery style · czarne i białe"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Studium materiałów",
+			"enlarged": "Powiększone próbki",
+			"heading": "Subtelny kontrast.",
+			"body": "Cztery powierzchnie. Czerń i biel w tym samym miękkim świetle.",
+			"scale": "Powiększone próbki · jednakowa skala",
+			"form": "Gładki, zaokrąglony kształt / subtelne zróżnicowanie powierzchni"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Tradycyjna japońska kaya",
+				"material": "Ciepły miód · prosty rysunek słojów"
+			},
+			"walnut": {
+				"name": "Ciemny orzech",
+				"material": "Głęboki brąz · płynne słoje"
+			},
+			"ash": {
+				"name": "Jasny skandynawski jesion",
+				"material": "Jasne drewno · delikatne słoje"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Polerowane",
+				"name": "Łupek",
+				"description": "Gładkie, polerowane powierzchnie o subtelnej mineralnej fakturze.",
+				"black": "Czarny łupek",
+				"white": "Biały łupek"
+			},
+			"satin": {
+				"finish": "Satynowe",
+				"name": "Ceramika",
+				"description": "Rozproszony połysk i delikatne, równomierne ziarno.",
+				"black": "Czarna ceramika",
+				"white": "Biała ceramika"
+			},
+			"matte": {
+				"finish": "Matowe",
+				"name": "Kamień naturalny",
+				"description": "Subtelne mineralne cętki pod gładkim, suchym wykończeniem.",
+				"black": "Czarny kamień",
+				"white": "Biały kamień"
+			},
+			"snow": {
+				"finish": "Polerowane",
+				"name": "Muszla · Yuki / Snow Grade",
+				"description": "Drobne, gęste słoje muszli w mlecznej bieli, w parze z polerowanym czarnym łupkiem.",
+				"black": "Czarny łupek Nachiguro",
+				"white": "Biała muszla Yuki"
+			}
+		},
+		"footerTagline": "To, co najważniejsze, przemyślane."
+	}
+}

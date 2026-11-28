@@ -1,0 +1,134 @@
+{
+	"colors": {
+		"black": "Schwarz",
+		"white": "Weiß"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Passen",
+	"localPage": {
+		"title": "Lokales Spiel",
+		"eyebrow": "FREUNDSCHAFTSPARTIE",
+		"heading": "Ein Moment für das Spiel.",
+		"details": "{{size}} × {{size}} · Japanische Regeln"
+	},
+	"onlinePage": {
+		"title": "Online-Spiel",
+		"eyebrow": "ONLINE-PARTIE",
+		"heading": "Ein Moment für das Spiel.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Partie wird geladen…",
+		"notFound": "Diese Partie existiert nicht oder ist nicht mehr verfügbar.",
+		"startNew": "Neue Online-Partie starten",
+		"invited": "Du bist zu einer Partie auf {{size}} × {{size}} eingeladen.",
+		"joining": "Wird beigetreten…",
+		"joinAs": "Als {{color}} beitreten",
+		"full": "Diese Partie ist voll. Zuschauen ist noch nicht möglich."
+	},
+	"local": {
+		"label": "Lokale Go-Partie",
+		"loadingEngine": "Go-Engine wird geladen…"
+	},
+	"online": {
+		"label": "Online-Go-Partie",
+		"youAre": "Du spielst {{color}}",
+		"connection": {
+			"connecting": "Verbinde…",
+			"open": "Verbunden",
+			"reconnecting": "Verbindung wird wiederhergestellt…",
+			"closed": "Getrennt"
+		},
+		"invite": {
+			"label": "Lade mit diesem Link einen Freund ein",
+			"copy": "Kopieren",
+			"copied": "Kopiert"
+		},
+		"awaitingScoring": "Beide Spieler haben gepasst. Die Auszählung wird noch nicht unterstützt – brich ab, um die Partie ohne Wertung zu speichern.",
+		"confirmResign": "Aufgabe bestätigen",
+		"resign": "Aufgeben",
+		"abort": "Abbrechen",
+		"results": {
+			"youWin": "Du gewinnst · {{color}} hat aufgegeben",
+			"winsByResignation": "{{color}} gewinnt durch Aufgabe",
+			"aborted": "Partie von {{color}} abgebrochen",
+			"unscored": "Partie ohne Wertung beendet"
+		}
+	},
+	"turn": {
+		"preparing": "Brett wird vorbereitet",
+		"reviewing": "Rückblick · Zurück zu „Aktuell“, um zu spielen",
+		"toPlay": "{{color}} am Zug",
+		"yourMove": "Du bist am Zug",
+		"waitingForOpponent": "Warte auf einen Gegner",
+		"awaitingScoring": "Spiel beendet · Auszählung noch nicht unterstützt",
+		"gameOver": "Partie beendet",
+		"sendingMove": "Zug wird gesendet…",
+		"waitingForConnection": "Warte auf Verbindung"
+	},
+	"boardFooter": {
+		"lastMove": "Letzter Zug: {{color}} {{move}}",
+		"startingPosition": "Ausgangsstellung"
+	},
+	"players": {
+		"label": "Spieler",
+		"captured": "Gefangen: {{count}}",
+		"you": "{{name}} (du)",
+		"waiting": "{{name}} · wartet auf einen Spieler"
+	},
+	"history": {
+		"label": "Zugverlauf",
+		"heading": "Züge",
+		"moveCount_one": "{{count}} ZUG",
+		"moveCount_other": "{{count}} ZÜGE",
+		"tableLabel": "Züge von Schwarz und Weiß",
+		"pair": "Paar",
+		"move": "Zug {{number}}, {{color}}, {{move}}",
+		"pendingMove": "Zug {{number}}, {{color}}, {{move}}, wird gesendet",
+		"empty": "Noch keine Züge.",
+		"position": "Zug {{viewed}} von {{latest}}",
+		"currentPosition": "AKTUELLE STELLUNG",
+		"reviewing": "RÜCKBLICK",
+		"navigationLabel": "Navigation im Zugverlauf",
+		"navigation": {
+			"start": "Anfang",
+			"previous": "Zurück",
+			"next": "Weiter",
+			"current": "Aktuell"
+		},
+		"undo": "Letzten Zug zurücknehmen",
+		"encouragement": "Lass dir Zeit. Jeder Zug zählt.",
+		"keyboardHint": "Mit ← → durch die Züge blättern, mit ↑ ↓ zu Anfang und aktueller Stellung."
+	},
+	"board": {
+		"sceneLabel": "Ein Go-Brett {{size}} × {{size}} mit einer Folge von {{moveCount}} Eröffnungszügen",
+		"themedBoard": "Go-Brett ({{theme}})",
+		"emptyBoard": "Leeres Baduk-Brett {{size}} × {{size}} ({{theme}})",
+		"stone": "Baduk-Stein ({{color}}, {{finish}})",
+		"textureError": "Die Brett-Textur konnte nicht geladen werden.",
+		"pauseAnimations": "Animationen pausieren",
+		"resumeAnimations": "Animationen fortsetzen",
+		"pause": "PAUSE",
+		"resume": "FORTSETZEN"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Wähle einen Schnittpunkt auf dem Brett.",
+			"occupied": "Dieser Schnittpunkt ist besetzt.",
+			"wrongPlayer": "Der andere Spieler ist am Zug.",
+			"suicide": "Selbstmord ist nicht erlaubt.",
+			"ko": "Dieser Zug ist wegen Ko verboten.",
+			"superko": "Dieser Zug wiederholt eine frühere Stellung.",
+			"gameEnded": "In dieser Partie sind keine weiteren Züge möglich."
+		},
+		"serverRejectedMove": "Der Server hat den Zug abgelehnt. {{reason}}",
+		"staleRevision": "Die Partie hat sich geändert, bevor dein Zug ankam, daher wurde er nicht gespielt.",
+		"wrongPhase": "Das ist in dieser Phase der Partie nicht möglich.",
+		"seatTaken": "Dieser Platz ist bereits besetzt.",
+		"notYourTurn": "Der andere Spieler ist am Zug.",
+		"abortUnavailable": "Die Partie kann nicht mehr abgebrochen werden.",
+		"replayFailed": "Diese Partie konnte lokal nicht nachgespielt werden. Bitte lade die Seite neu.",
+		"notConnected": "Keine Verbindung zum Spielserver.",
+		"engineLoadFailed": "Die Go-Engine konnte nicht geladen werden. Bitte versuche es erneut.",
+		"gameLoadFailed": "Die Partie konnte nicht geladen werden. Bitte versuche es erneut.",
+		"seatTakenFirst": "Jemand anderes war schneller. Diese Partie ist jetzt voll."
+	}
+}

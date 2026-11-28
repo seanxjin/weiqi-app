@@ -1,0 +1,34 @@
+{
+	"server": {
+		"unavailable": "Serveri nuk është i disponueshëm. Provo sërish.",
+		"unreachable": "Serveri nuk mund të arrihej. Kontrollo lidhjen dhe provo sërish.",
+		"unexpectedResponse": "Serveri dha një përgjigje të papritur. Provo sërish.",
+		"requestFailed": "Kërkesa nuk mund të përfundohej. Provo sërish."
+	},
+	"rateLimited": {
+		"generic": "Shumë përpjekje. Prit pak para se të provosh sërish.",
+		"withDelay_one": "Shumë përpjekje. Prit {{count}} sekondë para se të provosh sërish.",
+		"withDelay_other": "Shumë përpjekje. Prit {{count}} sekonda para se të provosh sërish."
+	},
+	"unknown": "Diçka shkoi keq. Provo sërish.",
+	"api": {
+		"invalidCredentials": "Emri i përdoruesit, email-i ose fjalëkalimi është i pasaktë.",
+		"twoFactorRequired": "Shkruaj kodin me 6 shifra nga aplikacioni vërtetues për të vazhduar.",
+		"invalidTwoFactor": "Ky kod vërtetimi është i pasaktë. Provo sërish.",
+		"emailUnconfirmed": "Konfirmo adresën e email-it para se të hysh.",
+		"accountClosed": "Kjo llogari është mbyllur dhe nuk mund të hyjë.",
+		"usernameTaken": "Ky emër përdoruesi është i zënë. Zgjidh një tjetër.",
+		"emailTaken": "Kjo adresë email-i është tashmë në përdorim.",
+		"invalidToken": "Kjo lidhje është e pavlefshme ose ka skaduar. Kërko një email të ri për të vazhduar.",
+		"unauthorized": "Sesioni i hyrjes ka skaduar. Fillo nga e para.",
+		"conflict": "Regjistrimi nuk mund të përfundohej. Fillo nga e para.",
+		"forbidden": "Kjo kërkesë u bllokua. Rifresko faqen dhe provo sërish."
+	},
+	"validation": {
+		"passwordTooShort": "Fjalëkalimi duhet të ketë të paktën 8 karaktere.",
+		"newPasswordTooShort": "Fjalëkalimi i ri duhet të ketë të paktën 8 karaktere.",
+		"passwordTooLong": "Fjalëkalimi nuk duhet të kalojë 72 bajte UTF-8.",
+		"passwordMismatch": "Fjalëkalimet e reja nuk përputhen.",
+		"passwordUnchanged": "Zgjidh një fjalëkalim të ndryshëm nga ai aktual."
+	}
+}

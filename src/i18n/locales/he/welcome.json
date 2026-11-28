@@ -1,0 +1,16 @@
+{
+	"pageTitle": "שחקו גו",
+	"railLabel": "Baduk",
+	"mainNavigation": "ניווט ראשי",
+	"play": "משחק",
+	"eyebrow": "טקסט כלשהו",
+	"heading": {
+		"label": "שחקו גו",
+		"prefix": "שחקו "
+	},
+	"description": {
+		"first": "טקסט כלשהו....",
+		"second": "טקסט אחר..."
+	},
+	"footnote": "אל תמהרו."
+}

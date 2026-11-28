@@ -1,0 +1,211 @@
+{
+	"header": {
+		"title": "Postavke",
+		"sectionTitle": "Postavke: {{section}}",
+		"navLabel": "Odjeljci postavki"
+	},
+	"sections": {
+		"board": "Ploča i kamenčići",
+		"gameplay": "Igra",
+		"profile": "Profil",
+		"social": "Društveno i privatnost",
+		"account": "Račun i sigurnost",
+		"language": "Jezik i vrijeme"
+	},
+	"board": {
+		"description": "Odaberite ploču i kamenčiće kojima igrate.",
+		"appearance": {
+			"title": "Izgled",
+			"boardLegend": "Ploča",
+			"stonesLegend": "Kamenčići",
+			"previewLabel": "Pregled ploče"
+		},
+		"themes": {
+			"kaya": "Tradicionalna japanska kaya",
+			"walnut": "Tamni orah",
+			"ash": "Svijetli skandinavski jasen"
+		},
+		"stoneStyles": {
+			"polished": "Škriljac",
+			"satin": "Keramika",
+			"matte": "Prirodni kamen",
+			"snow": "Školjka · Yuki / Snježni razred"
+		},
+		"display": {
+			"title": "Prikaz ploče",
+			"coordinates": {
+				"label": "Prikaži koordinate ploče",
+				"description": "Označi kolone i redove uz rub ploče."
+			},
+			"lastMove": {
+				"label": "Istakni posljednji potez",
+				"description": "Označi posljednji odigrani kamen."
+			}
+		},
+		"sounds": {
+			"title": "Zvukovi",
+			"playSounds": {
+				"label": "Reprodukuj zvukove",
+				"description": "Postavljanje kamenčića, zarobljavanja i upozorenja sata."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Upravljajte načinom postavljanja kamenčića i time ko vas može izazvati.",
+		"moves": {
+			"title": "Igranje poteza",
+			"description": "Traži drugi klik prije postavljanja kamena, kako bi se izbjegli pogrešni klikovi.",
+			"legend": "Potvrda poteza",
+			"options": {
+				"never": "Nikad",
+				"correspondence": "Samo dopisne partije",
+				"always": "Uvijek"
+			}
+		},
+		"challenges": {
+			"title": "Izazovi",
+			"description": "Odaberite ko vam može slati izazove za partiju.",
+			"legend": "Dozvoli izazove od",
+			"options": {
+				"everyone": "Svih",
+				"registered": "Registrovanih igrača",
+				"following": "Samo igrača koje pratim",
+				"nobody": "Nikoga (revanši su i dalje dozvoljeni)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Sve ovdje je vidljivo na vašem <profileLink>javnom profilu</profileLink>.",
+		"publicProfile": {
+			"title": "Javni profil",
+			"bioLabel": "Kratka biografija",
+			"bioPlaceholder": "Vaša kratka biografija bit će prikazana na profilu.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Detalji",
+			"joinDate": "Datum pridruživanja",
+			"username": "Korisničko ime",
+			"changeUsername": "Promijeni",
+			"changeUsernameFeature": "Promjena korisničkog imena",
+			"realName": "Pravo ime",
+			"location": "Lokacija",
+			"country": "Država",
+			"countryNotSet": "Nije postavljeno",
+			"rank": "Rang",
+			"rankPlaceholder": "npr. 12k, 3d",
+			"rankHint": "Koristite 30k–1k, 1d–9d ili 1p–9p."
+		},
+		"links": {
+			"legend": "Linkovi",
+			"linkLabel": "Link {{number}}",
+			"remove": "Ukloni",
+			"removeLabel": "Ukloni link {{number}}",
+			"add": "Dodaj link"
+		}
+	},
+	"social": {
+		"description": "Upravljajte igračima koje pratite i igračima koje ste blokirali.",
+		"blocking": {
+			"title": "Blokiranje",
+			"description_one": "Blokirali ste {{count}} igrača. Blokirani igrači vas ne mogu izazvati niti vam slati poruke.",
+			"description_few": "Blokirali ste {{count}} igrača. Blokirani igrači vas ne mogu izazvati niti vam slati poruke.",
+			"description_other": "Blokirali ste {{count}} igrača. Blokirani igrači vas ne mogu izazvati niti vam slati poruke.",
+			"empty": "Niste nikoga blokirali.",
+			"action": "Deblokiraj",
+			"actionLabel": "Deblokiraj {{username}}"
+		},
+		"following": {
+			"title": "Praćenje",
+			"description_one": "Pratite {{count}} igrača.",
+			"description_few": "Pratite {{count}} igrača.",
+			"description_other": "Pratite {{count}} igrača.",
+			"empty": "Još nikoga ne pratite.",
+			"action": "Prestani pratiti",
+			"actionLabel": "Prestani pratiti {{username}}"
+		}
+	},
+	"account": {
+		"description": "Promijenite lozinku, zaštitite račun i upravljajte povezanim računima.",
+		"password": {
+			"title": "Promjena lozinke",
+			"updated": "Lozinka je ažurirana",
+			"fields": {
+				"currentPassword": {
+					"label": "Trenutna lozinka",
+					"show": "Prikaži trenutnu lozinku",
+					"hide": "Sakrij trenutnu lozinku"
+				},
+				"newPassword": {
+					"label": "Nova lozinka",
+					"show": "Prikaži novu lozinku",
+					"hide": "Sakrij novu lozinku"
+				},
+				"confirmPassword": {
+					"label": "Ponovite lozinku",
+					"show": "Prikaži ponovljenu lozinku",
+					"hide": "Sakrij ponovljenu lozinku"
+				}
+			}
+		},
+		"contact": {
+			"title": "Kontakt podaci",
+			"email": "Adresa e-pošte",
+			"edit": "Uredi",
+			"editFeature": "Promjena e-pošte"
+		},
+		"twoFactor": {
+			"title": "Dvofaktorska autentifikacija",
+			"description": "Traži kod iz aplikacije za autentifikaciju pri prijavi.",
+			"off": "Isključeno",
+			"enable": "Uključi",
+			"feature": "Dvofaktorska autentifikacija"
+		},
+		"sessions": {
+			"title": "Aktivne sesije",
+			"description": "Ako sumnjate da je vaš račun ugrožen, promijenite lozinku i odjavite se svuda.",
+			"thisDevice": "Ovaj uređaj",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "Odjavi {{device}}",
+			"logOutAll": "Odjavi se sa svih drugih uređaja"
+		},
+		"connections": {
+			"title": "Povezani računi",
+			"description": "Prijavite se na Baduk ovim računima.",
+			"connectedTo": "Povezano s: {{provider}}",
+			"connect": "Poveži",
+			"disconnect": "Prekini vezu",
+			"note": "Prekidanje veze uklanja vezu na Baduku. Možda ćete i dalje morati opozvati pristup na drugoj stranici."
+		},
+		"close": {
+			"title": "Zatvorite račun",
+			"description": "Zatvaranjem računa skrivate profil i odjavljujete se svuda.",
+			"button": "Zatvori račun",
+			"dialogTitle": "Zatvoriti račun?",
+			"dialogDescription": "Kasnije ga možete ponovo otvoriti sa stranice za prijavu.",
+			"feature": "Zatvaranje računa"
+		}
+	},
+	"languageTime": {
+		"title": "Jezik i vrijeme",
+		"description": "Odaberite jezik koji Baduk koristi i način prikaza datuma i vremena.",
+		"language": {
+			"title": "Jezik",
+			"description": "Promjene se odmah primjenjuju na svim stranicama.",
+			"legend": "Jezik prikaza"
+		},
+		"time": {
+			"title": "Vrijeme",
+			"description": "Koristi se za vremenske oznake kao što su datumi pridruživanja i aktivnost sesija.",
+			"timeZone": "Vremenska zona",
+			"automaticTimeZone": "Automatski ({{timeZone}})",
+			"timeFormat": "Sat",
+			"formats": {
+				"auto": "Automatski ({{example}})",
+				"12h": "12-satni ({{example}})",
+				"24h": "24-satni ({{example}})"
+			},
+			"preview": "Pregled"
+		}
+	}
+}

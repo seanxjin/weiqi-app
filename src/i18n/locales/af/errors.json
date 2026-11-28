@@ -1,0 +1,34 @@
+{
+	"server": {
+		"unavailable": "Die bediener is nie beskikbaar nie. Probeer asseblief weer.",
+		"unreachable": "Kan nie die bediener bereik nie. Gaan jou verbinding na en probeer weer.",
+		"unexpectedResponse": "Die bediener het ’n onverwagte antwoord gegee. Probeer asseblief weer.",
+		"requestFailed": "Die versoek kon nie voltooi word nie. Probeer asseblief weer."
+	},
+	"rateLimited": {
+		"generic": "Te veel pogings. Wag asseblief voordat jy weer probeer.",
+		"withDelay_one": "Te veel pogings. Wag asseblief {{count}} sekonde voordat jy weer probeer.",
+		"withDelay_other": "Te veel pogings. Wag asseblief {{count}} sekondes voordat jy weer probeer."
+	},
+	"unknown": "Iets het verkeerd geloop. Probeer asseblief weer.",
+	"api": {
+		"invalidCredentials": "Die gebruikersnaam, e-pos of wagwoord is verkeerd.",
+		"twoFactorRequired": "Voer die 6-syferkode van jou stawingsprogram in om voort te gaan.",
+		"invalidTwoFactor": "Daardie stawingskode is verkeerd. Probeer asseblief weer.",
+		"emailUnconfirmed": "Bevestig asseblief jou e-posadres voordat jy aanmeld.",
+		"accountClosed": "Hierdie rekening is gesluit en kan nie aanmeld nie.",
+		"usernameTaken": "Daardie gebruikersnaam is reeds in gebruik. Kies asseblief ’n ander een.",
+		"emailTaken": "Daardie e-posadres is reeds in gebruik.",
+		"invalidToken": "Hierdie skakel is ongeldig of het verval. Versoek ’n nuwe e-pos om voort te gaan.",
+		"unauthorized": "Jou aanmeldsessie het verval. Begin asseblief weer.",
+		"conflict": "Jou registrasie kon nie voltooi word nie. Begin asseblief weer.",
+		"forbidden": "Hierdie versoek is geblokkeer. Herlaai die bladsy en probeer weer."
+	},
+	"validation": {
+		"passwordTooShort": "Gebruik minstens 8 karakters vir jou wagwoord.",
+		"newPasswordTooShort": "Gebruik minstens 8 karakters vir jou nuwe wagwoord.",
+		"passwordTooLong": "Jou wagwoord mag nie 72 UTF-8-grepe oorskry nie.",
+		"passwordMismatch": "Die nuwe wagwoorde stem nie ooreen nie.",
+		"passwordUnchanged": "Kies ’n wagwoord wat van jou huidige een verskil."
+	}
+}

@@ -1,0 +1,116 @@
+{
+	"home": {
+		"pageTitle": "Maglaro",
+		"location": "MAGLARO / HOME",
+		"signedInAs": "Naka-sign in bilang {{username}}",
+		"guest": "Naglalaro bilang guest",
+		"logoutError": "Hindi makapag-log out. Pakisubukang muli.",
+		"introduction": {
+			"heading": "Ilang Teksto",
+			"body": "Iba pang teksto"
+		},
+		"menuHeading": "Ilang teksto.",
+		"options": {
+			"online": {
+				"label": "Maglaro online",
+				"description": "Hanapin ang iyong kalaban. Magkita sa board."
+			},
+			"local": {
+				"label": "Maglaro nang lokal",
+				"description": "Isang board. Dalawang manlalaro. Iisang screen."
+			},
+			"friend": {
+				"label": "Kalabanin ang kaibigan",
+				"description": "Mag-imbita ng kalaro para sa isang maingat na laro."
+			},
+			"puzzles": {
+				"label": "Lutasin ang mga puzzle",
+				"description": "Maliliit na hamon. Mas matalas na kutob."
+			},
+			"lessons": {
+				"label": "Mga aralin",
+				"description": "Mula sa iyong unang bato hanggang sa susunod mong pagkatuto."
+			},
+			"bots": {
+				"label": "Kalabanin ang mga bot",
+				"description": "Magsanay sa sarili mong bilis, sa anumang antas."
+			}
+		},
+		"presence_one": "{{count, number}} manlalaro ang nasa board",
+		"presence_other": "{{count, number}} manlalaro ang nasa board",
+		"reserved": {
+			"label": "SEKSYON PARA SA SUSUNOD",
+			"heading": "Nakalaan para sa susunod na content",
+			"body": "Sadyang walang laman ang seksyong ito sa ngayon. Gagamitin ito para sa mga susunod na feature, update, o piniling content."
+		},
+		"footerTagline": "Simpleng patakaran. Walang katapusang pagtuklas."
+	},
+	"materials": {
+		"pageTitle": "Mga board at bato",
+		"breadcrumb": "Baduk / Aklatan ng materyales",
+		"collection": "Koleksyon 01",
+		"heading": "Mga board at bato.",
+		"introduction": "Likas na materyales. Tahimik na detalye. Isang lugar para sa laro.",
+		"boardsSection": {
+			"title": "Ang mga board",
+			"meta": "Tatlong uri ng kahoy · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Ang mga bato",
+			"meta": "Apat na istilo · itim at puti"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Pag-aaral ng materyales",
+			"enlarged": "Pinalaking sample",
+			"heading": "Isang tahimik na kaibahan.",
+			"body": "Apat na ibabaw. Itim at puti, sa iisang malambot na liwanag.",
+			"scale": "Pinalaking sample · pare-parehong sukat",
+			"form": "Makinis at bilugang hugis / banayad na pagkakaiba ng ibabaw"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Tradisyonal na Japanese kaya",
+				"material": "Mainit na kulay-pulot · tuwid na hilatsa"
+			},
+			"walnut": {
+				"name": "Madilim na walnut",
+				"material": "Malalim na kayumanggi · umaagos na hilatsa"
+			},
+			"ash": {
+				"name": "Maputlang Scandinavian ash",
+				"material": "Maputlang kahoy · malambot na hilatsa"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Pinakintab",
+				"name": "Slate",
+				"description": "Makinis at pinakintab na ibabaw na may tahimik na tekstura ng mineral.",
+				"black": "Itim na slate",
+				"white": "Puting slate"
+			},
+			"satin": {
+				"finish": "Satin",
+				"name": "Ceramic",
+				"description": "Malamlam na kinang at pino at pantay na butil.",
+				"black": "Itim na ceramic",
+				"white": "Puting ceramic"
+			},
+			"matte": {
+				"finish": "Matte",
+				"name": "Natural na bato",
+				"description": "Tahimik na batik ng mineral sa ilalim ng makinis at tuyong finish.",
+				"black": "Itim na bato",
+				"white": "Puting bato"
+			},
+			"snow": {
+				"finish": "Pinakintab",
+				"name": "Clamshell · Yuki / Snow Grade",
+				"description": "Pino at siksik na hilatsa ng kabibe sa gatas na puti, kapares ng pinakintab na itim na slate.",
+				"black": "Itim na Nachiguro slate",
+				"white": "Puting Yuki clamshell"
+			}
+		},
+		"footerTagline": "Ang mahahalaga, pinag-isipang mabuti."
+	}
+}

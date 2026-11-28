@@ -1,0 +1,85 @@
+{
+	"page": {
+		"title": {
+			"local": "Paikallisen pelin asetukset",
+			"online": "Verkkopelin asetukset"
+		},
+		"label": {
+			"local": "Paikallisen pelin asetukset",
+			"online": "Verkkopelin asetukset"
+		},
+		"backToMenu": "Takaisin valikkoon",
+		"settingsLabel": "Peliasetukset",
+		"timeLimitsNotice": "Aikarajoja ei vielä valvota.",
+		"boardSize": "LAUDAN KOKO",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Luodaan peliä…",
+		"startGame": "Aloita peli",
+		"createFailed": "Peliä ei voitu luoda. Yritä uudelleen."
+	},
+	"players": {
+		"player1": "Pelaaja 1",
+		"player2": "Pelaaja 2",
+		"opponent": "Vastustaja",
+		"guest": "Sinä (vieras)"
+	},
+	"configuration": {
+		"eyebrow": "MÄÄRITYKSET",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Mukautettu · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Lisää aikavaihtoehtoja",
+		"fewerControls": "Vähemmän aikavaihtoehtoja",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Blitz",
+			"rapid": "Pikapeli",
+			"classical": "Klassinen",
+			"correspondence": "Kirjepeli",
+			"untimed": "Ajaton"
+		},
+		"systems": {
+			"absolute": "Absoluuttinen",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Japanilainen byo-yomi"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} s",
+			"absoluteMinutes": "{{minutes}} min",
+			"mainSeconds": "{{seconds}} s",
+			"mainMinutes": "{{minutes}} min",
+			"fischer": "{{main}} + {{increment}} s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}} s",
+			"daysPerMove_one": "{{count}} päivä / siirto",
+			"daysPerMove_other": "{{count}} päivää / siirto"
+		},
+		"noTimeLimit": "Ei aikarajaa"
+	},
+	"customTime": {
+		"label": "Mukautettu ajankäyttö",
+		"eyebrow": "MUKAUTETTU AJANKÄYTTÖ",
+		"heading": "Aseta oma kello",
+		"system": "Järjestelmä",
+		"fields": {
+			"minutes": "Pääaika · min",
+			"seconds": "Pääaika · s",
+			"increment": "Lisäys · s",
+			"periods": "Jaksot",
+			"periodSeconds": "Jakso · s"
+		},
+		"hints": {
+			"byoYomi": "Lisäaika koostuu kiinteästä määrästä ajastettuja jaksoja.",
+			"default": "Valitse järjestelmä ja syötä sen kelloarvot."
+		},
+		"apply": "Käytä mukautettua aikaa",
+		"errors": {
+			"wholeNumbers": "Syötä jokaiseen kellokenttään ei-negatiivinen kokonaisluku.",
+			"mainSeconds": "Pääajan sekuntien on oltava välillä 0–59.",
+			"byoYomiPeriods": "Byo-yomi vaatii vähintään yhden jakson, joka kestää vähintään sekunnin.",
+			"mainTime": "Aseta pääajaksi enemmän kuin nolla."
+		}
+	}
+}

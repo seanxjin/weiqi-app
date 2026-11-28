@@ -1,9 +1,22 @@
 export const clockSystems = ["Absolute", "Fischer", "Japanese Byo-yomi"] as const;
 export type ClockSystem = (typeof clockSystems)[number];
+
+export const clockSystemNameKeys = {
+	Absolute: "timeControl.systems.absolute",
+	Fischer: "timeControl.systems.fischer",
+	"Japanese Byo-yomi": "timeControl.systems.japaneseByoYomi",
+} as const satisfies Record<ClockSystem, string>;
+
 export interface TimePreset {
-	label: string;
+	id: string;
 	system: ClockSystem;
+	mainSeconds: number;
+	incrementSeconds?: number;
+	periods?: number;
+	periodSeconds?: number;
+	daysPerMove?: number;
 }
+export type PresetGroupId = "bullet" | "blitz" | "rapid" | "classical" | "correspondence";
 export interface CustomTime {
 	system: ClockSystem;
 	minutes: string;
@@ -12,6 +25,7 @@ export interface CustomTime {
 	periods: string;
 	periodSeconds: string;
 }
+export type CustomTimeError = "wholeNumbers" | "mainSeconds" | "byoYomiPeriods" | "mainTime";
 
 export const defaultCustomTime: CustomTime = {
 	system: "Japanese Byo-yomi",
@@ -22,57 +36,57 @@ export const defaultCustomTime: CustomTime = {
 	periodSeconds: "30",
 };
 
-export const presetGroups: { name: string; presets: TimePreset[] }[] = [
+const absolute = (mainSeconds: number): TimePreset => ({
+	id: `absolute-${mainSeconds}`,
+	system: "Absolute",
+	mainSeconds,
+});
+const fischer = (mainSeconds: number, incrementSeconds: number): TimePreset => ({
+	id: `fischer-${mainSeconds}+${incrementSeconds}`,
+	system: "Fischer",
+	mainSeconds,
+	incrementSeconds,
+});
+const byoYomi = (mainSeconds: number, periods: number, periodSeconds: number): TimePreset => ({
+	id: `byoyomi-${mainSeconds}+${periods}x${periodSeconds}`,
+	system: "Japanese Byo-yomi",
+	mainSeconds,
+	periods,
+	periodSeconds,
+});
+const correspondence = (daysPerMove: number): TimePreset => ({
+	id: `correspondence-${daysPerMove}`,
+	system: "Absolute",
+	mainSeconds: 0,
+	daysPerMove,
+});
+
+export const defaultPreset = absolute(600);
+
+export const presetGroups: { id: PresetGroupId; presets: TimePreset[] }[] = [
 	{
-		name: "Bullet",
-		presets: [
-			{ label: "30 sec", system: "Absolute" },
-			{ label: "30s + 5s", system: "Fischer" },
-			{ label: "30s + 5×10s", system: "Japanese Byo-yomi" },
-			{ label: "1 min", system: "Absolute" },
-			{ label: "1m + 2s", system: "Fischer" },
-		],
+		id: "bullet",
+		presets: [absolute(30), fischer(30, 5), byoYomi(30, 5, 10), absolute(60), fischer(60, 2)],
 	},
 	{
-		name: "Blitz",
-		presets: [
-			{ label: "3 min", system: "Absolute" },
-			{ label: "3m + 5s", system: "Fischer" },
-			{ label: "2m + 5×30s", system: "Japanese Byo-yomi" },
-			{ label: "5 min", system: "Absolute" },
-			{ label: "5m + 5s", system: "Fischer" },
-		],
+		id: "blitz",
+		presets: [absolute(180), fischer(180, 5), byoYomi(120, 5, 30), absolute(300), fischer(300, 5)],
 	},
 	{
-		name: "Rapid",
-		presets: [
-			{ label: "10 min", system: "Absolute" },
-			{ label: "10m + 5s", system: "Fischer" },
-			{ label: "5m + 5×30s", system: "Japanese Byo-yomi" },
-			{ label: "15 min", system: "Absolute" },
-			{ label: "15m + 10s", system: "Fischer" },
-		],
+		id: "rapid",
+		presets: [defaultPreset, fischer(600, 5), byoYomi(300, 5, 30), absolute(900), fischer(900, 10)],
 	},
 	{
-		name: "Classical",
-		presets: [
-			{ label: "30 min", system: "Absolute" },
-			{ label: "30m + 15s", system: "Fischer" },
-			{ label: "30m + 5×60s", system: "Japanese Byo-yomi" },
-			{ label: "60 min", system: "Absolute" },
-			{ label: "60m + 5×60s", system: "Japanese Byo-yomi" },
-		],
+		id: "classical",
+		presets: [absolute(1800), fischer(1800, 15), byoYomi(1800, 5, 60), absolute(3600), byoYomi(3600, 5, 60)],
 	},
 	{
-		name: "Correspondence",
-		presets: [1, 3, 5, 7, 14].map((days) => ({
-			label: `${days} ${days === 1 ? "day" : "days"} / move`,
-			system: "Absolute",
-		})),
+		id: "correspondence",
+		presets: [1, 3, 5, 7, 14].map(correspondence),
 	},
 ];
 
-export function validateCustomTime(value: CustomTime): string | null {
+export function validateCustomTime(value: CustomTime): CustomTimeError | null {
 	const fields = [
 		value.minutes,
 		value.seconds,
@@ -80,15 +94,15 @@ export function validateCustomTime(value: CustomTime): string | null {
 		...(value.system === "Japanese Byo-yomi" ? [value.periods, value.periodSeconds] : []),
 	];
 	if (fields.some((field) => !/^\d+$/.test(field) || !Number.isSafeInteger(Number(field)))) {
-		return "Enter a nonnegative whole number in each clock field.";
+		return "wholeNumbers";
 	}
-	if (Number(value.seconds) > 59) return "Main seconds must be between 0 and 59.";
+	if (Number(value.seconds) > 59) return "mainSeconds";
 	if (value.system === "Japanese Byo-yomi" && (Number(value.periods) < 1 || Number(value.periodSeconds) < 1)) {
-		return "Byo-yomi needs at least one period lasting at least one second.";
+		return "byoYomiPeriods";
 	}
 	const main = Number(value.minutes) * 60 + Number(value.seconds);
 	if (main === 0 && value.system !== "Japanese Byo-yomi") {
-		return "Set main time greater than zero.";
+		return "mainTime";
 	}
 	return null;
 }

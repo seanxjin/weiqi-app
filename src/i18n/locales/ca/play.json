@@ -1,0 +1,117 @@
+{
+	"home": {
+		"pageTitle": "Juga",
+		"location": "JUGA / INICI",
+		"signedInAs": "Has iniciat la sessió com a {{username}}",
+		"guest": "Jugues com a convidat",
+		"logoutError": "No s’ha pogut tancar la sessió. Torna-ho a provar.",
+		"introduction": {
+			"heading": "Una mica de text",
+			"body": "Una altra mica de text"
+		},
+		"menuHeading": "Una mica de text.",
+		"options": {
+			"online": {
+				"label": "Juga en línia",
+				"description": "Troba el teu rival. Troba’t al tauler."
+			},
+			"local": {
+				"label": "Juga en local",
+				"description": "Un tauler. Dos jugadors. Una pantalla compartida."
+			},
+			"friend": {
+				"label": "Juga amb un amic",
+				"description": "Convida algú a una partida reflexiva."
+			},
+			"puzzles": {
+				"label": "Resol problemes",
+				"description": "Petits reptes. Instints més esmolats."
+			},
+			"lessons": {
+				"label": "Lliçons",
+				"description": "De la primera pedra a la següent descoberta."
+			},
+			"bots": {
+				"label": "Juga contra bots",
+				"description": "Practica al teu ritme, a qualsevol nivell."
+			}
+		},
+		"presence_one": "{{count, number}} jugador compartint el tauler",
+		"presence_many": "{{count, number}} de jugadors compartint el tauler",
+		"presence_other": "{{count, number}} jugadors compartint el tauler",
+		"reserved": {
+			"label": "SECCIÓ PER MÉS ENDAVANT",
+			"heading": "Reservat per a contingut futur",
+			"body": "Aquesta secció es deixa buida intencionadament de moment. S’utilitzarà per a funcions futures, novetats o contingut seleccionat."
+		},
+		"footerTagline": "Regles senzilles. Descobertes infinites."
+	},
+	"materials": {
+		"pageTitle": "Taulers i pedres",
+		"breadcrumb": "Baduk / Biblioteca de materials",
+		"collection": "Col·lecció 01",
+		"heading": "Taulers i pedres.",
+		"introduction": "Materials naturals. Detalls serens. Un lloc per al joc.",
+		"boardsSection": {
+			"title": "Els taulers",
+			"meta": "Tres fustes · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Les pedres",
+			"meta": "Quatre estils · blanc i negre"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Estudi de materials",
+			"enlarged": "Mostres ampliades",
+			"heading": "Un contrast serè.",
+			"body": "Quatre superfícies. Blanc i negre, sota la mateixa llum suau.",
+			"scale": "Mostres ampliades · escala uniforme",
+			"form": "Forma llisa i arrodonida / variació subtil de la superfície"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Kaya japonesa tradicional",
+				"material": "Mel càlida · veta recta"
+			},
+			"walnut": {
+				"name": "Noguera fosca",
+				"material": "Marró intens · veta ondulant"
+			},
+			"ash": {
+				"name": "Freixe escandinau clar",
+				"material": "Fusta clara · veta suau"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Polit",
+				"name": "Pissarra",
+				"description": "Superfícies llises i polides amb una textura mineral serena.",
+				"black": "Pissarra negra",
+				"white": "Pissarra blanca"
+			},
+			"satin": {
+				"finish": "Setinat",
+				"name": "Ceràmica",
+				"description": "Una brillantor difusa i un gra fi, delicat i uniforme.",
+				"black": "Ceràmica negra",
+				"white": "Ceràmica blanca"
+			},
+			"matte": {
+				"finish": "Mat",
+				"name": "Pedra natural",
+				"description": "Un clapejat mineral discret sota un acabat llis i sec.",
+				"black": "Pedra negra",
+				"white": "Pedra blanca"
+			},
+			"snow": {
+				"finish": "Polit",
+				"name": "Petxina · Yuki / Qualitat Neu",
+				"description": "Veta de petxina fina i atapeïda sobre blanc lletós, combinada amb pissarra negra polida.",
+				"black": "Pissarra negra Nachiguro",
+				"white": "Petxina blanca Yuki"
+			}
+		},
+		"footerTagline": "L’essencial, ben pensat."
+	}
+}

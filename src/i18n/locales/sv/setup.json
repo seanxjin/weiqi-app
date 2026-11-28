@@ -1,0 +1,85 @@
+{
+	"page": {
+		"title": {
+			"local": "Inställningar för lokalt parti",
+			"online": "Inställningar för onlineparti"
+		},
+		"label": {
+			"local": "Inställningar för lokalt parti",
+			"online": "Inställningar för onlineparti"
+		},
+		"backToMenu": "Tillbaka till menyn",
+		"settingsLabel": "Partiinställningar",
+		"timeLimitsNotice": "Tidsgränser tillämpas inte ännu.",
+		"boardSize": "BRÄDSTORLEK",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Skapar parti…",
+		"startGame": "Starta spel",
+		"createFailed": "Partiet kunde inte skapas. Försök igen."
+	},
+	"players": {
+		"player1": "Spelare 1",
+		"player2": "Spelare 2",
+		"opponent": "Motståndare",
+		"guest": "Du (gäst)"
+	},
+	"configuration": {
+		"eyebrow": "KONFIGURATIONER",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Anpassad · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Fler tidskontroller",
+		"fewerControls": "Färre tidskontroller",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Blixt",
+			"rapid": "Snabb",
+			"classical": "Klassisk",
+			"correspondence": "Korrespondens",
+			"untimed": "Utan tid"
+		},
+		"systems": {
+			"absolute": "Absolut",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Japansk byo-yomi"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} sek",
+			"absoluteMinutes": "{{minutes}} min",
+			"mainSeconds": "{{seconds}} s",
+			"mainMinutes": "{{minutes}} m",
+			"fischer": "{{main}} + {{increment}} s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}} s",
+			"daysPerMove_one": "{{count}} dag / drag",
+			"daysPerMove_other": "{{count}} dagar / drag"
+		},
+		"noTimeLimit": "Ingen tidsgräns"
+	},
+	"customTime": {
+		"label": "Anpassad tidskontroll",
+		"eyebrow": "ANPASSAD TIDSKONTROLL",
+		"heading": "Ställ in din egen klocka",
+		"system": "System",
+		"fields": {
+			"minutes": "Huvudtid · min",
+			"seconds": "Huvudtid · sek",
+			"increment": "Tillägg · sek",
+			"periods": "Perioder",
+			"periodSeconds": "Period · sek"
+		},
+		"hints": {
+			"byoYomi": "Övertiden består av ett fast antal tidsbestämda perioder.",
+			"default": "Välj ett system och ange sedan dess klockvärden."
+		},
+		"apply": "Använd anpassad tid",
+		"errors": {
+			"wholeNumbers": "Ange ett icke-negativt heltal i varje klockfält.",
+			"mainSeconds": "Huvudtidens sekunder måste vara mellan 0 och 59.",
+			"byoYomiPeriods": "Byo-yomi kräver minst en period som varar minst en sekund.",
+			"mainTime": "Ange en huvudtid som är större än noll."
+		}
+	}
+}

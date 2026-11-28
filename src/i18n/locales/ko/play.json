@@ -1,0 +1,115 @@
+{
+	"home": {
+		"pageTitle": "대국",
+		"location": "대국 / 홈",
+		"signedInAs": "{{username}}(으)로 로그인됨",
+		"guest": "게스트로 대국 중",
+		"logoutError": "로그아웃할 수 없습니다. 다시 시도해 주세요.",
+		"introduction": {
+			"heading": "텍스트",
+			"body": "다른 텍스트"
+		},
+		"menuHeading": "텍스트.",
+		"options": {
+			"online": {
+				"label": "온라인 대국",
+				"description": "상대를 찾아 바둑판에서 만나세요."
+			},
+			"local": {
+				"label": "로컬 대국",
+				"description": "하나의 바둑판, 두 명의 기사. 한 화면에서 함께."
+			},
+			"friend": {
+				"label": "친구와 대국",
+				"description": "친구를 초대해 차분한 한 판을 두세요."
+			},
+			"puzzles": {
+				"label": "문제 풀기",
+				"description": "작은 도전, 더 날카로운 감각."
+			},
+			"lessons": {
+				"label": "강좌",
+				"description": "첫 돌부터 다음 깨달음까지."
+			},
+			"bots": {
+				"label": "봇과 대국",
+				"description": "어떤 실력이든 내 속도대로 연습하세요."
+			}
+		},
+		"presence_other": "{{count, number}}명이 바둑판을 함께하는 중",
+		"reserved": {
+			"label": "추후 사용 영역",
+			"heading": "향후 콘텐츠를 위한 공간",
+			"body": "이 영역은 현재 의도적으로 비워 두었습니다. 향후 새 기능, 업데이트 또는 엄선된 콘텐츠에 사용될 예정입니다."
+		},
+		"footerTagline": "단순한 규칙, 끝없는 발견."
+	},
+	"materials": {
+		"pageTitle": "바둑판과 바둑돌",
+		"breadcrumb": "Baduk / 재료 라이브러리",
+		"collection": "컬렉션 01",
+		"heading": "바둑판과 바둑돌.",
+		"introduction": "자연의 소재, 차분한 디테일. 대국을 위한 공간.",
+		"boardsSection": {
+			"title": "바둑판",
+			"meta": "세 가지 목재 · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "바둑돌",
+			"meta": "네 가지 스타일 · 흑과 백"
+		},
+		"study": {
+			"breadcrumb": "Baduk / 재료 연구",
+			"enlarged": "확대 샘플",
+			"heading": "고요한 대비.",
+			"body": "네 가지 표면. 같은 부드러운 빛 아래의 흑과 백.",
+			"scale": "확대 샘플 · 동일 배율",
+			"form": "매끄럽고 둥근 형태 / 은은한 표면 변화"
+		},
+		"boards": {
+			"kaya": {
+				"name": "전통 일본 비자나무",
+				"material": "따뜻한 꿀빛 · 곧은 결"
+			},
+			"walnut": {
+				"name": "다크 월넛",
+				"material": "짙은 갈색 · 흐르는 결"
+			},
+			"ash": {
+				"name": "밝은 북유럽 물푸레나무",
+				"material": "밝은 목재 · 부드러운 결"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "유광",
+				"name": "슬레이트",
+				"description": "은은한 광물 질감을 지닌 매끄럽고 광택 있는 표면.",
+				"black": "흑 슬레이트",
+				"white": "백 슬레이트"
+			},
+			"satin": {
+				"finish": "새틴",
+				"name": "세라믹",
+				"description": "은은하게 퍼지는 광택과 섬세하고 고른 결.",
+				"black": "흑 세라믹",
+				"white": "백 세라믹"
+			},
+			"matte": {
+				"finish": "무광",
+				"name": "천연석",
+				"description": "매끄럽고 건조한 마감 아래 잔잔한 광물 반점.",
+				"black": "흑 천연석",
+				"white": "백 천연석"
+			},
+			"snow": {
+				"finish": "유광",
+				"name": "대합 · 유키 / 설(雪) 등급",
+				"description": "유백색 바탕에 촘촘하고 고운 조개결, 광택 나는 흑 슬레이트와 한 쌍.",
+				"black": "나치구로 흑 슬레이트",
+				"white": "유키 대합 백돌"
+			}
+		},
+		"footerTagline": "본질에 충실하게."
+	}
+}

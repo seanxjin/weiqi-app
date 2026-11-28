@@ -1,0 +1,116 @@
+{
+	"home": {
+		"pageTitle": "Pelaa",
+		"location": "PELAA / ETUSIVU",
+		"signedInAs": "Kirjautuneena: {{username}}",
+		"guest": "Pelaat vieraana",
+		"logoutError": "Uloskirjautuminen epäonnistui. Yritä uudelleen.",
+		"introduction": {
+			"heading": "Tekstiä",
+			"body": "Muuta tekstiä"
+		},
+		"menuHeading": "Tekstiä.",
+		"options": {
+			"online": {
+				"label": "Pelaa verkossa",
+				"description": "Löydä vastustaja. Kohtaa laudan ääressä."
+			},
+			"local": {
+				"label": "Pelaa paikallisesti",
+				"description": "Yksi lauta. Kaksi pelaajaa. Yhteinen näyttö."
+			},
+			"friend": {
+				"label": "Pelaa ystävää vastaan",
+				"description": "Kutsu joku harkittuun peliin."
+			},
+			"puzzles": {
+				"label": "Ratkaise tehtäviä",
+				"description": "Pieniä haasteita. Terävämpi vaisto."
+			},
+			"lessons": {
+				"label": "Oppitunnit",
+				"description": "Ensimmäisestä kivestä seuraavaan oivallukseen."
+			},
+			"bots": {
+				"label": "Pelaa botteja vastaan",
+				"description": "Harjoittele omaan tahtiin, millä tasolla tahansa."
+			}
+		},
+		"presence_one": "{{count, number}} pelaaja laudan ääressä",
+		"presence_other": "{{count, number}} pelaajaa laudan ääressä",
+		"reserved": {
+			"label": "OSIO MYÖHEMMÄLLE",
+			"heading": "Varattu tulevalle sisällölle",
+			"body": "Tämä osio on tarkoituksella toistaiseksi tyhjä. Sitä käytetään myöhemmin uusiin ominaisuuksiin, päivityksiin tai valikoituun sisältöön."
+		},
+		"footerTagline": "Yksinkertaiset säännöt. Loputtomasti löydettävää."
+	},
+	"materials": {
+		"pageTitle": "Laudat ja kivet",
+		"breadcrumb": "Baduk / Materiaalikirjasto",
+		"collection": "Kokoelma 01",
+		"heading": "Laudat ja kivet.",
+		"introduction": "Luonnonmateriaaleja. Hillittyjä yksityiskohtia. Paikka pelille.",
+		"boardsSection": {
+			"title": "Laudat",
+			"meta": "Kolme puulajia · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Kivet",
+			"meta": "Neljä tyyliä · musta ja valkoinen"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Materiaalitutkielma",
+			"enlarged": "Suurennetut näytteet",
+			"heading": "Hiljainen kontrasti.",
+			"body": "Neljä pintaa. Musta ja valkoinen samassa pehmeässä valossa.",
+			"scale": "Suurennetut näytteet · yhtenäinen mittakaava",
+			"form": "Sileä, pyöristetty muoto / hienovarainen pinnan vaihtelu"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Perinteinen japanilainen kaya",
+				"material": "Lämmin hunajansävy · suora syy"
+			},
+			"walnut": {
+				"name": "Tumma pähkinäpuu",
+				"material": "Syvä ruskea · virtaava syy"
+			},
+			"ash": {
+				"name": "Vaalea skandinaavinen saarni",
+				"material": "Vaalea puu · pehmeä syy"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Kiillotettu",
+				"name": "Liuskekivi",
+				"description": "Sileät, kiillotetut pinnat ja hillitty mineraalinen tekstuuri.",
+				"black": "Musta liuskekivi",
+				"white": "Valkoinen liuskekivi"
+			},
+			"satin": {
+				"finish": "Satiini",
+				"name": "Keramiikka",
+				"description": "Pehmeä kiilto ja herkkä, tasainen hieno rakeisuus.",
+				"black": "Musta keramiikka",
+				"white": "Valkoinen keramiikka"
+			},
+			"matte": {
+				"finish": "Matta",
+				"name": "Luonnonkivi",
+				"description": "Hillittyä mineraalista pilkutusta sileän, kuivan pinnan alla.",
+				"black": "Musta kivi",
+				"white": "Valkoinen kivi"
+			},
+			"snow": {
+				"finish": "Kiillotettu",
+				"name": "Simpukankuori · Yuki / Snow-laatu",
+				"description": "Hieno, tiheä kuorisyy maidonvalkoisessa pinnassa, parina kiillotettu musta liuskekivi.",
+				"black": "Musta Nachiguro-liuskekivi",
+				"white": "Valkoinen Yuki-simpukankuori"
+			}
+		},
+		"footerTagline": "Olennainen, harkiten."
+	}
+}

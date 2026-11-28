@@ -1,0 +1,211 @@
+{
+	"header": {
+		"title": "Impostazioni",
+		"sectionTitle": "Impostazioni: {{section}}",
+		"navLabel": "Sezioni delle impostazioni"
+	},
+	"sections": {
+		"board": "Goban e pietre",
+		"gameplay": "Gioco",
+		"profile": "Profilo",
+		"social": "Social e privacy",
+		"account": "Account e sicurezza",
+		"language": "Lingua e ora"
+	},
+	"board": {
+		"description": "Scegli il goban e le pietre con cui giochi.",
+		"appearance": {
+			"title": "Aspetto",
+			"boardLegend": "Goban",
+			"stonesLegend": "Pietre",
+			"previewLabel": "Anteprima del goban"
+		},
+		"themes": {
+			"kaya": "Kaya giapponese tradizionale",
+			"walnut": "Noce scuro",
+			"ash": "Frassino scandinavo chiaro"
+		},
+		"stoneStyles": {
+			"polished": "Ardesia",
+			"satin": "Ceramica",
+			"matte": "Pietra naturale",
+			"snow": "Conchiglia · Grado Yuki / Neve"
+		},
+		"display": {
+			"title": "Visualizzazione del goban",
+			"coordinates": {
+				"label": "Mostra le coordinate",
+				"description": "Indica colonne e righe lungo il bordo del goban."
+			},
+			"lastMove": {
+				"label": "Evidenzia l’ultima mossa",
+				"description": "Segna la pietra giocata più di recente."
+			}
+		},
+		"sounds": {
+			"title": "Suoni",
+			"playSounds": {
+				"label": "Riproduci suoni",
+				"description": "Posizionamento delle pietre, catture e avvisi dell’orologio."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Gestisci come posizioni le pietre e chi può sfidarti.",
+		"moves": {
+			"title": "Giocare le mosse",
+			"description": "Richiedi un secondo clic prima di posizionare una pietra, per evitare clic errati.",
+			"legend": "Conferma le mosse",
+			"options": {
+				"never": "Mai",
+				"correspondence": "Solo partite per corrispondenza",
+				"always": "Sempre"
+			}
+		},
+		"challenges": {
+			"title": "Sfide",
+			"description": "Scegli chi può inviarti sfide.",
+			"legend": "Consenti sfide da",
+			"options": {
+				"everyone": "Tutti",
+				"registered": "Giocatori registrati",
+				"following": "Solo giocatori che seguo",
+				"nobody": "Nessuno (le rivincite restano consentite)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Tutto ciò che trovi qui è visibile sul tuo <profileLink>profilo pubblico</profileLink>.",
+		"publicProfile": {
+			"title": "Profilo pubblico",
+			"bioLabel": "Breve biografia",
+			"bioPlaceholder": "La tua breve biografia apparirà sul tuo profilo.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Dettagli",
+			"joinDate": "Data di iscrizione",
+			"username": "Nome utente",
+			"changeUsername": "Cambia",
+			"changeUsernameFeature": "Modifica del nome utente",
+			"realName": "Nome reale",
+			"location": "Località",
+			"country": "Paese",
+			"countryNotSet": "Non impostato",
+			"rank": "Grado",
+			"rankPlaceholder": "es. 12k, 3d",
+			"rankHint": "Usa 30k–1k, 1d–9d o 1p–9p."
+		},
+		"links": {
+			"legend": "Link",
+			"linkLabel": "Link {{number}}",
+			"remove": "Rimuovi",
+			"removeLabel": "Rimuovi link {{number}}",
+			"add": "Aggiungi link"
+		}
+	},
+	"social": {
+		"description": "Gestisci i giocatori che segui e quelli che hai bloccato.",
+		"blocking": {
+			"title": "Blocchi",
+			"description_one": "Stai bloccando {{count}} giocatore. I giocatori bloccati non possono sfidarti né scriverti.",
+			"description_many": "Stai bloccando {{count}} di giocatori. I giocatori bloccati non possono sfidarti né scriverti.",
+			"description_other": "Stai bloccando {{count}} giocatori. I giocatori bloccati non possono sfidarti né scriverti.",
+			"empty": "Non stai bloccando nessuno.",
+			"action": "Sblocca",
+			"actionLabel": "Sblocca {{username}}"
+		},
+		"following": {
+			"title": "Seguiti",
+			"description_one": "Segui {{count}} giocatore.",
+			"description_many": "Segui {{count}} di giocatori.",
+			"description_other": "Segui {{count}} giocatori.",
+			"empty": "Non segui ancora nessuno.",
+			"action": "Non seguire più",
+			"actionLabel": "Non seguire più {{username}}"
+		}
+	},
+	"account": {
+		"description": "Cambia la password, proteggi il tuo account e gestisci gli account collegati.",
+		"password": {
+			"title": "Cambia password",
+			"updated": "Password aggiornata",
+			"fields": {
+				"currentPassword": {
+					"label": "Password attuale",
+					"show": "Mostra la password attuale",
+					"hide": "Nascondi la password attuale"
+				},
+				"newPassword": {
+					"label": "Nuova password",
+					"show": "Mostra la nuova password",
+					"hide": "Nascondi la nuova password"
+				},
+				"confirmPassword": {
+					"label": "Ripeti password",
+					"show": "Mostra la password ripetuta",
+					"hide": "Nascondi la password ripetuta"
+				}
+			}
+		},
+		"contact": {
+			"title": "Informazioni di contatto",
+			"email": "Indirizzo email",
+			"edit": "Modifica",
+			"editFeature": "Modifica dell’email"
+		},
+		"twoFactor": {
+			"title": "Autenticazione a due fattori",
+			"description": "Richiedi un codice da un’app di autenticazione quando accedi.",
+			"off": "Disattivata",
+			"enable": "Attiva",
+			"feature": "Autenticazione a due fattori"
+		},
+		"sessions": {
+			"title": "Sessioni attive",
+			"description": "Se sospetti che il tuo account sia stato compromesso, cambia la password ed esci da tutti i dispositivi.",
+			"thisDevice": "Questo dispositivo",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "Esci da {{device}}",
+			"logOutAll": "Esci da tutti gli altri dispositivi"
+		},
+		"connections": {
+			"title": "Account collegati",
+			"description": "Accedi a Baduk con questi account.",
+			"connectedTo": "Collegato a {{provider}}",
+			"connect": "Collega",
+			"disconnect": "Scollega",
+			"note": "Scollegando rimuovi il collegamento su Baduk. Potrebbe essere comunque necessario revocare l’accesso sull’altro sito."
+		},
+		"close": {
+			"title": "Chiudi il tuo account",
+			"description": "La chiusura dell’account nasconde il tuo profilo e ti disconnette ovunque.",
+			"button": "Chiudi account",
+			"dialogTitle": "Chiudere il tuo account?",
+			"dialogDescription": "Potrai riaprirlo in seguito dalla pagina di accesso.",
+			"feature": "Chiusura dell’account"
+		}
+	},
+	"languageTime": {
+		"title": "Lingua e ora",
+		"description": "Scegli la lingua di Baduk e come vengono mostrate date e ore.",
+		"language": {
+			"title": "Lingua",
+			"description": "Le modifiche si applicano subito su ogni pagina.",
+			"legend": "Lingua di visualizzazione"
+		},
+		"time": {
+			"title": "Ora",
+			"description": "Usata per gli orari, come le date di iscrizione e l’attività delle sessioni.",
+			"timeZone": "Fuso orario",
+			"automaticTimeZone": "Automatico ({{timeZone}})",
+			"timeFormat": "Orologio",
+			"formats": {
+				"auto": "Automatico ({{example}})",
+				"12h": "12 ore ({{example}})",
+				"24h": "24 ore ({{example}})"
+			},
+			"preview": "Anteprima"
+		}
+	}
+}

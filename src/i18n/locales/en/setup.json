@@ -1,0 +1,85 @@
+{
+	"page": {
+		"title": {
+			"local": "Local Game Setup",
+			"online": "Online Game Setup"
+		},
+		"label": {
+			"local": "Local game setup",
+			"online": "Online game setup"
+		},
+		"backToMenu": "Back to menu",
+		"settingsLabel": "Game settings",
+		"timeLimitsNotice": "Time limits aren’t enforced yet.",
+		"boardSize": "BOARD SIZE",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Creating game…",
+		"startGame": "Start Game",
+		"createFailed": "The game could not be created. Please try again."
+	},
+	"players": {
+		"player1": "Player 1",
+		"player2": "Player 2",
+		"opponent": "Opponent",
+		"guest": "You (Guest)"
+	},
+	"configuration": {
+		"eyebrow": "CONFIGURATIONS",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Custom · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "More Time Controls",
+		"fewerControls": "Fewer Time Controls",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Blitz",
+			"rapid": "Rapid",
+			"classical": "Classical",
+			"correspondence": "Correspondence",
+			"untimed": "Untimed"
+		},
+		"systems": {
+			"absolute": "Absolute",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Japanese Byo-yomi"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} sec",
+			"absoluteMinutes": "{{minutes}} min",
+			"mainSeconds": "{{seconds}}s",
+			"mainMinutes": "{{minutes}}m",
+			"fischer": "{{main}} + {{increment}}s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}}s",
+			"daysPerMove_one": "{{count}} day / move",
+			"daysPerMove_other": "{{count}} days / move"
+		},
+		"noTimeLimit": "No time limit"
+	},
+	"customTime": {
+		"label": "Custom time control",
+		"eyebrow": "CUSTOM TIME CONTROL",
+		"heading": "Set your own clock",
+		"system": "System",
+		"fields": {
+			"minutes": "Main · min",
+			"seconds": "Main · sec",
+			"increment": "Increment · sec",
+			"periods": "Periods",
+			"periodSeconds": "Period · sec"
+		},
+		"hints": {
+			"byoYomi": "Overtime uses a fixed number of timed periods.",
+			"default": "Choose a system, then enter its clock values."
+		},
+		"apply": "Use custom time",
+		"errors": {
+			"wholeNumbers": "Enter a nonnegative whole number in each clock field.",
+			"mainSeconds": "Main seconds must be between 0 and 59.",
+			"byoYomiPeriods": "Byo-yomi needs at least one period lasting at least one second.",
+			"mainTime": "Set main time greater than zero."
+		}
+	}
+}

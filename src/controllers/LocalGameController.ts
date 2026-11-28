@@ -1,7 +1,7 @@
 import type { BoardApi, BoardSize, Intersection, Stone, StoneColor } from "weiqi-board";
 import type { EngineGame, EngineModule, EngineMoveResult, EnginePosition } from "@/engine/bindings";
 import {
-	illegalMoveMessages,
+	illegalMoveMessage,
 	moveLabel,
 	reconcileBoard,
 	stonesFromCells,
@@ -27,10 +27,14 @@ export interface LocalGameSnapshot {
 	readonly moves: readonly LocalMove[];
 	readonly latestMoveIndex: number;
 	readonly viewedMoveIndex: number;
+	/** Legal placements for the side to move; empty whenever the board is not playable. */
+	readonly legalPoints: readonly Intersection[];
 	readonly canPlay: boolean;
 	readonly canUndo: boolean;
 	readonly error: string | null;
 }
+
+const noLegalPoints: readonly Intersection[] = Object.freeze([]);
 
 export class LocalGameController {
 	private readonly game: EngineGame;
@@ -38,6 +42,7 @@ export class LocalGameController {
 	private readonly listeners = new Set<() => void>();
 	private positions: EnginePosition[] = [];
 	private moves: readonly LocalMove[] = [];
+	private legalPoints: readonly Intersection[] = noLegalPoints;
 	private viewed = 0;
 	private disposed = false;
 	private snapshot!: LocalGameSnapshot;
@@ -116,7 +121,7 @@ export class LocalGameController {
 
 	private accept(result: EngineMoveResult): void {
 		if (result.ok) this.refresh();
-		else this.publish(illegalMoveMessages[result.reason]);
+		else this.publish(illegalMoveMessage(result.reason));
 	}
 
 	private refresh(): void {
@@ -132,6 +137,9 @@ export class LocalGameController {
 				}),
 			),
 		);
+		this.legalPoints = Object.freeze(
+			this.game.moves().flatMap((move) => (move.type === "play" ? [Object.freeze(toIntersection(move.point))] : [])),
+		);
 		this.viewed = this.positions.length - 1;
 		this.publish();
 	}
@@ -145,6 +153,7 @@ export class LocalGameController {
 			const move = this.moves[index];
 			captures[move.color] += move.captureCount;
 		}
+		const canPlay = this.viewed === latest;
 		this.snapshot = Object.freeze({
 			boardSize: this.boardSize,
 			stones: Object.freeze(stones),
@@ -153,7 +162,8 @@ export class LocalGameController {
 			moves: this.moves,
 			latestMoveIndex: latest,
 			viewedMoveIndex: this.viewed,
-			canPlay: this.viewed === latest,
+			legalPoints: canPlay ? this.legalPoints : noLegalPoints,
+			canPlay,
 			canUndo: latest > 0,
 			error,
 		});

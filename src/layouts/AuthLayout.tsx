@@ -1,6 +1,9 @@
 import { useEffect, useState, type InputHTMLAttributes, type ReactNode } from "react";
+import { Trans, useTranslation } from "react-i18next";
 import { Link } from "react-router";
 import { StoneMark } from "@/components/ui/StoneMark";
+import { LanguagePicker } from "@/components/ui/LanguagePicker";
+import type { AuthLink } from "@/data/authLinks";
 import backIcon from "@/assets/icons/auth/back.svg";
 import visibilityIcon from "@/assets/icons/common/visibility.svg";
 import passwordIcon from "@/assets/icons/auth/password.svg";
@@ -10,13 +13,14 @@ type AuthLayoutProps = {
 	title: string;
 	children: ReactNode;
 	backTo?: string;
-	accountLink?: { prompt: string; label: string; to: string };
+	accountLink?: AuthLink;
 };
 
 export function AuthLayout({ title, children, backTo, accountLink }: AuthLayoutProps) {
+	const { t } = useTranslation(["auth", "common"]);
 	useEffect(() => {
-		document.title = `Baduk — ${title}`;
-	}, [title]);
+		document.title = t("common:pageTitle", { title });
+	}, [t, title]);
 
 	return (
 		<div className="auth-page">
@@ -25,19 +29,19 @@ export function AuthLayout({ title, children, backTo, accountLink }: AuthLayoutP
 					{backTo && (
 						<Link to={backTo}>
 							<img src={backIcon} alt="" />
-							Back
+							{t("common:actions.back")}
 						</Link>
 					)}
 				</div>
-				<Link to="/" className="auth-brand" aria-label="Baduk home">
+				<Link to="/" className="auth-brand" aria-label={t("common:homeLink")}>
 					<StoneMark style="polished" size={34} />
-					<span>BADUK</span>
+					<span>{t("common:brand")}</span>
 				</Link>
 				<div className="auth-header__account">
 					{accountLink && (
 						<>
-							<span>{accountLink.prompt}</span>
-							<Link to={accountLink.to}>{accountLink.label}</Link>
+							<span>{t(accountLink.prompt)}</span>
+							<Link to={accountLink.to}>{t(accountLink.label)}</Link>
 						</>
 					)}
 				</div>
@@ -46,10 +50,10 @@ export function AuthLayout({ title, children, backTo, accountLink }: AuthLayoutP
 				<div className="auth-column">{children}</div>
 			</main>
 			<footer className="auth-footer">
-				<p>© 2026 Baduk</p>
+				<p>{t("layout.copyright")}</p>
 				<div>
-					<span>Help</span>
-					<span>English</span>
+					<span>{t("layout.help")}</span>
+					<LanguagePicker />
 				</div>
 			</footer>
 		</div>
@@ -83,6 +87,7 @@ export function AuthField({ label, icon, guidance, trailing, ...input }: AuthFie
 }
 
 export function AuthPasswordField(props: Omit<AuthFieldProps, "type" | "icon" | "trailing">) {
+	const { t } = useTranslation("auth");
 	const [visible, setVisible] = useState(false);
 	return (
 		<AuthField
@@ -93,7 +98,7 @@ export function AuthPasswordField(props: Omit<AuthFieldProps, "type" | "icon" | 
 				<button
 					type="button"
 					className="auth-visibility"
-					aria-label={visible ? "Hide password" : "Show password"}
+					aria-label={visible ? t("layout.hidePassword") : t("layout.showPassword")}
 					aria-pressed={visible}
 					onClick={() => setVisible((value) => !value)}
 				>
@@ -105,11 +110,10 @@ export function AuthPasswordField(props: Omit<AuthFieldProps, "type" | "icon" | 
 }
 
 export function AuthTerms() {
+	const { t } = useTranslation("auth");
 	return (
 		<p className="auth-terms">
-			By continuing, you agree to our Terms of Service
-			<br />
-			and Privacy Policy.
+			<Trans t={t} i18nKey="layout.terms" components={{ br: <br /> }} />
 		</p>
 	);
 }

@@ -1,0 +1,29 @@
+{
+	"navigation": "Baduki navigeerimine",
+	"drawer": {
+		"open": "Ava navigeerimine",
+		"close": "Sulge navigeerimine"
+	},
+	"mainNavigation": "Põhinavigeerimine",
+	"play": "Mängi",
+	"puzzles": "Ülesanded",
+	"learn": "Õpi",
+	"guide": {
+		"heading": "GO ON SULLE UUS?",
+		"startWithBasics": "Alusta põhitõdedest"
+	},
+	"account": {
+		"label": "Konto",
+		"friends": "Sõbrad",
+		"messages": "Sõnumid",
+		"notifications": "Teavitused",
+		"settings": "Seaded",
+		"allSettings": "Kõik seaded"
+	},
+	"theme": {
+		"label": "Teema",
+		"system": "Süsteem",
+		"light": "Hele",
+		"dark": "Tume"
+	}
+}

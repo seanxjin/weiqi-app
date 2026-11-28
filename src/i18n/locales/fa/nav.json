@@ -1,0 +1,29 @@
+{
+	"navigation": "ناوبری Baduk",
+	"drawer": {
+		"open": "باز کردن منوی ناوبری",
+		"close": "بستن منوی ناوبری"
+	},
+	"mainNavigation": "ناوبری اصلی",
+	"play": "بازی",
+	"puzzles": "معماها",
+	"learn": "یادگیری",
+	"guide": {
+		"heading": "با گو تازه آشنا شده‌اید؟",
+		"startWithBasics": "از مبانی شروع کنید"
+	},
+	"account": {
+		"label": "حساب",
+		"friends": "دوستان",
+		"messages": "پیام‌ها",
+		"notifications": "اعلان‌ها",
+		"settings": "تنظیمات",
+		"allSettings": "همهٔ تنظیمات"
+	},
+	"theme": {
+		"label": "پوسته",
+		"system": "سیستم",
+		"light": "روشن",
+		"dark": "تیره"
+	}
+}

@@ -1,0 +1,85 @@
+{
+	"page": {
+		"title": {
+			"local": "স্থানীয় খেলার সেটআপ",
+			"online": "অনলাইন খেলার সেটআপ"
+		},
+		"label": {
+			"local": "স্থানীয় খেলার সেটআপ",
+			"online": "অনলাইন খেলার সেটআপ"
+		},
+		"backToMenu": "মেনুতে ফিরে যান",
+		"settingsLabel": "খেলার সেটিংস",
+		"timeLimitsNotice": "সময়সীমা এখনও প্রয়োগ করা হয় না।",
+		"boardSize": "বোর্ডের আকার",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "খেলা তৈরি হচ্ছে…",
+		"startGame": "খেলা শুরু করুন",
+		"createFailed": "খেলা তৈরি করা যায়নি। অনুগ্রহ করে আবার চেষ্টা করুন।"
+	},
+	"players": {
+		"player1": "খেলোয়াড় ১",
+		"player2": "খেলোয়াড় ২",
+		"opponent": "প্রতিপক্ষ",
+		"guest": "আপনি (অতিথি)"
+	},
+	"configuration": {
+		"eyebrow": "কনফিগারেশন",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "কাস্টম · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "আরও সময় নিয়ন্ত্রণ",
+		"fewerControls": "কম সময় নিয়ন্ত্রণ",
+		"groups": {
+			"bullet": "বুলেট",
+			"blitz": "ব্লিৎজ",
+			"rapid": "র‍্যাপিড",
+			"classical": "ক্লাসিক্যাল",
+			"correspondence": "পত্রালাপ",
+			"untimed": "সময়হীন"
+		},
+		"systems": {
+			"absolute": "নিরঙ্কুশ",
+			"fischer": "ফিশার",
+			"japaneseByoYomi": "জাপানি বিয়োয়োমি"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} সেকেন্ড",
+			"absoluteMinutes": "{{minutes}} মিনিট",
+			"mainSeconds": "{{seconds}} সে.",
+			"mainMinutes": "{{minutes}} মি.",
+			"fischer": "{{main}} + {{increment}} সে.",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}} সে.",
+			"daysPerMove_one": "{{count}} দিন / চাল",
+			"daysPerMove_other": "{{count}} দিন / চাল"
+		},
+		"noTimeLimit": "সময়সীমা নেই"
+	},
+	"customTime": {
+		"label": "কাস্টম সময় নিয়ন্ত্রণ",
+		"eyebrow": "কাস্টম সময় নিয়ন্ত্রণ",
+		"heading": "নিজের ঘড়ি নিজে সেট করুন",
+		"system": "পদ্ধতি",
+		"fields": {
+			"minutes": "মূল · মিনিট",
+			"seconds": "মূল · সেকেন্ড",
+			"increment": "বৃদ্ধি · সেকেন্ড",
+			"periods": "পিরিয়ড",
+			"periodSeconds": "পিরিয়ড · সেকেন্ড"
+		},
+		"hints": {
+			"byoYomi": "অতিরিক্ত সময়ে নির্দিষ্ট সংখ্যক সময়বদ্ধ পিরিয়ড থাকে।",
+			"default": "একটি পদ্ধতি বেছে নিন, তারপর তার ঘড়ির মান লিখুন।"
+		},
+		"apply": "কাস্টম সময় ব্যবহার করুন",
+		"errors": {
+			"wholeNumbers": "ঘড়ির প্রতিটি ঘরে একটি অঋণাত্মক পূর্ণসংখ্যা লিখুন।",
+			"mainSeconds": "মূল সেকেন্ড ০ থেকে ৫৯-এর মধ্যে হতে হবে।",
+			"byoYomiPeriods": "বিয়োয়োমির জন্য কমপক্ষে এক সেকেন্ড দৈর্ঘ্যের অন্তত একটি পিরিয়ড প্রয়োজন।",
+			"mainTime": "মূল সময় শূন্যের বেশি সেট করুন।"
+		}
+	}
+}

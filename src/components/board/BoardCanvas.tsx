@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { createBoardGeometry, drawBoard, boardThemes, loadTexture } from "weiqi-board";
 import type { BoardGeometry, BoardSize, BoardThemeId } from "weiqi-board";
 import { CanvasSurface } from "./CanvasSurface";
@@ -12,6 +13,7 @@ export interface BoardCanvasProps {
 }
 
 export function BoardCanvas({ theme, size, label, geometry, boardSize = 19 }: BoardCanvasProps) {
+	const { t } = useTranslation("game");
 	const source = boardThemes[theme].texture;
 	const [loaded, setLoaded] = useState<{
 		source: string;
@@ -50,14 +52,13 @@ export function BoardCanvas({ theme, size, label, geometry, boardSize = 19 }: Bo
 				className="board-canvas weiqi-board-canvas"
 				size={size}
 				label={
-					label ??
-					`Empty ${geometry?.intersections ?? boardSize} by ${geometry?.intersections ?? boardSize} ${boardThemes[theme].name} baduk board`
+					label ?? t("board.emptyBoard", { size: geometry?.intersections ?? boardSize, theme: boardThemes[theme].name })
 				}
 				draw={draw}
 			/>
 			{loaded?.source === source && loaded.error && (
 				<p className="asset-error weiqi-asset-error" role="status">
-					Board texture could not be loaded.
+					{t("board.textureError")}
 				</p>
 			)}
 		</div>

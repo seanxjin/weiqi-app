@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "围棋",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Baduk 首页",
+	"actions": {
+		"save": "保存",
+		"saving": "正在保存…",
+		"cancel": "取消",
+		"back": "返回",
+		"retry": "重试",
+		"close": "关闭",
+		"login": "登录",
+		"signIn": "登录",
+		"signUp": "注册",
+		"logOut": "退出登录",
+		"loggingOut": "正在退出…"
+	},
+	"status": {
+		"saved": "已保存",
+		"loading": "正在加载…",
+		"checkingSession": "正在检查登录状态…",
+		"sessionError": "无法检查登录状态，请重试。"
+	},
+	"comingSoon": "{{feature}}即将推出。",
+	"language": "语言",
+	"languageDialog": {
+		"title": "选择你的首选语言",
+		"loadError": "无法加载该语言，请重试。"
+	}
+}

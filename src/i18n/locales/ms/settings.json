@@ -1,0 +1,207 @@
+{
+	"header": {
+		"title": "Tetapan",
+		"sectionTitle": "Tetapan {{section}}",
+		"navLabel": "Bahagian tetapan"
+	},
+	"sections": {
+		"board": "Papan & Batu",
+		"gameplay": "Permainan",
+		"profile": "Profil",
+		"social": "Sosial & Privasi",
+		"account": "Akaun & Keselamatan",
+		"language": "Bahasa & Masa"
+	},
+	"board": {
+		"description": "Pilih papan dan batu yang anda gunakan untuk bermain.",
+		"appearance": {
+			"title": "Penampilan",
+			"boardLegend": "Papan",
+			"stonesLegend": "Batu",
+			"previewLabel": "Pratonton papan"
+		},
+		"themes": {
+			"kaya": "Kaya tradisional Jepun",
+			"walnut": "Walnut gelap",
+			"ash": "Ash Scandinavia pucat"
+		},
+		"stoneStyles": {
+			"polished": "Batu loh",
+			"satin": "Seramik",
+			"matte": "Batu semula jadi",
+			"snow": "Kulit kerang · Yuki / Gred Salji"
+		},
+		"display": {
+			"title": "Paparan papan",
+			"coordinates": {
+				"label": "Tunjukkan koordinat papan",
+				"description": "Labelkan lajur dan baris di sekeliling tepi papan."
+			},
+			"lastMove": {
+				"label": "Serlahkan langkah terakhir",
+				"description": "Tandakan batu yang paling baru dimainkan."
+			}
+		},
+		"sounds": {
+			"title": "Bunyi",
+			"playSounds": {
+				"label": "Mainkan bunyi",
+				"description": "Peletakan batu, tawanan dan amaran jam."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Urus cara anda meletakkan batu dan siapa yang boleh mencabar anda.",
+		"moves": {
+			"title": "Memainkan langkah",
+			"description": "Minta klik kedua sebelum batu diletakkan, untuk mengelakkan salah klik.",
+			"legend": "Sahkan langkah",
+			"options": {
+				"never": "Tidak pernah",
+				"correspondence": "Permainan surat-menyurat sahaja",
+				"always": "Sentiasa"
+			}
+		},
+		"challenges": {
+			"title": "Cabaran",
+			"description": "Pilih siapa yang boleh menghantar cabaran permainan kepada anda.",
+			"legend": "Benarkan cabaran daripada",
+			"options": {
+				"everyone": "Semua orang",
+				"registered": "Pemain berdaftar",
+				"following": "Hanya pemain yang saya ikuti",
+				"nobody": "Tiada sesiapa (perlawanan semula masih dibenarkan)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Semua di sini kelihatan pada <profileLink>profil awam</profileLink> anda.",
+		"publicProfile": {
+			"title": "Profil awam",
+			"bioLabel": "Bio ringkas",
+			"bioPlaceholder": "Bio ringkas anda akan dipaparkan pada profil anda.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Butiran",
+			"joinDate": "Tarikh menyertai",
+			"username": "Nama pengguna",
+			"changeUsername": "Tukar",
+			"changeUsernameFeature": "Menukar nama pengguna",
+			"realName": "Nama sebenar",
+			"location": "Lokasi",
+			"country": "Negara",
+			"countryNotSet": "Tidak ditetapkan",
+			"rank": "Pangkat",
+			"rankPlaceholder": "cth. 12k, 3d",
+			"rankHint": "Gunakan 30k–1k, 1d–9d atau 1p–9p."
+		},
+		"links": {
+			"legend": "Pautan",
+			"linkLabel": "Pautan {{number}}",
+			"remove": "Alih keluar",
+			"removeLabel": "Alih keluar pautan {{number}}",
+			"add": "Tambah pautan"
+		}
+	},
+	"social": {
+		"description": "Urus pemain yang anda ikuti dan pemain yang anda sekat.",
+		"blocking": {
+			"title": "Sekatan",
+			"description_other": "Anda menyekat {{count}} pemain. Pemain yang disekat tidak boleh mencabar atau menghantar mesej kepada anda.",
+			"empty": "Anda tidak menyekat sesiapa.",
+			"action": "Nyahsekat",
+			"actionLabel": "Nyahsekat {{username}}"
+		},
+		"following": {
+			"title": "Mengikuti",
+			"description_other": "Anda mengikuti {{count}} pemain.",
+			"empty": "Anda belum mengikuti sesiapa.",
+			"action": "Nyahikut",
+			"actionLabel": "Nyahikut {{username}}"
+		}
+	},
+	"account": {
+		"description": "Tukar kata laluan, lindungi akaun anda dan urus akaun yang disambungkan.",
+		"password": {
+			"title": "Tukar kata laluan",
+			"updated": "Kata laluan dikemas kini",
+			"fields": {
+				"currentPassword": {
+					"label": "Kata laluan semasa",
+					"show": "Tunjukkan kata laluan semasa",
+					"hide": "Sembunyikan kata laluan semasa"
+				},
+				"newPassword": {
+					"label": "Kata laluan baharu",
+					"show": "Tunjukkan kata laluan baharu",
+					"hide": "Sembunyikan kata laluan baharu"
+				},
+				"confirmPassword": {
+					"label": "Taip semula kata laluan",
+					"show": "Tunjukkan kata laluan yang ditaip semula",
+					"hide": "Sembunyikan kata laluan yang ditaip semula"
+				}
+			}
+		},
+		"contact": {
+			"title": "Maklumat hubungan",
+			"email": "Alamat e-mel",
+			"edit": "Sunting",
+			"editFeature": "Menukar e-mel"
+		},
+		"twoFactor": {
+			"title": "Pengesahan dua faktor",
+			"description": "Wajibkan kod daripada aplikasi pengesah apabila anda log masuk.",
+			"off": "Mati",
+			"enable": "Dayakan",
+			"feature": "Pengesahan dua faktor"
+		},
+		"sessions": {
+			"title": "Sesi aktif",
+			"description": "Jika anda mengesyaki akaun anda telah dikompromi, tukar kata laluan dan log keluar di semua tempat.",
+			"thisDevice": "Peranti ini",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "Log keluar {{device}}",
+			"logOutAll": "Log keluar daripada semua peranti lain"
+		},
+		"connections": {
+			"title": "Akaun yang disambungkan",
+			"description": "Log masuk ke Baduk dengan akaun ini.",
+			"connectedTo": "Disambungkan ke {{provider}}",
+			"connect": "Sambung",
+			"disconnect": "Putuskan",
+			"note": "Memutuskan sambungan akan mengalih keluar pautan pada Baduk. Anda mungkin masih perlu membatalkan akses di laman lain."
+		},
+		"close": {
+			"title": "Tutup akaun anda",
+			"description": "Menutup akaun akan menyembunyikan profil anda dan mengelog keluar anda di semua tempat.",
+			"button": "Tutup akaun",
+			"dialogTitle": "Tutup akaun anda?",
+			"dialogDescription": "Anda boleh membukanya semula kemudian daripada halaman log masuk.",
+			"feature": "Menutup akaun"
+		}
+	},
+	"languageTime": {
+		"title": "Bahasa & Masa",
+		"description": "Pilih bahasa yang digunakan oleh Baduk dan cara tarikh serta masa dipaparkan.",
+		"language": {
+			"title": "Bahasa",
+			"description": "Perubahan berkuat kuasa serta-merta pada setiap halaman.",
+			"legend": "Bahasa paparan"
+		},
+		"time": {
+			"title": "Masa",
+			"description": "Digunakan untuk cap masa seperti tarikh menyertai dan aktiviti sesi.",
+			"timeZone": "Zon waktu",
+			"automaticTimeZone": "Automatik ({{timeZone}})",
+			"timeFormat": "Jam",
+			"formats": {
+				"auto": "Automatik ({{example}})",
+				"12h": "12 jam ({{example}})",
+				"24h": "24 jam ({{example}})"
+			},
+			"preview": "Pratonton"
+		}
+	}
+}

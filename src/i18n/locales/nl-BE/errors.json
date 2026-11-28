@@ -1,0 +1,34 @@
+{
+	"server": {
+		"unavailable": "De server is niet beschikbaar. Probeer het opnieuw.",
+		"unreachable": "De server is niet bereikbaar. Controleer je verbinding en probeer het opnieuw.",
+		"unexpectedResponse": "De server gaf een onverwacht antwoord. Probeer het opnieuw.",
+		"requestFailed": "Het verzoek kon niet worden voltooid. Probeer het opnieuw."
+	},
+	"rateLimited": {
+		"generic": "Te veel pogingen. Wacht even voor je het opnieuw probeert.",
+		"withDelay_one": "Te veel pogingen. Wacht {{count}} seconde voor je het opnieuw probeert.",
+		"withDelay_other": "Te veel pogingen. Wacht {{count}} seconden voor je het opnieuw probeert."
+	},
+	"unknown": "Er is iets misgegaan. Probeer het opnieuw.",
+	"api": {
+		"invalidCredentials": "De gebruikersnaam, het e-mailadres of het wachtwoord is onjuist.",
+		"twoFactorRequired": "Voer de 6-cijferige code uit je authenticator in om door te gaan.",
+		"invalidTwoFactor": "Die authenticatorcode is onjuist. Probeer het opnieuw.",
+		"emailUnconfirmed": "Bevestig je e-mailadres voor je je aanmeldt.",
+		"accountClosed": "Dit account is gesloten en kan niet aanmelden.",
+		"usernameTaken": "Die gebruikersnaam is al in gebruik. Kies een andere.",
+		"emailTaken": "Dat e-mailadres is al in gebruik.",
+		"invalidToken": "Deze link is ongeldig of verlopen. Vraag een nieuwe e-mail aan om door te gaan.",
+		"unauthorized": "Je aanmeldsessie is verlopen. Begin opnieuw.",
+		"conflict": "Je registratie kon niet worden voltooid. Begin opnieuw.",
+		"forbidden": "Dit verzoek is geblokkeerd. Vernieuw de pagina en probeer het opnieuw."
+	},
+	"validation": {
+		"passwordTooShort": "Gebruik minstens 8 tekens voor je wachtwoord.",
+		"newPasswordTooShort": "Gebruik minstens 8 tekens voor je nieuwe wachtwoord.",
+		"passwordTooLong": "Je wachtwoord mag niet langer zijn dan 72 UTF-8-bytes.",
+		"passwordMismatch": "De nieuwe wachtwoorden komen niet overeen.",
+		"passwordUnchanged": "Kies een ander wachtwoord dan je huidige."
+	}
+}

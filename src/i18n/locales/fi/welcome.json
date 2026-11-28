@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Pelaa Go:ta",
+	"railLabel": "Baduk",
+	"mainNavigation": "Päänavigointi",
+	"play": "Pelaa",
+	"eyebrow": "Tekstiä",
+	"heading": {
+		"label": "Pelaa Go:ta",
+		"prefix": "Pelaa "
+	},
+	"description": {
+		"first": "Tekstiä....",
+		"second": "Muuta tekstiä..."
+	},
+	"footnote": "OTA RAUHALLISESTI."
+}

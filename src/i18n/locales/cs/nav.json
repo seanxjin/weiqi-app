@@ -1,0 +1,29 @@
+{
+	"navigation": "Navigace Baduk",
+	"drawer": {
+		"open": "Otevřít navigaci",
+		"close": "Zavřít navigaci"
+	},
+	"mainNavigation": "Hlavní navigace",
+	"play": "Hrát",
+	"puzzles": "Úlohy",
+	"learn": "Učit se",
+	"guide": {
+		"heading": "S GO ZAČÍNÁTE?",
+		"startWithBasics": "Začněte základy"
+	},
+	"account": {
+		"label": "Účet",
+		"friends": "Přátelé",
+		"messages": "Zprávy",
+		"notifications": "Oznámení",
+		"settings": "Nastavení",
+		"allSettings": "Všechna nastavení"
+	},
+	"theme": {
+		"label": "Motiv",
+		"system": "Podle systému",
+		"light": "Světlý",
+		"dark": "Tmavý"
+	}
+}

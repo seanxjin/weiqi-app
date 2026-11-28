@@ -1,0 +1,35 @@
+{
+	"server": {
+		"unavailable": "Le serveur est indisponible. Veuillez réessayer.",
+		"unreachable": "Impossible de joindre le serveur. Vérifiez votre connexion et réessayez.",
+		"unexpectedResponse": "Le serveur a renvoyé une réponse inattendue. Veuillez réessayer.",
+		"requestFailed": "La requête n’a pas pu aboutir. Veuillez réessayer."
+	},
+	"rateLimited": {
+		"generic": "Trop de tentatives. Veuillez patienter avant de réessayer.",
+		"withDelay_one": "Trop de tentatives. Veuillez patienter {{count}} seconde avant de réessayer.",
+		"withDelay_many": "Trop de tentatives. Veuillez patienter {{count}} secondes avant de réessayer.",
+		"withDelay_other": "Trop de tentatives. Veuillez patienter {{count}} secondes avant de réessayer."
+	},
+	"unknown": "Une erreur s’est produite. Veuillez réessayer.",
+	"api": {
+		"invalidCredentials": "Le nom d’utilisateur, l’e-mail ou le mot de passe est incorrect.",
+		"twoFactorRequired": "Saisissez le code à 6 chiffres de votre application d’authentification pour continuer.",
+		"invalidTwoFactor": "Ce code d’authentification est incorrect. Veuillez réessayer.",
+		"emailUnconfirmed": "Veuillez confirmer votre adresse e-mail avant de vous connecter.",
+		"accountClosed": "Ce compte est fermé et ne peut pas se connecter.",
+		"usernameTaken": "Ce nom d’utilisateur est déjà pris. Veuillez en choisir un autre.",
+		"emailTaken": "Cette adresse e-mail est déjà utilisée.",
+		"invalidToken": "Ce lien est invalide ou a expiré. Demandez un nouvel e-mail pour continuer.",
+		"unauthorized": "Votre session de connexion a expiré. Veuillez recommencer.",
+		"conflict": "Votre inscription n’a pas pu aboutir. Veuillez recommencer.",
+		"forbidden": "Cette requête a été bloquée. Actualisez la page et réessayez."
+	},
+	"validation": {
+		"passwordTooShort": "Utilisez au moins 8 caractères pour votre mot de passe.",
+		"newPasswordTooShort": "Utilisez au moins 8 caractères pour votre nouveau mot de passe.",
+		"passwordTooLong": "Votre mot de passe ne doit pas dépasser 72 octets UTF-8.",
+		"passwordMismatch": "Les nouveaux mots de passe ne correspondent pas.",
+		"passwordUnchanged": "Choisissez un mot de passe différent de l’actuel."
+	}
+}

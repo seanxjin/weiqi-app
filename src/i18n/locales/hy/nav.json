@@ -1,0 +1,29 @@
+{
+	"navigation": "Baduk նավիգացիա",
+	"drawer": {
+		"open": "Բացել նավիգացիան",
+		"close": "Փակել նավիգացիան"
+	},
+	"mainNavigation": "Գլխավոր նավիգացիա",
+	"play": "Խաղալ",
+	"puzzles": "Խնդիրներ",
+	"learn": "Սովորել",
+	"guide": {
+		"heading": "ՆՈՐ ԵՔ ԳՈ-ՈՒՄ՞",
+		"startWithBasics": "Սկսեք հիմունքներից"
+	},
+	"account": {
+		"label": "Հաշիվ",
+		"friends": "Ընկերներ",
+		"messages": "Հաղորդագրություններ",
+		"notifications": "Ծանուցումներ",
+		"settings": "Կարգավորումներ",
+		"allSettings": "Բոլոր կարգավորումները"
+	},
+	"theme": {
+		"label": "Թեմա",
+		"system": "Համակարգային",
+		"light": "Բաց",
+		"dark": "Մուգ"
+	}
+}

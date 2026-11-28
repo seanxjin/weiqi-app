@@ -1,0 +1,29 @@
+{
+	"navigation": "Valmynd Baduk",
+	"drawer": {
+		"open": "Opna valmynd",
+		"close": "Loka valmynd"
+	},
+	"mainNavigation": "Aðalvalmynd",
+	"play": "Spila",
+	"puzzles": "Þrautir",
+	"learn": "Læra",
+	"guide": {
+		"heading": "NÝ/R Í GO?",
+		"startWithBasics": "Byrjaðu á grunnatriðunum"
+	},
+	"account": {
+		"label": "Aðgangur",
+		"friends": "Vinir",
+		"messages": "Skilaboð",
+		"notifications": "Tilkynningar",
+		"settings": "Stillingar",
+		"allSettings": "Allar stillingar"
+	},
+	"theme": {
+		"label": "Þema",
+		"system": "Kerfi",
+		"light": "Ljóst",
+		"dark": "Dökkt"
+	}
+}

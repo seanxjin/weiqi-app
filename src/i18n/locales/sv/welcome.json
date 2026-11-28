@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Spela Go",
+	"railLabel": "Baduk",
+	"mainNavigation": "Huvudnavigering",
+	"play": "Spela",
+	"eyebrow": "Lite text",
+	"heading": {
+		"label": "Spela Go",
+		"prefix": "Spela "
+	},
+	"description": {
+		"first": "Lite text....",
+		"second": "Lite annan text..."
+	},
+	"footnote": "TA DIN TID."
+}

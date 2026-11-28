@@ -1,0 +1,29 @@
+{
+	"navigation": "Baduk-Navigation",
+	"drawer": {
+		"open": "Navigation öffnen",
+		"close": "Navigation schließen"
+	},
+	"mainNavigation": "Hauptnavigation",
+	"play": "Spielen",
+	"puzzles": "Aufgaben",
+	"learn": "Lernen",
+	"guide": {
+		"heading": "NEU BEIM GO?",
+		"startWithBasics": "Beginne mit den Grundlagen"
+	},
+	"account": {
+		"label": "Konto",
+		"friends": "Freunde",
+		"messages": "Nachrichten",
+		"notifications": "Benachrichtigungen",
+		"settings": "Einstellungen",
+		"allSettings": "Alle Einstellungen"
+	},
+	"theme": {
+		"label": "Design",
+		"system": "System",
+		"light": "Hell",
+		"dark": "Dunkel"
+	}
+}

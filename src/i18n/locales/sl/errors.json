@@ -1,0 +1,36 @@
+{
+	"server": {
+		"unavailable": "Strežnik ni na voljo. Poskusite znova.",
+		"unreachable": "Strežnika ni mogoče doseči. Preverite povezavo in poskusite znova.",
+		"unexpectedResponse": "Strežnik je vrnil nepričakovan odgovor. Poskusite znova.",
+		"requestFailed": "Zahteve ni bilo mogoče dokončati. Poskusite znova."
+	},
+	"rateLimited": {
+		"generic": "Preveč poskusov. Pred naslednjim poskusom nekoliko počakajte.",
+		"withDelay_one": "Preveč poskusov. Pred naslednjim poskusom počakajte {{count}} sekundo.",
+		"withDelay_two": "Preveč poskusov. Pred naslednjim poskusom počakajte {{count}} sekundi.",
+		"withDelay_few": "Preveč poskusov. Pred naslednjim poskusom počakajte {{count}} sekunde.",
+		"withDelay_other": "Preveč poskusov. Pred naslednjim poskusom počakajte {{count}} sekund."
+	},
+	"unknown": "Prišlo je do napake. Poskusite znova.",
+	"api": {
+		"invalidCredentials": "Uporabniško ime, e-pošta ali geslo ni pravilno.",
+		"twoFactorRequired": "Za nadaljevanje vnesite 6-mestno kodo iz avtentikatorja.",
+		"invalidTwoFactor": "Koda iz avtentikatorja ni pravilna. Poskusite znova.",
+		"emailUnconfirmed": "Pred prijavo potrdite e-poštni naslov.",
+		"accountClosed": "Ta račun je zaprt, zato prijava ni mogoča.",
+		"usernameTaken": "To uporabniško ime je že zasedeno. Izberite drugo.",
+		"emailTaken": "Ta e-poštni naslov je že v uporabi.",
+		"invalidToken": "Ta povezava ni veljavna ali je potekla. Za nadaljevanje zahtevajte novo e-pošto.",
+		"unauthorized": "Seja prijave je potekla. Začnite znova.",
+		"conflict": "Registracije ni bilo mogoče dokončati. Začnite znova.",
+		"forbidden": "Ta zahteva je bila blokirana. Osvežite stran in poskusite znova."
+	},
+	"validation": {
+		"passwordTooShort": "Geslo mora imeti vsaj 8 znakov.",
+		"newPasswordTooShort": "Novo geslo mora imeti vsaj 8 znakov.",
+		"passwordTooLong": "Geslo ne sme presegati 72 bajtov UTF-8.",
+		"passwordMismatch": "Novi gesli se ne ujemata.",
+		"passwordUnchanged": "Izberite geslo, ki se razlikuje od trenutnega."
+	}
+}

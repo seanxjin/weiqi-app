@@ -1,0 +1,36 @@
+{
+	"server": {
+		"unavailable": "Server není dostupný. Zkuste to prosím znovu.",
+		"unreachable": "Nelze se spojit se serverem. Zkontrolujte připojení a zkuste to znovu.",
+		"unexpectedResponse": "Server vrátil neočekávanou odpověď. Zkuste to prosím znovu.",
+		"requestFailed": "Požadavek se nepodařilo dokončit. Zkuste to prosím znovu."
+	},
+	"rateLimited": {
+		"generic": "Příliš mnoho pokusů. Před dalším pokusem chvíli počkejte.",
+		"withDelay_one": "Příliš mnoho pokusů. Před dalším pokusem počkejte {{count}} sekundu.",
+		"withDelay_few": "Příliš mnoho pokusů. Před dalším pokusem počkejte {{count}} sekundy.",
+		"withDelay_many": "Příliš mnoho pokusů. Před dalším pokusem počkejte {{count}} sekundy.",
+		"withDelay_other": "Příliš mnoho pokusů. Před dalším pokusem počkejte {{count}} sekund."
+	},
+	"unknown": "Něco se pokazilo. Zkuste to prosím znovu.",
+	"api": {
+		"invalidCredentials": "Uživatelské jméno, e-mail nebo heslo není správné.",
+		"twoFactorRequired": "Pokračujte zadáním 6místného kódu z ověřovací aplikace.",
+		"invalidTwoFactor": "Ověřovací kód není správný. Zkuste to prosím znovu.",
+		"emailUnconfirmed": "Před přihlášením prosím potvrďte svou e-mailovou adresu.",
+		"accountClosed": "Tento účet je zrušen a nelze se k němu přihlásit.",
+		"usernameTaken": "Toto uživatelské jméno je již obsazené. Zvolte prosím jiné.",
+		"emailTaken": "Tato e-mailová adresa se již používá.",
+		"invalidToken": "Tento odkaz je neplatný nebo vypršel. Pokračujte vyžádáním nového e-mailu.",
+		"unauthorized": "Platnost přihlášení vypršela. Začněte prosím znovu.",
+		"conflict": "Registraci se nepodařilo dokončit. Začněte prosím znovu.",
+		"forbidden": "Tento požadavek byl zablokován. Obnovte stránku a zkuste to znovu."
+	},
+	"validation": {
+		"passwordTooShort": "Heslo musí mít alespoň 8 znaků.",
+		"newPasswordTooShort": "Nové heslo musí mít alespoň 8 znaků.",
+		"passwordTooLong": "Heslo nesmí přesáhnout 72 bajtů UTF-8.",
+		"passwordMismatch": "Nová hesla se neshodují.",
+		"passwordUnchanged": "Zvolte heslo odlišné od současného."
+	}
+}

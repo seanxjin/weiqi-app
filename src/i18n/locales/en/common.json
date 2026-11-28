@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "BADUK",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Baduk home",
+	"actions": {
+		"save": "Save",
+		"saving": "Saving…",
+		"cancel": "Cancel",
+		"back": "Back",
+		"retry": "Retry",
+		"close": "Close",
+		"login": "Login",
+		"signIn": "Sign in",
+		"signUp": "Sign Up",
+		"logOut": "Log out",
+		"loggingOut": "Logging out…"
+	},
+	"status": {
+		"saved": "Saved",
+		"loading": "Loading…",
+		"checkingSession": "Checking your session…",
+		"sessionError": "Unable to check your session. Please try again."
+	},
+	"comingSoon": "{{feature}} is coming soon.",
+	"language": "Language",
+	"languageDialog": {
+		"title": "Choose Your Preferred Language",
+		"loadError": "That language could not be loaded. Please try again."
+	}
+}

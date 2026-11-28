@@ -1,0 +1,211 @@
+{
+	"header": {
+		"title": "Setări",
+		"sectionTitle": "Setări: {{section}}",
+		"navLabel": "Secțiuni de setări"
+	},
+	"sections": {
+		"board": "Tablă și pietre",
+		"gameplay": "Joc",
+		"profile": "Profil",
+		"social": "Social și confidențialitate",
+		"account": "Cont și securitate",
+		"language": "Limbă și oră"
+	},
+	"board": {
+		"description": "Alege tabla și pietrele cu care joci.",
+		"appearance": {
+			"title": "Aspect",
+			"boardLegend": "Tablă",
+			"stonesLegend": "Pietre",
+			"previewLabel": "Previzualizare tablă"
+		},
+		"themes": {
+			"kaya": "Kaya japonez tradițional",
+			"walnut": "Nuc închis",
+			"ash": "Frasin scandinav deschis"
+		},
+		"stoneStyles": {
+			"polished": "Ardezie",
+			"satin": "Ceramică",
+			"matte": "Piatră naturală",
+			"snow": "Scoică · Yuki / Calitatea Zăpadă"
+		},
+		"display": {
+			"title": "Afișarea tablei",
+			"coordinates": {
+				"label": "Afișează coordonatele",
+				"description": "Etichetează coloanele și rândurile de pe marginea tablei."
+			},
+			"lastMove": {
+				"label": "Evidențiază ultima mutare",
+				"description": "Marchează piatra jucată cel mai recent."
+			}
+		},
+		"sounds": {
+			"title": "Sunete",
+			"playSounds": {
+				"label": "Redă sunete",
+				"description": "Plasarea pietrelor, capturi și avertizări ale ceasului."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Gestionează cum plasezi pietrele și cine te poate provoca.",
+		"moves": {
+			"title": "Efectuarea mutărilor",
+			"description": "Cere un al doilea clic înainte de plasarea pietrei, pentru a evita clicurile greșite.",
+			"legend": "Confirmă mutările",
+			"options": {
+				"never": "Niciodată",
+				"correspondence": "Doar în partidele prin corespondență",
+				"always": "Întotdeauna"
+			}
+		},
+		"challenges": {
+			"title": "Provocări",
+			"description": "Alege cine îți poate trimite provocări la joc.",
+			"legend": "Permite provocări de la",
+			"options": {
+				"everyone": "Toată lumea",
+				"registered": "Jucători înregistrați",
+				"following": "Doar jucătorii pe care îi urmăresc",
+				"nobody": "Nimeni (revanșele sunt în continuare permise)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Tot ce este aici este vizibil pe <profileLink>profilul tău public</profileLink>.",
+		"publicProfile": {
+			"title": "Profil public",
+			"bioLabel": "Scurtă descriere",
+			"bioPlaceholder": "Scurta ta descriere va apărea pe profil.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Detalii",
+			"joinDate": "Data înscrierii",
+			"username": "Nume de utilizator",
+			"changeUsername": "Schimbă",
+			"changeUsernameFeature": "Schimbarea numelui de utilizator",
+			"realName": "Nume real",
+			"location": "Localitate",
+			"country": "Țară",
+			"countryNotSet": "Nesetată",
+			"rank": "Rang",
+			"rankPlaceholder": "ex. 12k, 3d",
+			"rankHint": "Folosește 30k–1k, 1d–9d sau 1p–9p."
+		},
+		"links": {
+			"legend": "Linkuri",
+			"linkLabel": "Linkul {{number}}",
+			"remove": "Elimină",
+			"removeLabel": "Elimină linkul {{number}}",
+			"add": "Adaugă un link"
+		}
+	},
+	"social": {
+		"description": "Gestionează jucătorii pe care îi urmărești și pe cei pe care i-ai blocat.",
+		"blocking": {
+			"title": "Blocări",
+			"description_one": "Blochezi {{count}} jucător. Jucătorii blocați nu te pot provoca și nu îți pot trimite mesaje.",
+			"description_few": "Blochezi {{count}} jucători. Jucătorii blocați nu te pot provoca și nu îți pot trimite mesaje.",
+			"description_other": "Blochezi {{count}} de jucători. Jucătorii blocați nu te pot provoca și nu îți pot trimite mesaje.",
+			"empty": "Nu blochezi pe nimeni.",
+			"action": "Deblochează",
+			"actionLabel": "Deblochează pe {{username}}"
+		},
+		"following": {
+			"title": "Urmăriți",
+			"description_one": "Urmărești {{count}} jucător.",
+			"description_few": "Urmărești {{count}} jucători.",
+			"description_other": "Urmărești {{count}} de jucători.",
+			"empty": "Încă nu urmărești pe nimeni.",
+			"action": "Nu mai urmări",
+			"actionLabel": "Nu mai urmări pe {{username}}"
+		}
+	},
+	"account": {
+		"description": "Schimbă-ți parola, securizează-ți contul și gestionează conturile conectate.",
+		"password": {
+			"title": "Schimbă parola",
+			"updated": "Parola a fost actualizată",
+			"fields": {
+				"currentPassword": {
+					"label": "Parola actuală",
+					"show": "Afișează parola actuală",
+					"hide": "Ascunde parola actuală"
+				},
+				"newPassword": {
+					"label": "Parola nouă",
+					"show": "Afișează parola nouă",
+					"hide": "Ascunde parola nouă"
+				},
+				"confirmPassword": {
+					"label": "Reintrodu parola",
+					"show": "Afișează parola reintrodusă",
+					"hide": "Ascunde parola reintrodusă"
+				}
+			}
+		},
+		"contact": {
+			"title": "Informații de contact",
+			"email": "Adresă de e-mail",
+			"edit": "Editează",
+			"editFeature": "Schimbarea adresei de e-mail"
+		},
+		"twoFactor": {
+			"title": "Autentificare în doi pași",
+			"description": "Solicită un cod dintr-o aplicație de autentificare la conectare.",
+			"off": "Dezactivată",
+			"enable": "Activează",
+			"feature": "Autentificarea în doi pași"
+		},
+		"sessions": {
+			"title": "Sesiuni active",
+			"description": "Dacă bănuiești că ți-a fost compromis contul, schimbă-ți parola și deconectează-te de peste tot.",
+			"thisDevice": "Acest dispozitiv",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "Deconectează {{device}}",
+			"logOutAll": "Deconectează-te de pe toate celelalte dispozitive"
+		},
+		"connections": {
+			"title": "Conturi conectate",
+			"description": "Conectează-te la Baduk cu aceste conturi.",
+			"connectedTo": "Conectat la {{provider}}",
+			"connect": "Conectează",
+			"disconnect": "Deconectează",
+			"note": "Deconectarea elimină legătura pe Baduk. S-ar putea să fie nevoie să revoci accesul și pe celălalt site."
+		},
+		"close": {
+			"title": "Închide-ți contul",
+			"description": "Închiderea contului îți ascunde profilul și te deconectează de peste tot.",
+			"button": "Închide contul",
+			"dialogTitle": "Închizi contul?",
+			"dialogDescription": "Îl poți redeschide mai târziu din pagina de conectare.",
+			"feature": "Închiderea contului"
+		}
+	},
+	"languageTime": {
+		"title": "Limbă și oră",
+		"description": "Alege limba folosită de Baduk și modul de afișare a datelor și orelor.",
+		"language": {
+			"title": "Limbă",
+			"description": "Modificările se aplică imediat pe toate paginile.",
+			"legend": "Limba de afișare"
+		},
+		"time": {
+			"title": "Oră",
+			"description": "Folosită pentru marcaje temporale, precum data înscrierii și activitatea sesiunilor.",
+			"timeZone": "Fus orar",
+			"automaticTimeZone": "Automat ({{timeZone}})",
+			"timeFormat": "Ceas",
+			"formats": {
+				"auto": "Automat ({{example}})",
+				"12h": "12 ore ({{example}})",
+				"24h": "24 de ore ({{example}})"
+			},
+			"preview": "Previzualizare"
+		}
+	}
+}

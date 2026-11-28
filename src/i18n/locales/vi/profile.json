@@ -1,0 +1,18 @@
+{
+	"editProfile": "Sửa hồ sơ",
+	"meta": {
+		"joined": "Tham gia",
+		"rank": "Đẳng cấp",
+		"noRank": "—",
+		"followers": "Người theo dõi",
+		"following": "Đang theo dõi"
+	},
+	"about": {
+		"heading": "Giới thiệu",
+		"noBio": "Chưa có phần giới thiệu."
+	},
+	"games": {
+		"heading": "Lịch sử ván cờ",
+		"empty": "Chưa có ván cờ nào."
+	}
+}

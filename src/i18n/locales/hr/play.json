@@ -1,0 +1,117 @@
+{
+	"home": {
+		"pageTitle": "Igraj",
+		"location": "IGRAJ / POČETNA",
+		"signedInAs": "Prijavljeni ste kao {{username}}",
+		"guest": "Igrate kao gost",
+		"logoutError": "Odjava nije uspjela. Pokušajte ponovno.",
+		"introduction": {
+			"heading": "Neki tekst",
+			"body": "Neki drugi tekst"
+		},
+		"menuHeading": "Neki tekst.",
+		"options": {
+			"online": {
+				"label": "Igraj na mreži",
+				"description": "Pronađite protivnika. Vidimo se za pločom."
+			},
+			"local": {
+				"label": "Igraj lokalno",
+				"description": "Jedna ploča. Dva igrača. Zajednički zaslon."
+			},
+			"friend": {
+				"label": "Igraj s prijateljem",
+				"description": "Pozovite nekoga na promišljenu partiju."
+			},
+			"puzzles": {
+				"label": "Rješavaj zadatke",
+				"description": "Mali izazovi. Oštriji instinkt."
+			},
+			"lessons": {
+				"label": "Lekcije",
+				"description": "Od prvog kamenčića do novog uvida."
+			},
+			"bots": {
+				"label": "Igraj protiv botova",
+				"description": "Vježbajte svojim tempom, na bilo kojoj razini."
+			}
+		},
+		"presence_one": "{{count, number}} igrač dijeli ploču",
+		"presence_few": "{{count, number}} igrača dijele ploču",
+		"presence_other": "{{count, number}} igrača dijeli ploču",
+		"reserved": {
+			"label": "ODJELJAK ZA KASNIJE",
+			"heading": "Rezervirano za budući sadržaj",
+			"body": "Ovaj je odjeljak zasad namjerno prazan. Koristit će se za buduće značajke, novosti ili odabrani sadržaj."
+		},
+		"footerTagline": "Jednostavna pravila. Beskrajno otkrivanje."
+	},
+	"materials": {
+		"pageTitle": "Ploče i kamenčići",
+		"breadcrumb": "Baduk / Knjižnica materijala",
+		"collection": "Kolekcija 01",
+		"heading": "Ploče i kamenčići.",
+		"introduction": "Prirodni materijali. Tihi detalji. Mjesto za igru.",
+		"boardsSection": {
+			"title": "Ploče",
+			"meta": "Tri vrste drva · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Kamenčići",
+			"meta": "Četiri stila · crni i bijeli"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Studija materijala",
+			"enlarged": "Uvećani uzorci",
+			"heading": "Tihi kontrast.",
+			"body": "Četiri površine. Crno i bijelo, u istom mekom svjetlu.",
+			"scale": "Uvećani uzorci · jednako mjerilo",
+			"form": "Glatki, zaobljeni oblik / suptilne varijacije površine"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Tradicionalna japanska kaya",
+				"material": "Topli med · ravna žila"
+			},
+			"walnut": {
+				"name": "Tamni orah",
+				"material": "Duboka smeđa · valovita žila"
+			},
+			"ash": {
+				"name": "Svijetli skandinavski jasen",
+				"material": "Svijetlo drvo · nježna žila"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Polirano",
+				"name": "Škriljevac",
+				"description": "Glatke, polirane površine s tihom mineralnom teksturom.",
+				"black": "Crni škriljevac",
+				"white": "Bijeli škriljevac"
+			},
+			"satin": {
+				"finish": "Satenski",
+				"name": "Keramika",
+				"description": "Raspršeni sjaj i nježno, ujednačeno fino zrno.",
+				"black": "Crna keramika",
+				"white": "Bijela keramika"
+			},
+			"matte": {
+				"finish": "Mat",
+				"name": "Prirodni kamen",
+				"description": "Tihe mineralne pjege pod glatkom, suhom završnom obradom.",
+				"black": "Crni kamen",
+				"white": "Bijeli kamen"
+			},
+			"snow": {
+				"finish": "Polirano",
+				"name": "Školjka · Yuki / Snježna kvaliteta",
+				"description": "Fina, gusta žila školjke na mliječnobijeloj podlozi, uparena s poliranim crnim škriljevcem.",
+				"black": "Crni Nachiguro škriljevac",
+				"white": "Bijela Yuki školjka"
+			}
+		},
+		"footerTagline": "Ono bitno, promišljeno."
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"navigation": "Baduk navigācija",
+	"drawer": {
+		"open": "Atvērt navigāciju",
+		"close": "Aizvērt navigāciju"
+	},
+	"mainNavigation": "Galvenā navigācija",
+	"play": "Spēlēt",
+	"puzzles": "Uzdevumi",
+	"learn": "Mācīties",
+	"guide": {
+		"heading": "PIRMO REIZI GO?",
+		"startWithBasics": "Sāc ar pamatiem"
+	},
+	"account": {
+		"label": "Konts",
+		"friends": "Draugi",
+		"messages": "Ziņojumi",
+		"notifications": "Paziņojumi",
+		"settings": "Iestatījumi",
+		"allSettings": "Visi iestatījumi"
+	},
+	"theme": {
+		"label": "Motīvs",
+		"system": "Sistēmas",
+		"light": "Gaišs",
+		"dark": "Tumšs"
+	}
+}

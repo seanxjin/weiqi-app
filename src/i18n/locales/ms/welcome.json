@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Main Go",
+	"railLabel": "Baduk",
+	"mainNavigation": "Navigasi utama",
+	"play": "Main",
+	"eyebrow": "Sedikit teks",
+	"heading": {
+		"label": "Main Go",
+		"prefix": "Main "
+	},
+	"description": {
+		"first": "Sedikit teks....",
+		"second": "Sedikit teks lain..."
+	},
+	"footnote": "AMBIL MASA ANDA."
+}

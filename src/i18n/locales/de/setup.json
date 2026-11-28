@@ -1,0 +1,85 @@
+{
+	"page": {
+		"title": {
+			"local": "Lokale Partie einrichten",
+			"online": "Online-Partie einrichten"
+		},
+		"label": {
+			"local": "Lokale Partie einrichten",
+			"online": "Online-Partie einrichten"
+		},
+		"backToMenu": "Zurück zum Menü",
+		"settingsLabel": "Spieleinstellungen",
+		"timeLimitsNotice": "Zeitlimits werden noch nicht durchgesetzt.",
+		"boardSize": "BRETTGRÖSSE",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Partie wird erstellt…",
+		"startGame": "Spiel starten",
+		"createFailed": "Die Partie konnte nicht erstellt werden. Bitte versuche es erneut."
+	},
+	"players": {
+		"player1": "Spieler 1",
+		"player2": "Spieler 2",
+		"opponent": "Gegner",
+		"guest": "Du (Gast)"
+	},
+	"configuration": {
+		"eyebrow": "KONFIGURATIONEN",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Eigene · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Mehr Bedenkzeiten",
+		"fewerControls": "Weniger Bedenkzeiten",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Blitz",
+			"rapid": "Schnell",
+			"classical": "Klassisch",
+			"correspondence": "Fernpartie",
+			"untimed": "Ohne Zeit"
+		},
+		"systems": {
+			"absolute": "Absolut",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Japanisches Byo-yomi"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} Sek.",
+			"absoluteMinutes": "{{minutes}} Min.",
+			"mainSeconds": "{{seconds}} s",
+			"mainMinutes": "{{minutes}} min",
+			"fischer": "{{main}} + {{increment}} s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}} s",
+			"daysPerMove_one": "{{count}} Tag / Zug",
+			"daysPerMove_other": "{{count}} Tage / Zug"
+		},
+		"noTimeLimit": "Ohne Zeitlimit"
+	},
+	"customTime": {
+		"label": "Eigene Bedenkzeit",
+		"eyebrow": "EIGENE BEDENKZEIT",
+		"heading": "Stelle deine eigene Uhr ein",
+		"system": "System",
+		"fields": {
+			"minutes": "Grundzeit · Min.",
+			"seconds": "Grundzeit · Sek.",
+			"increment": "Zuschlag · Sek.",
+			"periods": "Perioden",
+			"periodSeconds": "Periode · Sek."
+		},
+		"hints": {
+			"byoYomi": "Die Nachspielzeit besteht aus einer festen Anzahl von Perioden.",
+			"default": "Wähle ein System und gib dann die Uhrwerte ein."
+		},
+		"apply": "Eigene Zeit verwenden",
+		"errors": {
+			"wholeNumbers": "Gib in jedes Uhrfeld eine nichtnegative ganze Zahl ein.",
+			"mainSeconds": "Die Sekunden der Grundzeit müssen zwischen 0 und 59 liegen.",
+			"byoYomiPeriods": "Byo-yomi braucht mindestens eine Periode von mindestens einer Sekunde.",
+			"mainTime": "Die Grundzeit muss größer als null sein."
+		}
+	}
+}

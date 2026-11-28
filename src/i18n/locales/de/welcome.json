@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Go spielen",
+	"railLabel": "Baduk",
+	"mainNavigation": "Hauptnavigation",
+	"play": "Spielen",
+	"eyebrow": "Etwas Text",
+	"heading": {
+		"label": "Go spielen",
+		"prefix": "Spiele "
+	},
+	"description": {
+		"first": "Etwas Text …",
+		"second": "Weiterer Text …"
+	},
+	"footnote": "LASS DIR ZEIT."
+}

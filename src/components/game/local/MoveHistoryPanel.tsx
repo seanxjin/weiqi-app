@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import type { LocalGameSnapshot } from "@/controllers/LocalGameController";
 import headingDivider from "@/assets/icons/game/heading-divider.svg";
 import blackKey from "@/assets/icons/game/black-key.svg";
@@ -17,6 +18,7 @@ interface Props {
 }
 
 export function MoveHistoryPanel({ snapshot, onView, onUndo }: Props) {
+	const { t } = useTranslation("game");
 	const scroll = useRef<HTMLDivElement>(null);
 	const viewed = snapshot?.viewedMoveIndex ?? 0;
 	const latest = snapshot?.latestMoveIndex ?? 0;
@@ -37,23 +39,21 @@ export function MoveHistoryPanel({ snapshot, onView, onUndo }: Props) {
 	}, [viewed, latest]);
 
 	const navigation = [
-		{ label: "Start", icon: skipBack, index: 0, disabled: viewed === 0 },
-		{ label: "Previous", icon: previous, index: viewed - 1, disabled: viewed === 0 },
-		{ label: "Next", icon: next, index: viewed + 1, disabled: viewed === latest },
-		{ label: "Current", icon: skipForward, index: latest, disabled: viewed === latest },
+		{ label: t("history.navigation.start"), icon: skipBack, index: 0, disabled: viewed === 0 },
+		{ label: t("history.navigation.previous"), icon: previous, index: viewed - 1, disabled: viewed === 0 },
+		{ label: t("history.navigation.next"), icon: next, index: viewed + 1, disabled: viewed === latest },
+		{ label: t("history.navigation.current"), icon: skipForward, index: latest, disabled: viewed === latest },
 	];
 
 	return (
-		<aside className="local-game__history" aria-label="Move history">
+		<aside className="local-game__history" aria-label={t("history.label")}>
 			<div className="local-game__history-heading">
-				<h2>Moves</h2>
-				<span>
-					{latest} {latest === 1 ? "MOVE" : "MOVES"}
-				</span>
+				<h2>{t("history.heading")}</h2>
+				<span>{t("history.moveCount", { count: latest })}</span>
 			</div>
 			<img className="local-game__heading-divider" src={headingDivider} alt="" />
 			<div className="local-game__move-scroll" ref={scroll}>
-				<table className="local-game__move-table" aria-label="Black and White moves">
+				<table className="local-game__move-table" aria-label={t("history.tableLabel")}>
 					<colgroup>
 						<col className="local-game__pair-column" />
 						<col />
@@ -63,18 +63,18 @@ export function MoveHistoryPanel({ snapshot, onView, onUndo }: Props) {
 						<tr>
 							<th scope="col">
 								<span aria-hidden="true">#</span>
-								<span className="local-game__sr-only">Pair</span>
+								<span className="local-game__sr-only">{t("history.pair")}</span>
 							</th>
 							<th scope="col">
 								<span>
-									<img src={blackKey} alt="" />
-									Black
+									<img className="stone-key" src={blackKey} alt="" />
+									{t("colors.black")}
 								</span>
 							</th>
 							<th scope="col">
 								<span>
-									<img src={whiteKey} alt="" />
-									White
+									<img className="stone-key" src={whiteKey} alt="" />
+									{t("colors.white")}
 								</span>
 							</th>
 						</tr>
@@ -89,10 +89,14 @@ export function MoveHistoryPanel({ snapshot, onView, onUndo }: Props) {
 											<button
 												type="button"
 												aria-current={viewed === move.number ? "step" : undefined}
-												aria-label={`Move ${move.number}, ${move.color === "black" ? "Black" : "White"}, ${move.label}`}
+												aria-label={t("history.move", {
+													number: move.number,
+													color: t(`colors.${move.color}`),
+													move: move.point ? move.label : t("pass"),
+												})}
 												onClick={() => onView?.(move.number)}
 											>
-												{move.label}
+												{move.point ? move.label : t("pass")}
 												{viewed === move.number && <img src={currentMove} alt="" />}
 											</button>
 										)}
@@ -103,7 +107,7 @@ export function MoveHistoryPanel({ snapshot, onView, onUndo }: Props) {
 						{!moves.length && (
 							<tr>
 								<td colSpan={3} className="local-game__empty">
-									No moves yet.
+									{t("history.empty")}
 								</td>
 							</tr>
 						)}
@@ -112,12 +116,10 @@ export function MoveHistoryPanel({ snapshot, onView, onUndo }: Props) {
 			</div>
 			<div className="local-game__review-controls">
 				<div className="local-game__position" role="status" aria-live="polite" aria-atomic="true">
-					<span>
-						Move {viewed} of {latest}
-					</span>
-					<span>{viewed === latest ? "CURRENT POSITION" : "REVIEWING"}</span>
+					<span>{t("history.position", { viewed, latest })}</span>
+					<span>{viewed === latest ? t("history.currentPosition") : t("history.reviewing")}</span>
 				</div>
-				<nav className="local-game__navigation" aria-label="Move history navigation">
+				<nav className="local-game__navigation" aria-label={t("history.navigationLabel")}>
 					{navigation.map((control) => (
 						<div key={control.label}>
 							<button
@@ -126,7 +128,7 @@ export function MoveHistoryPanel({ snapshot, onView, onUndo }: Props) {
 								disabled={!snapshot || control.disabled}
 								onClick={() => onView?.(control.index)}
 							>
-								<img src={control.icon} alt="" />
+								<img className="directional-icon" src={control.icon} alt="" />
 							</button>
 							<span aria-hidden="true">{control.label}</span>
 						</div>
@@ -134,9 +136,9 @@ export function MoveHistoryPanel({ snapshot, onView, onUndo }: Props) {
 				</nav>
 				<button className="local-game__undo" type="button" disabled={!snapshot?.canUndo} onClick={onUndo}>
 					<img src={undo} alt="" />
-					Undo last move
+					{t("history.undo")}
 				</button>
-				<p className="local-game__encouragement">Take your time. Every move matters.</p>
+				<p className="local-game__encouragement">{t("history.encouragement")}</p>
 			</div>
 		</aside>
 	);

@@ -1,0 +1,85 @@
+{
+	"page": {
+		"title": {
+			"local": "Yerel Oyun Kurulumu",
+			"online": "Çevrim İçi Oyun Kurulumu"
+		},
+		"label": {
+			"local": "Yerel oyun kurulumu",
+			"online": "Çevrim içi oyun kurulumu"
+		},
+		"backToMenu": "Menüye dön",
+		"settingsLabel": "Oyun ayarları",
+		"timeLimitsNotice": "Süre sınırları henüz uygulanmıyor.",
+		"boardSize": "TAHTA BOYUTU",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Oyun oluşturuluyor…",
+		"startGame": "Oyunu başlat",
+		"createFailed": "Oyun oluşturulamadı. Lütfen tekrar deneyin."
+	},
+	"players": {
+		"player1": "Oyuncu 1",
+		"player2": "Oyuncu 2",
+		"opponent": "Rakip",
+		"guest": "Siz (Misafir)"
+	},
+	"configuration": {
+		"eyebrow": "YAPILANDIRMALAR",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Özel · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Daha Fazla Süre Seçeneği",
+		"fewerControls": "Daha Az Süre Seçeneği",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Blitz",
+			"rapid": "Hızlı",
+			"classical": "Klasik",
+			"correspondence": "Yazışmalı",
+			"untimed": "Süresiz"
+		},
+		"systems": {
+			"absolute": "Mutlak",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Japon Byo-yomi"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} sn",
+			"absoluteMinutes": "{{minutes}} dk",
+			"mainSeconds": "{{seconds}} sn",
+			"mainMinutes": "{{minutes}} dk",
+			"fischer": "{{main}} + {{increment}} sn",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}} sn",
+			"daysPerMove_one": "{{count}} gün / hamle",
+			"daysPerMove_other": "{{count}} gün / hamle"
+		},
+		"noTimeLimit": "Zaman sınırı yok"
+	},
+	"customTime": {
+		"label": "Özel süre kontrolü",
+		"eyebrow": "ÖZEL SÜRE KONTROLÜ",
+		"heading": "Kendi saatinizi ayarlayın",
+		"system": "Sistem",
+		"fields": {
+			"minutes": "Ana süre · dk",
+			"seconds": "Ana süre · sn",
+			"increment": "Artış · sn",
+			"periods": "Periyotlar",
+			"periodSeconds": "Periyot · sn"
+		},
+		"hints": {
+			"byoYomi": "Ek süre, sabit sayıda zamanlı periyottan oluşur.",
+			"default": "Bir sistem seçin, ardından saat değerlerini girin."
+		},
+		"apply": "Özel süreyi kullan",
+		"errors": {
+			"wholeNumbers": "Her saat alanına negatif olmayan bir tam sayı girin.",
+			"mainSeconds": "Ana süre saniyesi 0 ile 59 arasında olmalıdır.",
+			"byoYomiPeriods": "Byo-yomi için en az bir saniye süren en az bir periyot gerekir.",
+			"mainTime": "Ana süreyi sıfırdan büyük ayarlayın."
+		}
+	}
+}

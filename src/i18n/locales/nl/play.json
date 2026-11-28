@@ -1,0 +1,116 @@
+{
+	"home": {
+		"pageTitle": "Spelen",
+		"location": "SPELEN / START",
+		"signedInAs": "Ingelogd als {{username}}",
+		"guest": "Je speelt als gast",
+		"logoutError": "Uitloggen is niet gelukt. Probeer het opnieuw.",
+		"introduction": {
+			"heading": "Wat tekst",
+			"body": "Wat andere tekst"
+		},
+		"menuHeading": "Wat tekst.",
+		"options": {
+			"online": {
+				"label": "Online spelen",
+				"description": "Vind je tegenstander. Ontmoet elkaar op het bord."
+			},
+			"local": {
+				"label": "Lokaal spelen",
+				"description": "Eén bord. Twee spelers. Eén scherm."
+			},
+			"friend": {
+				"label": "Met een vriend",
+				"description": "Nodig iemand uit voor een doordachte partij."
+			},
+			"puzzles": {
+				"label": "Puzzels oplossen",
+				"description": "Kleine uitdagingen. Scherpere instincten."
+			},
+			"lessons": {
+				"label": "Lessen",
+				"description": "Van je eerste steen tot je volgende inzicht."
+			},
+			"bots": {
+				"label": "Tegen bots",
+				"description": "Oefen in je eigen tempo, op elk niveau."
+			}
+		},
+		"presence_one": "{{count, number}} speler aan het bord",
+		"presence_other": "{{count, number}} spelers aan het bord",
+		"reserved": {
+			"label": "SECTIE VOOR LATER",
+			"heading": "Gereserveerd voor toekomstige inhoud",
+			"body": "Deze sectie is voorlopig bewust leeg gelaten. Ze wordt later gebruikt voor nieuwe functies, updates of geselecteerde inhoud."
+		},
+		"footerTagline": "Eenvoudige regels. Eindeloos ontdekken."
+	},
+	"materials": {
+		"pageTitle": "Borden en stenen",
+		"breadcrumb": "Baduk / Materiaalbibliotheek",
+		"collection": "Collectie 01",
+		"heading": "Borden en stenen.",
+		"introduction": "Natuurlijke materialen. Stille details. Een plek voor het spel.",
+		"boardsSection": {
+			"title": "De borden",
+			"meta": "Drie houtsoorten · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "De stenen",
+			"meta": "Vier stijlen · zwart en wit"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Materiaalstudie",
+			"enlarged": "Vergrote monsters",
+			"heading": "Een stil contrast.",
+			"body": "Vier oppervlakken. Zwart en wit, in hetzelfde zachte licht.",
+			"scale": "Vergrote monsters · gelijke schaal",
+			"form": "Gladde, ronde vorm / subtiele variatie in het oppervlak"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Traditioneel Japans kaya",
+				"material": "Warm honingkleurig · rechte nerf"
+			},
+			"walnut": {
+				"name": "Donker notenhout",
+				"material": "Diepbruin · vloeiende nerf"
+			},
+			"ash": {
+				"name": "Licht Scandinavisch essen",
+				"material": "Licht hout · zachte nerf"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Gepolijst",
+				"name": "Leisteen",
+				"description": "Gladde, gepolijste oppervlakken met een rustige minerale textuur.",
+				"black": "Zwart leisteen",
+				"white": "Wit leisteen"
+			},
+			"satin": {
+				"finish": "Satijn",
+				"name": "Keramiek",
+				"description": "Een zachte glans en een fijne, gelijkmatige korrel.",
+				"black": "Zwarte keramiek",
+				"white": "Witte keramiek"
+			},
+			"matte": {
+				"finish": "Mat",
+				"name": "Natuursteen",
+				"description": "Rustige minerale spikkels onder een gladde, droge afwerking.",
+				"black": "Zwarte steen",
+				"white": "Witte steen"
+			},
+			"snow": {
+				"finish": "Gepolijst",
+				"name": "Schelp · Yuki / Sneeuwkwaliteit",
+				"description": "Fijne, dichte schelpnerf op melkwit, gecombineerd met gepolijst zwart leisteen.",
+				"black": "Zwart Nachiguro-leisteen",
+				"white": "Witte Yuki-schelp"
+			}
+		},
+		"footerTagline": "Het essentiële, met zorg gekozen."
+	}
+}

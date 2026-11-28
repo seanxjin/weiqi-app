@@ -1,0 +1,209 @@
+{
+	"header": {
+		"title": "Cilësimet",
+		"sectionTitle": "Cilësimet: {{section}}",
+		"navLabel": "Seksionet e cilësimeve"
+	},
+	"sections": {
+		"board": "Tabela dhe gurët",
+		"gameplay": "Loja",
+		"profile": "Profili",
+		"social": "Sociale dhe privatësia",
+		"account": "Llogaria dhe siguria",
+		"language": "Gjuha dhe koha"
+	},
+	"board": {
+		"description": "Zgjidh tabelën dhe gurët me të cilët luan.",
+		"appearance": {
+			"title": "Pamja",
+			"boardLegend": "Tabela",
+			"stonesLegend": "Gurët",
+			"previewLabel": "Parapamja e tabelës"
+		},
+		"themes": {
+			"kaya": "Kaya tradicionale japoneze",
+			"walnut": "Arrë e errët",
+			"ash": "Frashër i çelët skandinav"
+		},
+		"stoneStyles": {
+			"polished": "Rrasë",
+			"satin": "Qeramikë",
+			"matte": "Gur natyral",
+			"snow": "Guaskë · Yuki / Shkalla Borë"
+		},
+		"display": {
+			"title": "Shfaqja e tabelës",
+			"coordinates": {
+				"label": "Shfaq koordinatat e tabelës",
+				"description": "Emërto kolonat dhe rreshtat përreth skajit të tabelës."
+			},
+			"lastMove": {
+				"label": "Thekso lëvizjen e fundit",
+				"description": "Shëno gurin e luajtur së fundmi."
+			}
+		},
+		"sounds": {
+			"title": "Tingujt",
+			"playSounds": {
+				"label": "Luaj tinguj",
+				"description": "Vendosja e gurëve, kapjet dhe paralajmërimet e orës."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Menaxho si i vendos gurët dhe kush mund të të sfidojë.",
+		"moves": {
+			"title": "Luajtja e lëvizjeve",
+			"description": "Kërko një klikim të dytë para se të vendoset guri, për të shmangur klikimet e gabuara.",
+			"legend": "Konfirmo lëvizjet",
+			"options": {
+				"never": "Kurrë",
+				"correspondence": "Vetëm në lojërat me korrespondencë",
+				"always": "Gjithmonë"
+			}
+		},
+		"challenges": {
+			"title": "Sfidat",
+			"description": "Zgjidh kush mund të të dërgojë sfida loje.",
+			"legend": "Lejo sfida nga",
+			"options": {
+				"everyone": "Të gjithë",
+				"registered": "Lojtarët e regjistruar",
+				"following": "Vetëm lojtarët që ndjek",
+				"nobody": "Askush (rivanshet lejohen gjithsesi)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Gjithçka këtu është e dukshme në <profileLink>profilin tënd publik</profileLink>.",
+		"publicProfile": {
+			"title": "Profili publik",
+			"bioLabel": "Bio e shkurtër",
+			"bioPlaceholder": "Bio jote e shkurtër do të shfaqet në profil.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Detajet",
+			"joinDate": "Data e anëtarësimit",
+			"username": "Emri i përdoruesit",
+			"changeUsername": "Ndrysho",
+			"changeUsernameFeature": "Ndryshimi i emrit të përdoruesit",
+			"realName": "Emri i vërtetë",
+			"location": "Vendndodhja",
+			"country": "Shteti",
+			"countryNotSet": "I pacaktuar",
+			"rank": "Grada",
+			"rankPlaceholder": "p.sh. 12k, 3d",
+			"rankHint": "Përdor 30k–1k, 1d–9d ose 1p–9p."
+		},
+		"links": {
+			"legend": "Lidhjet",
+			"linkLabel": "Lidhja {{number}}",
+			"remove": "Hiq",
+			"removeLabel": "Hiq lidhjen {{number}}",
+			"add": "Shto lidhje"
+		}
+	},
+	"social": {
+		"description": "Menaxho lojtarët që ndjek dhe lojtarët që ke bllokuar.",
+		"blocking": {
+			"title": "Bllokimet",
+			"description_one": "Ke bllokuar {{count}} lojtar. Lojtarët e bllokuar nuk mund të të sfidojnë ose të të dërgojnë mesazhe.",
+			"description_other": "Ke bllokuar {{count}} lojtarë. Lojtarët e bllokuar nuk mund të të sfidojnë ose të të dërgojnë mesazhe.",
+			"empty": "Nuk ke bllokuar askënd.",
+			"action": "Zhblloko",
+			"actionLabel": "Zhblloko {{username}}"
+		},
+		"following": {
+			"title": "Duke ndjekur",
+			"description_one": "Ndjek {{count}} lojtar.",
+			"description_other": "Ndjek {{count}} lojtarë.",
+			"empty": "Ende nuk ndjek askënd.",
+			"action": "Mos ndiq",
+			"actionLabel": "Mos ndiq {{username}}"
+		}
+	},
+	"account": {
+		"description": "Ndrysho fjalëkalimin, siguro llogarinë dhe menaxho llogaritë e lidhura.",
+		"password": {
+			"title": "Ndrysho fjalëkalimin",
+			"updated": "Fjalëkalimi u përditësua",
+			"fields": {
+				"currentPassword": {
+					"label": "Fjalëkalimi aktual",
+					"show": "Shfaq fjalëkalimin aktual",
+					"hide": "Fshih fjalëkalimin aktual"
+				},
+				"newPassword": {
+					"label": "Fjalëkalimi i ri",
+					"show": "Shfaq fjalëkalimin e ri",
+					"hide": "Fshih fjalëkalimin e ri"
+				},
+				"confirmPassword": {
+					"label": "Rishkruaj fjalëkalimin",
+					"show": "Shfaq fjalëkalimin e rishkruar",
+					"hide": "Fshih fjalëkalimin e rishkruar"
+				}
+			}
+		},
+		"contact": {
+			"title": "Të dhënat e kontaktit",
+			"email": "Adresa e email-it",
+			"edit": "Redakto",
+			"editFeature": "Ndryshimi i email-it"
+		},
+		"twoFactor": {
+			"title": "Vërtetimi me dy faktorë",
+			"description": "Kërko një kod nga aplikacioni vërtetues kur hyn.",
+			"off": "Joaktiv",
+			"enable": "Aktivizo",
+			"feature": "Vërtetimi me dy faktorë"
+		},
+		"sessions": {
+			"title": "Sesionet aktive",
+			"description": "Nëse dyshon se llogaria jote është komprometuar, ndrysho fjalëkalimin dhe dil nga kudo.",
+			"thisDevice": "Kjo pajisje",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "Dil nga {{device}}",
+			"logOutAll": "Dil nga të gjitha pajisjet e tjera"
+		},
+		"connections": {
+			"title": "Llogaritë e lidhura",
+			"description": "Hyr në Baduk me këto llogari.",
+			"connectedTo": "I lidhur me {{provider}}",
+			"connect": "Lidh",
+			"disconnect": "Shkëput",
+			"note": "Shkëputja heq lidhjen në Baduk. Mund të duhet ende të heqësh qasjen në sajtin tjetër."
+		},
+		"close": {
+			"title": "Mbyll llogarinë",
+			"description": "Mbyllja e llogarisë fsheh profilin tënd dhe të nxjerr nga kudo.",
+			"button": "Mbyll llogarinë",
+			"dialogTitle": "Ta mbyllësh llogarinë?",
+			"dialogDescription": "Mund ta rihapësh më vonë nga faqja e hyrjes.",
+			"feature": "Mbyllja e llogarisë"
+		}
+	},
+	"languageTime": {
+		"title": "Gjuha dhe koha",
+		"description": "Zgjidh gjuhën e Baduk dhe si shfaqen datat dhe orët.",
+		"language": {
+			"title": "Gjuha",
+			"description": "Ndryshimet zbatohen menjëherë në çdo faqe.",
+			"legend": "Gjuha e shfaqjes"
+		},
+		"time": {
+			"title": "Koha",
+			"description": "Përdoret për vulat kohore, si data e anëtarësimit dhe aktiviteti i sesioneve.",
+			"timeZone": "Zona kohore",
+			"automaticTimeZone": "Automatike ({{timeZone}})",
+			"timeFormat": "Ora",
+			"formats": {
+				"auto": "Automatike ({{example}})",
+				"12h": "12-orëshe ({{example}})",
+				"24h": "24-orëshe ({{example}})"
+			},
+			"preview": "Parapamja"
+		}
+	}
+}

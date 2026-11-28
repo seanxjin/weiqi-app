@@ -1,0 +1,36 @@
+{
+	"server": {
+		"unavailable": "Serwer jest niedostępny. Spróbuj ponownie.",
+		"unreachable": "Nie można połączyć się z serwerem. Sprawdź połączenie i spróbuj ponownie.",
+		"unexpectedResponse": "Serwer zwrócił nieoczekiwaną odpowiedź. Spróbuj ponownie.",
+		"requestFailed": "Nie udało się zrealizować żądania. Spróbuj ponownie."
+	},
+	"rateLimited": {
+		"generic": "Zbyt wiele prób. Odczekaj chwilę przed ponowną próbą.",
+		"withDelay_one": "Zbyt wiele prób. Odczekaj {{count}} sekundę przed ponowną próbą.",
+		"withDelay_few": "Zbyt wiele prób. Odczekaj {{count}} sekundy przed ponowną próbą.",
+		"withDelay_many": "Zbyt wiele prób. Odczekaj {{count}} sekund przed ponowną próbą.",
+		"withDelay_other": "Zbyt wiele prób. Odczekaj {{count}} sekundy przed ponowną próbą."
+	},
+	"unknown": "Coś poszło nie tak. Spróbuj ponownie.",
+	"api": {
+		"invalidCredentials": "Nazwa użytkownika, e-mail lub hasło są nieprawidłowe.",
+		"twoFactorRequired": "Wpisz 6-cyfrowy kod z aplikacji uwierzytelniającej, aby kontynuować.",
+		"invalidTwoFactor": "Kod uwierzytelniający jest nieprawidłowy. Spróbuj ponownie.",
+		"emailUnconfirmed": "Przed zalogowaniem potwierdź adres e-mail.",
+		"accountClosed": "To konto zostało zamknięte i nie można się na nie zalogować.",
+		"usernameTaken": "Ta nazwa użytkownika jest już zajęta. Wybierz inną.",
+		"emailTaken": "Ten adres e-mail jest już używany.",
+		"invalidToken": "Ten link jest nieprawidłowy lub wygasł. Poproś o nową wiadomość, aby kontynuować.",
+		"unauthorized": "Sesja logowania wygasła. Zacznij od nowa.",
+		"conflict": "Nie udało się dokończyć rejestracji. Zacznij od nowa.",
+		"forbidden": "To żądanie zostało zablokowane. Odśwież stronę i spróbuj ponownie."
+	},
+	"validation": {
+		"passwordTooShort": "Hasło musi mieć co najmniej 8 znaków.",
+		"newPasswordTooShort": "Nowe hasło musi mieć co najmniej 8 znaków.",
+		"passwordTooLong": "Hasło nie może przekraczać 72 bajtów UTF-8.",
+		"passwordMismatch": "Nowe hasła nie są zgodne.",
+		"passwordUnchanged": "Wybierz hasło inne niż obecne."
+	}
+}

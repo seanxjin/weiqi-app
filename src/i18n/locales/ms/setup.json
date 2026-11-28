@@ -1,0 +1,84 @@
+{
+	"page": {
+		"title": {
+			"local": "Persediaan Permainan Setempat",
+			"online": "Persediaan Permainan Dalam Talian"
+		},
+		"label": {
+			"local": "Persediaan permainan setempat",
+			"online": "Persediaan permainan dalam talian"
+		},
+		"backToMenu": "Kembali ke menu",
+		"settingsLabel": "Tetapan permainan",
+		"timeLimitsNotice": "Had masa belum dikuatkuasakan.",
+		"boardSize": "SAIZ PAPAN",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Mencipta permainan…",
+		"startGame": "Mula permainan",
+		"createFailed": "Permainan tidak dapat dicipta. Sila cuba lagi."
+	},
+	"players": {
+		"player1": "Pemain 1",
+		"player2": "Pemain 2",
+		"opponent": "Lawan",
+		"guest": "Anda (Tetamu)"
+	},
+	"configuration": {
+		"eyebrow": "KONFIGURASI",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Tersuai · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Lebih Banyak Kawalan Masa",
+		"fewerControls": "Kurang Kawalan Masa",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Blitz",
+			"rapid": "Pantas",
+			"classical": "Klasik",
+			"correspondence": "Surat-menyurat",
+			"untimed": "Tanpa masa"
+		},
+		"systems": {
+			"absolute": "Mutlak",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Byo-yomi Jepun"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} saat",
+			"absoluteMinutes": "{{minutes}} min",
+			"mainSeconds": "{{seconds}}s",
+			"mainMinutes": "{{minutes}}m",
+			"fischer": "{{main}} + {{increment}}s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}}s",
+			"daysPerMove_other": "{{count}} hari / langkah"
+		},
+		"noTimeLimit": "Tiada had masa"
+	},
+	"customTime": {
+		"label": "Kawalan masa tersuai",
+		"eyebrow": "KAWALAN MASA TERSUAI",
+		"heading": "Tetapkan jam anda sendiri",
+		"system": "Sistem",
+		"fields": {
+			"minutes": "Utama · min",
+			"seconds": "Utama · saat",
+			"increment": "Tambahan · saat",
+			"periods": "Tempoh",
+			"periodSeconds": "Tempoh · saat"
+		},
+		"hints": {
+			"byoYomi": "Masa tambahan menggunakan bilangan tempoh bermasa yang tetap.",
+			"default": "Pilih sistem, kemudian masukkan nilai jamnya."
+		},
+		"apply": "Guna masa tersuai",
+		"errors": {
+			"wholeNumbers": "Masukkan nombor bulat bukan negatif dalam setiap medan jam.",
+			"mainSeconds": "Saat utama mestilah antara 0 dan 59.",
+			"byoYomiPeriods": "Byo-yomi memerlukan sekurang-kurangnya satu tempoh selama sekurang-kurangnya satu saat.",
+			"mainTime": "Tetapkan masa utama lebih daripada sifar."
+		}
+	}
+}

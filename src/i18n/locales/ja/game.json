@@ -1,0 +1,133 @@
+{
+	"colors": {
+		"black": "黒",
+		"white": "白"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "パス",
+	"localPage": {
+		"title": "ローカル対局",
+		"eyebrow": "親善対局",
+		"heading": "対局のひととき。",
+		"details": "{{size}} × {{size}} · 日本ルール"
+	},
+	"onlinePage": {
+		"title": "オンライン対局",
+		"eyebrow": "オンライン対局",
+		"heading": "対局のひととき。",
+		"details": "{{size}} × {{size}} · コミ {{komi}}",
+		"loading": "対局を読み込み中…",
+		"notFound": "この対局は存在しないか、利用できなくなりました。",
+		"startNew": "新しいオンライン対局を始める",
+		"invited": "{{size}} × {{size}} の対局に招待されています。",
+		"joining": "参加中…",
+		"joinAs": "{{color}}で参加",
+		"full": "この対局は満席です。観戦機能はまだ利用できません。"
+	},
+	"local": {
+		"label": "ローカル囲碁対局",
+		"loadingEngine": "囲碁エンジンを読み込み中…"
+	},
+	"online": {
+		"label": "オンライン囲碁対局",
+		"youAre": "あなたは{{color}}です",
+		"connection": {
+			"connecting": "接続中…",
+			"open": "接続済み",
+			"reconnecting": "再接続中…",
+			"closed": "切断されました"
+		},
+		"invite": {
+			"label": "このリンクで友達を招待",
+			"copy": "コピー",
+			"copied": "コピーしました"
+		},
+		"awaitingScoring": "両者がパスしました。整地はまだ対応していないため、中止すると無得点の対局として記録されます。",
+		"confirmResign": "投了を確定",
+		"resign": "投了",
+		"abort": "中止",
+		"results": {
+			"youWin": "あなたの勝ち · {{color}}が投了",
+			"winsByResignation": "{{color}}の中押し勝ち",
+			"aborted": "{{color}}が対局を中止しました",
+			"unscored": "整地なしで対局が終了しました"
+		}
+	},
+	"turn": {
+		"preparing": "碁盤を準備中",
+		"reviewing": "検討中 · 対局するには「現在」に戻ってください",
+		"toPlay": "{{color}}の番",
+		"yourMove": "あなたの番",
+		"waitingForOpponent": "対戦相手を待っています",
+		"awaitingScoring": "対局終了 · 整地はまだ対応していません",
+		"gameOver": "終局",
+		"sendingMove": "着手を送信中…",
+		"waitingForConnection": "接続を待っています"
+	},
+	"boardFooter": {
+		"lastMove": "最終手: {{color}} {{move}}",
+		"startingPosition": "初期局面"
+	},
+	"players": {
+		"label": "対局者",
+		"captured": "アゲハマ {{count}}",
+		"you": "{{name}}（あなた）",
+		"waiting": "{{name}} · 対局者を待っています"
+	},
+	"history": {
+		"label": "棋譜",
+		"heading": "手順",
+		"moveCount_other": "{{count}}手",
+		"tableLabel": "黒と白の着手",
+		"pair": "組",
+		"move": "{{number}}手目、{{color}}、{{move}}",
+		"pendingMove": "{{number}}手目、{{color}}、{{move}}、送信中",
+		"empty": "まだ着手がありません。",
+		"position": "{{latest}}手中 {{viewed}}手目",
+		"currentPosition": "現在の局面",
+		"reviewing": "検討中",
+		"navigationLabel": "棋譜ナビゲーション",
+		"navigation": {
+			"start": "最初",
+			"previous": "前へ",
+			"next": "次へ",
+			"current": "現在"
+		},
+		"undo": "最後の手を戻す",
+		"encouragement": "焦らずに。一手一手が大切です。",
+		"keyboardHint": "← → で1手ずつ移動、↑ ↓ で最初と現在へ移動します。"
+	},
+	"board": {
+		"sceneLabel": "{{moveCount}}手の序盤が打たれた{{size}}×{{size}}の碁盤",
+		"themedBoard": "{{theme}}の碁盤",
+		"emptyBoard": "{{size}}×{{size}}の{{theme}}の空の碁盤",
+		"stone": "{{finish}}の{{color}}の碁石",
+		"textureError": "碁盤のテクスチャを読み込めませんでした。",
+		"pauseAnimations": "アニメーションを一時停止",
+		"resumeAnimations": "アニメーションを再開",
+		"pause": "一時停止",
+		"resume": "再開"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "碁盤上の交点を選んでください。",
+			"occupied": "その交点にはすでに石があります。",
+			"wrongPlayer": "相手の番です。",
+			"suicide": "自殺手は打てません。",
+			"ko": "コウのため、その手は打てません。",
+			"superko": "その手は以前の局面を繰り返します。",
+			"gameEnded": "この対局ではこれ以上着手できません。"
+		},
+		"serverRejectedMove": "サーバーが着手を拒否しました。{{reason}}",
+		"staleRevision": "着手が届く前に対局の状態が変わったため、打たれませんでした。",
+		"wrongPhase": "対局の現段階ではそれはできません。",
+		"seatTaken": "その席はすでに埋まっています。",
+		"notYourTurn": "相手の番です。",
+		"abortUnavailable": "この対局はもう中止できません。",
+		"replayFailed": "この対局をローカルで再現できませんでした。ページを再読み込みしてください。",
+		"notConnected": "対局サーバーに接続されていません。",
+		"engineLoadFailed": "囲碁エンジンを読み込めませんでした。もう一度お試しください。",
+		"gameLoadFailed": "対局を読み込めませんでした。もう一度お試しください。",
+		"seatTakenFirst": "他の人が先に席につきました。この対局は満席になりました。"
+	}
+}

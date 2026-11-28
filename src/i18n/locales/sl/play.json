@@ -1,0 +1,118 @@
+{
+	"home": {
+		"pageTitle": "Igraj",
+		"location": "IGRAJ / DOMOV",
+		"signedInAs": "Prijavljeni kot {{username}}",
+		"guest": "Igrate kot gost",
+		"logoutError": "Odjava ni uspela. Poskusite znova.",
+		"introduction": {
+			"heading": "Nekaj besedila",
+			"body": "Drugo besedilo"
+		},
+		"menuHeading": "Nekaj besedila.",
+		"options": {
+			"online": {
+				"label": "Igraj na spletu",
+				"description": "Poiščite nasprotnika. Srečajta se ob deski."
+			},
+			"local": {
+				"label": "Igraj lokalno",
+				"description": "Ena deska. Dva igralca. Skupen zaslon."
+			},
+			"friend": {
+				"label": "Igraj s prijateljem",
+				"description": "Povabite nekoga na premišljeno partijo."
+			},
+			"puzzles": {
+				"label": "Rešuj naloge",
+				"description": "Majhni izzivi. Ostrejši instinkti."
+			},
+			"lessons": {
+				"label": "Lekcije",
+				"description": "Od prvega kamna do naslednjega spoznanja."
+			},
+			"bots": {
+				"label": "Igraj z boti",
+				"description": "Vadite v svojem ritmu, na kateri koli ravni."
+			}
+		},
+		"presence_one": "{{count, number}} igralec ob deski",
+		"presence_two": "{{count, number}} igralca ob deski",
+		"presence_few": "{{count, number}} igralci ob deski",
+		"presence_other": "{{count, number}} igralcev ob deski",
+		"reserved": {
+			"label": "RAZDELEK ZA POZNEJE",
+			"heading": "Rezervirano za prihodnjo vsebino",
+			"body": "Ta razdelek je zaenkrat namenoma prazen. Uporabljen bo za prihodnje funkcije, novosti ali izbrano vsebino."
+		},
+		"footerTagline": "Preprosta pravila. Neskončno odkrivanje."
+	},
+	"materials": {
+		"pageTitle": "Deske in kamni",
+		"breadcrumb": "Baduk / Knjižnica materialov",
+		"collection": "Zbirka 01",
+		"heading": "Deske in kamni.",
+		"introduction": "Naravni materiali. Tihe podrobnosti. Prostor za igro.",
+		"boardsSection": {
+			"title": "Deske",
+			"meta": "Tri vrste lesa · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Kamni",
+			"meta": "Štirje slogi · črni in beli"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Študija materialov",
+			"enlarged": "Povečani vzorci",
+			"heading": "Tih kontrast.",
+			"body": "Štiri površine. Črna in bela v enaki mehki svetlobi.",
+			"scale": "Povečani vzorci · enotno merilo",
+			"form": "Gladka, zaobljena oblika / subtilne razlike v površini"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Tradicionalna japonska kaya",
+				"material": "Topel medeni ton · ravna vlakna"
+			},
+			"walnut": {
+				"name": "Temni oreh",
+				"material": "Globoko rjava · valovita vlakna"
+			},
+			"ash": {
+				"name": "Svetli skandinavski jesen",
+				"material": "Svetel les · nežna vlakna"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Polirano",
+				"name": "Skrilavec",
+				"description": "Gladke, polirane površine z umirjeno mineralno teksturo.",
+				"black": "Črni skrilavec",
+				"white": "Beli skrilavec"
+			},
+			"satin": {
+				"finish": "Satenasto",
+				"name": "Keramika",
+				"description": "Razpršen sijaj in nežna, enakomerna fina zrnatost.",
+				"black": "Črna keramika",
+				"white": "Bela keramika"
+			},
+			"matte": {
+				"finish": "Mat",
+				"name": "Naravni kamen",
+				"description": "Umirjene mineralne pege pod gladko, suho površino.",
+				"black": "Črni kamen",
+				"white": "Beli kamen"
+			},
+			"snow": {
+				"finish": "Polirano",
+				"name": "Školjka · Yuki / Snežni razred",
+				"description": "Fina, gosta zrnatost školjke na mlečno beli podlagi, v paru s poliranim črnim skrilavcem.",
+				"black": "Črni skrilavec Nachiguro",
+				"white": "Bela školjka Yuki"
+			}
+		},
+		"footerTagline": "Bistveno, premišljeno."
+	}
+}

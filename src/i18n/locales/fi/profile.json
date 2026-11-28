@@ -1,0 +1,18 @@
+{
+	"editProfile": "Muokkaa profiilia",
+	"meta": {
+		"joined": "Liittynyt",
+		"rank": "Taso",
+		"noRank": "—",
+		"followers": "Seuraajat",
+		"following": "Seuratut"
+	},
+	"about": {
+		"heading": "Tietoja",
+		"noBio": "Ei vielä esittelyä."
+	},
+	"games": {
+		"heading": "Pelihistoria",
+		"empty": "Ei vielä pelejä."
+	}
+}

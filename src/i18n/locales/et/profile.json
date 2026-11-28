@@ -1,0 +1,18 @@
+{
+	"editProfile": "Muuda profiili",
+	"meta": {
+		"joined": "Liitus",
+		"rank": "Järk",
+		"noRank": "—",
+		"followers": "Jälgijad",
+		"following": "Jälgib"
+	},
+	"about": {
+		"heading": "Teave",
+		"noBio": "Tutvustus puudub."
+	},
+	"games": {
+		"heading": "Mänguajalugu",
+		"empty": "Mänge veel pole."
+	}
+}

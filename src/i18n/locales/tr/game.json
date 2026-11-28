@@ -1,0 +1,134 @@
+{
+	"colors": {
+		"black": "Siyah",
+		"white": "Beyaz"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Pas",
+	"localPage": {
+		"title": "Yerel Oyun",
+		"eyebrow": "DOSTLUK OYUNU",
+		"heading": "Oyun için bir an.",
+		"details": "{{size}} × {{size}} · Japon kuralları"
+	},
+	"onlinePage": {
+		"title": "Çevrim İçi Oyun",
+		"eyebrow": "ÇEVRİM İÇİ OYUN",
+		"heading": "Oyun için bir an.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Oyun yükleniyor…",
+		"notFound": "Bu oyun mevcut değil veya artık kullanılamıyor.",
+		"startNew": "Yeni bir çevrim içi oyun başlat",
+		"invited": "{{size}} × {{size}} bir oyuna davet edildiniz.",
+		"joining": "Katılınıyor…",
+		"joinAs": "{{color}} olarak katıl",
+		"full": "Bu oyun dolu. Oyun izleme henüz kullanılamıyor."
+	},
+	"local": {
+		"label": "Yerel Go oyunu",
+		"loadingEngine": "Go motoru yükleniyor…"
+	},
+	"online": {
+		"label": "Çevrim içi Go oyunu",
+		"youAre": "Siz {{color}} oynuyorsunuz",
+		"connection": {
+			"connecting": "Bağlanıyor…",
+			"open": "Bağlandı",
+			"reconnecting": "Yeniden bağlanıyor…",
+			"closed": "Bağlantı kesildi"
+		},
+		"invite": {
+			"label": "Bu bağlantıyla bir arkadaşını davet et",
+			"copy": "Kopyala",
+			"copied": "Kopyalandı"
+		},
+		"awaitingScoring": "İki oyuncu da pas geçti. Puanlama henüz desteklenmiyor; oyunu puansız kaydetmek için iptal edin.",
+		"confirmResign": "Pes etmeyi onayla",
+		"resign": "Pes et",
+		"abort": "İptal et",
+		"results": {
+			"youWin": "Kazandınız · {{color}} pes etti",
+			"winsByResignation": "{{color}} rakibin pes etmesiyle kazandı",
+			"aborted": "Oyun {{color}} tarafından iptal edildi",
+			"unscored": "Oyun puanlanmadan sona erdi"
+		}
+	},
+	"turn": {
+		"preparing": "Tahta hazırlanıyor",
+		"reviewing": "İnceleniyor · Oynamak için Güncel'e dönün",
+		"toPlay": "Sıra {{color}} oyuncusunda",
+		"yourMove": "Sıra sizde",
+		"waitingForOpponent": "Rakip bekleniyor",
+		"awaitingScoring": "Oyun sona erdi · Puanlama henüz desteklenmiyor",
+		"gameOver": "Oyun bitti",
+		"sendingMove": "Hamle gönderiliyor…",
+		"waitingForConnection": "Bağlantı bekleniyor"
+	},
+	"boardFooter": {
+		"lastMove": "Son hamle: {{color}} {{move}}",
+		"startingPosition": "Başlangıç pozisyonu"
+	},
+	"players": {
+		"label": "Oyuncular",
+		"captured": "Esir {{count}}",
+		"you": "{{name}} (siz)",
+		"waiting": "{{name}} · oyuncu bekleniyor"
+	},
+	"history": {
+		"label": "Hamle geçmişi",
+		"heading": "Hamleler",
+		"moveCount_one": "{{count}} HAMLE",
+		"moveCount_other": "{{count}} HAMLE",
+		"tableLabel": "Siyah ve Beyaz hamleleri",
+		"pair": "Çift",
+		"move": "Hamle {{number}}, {{color}}, {{move}}",
+		"pendingMove": "Hamle {{number}}, {{color}}, {{move}}, gönderiliyor",
+		"empty": "Henüz hamle yok.",
+		"position": "Hamle {{viewed}} / {{latest}}",
+		"currentPosition": "GÜNCEL POZİSYON",
+		"reviewing": "İNCELENİYOR",
+		"navigationLabel": "Hamle geçmişinde gezinme",
+		"navigation": {
+			"start": "Başlangıç",
+			"previous": "Önceki",
+			"next": "Sonraki",
+			"current": "Güncel"
+		},
+		"undo": "Son hamleyi geri al",
+		"encouragement": "Acele etmeyin. Her hamle önemlidir.",
+		"keyboardHint": "Hamleler arasında gezinmek için ← →, başlangıç ve güncel pozisyon için ↑ ↓ tuşlarını kullanın."
+	},
+	"board": {
+		"sceneLabel": "{{moveCount}} açılış hamlesinden oluşan bir diziyi gösteren {{size}} × {{size}} Go tahtası",
+		"themedBoard": "{{theme}} Go tahtası",
+		"emptyBoard": "Boş {{size}} × {{size}} {{theme}} baduk tahtası",
+		"stone": "{{finish}} {{color}} baduk taşı",
+		"textureError": "Tahta dokusu yüklenemedi.",
+		"pauseAnimations": "Animasyonları duraklat",
+		"resumeAnimations": "Animasyonları sürdür",
+		"pause": "DURAKLAT",
+		"resume": "SÜRDÜR"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Tahtada bir kesişim noktası seçin.",
+			"occupied": "Bu kesişim noktası dolu.",
+			"wrongPlayer": "Sıra diğer oyuncuda.",
+			"suicide": "İntihar hamlesine izin verilmez.",
+			"ko": "Bu hamle ko kuralı gereği yasaktır.",
+			"superko": "Bu hamle önceki bir pozisyonu tekrarlıyor.",
+			"gameEnded": "Bu oyunda artık hamle yapılamaz."
+		},
+		"serverRejectedMove": "Sunucu hamleyi reddetti. {{reason}}",
+		"staleRevision": "Hamleniz ulaşmadan oyun değişti, bu yüzden hamle oynanmadı.",
+		"wrongPhase": "Oyunun bu aşamasında bu mümkün değil.",
+		"seatTaken": "Bu yer zaten alınmış.",
+		"notYourTurn": "Sıra diğer oyuncuda.",
+		"abortUnavailable": "Oyun artık iptal edilemez.",
+		"replayFailed": "Bu oyun yerel olarak yeniden oynatılamadı. Lütfen sayfayı yeniden yükleyin.",
+		"notConnected": "Oyun sunucusuna bağlı değil.",
+		"engineLoadFailed": "Go motoru yüklenemedi. Lütfen tekrar deneyin.",
+		"gameLoadFailed": "Oyun yüklenemedi. Lütfen tekrar deneyin.",
+		"seatTakenFirst": "Yeri sizden önce başka biri aldı. Bu oyun artık dolu."
+	}
+}

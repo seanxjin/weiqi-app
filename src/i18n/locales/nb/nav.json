@@ -1,0 +1,29 @@
+{
+	"navigation": "Baduk-navigasjon",
+	"drawer": {
+		"open": "Åpne navigasjon",
+		"close": "Lukk navigasjon"
+	},
+	"mainNavigation": "Hovednavigasjon",
+	"play": "Spill",
+	"puzzles": "Oppgaver",
+	"learn": "Lær",
+	"guide": {
+		"heading": "NY I GO?",
+		"startWithBasics": "Start med det grunnleggende"
+	},
+	"account": {
+		"label": "Konto",
+		"friends": "Venner",
+		"messages": "Meldinger",
+		"notifications": "Varsler",
+		"settings": "Innstillinger",
+		"allSettings": "Alle innstillinger"
+	},
+	"theme": {
+		"label": "Tema",
+		"system": "System",
+		"light": "Lyst",
+		"dark": "Mørkt"
+	}
+}

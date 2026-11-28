@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Гуляць у го",
+	"railLabel": "Baduk",
+	"mainNavigation": "Асноўная навігацыя",
+	"play": "Гуляць",
+	"eyebrow": "Нейкі тэкст",
+	"heading": {
+		"label": "Гуляць у го",
+		"prefix": "Гуляць у "
+	},
+	"description": {
+		"first": "Нейкі тэкст....",
+		"second": "Нейкі іншы тэкст..."
+	},
+	"footnote": "НЕ СПЯШАЙЦЕСЯ."
+}

@@ -1,0 +1,18 @@
+{
+	"editProfile": "Uredi profil",
+	"meta": {
+		"joined": "Včlanjen",
+		"rank": "Rang",
+		"noRank": "—",
+		"followers": "Sledilci",
+		"following": "Sledi"
+	},
+	"about": {
+		"heading": "O meni",
+		"noBio": "Opisa še ni."
+	},
+	"games": {
+		"heading": "Zgodovina iger",
+		"empty": "Iger še ni."
+	}
+}

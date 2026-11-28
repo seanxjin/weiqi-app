@@ -1,0 +1,18 @@
+{
+	"editProfile": "Editar perfil",
+	"meta": {
+		"joined": "Entrou em",
+		"rank": "Graduação",
+		"noRank": "—",
+		"followers": "Seguidores",
+		"following": "Seguindo"
+	},
+	"about": {
+		"heading": "Sobre",
+		"noBio": "Nenhuma bio ainda."
+	},
+	"games": {
+		"heading": "Histórico de partidas",
+		"empty": "Nenhuma partida ainda."
+	}
+}

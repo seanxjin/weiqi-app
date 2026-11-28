@@ -1,0 +1,18 @@
+{
+	"editProfile": "Rediger profil",
+	"meta": {
+		"joined": "Tilmeldt",
+		"rank": "Rang",
+		"noRank": "—",
+		"followers": "Følgere",
+		"following": "Følger"
+	},
+	"about": {
+		"heading": "Om",
+		"noBio": "Ingen bio endnu."
+	},
+	"games": {
+		"heading": "Partihistorik",
+		"empty": "Ingen partier endnu."
+	}
+}

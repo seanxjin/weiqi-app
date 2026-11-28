@@ -1,0 +1,86 @@
+{
+	"page": {
+		"title": {
+			"local": "Vietējās spēles iestatīšana",
+			"online": "Tiešsaistes spēles iestatīšana"
+		},
+		"label": {
+			"local": "Vietējās spēles iestatīšana",
+			"online": "Tiešsaistes spēles iestatīšana"
+		},
+		"backToMenu": "Atpakaļ uz izvēlni",
+		"settingsLabel": "Spēles iestatījumi",
+		"timeLimitsNotice": "Laika ierobežojumi vēl netiek piemēroti.",
+		"boardSize": "DĒĻA IZMĒRS",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Izveido spēli…",
+		"startGame": "Sākt spēli",
+		"createFailed": "Spēli neizdevās izveidot. Lūdzu, mēģini vēlreiz."
+	},
+	"players": {
+		"player1": "1. spēlētājs",
+		"player2": "2. spēlētājs",
+		"opponent": "Pretinieks",
+		"guest": "Tu (viesis)"
+	},
+	"configuration": {
+		"eyebrow": "KONFIGURĀCIJAS",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Pielāgota · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Vairāk laika kontroļu",
+		"fewerControls": "Mazāk laika kontroļu",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Zibens",
+			"rapid": "Ātrā",
+			"classical": "Klasiskā",
+			"correspondence": "Korespondence",
+			"untimed": "Bez laika"
+		},
+		"systems": {
+			"absolute": "Absolūtais",
+			"fischer": "Fišera",
+			"japaneseByoYomi": "Japāņu bjojomi"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} s",
+			"absoluteMinutes": "{{minutes}} min",
+			"mainSeconds": "{{seconds}} s",
+			"mainMinutes": "{{minutes}} min",
+			"fischer": "{{main}} + {{increment}} s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}} s",
+			"daysPerMove_zero": "{{count}} dienas / gājiens",
+			"daysPerMove_one": "{{count}} diena / gājiens",
+			"daysPerMove_other": "{{count}} dienas / gājiens"
+		},
+		"noTimeLimit": "Bez laika ierobežojuma"
+	},
+	"customTime": {
+		"label": "Pielāgota laika kontrole",
+		"eyebrow": "PIELĀGOTA LAIKA KONTROLE",
+		"heading": "Iestati savu pulksteni",
+		"system": "Sistēma",
+		"fields": {
+			"minutes": "Pamatlaiks · min",
+			"seconds": "Pamatlaiks · s",
+			"increment": "Pieaugums · s",
+			"periods": "Periodi",
+			"periodSeconds": "Periods · s"
+		},
+		"hints": {
+			"byoYomi": "Papildlaikā tiek izmantots noteikts skaits laika periodu.",
+			"default": "Izvēlies sistēmu un pēc tam ievadi pulksteņa vērtības."
+		},
+		"apply": "Izmantot pielāgotu laiku",
+		"errors": {
+			"wholeNumbers": "Katrā pulksteņa laukā ievadi nenegatīvu veselu skaitli.",
+			"mainSeconds": "Pamatlaika sekundēm jābūt no 0 līdz 59.",
+			"byoYomiPeriods": "Bjojomi nepieciešams vismaz viens periods, kas ilgst vismaz vienu sekundi.",
+			"mainTime": "Iestati pamatlaiku, kas lielāks par nulli."
+		}
+	}
+}

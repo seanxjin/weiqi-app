@@ -1,18 +1,9 @@
-export const countries = [
-	{ code: "", name: "Not set" },
-	{ code: "CA", name: "Canada" },
-	{ code: "CN", name: "China" },
-	{ code: "FR", name: "France" },
-	{ code: "DE", name: "Germany" },
-	{ code: "JP", name: "Japan" },
-	{ code: "KR", name: "South Korea" },
-	{ code: "TW", name: "Taiwan" },
-	{ code: "GB", name: "United Kingdom" },
-	{ code: "US", name: "United States" },
-];
+export const countryCodes = ["CA", "CN", "FR", "DE", "JP", "KR", "TW", "GB", "US"];
 
-export function countryName(code: string) {
-	return countries.find((country) => country.code === code)?.name ?? "";
+// Country names come from the browser so they follow the selected language.
+export function countryName(code: string, language: string) {
+	if (!code) return "";
+	return new Intl.DisplayNames([language], { type: "region" }).of(code) ?? code;
 }
 
 export function countryFlag(code: string) {

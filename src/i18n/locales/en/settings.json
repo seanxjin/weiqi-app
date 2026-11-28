@@ -1,0 +1,209 @@
+{
+	"header": {
+		"title": "Settings",
+		"sectionTitle": "{{section}} settings",
+		"navLabel": "Settings sections"
+	},
+	"sections": {
+		"board": "Board & Stones",
+		"gameplay": "Gameplay",
+		"profile": "Profile",
+		"social": "Social & Privacy",
+		"account": "Account & Security",
+		"language": "Language & Time"
+	},
+	"board": {
+		"description": "Choose the board and stones you play on.",
+		"appearance": {
+			"title": "Appearance",
+			"boardLegend": "Board",
+			"stonesLegend": "Stones",
+			"previewLabel": "Board preview"
+		},
+		"themes": {
+			"kaya": "Traditional Japanese kaya",
+			"walnut": "Dark walnut",
+			"ash": "Pale Scandinavian ash"
+		},
+		"stoneStyles": {
+			"polished": "Slate",
+			"satin": "Ceramic",
+			"matte": "Natural stone",
+			"snow": "Clamshell · Yuki / Snow Grade"
+		},
+		"display": {
+			"title": "Board display",
+			"coordinates": {
+				"label": "Show board coordinates",
+				"description": "Label the columns and rows around the edge of the board."
+			},
+			"lastMove": {
+				"label": "Highlight last move",
+				"description": "Mark the most recently played stone."
+			}
+		},
+		"sounds": {
+			"title": "Sounds",
+			"playSounds": {
+				"label": "Play sounds",
+				"description": "Stone placement, captures, and clock warnings."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Manage how you place stones and who can challenge you.",
+		"moves": {
+			"title": "Playing moves",
+			"description": "Ask for a second click before a stone is placed, to avoid mis-clicks.",
+			"legend": "Confirm moves",
+			"options": {
+				"never": "Never",
+				"correspondence": "Correspondence games only",
+				"always": "Always"
+			}
+		},
+		"challenges": {
+			"title": "Challenges",
+			"description": "Choose who can send you game challenges.",
+			"legend": "Allow challenges from",
+			"options": {
+				"everyone": "Everyone",
+				"registered": "Registered players",
+				"following": "Only players I follow",
+				"nobody": "Nobody (rematches are still allowed)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Everything here is visible on your <profileLink>public profile</profileLink>.",
+		"publicProfile": {
+			"title": "Public profile",
+			"bioLabel": "Short bio",
+			"bioPlaceholder": "Your short bio will appear on your profile.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Details",
+			"joinDate": "Join date",
+			"username": "Username",
+			"changeUsername": "Change",
+			"changeUsernameFeature": "Changing your username",
+			"realName": "Real name",
+			"location": "Location",
+			"country": "Country",
+			"countryNotSet": "Not set",
+			"rank": "Rank",
+			"rankPlaceholder": "e.g. 12k, 3d",
+			"rankHint": "Use 30k–1k, 1d–9d, or 1p–9p."
+		},
+		"links": {
+			"legend": "Links",
+			"linkLabel": "Link {{number}}",
+			"remove": "Remove",
+			"removeLabel": "Remove link {{number}}",
+			"add": "Add link"
+		}
+	},
+	"social": {
+		"description": "Manage the players you follow and the players you have blocked.",
+		"blocking": {
+			"title": "Blocking",
+			"description_one": "You are blocking {{count}} player. Blocked players cannot challenge or message you.",
+			"description_other": "You are blocking {{count}} players. Blocked players cannot challenge or message you.",
+			"empty": "You are not blocking anyone.",
+			"action": "Unblock",
+			"actionLabel": "Unblock {{username}}"
+		},
+		"following": {
+			"title": "Following",
+			"description_one": "You follow {{count}} player.",
+			"description_other": "You follow {{count}} players.",
+			"empty": "You are not following anyone yet.",
+			"action": "Unfollow",
+			"actionLabel": "Unfollow {{username}}"
+		}
+	},
+	"account": {
+		"description": "Change your password, secure your account, and manage connected accounts.",
+		"password": {
+			"title": "Change password",
+			"updated": "Password updated",
+			"fields": {
+				"currentPassword": {
+					"label": "Current password",
+					"show": "Show current password",
+					"hide": "Hide current password"
+				},
+				"newPassword": {
+					"label": "New password",
+					"show": "Show new password",
+					"hide": "Hide new password"
+				},
+				"confirmPassword": {
+					"label": "Retype password",
+					"show": "Show retype password",
+					"hide": "Hide retype password"
+				}
+			}
+		},
+		"contact": {
+			"title": "Contact info",
+			"email": "Email address",
+			"edit": "Edit",
+			"editFeature": "Changing your email"
+		},
+		"twoFactor": {
+			"title": "Two-factor authentication",
+			"description": "Require a code from an authenticator app when you sign in.",
+			"off": "Off",
+			"enable": "Enable",
+			"feature": "Two-factor authentication"
+		},
+		"sessions": {
+			"title": "Active sessions",
+			"description": "If you suspect your account has been compromised, change your password and log out everywhere.",
+			"thisDevice": "This device",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "Log out {{device}}",
+			"logOutAll": "Log out on all other devices"
+		},
+		"connections": {
+			"title": "Connected accounts",
+			"description": "Sign in to Baduk with these accounts.",
+			"connectedTo": "Connected to {{provider}}",
+			"connect": "Connect",
+			"disconnect": "Disconnect",
+			"note": "Disconnecting removes the link on Baduk. You may still need to revoke access on the other site."
+		},
+		"close": {
+			"title": "Close your account",
+			"description": "Closing your account hides your profile and signs you out everywhere.",
+			"button": "Close account",
+			"dialogTitle": "Close your account?",
+			"dialogDescription": "You can reopen it later from the sign-in page.",
+			"feature": "Closing your account"
+		}
+	},
+	"languageTime": {
+		"title": "Language & Time",
+		"description": "Choose the language Baduk uses and how dates and times appear.",
+		"language": {
+			"title": "Language",
+			"description": "Changes apply right away on every page.",
+			"legend": "Display language"
+		},
+		"time": {
+			"title": "Time",
+			"description": "Used for timestamps such as join dates and session activity.",
+			"timeZone": "Time zone",
+			"automaticTimeZone": "Automatic ({{timeZone}})",
+			"timeFormat": "Clock",
+			"formats": {
+				"auto": "Automatic ({{example}})",
+				"12h": "12-hour ({{example}})",
+				"24h": "24-hour ({{example}})"
+			},
+			"preview": "Preview"
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"navigation": "Навігація Baduk",
+	"drawer": {
+		"open": "Відкрити навігацію",
+		"close": "Закрити навігацію"
+	},
+	"mainNavigation": "Головна навігація",
+	"play": "Грати",
+	"puzzles": "Задачі",
+	"learn": "Навчання",
+	"guide": {
+		"heading": "НОВАЧОК У ҐО?",
+		"startWithBasics": "Почніть з основ"
+	},
+	"account": {
+		"label": "Обліковий запис",
+		"friends": "Друзі",
+		"messages": "Повідомлення",
+		"notifications": "Сповіщення",
+		"settings": "Налаштування",
+		"allSettings": "Усі налаштування"
+	},
+	"theme": {
+		"label": "Тема",
+		"system": "Системна",
+		"light": "Світла",
+		"dark": "Темна"
+	}
+}

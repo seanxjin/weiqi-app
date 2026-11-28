@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "GO",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Baduk sākumlapa",
+	"actions": {
+		"save": "Saglabāt",
+		"saving": "Saglabā…",
+		"cancel": "Atcelt",
+		"back": "Atpakaļ",
+		"retry": "Mēģināt vēlreiz",
+		"close": "Aizvērt",
+		"login": "Pieteikties",
+		"signIn": "Pieteikties",
+		"signUp": "Reģistrēties",
+		"logOut": "Iziet",
+		"loggingOut": "Iziet…"
+	},
+	"status": {
+		"saved": "Saglabāts",
+		"loading": "Ielādē…",
+		"checkingSession": "Pārbauda sesiju…",
+		"sessionError": "Neizdevās pārbaudīt sesiju. Lūdzu, mēģini vēlreiz."
+	},
+	"comingSoon": "{{feature}}: drīzumā.",
+	"language": "Valoda",
+	"languageDialog": {
+		"title": "Izvēlies vēlamo valodu",
+		"loadError": "Šo valodu neizdevās ielādēt. Lūdzu, mēģini vēlreiz."
+	}
+}

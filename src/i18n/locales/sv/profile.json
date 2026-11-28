@@ -1,0 +1,18 @@
+{
+	"editProfile": "Redigera profil",
+	"meta": {
+		"joined": "Gick med",
+		"rank": "Rank",
+		"noRank": "—",
+		"followers": "Följare",
+		"following": "Följer"
+	},
+	"about": {
+		"heading": "Om",
+		"noBio": "Ingen presentation ännu."
+	},
+	"games": {
+		"heading": "Partihistorik",
+		"empty": "Inga partier ännu."
+	}
+}

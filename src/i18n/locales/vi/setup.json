@@ -1,0 +1,84 @@
+{
+	"page": {
+		"title": {
+			"local": "Thiết lập ván chơi tại chỗ",
+			"online": "Thiết lập ván chơi trực tuyến"
+		},
+		"label": {
+			"local": "Thiết lập ván chơi tại chỗ",
+			"online": "Thiết lập ván chơi trực tuyến"
+		},
+		"backToMenu": "Quay lại menu",
+		"settingsLabel": "Cài đặt ván cờ",
+		"timeLimitsNotice": "Giới hạn thời gian chưa được áp dụng.",
+		"boardSize": "KÍCH THƯỚC BÀN CỜ",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Đang tạo ván cờ…",
+		"startGame": "Bắt đầu ván",
+		"createFailed": "Không thể tạo ván cờ. Vui lòng thử lại."
+	},
+	"players": {
+		"player1": "Người chơi 1",
+		"player2": "Người chơi 2",
+		"opponent": "Đối thủ",
+		"guest": "Bạn (Khách)"
+	},
+	"configuration": {
+		"eyebrow": "CẤU HÌNH",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Tùy chỉnh · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Thêm tùy chọn thời gian",
+		"fewerControls": "Bớt tùy chọn thời gian",
+		"groups": {
+			"bullet": "Siêu chớp",
+			"blitz": "Chớp",
+			"rapid": "Nhanh",
+			"classical": "Cổ điển",
+			"correspondence": "Thư tín",
+			"untimed": "Không giới hạn"
+		},
+		"systems": {
+			"absolute": "Tuyệt đối",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Byo-yomi Nhật Bản"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} giây",
+			"absoluteMinutes": "{{minutes}} phút",
+			"mainSeconds": "{{seconds}}s",
+			"mainMinutes": "{{minutes}}p",
+			"fischer": "{{main}} + {{increment}}s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}}s",
+			"daysPerMove_other": "{{count}} ngày / nước"
+		},
+		"noTimeLimit": "Không giới hạn thời gian"
+	},
+	"customTime": {
+		"label": "Thời gian tùy chỉnh",
+		"eyebrow": "THỜI GIAN TÙY CHỈNH",
+		"heading": "Tự đặt đồng hồ",
+		"system": "Hệ thống",
+		"fields": {
+			"minutes": "Chính · phút",
+			"seconds": "Chính · giây",
+			"increment": "Cộng thêm · giây",
+			"periods": "Số lượt",
+			"periodSeconds": "Mỗi lượt · giây"
+		},
+		"hints": {
+			"byoYomi": "Thời gian phụ gồm một số lượt đếm giờ cố định.",
+			"default": "Chọn một hệ thống, rồi nhập các giá trị đồng hồ."
+		},
+		"apply": "Dùng thời gian tùy chỉnh",
+		"errors": {
+			"wholeNumbers": "Nhập một số nguyên không âm vào mỗi ô đồng hồ.",
+			"mainSeconds": "Số giây chính phải từ 0 đến 59.",
+			"byoYomiPeriods": "Byo-yomi cần ít nhất một lượt dài ít nhất một giây.",
+			"mainTime": "Đặt thời gian chính lớn hơn 0."
+		}
+	}
+}

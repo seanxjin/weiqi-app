@@ -1,0 +1,84 @@
+{
+	"page": {
+		"title": {
+			"local": "Pengaturan Permainan Lokal",
+			"online": "Pengaturan Permainan Online"
+		},
+		"label": {
+			"local": "Pengaturan permainan lokal",
+			"online": "Pengaturan permainan online"
+		},
+		"backToMenu": "Kembali ke menu",
+		"settingsLabel": "Pengaturan permainan",
+		"timeLimitsNotice": "Batas waktu belum diberlakukan.",
+		"boardSize": "UKURAN PAPAN",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Membuat permainan…",
+		"startGame": "Mulai permainan",
+		"createFailed": "Permainan tidak dapat dibuat. Silakan coba lagi."
+	},
+	"players": {
+		"player1": "Pemain 1",
+		"player2": "Pemain 2",
+		"opponent": "Lawan",
+		"guest": "Anda (Tamu)"
+	},
+	"configuration": {
+		"eyebrow": "KONFIGURASI",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Kustom · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Kontrol Waktu Lainnya",
+		"fewerControls": "Lebih Sedikit Kontrol Waktu",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Blitz",
+			"rapid": "Cepat",
+			"classical": "Klasik",
+			"correspondence": "Korespondensi",
+			"untimed": "Tanpa waktu"
+		},
+		"systems": {
+			"absolute": "Absolut",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Byo-yomi Jepang"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} dtk",
+			"absoluteMinutes": "{{minutes}} mnt",
+			"mainSeconds": "{{seconds}}d",
+			"mainMinutes": "{{minutes}}m",
+			"fischer": "{{main}} + {{increment}}d",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}}d",
+			"daysPerMove_other": "{{count}} hari / langkah"
+		},
+		"noTimeLimit": "Tanpa batas waktu"
+	},
+	"customTime": {
+		"label": "Kontrol waktu kustom",
+		"eyebrow": "KONTROL WAKTU KUSTOM",
+		"heading": "Atur jam Anda sendiri",
+		"system": "Sistem",
+		"fields": {
+			"minutes": "Utama · mnt",
+			"seconds": "Utama · dtk",
+			"increment": "Tambahan · dtk",
+			"periods": "Periode",
+			"periodSeconds": "Periode · dtk"
+		},
+		"hints": {
+			"byoYomi": "Waktu tambahan menggunakan sejumlah periode berwaktu yang tetap.",
+			"default": "Pilih sistem, lalu masukkan nilai jamnya."
+		},
+		"apply": "Gunakan waktu kustom",
+		"errors": {
+			"wholeNumbers": "Masukkan bilangan bulat nonnegatif di setiap kolom jam.",
+			"mainSeconds": "Detik utama harus antara 0 dan 59.",
+			"byoYomiPeriods": "Byo-yomi memerlukan setidaknya satu periode yang berlangsung minimal satu detik.",
+			"mainTime": "Atur waktu utama lebih dari nol."
+		}
+	}
+}

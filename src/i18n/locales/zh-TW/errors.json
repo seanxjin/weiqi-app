@@ -1,0 +1,33 @@
+{
+	"server": {
+		"unavailable": "伺服器無法使用，請再試一次。",
+		"unreachable": "無法連線至伺服器。請檢查網路連線後再試一次。",
+		"unexpectedResponse": "伺服器傳回非預期的回應，請再試一次。",
+		"requestFailed": "無法完成要求，請再試一次。"
+	},
+	"rateLimited": {
+		"generic": "嘗試次數過多，請稍候再試。",
+		"withDelay_other": "嘗試次數過多，請等待 {{count}} 秒後再試。"
+	},
+	"unknown": "發生錯誤，請再試一次。",
+	"api": {
+		"invalidCredentials": "使用者名稱、電子郵件或密碼不正確。",
+		"twoFactorRequired": "請輸入驗證器中的 6 位數驗證碼以繼續。",
+		"invalidTwoFactor": "驗證碼不正確，請再試一次。",
+		"emailUnconfirmed": "登入前請先確認你的電子郵件地址。",
+		"accountClosed": "此帳號已關閉，無法登入。",
+		"usernameTaken": "此使用者名稱已被使用，請另選一個。",
+		"emailTaken": "此電子郵件地址已被使用。",
+		"invalidToken": "此連結無效或已過期。請重新申請郵件以繼續。",
+		"unauthorized": "登入工作階段已過期，請重新開始。",
+		"conflict": "無法完成註冊，請重新開始。",
+		"forbidden": "此要求已遭封鎖。請重新整理頁面後再試一次。"
+	},
+	"validation": {
+		"passwordTooShort": "密碼至少需要 8 個字元。",
+		"newPasswordTooShort": "新密碼至少需要 8 個字元。",
+		"passwordTooLong": "密碼不得超過 72 個 UTF-8 位元組。",
+		"passwordMismatch": "兩次輸入的新密碼不一致。",
+		"passwordUnchanged": "請選擇與目前密碼不同的密碼。"
+	}
+}

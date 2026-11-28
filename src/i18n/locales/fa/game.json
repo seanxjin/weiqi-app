@@ -1,0 +1,134 @@
+{
+	"colors": {
+		"black": "سیاه",
+		"white": "سفید"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "پاس",
+	"localPage": {
+		"title": "بازی محلی",
+		"eyebrow": "بازی دوستانه",
+		"heading": "لحظه‌ای برای بازی.",
+		"details": "{{size}} × {{size}} · قوانین ژاپنی"
+	},
+	"onlinePage": {
+		"title": "بازی آنلاین",
+		"eyebrow": "بازی آنلاین",
+		"heading": "لحظه‌ای برای بازی.",
+		"details": "{{size}} × {{size}} · کومی {{komi}}",
+		"loading": "در حال بارگذاری بازی…",
+		"notFound": "این بازی وجود ندارد یا دیگر در دسترس نیست.",
+		"startNew": "شروع یک بازی آنلاین جدید",
+		"invited": "به یک بازی {{size}} × {{size}} دعوت شده‌اید.",
+		"joining": "در حال پیوستن…",
+		"joinAs": "پیوستن با {{color}}",
+		"full": "این بازی پر است. تماشای بازی‌ها هنوز در دسترس نیست."
+	},
+	"local": {
+		"label": "بازی گوی محلی",
+		"loadingEngine": "در حال بارگذاری موتور گو…"
+	},
+	"online": {
+		"label": "بازی گوی آنلاین",
+		"youAre": "شما {{color}} هستید",
+		"connection": {
+			"connecting": "در حال اتصال…",
+			"open": "متصل",
+			"reconnecting": "در حال اتصال دوباره…",
+			"closed": "قطع"
+		},
+		"invite": {
+			"label": "با این پیوند دوستی را دعوت کنید",
+			"copy": "کپی",
+			"copied": "کپی شد"
+		},
+		"awaitingScoring": "هر دو بازیکن پاس دادند. شمارش امتیاز هنوز پشتیبانی نمی‌شود، پس بازی را لغو کنید تا بدون امتیاز ثبت شود.",
+		"confirmResign": "تأیید تسلیم",
+		"resign": "تسلیم",
+		"abort": "لغو بازی",
+		"results": {
+			"youWin": "شما بردید · {{color}} تسلیم شد",
+			"winsByResignation": "{{color}} با تسلیم حریف برد",
+			"aborted": "بازی توسط {{color}} لغو شد",
+			"unscored": "بازی بدون امتیاز به پایان رسید"
+		}
+	},
+	"turn": {
+		"preparing": "در حال آماده‌سازی تخته",
+		"reviewing": "مرور · برای بازی به وضعیت فعلی برگردید",
+		"toPlay": "نوبت {{color}}",
+		"yourMove": "نوبت شما",
+		"waitingForOpponent": "در انتظار حریف",
+		"awaitingScoring": "بازی تمام شده · شمارش امتیاز هنوز پشتیبانی نمی‌شود",
+		"gameOver": "پایان بازی",
+		"sendingMove": "در حال ارسال حرکت…",
+		"waitingForConnection": "در انتظار اتصال"
+	},
+	"boardFooter": {
+		"lastMove": "آخرین حرکت: {{color}} {{move}}",
+		"startingPosition": "وضعیت آغازین"
+	},
+	"players": {
+		"label": "بازیکنان",
+		"captured": "اسیرشده {{count}}",
+		"you": "{{name}} (شما)",
+		"waiting": "{{name}} · در انتظار بازیکن"
+	},
+	"history": {
+		"label": "تاریخچهٔ حرکت‌ها",
+		"heading": "حرکت‌ها",
+		"moveCount_one": "{{count}} حرکت",
+		"moveCount_other": "{{count}} حرکت",
+		"tableLabel": "حرکت‌های سیاه و سفید",
+		"pair": "جفت",
+		"move": "حرکت {{number}}، {{color}}، {{move}}",
+		"pendingMove": "حرکت {{number}}، {{color}}، {{move}}، در حال ارسال",
+		"empty": "هنوز حرکتی انجام نشده است.",
+		"position": "حرکت {{viewed}} از {{latest}}",
+		"currentPosition": "وضعیت فعلی",
+		"reviewing": "در حال مرور",
+		"navigationLabel": "پیمایش تاریخچهٔ حرکت‌ها",
+		"navigation": {
+			"start": "آغاز",
+			"previous": "قبلی",
+			"next": "بعدی",
+			"current": "فعلی"
+		},
+		"undo": "واگرد آخرین حرکت",
+		"encouragement": "با حوصله بازی کنید. هر حرکت مهم است.",
+		"keyboardHint": "از ← → برای پیمایش حرکت‌ها و از ↑ ↓ برای آغاز و وضعیت فعلی استفاده کنید."
+	},
+	"board": {
+		"sceneLabel": "تختهٔ گوی {{size}} در {{size}} که دنباله‌ای از {{moveCount}} حرکت آغازین را نشان می‌دهد",
+		"themedBoard": "تختهٔ گوی {{theme}}",
+		"emptyBoard": "تختهٔ خالی Baduk {{size}} در {{size}} از {{theme}}",
+		"stone": "سنگ {{color}} Baduk {{finish}}",
+		"textureError": "بافت تخته بارگذاری نشد.",
+		"pauseAnimations": "توقف پویانمایی‌ها",
+		"resumeAnimations": "ادامهٔ پویانمایی‌ها",
+		"pause": "توقف",
+		"resume": "ادامه"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "یک تقاطع روی تخته انتخاب کنید.",
+			"occupied": "این تقاطع اشغال شده است.",
+			"wrongPlayer": "نوبت بازیکن دیگر است.",
+			"suicide": "خودکشی مجاز نیست.",
+			"ko": "این حرکت طبق قانون کو ممنوع است.",
+			"superko": "این حرکت وضعیتی پیشین را تکرار می‌کند.",
+			"gameEnded": "این بازی حرکت دیگری نمی‌پذیرد."
+		},
+		"serverRejectedMove": "سرور این حرکت را رد کرد. {{reason}}",
+		"staleRevision": "بازی پیش از رسیدن حرکت شما تغییر کرد، بنابراین حرکت انجام نشد.",
+		"wrongPhase": "این کار در این مرحله از بازی ممکن نیست.",
+		"seatTaken": "این جایگاه قبلاً گرفته شده است.",
+		"notYourTurn": "نوبت بازیکن دیگر است.",
+		"abortUnavailable": "دیگر نمی‌توان بازی را لغو کرد.",
+		"replayFailed": "بازپخش محلی این بازی ممکن نشد. لطفاً صفحه را دوباره بارگذاری کنید.",
+		"notConnected": "به سرور بازی متصل نیستید.",
+		"engineLoadFailed": "موتور گو بارگذاری نشد. لطفاً دوباره تلاش کنید.",
+		"gameLoadFailed": "بازی بارگذاری نشد. لطفاً دوباره تلاش کنید.",
+		"seatTakenFirst": "شخص دیگری زودتر جایگاه را گرفت. این بازی اکنون پر است."
+	}
+}

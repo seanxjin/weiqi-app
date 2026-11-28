@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Παίξτε Go",
+	"railLabel": "Baduk",
+	"mainNavigation": "Κύρια πλοήγηση",
+	"play": "Παιχνίδι",
+	"eyebrow": "Κάποιο κείμενο",
+	"heading": {
+		"label": "Παίξτε Go",
+		"prefix": "Παίξτε "
+	},
+	"description": {
+		"first": "Κάποιο κείμενο....",
+		"second": "Κάποιο άλλο κείμενο..."
+	},
+	"footnote": "ΠΑΡΤΕ ΤΟ ΧΡΟΝΟ ΣΑΣ."
+}

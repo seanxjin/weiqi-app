@@ -1,0 +1,84 @@
+{
+	"page": {
+		"title": {
+			"local": "ローカル対局の設定",
+			"online": "オンライン対局の設定"
+		},
+		"label": {
+			"local": "ローカル対局の設定",
+			"online": "オンライン対局の設定"
+		},
+		"backToMenu": "メニューに戻る",
+		"settingsLabel": "対局設定",
+		"timeLimitsNotice": "持ち時間はまだ適用されません。",
+		"boardSize": "碁盤のサイズ",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "対局を作成中…",
+		"startGame": "対局を開始",
+		"createFailed": "対局を作成できませんでした。もう一度お試しください。"
+	},
+	"players": {
+		"player1": "プレイヤー1",
+		"player2": "プレイヤー2",
+		"opponent": "相手",
+		"guest": "あなた（ゲスト）"
+	},
+	"configuration": {
+		"eyebrow": "設定",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "カスタム · {{system}}",
+		"presetOptionLabel": "{{preset}}、{{system}}",
+		"moreControls": "持ち時間の選択肢を増やす",
+		"fewerControls": "持ち時間の選択肢を減らす",
+		"groups": {
+			"bullet": "超早碁",
+			"blitz": "早碁",
+			"rapid": "ラピッド",
+			"classical": "長考",
+			"correspondence": "通信対局",
+			"untimed": "時間無制限"
+		},
+		"systems": {
+			"absolute": "切れ負け",
+			"fischer": "フィッシャー",
+			"japaneseByoYomi": "日本式秒読み"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}}秒",
+			"absoluteMinutes": "{{minutes}}分",
+			"mainSeconds": "{{seconds}}秒",
+			"mainMinutes": "{{minutes}}分",
+			"fischer": "{{main}} + {{increment}}秒",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}}秒",
+			"daysPerMove_other": "1手 {{count}}日"
+		},
+		"noTimeLimit": "持ち時間なし"
+	},
+	"customTime": {
+		"label": "カスタム持ち時間",
+		"eyebrow": "カスタム持ち時間",
+		"heading": "自分で時計を設定",
+		"system": "方式",
+		"fields": {
+			"minutes": "持ち時間 · 分",
+			"seconds": "持ち時間 · 秒",
+			"increment": "加算 · 秒",
+			"periods": "回数",
+			"periodSeconds": "秒読み · 秒"
+		},
+		"hints": {
+			"byoYomi": "持ち時間の後は、決まった回数の秒読みになります。",
+			"default": "方式を選んでから、時間を入力してください。"
+		},
+		"apply": "カスタム持ち時間を使う",
+		"errors": {
+			"wholeNumbers": "各欄に0以上の整数を入力してください。",
+			"mainSeconds": "持ち時間の秒は0〜59の範囲で指定してください。",
+			"byoYomiPeriods": "秒読みには1秒以上の回数が少なくとも1回必要です。",
+			"mainTime": "持ち時間を0より大きく設定してください。"
+		}
+	}
+}

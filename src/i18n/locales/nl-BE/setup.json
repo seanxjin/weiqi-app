@@ -1,0 +1,85 @@
+{
+	"page": {
+		"title": {
+			"local": "Lokale partij instellen",
+			"online": "Onlinepartij instellen"
+		},
+		"label": {
+			"local": "Lokale partij instellen",
+			"online": "Onlinepartij instellen"
+		},
+		"backToMenu": "Terug naar menu",
+		"settingsLabel": "Spelinstellingen",
+		"timeLimitsNotice": "Tijdslimieten worden nog niet toegepast.",
+		"boardSize": "BORDGROOTTE",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Partij aanmaken…",
+		"startGame": "Spel starten",
+		"createFailed": "De partij kon niet worden aangemaakt. Probeer het opnieuw."
+	},
+	"players": {
+		"player1": "Speler 1",
+		"player2": "Speler 2",
+		"opponent": "Tegenstander",
+		"guest": "Jij (gast)"
+	},
+	"configuration": {
+		"eyebrow": "CONFIGURATIES",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Aangepast · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Meer tijdsinstellingen",
+		"fewerControls": "Minder tijdsinstellingen",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Blitz",
+			"rapid": "Rapid",
+			"classical": "Klassiek",
+			"correspondence": "Correspondentie",
+			"untimed": "Zonder tijd"
+		},
+		"systems": {
+			"absolute": "Absoluut",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Japanse byo-yomi"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} sec",
+			"absoluteMinutes": "{{minutes}} min",
+			"mainSeconds": "{{seconds}}s",
+			"mainMinutes": "{{minutes}}m",
+			"fischer": "{{main}} + {{increment}}s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}}s",
+			"daysPerMove_one": "{{count}} dag / zet",
+			"daysPerMove_other": "{{count}} dagen / zet"
+		},
+		"noTimeLimit": "Geen tijdslimiet"
+	},
+	"customTime": {
+		"label": "Aangepaste bedenktijd",
+		"eyebrow": "AANGEPASTE BEDENKTIJD",
+		"heading": "Stel je eigen klok in",
+		"system": "Systeem",
+		"fields": {
+			"minutes": "Basis · min",
+			"seconds": "Basis · sec",
+			"increment": "Increment · sec",
+			"periods": "Periodes",
+			"periodSeconds": "Periode · sec"
+		},
+		"hints": {
+			"byoYomi": "Overtijd gebruikt een vast aantal getimede periodes.",
+			"default": "Kies een systeem en voer dan de klokwaarden in."
+		},
+		"apply": "Aangepaste tijd gebruiken",
+		"errors": {
+			"wholeNumbers": "Voer in elk klokveld een niet-negatief geheel getal in.",
+			"mainSeconds": "De basisseconden moeten tussen 0 en 59 liggen.",
+			"byoYomiPeriods": "Byo-yomi vereist minstens één periode van minstens één seconde.",
+			"mainTime": "Stel een basistijd groter dan nul in."
+		}
+	}
+}

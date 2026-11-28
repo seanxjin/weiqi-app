@@ -1,0 +1,29 @@
+{
+	"navigation": "Baduk-ის ნავიგაცია",
+	"drawer": {
+		"open": "ნავიგაციის გახსნა",
+		"close": "ნავიგაციის დახურვა"
+	},
+	"mainNavigation": "მთავარი ნავიგაცია",
+	"play": "თამაში",
+	"puzzles": "ამოცანები",
+	"learn": "სწავლა",
+	"guide": {
+		"heading": "გოში ახალი ხართ?",
+		"startWithBasics": "დაიწყეთ საფუძვლებით"
+	},
+	"account": {
+		"label": "ანგარიში",
+		"friends": "მეგობრები",
+		"messages": "წერილები",
+		"notifications": "შეტყობინებები",
+		"settings": "პარამეტრები",
+		"allSettings": "ყველა პარამეტრი"
+	},
+	"theme": {
+		"label": "თემა",
+		"system": "სისტემური",
+		"light": "ღია",
+		"dark": "მუქი"
+	}
+}

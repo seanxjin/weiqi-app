@@ -1,0 +1,209 @@
+{
+	"header": {
+		"title": "Sazlamalar",
+		"sectionTitle": "{{section}} sazlamalary",
+		"navLabel": "Sazlama bölümleri"
+	},
+	"sections": {
+		"board": "Tagta we daşlar",
+		"gameplay": "Oýun",
+		"profile": "Profil",
+		"social": "Sosial we gizlinlik",
+		"account": "Hasap we howpsuzlyk",
+		"language": "Dil we wagt"
+	},
+	"board": {
+		"description": "Oýnaýan tagtaňyzy we daşlaryňyzy saýlaň.",
+		"appearance": {
+			"title": "Daşky görnüş",
+			"boardLegend": "Tagta",
+			"stonesLegend": "Daşlar",
+			"previewLabel": "Tagtany öňünden görmek"
+		},
+		"themes": {
+			"kaya": "Däp bolan ýapon kaýasy",
+			"walnut": "Goýy hoz agajy",
+			"ash": "Açyk reňkli Skandinaw ýasen agajy"
+		},
+		"stoneStyles": {
+			"polished": "Slanes",
+			"satin": "Keramika",
+			"matte": "Tebigy daş",
+			"snow": "Balykgulak · Yuki / Snow derejesi"
+		},
+		"display": {
+			"title": "Tagtanyň görkezilişi",
+			"coordinates": {
+				"label": "Tagtanyň koordinatlaryny görkez",
+				"description": "Tagtanyň gyrasyndaky sütünleri we setirleri belle."
+			},
+			"lastMove": {
+				"label": "Soňky ýörişi bellemek",
+				"description": "Iň soňky goýlan daşy belle."
+			}
+		},
+		"sounds": {
+			"title": "Sesler",
+			"playSounds": {
+				"label": "Sesleri çal",
+				"description": "Daş goýmak, daş almak we sagat duýduryşlary."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Daşlary nähili goýýandygyňyzy we size kimiň çagyryş iberip biljekdigini dolandyryň.",
+		"moves": {
+			"title": "Ýöriş etmek",
+			"description": "Ýalňyş basmalaryň öňüni almak üçin daş goýulmazdan öň ikinji basmany talap et.",
+			"legend": "Ýörişleri tassykla",
+			"options": {
+				"never": "Hiç haçan",
+				"correspondence": "Diňe hat arkaly oýunlarda",
+				"always": "Hemişe"
+			}
+		},
+		"challenges": {
+			"title": "Çagyryşlar",
+			"description": "Size kimiň oýun çagyryşyny iberip biljekdigini saýlaň.",
+			"legend": "Çagyryşlara rugsat ber",
+			"options": {
+				"everyone": "Hemmeler",
+				"registered": "Hasaba alnan oýunçylar",
+				"following": "Diňe yzarlaýan oýunçylarym",
+				"nobody": "Hiç kim (gaýtadan oýunlara rugsat berilýär)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Bu ýerdäki ähli zat <profileLink>köpçülige açyk profiliňizde</profileLink> görünýär.",
+		"publicProfile": {
+			"title": "Köpçülige açyk profil",
+			"bioLabel": "Gysga terjimehal",
+			"bioPlaceholder": "Gysga terjimehalyňyz profiliňizde görüner.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Jikme-jiklikler",
+			"joinDate": "Goşulan senesi",
+			"username": "Ulanyjy ady",
+			"changeUsername": "Üýtget",
+			"changeUsernameFeature": "Ulanyjy adyny üýtgetmek",
+			"realName": "Hakyky ady",
+			"location": "Ýerleşýän ýeri",
+			"country": "Ýurt",
+			"countryNotSet": "Bellenmedik",
+			"rank": "Dereje",
+			"rankPlaceholder": "meselem, 12k, 3d",
+			"rankHint": "30k–1k, 1d–9d ýa-da 1p–9p ulanyň."
+		},
+		"links": {
+			"legend": "Baglanyşyklar",
+			"linkLabel": "Baglanyşyk {{number}}",
+			"remove": "Aýyr",
+			"removeLabel": "{{number}}-nji baglanyşygy aýyr",
+			"add": "Baglanyşyk goş"
+		}
+	},
+	"social": {
+		"description": "Yzarlaýan we petiklän oýunçylaryňyzy dolandyryň.",
+		"blocking": {
+			"title": "Petiklemek",
+			"description_one": "Siz {{count}} oýunçyny petiklediňiz. Petiklenen oýunçylar size çagyryş ýa-da hat iberip bilmeýär.",
+			"description_other": "Siz {{count}} oýunçyny petiklediňiz. Petiklenen oýunçylar size çagyryş ýa-da hat iberip bilmeýär.",
+			"empty": "Siz hiç kimi petiklemediňiz.",
+			"action": "Petigi aç",
+			"actionLabel": "{{username}} petigini aç"
+		},
+		"following": {
+			"title": "Yzarlanýanlar",
+			"description_one": "Siz {{count}} oýunçyny yzarlaýarsyňyz.",
+			"description_other": "Siz {{count}} oýunçyny yzarlaýarsyňyz.",
+			"empty": "Siz heniz hiç kimi yzarlamaýarsyňyz.",
+			"action": "Yzarlamagy bes et",
+			"actionLabel": "{{username}} yzarlamagy bes et"
+		}
+	},
+	"account": {
+		"description": "Açar sözüňizi üýtgediň, hasabyňyzy goraň we birikdirilen hasaplary dolandyryň.",
+		"password": {
+			"title": "Açar sözüni üýtget",
+			"updated": "Açar sözi täzelendi",
+			"fields": {
+				"currentPassword": {
+					"label": "Häzirki açar sözi",
+					"show": "Häzirki açar sözüni görkez",
+					"hide": "Häzirki açar sözüni gizle"
+				},
+				"newPassword": {
+					"label": "Täze açar sözi",
+					"show": "Täze açar sözüni görkez",
+					"hide": "Täze açar sözüni gizle"
+				},
+				"confirmPassword": {
+					"label": "Açar sözüni gaýtadan ýazyň",
+					"show": "Gaýtadan ýazylan açar sözüni görkez",
+					"hide": "Gaýtadan ýazylan açar sözüni gizle"
+				}
+			}
+		},
+		"contact": {
+			"title": "Habarlaşmak üçin maglumat",
+			"email": "E-poçta salgysy",
+			"edit": "Üýtget",
+			"editFeature": "E-poçtany üýtgetmek"
+		},
+		"twoFactor": {
+			"title": "Iki tapgyrly tassyklama",
+			"description": "Ulgama girýäňizde tassyklaýyş programmasyndan kod talap et.",
+			"off": "Öçük",
+			"enable": "Işlet",
+			"feature": "Iki tapgyrly tassyklama"
+		},
+		"sessions": {
+			"title": "Işjeň sessiýalar",
+			"description": "Hasabyňyza girilendir öýdýän bolsaňyz, açar sözüňizi üýtgediň we ähli ýerden çykyň.",
+			"thisDevice": "Bu enjam",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "{{device}} enjamyndan çyk",
+			"logOutAll": "Beýleki ähli enjamlardan çyk"
+		},
+		"connections": {
+			"title": "Birikdirilen hasaplar",
+			"description": "Baduk-a şu hasaplar bilen giriň.",
+			"connectedTo": "{{provider}} bilen birikdirildi",
+			"connect": "Birikdir",
+			"disconnect": "Aýyr",
+			"note": "Aýyrmak Baduk-daky baglanyşygy pozýar. Beýleki saýtda hem rugsady ýatyrmaly bolmagyňyz mümkin."
+		},
+		"close": {
+			"title": "Hasabyňyzy ýapyň",
+			"description": "Hasabyňyzy ýapmak profiliňizi gizleýär we sizi ähli ýerden çykarýar.",
+			"button": "Hasaby ýap",
+			"dialogTitle": "Hasabyňyz ýapylsynmy?",
+			"dialogDescription": "Ony soňra giriş sahypasyndan gaýtadan açyp bilersiňiz.",
+			"feature": "Hasaby ýapmak"
+		}
+	},
+	"languageTime": {
+		"title": "Dil we wagt",
+		"description": "Baduk-yň ulanýan dilini we senäniň hem-de wagtyň görkezilişini saýlaň.",
+		"language": {
+			"title": "Dil",
+			"description": "Üýtgeşmeler ähli sahypalarda derrew güýje girýär.",
+			"legend": "Görkeziş dili"
+		},
+		"time": {
+			"title": "Wagt",
+			"description": "Goşulan senesi we sessiýa işjeňligi ýaly wagt belgileri üçin ulanylýar.",
+			"timeZone": "Sagat guşagy",
+			"automaticTimeZone": "Awtomatik ({{timeZone}})",
+			"timeFormat": "Sagat",
+			"formats": {
+				"auto": "Awtomatik ({{example}})",
+				"12h": "12 sagatlyk ({{example}})",
+				"24h": "24 sagatlyk ({{example}})"
+			},
+			"preview": "Öňünden görmek"
+		}
+	}
+}

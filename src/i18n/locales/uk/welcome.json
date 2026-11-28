@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Грати в ґо",
+	"railLabel": "Baduk",
+	"mainNavigation": "Головна навігація",
+	"play": "Грати",
+	"eyebrow": "Деякий текст",
+	"heading": {
+		"label": "Грати в ґо",
+		"prefix": "Грати в "
+	},
+	"description": {
+		"first": "Деякий текст....",
+		"second": "Інший текст..."
+	},
+	"footnote": "НЕ ПОСПІШАЙТЕ."
+}

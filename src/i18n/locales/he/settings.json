@@ -1,0 +1,211 @@
+{
+	"header": {
+		"title": "הגדרות",
+		"sectionTitle": "הגדרות {{section}}",
+		"navLabel": "אזורי ההגדרות"
+	},
+	"sections": {
+		"board": "לוח ואבנים",
+		"gameplay": "משחק",
+		"profile": "פרופיל",
+		"social": "חברתי ופרטיות",
+		"account": "חשבון ואבטחה",
+		"language": "שפה וזמן"
+	},
+	"board": {
+		"description": "בחרו את הלוח והאבנים שבהם תשחקו.",
+		"appearance": {
+			"title": "מראה",
+			"boardLegend": "לוח",
+			"stonesLegend": "אבנים",
+			"previewLabel": "תצוגה מקדימה של הלוח"
+		},
+		"themes": {
+			"kaya": "קאיה יפנית מסורתית",
+			"walnut": "אגוז כהה",
+			"ash": "מילה סקנדינבית בהירה"
+		},
+		"stoneStyles": {
+			"polished": "צפחה",
+			"satin": "קרמיקה",
+			"matte": "אבן טבעית",
+			"snow": "צדף · Yuki / דרגת שלג"
+		},
+		"display": {
+			"title": "תצוגת הלוח",
+			"coordinates": {
+				"label": "הצגת קואורדינטות",
+				"description": "סימון העמודות והשורות לאורך שולי הלוח."
+			},
+			"lastMove": {
+				"label": "הדגשת המהלך האחרון",
+				"description": "סימון האבן האחרונה שהונחה."
+			}
+		},
+		"sounds": {
+			"title": "צלילים",
+			"playSounds": {
+				"label": "השמעת צלילים",
+				"description": "הנחת אבנים, לכידות ואזהרות שעון."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "נהלו את אופן הנחת האבנים ואת מי שיכול לאתגר אתכם.",
+		"moves": {
+			"title": "ביצוע מהלכים",
+			"description": "דרישת לחיצה שנייה לפני הנחת אבן, כדי למנוע לחיצות שגויות.",
+			"legend": "אישור מהלכים",
+			"options": {
+				"never": "אף פעם",
+				"correspondence": "רק במשחקי התכתבות",
+				"always": "תמיד"
+			}
+		},
+		"challenges": {
+			"title": "אתגרים",
+			"description": "בחרו מי יכול לשלוח לכם אתגרי משחק.",
+			"legend": "התרת אתגרים מ",
+			"options": {
+				"everyone": "כולם",
+				"registered": "שחקנים רשומים",
+				"following": "רק שחקנים שאני עוקב אחריהם",
+				"nobody": "אף אחד (משחקים חוזרים עדיין מותרים)"
+			}
+		}
+	},
+	"profile": {
+		"description": "כל מה שכאן גלוי ב<profileLink>פרופיל הציבורי</profileLink> שלכם.",
+		"publicProfile": {
+			"title": "פרופיל ציבורי",
+			"bioLabel": "ביוגרפיה קצרה",
+			"bioPlaceholder": "הביוגרפיה הקצרה שלכם תופיע בפרופיל.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "פרטים",
+			"joinDate": "תאריך הצטרפות",
+			"username": "שם משתמש",
+			"changeUsername": "שינוי",
+			"changeUsernameFeature": "שינוי שם המשתמש",
+			"realName": "שם אמיתי",
+			"location": "מיקום",
+			"country": "מדינה",
+			"countryNotSet": "לא הוגדר",
+			"rank": "דרגה",
+			"rankPlaceholder": "לדוגמה 12k, 3d",
+			"rankHint": "השתמשו ב-30k–1k, 1d–9d או 1p–9p."
+		},
+		"links": {
+			"legend": "קישורים",
+			"linkLabel": "קישור {{number}}",
+			"remove": "הסרה",
+			"removeLabel": "הסרת קישור {{number}}",
+			"add": "הוספת קישור"
+		}
+	},
+	"social": {
+		"description": "נהלו את השחקנים שאתם עוקבים אחריהם ואת השחקנים שחסמתם.",
+		"blocking": {
+			"title": "חסימה",
+			"description_one": "חסמתם שחקן אחד. שחקנים חסומים לא יכולים לאתגר אתכם או לשלוח לכם הודעות.",
+			"description_two": "חסמתם {{count}} שחקנים. שחקנים חסומים לא יכולים לאתגר אתכם או לשלוח לכם הודעות.",
+			"description_other": "חסמתם {{count}} שחקנים. שחקנים חסומים לא יכולים לאתגר אתכם או לשלוח לכם הודעות.",
+			"empty": "לא חסמתם אף אחד.",
+			"action": "ביטול חסימה",
+			"actionLabel": "ביטול החסימה של {{username}}"
+		},
+		"following": {
+			"title": "עוקבים אחריהם",
+			"description_one": "אתם עוקבים אחרי שחקן אחד.",
+			"description_two": "אתם עוקבים אחרי {{count}} שחקנים.",
+			"description_other": "אתם עוקבים אחרי {{count}} שחקנים.",
+			"empty": "אתם עדיין לא עוקבים אחרי אף אחד.",
+			"action": "הפסקת מעקב",
+			"actionLabel": "הפסקת המעקב אחרי {{username}}"
+		}
+	},
+	"account": {
+		"description": "שנו את הסיסמה, אבטחו את החשבון ונהלו חשבונות מקושרים.",
+		"password": {
+			"title": "שינוי סיסמה",
+			"updated": "הסיסמה עודכנה",
+			"fields": {
+				"currentPassword": {
+					"label": "סיסמה נוכחית",
+					"show": "הצגת הסיסמה הנוכחית",
+					"hide": "הסתרת הסיסמה הנוכחית"
+				},
+				"newPassword": {
+					"label": "סיסמה חדשה",
+					"show": "הצגת הסיסמה החדשה",
+					"hide": "הסתרת הסיסמה החדשה"
+				},
+				"confirmPassword": {
+					"label": "הקלידו שוב את הסיסמה",
+					"show": "הצגת הסיסמה החוזרת",
+					"hide": "הסתרת הסיסמה החוזרת"
+				}
+			}
+		},
+		"contact": {
+			"title": "פרטי קשר",
+			"email": "כתובת דוא״ל",
+			"edit": "עריכה",
+			"editFeature": "שינוי הדוא״ל"
+		},
+		"twoFactor": {
+			"title": "אימות דו-שלבי",
+			"description": "דרישת קוד מאפליקציית אימות בעת הכניסה.",
+			"off": "כבוי",
+			"enable": "הפעלה",
+			"feature": "אימות דו-שלבי"
+		},
+		"sessions": {
+			"title": "התחברויות פעילות",
+			"description": "אם אתם חושדים שהחשבון נפרץ, שנו את הסיסמה וצאו מכל המכשירים.",
+			"thisDevice": "המכשיר הזה",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "יציאה מ-{{device}}",
+			"logOutAll": "יציאה מכל המכשירים האחרים"
+		},
+		"connections": {
+			"title": "חשבונות מקושרים",
+			"description": "היכנסו ל-Baduk באמצעות החשבונות האלה.",
+			"connectedTo": "מקושר ל-{{provider}}",
+			"connect": "קישור",
+			"disconnect": "ניתוק",
+			"note": "הניתוק מסיר את הקישור ב-Baduk. ייתכן שתצטרכו לבטל את הגישה גם באתר האחר."
+		},
+		"close": {
+			"title": "סגירת החשבון",
+			"description": "סגירת החשבון מסתירה את הפרופיל שלכם ומנתקת אתכם מכל המכשירים.",
+			"button": "סגירת חשבון",
+			"dialogTitle": "לסגור את החשבון?",
+			"dialogDescription": "תוכלו לפתוח אותו מחדש מאוחר יותר מדף הכניסה.",
+			"feature": "סגירת החשבון"
+		}
+	},
+	"languageTime": {
+		"title": "שפה וזמן",
+		"description": "בחרו את השפה של Baduk ואת אופן הצגת התאריכים והשעות.",
+		"language": {
+			"title": "שפה",
+			"description": "השינויים חלים מיד בכל הדפים.",
+			"legend": "שפת התצוגה"
+		},
+		"time": {
+			"title": "זמן",
+			"description": "משמש לחותמות זמן כמו תאריכי הצטרפות ופעילות התחברויות.",
+			"timeZone": "אזור זמן",
+			"automaticTimeZone": "אוטומטי ({{timeZone}})",
+			"timeFormat": "שעון",
+			"formats": {
+				"auto": "אוטומטי ({{example}})",
+				"12h": "12 שעות ({{example}})",
+				"24h": "24 שעות ({{example}})"
+			},
+			"preview": "תצוגה מקדימה"
+		}
+	}
+}

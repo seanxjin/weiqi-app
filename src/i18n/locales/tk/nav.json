@@ -1,0 +1,29 @@
+{
+	"navigation": "Baduk nawigasiýasy",
+	"drawer": {
+		"open": "Nawigasiýany aç",
+		"close": "Nawigasiýany ýap"
+	},
+	"mainNavigation": "Esasy nawigasiýa",
+	"play": "Oýna",
+	"puzzles": "Meseleler",
+	"learn": "Öwren",
+	"guide": {
+		"heading": "GO SIZ ÜÇIN TÄZEMI?",
+		"startWithBasics": "Esaslardan başlaň"
+	},
+	"account": {
+		"label": "Hasap",
+		"friends": "Dostlar",
+		"messages": "Hatlar",
+		"notifications": "Bildirişler",
+		"settings": "Sazlamalar",
+		"allSettings": "Ähli sazlamalar"
+	},
+	"theme": {
+		"label": "Tema",
+		"system": "Ulgam",
+		"light": "Açyk",
+		"dark": "Garaňky"
+	}
+}

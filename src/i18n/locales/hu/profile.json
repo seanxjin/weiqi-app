@@ -1,0 +1,18 @@
+{
+	"editProfile": "Profil szerkesztése",
+	"meta": {
+		"joined": "Csatlakozott",
+		"rank": "Rang",
+		"noRank": "—",
+		"followers": "Követők",
+		"following": "Követettek"
+	},
+	"about": {
+		"heading": "Bemutatkozás",
+		"noBio": "Még nincs bemutatkozás."
+	},
+	"games": {
+		"heading": "Játszmatörténet",
+		"empty": "Még nincs játszma."
+	}
+}

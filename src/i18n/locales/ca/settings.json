@@ -1,0 +1,211 @@
+{
+	"header": {
+		"title": "Configuració",
+		"sectionTitle": "Configuració: {{section}}",
+		"navLabel": "Seccions de configuració"
+	},
+	"sections": {
+		"board": "Tauler i pedres",
+		"gameplay": "Joc",
+		"profile": "Perfil",
+		"social": "Social i privadesa",
+		"account": "Compte i seguretat",
+		"language": "Idioma i hora"
+	},
+	"board": {
+		"description": "Tria el tauler i les pedres amb què jugues.",
+		"appearance": {
+			"title": "Aparença",
+			"boardLegend": "Tauler",
+			"stonesLegend": "Pedres",
+			"previewLabel": "Previsualització del tauler"
+		},
+		"themes": {
+			"kaya": "Kaya japonesa tradicional",
+			"walnut": "Noguera fosca",
+			"ash": "Freixe escandinau clar"
+		},
+		"stoneStyles": {
+			"polished": "Pissarra",
+			"satin": "Ceràmica",
+			"matte": "Pedra natural",
+			"snow": "Petxina · Yuki / Qualitat Neu"
+		},
+		"display": {
+			"title": "Visualització del tauler",
+			"coordinates": {
+				"label": "Mostra les coordenades",
+				"description": "Etiqueta les columnes i les files a la vora del tauler."
+			},
+			"lastMove": {
+				"label": "Ressalta l’última jugada",
+				"description": "Marca la pedra jugada més recentment."
+			}
+		},
+		"sounds": {
+			"title": "Sons",
+			"playSounds": {
+				"label": "Reprodueix sons",
+				"description": "Col·locació de pedres, captures i avisos del rellotge."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Gestiona com col·loques les pedres i qui et pot desafiar.",
+		"moves": {
+			"title": "Jugades",
+			"description": "Demana un segon clic abans de col·locar una pedra, per evitar clics accidentals.",
+			"legend": "Confirma les jugades",
+			"options": {
+				"never": "Mai",
+				"correspondence": "Només en partides per correspondència",
+				"always": "Sempre"
+			}
+		},
+		"challenges": {
+			"title": "Desafiaments",
+			"description": "Tria qui et pot enviar desafiaments.",
+			"legend": "Permet desafiaments de",
+			"options": {
+				"everyone": "Tothom",
+				"registered": "Jugadors registrats",
+				"following": "Només jugadors que segueixo",
+				"nobody": "Ningú (les revenges encara es permeten)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Tot el que hi ha aquí és visible al teu <profileLink>perfil públic</profileLink>.",
+		"publicProfile": {
+			"title": "Perfil públic",
+			"bioLabel": "Biografia breu",
+			"bioPlaceholder": "La teva biografia breu apareixerà al perfil.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Detalls",
+			"joinDate": "Data d’alta",
+			"username": "Nom d’usuari",
+			"changeUsername": "Canvia",
+			"changeUsernameFeature": "El canvi de nom d’usuari",
+			"realName": "Nom real",
+			"location": "Ubicació",
+			"country": "País",
+			"countryNotSet": "No definit",
+			"rank": "Rang",
+			"rankPlaceholder": "p. ex. 12k, 3d",
+			"rankHint": "Fes servir 30k–1k, 1d–9d o 1p–9p."
+		},
+		"links": {
+			"legend": "Enllaços",
+			"linkLabel": "Enllaç {{number}}",
+			"remove": "Suprimeix",
+			"removeLabel": "Suprimeix l’enllaç {{number}}",
+			"add": "Afegeix un enllaç"
+		}
+	},
+	"social": {
+		"description": "Gestiona els jugadors que segueixes i els que has bloquejat.",
+		"blocking": {
+			"title": "Bloquejats",
+			"description_one": "Tens {{count}} jugador bloquejat. Els jugadors bloquejats no et poden desafiar ni enviar missatges.",
+			"description_many": "Tens {{count}} de jugadors bloquejats. Els jugadors bloquejats no et poden desafiar ni enviar missatges.",
+			"description_other": "Tens {{count}} jugadors bloquejats. Els jugadors bloquejats no et poden desafiar ni enviar missatges.",
+			"empty": "No has bloquejat ningú.",
+			"action": "Desbloqueja",
+			"actionLabel": "Desbloqueja {{username}}"
+		},
+		"following": {
+			"title": "Seguint",
+			"description_one": "Segueixes {{count}} jugador.",
+			"description_many": "Segueixes {{count}} de jugadors.",
+			"description_other": "Segueixes {{count}} jugadors.",
+			"empty": "Encara no segueixes ningú.",
+			"action": "Deixa de seguir",
+			"actionLabel": "Deixa de seguir {{username}}"
+		}
+	},
+	"account": {
+		"description": "Canvia la contrasenya, protegeix el compte i gestiona els comptes connectats.",
+		"password": {
+			"title": "Canvia la contrasenya",
+			"updated": "Contrasenya actualitzada",
+			"fields": {
+				"currentPassword": {
+					"label": "Contrasenya actual",
+					"show": "Mostra la contrasenya actual",
+					"hide": "Amaga la contrasenya actual"
+				},
+				"newPassword": {
+					"label": "Contrasenya nova",
+					"show": "Mostra la contrasenya nova",
+					"hide": "Amaga la contrasenya nova"
+				},
+				"confirmPassword": {
+					"label": "Repeteix la contrasenya",
+					"show": "Mostra la contrasenya repetida",
+					"hide": "Amaga la contrasenya repetida"
+				}
+			}
+		},
+		"contact": {
+			"title": "Informació de contacte",
+			"email": "Adreça de correu",
+			"edit": "Edita",
+			"editFeature": "El canvi de correu"
+		},
+		"twoFactor": {
+			"title": "Autenticació en dos passos",
+			"description": "Demana un codi d’una aplicació d’autenticació en iniciar la sessió.",
+			"off": "Desactivada",
+			"enable": "Activa",
+			"feature": "L’autenticació en dos passos"
+		},
+		"sessions": {
+			"title": "Sessions actives",
+			"description": "Si sospites que el teu compte s’ha vist compromès, canvia la contrasenya i tanca la sessió a tot arreu.",
+			"thisDevice": "Aquest dispositiu",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "Tanca la sessió a {{device}}",
+			"logOutAll": "Tanca la sessió a tots els altres dispositius"
+		},
+		"connections": {
+			"title": "Comptes connectats",
+			"description": "Inicia la sessió a Baduk amb aquests comptes.",
+			"connectedTo": "Connectat a {{provider}}",
+			"connect": "Connecta",
+			"disconnect": "Desconnecta",
+			"note": "En desconnectar se suprimeix l’enllaç a Baduk. És possible que també hagis de revocar l’accés a l’altre lloc."
+		},
+		"close": {
+			"title": "Tanca el compte",
+			"description": "En tancar el compte s’amaga el perfil i es tanca la sessió a tot arreu.",
+			"button": "Tanca el compte",
+			"dialogTitle": "Vols tancar el compte?",
+			"dialogDescription": "El pots tornar a obrir més endavant des de la pàgina d’inici de sessió.",
+			"feature": "El tancament del compte"
+		}
+	},
+	"languageTime": {
+		"title": "Idioma i hora",
+		"description": "Tria l’idioma de Baduk i com es mostren les dates i les hores.",
+		"language": {
+			"title": "Idioma",
+			"description": "Els canvis s’apliquen immediatament a totes les pàgines.",
+			"legend": "Idioma de visualització"
+		},
+		"time": {
+			"title": "Hora",
+			"description": "S’utilitza per a marques de temps com ara dates d’alta i activitat de sessió.",
+			"timeZone": "Zona horària",
+			"automaticTimeZone": "Automàtica ({{timeZone}})",
+			"timeFormat": "Rellotge",
+			"formats": {
+				"auto": "Automàtic ({{example}})",
+				"12h": "12 hores ({{example}})",
+				"24h": "24 hores ({{example}})"
+			},
+			"preview": "Previsualització"
+		}
+	}
+}

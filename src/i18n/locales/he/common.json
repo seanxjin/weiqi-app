@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "גו",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "דף הבית של Baduk",
+	"actions": {
+		"save": "שמירה",
+		"saving": "שומר…",
+		"cancel": "ביטול",
+		"back": "חזרה",
+		"retry": "ניסיון חוזר",
+		"close": "סגירה",
+		"login": "כניסה",
+		"signIn": "כניסה",
+		"signUp": "הרשמה",
+		"logOut": "יציאה",
+		"loggingOut": "יוצא…"
+	},
+	"status": {
+		"saved": "נשמר",
+		"loading": "טוען…",
+		"checkingSession": "בודק את ההתחברות שלך…",
+		"sessionError": "לא ניתן לבדוק את ההתחברות שלך. נסו שוב."
+	},
+	"comingSoon": "{{feature}} יגיע בקרוב.",
+	"language": "שפה",
+	"languageDialog": {
+		"title": "בחרו את השפה המועדפת",
+		"loadError": "לא ניתן היה לטעון את השפה. נסו שוב."
+	}
+}

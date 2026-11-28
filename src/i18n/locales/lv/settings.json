@@ -1,0 +1,211 @@
+{
+	"header": {
+		"title": "Iestatījumi",
+		"sectionTitle": "Iestatījumi: {{section}}",
+		"navLabel": "Iestatījumu sadaļas"
+	},
+	"sections": {
+		"board": "Dēlis un akmeņi",
+		"gameplay": "Spēles gaita",
+		"profile": "Profils",
+		"social": "Sociālie un privātums",
+		"account": "Konts un drošība",
+		"language": "Valoda un laiks"
+	},
+	"board": {
+		"description": "Izvēlies dēli un akmeņus, ar kuriem spēlē.",
+		"appearance": {
+			"title": "Izskats",
+			"boardLegend": "Dēlis",
+			"stonesLegend": "Akmeņi",
+			"previewLabel": "Dēļa priekšskatījums"
+		},
+		"themes": {
+			"kaya": "Tradicionālā japāņu kaja",
+			"walnut": "Tumšais riekstkoks",
+			"ash": "Gaišais Skandināvijas osis"
+		},
+		"stoneStyles": {
+			"polished": "Slāneklis",
+			"satin": "Keramika",
+			"matte": "Dabīgais akmens",
+			"snow": "Gliemežvāks · Yuki / Sniega kategorija"
+		},
+		"display": {
+			"title": "Dēļa attēlojums",
+			"coordinates": {
+				"label": "Rādīt dēļa koordinātas",
+				"description": "Apzīmēt kolonnas un rindas gar dēļa malu."
+			},
+			"lastMove": {
+				"label": "Izcelt pēdējo gājienu",
+				"description": "Atzīmēt pēdējo novietoto akmeni."
+			}
+		},
+		"sounds": {
+			"title": "Skaņas",
+			"playSounds": {
+				"label": "Atskaņot skaņas",
+				"description": "Akmeņu novietošana, sagūstīšana un pulksteņa brīdinājumi."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Pārvaldi, kā novieto akmeņus un kas var tevi izaicināt.",
+		"moves": {
+			"title": "Gājienu izdarīšana",
+			"description": "Pirms akmens novietošanas pieprasīt otru klikšķi, lai izvairītos no kļūdainiem klikšķiem.",
+			"legend": "Apstiprināt gājienus",
+			"options": {
+				"never": "Nekad",
+				"correspondence": "Tikai korespondences spēlēs",
+				"always": "Vienmēr"
+			}
+		},
+		"challenges": {
+			"title": "Izaicinājumi",
+			"description": "Izvēlies, kas var sūtīt tev izaicinājumus.",
+			"legend": "Atļaut izaicinājumus no",
+			"options": {
+				"everyone": "Visiem",
+				"registered": "Reģistrētiem spēlētājiem",
+				"following": "Tikai spēlētājiem, kuriem sekoju",
+				"nobody": "Nevienam (revanšs joprojām atļauts)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Viss šeit redzamais ir pieejams tavā <profileLink>publiskajā profilā</profileLink>.",
+		"publicProfile": {
+			"title": "Publiskais profils",
+			"bioLabel": "Īss apraksts",
+			"bioPlaceholder": "Tavs īsais apraksts būs redzams tavā profilā.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Informācija",
+			"joinDate": "Pievienošanās datums",
+			"username": "Lietotājvārds",
+			"changeUsername": "Mainīt",
+			"changeUsernameFeature": "Lietotājvārda maiņa",
+			"realName": "Īstais vārds",
+			"location": "Atrašanās vieta",
+			"country": "Valsts",
+			"countryNotSet": "Nav iestatīta",
+			"rank": "Rangs",
+			"rankPlaceholder": "piem., 12k, 3d",
+			"rankHint": "Izmanto 30k–1k, 1d–9d vai 1p–9p."
+		},
+		"links": {
+			"legend": "Saites",
+			"linkLabel": "{{number}}. saite",
+			"remove": "Noņemt",
+			"removeLabel": "Noņemt {{number}}. saiti",
+			"add": "Pievienot saiti"
+		}
+	},
+	"social": {
+		"description": "Pārvaldi spēlētājus, kuriem seko, un spēlētājus, kurus esi bloķējis.",
+		"blocking": {
+			"title": "Bloķēšana",
+			"description_zero": "Tu bloķē {{count}} spēlētājus. Bloķētie spēlētāji nevar tevi izaicināt vai sūtīt tev ziņojumus.",
+			"description_one": "Tu bloķē {{count}} spēlētāju. Bloķētie spēlētāji nevar tevi izaicināt vai sūtīt tev ziņojumus.",
+			"description_other": "Tu bloķē {{count}} spēlētājus. Bloķētie spēlētāji nevar tevi izaicināt vai sūtīt tev ziņojumus.",
+			"empty": "Tu nevienu nebloķē.",
+			"action": "Atbloķēt",
+			"actionLabel": "Atbloķēt {{username}}"
+		},
+		"following": {
+			"title": "Seko",
+			"description_zero": "Tu seko {{count}} spēlētājiem.",
+			"description_one": "Tu seko {{count}} spēlētājam.",
+			"description_other": "Tu seko {{count}} spēlētājiem.",
+			"empty": "Tu vēl nevienam neseko.",
+			"action": "Pārtraukt sekot",
+			"actionLabel": "Pārtraukt sekot {{username}}"
+		}
+	},
+	"account": {
+		"description": "Maini paroli, aizsargā savu kontu un pārvaldi saistītos kontus.",
+		"password": {
+			"title": "Mainīt paroli",
+			"updated": "Parole atjaunināta",
+			"fields": {
+				"currentPassword": {
+					"label": "Pašreizējā parole",
+					"show": "Rādīt pašreizējo paroli",
+					"hide": "Slēpt pašreizējo paroli"
+				},
+				"newPassword": {
+					"label": "Jaunā parole",
+					"show": "Rādīt jauno paroli",
+					"hide": "Slēpt jauno paroli"
+				},
+				"confirmPassword": {
+					"label": "Atkārtot paroli",
+					"show": "Rādīt atkārtoto paroli",
+					"hide": "Slēpt atkārtoto paroli"
+				}
+			}
+		},
+		"contact": {
+			"title": "Kontaktinformācija",
+			"email": "E-pasta adrese",
+			"edit": "Rediģēt",
+			"editFeature": "E-pasta maiņa"
+		},
+		"twoFactor": {
+			"title": "Divu faktoru autentifikācija",
+			"description": "Piesakoties pieprasīt kodu no autentifikatora lietotnes.",
+			"off": "Izslēgta",
+			"enable": "Ieslēgt",
+			"feature": "Divu faktoru autentifikācija"
+		},
+		"sessions": {
+			"title": "Aktīvās sesijas",
+			"description": "Ja tev ir aizdomas, ka tavs konts ir apdraudēts, nomaini paroli un izej no visām ierīcēm.",
+			"thisDevice": "Šī ierīce",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "Iziet: {{device}}",
+			"logOutAll": "Iziet no visām citām ierīcēm"
+		},
+		"connections": {
+			"title": "Saistītie konti",
+			"description": "Piesakies Baduk ar šiem kontiem.",
+			"connectedTo": "Saistīts ar {{provider}}",
+			"connect": "Saistīt",
+			"disconnect": "Atsaistīt",
+			"note": "Atsaistīšana noņem saiti Baduk. Iespējams, piekļuve būs jāatsauc arī otrā vietnē."
+		},
+		"close": {
+			"title": "Slēgt savu kontu",
+			"description": "Slēdzot kontu, tavs profils tiek paslēpts un tu tiec izrakstīts visur.",
+			"button": "Slēgt kontu",
+			"dialogTitle": "Slēgt savu kontu?",
+			"dialogDescription": "Vēlāk to varēsi atkal atvērt pieteikšanās lapā.",
+			"feature": "Konta slēgšana"
+		}
+	},
+	"languageTime": {
+		"title": "Valoda un laiks",
+		"description": "Izvēlies Baduk valodu un datumu un laika attēlojumu.",
+		"language": {
+			"title": "Valoda",
+			"description": "Izmaiņas uzreiz stājas spēkā visās lapās.",
+			"legend": "Attēlošanas valoda"
+		},
+		"time": {
+			"title": "Laiks",
+			"description": "Tiek izmantots laika zīmogiem, piemēram, pievienošanās datumiem un sesiju aktivitātei.",
+			"timeZone": "Laika josla",
+			"automaticTimeZone": "Automātiski ({{timeZone}})",
+			"timeFormat": "Pulkstenis",
+			"formats": {
+				"auto": "Automātiski ({{example}})",
+				"12h": "12 stundu ({{example}})",
+				"24h": "24 stundu ({{example}})"
+			},
+			"preview": "Priekšskatījums"
+		}
+	}
+}

@@ -1,7 +1,7 @@
 import type { BoardApi, BoardSize, Intersection, Stone, StoneColor } from "weiqi-board";
 import type { EngineGame, EngineModule, EnginePosition } from "@/engine/bindings";
 import {
-	illegalMoveMessages,
+	illegalMoveMessage,
 	moveLabel,
 	reconcileBoard,
 	stonesFromCells,
@@ -21,6 +21,7 @@ import type {
 	Seats,
 	ServerMessage,
 } from "@/api/protocol";
+import i18n from "@/i18n";
 import { planSync } from "./syncPlan";
 
 export interface OnlineMove {
@@ -70,13 +71,13 @@ export interface OnlineGameOptions {
 	readonly requestResync: () => void;
 }
 
-const rejectionMessages: Record<Exclude<CommandRejection["reason"], "illegalMove">, string> = {
-	staleRevision: "The game changed before your move arrived, so it was not played.",
-	wrongPhase: "That isn’t possible at this stage of the game.",
-	seatTaken: "That seat is already taken.",
-	notYourTurn: "It is the other player’s turn.",
-	abortUnavailable: "The game can no longer be aborted.",
-};
+const rejectionKeys = {
+	staleRevision: "game:errors.staleRevision",
+	wrongPhase: "game:errors.wrongPhase",
+	seatTaken: "game:errors.seatTaken",
+	notYourTurn: "game:errors.notYourTurn",
+	abortUnavailable: "game:errors.abortUnavailable",
+} as const satisfies Record<Exclude<CommandRejection["reason"], "illegalMove">, string>;
 
 export class OnlineGameController {
 	private readonly module: EngineModule;
@@ -175,7 +176,7 @@ export class OnlineGameController {
 			}
 		} catch (error) {
 			console.error(error);
-			this.publish("This game could not be replayed locally. Please reload the page.");
+			this.publish(i18n.t("game:errors.replayFailed"));
 		}
 	};
 
@@ -186,7 +187,7 @@ export class OnlineGameController {
 			this.applyServerGame(game, this.pending === null);
 		} catch (error) {
 			console.error(error);
-			this.publish("This game could not be replayed locally. Please reload the page.");
+			this.publish(i18n.t("game:errors.replayFailed"));
 		}
 	};
 
@@ -225,7 +226,7 @@ export class OnlineGameController {
 				? this.engine.play({ type: "play", color: this.myColor, point: command.point })
 				: this.engine.pass();
 		if (!result.ok) {
-			this.publish(illegalMoveMessages[result.reason]);
+			this.publish(illegalMoveMessage(result.reason));
 			return;
 		}
 		this.refreshHistory(true);
@@ -237,7 +238,7 @@ export class OnlineGameController {
 		const expectedRevision = this.confirmed.revision;
 		this.pending = { ...command, baseRevision: expectedRevision };
 		this.publish();
-		if (!this.send({ ...command, expectedRevision })) this.rollback("Not connected to the game server.");
+		if (!this.send({ ...command, expectedRevision })) this.rollback(i18n.t("game:errors.notConnected"));
 	}
 
 	/** Drops any optimistic change and returns to the last confirmed state. */
@@ -298,8 +299,8 @@ export class OnlineGameController {
 
 	private rejectionMessage(rejection: CommandRejection): string {
 		return rejection.reason === "illegalMove"
-			? `The server rejected the move. ${illegalMoveMessages[rejection.illegalMoveReason]}`
-			: rejectionMessages[rejection.reason];
+			? i18n.t("game:errors.serverRejectedMove", { reason: illegalMoveMessage(rejection.illegalMoveReason) })
+			: i18n.t(rejectionKeys[rejection.reason]);
 	}
 
 	private publish(error: string | null = null): void {

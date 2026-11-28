@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router";
 import { requestPasswordReset } from "@/api/auth";
 import emailIcon from "@/assets/icons/auth/email.svg";
@@ -9,41 +10,42 @@ import { AuthField, AuthLayout } from "@/layouts/AuthLayout";
 import { formField } from "@/lib/authValidation";
 
 export function PasswordResetPage() {
+	const { t } = useTranslation("auth");
 	const [sent, setSent] = useState(false);
 	const { error, pending, onSubmit } = useSubmit(async (form) => {
 		await requestPasswordReset(formField(form, "email"));
 		setSent(true);
 	});
 	return (
-		<AuthLayout title="Reset password" backTo="/login" accountLink={signInLink}>
+		<AuthLayout title={t("passwordReset.pageTitle")} backTo="/login" accountLink={signInLink}>
 			<div className="auth-heading">
-				<h1>{sent ? "Check your email" : "Forgot your password?"}</h1>
-				<p className="auth-subtitle">We will help you get back to the board.</p>
+				<h1>{sent ? t("shared.checkEmail") : t("passwordReset.heading")}</h1>
+				<p className="auth-subtitle">{t("passwordReset.subtitle")}</p>
 			</div>
 			{sent ? (
 				<>
 					<p className="auth-status" role="status">
-						If an account uses this email address, a password reset link has been sent. The link is valid for 1 hour.
+						{t("passwordReset.sent")}
 					</p>
 					<div className="auth-links">
-						<Link to="/login">Return to sign in</Link>
+						<Link to="/login">{t("shared.returnToSignIn")}</Link>
 					</div>
 				</>
 			) : (
 				<form className="auth-form" onSubmit={onSubmit} aria-busy={pending}>
 					<AuthField
 						name="email"
-						label="EMAIL"
+						label={t("fields.email.label")}
 						icon={emailIcon}
 						type="email"
-						placeholder="Enter your account email"
+						placeholder={t("passwordReset.fields.email.placeholder")}
 						autoComplete="email"
 						maxLength={254}
 						required
 					/>
 					<FormError error={error} />
 					<button className="auth-action" disabled={pending}>
-						{pending ? "Sending…" : "Send reset link"}
+						{pending ? t("shared.sending") : t("passwordReset.submit")}
 					</button>
 				</form>
 			)}

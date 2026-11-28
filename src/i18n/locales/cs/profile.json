@@ -1,0 +1,18 @@
+{
+	"editProfile": "Upravit profil",
+	"meta": {
+		"joined": "Registrace",
+		"rank": "Výkonnost",
+		"noRank": "—",
+		"followers": "Sledující",
+		"following": "Sleduje"
+	},
+	"about": {
+		"heading": "O mně",
+		"noBio": "Zatím bez popisu."
+	},
+	"games": {
+		"heading": "Historie her",
+		"empty": "Zatím žádné hry."
+	}
+}

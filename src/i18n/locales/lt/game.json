@@ -1,0 +1,136 @@
+{
+	"colors": {
+		"black": "Juodieji",
+		"white": "Baltieji"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Praleisti",
+	"localPage": {
+		"title": "Vietinis žaidimas",
+		"eyebrow": "DRAUGIŠKA PARTIJA",
+		"heading": "Akimirka žaidimui.",
+		"details": "{{size}} × {{size}} · Japoniškos taisyklės"
+	},
+	"onlinePage": {
+		"title": "Žaidimas internetu",
+		"eyebrow": "PARTIJA INTERNETU",
+		"heading": "Akimirka žaidimui.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Įkeliama partija…",
+		"notFound": "Šios partijos nėra arba ji nebepasiekiama.",
+		"startNew": "Pradėti naują partiją internetu",
+		"invited": "Esate pakviesti į {{size}} × {{size}} partiją.",
+		"joining": "Prisijungiama…",
+		"joinAs": "Prisijungti: {{color}}",
+		"full": "Ši partija pilna. Partijų stebėjimas dar negalimas."
+	},
+	"local": {
+		"label": "Vietinė go partija",
+		"loadingEngine": "Įkeliamas go variklis…"
+	},
+	"online": {
+		"label": "Go partija internetu",
+		"youAre": "Jūsų spalva: {{color}}",
+		"connection": {
+			"connecting": "Jungiamasi…",
+			"open": "Prisijungta",
+			"reconnecting": "Jungiamasi iš naujo…",
+			"closed": "Atsijungta"
+		},
+		"invite": {
+			"label": "Pakvieskite draugą šia nuoroda",
+			"copy": "Kopijuoti",
+			"copied": "Nukopijuota"
+		},
+		"awaitingScoring": "Abu žaidėjai praleido ėjimą. Taškų skaičiavimas dar nepalaikomas, todėl nutraukite partiją, kad ji būtų įrašyta be rezultato.",
+		"confirmResign": "Patvirtinti pasidavimą",
+		"resign": "Pasiduoti",
+		"abort": "Nutraukti",
+		"results": {
+			"youWin": "Laimėjote · {{color}} pasidavė",
+			"winsByResignation": "{{color}} laimi varžovui pasidavus",
+			"aborted": "Partiją nutraukė: {{color}}",
+			"unscored": "Partija baigėsi be rezultato"
+		}
+	},
+	"turn": {
+		"preparing": "Ruošiama lenta",
+		"reviewing": "Peržiūra · Norėdami žaisti, grįžkite į dabartinę",
+		"toPlay": "Ėjimas: {{color}}",
+		"yourMove": "Jūsų ėjimas",
+		"waitingForOpponent": "Laukiama varžovo",
+		"awaitingScoring": "Žaidimas baigtas · Taškų skaičiavimas dar nepalaikomas",
+		"gameOver": "Partija baigta",
+		"sendingMove": "Siunčiamas ėjimas…",
+		"waitingForConnection": "Laukiama ryšio"
+	},
+	"boardFooter": {
+		"lastMove": "Paskutinis ėjimas: {{color}} {{move}}",
+		"startingPosition": "Pradinė pozicija"
+	},
+	"players": {
+		"label": "Žaidėjai",
+		"captured": "Paimta: {{count}}",
+		"you": "{{name}} (jūs)",
+		"waiting": "{{name}} · laukiama žaidėjo"
+	},
+	"history": {
+		"label": "Ėjimų istorija",
+		"heading": "Ėjimai",
+		"moveCount_one": "{{count}} ĖJIMAS",
+		"moveCount_few": "{{count}} ĖJIMAI",
+		"moveCount_many": "{{count}} ĖJIMO",
+		"moveCount_other": "{{count}} ĖJIMŲ",
+		"tableLabel": "Juodųjų ir baltųjų ėjimai",
+		"pair": "Pora",
+		"move": "{{number}} ėjimas, {{color}}, {{move}}",
+		"pendingMove": "{{number}} ėjimas, {{color}}, {{move}}, siunčiama",
+		"empty": "Ėjimų dar nėra.",
+		"position": "Ėjimas {{viewed}} iš {{latest}}",
+		"currentPosition": "DABARTINĖ POZICIJA",
+		"reviewing": "PERŽIŪRA",
+		"navigationLabel": "Ėjimų istorijos naršymas",
+		"navigation": {
+			"start": "Pradžia",
+			"previous": "Ankstesnis",
+			"next": "Kitas",
+			"current": "Dabartinė"
+		},
+		"undo": "Atšaukti paskutinį ėjimą",
+		"encouragement": "Neskubėkite. Kiekvienas ėjimas svarbus.",
+		"keyboardHint": "Naudokite ← →, kad naršytumėte ėjimus, ↑ ↓ – pradžiai ir dabartinei pozicijai."
+	},
+	"board": {
+		"sceneLabel": "{{size}} × {{size}} go lenta, kurioje rodoma {{moveCount}} atidarymo ėjimų seka",
+		"themedBoard": "Go lenta: {{theme}}",
+		"emptyBoard": "Tuščia {{size}} × {{size}} go lenta: {{theme}}",
+		"stone": "Go akmuo: {{color}} ({{finish}})",
+		"textureError": "Nepavyko įkelti lentos tekstūros.",
+		"pauseAnimations": "Pristabdyti animacijas",
+		"resumeAnimations": "Tęsti animacijas",
+		"pause": "PAUZĖ",
+		"resume": "TĘSTI"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Pasirinkite sankirtą lentoje.",
+			"occupied": "Ši sankirta užimta.",
+			"wrongPlayer": "Dabar kito žaidėjo ėjimas.",
+			"suicide": "Savižudiškas ėjimas neleidžiamas.",
+			"ko": "Šį ėjimą draudžia ko taisyklė.",
+			"superko": "Šis ėjimas pakartoja ankstesnę poziciją.",
+			"gameEnded": "Šioje partijoje nebegalima daryti ėjimų."
+		},
+		"serverRejectedMove": "Serveris atmetė ėjimą. {{reason}}",
+		"staleRevision": "Partija pasikeitė prieš gaunant jūsų ėjimą, todėl jis nebuvo atliktas.",
+		"wrongPhase": "Šiame partijos etape tai neįmanoma.",
+		"seatTaken": "Ši vieta jau užimta.",
+		"notYourTurn": "Dabar kito žaidėjo ėjimas.",
+		"abortUnavailable": "Partijos nebegalima nutraukti.",
+		"replayFailed": "Nepavyko vietoje atkurti šios partijos. Įkelkite puslapį iš naujo.",
+		"notConnected": "Neprisijungta prie žaidimo serverio.",
+		"engineLoadFailed": "Nepavyko įkelti go variklio. Bandykite dar kartą.",
+		"gameLoadFailed": "Nepavyko įkelti partijos. Bandykite dar kartą.",
+		"seatTakenFirst": "Kažkas kitas užėmė vietą pirmas. Ši partija dabar pilna."
+	}
+}

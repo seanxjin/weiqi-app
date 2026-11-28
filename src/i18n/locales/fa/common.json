@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "گو",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "صفحهٔ اصلی Baduk",
+	"actions": {
+		"save": "ذخیره",
+		"saving": "در حال ذخیره…",
+		"cancel": "لغو",
+		"back": "بازگشت",
+		"retry": "تلاش دوباره",
+		"close": "بستن",
+		"login": "ورود",
+		"signIn": "ورود",
+		"signUp": "ثبت‌نام",
+		"logOut": "خروج",
+		"loggingOut": "در حال خروج…"
+	},
+	"status": {
+		"saved": "ذخیره شد",
+		"loading": "در حال بارگذاری…",
+		"checkingSession": "در حال بررسی نشست شما…",
+		"sessionError": "بررسی نشست شما ممکن نشد. لطفاً دوباره تلاش کنید."
+	},
+	"comingSoon": "{{feature}} به‌زودی در دسترس خواهد بود.",
+	"language": "زبان",
+	"languageDialog": {
+		"title": "زبان دلخواه خود را انتخاب کنید",
+		"loadError": "این زبان بارگذاری نشد. لطفاً دوباره تلاش کنید."
+	}
+}

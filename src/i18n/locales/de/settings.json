@@ -1,0 +1,209 @@
+{
+	"header": {
+		"title": "Einstellungen",
+		"sectionTitle": "Einstellungen: {{section}}",
+		"navLabel": "Bereiche der Einstellungen"
+	},
+	"sections": {
+		"board": "Brett & Steine",
+		"gameplay": "Spielablauf",
+		"profile": "Profil",
+		"social": "Soziales & Datenschutz",
+		"account": "Konto & Sicherheit",
+		"language": "Sprache & Zeit"
+	},
+	"board": {
+		"description": "Wähle das Brett und die Steine, mit denen du spielst.",
+		"appearance": {
+			"title": "Aussehen",
+			"boardLegend": "Brett",
+			"stonesLegend": "Steine",
+			"previewLabel": "Brettvorschau"
+		},
+		"themes": {
+			"kaya": "Traditionelles japanisches Kaya",
+			"walnut": "Dunkler Nussbaum",
+			"ash": "Helle skandinavische Esche"
+		},
+		"stoneStyles": {
+			"polished": "Schiefer",
+			"satin": "Keramik",
+			"matte": "Naturstein",
+			"snow": "Muschel · Yuki / Schnee-Qualität"
+		},
+		"display": {
+			"title": "Brettanzeige",
+			"coordinates": {
+				"label": "Koordinaten anzeigen",
+				"description": "Spalten und Reihen am Rand des Bretts beschriften."
+			},
+			"lastMove": {
+				"label": "Letzten Zug hervorheben",
+				"description": "Den zuletzt gesetzten Stein markieren."
+			}
+		},
+		"sounds": {
+			"title": "Töne",
+			"playSounds": {
+				"label": "Töne abspielen",
+				"description": "Setzen von Steinen, Gefangennahmen und Zeitwarnungen."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Lege fest, wie du Steine setzt und wer dich herausfordern kann.",
+		"moves": {
+			"title": "Züge spielen",
+			"description": "Vor dem Setzen eines Steins einen zweiten Klick verlangen, um Fehlklicks zu vermeiden.",
+			"legend": "Züge bestätigen",
+			"options": {
+				"never": "Nie",
+				"correspondence": "Nur bei Fernpartien",
+				"always": "Immer"
+			}
+		},
+		"challenges": {
+			"title": "Herausforderungen",
+			"description": "Wähle, wer dir Herausforderungen senden darf.",
+			"legend": "Herausforderungen erlauben von",
+			"options": {
+				"everyone": "Allen",
+				"registered": "Registrierten Spielern",
+				"following": "Nur Spielern, denen ich folge",
+				"nobody": "Niemandem (Revanchen sind weiterhin möglich)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Alles hier ist in deinem <profileLink>öffentlichen Profil</profileLink> sichtbar.",
+		"publicProfile": {
+			"title": "Öffentliches Profil",
+			"bioLabel": "Kurzbiografie",
+			"bioPlaceholder": "Deine Kurzbiografie erscheint in deinem Profil.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Details",
+			"joinDate": "Beitrittsdatum",
+			"username": "Benutzername",
+			"changeUsername": "Ändern",
+			"changeUsernameFeature": "Benutzernamen ändern",
+			"realName": "Echter Name",
+			"location": "Ort",
+			"country": "Land",
+			"countryNotSet": "Nicht festgelegt",
+			"rank": "Rang",
+			"rankPlaceholder": "z. B. 12k, 3d",
+			"rankHint": "Verwende 30k–1k, 1d–9d oder 1p–9p."
+		},
+		"links": {
+			"legend": "Links",
+			"linkLabel": "Link {{number}}",
+			"remove": "Entfernen",
+			"removeLabel": "Link {{number}} entfernen",
+			"add": "Link hinzufügen"
+		}
+	},
+	"social": {
+		"description": "Verwalte die Spieler, denen du folgst, und die Spieler, die du blockiert hast.",
+		"blocking": {
+			"title": "Blockiert",
+			"description_one": "Du blockierst {{count}} Spieler. Blockierte Spieler können dich weder herausfordern noch dir schreiben.",
+			"description_other": "Du blockierst {{count}} Spieler. Blockierte Spieler können dich weder herausfordern noch dir schreiben.",
+			"empty": "Du blockierst niemanden.",
+			"action": "Freigeben",
+			"actionLabel": "{{username}} freigeben"
+		},
+		"following": {
+			"title": "Gefolgt",
+			"description_one": "Du folgst {{count}} Spieler.",
+			"description_other": "Du folgst {{count}} Spielern.",
+			"empty": "Du folgst noch niemandem.",
+			"action": "Entfolgen",
+			"actionLabel": "{{username}} entfolgen"
+		}
+	},
+	"account": {
+		"description": "Ändere dein Passwort, sichere dein Konto und verwalte verknüpfte Konten.",
+		"password": {
+			"title": "Passwort ändern",
+			"updated": "Passwort aktualisiert",
+			"fields": {
+				"currentPassword": {
+					"label": "Aktuelles Passwort",
+					"show": "Aktuelles Passwort anzeigen",
+					"hide": "Aktuelles Passwort verbergen"
+				},
+				"newPassword": {
+					"label": "Neues Passwort",
+					"show": "Neues Passwort anzeigen",
+					"hide": "Neues Passwort verbergen"
+				},
+				"confirmPassword": {
+					"label": "Passwort wiederholen",
+					"show": "Wiederholtes Passwort anzeigen",
+					"hide": "Wiederholtes Passwort verbergen"
+				}
+			}
+		},
+		"contact": {
+			"title": "Kontaktdaten",
+			"email": "E-Mail-Adresse",
+			"edit": "Bearbeiten",
+			"editFeature": "E-Mail-Adresse ändern"
+		},
+		"twoFactor": {
+			"title": "Zwei-Faktor-Authentifizierung",
+			"description": "Bei der Anmeldung einen Code aus einer Authenticator-App verlangen.",
+			"off": "Aus",
+			"enable": "Aktivieren",
+			"feature": "Zwei-Faktor-Authentifizierung"
+		},
+		"sessions": {
+			"title": "Aktive Sitzungen",
+			"description": "Wenn du vermutest, dass dein Konto kompromittiert wurde, ändere dein Passwort und melde dich überall ab.",
+			"thisDevice": "Dieses Gerät",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "{{device}} abmelden",
+			"logOutAll": "Auf allen anderen Geräten abmelden"
+		},
+		"connections": {
+			"title": "Verknüpfte Konten",
+			"description": "Mit diesen Konten bei Baduk anmelden.",
+			"connectedTo": "Verknüpft mit {{provider}}",
+			"connect": "Verknüpfen",
+			"disconnect": "Trennen",
+			"note": "Beim Trennen wird die Verknüpfung bei Baduk entfernt. Eventuell musst du den Zugriff auch auf der anderen Seite widerrufen."
+		},
+		"close": {
+			"title": "Konto schließen",
+			"description": "Wenn du dein Konto schließt, wird dein Profil verborgen und du wirst überall abgemeldet.",
+			"button": "Konto schließen",
+			"dialogTitle": "Konto schließen?",
+			"dialogDescription": "Du kannst es später über die Anmeldeseite wieder öffnen.",
+			"feature": "Konto schließen"
+		}
+	},
+	"languageTime": {
+		"title": "Sprache & Zeit",
+		"description": "Wähle die Sprache von Baduk und wie Datum und Uhrzeit angezeigt werden.",
+		"language": {
+			"title": "Sprache",
+			"description": "Änderungen gelten sofort auf allen Seiten.",
+			"legend": "Anzeigesprache"
+		},
+		"time": {
+			"title": "Zeit",
+			"description": "Wird für Zeitangaben wie Beitrittsdatum und Sitzungsaktivität verwendet.",
+			"timeZone": "Zeitzone",
+			"automaticTimeZone": "Automatisch ({{timeZone}})",
+			"timeFormat": "Uhrzeit",
+			"formats": {
+				"auto": "Automatisch ({{example}})",
+				"12h": "12 Stunden ({{example}})",
+				"24h": "24 Stunden ({{example}})"
+			},
+			"preview": "Vorschau"
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"editProfile": "編輯個人檔案",
+	"meta": {
+		"joined": "加入時間",
+		"rank": "段級",
+		"noRank": "—",
+		"followers": "追蹤者",
+		"following": "追蹤中"
+	},
+	"about": {
+		"heading": "關於",
+		"noBio": "尚無簡介。"
+	},
+	"games": {
+		"heading": "對局紀錄",
+		"empty": "尚無對局。"
+	}
+}

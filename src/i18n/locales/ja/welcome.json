@@ -1,0 +1,16 @@
+{
+	"pageTitle": "囲碁を打とう",
+	"railLabel": "Baduk",
+	"mainNavigation": "メインナビゲーション",
+	"play": "対局",
+	"eyebrow": "テキスト",
+	"heading": {
+		"label": "囲碁を打とう",
+		"prefix": "さあ、"
+	},
+	"description": {
+		"first": "テキスト....",
+		"second": "別のテキスト..."
+	},
+	"footnote": "ゆっくり、じっくりと。"
+}

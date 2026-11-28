@@ -1,0 +1,34 @@
+{
+	"server": {
+		"unavailable": "Palvelin ei ole käytettävissä. Yritä uudelleen.",
+		"unreachable": "Palvelimeen ei saada yhteyttä. Tarkista yhteytesi ja yritä uudelleen.",
+		"unexpectedResponse": "Palvelin palautti odottamattoman vastauksen. Yritä uudelleen.",
+		"requestFailed": "Pyyntöä ei voitu suorittaa. Yritä uudelleen."
+	},
+	"rateLimited": {
+		"generic": "Liian monta yritystä. Odota hetki ennen kuin yrität uudelleen.",
+		"withDelay_one": "Liian monta yritystä. Odota {{count}} sekunti ennen kuin yrität uudelleen.",
+		"withDelay_other": "Liian monta yritystä. Odota {{count}} sekuntia ennen kuin yrität uudelleen."
+	},
+	"unknown": "Jokin meni vikaan. Yritä uudelleen.",
+	"api": {
+		"invalidCredentials": "Käyttäjänimi, sähköposti tai salasana on väärin.",
+		"twoFactorRequired": "Jatka antamalla todennussovelluksen 6-numeroinen koodi.",
+		"invalidTwoFactor": "Todennuskoodi on väärin. Yritä uudelleen.",
+		"emailUnconfirmed": "Vahvista sähköpostiosoitteesi ennen kirjautumista.",
+		"accountClosed": "Tämä tili on suljettu, eikä sillä voi kirjautua.",
+		"usernameTaken": "Käyttäjänimi on jo käytössä. Valitse toinen.",
+		"emailTaken": "Sähköpostiosoite on jo käytössä.",
+		"invalidToken": "Linkki on virheellinen tai vanhentunut. Jatka pyytämällä uusi sähköposti.",
+		"unauthorized": "Kirjautumisistuntosi on vanhentunut. Aloita alusta.",
+		"conflict": "Rekisteröitymistä ei voitu viimeistellä. Aloita alusta.",
+		"forbidden": "Pyyntö estettiin. Päivitä sivu ja yritä uudelleen."
+	},
+	"validation": {
+		"passwordTooShort": "Salasanassa on oltava vähintään 8 merkkiä.",
+		"newPasswordTooShort": "Uudessa salasanassa on oltava vähintään 8 merkkiä.",
+		"passwordTooLong": "Salasana saa olla enintään 72 UTF-8-tavua.",
+		"passwordMismatch": "Uudet salasanat eivät täsmää.",
+		"passwordUnchanged": "Valitse salasana, joka eroaa nykyisestä."
+	}
+}

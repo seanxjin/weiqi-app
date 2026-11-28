@@ -1,0 +1,86 @@
+{
+	"page": {
+		"title": {
+			"local": "הגדרת משחק מקומי",
+			"online": "הגדרת משחק מקוון"
+		},
+		"label": {
+			"local": "הגדרת משחק מקומי",
+			"online": "הגדרת משחק מקוון"
+		},
+		"backToMenu": "חזרה לתפריט",
+		"settingsLabel": "הגדרות משחק",
+		"timeLimitsNotice": "מגבלות הזמן עדיין לא נאכפות.",
+		"boardSize": "גודל הלוח",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "יוצר משחק…",
+		"startGame": "התחל משחק",
+		"createFailed": "לא ניתן היה ליצור את המשחק. נסו שוב."
+	},
+	"players": {
+		"player1": "שחקן 1",
+		"player2": "שחקן 2",
+		"opponent": "יריב",
+		"guest": "אתם (אורח)"
+	},
+	"configuration": {
+		"eyebrow": "תצורות",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "מותאם אישית · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "עוד בקרות זמן",
+		"fewerControls": "פחות בקרות זמן",
+		"groups": {
+			"bullet": "בולט",
+			"blitz": "בליץ",
+			"rapid": "מהיר",
+			"classical": "קלאסי",
+			"correspondence": "התכתבות",
+			"untimed": "ללא זמן"
+		},
+		"systems": {
+			"absolute": "מוחלט",
+			"fischer": "פישר",
+			"japaneseByoYomi": "ביו-יומי יפני"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} שנ׳",
+			"absoluteMinutes": "{{minutes}} דק׳",
+			"mainSeconds": "{{seconds}} שנ׳",
+			"mainMinutes": "{{minutes}} דק׳",
+			"fischer": "{{main}} + {{increment}} שנ׳",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}} שנ׳",
+			"daysPerMove_one": "יום {{count}} / מהלך",
+			"daysPerMove_two": "{{count}} ימים / מהלך",
+			"daysPerMove_other": "{{count}} ימים / מהלך"
+		},
+		"noTimeLimit": "ללא הגבלת זמן"
+	},
+	"customTime": {
+		"label": "בקרת זמן מותאמת אישית",
+		"eyebrow": "בקרת זמן מותאמת אישית",
+		"heading": "הגדירו את השעון שלכם",
+		"system": "שיטה",
+		"fields": {
+			"minutes": "ראשי · דק׳",
+			"seconds": "ראשי · שנ׳",
+			"increment": "תוספת · שנ׳",
+			"periods": "תקופות",
+			"periodSeconds": "תקופה · שנ׳"
+		},
+		"hints": {
+			"byoYomi": "זמן ההארכה מורכב ממספר קבוע של תקופות מתוזמנות.",
+			"default": "בחרו שיטה, ואז הזינו את ערכי השעון."
+		},
+		"apply": "שימוש בזמן מותאם אישית",
+		"errors": {
+			"wholeNumbers": "הזינו מספר שלם אי-שלילי בכל שדה של השעון.",
+			"mainSeconds": "שניות הזמן הראשי חייבות להיות בין 0 ל-59.",
+			"byoYomiPeriods": "ביו-יומי דורש לפחות תקופה אחת באורך של שנייה אחת לפחות.",
+			"mainTime": "הזמן הראשי חייב להיות גדול מאפס."
+		}
+	}
+}

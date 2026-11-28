@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Spila Go",
+	"railLabel": "Baduk",
+	"mainNavigation": "Aðalvalmynd",
+	"play": "Spila",
+	"eyebrow": "Einhver texti",
+	"heading": {
+		"label": "Spila Go",
+		"prefix": "Spila "
+	},
+	"description": {
+		"first": "Einhver texti....",
+		"second": "Einhver annar texti..."
+	},
+	"footnote": "GEFÐU ÞÉR TÍMA."
+}

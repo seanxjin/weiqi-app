@@ -1,0 +1,29 @@
+{
+	"navigation": "Навігацыя Baduk",
+	"drawer": {
+		"open": "Адкрыць меню",
+		"close": "Закрыць меню"
+	},
+	"mainNavigation": "Асноўная навігацыя",
+	"play": "Гуляць",
+	"puzzles": "Задачы",
+	"learn": "Навучанне",
+	"guide": {
+		"heading": "УПЕРШЫНЮ Ў ГО?",
+		"startWithBasics": "Пачніце з асноў"
+	},
+	"account": {
+		"label": "Акаўнт",
+		"friends": "Сябры",
+		"messages": "Паведамленні",
+		"notifications": "Апавяшчэнні",
+		"settings": "Налады",
+		"allSettings": "Усе налады"
+	},
+	"theme": {
+		"label": "Тэма",
+		"system": "Сістэмная",
+		"light": "Светлая",
+		"dark": "Цёмная"
+	}
+}

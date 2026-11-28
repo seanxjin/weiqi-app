@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Jogue Go",
+	"railLabel": "Baduk",
+	"mainNavigation": "Navegação principal",
+	"play": "Jogar",
+	"eyebrow": "Algum texto",
+	"heading": {
+		"label": "Jogue Go",
+		"prefix": "Jogue "
+	},
+	"description": {
+		"first": "Algum texto....",
+		"second": "Outro texto..."
+	},
+	"footnote": "NÃO TENHA PRESSA."
+}

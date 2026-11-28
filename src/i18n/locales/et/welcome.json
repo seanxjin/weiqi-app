@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Mängi go'd",
+	"railLabel": "Baduk",
+	"mainNavigation": "Põhinavigeerimine",
+	"play": "Mängi",
+	"eyebrow": "Mingi tekst",
+	"heading": {
+		"label": "Mängi go'd",
+		"prefix": "Mängi "
+	},
+	"description": {
+		"first": "Mingi tekst....",
+		"second": "Mingi muu tekst..."
+	},
+	"footnote": "VÕTA AEGA."
+}

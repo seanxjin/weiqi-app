@@ -1,0 +1,86 @@
+{
+	"page": {
+		"title": {
+			"local": "Postavke lokalne partije",
+			"online": "Postavke online partije"
+		},
+		"label": {
+			"local": "Postavke lokalne partije",
+			"online": "Postavke online partije"
+		},
+		"backToMenu": "Nazad na meni",
+		"settingsLabel": "Postavke partije",
+		"timeLimitsNotice": "Vremenska ograničenja se još ne primjenjuju.",
+		"boardSize": "VELIČINA PLOČE",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Kreiranje partije…",
+		"startGame": "Započni igru",
+		"createFailed": "Partiju nije moguće kreirati. Pokušajte ponovo."
+	},
+	"players": {
+		"player1": "Igrač 1",
+		"player2": "Igrač 2",
+		"opponent": "Protivnik",
+		"guest": "Vi (gost)"
+	},
+	"configuration": {
+		"eyebrow": "KONFIGURACIJE",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Prilagođeno · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Više kontrola vremena",
+		"fewerControls": "Manje kontrola vremena",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Blitz",
+			"rapid": "Rapid",
+			"classical": "Klasično",
+			"correspondence": "Dopisno",
+			"untimed": "Bez vremena"
+		},
+		"systems": {
+			"absolute": "Apsolutno",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Japanski byo-yomi"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} sek",
+			"absoluteMinutes": "{{minutes}} min",
+			"mainSeconds": "{{seconds}}s",
+			"mainMinutes": "{{minutes}}m",
+			"fischer": "{{main}} + {{increment}}s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}}s",
+			"daysPerMove_one": "{{count}} dan / potez",
+			"daysPerMove_few": "{{count}} dana / potez",
+			"daysPerMove_other": "{{count}} dana / potez"
+		},
+		"noTimeLimit": "Bez vremenskog ograničenja"
+	},
+	"customTime": {
+		"label": "Prilagođena kontrola vremena",
+		"eyebrow": "PRILAGOĐENA KONTROLA VREMENA",
+		"heading": "Podesite vlastiti sat",
+		"system": "Sistem",
+		"fields": {
+			"minutes": "Osnovno · min",
+			"seconds": "Osnovno · sek",
+			"increment": "Dodatak · sek",
+			"periods": "Periodi",
+			"periodSeconds": "Period · sek"
+		},
+		"hints": {
+			"byoYomi": "Produžetak koristi fiksan broj vremenskih perioda.",
+			"default": "Odaberite sistem, a zatim unesite vrijednosti sata."
+		},
+		"apply": "Koristi prilagođeno vrijeme",
+		"errors": {
+			"wholeNumbers": "U svako polje sata unesite nenegativan cijeli broj.",
+			"mainSeconds": "Osnovne sekunde moraju biti između 0 i 59.",
+			"byoYomiPeriods": "Byo-yomi zahtijeva najmanje jedan period koji traje najmanje jednu sekundu.",
+			"mainTime": "Postavite osnovno vrijeme veće od nule."
+		}
+	}
+}

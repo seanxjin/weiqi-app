@@ -1,0 +1,87 @@
+{
+	"page": {
+		"title": {
+			"local": "Nastavitev lokalne igre",
+			"online": "Nastavitev spletne igre"
+		},
+		"label": {
+			"local": "Nastavitev lokalne igre",
+			"online": "Nastavitev spletne igre"
+		},
+		"backToMenu": "Nazaj v meni",
+		"settingsLabel": "Nastavitve igre",
+		"timeLimitsNotice": "Časovne omejitve se še ne upoštevajo.",
+		"boardSize": "VELIKOST DESKE",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Ustvarjanje igre …",
+		"startGame": "Začni igro",
+		"createFailed": "Igre ni bilo mogoče ustvariti. Poskusite znova."
+	},
+	"players": {
+		"player1": "Igralec 1",
+		"player2": "Igralec 2",
+		"opponent": "Nasprotnik",
+		"guest": "Vi (gost)"
+	},
+	"configuration": {
+		"eyebrow": "KONFIGURACIJE",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Po meri · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Več časovnih kontrol",
+		"fewerControls": "Manj časovnih kontrol",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Blitz",
+			"rapid": "Pospešeno",
+			"classical": "Klasično",
+			"correspondence": "Dopisno",
+			"untimed": "Brez časa"
+		},
+		"systems": {
+			"absolute": "Absolutno",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Japonski byo-yomi"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} s",
+			"absoluteMinutes": "{{minutes}} min",
+			"mainSeconds": "{{seconds}} s",
+			"mainMinutes": "{{minutes}} min",
+			"fischer": "{{main}} + {{increment}} s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}} s",
+			"daysPerMove_one": "{{count}} dan / potezo",
+			"daysPerMove_two": "{{count}} dneva / potezo",
+			"daysPerMove_few": "{{count}} dnevi / potezo",
+			"daysPerMove_other": "{{count}} dni / potezo"
+		},
+		"noTimeLimit": "Brez časovne omejitve"
+	},
+	"customTime": {
+		"label": "Časovna kontrola po meri",
+		"eyebrow": "ČASOVNA KONTROLA PO MERI",
+		"heading": "Nastavite svojo uro",
+		"system": "Sistem",
+		"fields": {
+			"minutes": "Glavni · min",
+			"seconds": "Glavni · s",
+			"increment": "Dodatek · s",
+			"periods": "Obdobja",
+			"periodSeconds": "Obdobje · s"
+		},
+		"hints": {
+			"byoYomi": "Podaljšek uporablja določeno število časovnih obdobij.",
+			"default": "Izberite sistem in vnesite vrednosti ure."
+		},
+		"apply": "Uporabi čas po meri",
+		"errors": {
+			"wholeNumbers": "V vsako polje ure vnesite nenegativno celo število.",
+			"mainSeconds": "Sekunde glavnega časa morajo biti med 0 in 59.",
+			"byoYomiPeriods": "Byo-yomi potrebuje vsaj eno obdobje, dolgo vsaj eno sekundo.",
+			"mainTime": "Nastavite glavni čas, večji od nič."
+		}
+	}
+}

@@ -1,0 +1,136 @@
+{
+	"colors": {
+		"black": "Črni",
+		"white": "Beli"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Pas",
+	"localPage": {
+		"title": "Lokalna igra",
+		"eyebrow": "PRIJATELJSKA PARTIJA",
+		"heading": "Trenutek za igro.",
+		"details": "{{size}} × {{size}} · Japonska pravila"
+	},
+	"onlinePage": {
+		"title": "Spletna igra",
+		"eyebrow": "SPLETNA PARTIJA",
+		"heading": "Trenutek za igro.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Nalaganje igre …",
+		"notFound": "Ta igra ne obstaja ali ni več na voljo.",
+		"startNew": "Začni novo spletno igro",
+		"invited": "Povabljeni ste na igro {{size}} × {{size}}.",
+		"joining": "Pridruževanje …",
+		"joinAs": "Pridruži se kot {{color}}",
+		"full": "Ta igra je polna. Spremljanje iger še ni na voljo."
+	},
+	"local": {
+		"label": "Lokalna igra go",
+		"loadingEngine": "Nalaganje pogona za go …"
+	},
+	"online": {
+		"label": "Spletna igra go",
+		"youAre": "Igrate kot {{color}}",
+		"connection": {
+			"connecting": "Povezovanje …",
+			"open": "Povezano",
+			"reconnecting": "Ponovno povezovanje …",
+			"closed": "Prekinjeno"
+		},
+		"invite": {
+			"label": "Povabite prijatelja s to povezavo",
+			"copy": "Kopiraj",
+			"copied": "Kopirano"
+		},
+		"awaitingScoring": "Oba igralca sta pasirala. Štetje točk še ni podprto, zato igro prekinite, da bo zabeležena brez rezultata.",
+		"confirmResign": "Potrdi predajo",
+		"resign": "Predaj se",
+		"abort": "Prekini",
+		"results": {
+			"youWin": "Zmagali ste · {{color}} se je predal",
+			"winsByResignation": "{{color}} zmaga s predajo",
+			"aborted": "Igro je prekinil {{color}}",
+			"unscored": "Igra se je končala brez rezultata"
+		}
+	},
+	"turn": {
+		"preparing": "Pripravljanje deske",
+		"reviewing": "Pregledovanje · Za igranje se vrnite na Trenutno",
+		"toPlay": "Na potezi: {{color}}",
+		"yourMove": "Vi ste na potezi",
+		"waitingForOpponent": "Čakanje na nasprotnika",
+		"awaitingScoring": "Igra je končana · Štetje točk še ni podprto",
+		"gameOver": "Konec igre",
+		"sendingMove": "Pošiljanje poteze …",
+		"waitingForConnection": "Čakanje na povezavo"
+	},
+	"boardFooter": {
+		"lastMove": "Zadnja poteza: {{color}} {{move}}",
+		"startingPosition": "Začetni položaj"
+	},
+	"players": {
+		"label": "Igralci",
+		"captured": "Ujetih: {{count}}",
+		"you": "{{name}} (vi)",
+		"waiting": "{{name}} · čakanje na igralca"
+	},
+	"history": {
+		"label": "Zgodovina potez",
+		"heading": "Poteze",
+		"moveCount_one": "{{count}} POTEZA",
+		"moveCount_two": "{{count}} POTEZI",
+		"moveCount_few": "{{count}} POTEZE",
+		"moveCount_other": "{{count}} POTEZ",
+		"tableLabel": "Poteze črnega in belega",
+		"pair": "Par",
+		"move": "Poteza {{number}}, {{color}}, {{move}}",
+		"pendingMove": "Poteza {{number}}, {{color}}, {{move}}, pošiljanje",
+		"empty": "Še ni potez.",
+		"position": "Poteza {{viewed}} od {{latest}}",
+		"currentPosition": "TRENUTNI POLOŽAJ",
+		"reviewing": "PREGLEDOVANJE",
+		"navigationLabel": "Navigacija po zgodovini potez",
+		"navigation": {
+			"start": "Začetek",
+			"previous": "Prejšnja",
+			"next": "Naslednja",
+			"current": "Trenutno"
+		},
+		"undo": "Razveljavi zadnjo potezo",
+		"encouragement": "Vzemite si čas. Vsaka poteza šteje.",
+		"keyboardHint": "S tipkama ← → se premikate po potezah, z ↑ ↓ na začetek in trenutni položaj."
+	},
+	"board": {
+		"sceneLabel": "Deska za go {{size}} × {{size}} z zaporedjem {{moveCount}} otvoritvenih potez",
+		"themedBoard": "Deska za go – {{theme}}",
+		"emptyBoard": "Prazna deska za baduk {{size}} × {{size}} – {{theme}}",
+		"stone": "Kamen za baduk – {{color}}, {{finish}}",
+		"textureError": "Teksture deske ni bilo mogoče naložiti.",
+		"pauseAnimations": "Zaustavi animacije",
+		"resumeAnimations": "Nadaljuj animacije",
+		"pause": "PAVZA",
+		"resume": "NADALJUJ"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Izberite presečišče na deski.",
+			"occupied": "To presečišče je zasedeno.",
+			"wrongPlayer": "Na potezi je drugi igralec.",
+			"suicide": "Samomor ni dovoljen.",
+			"ko": "To potezo prepoveduje pravilo ko.",
+			"superko": "Ta poteza ponovi enega od prejšnjih položajev.",
+			"gameEnded": "Ta igra ne sprejema več potez."
+		},
+		"serverRejectedMove": "Strežnik je zavrnil potezo. {{reason}}",
+		"staleRevision": "Igra se je spremenila, preden je prispela vaša poteza, zato ni bila odigrana.",
+		"wrongPhase": "To v tej fazi igre ni mogoče.",
+		"seatTaken": "To mesto je že zasedeno.",
+		"notYourTurn": "Na potezi je drugi igralec.",
+		"abortUnavailable": "Igre ni več mogoče prekiniti.",
+		"replayFailed": "Te igre ni bilo mogoče lokalno predvajati. Znova naložite stran.",
+		"notConnected": "Ni povezave s strežnikom igre.",
+		"engineLoadFailed": "Pogona za go ni bilo mogoče naložiti. Poskusite znova.",
+		"gameLoadFailed": "Igre ni bilo mogoče naložiti. Poskusite znova.",
+		"seatTakenFirst": "Nekdo drug je prvi zasedel mesto. Igra je zdaj polna."
+	}
+}

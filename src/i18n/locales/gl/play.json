@@ -1,0 +1,116 @@
+{
+	"home": {
+		"pageTitle": "Xogar",
+		"location": "XOGAR / INICIO",
+		"signedInAs": "Sesión iniciada como {{username}}",
+		"guest": "Xogando como convidado",
+		"logoutError": "Non se puido pechar a sesión. Téntao de novo.",
+		"introduction": {
+			"heading": "Algo de texto",
+			"body": "Outro texto"
+		},
+		"menuHeading": "Algo de texto.",
+		"options": {
+			"online": {
+				"label": "Xogar en liña",
+				"description": "Atopa rival. Vémonos no taboleiro."
+			},
+			"local": {
+				"label": "Xogar en local",
+				"description": "Un taboleiro. Dous xogadores. Unha pantalla compartida."
+			},
+			"friend": {
+				"label": "Xogar cun amigo",
+				"description": "Convida a alguén a unha partida reflexiva."
+			},
+			"puzzles": {
+				"label": "Resolver problemas",
+				"description": "Pequenos retos. Mellor intuición."
+			},
+			"lessons": {
+				"label": "Leccións",
+				"description": "Da túa primeira pedra á túa próxima descuberta."
+			},
+			"bots": {
+				"label": "Xogar contra bots",
+				"description": "Practica ao teu ritmo, en calquera nivel."
+			}
+		},
+		"presence_one": "{{count, number}} xogador compartindo o taboleiro",
+		"presence_other": "{{count, number}} xogadores compartindo o taboleiro",
+		"reserved": {
+			"label": "SECCIÓN PARA MÁIS ADIANTE",
+			"heading": "Reservado para contido futuro",
+			"body": "Esta sección queda baleira a propósito polo de agora. Usarase para futuras funcións, novidades ou contido seleccionado."
+		},
+		"footerTagline": "Regras sinxelas. Descubrimento sen fin."
+	},
+	"materials": {
+		"pageTitle": "Taboleiros e pedras",
+		"breadcrumb": "Baduk / Biblioteca de materiais",
+		"collection": "Colección 01",
+		"heading": "Taboleiros e pedras.",
+		"introduction": "Materiais naturais. Detalles serenos. Un lugar para o xogo.",
+		"boardsSection": {
+			"title": "Os taboleiros",
+			"meta": "Tres madeiras · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "As pedras",
+			"meta": "Catro estilos · negras e brancas"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Estudo de materiais",
+			"enlarged": "Mostras ampliadas",
+			"heading": "Un contraste sereno.",
+			"body": "Catro superficies. Negro e branco, baixo a mesma luz suave.",
+			"scale": "Mostras ampliadas · escala uniforme",
+			"form": "Forma lisa e arredondada / sutil variación de superficie"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Kaya xaponés tradicional",
+				"material": "Mel cálido · veta recta"
+			},
+			"walnut": {
+				"name": "Nogueira escura",
+				"material": "Marrón profundo · veta ondulada"
+			},
+			"ash": {
+				"name": "Freixo escandinavo claro",
+				"material": "Madeira clara · veta suave"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Pulida",
+				"name": "Lousa",
+				"description": "Superficies lisas e pulidas cunha serena textura mineral.",
+				"black": "Lousa negra",
+				"white": "Lousa branca"
+			},
+			"satin": {
+				"finish": "Satinada",
+				"name": "Cerámica",
+				"description": "Un brillo difuso e un gran fino, delicado e uniforme.",
+				"black": "Cerámica negra",
+				"white": "Cerámica branca"
+			},
+			"matte": {
+				"finish": "Mate",
+				"name": "Pedra natural",
+				"description": "Un sereno moteado mineral baixo un acabado liso e seco.",
+				"black": "Pedra negra",
+				"white": "Pedra branca"
+			},
+			"snow": {
+				"finish": "Pulida",
+				"name": "Cuncha · Grao Yuki / Neve",
+				"description": "Veta de cuncha fina e apertada sobre branco leitoso, xunto a lousa negra pulida.",
+				"black": "Lousa negra Nachiguro",
+				"white": "Cuncha branca Yuki"
+			}
+		},
+		"footerTagline": "O esencial, ben pensado."
+	}
+}

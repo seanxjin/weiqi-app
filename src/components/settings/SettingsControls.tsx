@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { useTranslation } from "react-i18next";
 
 export function SettingsSection({
 	title,
@@ -82,22 +83,23 @@ export function SaveActions({
 	dirty,
 	status,
 	onCancel,
-	saveLabel = "Save",
+	saveLabel,
 }: {
 	dirty: boolean;
 	status: string;
 	onCancel?: () => void;
 	saveLabel?: string;
 }) {
+	const { t } = useTranslation("common");
 	return (
 		<div className="settings-actions">
 			{onCancel && (
 				<button type="button" className="settings-button" disabled={!dirty} onClick={onCancel}>
-					Cancel
+					{t("actions.cancel")}
 				</button>
 			)}
 			<button type="submit" className="settings-button settings-button--primary" disabled={!dirty}>
-				{saveLabel}
+				{saveLabel ?? t("actions.save")}
 			</button>
 			<span className="settings-actions__status" role="status" aria-live="polite">
 				{status}

@@ -1,0 +1,80 @@
+- generic [ref=f2e3]:
+  - complementary "Baduk navigation" [ref=f2e4]:
+    - generic [ref=f2e5]:
+      - link "Baduk home" [ref=f2e6] [cursor=pointer]:
+        - /url: /
+        - generic [aria-hidden] [ref=f2e7]:
+          - img [ref=f2e9]: Polished white slate baduk stone
+          - img [ref=f2e11]: Polished black slate baduk stone
+        - generic [ref=f2e12]: BADUK
+      - navigation "Main navigation" [ref=f2e13]:
+        - link "Play" [ref=f2e14] [cursor=pointer]:
+          - /url: /play
+        - button "Puzzles" [ref=f2e16] [cursor=pointer]
+        - button "Learn" [ref=f2e18] [cursor=pointer]
+    - generic [ref=f2e21]:
+      - paragraph [ref=f2e22]: NEW TO GO?
+      - button "Start with the basics" [ref=f2e23] [cursor=pointer]
+  - main [ref=f2e25]:
+    - generic [ref=f2e26]:
+      - generic [ref=f2e27]:
+        - paragraph [ref=f2e28]: FRIENDLY GAME
+        - heading "A moment for the game." [level=1] [ref=f2e29]
+      - generic [ref=f2e30]: 9 × 9 · Japanese rules
+    - region "Local Go game" [ref=f2e32]:
+      - generic [ref=f2e33]:
+        - generic "Players" [ref=f2e34]:
+          - generic [ref=f2e35]:
+            - img [ref=f2e37]: Polished black nachiguro slate baduk stone
+            - generic [ref=f2e38]: Black
+            - generic [ref=f2e39]: Captured 0
+          - generic [ref=f2e40]:
+            - img [ref=f2e42]: Polished white yuki clamshell baduk stone
+            - generic [ref=f2e43]: White
+            - generic [ref=f2e44]: Captured 0
+        - generic [ref=f2e47]:
+          - group "Read-only 9 by 9 Dark walnut Go board" [ref=f2e48]:
+            - img "9 by 9 Dark walnut baduk board" [ref=f2e50]
+          - paragraph [ref=f2e51]: Read-only board.
+          - status [ref=f2e52]: Black to play. 0 stones placed.
+        - generic [ref=f2e53]:
+          - status [ref=f2e54]: Preparing board
+          - button "Pass" [disabled] [ref=f2e55]
+          - paragraph [ref=f2e56]: Starting position
+        - generic [ref=f2e57]:
+          - status [ref=f2e58]: Loading Go engine…
+          - alert
+      - complementary "Move history" [ref=f2e59]:
+        - generic [ref=f2e60]:
+          - heading "Moves" [level=2] [ref=f2e61]
+          - generic [ref=f2e62]: 0 MOVES
+        - table "Black and White moves" [ref=f2e64]:
+          - rowgroup [ref=f2e69]:
+            - row [ref=f2e70]:
+              - columnheader "Pair" [ref=f2e71]:
+                - generic [aria-hidden] [ref=f2e72]: "#"
+              - columnheader "Black" [ref=f2e74]
+              - columnheader "White" [ref=f2e76]
+          - rowgroup [ref=f2e78]:
+            - row [ref=f2e79]:
+              - cell "No moves yet." [ref=f2e80]
+        - generic [ref=f2e81]:
+          - status [ref=f2e82]:
+            - generic [ref=f2e83]: Move 0 of 0
+            - generic [ref=f2e84]: CURRENT POSITION
+          - navigation "Move history navigation" [ref=f2e85]:
+            - generic [ref=f2e86]:
+              - button "Start" [disabled] [ref=f2e87]
+              - generic [aria-hidden] [ref=f2e88]: Start
+            - generic [ref=f2e89]:
+              - button "Previous" [disabled] [ref=f2e90]
+              - generic [aria-hidden] [ref=f2e91]: Previous
+            - generic [ref=f2e92]:
+              - button "Next" [disabled] [ref=f2e93]
+              - generic [aria-hidden] [ref=f2e94]: Next
+            - generic [ref=f2e95]:
+              - button "Current" [disabled] [ref=f2e96]
+              - generic [aria-hidden] [ref=f2e97]: Current
+          - button "Undo last move" [disabled] [ref=f2e98]
+          - paragraph [ref=f2e99]: Take your time. Every move matters.
+  - status

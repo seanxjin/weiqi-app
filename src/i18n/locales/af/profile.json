@@ -1,0 +1,18 @@
+{
+	"editProfile": "Wysig profiel",
+	"meta": {
+		"joined": "Aangesluit",
+		"rank": "Rang",
+		"noRank": "—",
+		"followers": "Volgers",
+		"following": "Volg"
+	},
+	"about": {
+		"heading": "Oor",
+		"noBio": "Nog geen bio nie."
+	},
+	"games": {
+		"heading": "Spelgeskiedenis",
+		"empty": "Nog geen spele nie."
+	}
+}

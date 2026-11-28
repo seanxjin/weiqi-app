@@ -1,0 +1,29 @@
+{
+	"navigation": "Navigácia Baduk",
+	"drawer": {
+		"open": "Otvoriť navigáciu",
+		"close": "Zavrieť navigáciu"
+	},
+	"mainNavigation": "Hlavná navigácia",
+	"play": "Hrať",
+	"puzzles": "Úlohy",
+	"learn": "Učiť sa",
+	"guide": {
+		"heading": "GO JE PRE VÁS NOVÉ?",
+		"startWithBasics": "Začnite základmi"
+	},
+	"account": {
+		"label": "Účet",
+		"friends": "Priatelia",
+		"messages": "Správy",
+		"notifications": "Upozornenia",
+		"settings": "Nastavenia",
+		"allSettings": "Všetky nastavenia"
+	},
+	"theme": {
+		"label": "Motív",
+		"system": "Podľa systému",
+		"light": "Svetlý",
+		"dark": "Tmavý"
+	}
+}

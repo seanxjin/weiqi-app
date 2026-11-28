@@ -1,0 +1,18 @@
+{
+	"editProfile": "Editar perfil",
+	"meta": {
+		"joined": "Miembro desde",
+		"rank": "Rango",
+		"noRank": "—",
+		"followers": "Seguidores",
+		"following": "Siguiendo"
+	},
+	"about": {
+		"heading": "Acerca de",
+		"noBio": "Aún no hay biografía."
+	},
+	"games": {
+		"heading": "Historial de partidas",
+		"empty": "Aún no hay partidas."
+	}
+}

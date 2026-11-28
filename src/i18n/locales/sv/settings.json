@@ -1,0 +1,209 @@
+{
+	"header": {
+		"title": "Inställningar",
+		"sectionTitle": "Inställningar för {{section}}",
+		"navLabel": "Inställningsavsnitt"
+	},
+	"sections": {
+		"board": "Bräde och stenar",
+		"gameplay": "Spelande",
+		"profile": "Profil",
+		"social": "Socialt och integritet",
+		"account": "Konto och säkerhet",
+		"language": "Språk och tid"
+	},
+	"board": {
+		"description": "Välj brädet och stenarna du spelar med.",
+		"appearance": {
+			"title": "Utseende",
+			"boardLegend": "Bräde",
+			"stonesLegend": "Stenar",
+			"previewLabel": "Förhandsvisning av brädet"
+		},
+		"themes": {
+			"kaya": "Traditionell japansk kaya",
+			"walnut": "Mörk valnöt",
+			"ash": "Ljus skandinavisk ask"
+		},
+		"stoneStyles": {
+			"polished": "Skiffer",
+			"satin": "Keramik",
+			"matte": "Natursten",
+			"snow": "Musselskal · Yuki / Snow-kvalitet"
+		},
+		"display": {
+			"title": "Brädvisning",
+			"coordinates": {
+				"label": "Visa koordinater",
+				"description": "Märk ut kolumner och rader längs brädets kant."
+			},
+			"lastMove": {
+				"label": "Markera senaste drag",
+				"description": "Markera den senast spelade stenen."
+			}
+		},
+		"sounds": {
+			"title": "Ljud",
+			"playSounds": {
+				"label": "Spela upp ljud",
+				"description": "Stenplacering, fångster och klockvarningar."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Hantera hur du placerar stenar och vem som kan utmana dig.",
+		"moves": {
+			"title": "Spela drag",
+			"description": "Kräv ett andra klick innan en sten placeras, för att undvika felklick.",
+			"legend": "Bekräfta drag",
+			"options": {
+				"never": "Aldrig",
+				"correspondence": "Endast korrespondenspartier",
+				"always": "Alltid"
+			}
+		},
+		"challenges": {
+			"title": "Utmaningar",
+			"description": "Välj vem som kan skicka partiutmaningar till dig.",
+			"legend": "Tillåt utmaningar från",
+			"options": {
+				"everyone": "Alla",
+				"registered": "Registrerade spelare",
+				"following": "Endast spelare jag följer",
+				"nobody": "Ingen (returpartier är fortfarande tillåtna)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Allt här syns i din <profileLink>offentliga profil</profileLink>.",
+		"publicProfile": {
+			"title": "Offentlig profil",
+			"bioLabel": "Kort presentation",
+			"bioPlaceholder": "Din korta presentation visas i din profil.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Uppgifter",
+			"joinDate": "Gick med",
+			"username": "Användarnamn",
+			"changeUsername": "Ändra",
+			"changeUsernameFeature": "Byte av användarnamn",
+			"realName": "Riktigt namn",
+			"location": "Plats",
+			"country": "Land",
+			"countryNotSet": "Inte angivet",
+			"rank": "Rank",
+			"rankPlaceholder": "t.ex. 12k, 3d",
+			"rankHint": "Använd 30k–1k, 1d–9d eller 1p–9p."
+		},
+		"links": {
+			"legend": "Länkar",
+			"linkLabel": "Länk {{number}}",
+			"remove": "Ta bort",
+			"removeLabel": "Ta bort länk {{number}}",
+			"add": "Lägg till länk"
+		}
+	},
+	"social": {
+		"description": "Hantera spelarna du följer och spelarna du har blockerat.",
+		"blocking": {
+			"title": "Blockeringar",
+			"description_one": "Du blockerar {{count}} spelare. Blockerade spelare kan inte utmana dig eller skicka meddelanden till dig.",
+			"description_other": "Du blockerar {{count}} spelare. Blockerade spelare kan inte utmana dig eller skicka meddelanden till dig.",
+			"empty": "Du blockerar ingen.",
+			"action": "Avblockera",
+			"actionLabel": "Avblockera {{username}}"
+		},
+		"following": {
+			"title": "Följer",
+			"description_one": "Du följer {{count}} spelare.",
+			"description_other": "Du följer {{count}} spelare.",
+			"empty": "Du följer ingen ännu.",
+			"action": "Sluta följa",
+			"actionLabel": "Sluta följa {{username}}"
+		}
+	},
+	"account": {
+		"description": "Byt lösenord, skydda ditt konto och hantera anslutna konton.",
+		"password": {
+			"title": "Byt lösenord",
+			"updated": "Lösenordet har uppdaterats",
+			"fields": {
+				"currentPassword": {
+					"label": "Nuvarande lösenord",
+					"show": "Visa nuvarande lösenord",
+					"hide": "Dölj nuvarande lösenord"
+				},
+				"newPassword": {
+					"label": "Nytt lösenord",
+					"show": "Visa nytt lösenord",
+					"hide": "Dölj nytt lösenord"
+				},
+				"confirmPassword": {
+					"label": "Upprepa lösenord",
+					"show": "Visa upprepat lösenord",
+					"hide": "Dölj upprepat lösenord"
+				}
+			}
+		},
+		"contact": {
+			"title": "Kontaktuppgifter",
+			"email": "E-postadress",
+			"edit": "Redigera",
+			"editFeature": "Byte av e-postadress"
+		},
+		"twoFactor": {
+			"title": "Tvåfaktorsautentisering",
+			"description": "Kräv en kod från en autentiseringsapp när du loggar in.",
+			"off": "Av",
+			"enable": "Aktivera",
+			"feature": "Tvåfaktorsautentisering"
+		},
+		"sessions": {
+			"title": "Aktiva sessioner",
+			"description": "Om du misstänker att ditt konto har komprometterats, byt lösenord och logga ut överallt.",
+			"thisDevice": "Den här enheten",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "Logga ut {{device}}",
+			"logOutAll": "Logga ut på alla andra enheter"
+		},
+		"connections": {
+			"title": "Anslutna konton",
+			"description": "Logga in på Baduk med dessa konton.",
+			"connectedTo": "Ansluten till {{provider}}",
+			"connect": "Anslut",
+			"disconnect": "Koppla från",
+			"note": "Om du kopplar från tas länken bort på Baduk. Du kan behöva återkalla åtkomsten på den andra webbplatsen också."
+		},
+		"close": {
+			"title": "Avsluta ditt konto",
+			"description": "När du avslutar ditt konto döljs din profil och du loggas ut överallt.",
+			"button": "Avsluta konto",
+			"dialogTitle": "Avsluta ditt konto?",
+			"dialogDescription": "Du kan återaktivera det senare från inloggningssidan.",
+			"feature": "Avslutning av konto"
+		}
+	},
+	"languageTime": {
+		"title": "Språk och tid",
+		"description": "Välj vilket språk Baduk använder och hur datum och tider visas.",
+		"language": {
+			"title": "Språk",
+			"description": "Ändringarna gäller direkt på alla sidor.",
+			"legend": "Visningsspråk"
+		},
+		"time": {
+			"title": "Tid",
+			"description": "Används för tidsstämplar som registreringsdatum och sessionsaktivitet.",
+			"timeZone": "Tidszon",
+			"automaticTimeZone": "Automatisk ({{timeZone}})",
+			"timeFormat": "Klocka",
+			"formats": {
+				"auto": "Automatisk ({{example}})",
+				"12h": "12-timmars ({{example}})",
+				"24h": "24-timmars ({{example}})"
+			},
+			"preview": "Förhandsvisning"
+		}
+	}
+}

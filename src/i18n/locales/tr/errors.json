@@ -1,0 +1,34 @@
+{
+	"server": {
+		"unavailable": "Sunucu kullanılamıyor. Lütfen tekrar deneyin.",
+		"unreachable": "Sunucuya ulaşılamıyor. Bağlantınızı kontrol edip tekrar deneyin.",
+		"unexpectedResponse": "Sunucu beklenmeyen bir yanıt döndürdü. Lütfen tekrar deneyin.",
+		"requestFailed": "İstek tamamlanamadı. Lütfen tekrar deneyin."
+	},
+	"rateLimited": {
+		"generic": "Çok fazla deneme yapıldı. Tekrar denemeden önce lütfen bekleyin.",
+		"withDelay_one": "Çok fazla deneme yapıldı. Tekrar denemeden önce lütfen {{count}} saniye bekleyin.",
+		"withDelay_other": "Çok fazla deneme yapıldı. Tekrar denemeden önce lütfen {{count}} saniye bekleyin."
+	},
+	"unknown": "Bir şeyler ters gitti. Lütfen tekrar deneyin.",
+	"api": {
+		"invalidCredentials": "Kullanıcı adı, e-posta veya şifre hatalı.",
+		"twoFactorRequired": "Devam etmek için doğrulama uygulamanızdaki 6 haneli kodu girin.",
+		"invalidTwoFactor": "Doğrulama kodu hatalı. Lütfen tekrar deneyin.",
+		"emailUnconfirmed": "Lütfen giriş yapmadan önce e-posta adresinizi onaylayın.",
+		"accountClosed": "Bu hesap kapatılmıştır ve giriş yapamaz.",
+		"usernameTaken": "Bu kullanıcı adı zaten kullanılıyor. Lütfen başka bir tane seçin.",
+		"emailTaken": "Bu e-posta adresi zaten kullanılıyor.",
+		"invalidToken": "Bu bağlantı geçersiz veya süresi dolmuş. Devam etmek için yeni bir e-posta isteyin.",
+		"unauthorized": "Giriş oturumunuzun süresi doldu. Lütfen yeniden başlayın.",
+		"conflict": "Kaydınız tamamlanamadı. Lütfen yeniden başlayın.",
+		"forbidden": "Bu istek engellendi. Lütfen sayfayı yenileyip tekrar deneyin."
+	},
+	"validation": {
+		"passwordTooShort": "Şifreniz için en az 8 karakter kullanın.",
+		"newPasswordTooShort": "Yeni şifreniz için en az 8 karakter kullanın.",
+		"passwordTooLong": "Şifreniz 72 UTF-8 baytı aşmamalıdır.",
+		"passwordMismatch": "Yeni şifreler eşleşmiyor.",
+		"passwordUnchanged": "Mevcut şifrenizden farklı bir şifre seçin."
+	}
+}

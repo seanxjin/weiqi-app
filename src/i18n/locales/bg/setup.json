@@ -1,0 +1,85 @@
+{
+	"page": {
+		"title": {
+			"local": "Настройка на локална игра",
+			"online": "Настройка на онлайн игра"
+		},
+		"label": {
+			"local": "Настройка на локална игра",
+			"online": "Настройка на онлайн игра"
+		},
+		"backToMenu": "Обратно към менюто",
+		"settingsLabel": "Настройки на играта",
+		"timeLimitsNotice": "Ограниченията във времето все още не се прилагат.",
+		"boardSize": "РАЗМЕР НА ДЪСКАТА",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Създаване на игра…",
+		"startGame": "Започни играта",
+		"createFailed": "Играта не можа да бъде създадена. Моля, опитайте отново."
+	},
+	"players": {
+		"player1": "Играч 1",
+		"player2": "Играч 2",
+		"opponent": "Съперник",
+		"guest": "Вие (гост)"
+	},
+	"configuration": {
+		"eyebrow": "КОНФИГУРАЦИИ",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Персонализиран · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Още контроли на времето",
+		"fewerControls": "По-малко контроли на времето",
+		"groups": {
+			"bullet": "Бълет",
+			"blitz": "Блиц",
+			"rapid": "Ускорен",
+			"classical": "Класически",
+			"correspondence": "Кореспондентен",
+			"untimed": "Без време"
+		},
+		"systems": {
+			"absolute": "Абсолютен",
+			"fischer": "Фишер",
+			"japaneseByoYomi": "Японско бьо-йоми"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} сек",
+			"absoluteMinutes": "{{minutes}} мин",
+			"mainSeconds": "{{seconds}} с",
+			"mainMinutes": "{{minutes}} м",
+			"fischer": "{{main}} + {{increment}} с",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}} с",
+			"daysPerMove_one": "{{count}} ден / ход",
+			"daysPerMove_other": "{{count}} дни / ход"
+		},
+		"noTimeLimit": "Без ограничение на времето"
+	},
+	"customTime": {
+		"label": "Персонализиран контрол на времето",
+		"eyebrow": "ПЕРСОНАЛИЗИРАН КОНТРОЛ НА ВРЕМЕТО",
+		"heading": "Настройте своя часовник",
+		"system": "Система",
+		"fields": {
+			"minutes": "Основно · мин",
+			"seconds": "Основно · сек",
+			"increment": "Добавка · сек",
+			"periods": "Периоди",
+			"periodSeconds": "Период · сек"
+		},
+		"hints": {
+			"byoYomi": "Допълнителното време използва фиксиран брой периоди.",
+			"default": "Изберете система, след което въведете стойностите на часовника."
+		},
+		"apply": "Използвай персонализирано време",
+		"errors": {
+			"wholeNumbers": "Въведете неотрицателно цяло число във всяко поле на часовника.",
+			"mainSeconds": "Секундите на основното време трябва да са между 0 и 59.",
+			"byoYomiPeriods": "Бьо-йоми изисква поне един период с продължителност поне една секунда.",
+			"mainTime": "Основното време трябва да е по-голямо от нула."
+		}
+	}
+}

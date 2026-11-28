@@ -1,0 +1,18 @@
+{
+	"editProfile": "Modifier le profil",
+	"meta": {
+		"joined": "Inscription",
+		"rank": "Rang",
+		"noRank": "—",
+		"followers": "Abonnés",
+		"following": "Abonnements"
+	},
+	"about": {
+		"heading": "À propos",
+		"noBio": "Pas encore de biographie."
+	},
+	"games": {
+		"heading": "Historique des parties",
+		"empty": "Aucune partie pour l’instant."
+	}
+}

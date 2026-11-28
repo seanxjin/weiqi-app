@@ -1,0 +1,85 @@
+{
+	"page": {
+		"title": {
+			"local": "Opstelling van plaaslike spel",
+			"online": "Opstelling van aanlyn spel"
+		},
+		"label": {
+			"local": "Opstelling van plaaslike spel",
+			"online": "Opstelling van aanlyn spel"
+		},
+		"backToMenu": "Terug na kieslys",
+		"settingsLabel": "Spelinstellings",
+		"timeLimitsNotice": "Tydsbeperkings word nog nie toegepas nie.",
+		"boardSize": "BORDGROOTTE",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Skep tans spel…",
+		"startGame": "Begin spel",
+		"createFailed": "Die spel kon nie geskep word nie. Probeer asseblief weer."
+	},
+	"players": {
+		"player1": "Speler 1",
+		"player2": "Speler 2",
+		"opponent": "Teenstander",
+		"guest": "Jy (gas)"
+	},
+	"configuration": {
+		"eyebrow": "KONFIGURASIES",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Pasgemaak · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Meer tydbeheeropsies",
+		"fewerControls": "Minder tydbeheeropsies",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Blitz",
+			"rapid": "Snel",
+			"classical": "Klassiek",
+			"correspondence": "Korrespondensie",
+			"untimed": "Sonder tyd"
+		},
+		"systems": {
+			"absolute": "Absoluut",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Japannese byo-yomi"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} s",
+			"absoluteMinutes": "{{minutes}} min",
+			"mainSeconds": "{{seconds}}s",
+			"mainMinutes": "{{minutes}}m",
+			"fischer": "{{main}} + {{increment}}s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}}s",
+			"daysPerMove_one": "{{count}} dag / set",
+			"daysPerMove_other": "{{count}} dae / set"
+		},
+		"noTimeLimit": "Geen tydlimiet"
+	},
+	"customTime": {
+		"label": "Pasgemaakte tydbeheer",
+		"eyebrow": "PASGEMAAKTE TYDBEHEER",
+		"heading": "Stel jou eie horlosie",
+		"system": "Stelsel",
+		"fields": {
+			"minutes": "Hoof · min",
+			"seconds": "Hoof · s",
+			"increment": "Inkrement · s",
+			"periods": "Periodes",
+			"periodSeconds": "Periode · s"
+		},
+		"hints": {
+			"byoYomi": "Ekstra tyd gebruik ’n vaste aantal getimede periodes.",
+			"default": "Kies ’n stelsel en voer dan sy horlosiewaardes in."
+		},
+		"apply": "Gebruik pasgemaakte tyd",
+		"errors": {
+			"wholeNumbers": "Voer ’n nie-negatiewe heelgetal in elke horlosieveld in.",
+			"mainSeconds": "Hoofsekondes moet tussen 0 en 59 wees.",
+			"byoYomiPeriods": "Byo-yomi benodig minstens een periode van minstens een sekonde.",
+			"mainTime": "Stel die hooftyd groter as nul."
+		}
+	}
+}

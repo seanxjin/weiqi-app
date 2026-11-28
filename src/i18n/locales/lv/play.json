@@ -1,0 +1,117 @@
+{
+	"home": {
+		"pageTitle": "Spēlēt",
+		"location": "SPĒLĒT / SĀKUMS",
+		"signedInAs": "Pieteicies kā {{username}}",
+		"guest": "Spēlē kā viesis",
+		"logoutError": "Neizdevās iziet. Lūdzu, mēģini vēlreiz.",
+		"introduction": {
+			"heading": "Kāds teksts",
+			"body": "Kāds cits teksts"
+		},
+		"menuHeading": "Kāds teksts.",
+		"options": {
+			"online": {
+				"label": "Spēlēt tiešsaistē",
+				"description": "Atrodi pretinieku. Satiecieties pie dēļa."
+			},
+			"local": {
+				"label": "Spēlēt uz vietas",
+				"description": "Viens dēlis. Divi spēlētāji. Kopīgs ekrāns."
+			},
+			"friend": {
+				"label": "Spēlēt ar draugu",
+				"description": "Uzaicini kādu uz pārdomātu spēli."
+			},
+			"puzzles": {
+				"label": "Risināt uzdevumus",
+				"description": "Nelieli izaicinājumi. Asāka intuīcija."
+			},
+			"lessons": {
+				"label": "Nodarbības",
+				"description": "No pirmā akmens līdz nākamajai atklāsmei."
+			},
+			"bots": {
+				"label": "Spēlēt pret botiem",
+				"description": "Trenējies savā tempā, jebkurā līmenī."
+			}
+		},
+		"presence_zero": "{{count, number}} spēlētāji pie dēļa",
+		"presence_one": "{{count, number}} spēlētājs pie dēļa",
+		"presence_other": "{{count, number}} spēlētāji pie dēļa",
+		"reserved": {
+			"label": "SADAĻA NĀKOTNEI",
+			"heading": "Rezervēts nākotnes saturam",
+			"body": "Šī sadaļa pagaidām ir apzināti atstāta tukša. Tā tiks izmantota nākotnes funkcijām, jaunumiem vai atlasītam saturam."
+		},
+		"footerTagline": "Vienkārši noteikumi. Bezgalīgi atklājumi."
+	},
+	"materials": {
+		"pageTitle": "Dēļi un akmeņi",
+		"breadcrumb": "Baduk / Materiālu bibliotēka",
+		"collection": "Kolekcija 01",
+		"heading": "Dēļi un akmeņi.",
+		"introduction": "Dabīgi materiāli. Klusas detaļas. Vieta spēlei.",
+		"boardsSection": {
+			"title": "Dēļi",
+			"meta": "Trīs koksnes · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Akmeņi",
+			"meta": "Četri stili · melni un balti"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Materiālu izpēte",
+			"enlarged": "Palielināti paraugi",
+			"heading": "Kluss kontrasts.",
+			"body": "Četras virsmas. Melns un balts tajā pašā maigajā gaismā.",
+			"scale": "Palielināti paraugi · vienots mērogs",
+			"form": "Gluda, noapaļota forma / smalkas virsmas atšķirības"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Tradicionālā japāņu kaja",
+				"material": "Silts medus tonis · taisna šķiedra"
+			},
+			"walnut": {
+				"name": "Tumšais riekstkoks",
+				"material": "Dziļi brūns · plūstoša šķiedra"
+			},
+			"ash": {
+				"name": "Gaišais Skandināvijas osis",
+				"material": "Gaiša koksne · maiga šķiedra"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Pulēts",
+				"name": "Slāneklis",
+				"description": "Gludas, pulētas virsmas ar klusu minerālu tekstūru.",
+				"black": "Melnais slāneklis",
+				"white": "Baltais slāneklis"
+			},
+			"satin": {
+				"finish": "Satīna",
+				"name": "Keramika",
+				"description": "Izkliedēts spīdums un smalka, vienmērīga graudainība.",
+				"black": "Melnā keramika",
+				"white": "Baltā keramika"
+			},
+			"matte": {
+				"finish": "Matēts",
+				"name": "Dabīgais akmens",
+				"description": "Klusi minerālu raibumi zem gludas, sausas apdares.",
+				"black": "Melnais akmens",
+				"white": "Baltais akmens"
+			},
+			"snow": {
+				"finish": "Pulēts",
+				"name": "Gliemežvāks · Yuki / Sniega kategorija",
+				"description": "Smalka, blīva gliemežvāka šķiedra pienaini baltā tonī kopā ar pulētu melno slānekli.",
+				"black": "Melnais Nachiguro slāneklis",
+				"white": "Baltais Yuki gliemežvāks"
+			}
+		},
+		"footerTagline": "Būtiskais, rūpīgi izvēlēts."
+	}
+}

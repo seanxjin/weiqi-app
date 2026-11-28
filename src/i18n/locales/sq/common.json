@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "GO",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Faqja kryesore e Baduk",
+	"actions": {
+		"save": "Ruaj",
+		"saving": "Po ruhet…",
+		"cancel": "Anulo",
+		"back": "Prapa",
+		"retry": "Riprovo",
+		"close": "Mbyll",
+		"login": "Hyr",
+		"signIn": "Hyr",
+		"signUp": "Regjistrohu",
+		"logOut": "Dil",
+		"loggingOut": "Po del…"
+	},
+	"status": {
+		"saved": "U ruajt",
+		"loading": "Po ngarkohet…",
+		"checkingSession": "Po kontrollohet sesioni yt…",
+		"sessionError": "Sesioni yt nuk mund të kontrollohej. Provo sërish."
+	},
+	"comingSoon": "{{feature}} vjen së shpejti.",
+	"language": "Gjuha",
+	"languageDialog": {
+		"title": "Zgjidh gjuhÃ«n e preferuar",
+		"loadError": "Kjo gjuhë nuk mund të ngarkohej. Provo sërish."
+	}
+}

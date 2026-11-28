@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import { animate } from "motion";
 import type { AnimationPlaybackControls } from "motion";
 import { BoardCanvas, StoneCanvas } from "@/components/board";
@@ -34,6 +35,7 @@ export function AnimatedBoardScene({
 	onTogglePause,
 	showCaption = true,
 }: AnimatedBoardSceneProps) {
+	const { t } = useTranslation("game");
 	const stage = useRef<HTMLDivElement>(null);
 	const playback = useRef<AnimationPlaybackControls[]>([]);
 
@@ -79,10 +81,14 @@ export function AnimatedBoardScene({
 	return (
 		<figure
 			className="animated-board"
-			aria-label={`A ${geometry.intersections} by ${geometry.intersections} Go board showing a sequence of ${moves.length} opening moves`}
+			aria-label={t("board.sceneLabel", { size: geometry.intersections, moveCount: moves.length })}
 		>
 			<div className="animated-board__stage" ref={stage} data-static={reducedMotion}>
-				<BoardCanvas theme={boardTheme} geometry={geometry} label={`${boardThemes[boardTheme].name} Go board`} />
+				<BoardCanvas
+					theme={boardTheme}
+					geometry={geometry}
+					label={t("board.themedBoard", { theme: boardThemes[boardTheme].name })}
+				/>
 				<div className="animated-board__stones" aria-hidden="true">
 					{moves.map((move, index) => (
 						<div
@@ -103,15 +109,15 @@ export function AnimatedBoardScene({
 			</div>
 			{showCaption && (
 				<figcaption className="animated-board__caption">
-					<span>19 × 19</span>
+					<span>{t("boardSize", { size: 19 })}</span>
 					<div className="animated-board__controls">
 						<button
 							type="button"
 							onClick={onTogglePause}
 							aria-pressed={paused}
-							aria-label={paused ? "Resume animations" : "Pause animations"}
+							aria-label={paused ? t("board.resumeAnimations") : t("board.pauseAnimations")}
 						>
-							{paused ? "RESUME" : "PAUSE"}
+							{paused ? t("board.resume") : t("board.pause")}
 						</button>
 						<StoneMark style={stoneStyle} size={22} horizontal />
 					</div>

@@ -1,7 +1,7 @@
 .game-setup {
-	--setup-paper: #faf8f2;
-	--setup-active: #414d41;
-	--setup-soft: #e1e2d7;
+	--setup-paper: var(--paper);
+	--setup-active: var(--accent);
+	--setup-soft: var(--hover);
 	--setup-profile-height: 36px;
 	--setup-board-size: max(80px, min(calc(95dvh - 128px - var(--app-toolbar-height)), calc((95cqw - 24px) * 0.6)));
 	font-family: "Baduk Inter", Inter, "Segoe UI", Arial, sans-serif;
@@ -132,9 +132,9 @@
 	padding: 20px;
 	border: 1px solid var(--divider);
 	border-radius: 6px;
-	background: #ece9e0;
+	background: var(--surface);
 }
-.setup-selector__trigger {
+.setup-configuration__trigger {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -142,8 +142,11 @@
 	width: 100%;
 	min-height: 72px;
 	padding: 14px 20px;
-	text-align: left;
+	text-align: start;
 	background: var(--setup-paper);
+}
+.setup-chevron {
+	color: var(--muted);
 }
 .setup-eyebrow {
 	display: block;
@@ -152,15 +155,12 @@
 	font-weight: 500;
 	letter-spacing: 0.08em;
 }
-.setup-selector__value {
+.setup-configuration__summary {
 	display: block;
 	margin-top: 6px;
 	font-size: 16px;
 	font-weight: 500;
 	overflow-wrap: anywhere;
-}
-.setup-chevron {
-	color: var(--muted);
 }
 .setup-options {
 	display: grid;
@@ -226,7 +226,7 @@
 	font-weight: 500;
 }
 .setup-custom {
-	background: #ece9e0;
+	background: var(--surface);
 	padding: 12px;
 	border: 1px solid var(--divider);
 	border-radius: 3px;
@@ -290,7 +290,7 @@
 	border: 0;
 	border-radius: 18px;
 	background: var(--setup-active);
-	color: var(--setup-paper);
+	color: var(--on-accent);
 	font-size: 10px;
 	font-weight: 500;
 }
@@ -308,19 +308,19 @@
 	padding: 12px 20px;
 	border: 0;
 	background: var(--setup-active);
-	color: var(--setup-paper);
+	color: var(--on-accent);
 	font-size: 13px;
 	font-weight: 500;
 }
 .setup-play:hover,
 .setup-apply:hover {
-	background: var(--text);
+	background: var(--accent-hover);
 }
 .setup-error {
 	margin-top: 10px;
 	font-size: 11px;
 	line-height: 1.5;
-	color: #8b382e;
+	color: var(--danger);
 }
 .setup-notice {
 	color: var(--muted);
@@ -329,17 +329,6 @@
 }
 .setup-notice > p {
 	margin-top: 12px;
-}
-.setup-board-size {
-	padding: 14px 20px;
-	background: var(--setup-paper);
-	border: 1px solid var(--divider);
-	border-radius: 4px;
-}
-.game-setup .setup-board-size select {
-	height: 40px;
-	font-size: 16px;
-	margin-top: 6px;
 }
 @media (max-width: 64rem) {
 	.setup-controls {

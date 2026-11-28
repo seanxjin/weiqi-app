@@ -1,0 +1,115 @@
+{
+	"home": {
+		"pageTitle": "Main",
+		"location": "MAIN / LAMAN UTAMA",
+		"signedInAs": "Log masuk sebagai {{username}}",
+		"guest": "Bermain sebagai tetamu",
+		"logoutError": "Tidak dapat log keluar. Sila cuba lagi.",
+		"introduction": {
+			"heading": "Sedikit teks",
+			"body": "Sedikit teks lain"
+		},
+		"menuHeading": "Sedikit teks.",
+		"options": {
+			"online": {
+				"label": "Main dalam talian",
+				"description": "Cari lawan anda. Bertemu di papan."
+			},
+			"local": {
+				"label": "Main setempat",
+				"description": "Satu papan. Dua pemain. Kongsi satu skrin."
+			},
+			"friend": {
+				"label": "Main dengan rakan",
+				"description": "Jemput seseorang untuk permainan yang bermakna."
+			},
+			"puzzles": {
+				"label": "Selesaikan teka-teki",
+				"description": "Cabaran kecil. Naluri lebih tajam."
+			},
+			"lessons": {
+				"label": "Pelajaran",
+				"description": "Dari batu pertama anda hingga celik akal seterusnya."
+			},
+			"bots": {
+				"label": "Main dengan bot",
+				"description": "Berlatih mengikut rentak anda, pada sebarang tahap."
+			}
+		},
+		"presence_other": "{{count, number}} pemain berkongsi papan",
+		"reserved": {
+			"label": "BAHAGIAN UNTUK KEMUDIAN",
+			"heading": "Dikhaskan untuk kandungan akan datang",
+			"body": "Bahagian ini sengaja dibiarkan kosong buat masa ini. Ia akan digunakan untuk ciri, kemas kini atau kandungan pilihan pada masa hadapan."
+		},
+		"footerTagline": "Peraturan mudah. Penemuan tanpa penghujung."
+	},
+	"materials": {
+		"pageTitle": "Papan & batu",
+		"breadcrumb": "Baduk / Pustaka bahan",
+		"collection": "Koleksi 01",
+		"heading": "Papan & batu.",
+		"introduction": "Bahan semula jadi. Perincian yang tenang. Tempat untuk permainan.",
+		"boardsSection": {
+			"title": "Papan",
+			"meta": "Tiga jenis kayu · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Batu",
+			"meta": "Empat gaya · hitam & putih"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Kajian bahan",
+			"enlarged": "Sampel diperbesar",
+			"heading": "Kontras yang tenang.",
+			"body": "Empat permukaan. Hitam dan putih, dalam cahaya lembut yang sama.",
+			"scale": "Sampel diperbesar · skala seragam",
+			"form": "Bentuk licin dan bulat / variasi permukaan yang halus"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Kaya tradisional Jepun",
+				"material": "Madu hangat · ira lurus"
+			},
+			"walnut": {
+				"name": "Walnut gelap",
+				"material": "Coklat pekat · ira beralun"
+			},
+			"ash": {
+				"name": "Ash Scandinavia pucat",
+				"material": "Kayu pucat · ira lembut"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Berkilat",
+				"name": "Batu loh",
+				"description": "Permukaan licin dan berkilat dengan tekstur mineral yang tenang.",
+				"black": "Batu loh hitam",
+				"white": "Batu loh putih"
+			},
+			"satin": {
+				"finish": "Satin",
+				"name": "Seramik",
+				"description": "Kilauan lembut dan ira halus yang sekata.",
+				"black": "Seramik hitam",
+				"white": "Seramik putih"
+			},
+			"matte": {
+				"finish": "Pudar",
+				"name": "Batu semula jadi",
+				"description": "Bintik mineral yang lembut di bawah kemasan licin dan kering.",
+				"black": "Batu hitam",
+				"white": "Batu putih"
+			},
+			"snow": {
+				"finish": "Berkilat",
+				"name": "Kulit kerang · Yuki / Gred Salji",
+				"description": "Ira kerang halus dan rapat pada putih susu, dipadankan dengan batu loh hitam berkilat.",
+				"black": "Batu loh Nachiguro hitam",
+				"white": "Kulit kerang Yuki putih"
+			}
+		},
+		"footerTagline": "Perkara penting, dipertimbangkan dengan teliti."
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"navigation": "Navegación de Baduk",
+	"drawer": {
+		"open": "Abrir navegación",
+		"close": "Cerrar navegación"
+	},
+	"mainNavigation": "Navegación principal",
+	"play": "Jugar",
+	"puzzles": "Problemas",
+	"learn": "Aprender",
+	"guide": {
+		"heading": "¿NUEVO EN EL GO?",
+		"startWithBasics": "Empieza por lo básico"
+	},
+	"account": {
+		"label": "Cuenta",
+		"friends": "Amigos",
+		"messages": "Mensajes",
+		"notifications": "Notificaciones",
+		"settings": "Ajustes",
+		"allSettings": "Toda la configuración"
+	},
+	"theme": {
+		"label": "Tema",
+		"system": "Sistema",
+		"light": "Claro",
+		"dark": "Oscuro"
+	}
+}

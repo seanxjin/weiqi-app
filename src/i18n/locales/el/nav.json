@@ -1,0 +1,29 @@
+{
+	"navigation": "Πλοήγηση Baduk",
+	"drawer": {
+		"open": "Άνοιγμα πλοήγησης",
+		"close": "Κλείσιμο πλοήγησης"
+	},
+	"mainNavigation": "Κύρια πλοήγηση",
+	"play": "Παιχνίδι",
+	"puzzles": "Γρίφοι",
+	"learn": "Μάθηση",
+	"guide": {
+		"heading": "ΝΕΟΣ ΣΤΟ GO;",
+		"startWithBasics": "Ξεκινήστε από τα βασικά"
+	},
+	"account": {
+		"label": "Λογαριασμός",
+		"friends": "Φίλοι",
+		"messages": "Μηνύματα",
+		"notifications": "Ειδοποιήσεις",
+		"settings": "Ρυθμίσεις",
+		"allSettings": "Όλες οι ρυθμίσεις"
+	},
+	"theme": {
+		"label": "Θέμα",
+		"system": "Σύστημα",
+		"light": "Ανοιχτό",
+		"dark": "Σκούρο"
+	}
+}

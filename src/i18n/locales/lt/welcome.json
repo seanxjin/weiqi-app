@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Žaisk go",
+	"railLabel": "Baduk",
+	"mainNavigation": "Pagrindinis naršymas",
+	"play": "Žaisti",
+	"eyebrow": "Šiek tiek teksto",
+	"heading": {
+		"label": "Žaisk go",
+		"prefix": "Žaisk "
+	},
+	"description": {
+		"first": "Šiek tiek teksto....",
+		"second": "Šiek tiek kito teksto..."
+	},
+	"footnote": "NESKUBĖKITE."
+}

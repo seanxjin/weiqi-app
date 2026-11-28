@@ -1,0 +1,135 @@
+{
+	"colors": {
+		"black": "שחור",
+		"white": "לבן"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "פס",
+	"localPage": {
+		"title": "משחק מקומי",
+		"eyebrow": "משחק ידידותי",
+		"heading": "רגע למשחק.",
+		"details": "{{size}} × {{size}} · חוקים יפניים"
+	},
+	"onlinePage": {
+		"title": "משחק מקוון",
+		"eyebrow": "משחק מקוון",
+		"heading": "רגע למשחק.",
+		"details": "{{size}} × {{size}} · קומי {{komi}}",
+		"loading": "טוען משחק…",
+		"notFound": "המשחק הזה לא קיים או שאינו זמין עוד.",
+		"startNew": "התחלת משחק מקוון חדש",
+		"invited": "הוזמנתם למשחק {{size}} × {{size}}.",
+		"joining": "מצטרף…",
+		"joinAs": "הצטרפות בתור {{color}}",
+		"full": "המשחק מלא. צפייה במשחקים עדיין אינה זמינה."
+	},
+	"local": {
+		"label": "משחק גו מקומי",
+		"loadingEngine": "טוען את מנוע הגו…"
+	},
+	"online": {
+		"label": "משחק גו מקוון",
+		"youAre": "אתם {{color}}",
+		"connection": {
+			"connecting": "מתחבר…",
+			"open": "מחובר",
+			"reconnecting": "מתחבר מחדש…",
+			"closed": "מנותק"
+		},
+		"invite": {
+			"label": "הזמינו חבר באמצעות הקישור הזה",
+			"copy": "העתקה",
+			"copied": "הועתק"
+		},
+		"awaitingScoring": "שני השחקנים עשו פס. ספירת הניקוד עדיין אינה נתמכת, לכן בטלו את המשחק כדי לרשום אותו ללא ניקוד.",
+		"confirmResign": "אישור כניעה",
+		"resign": "כניעה",
+		"abort": "ביטול משחק",
+		"results": {
+			"youWin": "ניצחתם · {{color}} נכנע",
+			"winsByResignation": "{{color}} מנצח בכניעה",
+			"aborted": "המשחק בוטל על ידי {{color}}",
+			"unscored": "המשחק הסתיים ללא ניקוד"
+		}
+	},
+	"turn": {
+		"preparing": "מכין את הלוח",
+		"reviewing": "סקירה · חזרו למצב הנוכחי כדי לשחק",
+		"toPlay": "תור {{color}}",
+		"yourMove": "התור שלכם",
+		"waitingForOpponent": "ממתין ליריב",
+		"awaitingScoring": "המשחק הסתיים · ספירת הניקוד עדיין אינה נתמכת",
+		"gameOver": "המשחק הסתיים",
+		"sendingMove": "שולח מהלך…",
+		"waitingForConnection": "ממתין לחיבור"
+	},
+	"boardFooter": {
+		"lastMove": "מהלך אחרון: {{color}} {{move}}",
+		"startingPosition": "מצב פתיחה"
+	},
+	"players": {
+		"label": "שחקנים",
+		"captured": "נלכדו {{count}}",
+		"you": "{{name}} (אתם)",
+		"waiting": "{{name}} · ממתין לשחקן"
+	},
+	"history": {
+		"label": "היסטוריית מהלכים",
+		"heading": "מהלכים",
+		"moveCount_one": "מהלך {{count}}",
+		"moveCount_two": "{{count}} מהלכים",
+		"moveCount_other": "{{count}} מהלכים",
+		"tableLabel": "מהלכי שחור ולבן",
+		"pair": "זוג",
+		"move": "מהלך {{number}}, {{color}}, {{move}}",
+		"pendingMove": "מהלך {{number}}, {{color}}, {{move}}, נשלח",
+		"empty": "אין מהלכים עדיין.",
+		"position": "מהלך {{viewed}} מתוך {{latest}}",
+		"currentPosition": "מצב נוכחי",
+		"reviewing": "סקירה",
+		"navigationLabel": "ניווט בהיסטוריית המהלכים",
+		"navigation": {
+			"start": "התחלה",
+			"previous": "הקודם",
+			"next": "הבא",
+			"current": "נוכחי"
+		},
+		"undo": "ביטול המהלך האחרון",
+		"encouragement": "קחו את הזמן. כל מהלך חשוב.",
+		"keyboardHint": "השתמשו ב-← → כדי לעבור בין מהלכים, וב-↑ ↓ להתחלה ולמצב הנוכחי."
+	},
+	"board": {
+		"sceneLabel": "לוח גו בגודל {{size}} על {{size}} המציג רצף של {{moveCount}} מהלכי פתיחה",
+		"themedBoard": "לוח גו: {{theme}}",
+		"emptyBoard": "לוח baduk ריק בגודל {{size}} על {{size}}: {{theme}}",
+		"stone": "אבן baduk: {{color}}, {{finish}}",
+		"textureError": "לא ניתן היה לטעון את מרקם הלוח.",
+		"pauseAnimations": "השהיית אנימציות",
+		"resumeAnimations": "חידוש אנימציות",
+		"pause": "השהיה",
+		"resume": "המשך"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "בחרו נקודת חיתוך על הלוח.",
+			"occupied": "נקודת החיתוך הזו תפוסה.",
+			"wrongPlayer": "זה התור של השחקן האחר.",
+			"suicide": "התאבדות אסורה.",
+			"ko": "המהלך הזה אסור לפי חוק הקו.",
+			"superko": "המהלך הזה חוזר על מצב קודם.",
+			"gameEnded": "המשחק הזה לא יכול לקבל מהלך נוסף."
+		},
+		"serverRejectedMove": "השרת דחה את המהלך. {{reason}}",
+		"staleRevision": "המשחק השתנה לפני שהמהלך שלכם הגיע, ולכן הוא לא בוצע.",
+		"wrongPhase": "זה לא אפשרי בשלב הזה של המשחק.",
+		"seatTaken": "המקום הזה כבר תפוס.",
+		"notYourTurn": "זה התור של השחקן האחר.",
+		"abortUnavailable": "כבר לא ניתן לבטל את המשחק.",
+		"replayFailed": "לא ניתן היה לשחזר את המשחק באופן מקומי. טענו מחדש את הדף.",
+		"notConnected": "אין חיבור לשרת המשחק.",
+		"engineLoadFailed": "לא ניתן היה לטעון את מנוע הגו. נסו שוב.",
+		"gameLoadFailed": "לא ניתן היה לטעון את המשחק. נסו שוב.",
+		"seatTakenFirst": "מישהו אחר תפס את המקום קודם. המשחק מלא כעת."
+	}
+}

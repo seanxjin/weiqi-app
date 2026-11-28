@@ -1,0 +1,85 @@
+{
+	"page": {
+		"title": {
+			"local": "Kohaliku mängu seadistus",
+			"online": "Veebimängu seadistus"
+		},
+		"label": {
+			"local": "Kohaliku mängu seadistus",
+			"online": "Veebimängu seadistus"
+		},
+		"backToMenu": "Tagasi menüüsse",
+		"settingsLabel": "Mängu seaded",
+		"timeLimitsNotice": "Ajapiiranguid veel ei rakendata.",
+		"boardSize": "LAUA SUURUS",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Mängu loomine…",
+		"startGame": "Alusta mängu",
+		"createFailed": "Mängu ei õnnestunud luua. Proovi uuesti."
+	},
+	"players": {
+		"player1": "Mängija 1",
+		"player2": "Mängija 2",
+		"opponent": "Vastane",
+		"guest": "Sina (külaline)"
+	},
+	"configuration": {
+		"eyebrow": "SEADISTUSED",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Kohandatud · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Rohkem ajakontrolle",
+		"fewerControls": "Vähem ajakontrolle",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Välk",
+			"rapid": "Kiir",
+			"classical": "Klassikaline",
+			"correspondence": "Kirjavahetus",
+			"untimed": "Ajata"
+		},
+		"systems": {
+			"absolute": "Absoluutne",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Jaapani byo-yomi"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} s",
+			"absoluteMinutes": "{{minutes}} min",
+			"mainSeconds": "{{seconds}}s",
+			"mainMinutes": "{{minutes}}m",
+			"fischer": "{{main}} + {{increment}}s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}}s",
+			"daysPerMove_one": "{{count}} päev / käik",
+			"daysPerMove_other": "{{count}} päeva / käik"
+		},
+		"noTimeLimit": "Ajapiiranguta"
+	},
+	"customTime": {
+		"label": "Kohandatud ajakontroll",
+		"eyebrow": "KOHANDATUD AJAKONTROLL",
+		"heading": "Seadista oma kell",
+		"system": "Süsteem",
+		"fields": {
+			"minutes": "Põhiaeg · min",
+			"seconds": "Põhiaeg · s",
+			"increment": "Lisaaeg · s",
+			"periods": "Perioodid",
+			"periodSeconds": "Periood · s"
+		},
+		"hints": {
+			"byoYomi": "Lisaaeg koosneb kindlast arvust ajastatud perioodidest.",
+			"default": "Vali süsteem ja sisesta seejärel kella väärtused."
+		},
+		"apply": "Kasuta kohandatud aega",
+		"errors": {
+			"wholeNumbers": "Sisesta igale kellaväljale mittenegatiivne täisarv.",
+			"mainSeconds": "Põhiaja sekundid peavad olema vahemikus 0–59.",
+			"byoYomiPeriods": "Byo-yomi vajab vähemalt üht perioodi, mis kestab vähemalt ühe sekundi.",
+			"mainTime": "Põhiaeg peab olema suurem kui null."
+		}
+	}
+}

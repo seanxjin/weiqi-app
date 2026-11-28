@@ -1,0 +1,18 @@
+{
+	"editProfile": "Profili üýtget",
+	"meta": {
+		"joined": "Goşuldy",
+		"rank": "Dereje",
+		"noRank": "—",
+		"followers": "Yzarlaýjylar",
+		"following": "Yzarlanýanlar"
+	},
+	"about": {
+		"heading": "Barada",
+		"noBio": "Heniz terjimehal ýok."
+	},
+	"games": {
+		"heading": "Oýun taryhy",
+		"empty": "Heniz oýun ýok."
+	}
+}

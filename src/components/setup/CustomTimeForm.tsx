@@ -1,29 +1,30 @@
 import { useId, useState } from "react";
+import { useTranslation } from "react-i18next";
 import arrow from "@/assets/icons/common/local-arrow.svg";
-import { clockSystems, defaultCustomTime, validateCustomTime } from "@/data/timeControls";
-import type { ClockSystem, CustomTime } from "@/data/timeControls";
+import { clockSystemNameKeys, clockSystems, defaultCustomTime, validateCustomTime } from "@/data/timeControls";
+import type { ClockSystem, CustomTime, CustomTimeError } from "@/data/timeControls";
 
 export function CustomTimeForm({ onApply }: { onApply: (value: CustomTime) => void }) {
+	const { t } = useTranslation("setup");
 	const id = useId();
 	const [draft, setDraft] = useState<CustomTime>(defaultCustomTime);
-	const [error, setError] = useState<string | null>(null);
+	const [error, setError] = useState<CustomTimeError | null>(null);
 	const update = (key: keyof CustomTime, value: string) => {
 		setDraft((current) => ({ ...current, [key]: value }));
 		setError(null);
 	};
 	const fields: {
 		key: Exclude<keyof CustomTime, "system">;
-		label: string;
 		min?: number;
 		max?: number;
 	}[] = [
-		{ key: "minutes", label: "Main · min" },
-		{ key: "seconds", label: "Main · sec", max: 59 },
-		...(draft.system === "Fischer" ? [{ key: "increment" as const, label: "Increment · sec" }] : []),
+		{ key: "minutes" },
+		{ key: "seconds", max: 59 },
+		...(draft.system === "Fischer" ? [{ key: "increment" as const }] : []),
 		...(draft.system === "Japanese Byo-yomi"
 			? [
-					{ key: "periods" as const, label: "Periods", min: 1 },
-					{ key: "periodSeconds" as const, label: "Period · sec", min: 1 },
+					{ key: "periods" as const, min: 1 },
+					{ key: "periodSeconds" as const, min: 1 },
 				]
 			: []),
 	];
@@ -31,7 +32,7 @@ export function CustomTimeForm({ onApply }: { onApply: (value: CustomTime) => vo
 		<form
 			className="setup-custom"
 			noValidate
-			aria-label="Custom time control"
+			aria-label={t("customTime.label")}
 			onSubmit={(event) => {
 				event.preventDefault();
 				const message = validateCustomTime(draft);
@@ -41,14 +42,16 @@ export function CustomTimeForm({ onApply }: { onApply: (value: CustomTime) => vo
 		>
 			<div className="setup-custom__topline">
 				<div>
-					<p className="setup-eyebrow">CUSTOM TIME CONTROL</p>
-					<h3>Set your own clock</h3>
+					<p className="setup-eyebrow">{t("customTime.eyebrow")}</p>
+					<h3>{t("customTime.heading")}</h3>
 				</div>
 				<label className="setup-field">
-					<span>System</span>
+					<span>{t("customTime.system")}</span>
 					<select value={draft.system} onChange={(event) => update("system", event.target.value as ClockSystem)}>
 						{clockSystems.map((system) => (
-							<option key={system}>{system}</option>
+							<option key={system} value={system}>
+								{t(clockSystemNameKeys[system])}
+							</option>
 						))}
 					</select>
 				</label>
@@ -56,7 +59,7 @@ export function CustomTimeForm({ onApply }: { onApply: (value: CustomTime) => vo
 			<div className="setup-fields">
 				{fields.map((field) => (
 					<label className="setup-field" key={field.key}>
-						<span>{field.label}</span>
+						<span>{t(`customTime.fields.${field.key}`)}</span>
 						<input
 							type="number"
 							inputMode="numeric"
@@ -72,18 +75,14 @@ export function CustomTimeForm({ onApply }: { onApply: (value: CustomTime) => vo
 			</div>
 			{error && (
 				<p className="setup-error" id={`${id}-error`} role="alert">
-					{error}
+					{t(`customTime.errors.${error}`)}
 				</p>
 			)}
 			<div className="setup-custom__footer">
-				<p>
-					{draft.system === "Japanese Byo-yomi"
-						? "Overtime uses a fixed number of timed periods."
-						: "Choose a system, then enter its clock values."}
-				</p>
+				<p>{draft.system === "Japanese Byo-yomi" ? t("customTime.hints.byoYomi") : t("customTime.hints.default")}</p>
 				<button className="setup-apply" type="submit">
-					Use custom time
-					<img src={arrow} alt="" />
+					{t("customTime.apply")}
+					<img className="directional-icon" src={arrow} alt="" />
 				</button>
 			</div>
 		</form>

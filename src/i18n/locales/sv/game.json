@@ -1,0 +1,134 @@
+{
+	"colors": {
+		"black": "Svart",
+		"white": "Vit"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Passa",
+	"localPage": {
+		"title": "Lokalt spel",
+		"eyebrow": "VÄNSKAPSPARTI",
+		"heading": "En stund för spelet.",
+		"details": "{{size}} × {{size}} · Japanska regler"
+	},
+	"onlinePage": {
+		"title": "Onlinespel",
+		"eyebrow": "ONLINEPARTI",
+		"heading": "En stund för spelet.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Laddar parti…",
+		"notFound": "Det här partiet finns inte eller är inte längre tillgängligt.",
+		"startNew": "Starta ett nytt onlineparti",
+		"invited": "Du är inbjuden till ett parti på {{size}} × {{size}}.",
+		"joining": "Ansluter…",
+		"joinAs": "Gå med som {{color}}",
+		"full": "Partiet är fullt. Det går inte att titta på partier ännu."
+	},
+	"local": {
+		"label": "Lokalt Go-parti",
+		"loadingEngine": "Laddar Go-motorn…"
+	},
+	"online": {
+		"label": "Go-parti online",
+		"youAre": "Du spelar {{color}}",
+		"connection": {
+			"connecting": "Ansluter…",
+			"open": "Ansluten",
+			"reconnecting": "Återansluter…",
+			"closed": "Frånkopplad"
+		},
+		"invite": {
+			"label": "Bjud in en vän med den här länken",
+			"copy": "Kopiera",
+			"copied": "Kopierad"
+		},
+		"awaitingScoring": "Båda spelarna har passat. Poängräkning stöds inte ännu, så avbryt partiet för att registrera det utan poäng.",
+		"confirmResign": "Bekräfta uppgivning",
+		"resign": "Ge upp",
+		"abort": "Avbryt",
+		"results": {
+			"youWin": "Du vinner · {{color}} gav upp",
+			"winsByResignation": "{{color}} vinner genom uppgivning",
+			"aborted": "Partiet avbröts av {{color}}",
+			"unscored": "Partiet avslutades utan poängräkning"
+		}
+	},
+	"turn": {
+		"preparing": "Förbereder brädet",
+		"reviewing": "Granskar · Gå till Aktuell för att spela",
+		"toPlay": "{{color}} vid draget",
+		"yourMove": "Ditt drag",
+		"waitingForOpponent": "Väntar på en motståndare",
+		"awaitingScoring": "Spelet är slut · Poängräkning stöds inte ännu",
+		"gameOver": "Partiet är slut",
+		"sendingMove": "Skickar drag…",
+		"waitingForConnection": "Väntar på anslutning"
+	},
+	"boardFooter": {
+		"lastMove": "Senaste drag: {{color}} {{move}}",
+		"startingPosition": "Utgångsställning"
+	},
+	"players": {
+		"label": "Spelare",
+		"captured": "Fångade {{count}}",
+		"you": "{{name}} (du)",
+		"waiting": "{{name}} · väntar på en spelare"
+	},
+	"history": {
+		"label": "Draghistorik",
+		"heading": "Drag",
+		"moveCount_one": "{{count}} DRAG",
+		"moveCount_other": "{{count}} DRAG",
+		"tableLabel": "Svarts och Vits drag",
+		"pair": "Par",
+		"move": "Drag {{number}}, {{color}}, {{move}}",
+		"pendingMove": "Drag {{number}}, {{color}}, {{move}}, skickas",
+		"empty": "Inga drag ännu.",
+		"position": "Drag {{viewed}} av {{latest}}",
+		"currentPosition": "AKTUELL STÄLLNING",
+		"reviewing": "GRANSKAR",
+		"navigationLabel": "Navigering i draghistoriken",
+		"navigation": {
+			"start": "Början",
+			"previous": "Föregående",
+			"next": "Nästa",
+			"current": "Aktuell"
+		},
+		"undo": "Ångra senaste drag",
+		"encouragement": "Ta din tid. Varje drag spelar roll.",
+		"keyboardHint": "Använd ← → för att stega genom dragen, ↑ ↓ för början och aktuell ställning."
+	},
+	"board": {
+		"sceneLabel": "Ett Go-bräde på {{size}} × {{size}} som visar en sekvens med {{moveCount}} öppningsdrag",
+		"themedBoard": "Go-bräde: {{theme}}",
+		"emptyBoard": "Tomt baduk-bräde på {{size}} × {{size}}: {{theme}}",
+		"stone": "Baduk-sten: {{color}}, {{finish}}",
+		"textureError": "Brädets textur kunde inte laddas.",
+		"pauseAnimations": "Pausa animationer",
+		"resumeAnimations": "Återuppta animationer",
+		"pause": "PAUS",
+		"resume": "FORTSÄTT"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Välj en skärningspunkt på brädet.",
+			"occupied": "Den punkten är redan upptagen.",
+			"wrongPlayer": "Det är den andra spelarens tur.",
+			"suicide": "Självmordsdrag är inte tillåtna.",
+			"ko": "Det draget är förbjudet enligt ko-regeln.",
+			"superko": "Det draget upprepar en tidigare ställning.",
+			"gameEnded": "Partiet kan inte ta emot fler drag."
+		},
+		"serverRejectedMove": "Servern avvisade draget. {{reason}}",
+		"staleRevision": "Partiet ändrades innan ditt drag kom fram, så det spelades inte.",
+		"wrongPhase": "Det går inte i det här skedet av partiet.",
+		"seatTaken": "Den platsen är redan tagen.",
+		"notYourTurn": "Det är den andra spelarens tur.",
+		"abortUnavailable": "Partiet kan inte längre avbrytas.",
+		"replayFailed": "Partiet kunde inte spelas upp lokalt. Ladda om sidan.",
+		"notConnected": "Inte ansluten till spelservern.",
+		"engineLoadFailed": "Go-motorn kunde inte laddas. Försök igen.",
+		"gameLoadFailed": "Partiet kunde inte laddas. Försök igen.",
+		"seatTakenFirst": "Någon annan tog platsen först. Partiet är nu fullt."
+	}
+}

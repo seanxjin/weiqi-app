@@ -1,0 +1,35 @@
+{
+	"server": {
+		"unavailable": "O servidor está indisponível. Tente novamente.",
+		"unreachable": "Não foi possível acessar o servidor. Verifique sua conexão e tente novamente.",
+		"unexpectedResponse": "O servidor retornou uma resposta inesperada. Tente novamente.",
+		"requestFailed": "Não foi possível concluir a solicitação. Tente novamente."
+	},
+	"rateLimited": {
+		"generic": "Muitas tentativas. Aguarde antes de tentar novamente.",
+		"withDelay_one": "Muitas tentativas. Aguarde {{count}} segundo antes de tentar novamente.",
+		"withDelay_many": "Muitas tentativas. Aguarde {{count}} segundos antes de tentar novamente.",
+		"withDelay_other": "Muitas tentativas. Aguarde {{count}} segundos antes de tentar novamente."
+	},
+	"unknown": "Algo deu errado. Tente novamente.",
+	"api": {
+		"invalidCredentials": "O nome de usuário, e-mail ou senha está incorreto.",
+		"twoFactorRequired": "Digite o código de 6 dígitos do seu autenticador para continuar.",
+		"invalidTwoFactor": "Esse código do autenticador está incorreto. Tente novamente.",
+		"emailUnconfirmed": "Confirme seu endereço de e-mail antes de entrar.",
+		"accountClosed": "Esta conta foi encerrada e não pode entrar.",
+		"usernameTaken": "Esse nome de usuário já está em uso. Escolha outro.",
+		"emailTaken": "Esse endereço de e-mail já está em uso.",
+		"invalidToken": "Este link é inválido ou expirou. Solicite um novo e-mail para continuar.",
+		"unauthorized": "Sua sessão de login expirou. Comece novamente.",
+		"conflict": "Não foi possível concluir seu cadastro. Comece novamente.",
+		"forbidden": "Esta solicitação foi bloqueada. Atualize a página e tente novamente."
+	},
+	"validation": {
+		"passwordTooShort": "Use pelo menos 8 caracteres na sua senha.",
+		"newPasswordTooShort": "Use pelo menos 8 caracteres na sua nova senha.",
+		"passwordTooLong": "Sua senha não pode exceder 72 bytes UTF-8.",
+		"passwordMismatch": "As novas senhas não coincidem.",
+		"passwordUnchanged": "Escolha uma senha diferente da atual."
+	}
+}

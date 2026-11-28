@@ -1,0 +1,209 @@
+{
+	"header": {
+		"title": "Stillingar",
+		"sectionTitle": "Stillingar: {{section}}",
+		"navLabel": "Hlutar stillinga"
+	},
+	"sections": {
+		"board": "Borð og steinar",
+		"gameplay": "Spilun",
+		"profile": "Prófíll",
+		"social": "Samfélag og persónuvernd",
+		"account": "Aðgangur og öryggi",
+		"language": "Tungumál og tími"
+	},
+	"board": {
+		"description": "Veldu borðið og steinana sem þú spilar með.",
+		"appearance": {
+			"title": "Útlit",
+			"boardLegend": "Borð",
+			"stonesLegend": "Steinar",
+			"previewLabel": "Forskoðun borðs"
+		},
+		"themes": {
+			"kaya": "Hefðbundinn japanskur kaya",
+			"walnut": "Dökk hnota",
+			"ash": "Ljós norrænn askur"
+		},
+		"stoneStyles": {
+			"polished": "Flögusteinn",
+			"satin": "Keramík",
+			"matte": "Náttúrusteinn",
+			"snow": "Skel · Yuki / Snjógæði"
+		},
+		"display": {
+			"title": "Birting borðs",
+			"coordinates": {
+				"label": "Sýna hnit borðsins",
+				"description": "Merkja dálka og raðir meðfram jaðri borðsins."
+			},
+			"lastMove": {
+				"label": "Auðkenna síðasta leik",
+				"description": "Merkja steininn sem síðast var leikið."
+			}
+		},
+		"sounds": {
+			"title": "Hljóð",
+			"playSounds": {
+				"label": "Spila hljóð",
+				"description": "Steinar lagðir, föngun og viðvaranir klukku."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Stjórnaðu hvernig þú leggur steina og hverjir geta skorað á þig.",
+		"moves": {
+			"title": "Að leika",
+			"description": "Biðja um annan smell áður en steinn er lagður, til að forðast mistök.",
+			"legend": "Staðfesta leiki",
+			"options": {
+				"never": "Aldrei",
+				"correspondence": "Aðeins í bréfskákarleikjum",
+				"always": "Alltaf"
+			}
+		},
+		"challenges": {
+			"title": "Áskoranir",
+			"description": "Veldu hverjir geta sent þér áskoranir.",
+			"legend": "Leyfa áskoranir frá",
+			"options": {
+				"everyone": "Öllum",
+				"registered": "Skráðum leikmönnum",
+				"following": "Aðeins leikmönnum sem ég fylgi",
+				"nobody": "Engum (endurleikir eru enn leyfðir)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Allt hér er sýnilegt á <profileLink>opinbera prófílnum</profileLink> þínum.",
+		"publicProfile": {
+			"title": "Opinber prófíll",
+			"bioLabel": "Stutt lýsing",
+			"bioPlaceholder": "Stutta lýsingin þín birtist á prófílnum þínum.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Upplýsingar",
+			"joinDate": "Skráningardagur",
+			"username": "Notandanafn",
+			"changeUsername": "Breyta",
+			"changeUsernameFeature": "Breyting á notandanafni",
+			"realName": "Raunverulegt nafn",
+			"location": "Staðsetning",
+			"country": "Land",
+			"countryNotSet": "Ekki tilgreint",
+			"rank": "Styrkleiki",
+			"rankPlaceholder": "t.d. 12k, 3d",
+			"rankHint": "Notaðu 30k–1k, 1d–9d eða 1p–9p."
+		},
+		"links": {
+			"legend": "Tenglar",
+			"linkLabel": "Tengill {{number}}",
+			"remove": "Fjarlægja",
+			"removeLabel": "Fjarlægja tengil {{number}}",
+			"add": "Bæta við tengli"
+		}
+	},
+	"social": {
+		"description": "Hafðu umsjón með leikmönnum sem þú fylgir og þeim sem þú hefur lokað á.",
+		"blocking": {
+			"title": "Lokanir",
+			"description_one": "Þú hefur lokað á {{count}} leikmann. Leikmenn sem lokað er á geta hvorki skorað á þig né sent þér skilaboð.",
+			"description_other": "Þú hefur lokað á {{count}} leikmenn. Leikmenn sem lokað er á geta hvorki skorað á þig né sent þér skilaboð.",
+			"empty": "Þú hefur ekki lokað á neinn.",
+			"action": "Opna fyrir",
+			"actionLabel": "Opna fyrir {{username}}"
+		},
+		"following": {
+			"title": "Fylgir",
+			"description_one": "Þú fylgir {{count}} leikmanni.",
+			"description_other": "Þú fylgir {{count}} leikmönnum.",
+			"empty": "Þú fylgir engum enn.",
+			"action": "Hætta að fylgja",
+			"actionLabel": "Hætta að fylgja {{username}}"
+		}
+	},
+	"account": {
+		"description": "Breyttu lykilorðinu, tryggðu aðganginn og hafðu umsjón með tengdum aðgöngum.",
+		"password": {
+			"title": "Breyta lykilorði",
+			"updated": "Lykilorð uppfært",
+			"fields": {
+				"currentPassword": {
+					"label": "Núverandi lykilorð",
+					"show": "Sýna núverandi lykilorð",
+					"hide": "Fela núverandi lykilorð"
+				},
+				"newPassword": {
+					"label": "Nýtt lykilorð",
+					"show": "Sýna nýtt lykilorð",
+					"hide": "Fela nýtt lykilorð"
+				},
+				"confirmPassword": {
+					"label": "Endurtaktu lykilorð",
+					"show": "Sýna endurtekið lykilorð",
+					"hide": "Fela endurtekið lykilorð"
+				}
+			}
+		},
+		"contact": {
+			"title": "Samskiptaupplýsingar",
+			"email": "Netfang",
+			"edit": "Breyta",
+			"editFeature": "Breyting á netfangi"
+		},
+		"twoFactor": {
+			"title": "Tveggja þátta auðkenning",
+			"description": "Krefjast kóða úr auðkenningarforriti við innskráningu.",
+			"off": "Óvirk",
+			"enable": "Virkja",
+			"feature": "Tveggja þátta auðkenning"
+		},
+		"sessions": {
+			"title": "Virkar lotur",
+			"description": "Ef þig grunar að brotist hafi verið inn á aðganginn skaltu breyta lykilorðinu og skrá þig út alls staðar.",
+			"thisDevice": "Þetta tæki",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "Skrá út {{device}}",
+			"logOutAll": "Skrá út á öllum öðrum tækjum"
+		},
+		"connections": {
+			"title": "Tengdir aðgangar",
+			"description": "Skráðu þig inn á Baduk með þessum aðgöngum.",
+			"connectedTo": "Tengt við {{provider}}",
+			"connect": "Tengja",
+			"disconnect": "Aftengja",
+			"note": "Aftenging fjarlægir tenginguna á Baduk. Þú gætir samt þurft að afturkalla aðgang á hinni síðunni."
+		},
+		"close": {
+			"title": "Loka aðganginum",
+			"description": "Þegar þú lokar aðganginum er prófíllinn falinn og þú ert skráð/ur út alls staðar.",
+			"button": "Loka aðgangi",
+			"dialogTitle": "Loka aðganginum?",
+			"dialogDescription": "Þú getur opnað hann aftur síðar á innskráningarsíðunni.",
+			"feature": "Lokun aðgangs"
+		}
+	},
+	"languageTime": {
+		"title": "Tungumál og tími",
+		"description": "Veldu tungumálið sem Baduk notar og hvernig dagsetningar og tímar birtast.",
+		"language": {
+			"title": "Tungumál",
+			"description": "Breytingar taka strax gildi á öllum síðum.",
+			"legend": "Tungumál viðmóts"
+		},
+		"time": {
+			"title": "Tími",
+			"description": "Notað fyrir tímastimpla á borð við skráningardaga og virkni lota.",
+			"timeZone": "Tímabelti",
+			"automaticTimeZone": "Sjálfvirkt ({{timeZone}})",
+			"timeFormat": "Klukka",
+			"formats": {
+				"auto": "Sjálfvirkt ({{example}})",
+				"12h": "12 tíma ({{example}})",
+				"24h": "24 tíma ({{example}})"
+			},
+			"preview": "Forskoðun"
+		}
+	}
+}

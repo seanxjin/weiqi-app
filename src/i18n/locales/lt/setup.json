@@ -1,0 +1,87 @@
+{
+	"page": {
+		"title": {
+			"local": "Vietinės partijos nustatymai",
+			"online": "Partijos internetu nustatymai"
+		},
+		"label": {
+			"local": "Vietinės partijos nustatymai",
+			"online": "Partijos internetu nustatymai"
+		},
+		"backToMenu": "Grįžti į meniu",
+		"settingsLabel": "Partijos nustatymai",
+		"timeLimitsNotice": "Laiko apribojimai dar netaikomi.",
+		"boardSize": "LENTOS DYDIS",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Kuriama partija…",
+		"startGame": "Pradėti žaidimą",
+		"createFailed": "Nepavyko sukurti partijos. Bandykite dar kartą."
+	},
+	"players": {
+		"player1": "1 žaidėjas",
+		"player2": "2 žaidėjas",
+		"opponent": "Varžovas",
+		"guest": "Jūs (svečias)"
+	},
+	"configuration": {
+		"eyebrow": "KONFIGŪRACIJOS",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Pasirinktinė · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Daugiau laiko kontrolių",
+		"fewerControls": "Mažiau laiko kontrolių",
+		"groups": {
+			"bullet": "Kulka",
+			"blitz": "Žaibinis",
+			"rapid": "Greitasis",
+			"classical": "Klasikinis",
+			"correspondence": "Korespondencinis",
+			"untimed": "Be laiko"
+		},
+		"systems": {
+			"absolute": "Absoliutus",
+			"fischer": "Fišerio",
+			"japaneseByoYomi": "Japoniškas bjojomi"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} sek.",
+			"absoluteMinutes": "{{minutes}} min.",
+			"mainSeconds": "{{seconds}} s",
+			"mainMinutes": "{{minutes}} min",
+			"fischer": "{{main}} + {{increment}} s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}} s",
+			"daysPerMove_one": "{{count}} diena / ėjimas",
+			"daysPerMove_few": "{{count}} dienos / ėjimas",
+			"daysPerMove_many": "{{count}} dienos / ėjimas",
+			"daysPerMove_other": "{{count}} dienų / ėjimas"
+		},
+		"noTimeLimit": "Be laiko apribojimo"
+	},
+	"customTime": {
+		"label": "Pasirinktinė laiko kontrolė",
+		"eyebrow": "PASIRINKTINĖ LAIKO KONTROLĖ",
+		"heading": "Nustatykite savo laikrodį",
+		"system": "Sistema",
+		"fields": {
+			"minutes": "Pagrindinis · min",
+			"seconds": "Pagrindinis · sek",
+			"increment": "Priedas · sek",
+			"periods": "Periodai",
+			"periodSeconds": "Periodas · sek"
+		},
+		"hints": {
+			"byoYomi": "Papildomas laikas naudoja nustatytą skaičių laiko periodų.",
+			"default": "Pasirinkite sistemą, tada įveskite laikrodžio reikšmes."
+		},
+		"apply": "Naudoti pasirinktinį laiką",
+		"errors": {
+			"wholeNumbers": "Kiekviename laikrodžio lauke įveskite neneigiamą sveikąjį skaičių.",
+			"mainSeconds": "Pagrindinio laiko sekundės turi būti nuo 0 iki 59.",
+			"byoYomiPeriods": "Bjojomi reikia bent vieno periodo, trunkančio bent vieną sekundę.",
+			"mainTime": "Nustatykite didesnį nei nulis pagrindinį laiką."
+		}
+	}
+}

@@ -1,0 +1,118 @@
+{
+	"home": {
+		"pageTitle": "Hrát",
+		"location": "HRÁT / DOMŮ",
+		"signedInAs": "Přihlášen jako {{username}}",
+		"guest": "Hrajete jako host",
+		"logoutError": "Odhlášení se nezdařilo. Zkuste to prosím znovu.",
+		"introduction": {
+			"heading": "Nějaký text",
+			"body": "Další text"
+		},
+		"menuHeading": "Nějaký text.",
+		"options": {
+			"online": {
+				"label": "Hrát online",
+				"description": "Najděte soupeře. Setkejte se u desky."
+			},
+			"local": {
+				"label": "Hrát lokálně",
+				"description": "Jedna deska. Dva hráči. Sdílená obrazovka."
+			},
+			"friend": {
+				"label": "Hrát s přítelem",
+				"description": "Pozvěte někoho k promyšlené partii."
+			},
+			"puzzles": {
+				"label": "Řešit úlohy",
+				"description": "Malé výzvy. Ostřejší instinkty."
+			},
+			"lessons": {
+				"label": "Lekce",
+				"description": "Od prvního kamene k dalšímu poznání."
+			},
+			"bots": {
+				"label": "Hrát s boty",
+				"description": "Trénujte vlastním tempem na jakékoli úrovni."
+			}
+		},
+		"presence_one": "U desky je {{count, number}} hráč",
+		"presence_few": "U desky jsou {{count, number}} hráči",
+		"presence_many": "U desky je {{count, number}} hráče",
+		"presence_other": "U desky je {{count, number}} hráčů",
+		"reserved": {
+			"label": "SEKCE NA POZDĚJI",
+			"heading": "Vyhrazeno pro budoucí obsah",
+			"body": "Tato sekce je zatím záměrně prázdná. Bude sloužit pro budoucí funkce, novinky nebo vybraný obsah."
+		},
+		"footerTagline": "Jednoduchá pravidla. Nekonečné objevování."
+	},
+	"materials": {
+		"pageTitle": "Desky a kameny",
+		"breadcrumb": "Baduk / Knihovna materiálů",
+		"collection": "Kolekce 01",
+		"heading": "Desky a kameny.",
+		"introduction": "Přírodní materiály. Tiché detaily. Místo pro hru.",
+		"boardsSection": {
+			"title": "Desky",
+			"meta": "Tři dřeviny · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Kameny",
+			"meta": "Čtyři styly · černá a bílá"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Studie materiálů",
+			"enlarged": "Zvětšené vzorky",
+			"heading": "Tichý kontrast.",
+			"body": "Čtyři povrchy. Černá a bílá ve stejném měkkém světle.",
+			"scale": "Zvětšené vzorky · jednotné měřítko",
+			"form": "Hladký, zaoblený tvar / jemná variace povrchu"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Tradiční japonská kaya",
+				"material": "Teplý medový tón · rovná kresba"
+			},
+			"walnut": {
+				"name": "Tmavý ořech",
+				"material": "Sytě hnědá · plynulá kresba"
+			},
+			"ash": {
+				"name": "Světlý skandinávský jasan",
+				"material": "Světlé dřevo · jemná kresba"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Leštěný",
+				"name": "Břidlice",
+				"description": "Hladké, leštěné povrchy s klidnou minerální texturou.",
+				"black": "Černá břidlice",
+				"white": "Bílá břidlice"
+			},
+			"satin": {
+				"finish": "Saténový",
+				"name": "Keramika",
+				"description": "Rozptýlený lesk a jemná, rovnoměrná zrnitost.",
+				"black": "Černá keramika",
+				"white": "Bílá keramika"
+			},
+			"matte": {
+				"finish": "Matný",
+				"name": "Přírodní kámen",
+				"description": "Decentní minerální skvrnky pod hladkým, suchým povrchem.",
+				"black": "Černý kámen",
+				"white": "Bílý kámen"
+			},
+			"snow": {
+				"finish": "Leštěný",
+				"name": "Lastura · Yuki / Sněhová jakost",
+				"description": "Jemná, hustá kresba lastury na mléčně bílé, v páru s leštěnou černou břidlicí.",
+				"black": "Černá břidlice Nachiguro",
+				"white": "Bílá lastura Yuki"
+			}
+		},
+		"footerTagline": "To podstatné, promyšleně."
+	}
+}

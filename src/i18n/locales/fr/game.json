@@ -1,0 +1,135 @@
+{
+	"colors": {
+		"black": "Noir",
+		"white": "Blanc"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Passer",
+	"localPage": {
+		"title": "Partie locale",
+		"eyebrow": "PARTIE AMICALE",
+		"heading": "Un moment pour le jeu.",
+		"details": "{{size}} × {{size}} · Règles japonaises"
+	},
+	"onlinePage": {
+		"title": "Partie en ligne",
+		"eyebrow": "PARTIE EN LIGNE",
+		"heading": "Un moment pour le jeu.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Chargement de la partie…",
+		"notFound": "Cette partie n’existe pas ou n’est plus disponible.",
+		"startNew": "Lancer une nouvelle partie en ligne",
+		"invited": "Vous êtes invité à une partie en {{size}} × {{size}}.",
+		"joining": "Connexion à la partie…",
+		"joinAs": "Rejoindre en tant que {{color}}",
+		"full": "Cette partie est complète. L’observation des parties n’est pas encore disponible."
+	},
+	"local": {
+		"label": "Partie de go locale",
+		"loadingEngine": "Chargement du moteur de go…"
+	},
+	"online": {
+		"label": "Partie de go en ligne",
+		"youAre": "Vous jouez {{color}}",
+		"connection": {
+			"connecting": "Connexion…",
+			"open": "Connecté",
+			"reconnecting": "Reconnexion…",
+			"closed": "Déconnecté"
+		},
+		"invite": {
+			"label": "Invitez un ami avec ce lien",
+			"copy": "Copier",
+			"copied": "Copié"
+		},
+		"awaitingScoring": "Les deux joueurs ont passé. Le décompte n’est pas encore pris en charge : annulez la partie pour l’enregistrer sans score.",
+		"confirmResign": "Confirmer l’abandon",
+		"resign": "Abandonner",
+		"abort": "Annuler la partie",
+		"results": {
+			"youWin": "Vous gagnez · {{color}} a abandonné",
+			"winsByResignation": "{{color}} gagne par abandon",
+			"aborted": "Partie annulée par {{color}}",
+			"unscored": "Partie terminée sans score"
+		}
+	},
+	"turn": {
+		"preparing": "Préparation du goban",
+		"reviewing": "Revue · Revenez à Actuel pour jouer",
+		"toPlay": "Au tour de {{color}}",
+		"yourMove": "À vous de jouer",
+		"waitingForOpponent": "En attente d’un adversaire",
+		"awaitingScoring": "La partie est terminée · Le décompte n’est pas encore pris en charge",
+		"gameOver": "Partie terminée",
+		"sendingMove": "Envoi du coup…",
+		"waitingForConnection": "En attente de connexion"
+	},
+	"boardFooter": {
+		"lastMove": "Dernier coup : {{color}} {{move}}",
+		"startingPosition": "Position de départ"
+	},
+	"players": {
+		"label": "Joueurs",
+		"captured": "Captures : {{count}}",
+		"you": "{{name}} (vous)",
+		"waiting": "{{name}} · en attente d’un joueur"
+	},
+	"history": {
+		"label": "Historique des coups",
+		"heading": "Coups",
+		"moveCount_one": "{{count}} COUP",
+		"moveCount_many": "{{count}} COUPS",
+		"moveCount_other": "{{count}} COUPS",
+		"tableLabel": "Coups de Noir et de Blanc",
+		"pair": "Paire",
+		"move": "Coup {{number}}, {{color}}, {{move}}",
+		"pendingMove": "Coup {{number}}, {{color}}, {{move}}, envoi en cours",
+		"empty": "Aucun coup pour l’instant.",
+		"position": "Coup {{viewed}} sur {{latest}}",
+		"currentPosition": "POSITION ACTUELLE",
+		"reviewing": "REVUE",
+		"navigationLabel": "Navigation dans l’historique des coups",
+		"navigation": {
+			"start": "Début",
+			"previous": "Précédent",
+			"next": "Suivant",
+			"current": "Actuel"
+		},
+		"undo": "Annuler le dernier coup",
+		"encouragement": "Prenez votre temps. Chaque coup compte.",
+		"keyboardHint": "Utilisez ← → pour parcourir les coups, ↑ ↓ pour le début et la position actuelle."
+	},
+	"board": {
+		"sceneLabel": "Un goban de {{size}} sur {{size}} montrant une séquence de {{moveCount}} coups d’ouverture",
+		"themedBoard": "Goban en {{theme}}",
+		"emptyBoard": "Goban vide de {{size}} sur {{size}} en {{theme}}",
+		"stone": "Pierre de baduk {{color}} {{finish}}",
+		"textureError": "Impossible de charger la texture du goban.",
+		"pauseAnimations": "Mettre les animations en pause",
+		"resumeAnimations": "Reprendre les animations",
+		"pause": "PAUSE",
+		"resume": "REPRENDRE"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Choisissez une intersection sur le goban.",
+			"occupied": "Cette intersection est occupée.",
+			"wrongPlayer": "C’est au tour de l’autre joueur.",
+			"suicide": "Le suicide n’est pas autorisé.",
+			"ko": "Ce coup est interdit par la règle du ko.",
+			"superko": "Ce coup répète une position antérieure.",
+			"gameEnded": "Cette partie n’accepte plus de coups."
+		},
+		"serverRejectedMove": "Le serveur a refusé le coup. {{reason}}",
+		"staleRevision": "La partie a changé avant l’arrivée de votre coup, il n’a donc pas été joué.",
+		"wrongPhase": "Ce n’est pas possible à ce stade de la partie.",
+		"seatTaken": "Cette place est déjà prise.",
+		"notYourTurn": "C’est au tour de l’autre joueur.",
+		"abortUnavailable": "La partie ne peut plus être annulée.",
+		"replayFailed": "Impossible de rejouer cette partie localement. Veuillez recharger la page.",
+		"notConnected": "Non connecté au serveur de jeu.",
+		"engineLoadFailed": "Impossible de charger le moteur de go. Veuillez réessayer.",
+		"gameLoadFailed": "Impossible de charger la partie. Veuillez réessayer.",
+		"seatTakenFirst": "Quelqu’un d’autre a pris la place avant vous. Cette partie est maintenant complète."
+	}
+}

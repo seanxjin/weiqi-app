@@ -1,0 +1,34 @@
+{
+	"server": {
+		"unavailable": "Serveren er ikke tilgængelig. Prøv igen.",
+		"unreachable": "Serveren kan ikke nås. Tjek din forbindelse, og prøv igen.",
+		"unexpectedResponse": "Serveren sendte et uventet svar. Prøv igen.",
+		"requestFailed": "Anmodningen kunne ikke gennemføres. Prøv igen."
+	},
+	"rateLimited": {
+		"generic": "For mange forsøg. Vent lidt, før du prøver igen.",
+		"withDelay_one": "For mange forsøg. Vent {{count}} sekund, før du prøver igen.",
+		"withDelay_other": "For mange forsøg. Vent {{count}} sekunder, før du prøver igen."
+	},
+	"unknown": "Noget gik galt. Prøv igen.",
+	"api": {
+		"invalidCredentials": "Brugernavn, e-mail eller adgangskode er forkert.",
+		"twoFactorRequired": "Indtast den 6-cifrede kode fra din godkendelsesapp for at fortsætte.",
+		"invalidTwoFactor": "Godkendelseskoden er forkert. Prøv igen.",
+		"emailUnconfirmed": "Bekræft din e-mailadresse, før du logger ind.",
+		"accountClosed": "Denne konto er lukket og kan ikke logge ind.",
+		"usernameTaken": "Brugernavnet er allerede i brug. Vælg et andet.",
+		"emailTaken": "E-mailadressen er allerede i brug.",
+		"invalidToken": "Linket er ugyldigt eller udløbet. Anmod om en ny e-mail for at fortsætte.",
+		"unauthorized": "Din login-session er udløbet. Start forfra.",
+		"conflict": "Din oprettelse kunne ikke gennemføres. Start forfra.",
+		"forbidden": "Anmodningen blev blokeret. Genindlæs siden, og prøv igen."
+	},
+	"validation": {
+		"passwordTooShort": "Brug mindst 8 tegn til din adgangskode.",
+		"newPasswordTooShort": "Brug mindst 8 tegn til din nye adgangskode.",
+		"passwordTooLong": "Din adgangskode må højst være 72 UTF-8-bytes.",
+		"passwordMismatch": "De nye adgangskoder er ikke ens.",
+		"passwordUnchanged": "Vælg en anden adgangskode end din nuværende."
+	}
+}

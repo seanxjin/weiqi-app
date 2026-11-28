@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Играјте го",
+	"railLabel": "Baduk",
+	"mainNavigation": "Главна навигација",
+	"play": "Играј",
+	"eyebrow": "Неки текст",
+	"heading": {
+		"label": "Играјте го",
+		"prefix": "Играјте "
+	},
+	"description": {
+		"first": "Неки текст....",
+		"second": "Неки други текст..."
+	},
+	"footnote": "НЕ ЖУРИТЕ."
+}

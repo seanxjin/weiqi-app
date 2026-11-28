@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "GO",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Pagina principală Baduk",
+	"actions": {
+		"save": "Salvează",
+		"saving": "Se salvează…",
+		"cancel": "Anulează",
+		"back": "Înapoi",
+		"retry": "Reîncearcă",
+		"close": "Închide",
+		"login": "Autentificare",
+		"signIn": "Conectează-te",
+		"signUp": "Înregistrează-te",
+		"logOut": "Deconectează-te",
+		"loggingOut": "Se deconectează…"
+	},
+	"status": {
+		"saved": "Salvat",
+		"loading": "Se încarcă…",
+		"checkingSession": "Se verifică sesiunea…",
+		"sessionError": "Sesiunea nu a putut fi verificată. Încearcă din nou."
+	},
+	"comingSoon": "{{feature}} va fi disponibil în curând.",
+	"language": "Limbă",
+	"languageDialog": {
+		"title": "Alege limba preferatÄƒ",
+		"loadError": "Limba nu a putut fi încărcată. Încearcă din nou."
+	}
+}

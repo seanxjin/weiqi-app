@@ -1,0 +1,29 @@
+{
+	"navigation": "Навигация Baduk",
+	"drawer": {
+		"open": "Открыть меню",
+		"close": "Закрыть меню"
+	},
+	"mainNavigation": "Основная навигация",
+	"play": "Играть",
+	"puzzles": "Задачи",
+	"learn": "Обучение",
+	"guide": {
+		"heading": "ВПЕРВЫЕ В ГО?",
+		"startWithBasics": "Начните с основ"
+	},
+	"account": {
+		"label": "Аккаунт",
+		"friends": "Друзья",
+		"messages": "Сообщения",
+		"notifications": "Уведомления",
+		"settings": "Настройки",
+		"allSettings": "Все настройки"
+	},
+	"theme": {
+		"label": "Тема",
+		"system": "Системная",
+		"light": "Светлая",
+		"dark": "Тёмная"
+	}
+}

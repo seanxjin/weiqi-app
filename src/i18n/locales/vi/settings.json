@@ -1,0 +1,207 @@
+{
+	"header": {
+		"title": "Cài đặt",
+		"sectionTitle": "Cài đặt {{section}}",
+		"navLabel": "Các mục cài đặt"
+	},
+	"sections": {
+		"board": "Bàn cờ & quân cờ",
+		"gameplay": "Lối chơi",
+		"profile": "Hồ sơ",
+		"social": "Xã hội & quyền riêng tư",
+		"account": "Tài khoản & bảo mật",
+		"language": "Ngôn ngữ & thời gian"
+	},
+	"board": {
+		"description": "Chọn bàn cờ và quân cờ bạn dùng để chơi.",
+		"appearance": {
+			"title": "Giao diện",
+			"boardLegend": "Bàn cờ",
+			"stonesLegend": "Quân cờ",
+			"previewLabel": "Xem trước bàn cờ"
+		},
+		"themes": {
+			"kaya": "Gỗ kaya Nhật Bản truyền thống",
+			"walnut": "Gỗ óc chó sẫm màu",
+			"ash": "Gỗ tần bì Bắc Âu sáng màu"
+		},
+		"stoneStyles": {
+			"polished": "Đá phiến",
+			"satin": "Gốm",
+			"matte": "Đá tự nhiên",
+			"snow": "Vỏ sò · Yuki / Hạng Snow"
+		},
+		"display": {
+			"title": "Hiển thị bàn cờ",
+			"coordinates": {
+				"label": "Hiện tọa độ bàn cờ",
+				"description": "Ghi nhãn các cột và hàng quanh mép bàn cờ."
+			},
+			"lastMove": {
+				"label": "Đánh dấu nước cuối",
+				"description": "Đánh dấu quân cờ vừa được đặt gần nhất."
+			}
+		},
+		"sounds": {
+			"title": "Âm thanh",
+			"playSounds": {
+				"label": "Phát âm thanh",
+				"description": "Đặt quân, ăn quân và cảnh báo đồng hồ."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Quản lý cách bạn đặt quân và ai có thể thách đấu bạn.",
+		"moves": {
+			"title": "Đi quân",
+			"description": "Yêu cầu nhấp lần hai trước khi đặt quân, để tránh nhấp nhầm.",
+			"legend": "Xác nhận nước đi",
+			"options": {
+				"never": "Không bao giờ",
+				"correspondence": "Chỉ ván thư tín",
+				"always": "Luôn luôn"
+			}
+		},
+		"challenges": {
+			"title": "Thách đấu",
+			"description": "Chọn ai có thể gửi lời thách đấu cho bạn.",
+			"legend": "Cho phép thách đấu từ",
+			"options": {
+				"everyone": "Mọi người",
+				"registered": "Người chơi đã đăng ký",
+				"following": "Chỉ người chơi tôi theo dõi",
+				"nobody": "Không ai (vẫn cho phép đấu lại)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Mọi thông tin ở đây đều hiển thị trên <profileLink>hồ sơ công khai</profileLink> của bạn.",
+		"publicProfile": {
+			"title": "Hồ sơ công khai",
+			"bioLabel": "Giới thiệu ngắn",
+			"bioPlaceholder": "Phần giới thiệu ngắn sẽ hiển thị trên hồ sơ của bạn.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Chi tiết",
+			"joinDate": "Ngày tham gia",
+			"username": "Tên người dùng",
+			"changeUsername": "Đổi",
+			"changeUsernameFeature": "Đổi tên người dùng",
+			"realName": "Tên thật",
+			"location": "Địa điểm",
+			"country": "Quốc gia",
+			"countryNotSet": "Chưa đặt",
+			"rank": "Đẳng cấp",
+			"rankPlaceholder": "vd: 12k, 3d",
+			"rankHint": "Dùng 30k–1k, 1d–9d hoặc 1p–9p."
+		},
+		"links": {
+			"legend": "Liên kết",
+			"linkLabel": "Liên kết {{number}}",
+			"remove": "Xóa",
+			"removeLabel": "Xóa liên kết {{number}}",
+			"add": "Thêm liên kết"
+		}
+	},
+	"social": {
+		"description": "Quản lý những người chơi bạn theo dõi và những người bạn đã chặn.",
+		"blocking": {
+			"title": "Chặn",
+			"description_other": "Bạn đang chặn {{count}} người chơi. Người chơi bị chặn không thể thách đấu hoặc nhắn tin cho bạn.",
+			"empty": "Bạn chưa chặn ai.",
+			"action": "Bỏ chặn",
+			"actionLabel": "Bỏ chặn {{username}}"
+		},
+		"following": {
+			"title": "Đang theo dõi",
+			"description_other": "Bạn đang theo dõi {{count}} người chơi.",
+			"empty": "Bạn chưa theo dõi ai.",
+			"action": "Bỏ theo dõi",
+			"actionLabel": "Bỏ theo dõi {{username}}"
+		}
+	},
+	"account": {
+		"description": "Đổi mật khẩu, bảo vệ tài khoản và quản lý các tài khoản liên kết.",
+		"password": {
+			"title": "Đổi mật khẩu",
+			"updated": "Đã cập nhật mật khẩu",
+			"fields": {
+				"currentPassword": {
+					"label": "Mật khẩu hiện tại",
+					"show": "Hiện mật khẩu hiện tại",
+					"hide": "Ẩn mật khẩu hiện tại"
+				},
+				"newPassword": {
+					"label": "Mật khẩu mới",
+					"show": "Hiện mật khẩu mới",
+					"hide": "Ẩn mật khẩu mới"
+				},
+				"confirmPassword": {
+					"label": "Nhập lại mật khẩu",
+					"show": "Hiện mật khẩu nhập lại",
+					"hide": "Ẩn mật khẩu nhập lại"
+				}
+			}
+		},
+		"contact": {
+			"title": "Thông tin liên hệ",
+			"email": "Địa chỉ email",
+			"edit": "Sửa",
+			"editFeature": "Đổi email"
+		},
+		"twoFactor": {
+			"title": "Xác thực hai yếu tố",
+			"description": "Yêu cầu mã từ ứng dụng xác thực khi đăng nhập.",
+			"off": "Tắt",
+			"enable": "Bật",
+			"feature": "Xác thực hai yếu tố"
+		},
+		"sessions": {
+			"title": "Phiên đang hoạt động",
+			"description": "Nếu nghi ngờ tài khoản bị xâm phạm, hãy đổi mật khẩu và đăng xuất khỏi mọi nơi.",
+			"thisDevice": "Thiết bị này",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "Đăng xuất {{device}}",
+			"logOutAll": "Đăng xuất trên tất cả thiết bị khác"
+		},
+		"connections": {
+			"title": "Tài khoản liên kết",
+			"description": "Đăng nhập Baduk bằng các tài khoản này.",
+			"connectedTo": "Đã liên kết với {{provider}}",
+			"connect": "Liên kết",
+			"disconnect": "Hủy liên kết",
+			"note": "Hủy liên kết sẽ xóa liên kết trên Baduk. Bạn có thể vẫn cần thu hồi quyền truy cập trên trang web kia."
+		},
+		"close": {
+			"title": "Đóng tài khoản",
+			"description": "Đóng tài khoản sẽ ẩn hồ sơ của bạn và đăng xuất bạn khỏi mọi nơi.",
+			"button": "Đóng tài khoản",
+			"dialogTitle": "Đóng tài khoản của bạn?",
+			"dialogDescription": "Bạn có thể mở lại tài khoản sau từ trang đăng nhập.",
+			"feature": "Đóng tài khoản"
+		}
+	},
+	"languageTime": {
+		"title": "Ngôn ngữ & thời gian",
+		"description": "Chọn ngôn ngữ của Baduk và cách hiển thị ngày giờ.",
+		"language": {
+			"title": "Ngôn ngữ",
+			"description": "Thay đổi được áp dụng ngay trên mọi trang.",
+			"legend": "Ngôn ngữ hiển thị"
+		},
+		"time": {
+			"title": "Thời gian",
+			"description": "Dùng cho các mốc thời gian như ngày tham gia và hoạt động phiên.",
+			"timeZone": "Múi giờ",
+			"automaticTimeZone": "Tự động ({{timeZone}})",
+			"timeFormat": "Đồng hồ",
+			"formats": {
+				"auto": "Tự động ({{example}})",
+				"12h": "12 giờ ({{example}})",
+				"24h": "24 giờ ({{example}})"
+			},
+			"preview": "Xem trước"
+		}
+	}
+}

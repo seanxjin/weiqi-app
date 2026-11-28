@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "GO",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Domača stran Baduk",
+	"actions": {
+		"save": "Shrani",
+		"saving": "Shranjevanje …",
+		"cancel": "Prekliči",
+		"back": "Nazaj",
+		"retry": "Poskusi znova",
+		"close": "Zapri",
+		"login": "Prijava",
+		"signIn": "Prijava",
+		"signUp": "Registracija",
+		"logOut": "Odjava",
+		"loggingOut": "Odjavljanje …"
+	},
+	"status": {
+		"saved": "Shranjeno",
+		"loading": "Nalaganje …",
+		"checkingSession": "Preverjanje seje …",
+		"sessionError": "Seje ni bilo mogoče preveriti. Poskusite znova."
+	},
+	"comingSoon": "{{feature}} bo kmalu na voljo.",
+	"language": "Jezik",
+	"languageDialog": {
+		"title": "Izberite Å¾eleni jezik",
+		"loadError": "Tega jezika ni bilo mogoče naložiti. Poskusite znova."
+	}
+}

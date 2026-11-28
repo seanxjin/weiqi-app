@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "GO",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Baduk ana sayfası",
+	"actions": {
+		"save": "Kaydet",
+		"saving": "Kaydediliyor…",
+		"cancel": "İptal",
+		"back": "Geri",
+		"retry": "Tekrar dene",
+		"close": "Kapat",
+		"login": "Giriş",
+		"signIn": "Giriş yap",
+		"signUp": "Kaydol",
+		"logOut": "Çıkış yap",
+		"loggingOut": "Çıkış yapılıyor…"
+	},
+	"status": {
+		"saved": "Kaydedildi",
+		"loading": "Yükleniyor…",
+		"checkingSession": "Oturumunuz kontrol ediliyor…",
+		"sessionError": "Oturumunuz kontrol edilemedi. Lütfen tekrar deneyin."
+	},
+	"comingSoon": "{{feature}} çok yakında.",
+	"language": "Dil",
+	"languageDialog": {
+		"title": "Tercih ettiğiniz dili seçin",
+		"loadError": "Bu dil yüklenemedi. Lütfen tekrar deneyin."
+	}
+}

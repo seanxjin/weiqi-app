@@ -1,0 +1,29 @@
+{
+	"navigation": "تنقّل Baduk",
+	"drawer": {
+		"open": "فتح قائمة التنقّل",
+		"close": "إغلاق قائمة التنقّل"
+	},
+	"mainNavigation": "التنقّل الرئيسي",
+	"play": "العب",
+	"puzzles": "ألغاز",
+	"learn": "تعلّم",
+	"guide": {
+		"heading": "جديد على غو؟",
+		"startWithBasics": "ابدأ بالأساسيات"
+	},
+	"account": {
+		"label": "الحساب",
+		"friends": "الأصدقاء",
+		"messages": "الرسائل",
+		"notifications": "الإشعارات",
+		"settings": "الإعدادات",
+		"allSettings": "كل الإعدادات"
+	},
+	"theme": {
+		"label": "المظهر",
+		"system": "النظام",
+		"light": "فاتح",
+		"dark": "داكن"
+	}
+}

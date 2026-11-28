@@ -1,0 +1,85 @@
+{
+	"page": {
+		"title": {
+			"local": "Uppsetning staðbundins leiks",
+			"online": "Uppsetning netleiks"
+		},
+		"label": {
+			"local": "Uppsetning staðbundins leiks",
+			"online": "Uppsetning netleiks"
+		},
+		"backToMenu": "Aftur í valmynd",
+		"settingsLabel": "Leikstillingar",
+		"timeLimitsNotice": "Tímamörkum er ekki enn framfylgt.",
+		"boardSize": "STÆRÐ BORÐS",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Stofnar leik…",
+		"startGame": "Hefja leik",
+		"createFailed": "Ekki tókst að stofna leikinn. Reyndu aftur."
+	},
+	"players": {
+		"player1": "Leikmaður 1",
+		"player2": "Leikmaður 2",
+		"opponent": "Andstæðingur",
+		"guest": "Þú (gestur)"
+	},
+	"configuration": {
+		"eyebrow": "STILLINGAR",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Sérsniðið · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Fleiri tímastillingar",
+		"fewerControls": "Færri tímastillingar",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Hraðskák",
+			"rapid": "Atskák",
+			"classical": "Kappskák",
+			"correspondence": "Bréfskák",
+			"untimed": "Án tíma"
+		},
+		"systems": {
+			"absolute": "Algjör",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Japanskt byo-yomi"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} sek.",
+			"absoluteMinutes": "{{minutes}} mín.",
+			"mainSeconds": "{{seconds}} s",
+			"mainMinutes": "{{minutes}} m",
+			"fischer": "{{main}} + {{increment}} s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}} s",
+			"daysPerMove_one": "{{count}} dagur / leik",
+			"daysPerMove_other": "{{count}} dagar / leik"
+		},
+		"noTimeLimit": "Engin tímamörk"
+	},
+	"customTime": {
+		"label": "Sérsniðin tímastilling",
+		"eyebrow": "SÉRSNIÐIN TÍMASTILLING",
+		"heading": "Stilltu þína eigin klukku",
+		"system": "Kerfi",
+		"fields": {
+			"minutes": "Aðaltími · mín.",
+			"seconds": "Aðaltími · sek.",
+			"increment": "Viðbót · sek.",
+			"periods": "Tímabil",
+			"periodSeconds": "Tímabil · sek."
+		},
+		"hints": {
+			"byoYomi": "Framlenging notar fastan fjölda tímasettra tímabila.",
+			"default": "Veldu kerfi og sláðu svo inn gildi klukkunnar."
+		},
+		"apply": "Nota sérsniðinn tíma",
+		"errors": {
+			"wholeNumbers": "Sláðu inn heiltölu sem er ekki neikvæð í hvern klukkureit.",
+			"mainSeconds": "Sekúndur aðaltíma verða að vera á bilinu 0 til 59.",
+			"byoYomiPeriods": "Byo-yomi þarf að minnsta kosti eitt tímabil sem er að minnsta kosti ein sekúnda.",
+			"mainTime": "Aðaltími þarf að vera meiri en núll."
+		}
+	}
+}

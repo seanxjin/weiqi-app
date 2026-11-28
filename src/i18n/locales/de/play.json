@@ -1,0 +1,116 @@
+{
+	"home": {
+		"pageTitle": "Spielen",
+		"location": "SPIELEN / START",
+		"signedInAs": "Angemeldet als {{username}}",
+		"guest": "Du spielst als Gast",
+		"logoutError": "Abmelden fehlgeschlagen. Bitte versuche es erneut.",
+		"introduction": {
+			"heading": "Etwas Text",
+			"body": "Weiterer Text"
+		},
+		"menuHeading": "Etwas Text.",
+		"options": {
+			"online": {
+				"label": "Online spielen",
+				"description": "Finde deine Partie. Triff dich am Brett."
+			},
+			"local": {
+				"label": "Lokal spielen",
+				"description": "Ein Brett. Zwei Spieler. Ein Bildschirm."
+			},
+			"friend": {
+				"label": "Mit Freunden spielen",
+				"description": "Lade jemanden zu einer nachdenklichen Partie ein."
+			},
+			"puzzles": {
+				"label": "Aufgaben lösen",
+				"description": "Kleine Herausforderungen. Schärferes Gespür."
+			},
+			"lessons": {
+				"label": "Lektionen",
+				"description": "Vom ersten Stein bis zur nächsten Einsicht."
+			},
+			"bots": {
+				"label": "Gegen Bots spielen",
+				"description": "Übe in deinem Tempo, auf jedem Niveau."
+			}
+		},
+		"presence_one": "{{count, number}} Spieler am Brett",
+		"presence_other": "{{count, number}} Spieler am Brett",
+		"reserved": {
+			"label": "BEREICH FÜR SPÄTER",
+			"heading": "Reserviert für künftige Inhalte",
+			"body": "Dieser Bereich bleibt vorerst absichtlich leer. Er wird für künftige Funktionen, Neuigkeiten oder ausgewählte Inhalte genutzt."
+		},
+		"footerTagline": "Einfache Regeln. Endlose Entdeckungen."
+	},
+	"materials": {
+		"pageTitle": "Bretter & Steine",
+		"breadcrumb": "Baduk / Materialbibliothek",
+		"collection": "Kollektion 01",
+		"heading": "Bretter & Steine.",
+		"introduction": "Natürliche Materialien. Stille Details. Ein Ort für das Spiel.",
+		"boardsSection": {
+			"title": "Die Bretter",
+			"meta": "Drei Hölzer · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Die Steine",
+			"meta": "Vier Stile · Schwarz & Weiß"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Materialstudie",
+			"enlarged": "Vergrößerte Muster",
+			"heading": "Ein stiller Kontrast.",
+			"body": "Vier Oberflächen. Schwarz und Weiß im selben sanften Licht.",
+			"scale": "Vergrößerte Muster · einheitlicher Maßstab",
+			"form": "Glatte, gerundete Form / feine Oberflächenvariation"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Traditionelles japanisches Kaya",
+				"material": "Warmer Honigton · gerade Maserung"
+			},
+			"walnut": {
+				"name": "Dunkler Nussbaum",
+				"material": "Tiefes Braun · fließende Maserung"
+			},
+			"ash": {
+				"name": "Helle skandinavische Esche",
+				"material": "Helles Holz · sanfte Maserung"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Poliert",
+				"name": "Schiefer",
+				"description": "Glatte, polierte Oberflächen mit ruhiger Mineralstruktur.",
+				"black": "Schwarzer Schiefer",
+				"white": "Weißer Schiefer"
+			},
+			"satin": {
+				"finish": "Seidenmatt",
+				"name": "Keramik",
+				"description": "Ein weicher Schimmer und eine zarte, gleichmäßig feine Körnung.",
+				"black": "Schwarze Keramik",
+				"white": "Weiße Keramik"
+			},
+			"matte": {
+				"finish": "Matt",
+				"name": "Naturstein",
+				"description": "Dezente Mineralsprenkel unter einer glatten, trockenen Oberfläche.",
+				"black": "Schwarzer Stein",
+				"white": "Weißer Stein"
+			},
+			"snow": {
+				"finish": "Poliert",
+				"name": "Muschel · Yuki / Schnee-Qualität",
+				"description": "Feine, dichte Muschelmaserung auf milchigem Weiß, kombiniert mit poliertem schwarzem Schiefer.",
+				"black": "Schwarzer Nachiguro-Schiefer",
+				"white": "Weiße Yuki-Muschel"
+			}
+		},
+		"footerTagline": "Das Wesentliche, durchdacht."
+	}
+}

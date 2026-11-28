@@ -1,7 +1,7 @@
 .online-game__panel {
 	display: grid;
 	gap: 12px;
-	margin-top: 16px;
+	margin-bottom: 16px;
 	font-size: 12px;
 }
 .online-game__status {
@@ -11,11 +11,11 @@
 	color: var(--muted);
 }
 .online-game__status [data-connection="open"] {
-	color: #3e6b45;
+	color: var(--success);
 }
 .online-game__status [data-connection="reconnecting"],
 .online-game__status [data-connection="closed"] {
-	color: #8b382e;
+	color: var(--danger);
 }
 .online-game__invite {
 	display: grid;
@@ -73,5 +73,5 @@
 	line-height: 1.5;
 }
 .online-game__gate-error {
-	color: #8b382e;
+	color: var(--danger);
 }

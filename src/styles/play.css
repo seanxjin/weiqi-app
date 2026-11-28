@@ -14,7 +14,7 @@
 	border: 0;
 	background: none;
 	padding: 0;
-	text-align: left;
+	text-align: start;
 }
 .go-home a {
 	color: inherit;
@@ -70,7 +70,7 @@
 }
 .go-account-error {
 	font-size: 13px;
-	color: #8b3434;
+	color: var(--danger);
 }
 .go-introduction h1 {
 	font-size: clamp(28px, 4.3dvh, 44px);
@@ -132,13 +132,13 @@
 	flex-shrink: 0;
 }
 .go-option:is(:hover, :focus-visible) .go-option__arrow {
-	background: #414d41;
+	background: var(--accent);
 }
 .go-option:is(:hover, :focus-visible) .go-option__arrow img {
 	filter: brightness(0) invert(1);
 }
 .go-option:hover {
-	background: #ece9e0;
+	background: var(--surface);
 }
 .go-presence {
 	display: flex;
@@ -175,52 +175,30 @@
 	color: var(--muted);
 }
 .local-play {
-	padding: 40px 48px 32px;
+	padding: 32px;
 	min-height: calc(100svh - var(--app-toolbar-height));
 }
-.local-play__heading,
 .local-play__board {
-	max-width: 1136px;
+	max-width: 1244px;
 	margin-inline: auto;
 }
-.local-play__heading {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	gap: 24px;
-	min-height: 56px;
-	margin-bottom: 32px;
-}
-.local-play__heading p {
-	font-size: 10px;
-	letter-spacing: 1.8px;
-	color: var(--muted);
-}
-.local-play__heading h1 {
-	font-size: 28px;
-	letter-spacing: -0.8px;
-	margin-top: 8px;
-}
-.local-play__heading > span {
-	color: var(--muted);
-	font-size: 12px;
+.local-play__title {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	clip-path: inset(50%);
 	white-space: nowrap;
 }
 @container (width < 960px) {
 	.local-play {
 		padding: 24px;
 	}
-	.local-play__heading {
-		flex-wrap: wrap;
-		gap: 12px;
-	}
 }
 @container (width < 480px) {
 	.local-play {
 		padding: 20px 16px 32px;
-	}
-	.local-play__heading h1 {
-		font-size: 25px;
 	}
 }
 @media (max-width: 1099px) {
@@ -424,10 +402,10 @@
 	.go-option > img {
 		position: absolute;
 		top: 8px;
-		left: 8px;
+		inset-inline-start: 8px;
 	}
 	.go-option__label {
-		padding-left: 30px;
+		padding-inline-start: 30px;
 	}
 	.go-option__details {
 		gap: 4px;

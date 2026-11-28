@@ -1,0 +1,85 @@
+{
+	"page": {
+		"title": {
+			"local": "Տեղական խաղի կարգավորում",
+			"online": "Առցանց խաղի կարգավորում"
+		},
+		"label": {
+			"local": "Տեղական խաղի կարգավորում",
+			"online": "Առցանց խաղի կարգավորում"
+		},
+		"backToMenu": "Վերադառնալ մենյու",
+		"settingsLabel": "Խաղի կարգավորումներ",
+		"timeLimitsNotice": "Ժամանակի սահմանափակումները դեռ չեն կիրառվում։",
+		"boardSize": "ԽԱՂԱՏԱԽՏԱԿԻ ՉԱՓ",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Խաղը ստեղծվում է…",
+		"startGame": "Սկսել խաղը",
+		"createFailed": "Չհաջողվեց ստեղծել խաղը։ Փորձեք կրկին։"
+	},
+	"players": {
+		"player1": "Խաղացող 1",
+		"player2": "Խաղացող 2",
+		"opponent": "Մրցակից",
+		"guest": "Դուք (հյուր)"
+	},
+	"configuration": {
+		"eyebrow": "ԿԱՐԳԱՎՈՐՈՒՄՆԵՐ",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Անհատական · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Ավելի շատ տարբերակներ",
+		"fewerControls": "Ավելի քիչ տարբերակներ",
+		"groups": {
+			"bullet": "Բուլետ",
+			"blitz": "Բլից",
+			"rapid": "Արագ",
+			"classical": "Դասական",
+			"correspondence": "Հեռակա",
+			"untimed": "Առանց ժամանակի"
+		},
+		"systems": {
+			"absolute": "Բացարձակ",
+			"fischer": "Ֆիշեր",
+			"japaneseByoYomi": "Ճապոնական բյո-յոմի"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} վրկ",
+			"absoluteMinutes": "{{minutes}} րոպե",
+			"mainSeconds": "{{seconds}} վ",
+			"mainMinutes": "{{minutes}} ր",
+			"fischer": "{{main}} + {{increment}} վ",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}} վ",
+			"daysPerMove_one": "{{count}} օր / քայլ",
+			"daysPerMove_other": "{{count}} օր / քայլ"
+		},
+		"noTimeLimit": "Առանց ժամանակի սահմանափակման"
+	},
+	"customTime": {
+		"label": "Անհատական ժամանակի վերահսկում",
+		"eyebrow": "ԱՆՀԱՏԱԿԱՆ ԺԱՄԱՆԱԿԻ ՎԵՐԱՀՍԿՈՒՄ",
+		"heading": "Կարգավորեք ձեր ժամացույցը",
+		"system": "Համակարգ",
+		"fields": {
+			"minutes": "Հիմնական · րոպե",
+			"seconds": "Հիմնական · վրկ",
+			"increment": "Հավելում · վրկ",
+			"periods": "Ժամանակահատվածներ",
+			"periodSeconds": "Ժամանակահատված · վրկ"
+		},
+		"hints": {
+			"byoYomi": "Լրացուցիչ ժամանակը բաղկացած է ֆիքսված թվով ժամանակահատվածներից։",
+			"default": "Ընտրեք համակարգ, ապա մուտքագրեք ժամացույցի արժեքները։"
+		},
+		"apply": "Օգտագործել անհատական ժամանակ",
+		"errors": {
+			"wholeNumbers": "Ժամացույցի յուրաքանչյուր դաշտում մուտքագրեք ոչ բացասական ամբողջ թիվ։",
+			"mainSeconds": "Հիմնական վայրկյանները պետք է լինեն 0-ից 59։",
+			"byoYomiPeriods": "Բյո-յոմիին անհրաժեշտ է առնվազն մեկ ժամանակահատված՝ առնվազն մեկ վայրկյան տևողությամբ։",
+			"mainTime": "Հիմնական ժամանակը պետք է մեծ լինի զրոյից։"
+		}
+	}
+}

@@ -1,0 +1,207 @@
+{
+	"header": {
+		"title": "설정",
+		"sectionTitle": "{{section}} 설정",
+		"navLabel": "설정 섹션"
+	},
+	"sections": {
+		"board": "바둑판과 바둑돌",
+		"gameplay": "대국",
+		"profile": "프로필",
+		"social": "소셜 및 개인정보",
+		"account": "계정 및 보안",
+		"language": "언어 및 시간"
+	},
+	"board": {
+		"description": "대국에 사용할 바둑판과 바둑돌을 선택하세요.",
+		"appearance": {
+			"title": "외관",
+			"boardLegend": "바둑판",
+			"stonesLegend": "바둑돌",
+			"previewLabel": "바둑판 미리보기"
+		},
+		"themes": {
+			"kaya": "전통 일본 비자나무",
+			"walnut": "다크 월넛",
+			"ash": "밝은 북유럽 물푸레나무"
+		},
+		"stoneStyles": {
+			"polished": "슬레이트",
+			"satin": "세라믹",
+			"matte": "천연석",
+			"snow": "대합 · 유키 / 설(雪) 등급"
+		},
+		"display": {
+			"title": "바둑판 표시",
+			"coordinates": {
+				"label": "좌표 표시",
+				"description": "바둑판 가장자리에 행과 열 좌표를 표시합니다."
+			},
+			"lastMove": {
+				"label": "마지막 수 강조",
+				"description": "가장 최근에 둔 돌을 표시합니다."
+			}
+		},
+		"sounds": {
+			"title": "소리",
+			"playSounds": {
+				"label": "소리 재생",
+				"description": "착수, 따냄, 시간 경고 소리."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "착수 방식과 대국 신청 허용 대상을 관리합니다.",
+		"moves": {
+			"title": "착수",
+			"description": "실수로 잘못 두지 않도록 돌을 놓기 전에 한 번 더 클릭하게 합니다.",
+			"legend": "착수 확인",
+			"options": {
+				"never": "사용 안 함",
+				"correspondence": "통신 대국에서만",
+				"always": "항상"
+			}
+		},
+		"challenges": {
+			"title": "대국 신청",
+			"description": "나에게 대국을 신청할 수 있는 사람을 선택하세요.",
+			"legend": "대국 신청 허용 대상",
+			"options": {
+				"everyone": "모든 사람",
+				"registered": "가입한 플레이어",
+				"following": "내가 팔로우하는 플레이어만",
+				"nobody": "아무도 없음 (재대국은 허용)"
+			}
+		}
+	},
+	"profile": {
+		"description": "여기의 모든 정보는 <profileLink>공개 프로필</profileLink>에 표시됩니다.",
+		"publicProfile": {
+			"title": "공개 프로필",
+			"bioLabel": "자기소개",
+			"bioPlaceholder": "자기소개가 프로필에 표시됩니다.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "세부 정보",
+			"joinDate": "가입일",
+			"username": "사용자 이름",
+			"changeUsername": "변경",
+			"changeUsernameFeature": "사용자 이름 변경",
+			"realName": "실명",
+			"location": "지역",
+			"country": "국가",
+			"countryNotSet": "설정 안 됨",
+			"rank": "기력",
+			"rankPlaceholder": "예: 12k, 3d",
+			"rankHint": "30k–1k, 1d–9d 또는 1p–9p 형식으로 입력하세요."
+		},
+		"links": {
+			"legend": "링크",
+			"linkLabel": "링크 {{number}}",
+			"remove": "삭제",
+			"removeLabel": "링크 {{number}} 삭제",
+			"add": "링크 추가"
+		}
+	},
+	"social": {
+		"description": "팔로우 중인 플레이어와 차단한 플레이어를 관리합니다.",
+		"blocking": {
+			"title": "차단",
+			"description_other": "{{count}}명을 차단하고 있습니다. 차단된 플레이어는 대국 신청이나 메시지를 보낼 수 없습니다.",
+			"empty": "차단한 사람이 없습니다.",
+			"action": "차단 해제",
+			"actionLabel": "{{username}} 차단 해제"
+		},
+		"following": {
+			"title": "팔로잉",
+			"description_other": "{{count}}명을 팔로우하고 있습니다.",
+			"empty": "아직 팔로우하는 사람이 없습니다.",
+			"action": "언팔로우",
+			"actionLabel": "{{username}} 언팔로우"
+		}
+	},
+	"account": {
+		"description": "비밀번호를 변경하고, 계정을 보호하고, 연결된 계정을 관리합니다.",
+		"password": {
+			"title": "비밀번호 변경",
+			"updated": "비밀번호가 변경되었습니다",
+			"fields": {
+				"currentPassword": {
+					"label": "현재 비밀번호",
+					"show": "현재 비밀번호 표시",
+					"hide": "현재 비밀번호 숨기기"
+				},
+				"newPassword": {
+					"label": "새 비밀번호",
+					"show": "새 비밀번호 표시",
+					"hide": "새 비밀번호 숨기기"
+				},
+				"confirmPassword": {
+					"label": "비밀번호 재입력",
+					"show": "재입력한 비밀번호 표시",
+					"hide": "재입력한 비밀번호 숨기기"
+				}
+			}
+		},
+		"contact": {
+			"title": "연락처 정보",
+			"email": "이메일 주소",
+			"edit": "수정",
+			"editFeature": "이메일 변경"
+		},
+		"twoFactor": {
+			"title": "2단계 인증",
+			"description": "로그인할 때 인증 앱의 코드를 요구합니다.",
+			"off": "꺼짐",
+			"enable": "사용",
+			"feature": "2단계 인증"
+		},
+		"sessions": {
+			"title": "활성 세션",
+			"description": "계정이 도용된 것 같다면 비밀번호를 변경하고 모든 기기에서 로그아웃하세요.",
+			"thisDevice": "이 기기",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "{{device}}에서 로그아웃",
+			"logOutAll": "다른 모든 기기에서 로그아웃"
+		},
+		"connections": {
+			"title": "연결된 계정",
+			"description": "이 계정들로 Baduk에 로그인할 수 있습니다.",
+			"connectedTo": "{{provider}}에 연결됨",
+			"connect": "연결",
+			"disconnect": "연결 해제",
+			"note": "연결을 해제하면 Baduk에서 연결이 제거됩니다. 상대 사이트에서 별도로 접근 권한을 취소해야 할 수도 있습니다."
+		},
+		"close": {
+			"title": "계정 해지",
+			"description": "계정을 해지하면 프로필이 숨겨지고 모든 기기에서 로그아웃됩니다.",
+			"button": "계정 해지",
+			"dialogTitle": "계정을 해지하시겠습니까?",
+			"dialogDescription": "나중에 로그인 페이지에서 다시 활성화할 수 있습니다.",
+			"feature": "계정 해지"
+		}
+	},
+	"languageTime": {
+		"title": "언어 및 시간",
+		"description": "Baduk에서 사용할 언어와 날짜·시간 표시 방식을 선택하세요.",
+		"language": {
+			"title": "언어",
+			"description": "변경 사항은 모든 페이지에 즉시 적용됩니다.",
+			"legend": "표시 언어"
+		},
+		"time": {
+			"title": "시간",
+			"description": "가입일, 세션 활동 등의 시각 표시에 사용됩니다.",
+			"timeZone": "시간대",
+			"automaticTimeZone": "자동 ({{timeZone}})",
+			"timeFormat": "시계",
+			"formats": {
+				"auto": "자동 ({{example}})",
+				"12h": "12시간제 ({{example}})",
+				"24h": "24시간제 ({{example}})"
+			},
+			"preview": "미리보기"
+		}
+	}
+}

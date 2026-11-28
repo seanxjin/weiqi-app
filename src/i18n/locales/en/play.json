@@ -1,0 +1,116 @@
+{
+	"home": {
+		"pageTitle": "Play",
+		"location": "PLAY / HOME",
+		"signedInAs": "Signed in as {{username}}",
+		"guest": "Playing as a guest",
+		"logoutError": "Unable to log out. Please try again.",
+		"introduction": {
+			"heading": "Some Text",
+			"body": "Some other text"
+		},
+		"menuHeading": "Some text.",
+		"options": {
+			"online": {
+				"label": "Play online",
+				"description": "Find your match. Meet on the board."
+			},
+			"local": {
+				"label": "Play local",
+				"description": "One board. Two players. Share a screen."
+			},
+			"friend": {
+				"label": "Play friend",
+				"description": "Invite someone for a thoughtful game."
+			},
+			"puzzles": {
+				"label": "Solve puzzles",
+				"description": "Small challenges. Sharper instincts."
+			},
+			"lessons": {
+				"label": "Lessons",
+				"description": "From your first stone to your next insight."
+			},
+			"bots": {
+				"label": "Play bots",
+				"description": "Practice at your pace, at any level."
+			}
+		},
+		"presence_one": "{{count, number}} player sharing the board",
+		"presence_other": "{{count, number}} players sharing the board",
+		"reserved": {
+			"label": "SECTION FOR LATER",
+			"heading": "Reserved for future content",
+			"body": "This section is intentionally left empty for now. It will be used for future features, updates, or curated content."
+		},
+		"footerTagline": "Simple rules. Endless discovery."
+	},
+	"materials": {
+		"pageTitle": "Boards & stones",
+		"breadcrumb": "Baduk / Material library",
+		"collection": "Collection 01",
+		"heading": "Boards & stones.",
+		"introduction": "Natural materials. Quiet details. A place for the game.",
+		"boardsSection": {
+			"title": "The boards",
+			"meta": "Three timbers · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "The stones",
+			"meta": "Four styles · black & white"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Material study",
+			"enlarged": "Enlarged samples",
+			"heading": "A quiet contrast.",
+			"body": "Four surfaces. Black and white, in the same soft light.",
+			"scale": "Enlarged samples · consistent scale",
+			"form": "Smooth, rounded form / subtle surface variation"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Traditional Japanese kaya",
+				"material": "Warm honey · straight grain"
+			},
+			"walnut": {
+				"name": "Dark walnut",
+				"material": "Deep brown · flowing grain"
+			},
+			"ash": {
+				"name": "Pale Scandinavian ash",
+				"material": "Pale timber · soft grain"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Polished",
+				"name": "Slate",
+				"description": "Smooth, polished surfaces with a quiet mineral texture.",
+				"black": "Black slate",
+				"white": "White slate"
+			},
+			"satin": {
+				"finish": "Satin",
+				"name": "Ceramic",
+				"description": "A diffused sheen and delicate, even fine grain.",
+				"black": "Black ceramic",
+				"white": "White ceramic"
+			},
+			"matte": {
+				"finish": "Matte",
+				"name": "Natural stone",
+				"description": "Quiet mineral speckling under a smooth, dry finish.",
+				"black": "Black stone",
+				"white": "White stone"
+			},
+			"snow": {
+				"finish": "Polished",
+				"name": "Clamshell · Yuki / Snow Grade",
+				"description": "Fine, close-set shell grain on milky white, paired with polished black slate.",
+				"black": "Black Nachiguro slate",
+				"white": "White Yuki clamshell"
+			}
+		},
+		"footerTagline": "The essentials, considered."
+	}
+}

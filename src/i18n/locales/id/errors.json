@@ -1,0 +1,33 @@
+{
+	"server": {
+		"unavailable": "Server tidak tersedia. Silakan coba lagi.",
+		"unreachable": "Tidak dapat terhubung ke server. Periksa koneksi Anda lalu coba lagi.",
+		"unexpectedResponse": "Server mengirim respons yang tidak terduga. Silakan coba lagi.",
+		"requestFailed": "Permintaan tidak dapat diselesaikan. Silakan coba lagi."
+	},
+	"rateLimited": {
+		"generic": "Terlalu banyak percobaan. Harap tunggu sebelum mencoba lagi.",
+		"withDelay_other": "Terlalu banyak percobaan. Harap tunggu {{count}} detik sebelum mencoba lagi."
+	},
+	"unknown": "Terjadi kesalahan. Silakan coba lagi.",
+	"api": {
+		"invalidCredentials": "Nama pengguna, email, atau kata sandi salah.",
+		"twoFactorRequired": "Masukkan kode 6 digit dari autentikator Anda untuk melanjutkan.",
+		"invalidTwoFactor": "Kode autentikator salah. Silakan coba lagi.",
+		"emailUnconfirmed": "Konfirmasi alamat email Anda sebelum masuk.",
+		"accountClosed": "Akun ini telah ditutup dan tidak dapat masuk.",
+		"usernameTaken": "Nama pengguna itu sudah digunakan. Silakan pilih yang lain.",
+		"emailTaken": "Alamat email itu sudah digunakan.",
+		"invalidToken": "Tautan ini tidak valid atau sudah kedaluwarsa. Minta email baru untuk melanjutkan.",
+		"unauthorized": "Sesi masuk Anda telah berakhir. Silakan mulai lagi.",
+		"conflict": "Pendaftaran Anda tidak dapat diselesaikan. Silakan mulai lagi.",
+		"forbidden": "Permintaan ini diblokir. Muat ulang halaman lalu coba lagi."
+	},
+	"validation": {
+		"passwordTooShort": "Gunakan minimal 8 karakter untuk kata sandi Anda.",
+		"newPasswordTooShort": "Gunakan minimal 8 karakter untuk kata sandi baru Anda.",
+		"passwordTooLong": "Kata sandi Anda tidak boleh melebihi 72 byte UTF-8.",
+		"passwordMismatch": "Kata sandi baru tidak cocok.",
+		"passwordUnchanged": "Pilih kata sandi yang berbeda dari kata sandi saat ini."
+	}
+}

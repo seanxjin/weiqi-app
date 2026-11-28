@@ -1,0 +1,35 @@
+{
+	"server": {
+		"unavailable": "El servidor no está disponible. Inténtalo de nuevo.",
+		"unreachable": "No se puede conectar con el servidor. Comprueba tu conexión e inténtalo de nuevo.",
+		"unexpectedResponse": "El servidor devolvió una respuesta inesperada. Inténtalo de nuevo.",
+		"requestFailed": "No se pudo completar la solicitud. Inténtalo de nuevo."
+	},
+	"rateLimited": {
+		"generic": "Demasiados intentos. Espera antes de volver a intentarlo.",
+		"withDelay_one": "Demasiados intentos. Espera {{count}} segundo antes de volver a intentarlo.",
+		"withDelay_many": "Demasiados intentos. Espera {{count}} segundos antes de volver a intentarlo.",
+		"withDelay_other": "Demasiados intentos. Espera {{count}} segundos antes de volver a intentarlo."
+	},
+	"unknown": "Algo salió mal. Inténtalo de nuevo.",
+	"api": {
+		"invalidCredentials": "El nombre de usuario, el correo o la contraseña no son correctos.",
+		"twoFactorRequired": "Introduce el código de 6 dígitos de tu autenticador para continuar.",
+		"invalidTwoFactor": "El código del autenticador no es correcto. Inténtalo de nuevo.",
+		"emailUnconfirmed": "Confirma tu dirección de correo antes de iniciar sesión.",
+		"accountClosed": "Esta cuenta está cerrada y no puede iniciar sesión.",
+		"usernameTaken": "Ese nombre de usuario ya está en uso. Elige otro.",
+		"emailTaken": "Esa dirección de correo ya está en uso.",
+		"invalidToken": "Este enlace no es válido o ha caducado. Solicita un nuevo correo para continuar.",
+		"unauthorized": "Tu sesión de inicio ha caducado. Vuelve a empezar.",
+		"conflict": "No se pudo completar tu registro. Vuelve a empezar.",
+		"forbidden": "Esta solicitud se ha bloqueado. Actualiza la página e inténtalo de nuevo."
+	},
+	"validation": {
+		"passwordTooShort": "Usa al menos 8 caracteres para tu contraseña.",
+		"newPasswordTooShort": "Usa al menos 8 caracteres para tu nueva contraseña.",
+		"passwordTooLong": "Tu contraseña no debe superar los 72 bytes UTF-8.",
+		"passwordMismatch": "Las nuevas contraseñas no coinciden.",
+		"passwordUnchanged": "Elige una contraseña diferente de la actual."
+	}
+}

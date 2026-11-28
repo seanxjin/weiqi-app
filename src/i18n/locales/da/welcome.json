@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Spil Go",
+	"railLabel": "Baduk",
+	"mainNavigation": "Hovednavigation",
+	"play": "Spil",
+	"eyebrow": "Noget tekst",
+	"heading": {
+		"label": "Spil Go",
+		"prefix": "Spil "
+	},
+	"description": {
+		"first": "Noget tekst....",
+		"second": "Noget anden tekst..."
+	},
+	"footnote": "TAG DIG TID."
+}

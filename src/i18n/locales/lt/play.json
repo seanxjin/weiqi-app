@@ -1,0 +1,118 @@
+{
+	"home": {
+		"pageTitle": "Žaisti",
+		"location": "ŽAISTI / PRADŽIA",
+		"signedInAs": "Prisijungta kaip {{username}}",
+		"guest": "Žaidžiate kaip svečias",
+		"logoutError": "Nepavyko atsijungti. Bandykite dar kartą.",
+		"introduction": {
+			"heading": "Šiek tiek teksto",
+			"body": "Šiek tiek kito teksto"
+		},
+		"menuHeading": "Šiek tiek teksto.",
+		"options": {
+			"online": {
+				"label": "Žaisti internetu",
+				"description": "Raskite varžovą. Susitikite prie lentos."
+			},
+			"local": {
+				"label": "Žaisti vietoje",
+				"description": "Viena lenta. Du žaidėjai. Bendras ekranas."
+			},
+			"friend": {
+				"label": "Žaisti su draugu",
+				"description": "Pakvieskite ką nors apgalvotai partijai."
+			},
+			"puzzles": {
+				"label": "Spręsti uždavinius",
+				"description": "Maži iššūkiai. Aštresni instinktai."
+			},
+			"lessons": {
+				"label": "Pamokos",
+				"description": "Nuo pirmojo akmens iki kitos įžvalgos."
+			},
+			"bots": {
+				"label": "Žaisti su botais",
+				"description": "Treniruokitės savo tempu, bet kokiu lygiu."
+			}
+		},
+		"presence_one": "{{count, number}} žaidėjas prie lentos",
+		"presence_few": "{{count, number}} žaidėjai prie lentos",
+		"presence_many": "{{count, number}} žaidėjo prie lentos",
+		"presence_other": "{{count, number}} žaidėjų prie lentos",
+		"reserved": {
+			"label": "SKILTIS ATEIČIAI",
+			"heading": "Rezervuota būsimam turiniui",
+			"body": "Ši skiltis kol kas sąmoningai palikta tuščia. Ji bus naudojama būsimoms funkcijoms, naujienoms ar atrinktam turiniui."
+		},
+		"footerTagline": "Paprastos taisyklės. Begaliniai atradimai."
+	},
+	"materials": {
+		"pageTitle": "Lentos ir akmenys",
+		"breadcrumb": "Baduk / Medžiagų biblioteka",
+		"collection": "Kolekcija 01",
+		"heading": "Lentos ir akmenys.",
+		"introduction": "Natūralios medžiagos. Tylios detalės. Vieta žaidimui.",
+		"boardsSection": {
+			"title": "Lentos",
+			"meta": "Trys medienos rūšys · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Akmenys",
+			"meta": "Keturi stiliai · juodi ir balti"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Medžiagų studija",
+			"enlarged": "Padidinti pavyzdžiai",
+			"heading": "Tylus kontrastas.",
+			"body": "Keturi paviršiai. Juoda ir balta toje pačioje švelnioje šviesoje.",
+			"scale": "Padidinti pavyzdžiai · vienodas mastelis",
+			"form": "Lygi, apvali forma / subtilūs paviršiaus skirtumai"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Tradicinė japoniška kaja",
+				"material": "Šiltas medaus atspalvis · tiesi rievė"
+			},
+			"walnut": {
+				"name": "Tamsus riešutmedis",
+				"material": "Sodri ruda · banguota rievė"
+			},
+			"ash": {
+				"name": "Šviesus skandinaviškas uosis",
+				"material": "Šviesi mediena · švelni rievė"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Poliruotas",
+				"name": "Skalūnas",
+				"description": "Lygūs, poliruoti paviršiai su tylia mineraline tekstūra.",
+				"black": "Juodas skalūnas",
+				"white": "Baltas skalūnas"
+			},
+			"satin": {
+				"finish": "Satininis",
+				"name": "Keramika",
+				"description": "Išsklaidytas blizgesys ir švelni, tolygi smulki tekstūra.",
+				"black": "Juoda keramika",
+				"white": "Balta keramika"
+			},
+			"matte": {
+				"finish": "Matinis",
+				"name": "Natūralus akmuo",
+				"description": "Tylūs mineraliniai taškeliai po lygia, sausa apdaila.",
+				"black": "Juodas akmuo",
+				"white": "Baltas akmuo"
+			},
+			"snow": {
+				"finish": "Poliruotas",
+				"name": "Kriauklė · Yuki / Sniego klasė",
+				"description": "Smulki, tanki kriauklės rievė ant pieno baltumo, derinama su poliruotu juodu skalūnu.",
+				"black": "Juodas Nachiguro skalūnas",
+				"white": "Balta Yuki kriauklė"
+			}
+		},
+		"footerTagline": "Tai, kas svarbiausia, apgalvota."
+	}
+}

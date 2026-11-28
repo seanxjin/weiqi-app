@@ -1,0 +1,134 @@
+{
+	"colors": {
+		"black": "Gara",
+		"white": "Ak"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Geç",
+	"localPage": {
+		"title": "Ýerli oýun",
+		"eyebrow": "DOSTLUKLY OÝUN",
+		"heading": "Oýun üçin bir pursat.",
+		"details": "{{size}} × {{size}} · Ýapon düzgünleri"
+	},
+	"onlinePage": {
+		"title": "Onlaýn oýun",
+		"eyebrow": "ONLAÝN OÝUN",
+		"heading": "Oýun üçin bir pursat.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Oýun ýüklenýär…",
+		"notFound": "Bu oýun ýok ýa-da indi elýeterli däl.",
+		"startNew": "Täze onlaýn oýun başla",
+		"invited": "Sizi {{size}} × {{size}} oýna çagyrýarlar.",
+		"joining": "Goşulýar…",
+		"joinAs": "{{color}} hökmünde goşul",
+		"full": "Bu oýun doly. Oýunlara tomaşa etmek heniz elýeterli däl."
+	},
+	"local": {
+		"label": "Ýerli Go oýny",
+		"loadingEngine": "Go hereketlendirijisi ýüklenýär…"
+	},
+	"online": {
+		"label": "Onlaýn Go oýny",
+		"youAre": "Siz {{color}} bilen oýnaýarsyňyz",
+		"connection": {
+			"connecting": "Birikdirilýär…",
+			"open": "Birikdirildi",
+			"reconnecting": "Gaýtadan birikdirilýär…",
+			"closed": "Baglanyşyk kesildi"
+		},
+		"invite": {
+			"label": "Dostuňyzy şu baglanyşyk bilen çagyryň",
+			"copy": "Göçür",
+			"copied": "Göçürildi"
+		},
+		"awaitingScoring": "Iki oýunçy hem geçdi. Utuk hasaplamak heniz goldanylmaýar, şonuň üçin oýny utuksyz ýazga almak üçin ony ýatyryň.",
+		"confirmResign": "Ýeňlişi boýun almagy tassykla",
+		"resign": "Ýeňlişi boýun al",
+		"abort": "Ýatyr",
+		"results": {
+			"youWin": "Siz ýeňdiňiz · {{color}} ýeňlişi boýun aldy",
+			"winsByResignation": "{{color}} garşydaşyň ýeňlişi boýun almagy bilen ýeňdi",
+			"aborted": "Oýny {{color}} ýatyrdy",
+			"unscored": "Oýun utuk hasaplanmazdan tamamlandy"
+		}
+	},
+	"turn": {
+		"preparing": "Tagta taýýarlanýar",
+		"reviewing": "Gözden geçirilýär · Oýnamak üçin Häzirkä gaýdyň",
+		"toPlay": "Nobat: {{color}}",
+		"yourMove": "Siziň nobatyňyz",
+		"waitingForOpponent": "Garşydaşa garaşylýar",
+		"awaitingScoring": "Oýun tamamlandy · Utuk hasaplamak heniz goldanylmaýar",
+		"gameOver": "Oýun tamamlandy",
+		"sendingMove": "Ýöriş iberilýär…",
+		"waitingForConnection": "Baglanyşyga garaşylýar"
+	},
+	"boardFooter": {
+		"lastMove": "Soňky ýöriş: {{color}} {{move}}",
+		"startingPosition": "Başlangyç ýagdaý"
+	},
+	"players": {
+		"label": "Oýunçylar",
+		"captured": "Alnan {{count}}",
+		"you": "{{name}} (siz)",
+		"waiting": "{{name}} · oýunça garaşylýar"
+	},
+	"history": {
+		"label": "Ýöriş taryhy",
+		"heading": "Ýörişler",
+		"moveCount_one": "{{count}} ÝÖRIŞ",
+		"moveCount_other": "{{count}} ÝÖRIŞ",
+		"tableLabel": "Garanyň we Agyň ýörişleri",
+		"pair": "Jübüt",
+		"move": "Ýöriş {{number}}, {{color}}, {{move}}",
+		"pendingMove": "Ýöriş {{number}}, {{color}}, {{move}}, iberilýär",
+		"empty": "Heniz ýöriş ýok.",
+		"position": "Ýöriş {{viewed}} / {{latest}}",
+		"currentPosition": "HÄZIRKI ÝAGDAÝ",
+		"reviewing": "GÖZDEN GEÇIRILÝÄR",
+		"navigationLabel": "Ýöriş taryhy boýunça nawigasiýa",
+		"navigation": {
+			"start": "Başy",
+			"previous": "Öňki",
+			"next": "Indiki",
+			"current": "Häzirki"
+		},
+		"undo": "Soňky ýörişi yzyna al",
+		"encouragement": "Aşykmaň. Her ýöriş möhüm.",
+		"keyboardHint": "Ýörişleriň arasynda geçmek üçin ← →, başyna we häzirkä geçmek üçin ↑ ↓ ulanyň."
+	},
+	"board": {
+		"sceneLabel": "{{moveCount}} açylyş ýörişiniň yzygiderligini görkezýän {{size}} × {{size}} Go tagtasy",
+		"themedBoard": "{{theme}} Go tagtasy",
+		"emptyBoard": "Boş {{size}} × {{size}} {{theme}} baduk tagtasy",
+		"stone": "{{finish}} {{color}} baduk daşy",
+		"textureError": "Tagtanyň dokumasyny ýükläp bolmady.",
+		"pauseAnimations": "Animasiýalary sakla",
+		"resumeAnimations": "Animasiýalary dowam et",
+		"pause": "SAKLA",
+		"resume": "DOWAM ET"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Tagtada kesişme nokadyny saýlaň.",
+			"occupied": "Bu kesişme nokady eýýäm eýelenen.",
+			"wrongPlayer": "Häzir beýleki oýunçynyň nobaty.",
+			"suicide": "Öz-özüňi öldürýän ýörişe rugsat berilmeýär.",
+			"ko": "Bu ýöriş ko düzgüni boýunça gadagan.",
+			"superko": "Bu ýöriş öňki ýagdaýy gaýtalaýar.",
+			"gameEnded": "Bu oýunda indi ýöriş edip bolmaýar."
+		},
+		"serverRejectedMove": "Serwer ýörişi ret etdi. {{reason}}",
+		"staleRevision": "Ýörişiňiz gelip ýetmänkä oýun üýtgedi, şonuň üçin ol oýnalmady.",
+		"wrongPhase": "Oýnuň bu tapgyrynda bu mümkin däl.",
+		"seatTaken": "Bu ýer eýýäm eýelenen.",
+		"notYourTurn": "Häzir beýleki oýunçynyň nobaty.",
+		"abortUnavailable": "Oýny indi ýatyryp bolmaýar.",
+		"replayFailed": "Bu oýny ýerli gaýtadan oýnatmak başartmady. Sahypany täzeden ýükläň.",
+		"notConnected": "Oýun serwerine birikdirilmedi.",
+		"engineLoadFailed": "Go hereketlendirijisini ýükläp bolmady. Gaýtadan synanyşyň.",
+		"gameLoadFailed": "Oýny ýükläp bolmady. Gaýtadan synanyşyň.",
+		"seatTakenFirst": "Ýeri sizden öň başga biri eýeledi. Bu oýun indi doly."
+	}
+}

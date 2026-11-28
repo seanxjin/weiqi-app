@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import { Link, NavLink } from "react-router";
 import { useAuth } from "@/hooks/useAuth";
 import { StoneMark } from "@/components/ui/StoneMark";
+import { LanguagePicker } from "@/components/ui/LanguagePicker";
 import friends from "@/assets/icons/account/friends.svg";
 import messages from "@/assets/icons/account/messages.svg";
 import notifications from "@/assets/icons/account/notifications.svg";
@@ -9,7 +11,7 @@ import navPuzzle from "@/assets/icons/nav/nav-puzzle.svg";
 import navBook from "@/assets/icons/nav/nav-book.svg";
 import guideArrow from "@/assets/icons/nav/guide-arrow.svg";
 import divider from "@/assets/icons/nav/divider.svg";
-import settings from "@/assets/icons/account/settings.svg";
+import { SidebarSettingsMenu } from "./SidebarSettingsMenu";
 
 type AppSidebarProps = {
 	compact: boolean;
@@ -18,19 +20,26 @@ type AppSidebarProps = {
 };
 
 const comingSoonLinks = [
-	{ label: "Friends", icon: friends },
-	{ label: "Messages", icon: messages },
-	{ label: "Notifications", icon: notifications },
-];
+	{ label: "account.friends", icon: friends },
+	{ label: "account.messages", icon: messages },
+	{ label: "account.notifications", icon: notifications },
+] as const;
 
 function SidebarAccount({ onNavigate, onNotice }: Omit<AppSidebarProps, "compact">) {
+	const { t } = useTranslation(["nav", "common"]);
 	const { account } = useAuth();
 	if (account === undefined) return null;
 	if (account === null)
 		return (
-			<Link className="go-sign-in" to="/login" onClick={() => onNavigate()}>
-				Sign in
-			</Link>
+			<div className="go-sidebar-auth">
+				<Link className="go-sign-in" to="/login" onClick={() => onNavigate()}>
+					{t("common:actions.login")}
+				</Link>
+				<Link className="go-sign-up" to="/signup" onClick={() => onNavigate()}>
+					{t("common:actions.signUp")}
+				</Link>
+				<LanguagePicker className="language-button go-sidebar-language" />
+			</div>
 		);
 
 	return (
@@ -41,60 +50,59 @@ function SidebarAccount({ onNavigate, onNotice }: Omit<AppSidebarProps, "compact
 				</span>
 				<span className="go-sidebar-account__name">{account.username}</span>
 			</NavLink>
-			<nav className="go-sidebar-account__icons" aria-label="Account">
+			<nav className="go-sidebar-account__icons" aria-label={t("account.label")}>
 				{comingSoonLinks.map((link) => (
 					<button
 						key={link.label}
 						type="button"
-						aria-label={link.label}
-						title={link.label}
-						onClick={() => onNotice(link.label)}
+						aria-label={t(link.label)}
+						title={t(link.label)}
+						onClick={() => onNotice(t(link.label))}
 					>
 						<img src={link.icon} alt="" />
 					</button>
 				))}
-				<NavLink to="/settings" aria-label="Settings" title="Settings" onClick={() => onNavigate()}>
-					<img src={settings} alt="" />
-				</NavLink>
+				<SidebarSettingsMenu onNavigate={onNavigate} />
 			</nav>
 		</div>
 	);
 }
 
 export function AppSidebar({ compact, onNavigate, onNotice }: AppSidebarProps) {
+	const { t } = useTranslation(["nav", "common"]);
 	return (
-		<aside className="go-sidebar" aria-label="Baduk navigation">
+		<aside className="go-sidebar" aria-label={t("navigation")}>
 			<div className="go-sidebar__primary">
 				{compact && (
-					<button className="go-sidebar-close" onClick={() => onNavigate()} aria-label="Close navigation">
+					<button className="go-sidebar-close" onClick={() => onNavigate()} aria-label={t("drawer.close")}>
 						×
 					</button>
 				)}
-				<Link to="/" className="go-brand" aria-label="Baduk home">
+				<Link to="/" className="go-brand" aria-label={t("common:homeLink")}>
 					<StoneMark style="polished" size={34} />
-					<span>BADUK</span>
+					<span>{t("common:brand")}</span>
 				</Link>
-				<nav className="go-sections" aria-label="Main navigation">
+				<nav className="go-sections" aria-label={t("mainNavigation")}>
 					<NavLink to="/play" onClick={() => onNavigate()}>
 						<img src={grid} alt="" />
-						<span>Play</span>
+						<span>{t("play")}</span>
 					</NavLink>
-					<button onClick={() => onNotice("Puzzles")}>
+					<button onClick={() => onNotice(t("puzzles"))}>
 						<img src={navPuzzle} alt="" />
-						<span>Puzzles</span>
+						<span>{t("puzzles")}</span>
 					</button>
-					<button onClick={() => onNotice("Learn")}>
+					<button onClick={() => onNotice(t("learn"))}>
 						<img src={navBook} alt="" />
-						<span>Learn</span>
+						<span>{t("learn")}</span>
 					</button>
 				</nav>
 			</div>
 			<div className="go-utilities">
 				<div className="go-guide">
-					<p>NEW TO GO?</p>
-					<button onClick={() => onNotice("Start with the basics")}>
-						Start with the basics
-						<img src={guideArrow} alt="" />
+					<p>{t("guide.heading")}</p>
+					<button onClick={() => onNotice(t("guide.startWithBasics"))}>
+						{t("guide.startWithBasics")}
+						<img className="directional-icon" src={guideArrow} alt="" />
 					</button>
 				</div>
 				<img className="go-utility-divider" src={divider} alt="" />

@@ -1,0 +1,209 @@
+{
+	"header": {
+		"title": "Instellings",
+		"sectionTitle": "{{section}}-instellings",
+		"navLabel": "Instellingsafdelings"
+	},
+	"sections": {
+		"board": "Bord & klippe",
+		"gameplay": "Spel",
+		"profile": "Profiel",
+		"social": "Sosiaal & privaatheid",
+		"account": "Rekening & sekuriteit",
+		"language": "Taal & tyd"
+	},
+	"board": {
+		"description": "Kies die bord en klippe waarmee jy speel.",
+		"appearance": {
+			"title": "Voorkoms",
+			"boardLegend": "Bord",
+			"stonesLegend": "Klippe",
+			"previewLabel": "Bordvoorskou"
+		},
+		"themes": {
+			"kaya": "Tradisionele Japannese kaya",
+			"walnut": "Donker okkerneut",
+			"ash": "Ligte Skandinawiese esse"
+		},
+		"stoneStyles": {
+			"polished": "Leiklip",
+			"satin": "Keramiek",
+			"matte": "Natuurklip",
+			"snow": "Skulp · Yuki / Sneeugraad"
+		},
+		"display": {
+			"title": "Bordvertoning",
+			"coordinates": {
+				"label": "Wys bordkoördinate",
+				"description": "Benoem die kolomme en rye rondom die rand van die bord."
+			},
+			"lastMove": {
+				"label": "Lig laaste set uit",
+				"description": "Merk die klip wat laaste gespeel is."
+			}
+		},
+		"sounds": {
+			"title": "Klanke",
+			"playSounds": {
+				"label": "Speel klanke",
+				"description": "Klipplasing, vangste en horlosiewaarskuwings."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Bestuur hoe jy klippe plaas en wie jou kan uitdaag.",
+		"moves": {
+			"title": "Sette speel",
+			"description": "Vra vir ’n tweede klik voordat ’n klip geplaas word, om verkeerde klikke te vermy.",
+			"legend": "Bevestig sette",
+			"options": {
+				"never": "Nooit",
+				"correspondence": "Slegs korrespondensiespele",
+				"always": "Altyd"
+			}
+		},
+		"challenges": {
+			"title": "Uitdagings",
+			"description": "Kies wie vir jou speluitdagings kan stuur.",
+			"legend": "Laat uitdagings toe van",
+			"options": {
+				"everyone": "Almal",
+				"registered": "Geregistreerde spelers",
+				"following": "Slegs spelers wat ek volg",
+				"nobody": "Niemand nie (herwedstryde word steeds toegelaat)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Alles hier is sigbaar op jou <profileLink>openbare profiel</profileLink>.",
+		"publicProfile": {
+			"title": "Openbare profiel",
+			"bioLabel": "Kort bio",
+			"bioPlaceholder": "Jou kort bio sal op jou profiel verskyn.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Besonderhede",
+			"joinDate": "Aansluitdatum",
+			"username": "Gebruikersnaam",
+			"changeUsername": "Verander",
+			"changeUsernameFeature": "Om jou gebruikersnaam te verander",
+			"realName": "Regte naam",
+			"location": "Ligging",
+			"country": "Land",
+			"countryNotSet": "Nie gestel nie",
+			"rank": "Rang",
+			"rankPlaceholder": "bv. 12k, 3d",
+			"rankHint": "Gebruik 30k–1k, 1d–9d of 1p–9p."
+		},
+		"links": {
+			"legend": "Skakels",
+			"linkLabel": "Skakel {{number}}",
+			"remove": "Verwyder",
+			"removeLabel": "Verwyder skakel {{number}}",
+			"add": "Voeg skakel by"
+		}
+	},
+	"social": {
+		"description": "Bestuur die spelers wat jy volg en die spelers wat jy geblokkeer het.",
+		"blocking": {
+			"title": "Blokkering",
+			"description_one": "Jy blokkeer {{count}} speler. Geblokkeerde spelers kan jou nie uitdaag of boodskappe stuur nie.",
+			"description_other": "Jy blokkeer {{count}} spelers. Geblokkeerde spelers kan jou nie uitdaag of boodskappe stuur nie.",
+			"empty": "Jy blokkeer niemand nie.",
+			"action": "Deblokkeer",
+			"actionLabel": "Deblokkeer {{username}}"
+		},
+		"following": {
+			"title": "Volg",
+			"description_one": "Jy volg {{count}} speler.",
+			"description_other": "Jy volg {{count}} spelers.",
+			"empty": "Jy volg nog niemand nie.",
+			"action": "Ontvolg",
+			"actionLabel": "Ontvolg {{username}}"
+		}
+	},
+	"account": {
+		"description": "Verander jou wagwoord, beveilig jou rekening en bestuur gekoppelde rekeninge.",
+		"password": {
+			"title": "Verander wagwoord",
+			"updated": "Wagwoord opgedateer",
+			"fields": {
+				"currentPassword": {
+					"label": "Huidige wagwoord",
+					"show": "Wys huidige wagwoord",
+					"hide": "Versteek huidige wagwoord"
+				},
+				"newPassword": {
+					"label": "Nuwe wagwoord",
+					"show": "Wys nuwe wagwoord",
+					"hide": "Versteek nuwe wagwoord"
+				},
+				"confirmPassword": {
+					"label": "Tik wagwoord weer",
+					"show": "Wys herhaalde wagwoord",
+					"hide": "Versteek herhaalde wagwoord"
+				}
+			}
+		},
+		"contact": {
+			"title": "Kontakinligting",
+			"email": "E-posadres",
+			"edit": "Wysig",
+			"editFeature": "Om jou e-pos te verander"
+		},
+		"twoFactor": {
+			"title": "Tweefaktorstawing",
+			"description": "Vereis ’n kode van ’n stawingsprogram wanneer jy aanmeld.",
+			"off": "Af",
+			"enable": "Aktiveer",
+			"feature": "Tweefaktorstawing"
+		},
+		"sessions": {
+			"title": "Aktiewe sessies",
+			"description": "As jy vermoed dat jou rekening gekompromitteer is, verander jou wagwoord en meld oral af.",
+			"thisDevice": "Hierdie toestel",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "Meld {{device}} af",
+			"logOutAll": "Meld op alle ander toestelle af"
+		},
+		"connections": {
+			"title": "Gekoppelde rekeninge",
+			"description": "Meld by Baduk aan met hierdie rekeninge.",
+			"connectedTo": "Gekoppel aan {{provider}}",
+			"connect": "Koppel",
+			"disconnect": "Ontkoppel",
+			"note": "Ontkoppeling verwyder die skakel op Baduk. Jy moet dalk steeds toegang op die ander webwerf herroep."
+		},
+		"close": {
+			"title": "Sluit jou rekening",
+			"description": "Om jou rekening te sluit, versteek jou profiel en meld jou oral af.",
+			"button": "Sluit rekening",
+			"dialogTitle": "Sluit jou rekening?",
+			"dialogDescription": "Jy kan dit later van die aanmeldbladsy af heropen.",
+			"feature": "Om jou rekening te sluit"
+		}
+	},
+	"languageTime": {
+		"title": "Taal & tyd",
+		"description": "Kies die taal wat Baduk gebruik en hoe datums en tye vertoon word.",
+		"language": {
+			"title": "Taal",
+			"description": "Veranderinge geld dadelik op elke bladsy.",
+			"legend": "Vertoontaal"
+		},
+		"time": {
+			"title": "Tyd",
+			"description": "Gebruik vir tydstempels soos aansluitdatums en sessie-aktiwiteit.",
+			"timeZone": "Tydsone",
+			"automaticTimeZone": "Outomaties ({{timeZone}})",
+			"timeFormat": "Horlosie",
+			"formats": {
+				"auto": "Outomaties ({{example}})",
+				"12h": "12-uur ({{example}})",
+				"24h": "24-uur ({{example}})"
+			},
+			"preview": "Voorskou"
+		}
+	}
+}

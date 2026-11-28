@@ -1,0 +1,85 @@
+{
+	"page": {
+		"title": {
+			"local": "Setup ng Lokal na Laro",
+			"online": "Setup ng Online na Laro"
+		},
+		"label": {
+			"local": "Setup ng lokal na laro",
+			"online": "Setup ng online na laro"
+		},
+		"backToMenu": "Bumalik sa menu",
+		"settingsLabel": "Mga setting ng laro",
+		"timeLimitsNotice": "Hindi pa ipinapatupad ang mga limitasyon sa oras.",
+		"boardSize": "LAKI NG BOARD",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Ginagawa ang laro…",
+		"startGame": "Simulan ang laro",
+		"createFailed": "Hindi magawa ang laro. Pakisubukang muli."
+	},
+	"players": {
+		"player1": "Manlalaro 1",
+		"player2": "Manlalaro 2",
+		"opponent": "Kalaban",
+		"guest": "Ikaw (Guest)"
+	},
+	"configuration": {
+		"eyebrow": "MGA CONFIGURATION",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Custom · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Higit Pang Kontrol sa Oras",
+		"fewerControls": "Mas Kaunting Kontrol sa Oras",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Blitz",
+			"rapid": "Rapid",
+			"classical": "Klasiko",
+			"correspondence": "Korespondensya",
+			"untimed": "Walang oras"
+		},
+		"systems": {
+			"absolute": "Absolute",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Japanese Byo-yomi"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} seg",
+			"absoluteMinutes": "{{minutes}} min",
+			"mainSeconds": "{{seconds}}s",
+			"mainMinutes": "{{minutes}}m",
+			"fischer": "{{main}} + {{increment}}s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}}s",
+			"daysPerMove_one": "{{count}} araw / galaw",
+			"daysPerMove_other": "{{count}} araw / galaw"
+		},
+		"noTimeLimit": "Walang limitasyon sa oras"
+	},
+	"customTime": {
+		"label": "Custom na kontrol sa oras",
+		"eyebrow": "CUSTOM NA KONTROL SA ORAS",
+		"heading": "Itakda ang sarili mong orasan",
+		"system": "Sistema",
+		"fields": {
+			"minutes": "Pangunahin · min",
+			"seconds": "Pangunahin · seg",
+			"increment": "Dagdag · seg",
+			"periods": "Mga period",
+			"periodSeconds": "Period · seg"
+		},
+		"hints": {
+			"byoYomi": "Gumagamit ang overtime ng nakapirming bilang ng mga period na may oras.",
+			"default": "Pumili ng sistema, pagkatapos ay ilagay ang mga value ng orasan."
+		},
+		"apply": "Gamitin ang custom na oras",
+		"errors": {
+			"wholeNumbers": "Maglagay ng buong numerong hindi negatibo sa bawat field ng orasan.",
+			"mainSeconds": "Dapat nasa pagitan ng 0 at 59 ang segundo ng pangunahing oras.",
+			"byoYomiPeriods": "Kailangan ng byo-yomi ng kahit isang period na tatagal nang kahit isang segundo.",
+			"mainTime": "Itakda ang pangunahing oras nang higit sa zero."
+		}
+	}
+}

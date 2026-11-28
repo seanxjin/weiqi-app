@@ -1,0 +1,29 @@
+{
+	"navigation": "Navigation Baduk",
+	"drawer": {
+		"open": "Ouvrir la navigation",
+		"close": "Fermer la navigation"
+	},
+	"mainNavigation": "Navigation principale",
+	"play": "Jouer",
+	"puzzles": "Problèmes",
+	"learn": "Apprendre",
+	"guide": {
+		"heading": "NOUVEAU AU GO ?",
+		"startWithBasics": "Commencez par les bases"
+	},
+	"account": {
+		"label": "Compte",
+		"friends": "Amis",
+		"messages": "Messages",
+		"notifications": "Notifications",
+		"settings": "Paramètres",
+		"allSettings": "Tous les paramètres"
+	},
+	"theme": {
+		"label": "Thème",
+		"system": "Système",
+		"light": "Clair",
+		"dark": "Sombre"
+	}
+}

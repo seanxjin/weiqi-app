@@ -1,0 +1,29 @@
+{
+	"navigation": "Baduk-navigering",
+	"drawer": {
+		"open": "Öppna navigering",
+		"close": "Stäng navigering"
+	},
+	"mainNavigation": "Huvudnavigering",
+	"play": "Spela",
+	"puzzles": "Problem",
+	"learn": "Lär dig",
+	"guide": {
+		"heading": "NY INOM GO?",
+		"startWithBasics": "Börja med grunderna"
+	},
+	"account": {
+		"label": "Konto",
+		"friends": "Vänner",
+		"messages": "Meddelanden",
+		"notifications": "Aviseringar",
+		"settings": "Inställningar",
+		"allSettings": "Alla inställningar"
+	},
+	"theme": {
+		"label": "Tema",
+		"system": "System",
+		"light": "Ljust",
+		"dark": "Mörkt"
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"navigation": "Baduk 导航",
+	"drawer": {
+		"open": "打开导航",
+		"close": "关闭导航"
+	},
+	"mainNavigation": "主导航",
+	"play": "对弈",
+	"puzzles": "死活题",
+	"learn": "学习",
+	"guide": {
+		"heading": "初学围棋？",
+		"startWithBasics": "从基础开始"
+	},
+	"account": {
+		"label": "账户",
+		"friends": "好友",
+		"messages": "消息",
+		"notifications": "通知",
+		"settings": "设置",
+		"allSettings": "所有设置"
+	},
+	"theme": {
+		"label": "主题",
+		"system": "跟随系统",
+		"light": "浅色",
+		"dark": "深色"
+	}
+}

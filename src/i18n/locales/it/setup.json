@@ -1,0 +1,86 @@
+{
+	"page": {
+		"title": {
+			"local": "Impostazioni partita locale",
+			"online": "Impostazioni partita online"
+		},
+		"label": {
+			"local": "Impostazioni della partita locale",
+			"online": "Impostazioni della partita online"
+		},
+		"backToMenu": "Torna al menu",
+		"settingsLabel": "Impostazioni della partita",
+		"timeLimitsNotice": "I limiti di tempo non sono ancora applicati.",
+		"boardSize": "DIMENSIONE DEL GOBAN",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Creazione della partita…",
+		"startGame": "Inizia partita",
+		"createFailed": "Impossibile creare la partita. Riprova."
+	},
+	"players": {
+		"player1": "Giocatore 1",
+		"player2": "Giocatore 2",
+		"opponent": "Avversario",
+		"guest": "Tu (ospite)"
+	},
+	"configuration": {
+		"eyebrow": "CONFIGURAZIONI",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Personalizzato · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Altri controlli del tempo",
+		"fewerControls": "Meno controlli del tempo",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Blitz",
+			"rapid": "Rapida",
+			"classical": "Classica",
+			"correspondence": "Corrispondenza",
+			"untimed": "Senza tempo"
+		},
+		"systems": {
+			"absolute": "Assoluto",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Byo-yomi giapponese"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} s",
+			"absoluteMinutes": "{{minutes}} min",
+			"mainSeconds": "{{seconds}}s",
+			"mainMinutes": "{{minutes}}m",
+			"fischer": "{{main}} + {{increment}}s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}}s",
+			"daysPerMove_one": "{{count}} giorno / mossa",
+			"daysPerMove_many": "{{count}} di giorni / mossa",
+			"daysPerMove_other": "{{count}} giorni / mossa"
+		},
+		"noTimeLimit": "Nessun limite di tempo"
+	},
+	"customTime": {
+		"label": "Controllo del tempo personalizzato",
+		"eyebrow": "CONTROLLO DEL TEMPO PERSONALIZZATO",
+		"heading": "Imposta il tuo orologio",
+		"system": "Sistema",
+		"fields": {
+			"minutes": "Base · min",
+			"seconds": "Base · sec",
+			"increment": "Incremento · sec",
+			"periods": "Periodi",
+			"periodSeconds": "Periodo · sec"
+		},
+		"hints": {
+			"byoYomi": "Il tempo supplementare usa un numero fisso di periodi a tempo.",
+			"default": "Scegli un sistema, poi inserisci i valori dell’orologio."
+		},
+		"apply": "Usa tempo personalizzato",
+		"errors": {
+			"wholeNumbers": "Inserisci un numero intero non negativo in ogni campo dell’orologio.",
+			"mainSeconds": "I secondi del tempo base devono essere compresi tra 0 e 59.",
+			"byoYomiPeriods": "Il byo-yomi richiede almeno un periodo di almeno un secondo.",
+			"mainTime": "Imposta un tempo base maggiore di zero."
+		}
+	}
+}

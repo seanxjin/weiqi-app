@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "غو",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "الصفحة الرئيسية لـ Baduk",
+	"actions": {
+		"save": "حفظ",
+		"saving": "جارٍ الحفظ…",
+		"cancel": "إلغاء",
+		"back": "رجوع",
+		"retry": "إعادة المحاولة",
+		"close": "إغلاق",
+		"login": "تسجيل الدخول",
+		"signIn": "تسجيل الدخول",
+		"signUp": "إنشاء حساب",
+		"logOut": "تسجيل الخروج",
+		"loggingOut": "جارٍ تسجيل الخروج…"
+	},
+	"status": {
+		"saved": "تم الحفظ",
+		"loading": "جارٍ التحميل…",
+		"checkingSession": "جارٍ التحقق من جلستك…",
+		"sessionError": "تعذّر التحقق من جلستك. يُرجى المحاولة مرة أخرى."
+	},
+	"comingSoon": "{{feature}} قريبًا.",
+	"language": "اللغة",
+	"languageDialog": {
+		"title": "اختر لغتك المفضلة",
+		"loadError": "تعذّر تحميل هذه اللغة. يُرجى المحاولة مرة أخرى."
+	}
+}

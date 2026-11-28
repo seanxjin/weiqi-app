@@ -1,0 +1,115 @@
+{
+	"home": {
+		"pageTitle": "Chơi",
+		"location": "CHƠI / TRANG CHỦ",
+		"signedInAs": "Đã đăng nhập với tên {{username}}",
+		"guest": "Đang chơi với tư cách khách",
+		"logoutError": "Không thể đăng xuất. Vui lòng thử lại.",
+		"introduction": {
+			"heading": "Một đoạn văn bản",
+			"body": "Một đoạn văn bản khác"
+		},
+		"menuHeading": "Một đoạn văn bản.",
+		"options": {
+			"online": {
+				"label": "Chơi trực tuyến",
+				"description": "Tìm đối thủ. Gặp nhau trên bàn cờ."
+			},
+			"local": {
+				"label": "Chơi tại chỗ",
+				"description": "Một bàn cờ. Hai người chơi. Chung một màn hình."
+			},
+			"friend": {
+				"label": "Chơi với bạn",
+				"description": "Mời ai đó cùng chơi một ván cờ sâu sắc."
+			},
+			"puzzles": {
+				"label": "Giải bài tập",
+				"description": "Thử thách nhỏ. Trực giác sắc bén hơn."
+			},
+			"lessons": {
+				"label": "Bài học",
+				"description": "Từ quân cờ đầu tiên đến hiểu biết tiếp theo."
+			},
+			"bots": {
+				"label": "Chơi với máy",
+				"description": "Luyện tập theo nhịp của bạn, ở mọi trình độ."
+			}
+		},
+		"presence_other": "{{count, number}} người chơi đang bên bàn cờ",
+		"reserved": {
+			"label": "PHẦN DÀNH CHO SAU NÀY",
+			"heading": "Dành cho nội dung trong tương lai",
+			"body": "Phần này tạm thời được để trống có chủ đích. Nó sẽ được dùng cho các tính năng, cập nhật hoặc nội dung chọn lọc trong tương lai."
+		},
+		"footerTagline": "Luật chơi đơn giản. Khám phá bất tận."
+	},
+	"materials": {
+		"pageTitle": "Bàn cờ & quân cờ",
+		"breadcrumb": "Baduk / Thư viện chất liệu",
+		"collection": "Bộ sưu tập 01",
+		"heading": "Bàn cờ & quân cờ.",
+		"introduction": "Chất liệu tự nhiên. Chi tiết tinh tế. Một không gian cho ván cờ.",
+		"boardsSection": {
+			"title": "Bàn cờ",
+			"meta": "Ba loại gỗ · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "Quân cờ",
+			"meta": "Bốn kiểu · đen & trắng"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Nghiên cứu chất liệu",
+			"enlarged": "Mẫu phóng to",
+			"heading": "Một sự tương phản tĩnh lặng.",
+			"body": "Bốn bề mặt. Đen và trắng, dưới cùng một ánh sáng dịu.",
+			"scale": "Mẫu phóng to · cùng tỷ lệ",
+			"form": "Dáng tròn, nhẵn / bề mặt biến đổi tinh tế"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Gỗ kaya Nhật Bản truyền thống",
+				"material": "Màu mật ong ấm · vân thẳng"
+			},
+			"walnut": {
+				"name": "Gỗ óc chó sẫm màu",
+				"material": "Nâu đậm · vân uốn lượn"
+			},
+			"ash": {
+				"name": "Gỗ tần bì Bắc Âu sáng màu",
+				"material": "Gỗ sáng màu · vân mềm mại"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Bóng",
+				"name": "Đá phiến",
+				"description": "Bề mặt nhẵn bóng với vân khoáng thạch nhẹ nhàng.",
+				"black": "Đá phiến đen",
+				"white": "Đá phiến trắng"
+			},
+			"satin": {
+				"finish": "Satin",
+				"name": "Gốm",
+				"description": "Ánh bóng dịu cùng thớ hạt mịn, đều và tinh tế.",
+				"black": "Gốm đen",
+				"white": "Gốm trắng"
+			},
+			"matte": {
+				"finish": "Mờ",
+				"name": "Đá tự nhiên",
+				"description": "Những đốm khoáng nhẹ dưới lớp hoàn thiện nhẵn, khô.",
+				"black": "Đá đen",
+				"white": "Đá trắng"
+			},
+			"snow": {
+				"finish": "Bóng",
+				"name": "Vỏ sò · Yuki / Hạng Snow",
+				"description": "Vân vỏ sò mịn, khít trên nền trắng sữa, đi cùng đá phiến đen đánh bóng.",
+				"black": "Đá phiến đen Nachiguro",
+				"white": "Vỏ sò trắng Yuki"
+			}
+		},
+		"footerTagline": "Những điều cốt yếu, được chăm chút."
+	}
+}

@@ -1,0 +1,87 @@
+{
+	"page": {
+		"title": {
+			"local": "Настройка локальной партии",
+			"online": "Настройка онлайн-партии"
+		},
+		"label": {
+			"local": "Настройка локальной партии",
+			"online": "Настройка онлайн-партии"
+		},
+		"backToMenu": "Назад в меню",
+		"settingsLabel": "Настройки партии",
+		"timeLimitsNotice": "Контроль времени пока не применяется.",
+		"boardSize": "РАЗМЕР ДОСКИ",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Создание партии…",
+		"startGame": "Начать игру",
+		"createFailed": "Не удалось создать партию. Попробуйте ещё раз."
+	},
+	"players": {
+		"player1": "Игрок 1",
+		"player2": "Игрок 2",
+		"opponent": "Соперник",
+		"guest": "Вы (гость)"
+	},
+	"configuration": {
+		"eyebrow": "КОНФИГУРАЦИИ",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Свой · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Больше вариантов",
+		"fewerControls": "Меньше вариантов",
+		"groups": {
+			"bullet": "Пуля",
+			"blitz": "Блиц",
+			"rapid": "Рапид",
+			"classical": "Классика",
+			"correspondence": "По переписке",
+			"untimed": "Без времени"
+		},
+		"systems": {
+			"absolute": "Абсолютный",
+			"fischer": "Фишер",
+			"japaneseByoYomi": "Японское бёёми"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} сек",
+			"absoluteMinutes": "{{minutes}} мин",
+			"mainSeconds": "{{seconds}} с",
+			"mainMinutes": "{{minutes}} м",
+			"fischer": "{{main}} + {{increment}} с",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}} с",
+			"daysPerMove_one": "{{count}} день / ход",
+			"daysPerMove_few": "{{count}} дня / ход",
+			"daysPerMove_many": "{{count}} дней / ход",
+			"daysPerMove_other": "{{count}} дня / ход"
+		},
+		"noTimeLimit": "Без ограничения времени"
+	},
+	"customTime": {
+		"label": "Свой контроль времени",
+		"eyebrow": "СВОЙ КОНТРОЛЬ ВРЕМЕНИ",
+		"heading": "Настройте свои часы",
+		"system": "Система",
+		"fields": {
+			"minutes": "Основное · мин",
+			"seconds": "Основное · сек",
+			"increment": "Добавка · сек",
+			"periods": "Периоды",
+			"periodSeconds": "Период · сек"
+		},
+		"hints": {
+			"byoYomi": "В бёёми используется фиксированное число периодов.",
+			"default": "Выберите систему и введите параметры часов."
+		},
+		"apply": "Применить своё время",
+		"errors": {
+			"wholeNumbers": "Введите неотрицательное целое число в каждое поле.",
+			"mainSeconds": "Секунды основного времени должны быть от 0 до 59.",
+			"byoYomiPeriods": "Для бёёми нужен хотя бы один период длительностью не менее секунды.",
+			"mainTime": "Основное время должно быть больше нуля."
+		}
+	}
+}

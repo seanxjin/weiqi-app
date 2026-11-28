@@ -1,0 +1,116 @@
+{
+	"home": {
+		"pageTitle": "Játék",
+		"location": "JÁTÉK / KEZDŐLAP",
+		"signedInAs": "Bejelentkezve mint {{username}}",
+		"guest": "Vendégként játszol",
+		"logoutError": "Nem sikerült kijelentkezni. Próbáld újra.",
+		"introduction": {
+			"heading": "Valamilyen szöveg",
+			"body": "Valamilyen más szöveg"
+		},
+		"menuHeading": "Valamilyen szöveg.",
+		"options": {
+			"online": {
+				"label": "Online játék",
+				"description": "Találd meg az ellenfeled. Találkozzatok a táblánál."
+			},
+			"local": {
+				"label": "Helyi játék",
+				"description": "Egy tábla. Két játékos. Közös képernyő."
+			},
+			"friend": {
+				"label": "Játék baráttal",
+				"description": "Hívj meg valakit egy elmélyült játszmára."
+			},
+			"puzzles": {
+				"label": "Feladványok",
+				"description": "Kis kihívások. Élesebb ösztönök."
+			},
+			"lessons": {
+				"label": "Leckék",
+				"description": "Az első kövedtől a következő felismerésig."
+			},
+			"bots": {
+				"label": "Játék botok ellen",
+				"description": "Gyakorolj a saját tempódban, bármilyen szinten."
+			}
+		},
+		"presence_one": "{{count, number}} játékos ül a táblánál",
+		"presence_other": "{{count, number}} játékos ül a táblánál",
+		"reserved": {
+			"label": "KÉSŐBBI SZAKASZ",
+			"heading": "Jövőbeli tartalom számára fenntartva",
+			"body": "Ez a szakasz egyelőre szándékosan üres. Később új funkciók, frissítések vagy válogatott tartalmak kerülnek ide."
+		},
+		"footerTagline": "Egyszerű szabályok. Végtelen felfedezés."
+	},
+	"materials": {
+		"pageTitle": "Táblák és kövek",
+		"breadcrumb": "Baduk / Anyagkönyvtár",
+		"collection": "01. kollekció",
+		"heading": "Táblák és kövek.",
+		"introduction": "Természetes anyagok. Csendes részletek. Hely a játéknak.",
+		"boardsSection": {
+			"title": "A táblák",
+			"meta": "Háromféle fa · 19 × 19"
+		},
+		"stonesSection": {
+			"title": "A kövek",
+			"meta": "Négy stílus · fekete és fehér"
+		},
+		"study": {
+			"breadcrumb": "Baduk / Anyagtanulmány",
+			"enlarged": "Nagyított minták",
+			"heading": "Csendes kontraszt.",
+			"body": "Négy felület. Fekete és fehér, ugyanabban a lágy fényben.",
+			"scale": "Nagyított minták · egységes lépték",
+			"form": "Sima, lekerekített forma / finom felületi eltérések"
+		},
+		"boards": {
+			"kaya": {
+				"name": "Hagyományos japán kaja",
+				"material": "Meleg mézszín · egyenes erezet"
+			},
+			"walnut": {
+				"name": "Sötét dió",
+				"material": "Mélybarna · hullámzó erezet"
+			},
+			"ash": {
+				"name": "Világos skandináv kőris",
+				"material": "Világos fa · lágy erezet"
+			}
+		},
+		"stones": {
+			"polished": {
+				"finish": "Polírozott",
+				"name": "Pala",
+				"description": "Sima, polírozott felület visszafogott ásványi textúrával.",
+				"black": "Fekete pala",
+				"white": "Fehér pala"
+			},
+			"satin": {
+				"finish": "Szatén",
+				"name": "Kerámia",
+				"description": "Szórt fényű csillogás és finom, egyenletes szemcsézet.",
+				"black": "Fekete kerámia",
+				"white": "Fehér kerámia"
+			},
+			"matte": {
+				"finish": "Matt",
+				"name": "Természetes kő",
+				"description": "Visszafogott ásványi pöttyözés sima, száraz felület alatt.",
+				"black": "Fekete kő",
+				"white": "Fehér kő"
+			},
+			"snow": {
+				"finish": "Polírozott",
+				"name": "Kagyló · Yuki / Hó minőség",
+				"description": "Finom, sűrű kagylóerezet tejfehér alapon, polírozott fekete palával párosítva.",
+				"black": "Fekete Nachiguro pala",
+				"white": "Fehér Yuki kagyló"
+			}
+		},
+		"footerTagline": "A lényeg, átgondolva."
+	}
+}

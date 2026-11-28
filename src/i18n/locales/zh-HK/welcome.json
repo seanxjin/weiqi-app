@@ -1,0 +1,16 @@
+{
+	"pageTitle": "下圍棋",
+	"railLabel": "Baduk",
+	"mainNavigation": "主要導覽",
+	"play": "對弈",
+	"eyebrow": "文字",
+	"heading": {
+		"label": "來下圍棋",
+		"prefix": "來下"
+	},
+	"description": {
+		"first": "文字....",
+		"second": "其他文字..."
+	},
+	"footnote": "慢慢嚟。"
+}

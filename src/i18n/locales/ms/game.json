@@ -1,0 +1,133 @@
+{
+	"colors": {
+		"black": "Hitam",
+		"white": "Putih"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "Lepas",
+	"localPage": {
+		"title": "Main Setempat",
+		"eyebrow": "PERLAWANAN PERSAHABATAN",
+		"heading": "Masa untuk bermain.",
+		"details": "{{size}} × {{size}} · Peraturan Jepun"
+	},
+	"onlinePage": {
+		"title": "Main Dalam Talian",
+		"eyebrow": "PERMAINAN DALAM TALIAN",
+		"heading": "Masa untuk bermain.",
+		"details": "{{size}} × {{size}} · Komi {{komi}}",
+		"loading": "Memuatkan permainan…",
+		"notFound": "Permainan ini tidak wujud atau tidak lagi tersedia.",
+		"startNew": "Mulakan permainan dalam talian baharu",
+		"invited": "Anda dijemput ke permainan {{size}} × {{size}}.",
+		"joining": "Menyertai…",
+		"joinAs": "Sertai sebagai {{color}}",
+		"full": "Permainan ini sudah penuh. Menonton permainan belum tersedia."
+	},
+	"local": {
+		"label": "Permainan Go setempat",
+		"loadingEngine": "Memuatkan enjin Go…"
+	},
+	"online": {
+		"label": "Permainan Go dalam talian",
+		"youAre": "Anda bermain sebagai {{color}}",
+		"connection": {
+			"connecting": "Menyambung…",
+			"open": "Bersambung",
+			"reconnecting": "Menyambung semula…",
+			"closed": "Terputus"
+		},
+		"invite": {
+			"label": "Jemput rakan dengan pautan ini",
+			"copy": "Salin",
+			"copied": "Disalin"
+		},
+		"awaitingScoring": "Kedua-dua pemain telah lepas. Pengiraan mata belum disokong, jadi batalkan untuk merekodkan permainan tanpa mata.",
+		"confirmResign": "Sahkan menyerah",
+		"resign": "Menyerah",
+		"abort": "Batalkan",
+		"results": {
+			"youWin": "Anda menang · {{color}} menyerah",
+			"winsByResignation": "{{color}} menang kerana lawan menyerah",
+			"aborted": "Permainan dibatalkan oleh {{color}}",
+			"unscored": "Permainan tamat tanpa mata"
+		}
+	},
+	"turn": {
+		"preparing": "Menyediakan papan",
+		"reviewing": "Menyemak · Kembali ke Semasa untuk bermain",
+		"toPlay": "Giliran {{color}}",
+		"yourMove": "Giliran anda",
+		"waitingForOpponent": "Menunggu lawan",
+		"awaitingScoring": "Permainan telah tamat · Pengiraan mata belum disokong",
+		"gameOver": "Permainan tamat",
+		"sendingMove": "Menghantar langkah…",
+		"waitingForConnection": "Menunggu sambungan"
+	},
+	"boardFooter": {
+		"lastMove": "Langkah terakhir: {{color}} {{move}}",
+		"startingPosition": "Kedudukan permulaan"
+	},
+	"players": {
+		"label": "Pemain",
+		"captured": "Ditawan {{count}}",
+		"you": "{{name}} (anda)",
+		"waiting": "{{name}} · menunggu pemain"
+	},
+	"history": {
+		"label": "Sejarah langkah",
+		"heading": "Langkah",
+		"moveCount_other": "{{count}} LANGKAH",
+		"tableLabel": "Langkah Hitam dan Putih",
+		"pair": "Pasangan",
+		"move": "Langkah {{number}}, {{color}}, {{move}}",
+		"pendingMove": "Langkah {{number}}, {{color}}, {{move}}, sedang dihantar",
+		"empty": "Belum ada langkah.",
+		"position": "Langkah {{viewed}} daripada {{latest}}",
+		"currentPosition": "KEDUDUKAN SEMASA",
+		"reviewing": "MENYEMAK",
+		"navigationLabel": "Navigasi sejarah langkah",
+		"navigation": {
+			"start": "Mula",
+			"previous": "Sebelumnya",
+			"next": "Seterusnya",
+			"current": "Semasa"
+		},
+		"undo": "Buat asal langkah terakhir",
+		"encouragement": "Ambil masa anda. Setiap langkah penting.",
+		"keyboardHint": "Gunakan ← → untuk melalui langkah, ↑ ↓ untuk mula dan semasa."
+	},
+	"board": {
+		"sceneLabel": "Papan Go {{size}} kali {{size}} yang menunjukkan urutan {{moveCount}} langkah pembukaan",
+		"themedBoard": "Papan Go {{theme}}",
+		"emptyBoard": "Papan baduk {{theme}} {{size}} kali {{size}} yang kosong",
+		"stone": "Batu baduk {{color}} {{finish}}",
+		"textureError": "Tekstur papan tidak dapat dimuatkan.",
+		"pauseAnimations": "Jeda animasi",
+		"resumeAnimations": "Sambung animasi",
+		"pause": "JEDA",
+		"resume": "SAMBUNG"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "Pilih persilangan di atas papan.",
+			"occupied": "Persilangan itu sudah diisi.",
+			"wrongPlayer": "Sekarang giliran pemain lain.",
+			"suicide": "Bunuh diri tidak dibenarkan.",
+			"ko": "Langkah itu dilarang oleh peraturan ko.",
+			"superko": "Langkah itu mengulangi kedudukan terdahulu.",
+			"gameEnded": "Permainan ini tidak boleh menerima langkah lagi."
+		},
+		"serverRejectedMove": "Pelayan menolak langkah itu. {{reason}}",
+		"staleRevision": "Permainan berubah sebelum langkah anda tiba, jadi langkah itu tidak dimainkan.",
+		"wrongPhase": "Perkara itu tidak boleh dilakukan pada peringkat permainan ini.",
+		"seatTaken": "Tempat itu sudah diambil.",
+		"notYourTurn": "Sekarang giliran pemain lain.",
+		"abortUnavailable": "Permainan tidak lagi boleh dibatalkan.",
+		"replayFailed": "Permainan ini tidak dapat dimainkan semula secara setempat. Sila muat semula halaman.",
+		"notConnected": "Tidak bersambung dengan pelayan permainan.",
+		"engineLoadFailed": "Enjin Go tidak dapat dimuatkan. Sila cuba semula.",
+		"gameLoadFailed": "Permainan tidak dapat dimuatkan. Sila cuba semula.",
+		"seatTakenFirst": "Orang lain telah mengambil tempat itu terlebih dahulu. Permainan ini kini penuh."
+	}
+}

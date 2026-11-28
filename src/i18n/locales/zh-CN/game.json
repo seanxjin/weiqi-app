@@ -1,0 +1,133 @@
+{
+	"colors": {
+		"black": "黑棋",
+		"white": "白棋"
+	},
+	"boardSize": "{{size}} × {{size}}",
+	"pass": "停一手",
+	"localPage": {
+		"title": "本地对弈",
+		"eyebrow": "友谊赛",
+		"heading": "静享对弈时光。",
+		"details": "{{size}} × {{size}} · 日本规则"
+	},
+	"onlinePage": {
+		"title": "在线对弈",
+		"eyebrow": "在线对局",
+		"heading": "静享对弈时光。",
+		"details": "{{size}} × {{size}} · 贴目 {{komi}}",
+		"loading": "正在加载对局…",
+		"notFound": "该对局不存在或已不可用。",
+		"startNew": "开始新的在线对局",
+		"invited": "你受邀参加一局 {{size}} × {{size}} 对局。",
+		"joining": "正在加入…",
+		"joinAs": "执{{color}}加入",
+		"full": "该对局已满员。暂不支持观战。"
+	},
+	"local": {
+		"label": "本地围棋对局",
+		"loadingEngine": "正在加载围棋引擎…"
+	},
+	"online": {
+		"label": "在线围棋对局",
+		"youAre": "你执{{color}}",
+		"connection": {
+			"connecting": "正在连接…",
+			"open": "已连接",
+			"reconnecting": "正在重新连接…",
+			"closed": "已断开连接"
+		},
+		"invite": {
+			"label": "用此链接邀请好友",
+			"copy": "复制",
+			"copied": "已复制"
+		},
+		"awaitingScoring": "双方均已停一手。暂不支持数子，请中止对局，以无结果记录本局。",
+		"confirmResign": "确认认输",
+		"resign": "认输",
+		"abort": "中止",
+		"results": {
+			"youWin": "你赢了 · {{color}}认输",
+			"winsByResignation": "{{color}}中盘胜",
+			"aborted": "{{color}}中止了对局",
+			"unscored": "对局结束，未计算胜负"
+		}
+	},
+	"turn": {
+		"preparing": "正在准备棋盘",
+		"reviewing": "复盘中 · 返回“当前”以继续对弈",
+		"toPlay": "轮到{{color}}",
+		"yourMove": "轮到你了",
+		"waitingForOpponent": "正在等待对手",
+		"awaitingScoring": "对弈已结束 · 暂不支持数子",
+		"gameOver": "对局结束",
+		"sendingMove": "正在发送落子…",
+		"waitingForConnection": "正在等待连接"
+	},
+	"boardFooter": {
+		"lastMove": "上一手：{{color}} {{move}}",
+		"startingPosition": "初始局面"
+	},
+	"players": {
+		"label": "棋手",
+		"captured": "提子 {{count}}",
+		"you": "{{name}}（你）",
+		"waiting": "{{name}} · 等待棋手加入"
+	},
+	"history": {
+		"label": "棋谱",
+		"heading": "着法",
+		"moveCount_other": "{{count}} 手",
+		"tableLabel": "黑棋与白棋着法",
+		"pair": "回合",
+		"move": "第 {{number}} 手，{{color}}，{{move}}",
+		"pendingMove": "第 {{number}} 手，{{color}}，{{move}}，发送中",
+		"empty": "尚无着法。",
+		"position": "第 {{viewed}} 手 / 共 {{latest}} 手",
+		"currentPosition": "当前局面",
+		"reviewing": "复盘中",
+		"navigationLabel": "棋谱导航",
+		"navigation": {
+			"start": "开局",
+			"previous": "上一手",
+			"next": "下一手",
+			"current": "当前"
+		},
+		"undo": "悔棋",
+		"encouragement": "慢慢来，每一手都很重要。",
+		"keyboardHint": "使用 ← → 逐手查看，↑ ↓ 跳到开局和当前局面。"
+	},
+	"board": {
+		"sceneLabel": "一张 {{size}}×{{size}} 的围棋棋盘，展示了 {{moveCount}} 手布局",
+		"themedBoard": "{{theme}}围棋棋盘",
+		"emptyBoard": "空的 {{size}}×{{size}} {{theme}}围棋棋盘",
+		"stone": "{{finish}}{{color}}子",
+		"textureError": "无法加载棋盘纹理。",
+		"pauseAnimations": "暂停动画",
+		"resumeAnimations": "继续动画",
+		"pause": "暂停",
+		"resume": "继续"
+	},
+	"errors": {
+		"illegalMove": {
+			"outOfBounds": "请选择棋盘上的交叉点。",
+			"occupied": "该交叉点已有棋子。",
+			"wrongPlayer": "现在轮到对方。",
+			"suicide": "不允许自杀。",
+			"ko": "此着违反打劫规则，不能落子。",
+			"superko": "此着会重复之前的局面。",
+			"gameEnded": "本局已无法再落子。"
+		},
+		"serverRejectedMove": "服务器拒绝了这一手。{{reason}}",
+		"staleRevision": "你的落子送达前对局已发生变化，因此未能落子。",
+		"wrongPhase": "当前对局阶段无法执行此操作。",
+		"seatTaken": "该座位已被占用。",
+		"notYourTurn": "现在轮到对方。",
+		"abortUnavailable": "该对局已无法中止。",
+		"replayFailed": "无法在本地重现此对局，请刷新页面。",
+		"notConnected": "未连接到对局服务器。",
+		"engineLoadFailed": "无法加载围棋引擎，请重试。",
+		"gameLoadFailed": "无法加载对局，请重试。",
+		"seatTakenFirst": "有人抢先入座，该对局已满员。"
+	}
+}

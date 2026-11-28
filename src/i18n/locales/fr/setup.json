@@ -1,0 +1,86 @@
+{
+	"page": {
+		"title": {
+			"local": "Configuration de la partie locale",
+			"online": "Configuration de la partie en ligne"
+		},
+		"label": {
+			"local": "Configuration de la partie locale",
+			"online": "Configuration de la partie en ligne"
+		},
+		"backToMenu": "Retour au menu",
+		"settingsLabel": "Paramètres de la partie",
+		"timeLimitsNotice": "Les limites de temps ne sont pas encore appliquées.",
+		"boardSize": "TAILLE DU GOBAN",
+		"boardSizeOption": "{{size}} × {{size}}",
+		"creating": "Création de la partie…",
+		"startGame": "Commencer la partie",
+		"createFailed": "Impossible de créer la partie. Veuillez réessayer."
+	},
+	"players": {
+		"player1": "Joueur 1",
+		"player2": "Joueur 2",
+		"opponent": "Adversaire",
+		"guest": "Vous (invité)"
+	},
+	"configuration": {
+		"eyebrow": "CONFIGURATIONS",
+		"summary": "{{boardSize}} · {{timeControl}}"
+	},
+	"timeControl": {
+		"presetValue": "{{system}} · {{preset}}",
+		"customValue": "Personnalisée · {{system}}",
+		"presetOptionLabel": "{{preset}}, {{system}}",
+		"moreControls": "Plus de cadences",
+		"fewerControls": "Moins de cadences",
+		"groups": {
+			"bullet": "Bullet",
+			"blitz": "Blitz",
+			"rapid": "Rapide",
+			"classical": "Classique",
+			"correspondence": "Correspondance",
+			"untimed": "Sans pendule"
+		},
+		"systems": {
+			"absolute": "Absolu",
+			"fischer": "Fischer",
+			"japaneseByoYomi": "Byo-yomi japonais"
+		},
+		"presets": {
+			"absoluteSeconds": "{{seconds}} s",
+			"absoluteMinutes": "{{minutes}} min",
+			"mainSeconds": "{{seconds}} s",
+			"mainMinutes": "{{minutes}} min",
+			"fischer": "{{main}} + {{increment}} s",
+			"byoYomi": "{{main}} + {{periods}}×{{periodSeconds}} s",
+			"daysPerMove_one": "{{count}} jour / coup",
+			"daysPerMove_many": "{{count}} jours / coup",
+			"daysPerMove_other": "{{count}} jours / coup"
+		},
+		"noTimeLimit": "Sans limite de temps"
+	},
+	"customTime": {
+		"label": "Cadence personnalisée",
+		"eyebrow": "CADENCE PERSONNALISÉE",
+		"heading": "Réglez votre pendule",
+		"system": "Système",
+		"fields": {
+			"minutes": "Principal · min",
+			"seconds": "Principal · s",
+			"increment": "Incrément · s",
+			"periods": "Périodes",
+			"periodSeconds": "Période · s"
+		},
+		"hints": {
+			"byoYomi": "Le temps supplémentaire utilise un nombre fixe de périodes chronométrées.",
+			"default": "Choisissez un système, puis saisissez les valeurs de la pendule."
+		},
+		"apply": "Utiliser cette cadence",
+		"errors": {
+			"wholeNumbers": "Saisissez un nombre entier positif ou nul dans chaque champ de la pendule.",
+			"mainSeconds": "Les secondes du temps principal doivent être comprises entre 0 et 59.",
+			"byoYomiPeriods": "Le byo-yomi nécessite au moins une période d’au moins une seconde.",
+			"mainTime": "Le temps principal doit être supérieur à zéro."
+		}
+	}
+}

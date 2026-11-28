@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Speel Go",
+	"railLabel": "Baduk",
+	"mainNavigation": "Hoofnavigasie",
+	"play": "Speel",
+	"eyebrow": "Bietjie teks",
+	"heading": {
+		"label": "Speel Go",
+		"prefix": "Speel "
+	},
+	"description": {
+		"first": "Bietjie teks....",
+		"second": "Ander teks..."
+	},
+	"footnote": "NEEM JOU TYD."
+}

@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "GO",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Laman utama Baduk",
+	"actions": {
+		"save": "Simpan",
+		"saving": "Menyimpan…",
+		"cancel": "Batal",
+		"back": "Kembali",
+		"retry": "Cuba semula",
+		"close": "Tutup",
+		"login": "Log masuk",
+		"signIn": "Log masuk",
+		"signUp": "Daftar",
+		"logOut": "Log keluar",
+		"loggingOut": "Sedang log keluar…"
+	},
+	"status": {
+		"saved": "Disimpan",
+		"loading": "Memuatkan…",
+		"checkingSession": "Menyemak sesi anda…",
+		"sessionError": "Tidak dapat menyemak sesi anda. Sila cuba lagi."
+	},
+	"comingSoon": "{{feature}} akan datang tidak lama lagi.",
+	"language": "Bahasa",
+	"languageDialog": {
+		"title": "Pilih bahasa pilihan anda",
+		"loadError": "Bahasa itu tidak dapat dimuatkan. Sila cuba lagi."
+	}
+}

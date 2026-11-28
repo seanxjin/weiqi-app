@@ -1,0 +1,209 @@
+{
+	"header": {
+		"title": "Beállítások",
+		"sectionTitle": "{{section}} – beállítások",
+		"navLabel": "Beállítási szakaszok"
+	},
+	"sections": {
+		"board": "Tábla és kövek",
+		"gameplay": "Játékmenet",
+		"profile": "Profil",
+		"social": "Közösség és adatvédelem",
+		"account": "Fiók és biztonság",
+		"language": "Nyelv és idő"
+	},
+	"board": {
+		"description": "Válaszd ki, milyen táblán és kövekkel játszol.",
+		"appearance": {
+			"title": "Megjelenés",
+			"boardLegend": "Tábla",
+			"stonesLegend": "Kövek",
+			"previewLabel": "Tábla előnézete"
+		},
+		"themes": {
+			"kaya": "Hagyományos japán kaja",
+			"walnut": "Sötét dió",
+			"ash": "Világos skandináv kőris"
+		},
+		"stoneStyles": {
+			"polished": "Pala",
+			"satin": "Kerámia",
+			"matte": "Természetes kő",
+			"snow": "Kagyló · Yuki / Hó minőség"
+		},
+		"display": {
+			"title": "Tábla megjelenítése",
+			"coordinates": {
+				"label": "Koordináták megjelenítése",
+				"description": "Az oszlopok és sorok jelölése a tábla szélén."
+			},
+			"lastMove": {
+				"label": "Utolsó lépés kiemelése",
+				"description": "A legutóbb lerakott kő megjelölése."
+			}
+		},
+		"sounds": {
+			"title": "Hangok",
+			"playSounds": {
+				"label": "Hangok lejátszása",
+				"description": "Kőlerakás, leütés és órafigyelmeztetések."
+			}
+		}
+	},
+	"gameplay": {
+		"description": "Állítsd be, hogyan rakod le a köveket, és ki hívhat ki.",
+		"moves": {
+			"title": "Lépések megtétele",
+			"description": "Kő lerakása előtt második kattintás kérése a félrekattintások elkerülésére.",
+			"legend": "Lépések megerősítése",
+			"options": {
+				"never": "Soha",
+				"correspondence": "Csak levelezési játszmákban",
+				"always": "Mindig"
+			}
+		},
+		"challenges": {
+			"title": "Kihívások",
+			"description": "Válaszd ki, ki küldhet neked kihívást.",
+			"legend": "Kihívások engedélyezése tőlük",
+			"options": {
+				"everyone": "Mindenki",
+				"registered": "Regisztrált játékosok",
+				"following": "Csak az általam követett játékosok",
+				"nobody": "Senki (a visszavágó továbbra is engedélyezett)"
+			}
+		}
+	},
+	"profile": {
+		"description": "Minden, ami itt szerepel, látható a <profileLink>nyilvános profilodon</profileLink>.",
+		"publicProfile": {
+			"title": "Nyilvános profil",
+			"bioLabel": "Rövid bemutatkozás",
+			"bioPlaceholder": "A rövid bemutatkozásod megjelenik a profilodon.",
+			"bioCounter": "{{length}}/{{max}}"
+		},
+		"details": {
+			"title": "Adatok",
+			"joinDate": "Csatlakozás dátuma",
+			"username": "Felhasználónév",
+			"changeUsername": "Módosítás",
+			"changeUsernameFeature": "Felhasználónév módosítása",
+			"realName": "Valódi név",
+			"location": "Hely",
+			"country": "Ország",
+			"countryNotSet": "Nincs megadva",
+			"rank": "Rang",
+			"rankPlaceholder": "pl. 12k, 3d",
+			"rankHint": "Használd ezeket: 30k–1k, 1d–9d vagy 1p–9p."
+		},
+		"links": {
+			"legend": "Linkek",
+			"linkLabel": "{{number}}. link",
+			"remove": "Eltávolítás",
+			"removeLabel": "{{number}}. link eltávolítása",
+			"add": "Link hozzáadása"
+		}
+	},
+	"social": {
+		"description": "Kezeld a követett és a letiltott játékosokat.",
+		"blocking": {
+			"title": "Letiltás",
+			"description_one": "{{count}} játékost tiltottál le. A letiltott játékosok nem hívhatnak ki, és nem küldhetnek üzenetet.",
+			"description_other": "{{count}} játékost tiltottál le. A letiltott játékosok nem hívhatnak ki, és nem küldhetnek üzenetet.",
+			"empty": "Senkit sem tiltottál le.",
+			"action": "Letiltás feloldása",
+			"actionLabel": "{{username}} letiltásának feloldása"
+		},
+		"following": {
+			"title": "Követettek",
+			"description_one": "{{count}} játékost követsz.",
+			"description_other": "{{count}} játékost követsz.",
+			"empty": "Még senkit sem követsz.",
+			"action": "Követés leállítása",
+			"actionLabel": "{{username}} követésének leállítása"
+		}
+	},
+	"account": {
+		"description": "Módosítsd a jelszavad, védd a fiókod, és kezeld a kapcsolt fiókokat.",
+		"password": {
+			"title": "Jelszó módosítása",
+			"updated": "Jelszó frissítve",
+			"fields": {
+				"currentPassword": {
+					"label": "Jelenlegi jelszó",
+					"show": "Jelenlegi jelszó megjelenítése",
+					"hide": "Jelenlegi jelszó elrejtése"
+				},
+				"newPassword": {
+					"label": "Új jelszó",
+					"show": "Új jelszó megjelenítése",
+					"hide": "Új jelszó elrejtése"
+				},
+				"confirmPassword": {
+					"label": "Jelszó újra",
+					"show": "Megismételt jelszó megjelenítése",
+					"hide": "Megismételt jelszó elrejtése"
+				}
+			}
+		},
+		"contact": {
+			"title": "Elérhetőség",
+			"email": "E-mail-cím",
+			"edit": "Szerkesztés",
+			"editFeature": "E-mail-cím módosítása"
+		},
+		"twoFactor": {
+			"title": "Kétlépcsős azonosítás",
+			"description": "Bejelentkezéskor kód kérése egy hitelesítő alkalmazásból.",
+			"off": "Ki",
+			"enable": "Bekapcsolás",
+			"feature": "Kétlépcsős azonosítás"
+		},
+		"sessions": {
+			"title": "Aktív munkamenetek",
+			"description": "Ha úgy gondolod, hogy a fiókodhoz illetéktelenek fértek hozzá, módosítsd a jelszavad, és jelentkezz ki mindenhol.",
+			"thisDevice": "Ez az eszköz",
+			"meta": "{{location}} · {{lastSeen}}",
+			"logOutLabel": "Kijelentkezés: {{device}}",
+			"logOutAll": "Kijelentkezés az összes többi eszközön"
+		},
+		"connections": {
+			"title": "Kapcsolt fiókok",
+			"description": "Jelentkezz be a Badukra ezekkel a fiókokkal.",
+			"connectedTo": "Kapcsolva: {{provider}}",
+			"connect": "Kapcsolás",
+			"disconnect": "Leválasztás",
+			"note": "A leválasztás eltávolítja a kapcsolatot a Badukon. Lehet, hogy a hozzáférést a másik oldalon is vissza kell vonnod."
+		},
+		"close": {
+			"title": "Fiók megszüntetése",
+			"description": "A fiók megszüntetése elrejti a profilodat, és mindenhol kijelentkeztet.",
+			"button": "Fiók megszüntetése",
+			"dialogTitle": "Megszünteted a fiókodat?",
+			"dialogDescription": "Később a bejelentkezési oldalon újra megnyithatod.",
+			"feature": "Fiók megszüntetése"
+		}
+	},
+	"languageTime": {
+		"title": "Nyelv és idő",
+		"description": "Válaszd ki a Baduk nyelvét, valamint a dátumok és időpontok megjelenését.",
+		"language": {
+			"title": "Nyelv",
+			"description": "A módosítások azonnal érvényesek minden oldalon.",
+			"legend": "Megjelenítési nyelv"
+		},
+		"time": {
+			"title": "Idő",
+			"description": "Időbélyegekhez, például a csatlakozás dátumához és a munkamenetek aktivitásához.",
+			"timeZone": "Időzóna",
+			"automaticTimeZone": "Automatikus ({{timeZone}})",
+			"timeFormat": "Óra",
+			"formats": {
+				"auto": "Automatikus ({{example}})",
+				"12h": "12 órás ({{example}})",
+				"24h": "24 órás ({{example}})"
+			},
+			"preview": "Előnézet"
+		}
+	}
+}

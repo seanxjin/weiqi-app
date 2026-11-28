@@ -1,0 +1,31 @@
+{
+	"appName": "Baduk",
+	"brand": "바둑",
+	"pageTitle": "Baduk — {{title}}",
+	"homeLink": "Baduk 홈",
+	"actions": {
+		"save": "저장",
+		"saving": "저장 중…",
+		"cancel": "취소",
+		"back": "뒤로",
+		"retry": "다시 시도",
+		"close": "닫기",
+		"login": "로그인",
+		"signIn": "로그인",
+		"signUp": "회원가입",
+		"logOut": "로그아웃",
+		"loggingOut": "로그아웃 중…"
+	},
+	"status": {
+		"saved": "저장됨",
+		"loading": "불러오는 중…",
+		"checkingSession": "세션 확인 중…",
+		"sessionError": "세션을 확인할 수 없습니다. 다시 시도해 주세요."
+	},
+	"comingSoon": "{{feature}} 기능은 곧 제공될 예정입니다.",
+	"language": "언어",
+	"languageDialog": {
+		"title": "선호하는 언어 선택",
+		"loadError": "해당 언어를 불러오지 못했습니다. 다시 시도해 주세요."
+	}
+}

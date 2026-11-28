@@ -1,0 +1,128 @@
+- generic [ref=e3]:
+  - complementary "Baduk navigation" [ref=e4]:
+    - generic [ref=e5]:
+      - link "Baduk home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic [aria-hidden] [ref=e7]:
+          - img [ref=e9]: Polished white slate baduk stone
+          - img [ref=e11]: Polished black slate baduk stone
+        - generic [ref=e12]: BADUK
+      - navigation "Main navigation" [ref=e13]:
+        - link "Play" [ref=e14] [cursor=pointer]:
+          - /url: /play
+        - button "Puzzles" [ref=e16] [cursor=pointer]
+        - button "Learn" [ref=e18] [cursor=pointer]
+    - generic [ref=e21]:
+      - paragraph [ref=e22]: NEW TO GO?
+      - button "Start with the basics" [ref=e23] [cursor=pointer]
+  - main [ref=e25]:
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - paragraph [ref=e28]: FRIENDLY GAME
+        - heading "A moment for the game." [level=1] [ref=e29]
+      - generic [ref=e30]: 9 × 9 · Japanese rules
+    - region "Local Go game" [ref=e32]:
+      - generic [ref=e33]:
+        - generic "Players" [ref=e34]:
+          - generic [ref=e35]:
+            - img [ref=e37]: Polished black slate baduk stone
+            - generic [ref=e38]: Black
+            - generic [ref=e39]: Captured 0
+          - generic [ref=e40]:
+            - img [ref=e42]: Polished white slate baduk stone
+            - generic [ref=e43]: White
+            - generic [ref=e44]: Captured 0
+        - generic [ref=e45]:
+          - generic [ref=e47]:
+            - group "Read-only 9 by 9 Traditional Japanese kaya Go board" [ref=e48]:
+              - img "9 by 9 Traditional Japanese kaya baduk board" [ref=e50]
+            - paragraph [ref=e51]: Read-only board.
+            - status [ref=e52]: Black to play. 0 stones placed.
+          - img [aria-hidden]:
+            - generic:
+              - generic:
+                - generic: A
+                - generic: A
+                - generic: "9"
+                - generic: "9"
+              - generic:
+                - generic: B
+                - generic: B
+                - generic: "8"
+                - generic: "8"
+              - generic:
+                - generic: C
+                - generic: C
+                - generic: "7"
+                - generic: "7"
+              - generic:
+                - generic: D
+                - generic: D
+                - generic: "6"
+                - generic: "6"
+              - generic:
+                - generic: E
+                - generic: E
+                - generic: "5"
+                - generic: "5"
+              - generic:
+                - generic: F
+                - generic: F
+                - generic: "4"
+                - generic: "4"
+              - generic:
+                - generic: G
+                - generic: G
+                - generic: "3"
+                - generic: "3"
+              - generic:
+                - generic: H
+                - generic: H
+                - generic: "2"
+                - generic: "2"
+              - generic:
+                - generic: J
+                - generic: J
+                - generic: "1"
+                - generic: "1"
+        - generic [ref=e53]:
+          - status [ref=e54]: Preparing board
+          - button "Pass" [disabled] [ref=e55]
+          - paragraph [ref=e56]: Starting position
+        - generic [ref=e57]:
+          - status [ref=e58]: Loading Go engine…
+          - alert
+      - complementary "Move history" [ref=e59]:
+        - generic [ref=e60]:
+          - heading "Moves" [level=2] [ref=e61]
+          - generic [ref=e62]: 0 MOVES
+        - table "Black and White moves" [ref=e64]:
+          - rowgroup [ref=e69]:
+            - row [ref=e70]:
+              - columnheader "Pair" [ref=e71]:
+                - generic [aria-hidden] [ref=e72]: "#"
+              - columnheader "Black" [ref=e74]
+              - columnheader "White" [ref=e76]
+          - rowgroup [ref=e78]:
+            - row [ref=e79]:
+              - cell "No moves yet." [ref=e80]
+        - generic [ref=e81]:
+          - status [ref=e82]:
+            - generic [ref=e83]: Move 0 of 0
+            - generic [ref=e84]: CURRENT POSITION
+          - navigation "Move history navigation" [ref=e85]:
+            - generic [ref=e86]:
+              - button "Start" [disabled] [ref=e87]
+              - generic [aria-hidden] [ref=e88]: Start
+            - generic [ref=e89]:
+              - button "Previous" [disabled] [ref=e90]
+              - generic [aria-hidden] [ref=e91]: Previous
+            - generic [ref=e92]:
+              - button "Next" [disabled] [ref=e93]
+              - generic [aria-hidden] [ref=e94]: Next
+            - generic [ref=e95]:
+              - button "Current" [disabled] [ref=e96]
+              - generic [aria-hidden] [ref=e97]: Current
+          - button "Undo last move" [disabled] [ref=e98]
+          - paragraph [ref=e99]: Take your time. Every move matters.
+  - status

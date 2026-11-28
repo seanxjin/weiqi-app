@@ -1,0 +1,36 @@
+{
+	"server": {
+		"unavailable": "Server je nedostupný. Skúste to znova.",
+		"unreachable": "Server sa nepodarilo kontaktovať. Skontrolujte pripojenie a skúste to znova.",
+		"unexpectedResponse": "Server vrátil neočakávanú odpoveď. Skúste to znova.",
+		"requestFailed": "Požiadavku sa nepodarilo dokončiť. Skúste to znova."
+	},
+	"rateLimited": {
+		"generic": "Príliš veľa pokusov. Pred ďalším pokusom chvíľu počkajte.",
+		"withDelay_one": "Príliš veľa pokusov. Pred ďalším pokusom počkajte {{count}} sekundu.",
+		"withDelay_few": "Príliš veľa pokusov. Pred ďalším pokusom počkajte {{count}} sekundy.",
+		"withDelay_many": "Príliš veľa pokusov. Pred ďalším pokusom počkajte {{count}} sekundy.",
+		"withDelay_other": "Príliš veľa pokusov. Pred ďalším pokusom počkajte {{count}} sekúnd."
+	},
+	"unknown": "Niečo sa pokazilo. Skúste to znova.",
+	"api": {
+		"invalidCredentials": "Používateľské meno, e-mail alebo heslo je nesprávne.",
+		"twoFactorRequired": "Pokračujte zadaním 6-miestneho kódu z autentifikátora.",
+		"invalidTwoFactor": "Kód z autentifikátora je nesprávny. Skúste to znova.",
+		"emailUnconfirmed": "Pred prihlásením potvrďte svoju e-mailovú adresu.",
+		"accountClosed": "Tento účet je zrušený a nie je možné sa doň prihlásiť.",
+		"usernameTaken": "Toto používateľské meno sa už používa. Zvoľte si iné.",
+		"emailTaken": "Táto e-mailová adresa sa už používa.",
+		"invalidToken": "Tento odkaz je neplatný alebo jeho platnosť vypršala. Ak chcete pokračovať, vyžiadajte si nový e-mail.",
+		"unauthorized": "Platnosť prihlásenia vypršala. Začnite znova.",
+		"conflict": "Registráciu sa nepodarilo dokončiť. Začnite znova.",
+		"forbidden": "Táto požiadavka bola zablokovaná. Obnovte stránku a skúste to znova."
+	},
+	"validation": {
+		"passwordTooShort": "Heslo musí mať aspoň 8 znakov.",
+		"newPasswordTooShort": "Nové heslo musí mať aspoň 8 znakov.",
+		"passwordTooLong": "Heslo nesmie presiahnuť 72 bajtov UTF-8.",
+		"passwordMismatch": "Nové heslá sa nezhodujú.",
+		"passwordUnchanged": "Zvoľte heslo odlišné od aktuálneho."
+	}
+}

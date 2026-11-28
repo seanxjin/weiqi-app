@@ -120,7 +120,7 @@
 	color: var(--bg);
 }
 .auth-action:hover:not(:disabled) {
-	background: #424b43;
+	background: color-mix(in srgb, var(--text) 88%, var(--bg));
 }
 .auth-action:disabled {
 	opacity: 0.65;
@@ -130,7 +130,7 @@
 	border: 1px solid var(--divider);
 }
 .auth-provider:hover {
-	background: #ece9e0;
+	background: var(--surface);
 }
 .auth-action img,
 .auth-provider img {
@@ -227,7 +227,7 @@
 	border: 0;
 	background: transparent;
 	padding: 8px;
-	margin-right: -8px;
+	margin-inline-end: -8px;
 	cursor: pointer;
 }
 .auth-guidance {
@@ -248,7 +248,7 @@
 	overflow-wrap: anywhere;
 }
 .auth-error {
-	color: #8b3434;
+	color: var(--danger);
 }
 .auth-status {
 	margin-top: 28px;
@@ -294,7 +294,7 @@
 		flex-direction: column;
 		align-items: flex-end;
 		gap: 4px;
-		text-align: right;
+		text-align: end;
 	}
 	.auth-header__account > span {
 		max-width: 110px;

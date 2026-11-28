@@ -1,0 +1,18 @@
+{
+	"editProfile": "Edit profile",
+	"meta": {
+		"joined": "Joined",
+		"rank": "Rank",
+		"noRank": "—",
+		"followers": "Followers",
+		"following": "Following"
+	},
+	"about": {
+		"heading": "About",
+		"noBio": "No bio yet."
+	},
+	"games": {
+		"heading": "Game history",
+		"empty": "No games yet."
+	}
+}

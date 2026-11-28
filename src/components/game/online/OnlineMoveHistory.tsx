@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import blackKey from "@/assets/icons/game/black-key.svg";
 import previous from "@/assets/icons/game/chevron-left.svg";
 import next from "@/assets/icons/game/chevron-right.svg";
@@ -16,6 +17,7 @@ interface Props {
 
 /** The local MoveHistoryPanel experience without Undo; optimistic moves are marked as pending. */
 export function OnlineMoveHistory({ snapshot, onView }: Props) {
+	const { t } = useTranslation("game");
 	const scroll = useRef<HTMLDivElement>(null);
 	const { viewedMoveIndex: viewed, latestMoveIndex: latest, moves } = snapshot;
 	// biome-ignore lint/correctness/useExhaustiveDependencies: keeps the viewed move scrolled into view whenever it changes.
@@ -35,10 +37,10 @@ export function OnlineMoveHistory({ snapshot, onView }: Props) {
 	}, [viewed, latest]);
 
 	const navigation = [
-		{ label: "Start", icon: skipBack, index: 0, disabled: viewed === 0 },
-		{ label: "Previous", icon: previous, index: viewed - 1, disabled: viewed === 0 },
-		{ label: "Next", icon: next, index: viewed + 1, disabled: viewed === latest },
-		{ label: "Current", icon: skipForward, index: latest, disabled: viewed === latest },
+		{ label: t("history.navigation.start"), icon: skipBack, index: 0, disabled: viewed === 0 },
+		{ label: t("history.navigation.previous"), icon: previous, index: viewed - 1, disabled: viewed === 0 },
+		{ label: t("history.navigation.next"), icon: next, index: viewed + 1, disabled: viewed === latest },
+		{ label: t("history.navigation.current"), icon: skipForward, index: latest, disabled: viewed === latest },
 	];
 	const pairs = Array.from({ length: Math.ceil(moves.length / 2) }, (_, pair) => ({
 		number: pair + 1,
@@ -50,25 +52,27 @@ export function OnlineMoveHistory({ snapshot, onView }: Props) {
 				type="button"
 				className={move.pending ? "online-game__pending-move" : undefined}
 				aria-current={viewed === move.number ? "step" : undefined}
-				aria-label={`Move ${move.number}, ${move.color === "black" ? "Black" : "White"}, ${move.label}${move.pending ? ", sending" : ""}`}
+				aria-label={t(move.pending ? "history.pendingMove" : "history.move", {
+					number: move.number,
+					color: t(`colors.${move.color}`),
+					move: move.point ? move.label : t("pass"),
+				})}
 				onClick={() => onView(move.number)}
 			>
-				{move.label}
+				{move.point ? move.label : t("pass")}
 				{viewed === move.number && <img src={currentMove} alt="" />}
 			</button>
 		);
 
 	return (
-		<aside className="local-game__history" aria-label="Move history">
+		<aside className="local-game__history" aria-label={t("history.label")}>
 			<div className="local-game__history-heading">
-				<h2>Moves</h2>
-				<span>
-					{latest} {latest === 1 ? "MOVE" : "MOVES"}
-				</span>
+				<h2>{t("history.heading")}</h2>
+				<span>{t("history.moveCount", { count: latest })}</span>
 			</div>
 			<img className="local-game__heading-divider" src={headingDivider} alt="" />
 			<div className="local-game__move-scroll" ref={scroll}>
-				<table className="local-game__move-table" aria-label="Black and White moves">
+				<table className="local-game__move-table" aria-label={t("history.tableLabel")}>
 					<colgroup>
 						<col className="local-game__pair-column" />
 						<col />
@@ -78,18 +82,18 @@ export function OnlineMoveHistory({ snapshot, onView }: Props) {
 						<tr>
 							<th scope="col">
 								<span aria-hidden="true">#</span>
-								<span className="local-game__sr-only">Pair</span>
+								<span className="local-game__sr-only">{t("history.pair")}</span>
 							</th>
 							<th scope="col">
 								<span>
-									<img src={blackKey} alt="" />
-									Black
+									<img className="stone-key" src={blackKey} alt="" />
+									{t("colors.black")}
 								</span>
 							</th>
 							<th scope="col">
 								<span>
-									<img src={whiteKey} alt="" />
-									White
+									<img className="stone-key" src={whiteKey} alt="" />
+									{t("colors.white")}
 								</span>
 							</th>
 						</tr>
@@ -105,7 +109,7 @@ export function OnlineMoveHistory({ snapshot, onView }: Props) {
 						{!moves.length && (
 							<tr>
 								<td colSpan={3} className="local-game__empty">
-									No moves yet.
+									{t("history.empty")}
 								</td>
 							</tr>
 						)}
@@ -114,12 +118,10 @@ export function OnlineMoveHistory({ snapshot, onView }: Props) {
 			</div>
 			<div className="local-game__review-controls">
 				<div className="local-game__position" role="status" aria-live="polite" aria-atomic="true">
-					<span>
-						Move {viewed} of {latest}
-					</span>
-					<span>{viewed === latest ? "CURRENT POSITION" : "REVIEWING"}</span>
+					<span>{t("history.position", { viewed, latest })}</span>
+					<span>{viewed === latest ? t("history.currentPosition") : t("history.reviewing")}</span>
 				</div>
-				<nav className="local-game__navigation" aria-label="Move history navigation">
+				<nav className="local-game__navigation" aria-label={t("history.navigationLabel")}>
 					{navigation.map((control) => (
 						<div key={control.label}>
 							<button
@@ -128,13 +130,13 @@ export function OnlineMoveHistory({ snapshot, onView }: Props) {
 								disabled={control.disabled}
 								onClick={() => onView(control.index)}
 							>
-								<img src={control.icon} alt="" />
+								<img className="directional-icon" src={control.icon} alt="" />
 							</button>
 							<span aria-hidden="true">{control.label}</span>
 						</div>
 					))}
 				</nav>
-				<p className="local-game__encouragement">Use ← → to step through moves, ↑ ↓ for start and current.</p>
+				<p className="local-game__encouragement">{t("history.keyboardHint")}</p>
 			</div>
 		</aside>
 	);
